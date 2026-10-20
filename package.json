@@ -1,0 +1,11 @@
+{
+  "name": "al-miftah-nahwu-sharaf",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Al-Miftah (المفتاح في النحو والصرف) - Aplikasi Interaktif Nahwu & Sharaf Tathbiqi, Mushaf I'rab 30 Juz, & 42 Bab Kurikulum",
+  "scripts": {
+    "postinstall": "cd app && npm install",
+    "build": "cd app && npm run build",
+    "dev": "cd app && npm run dev"
+  }
+}
