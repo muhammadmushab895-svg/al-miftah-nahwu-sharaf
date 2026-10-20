@@ -5,13 +5,14 @@ import {
   BookOpen, 
   X, 
   ExternalLink, 
-  CheckCircle2, 
   Layers, 
   ChevronRight,
   Filter,
-  Eye
+  Star,
+  BookmarkCheck,
+  CheckCircle2
 } from 'lucide-react';
-import exercisesData from '../data/06_latihan_quran.json';
+import crossIndexData from '../data/07_bab_quran_cross_index.json';
 
 export default function LiveQuranCrossIndexerModal({
   isOpen,
@@ -22,41 +23,50 @@ export default function LiveQuranCrossIndexerModal({
   onJumpToQuran
 }) {
   const [searchWord, setSearchWord] = useState('');
+  const [filterType, setFilterType] = useState('ALL'); // 'ALL' | 'SYAHID' | 'TATHBIQ'
   const [selectedAyahIndex, setSelectedAyahIndex] = useState(0);
 
-  // Filter exercises that match this Bab or related grammatical topics
+  // Retrieve curated, 100% verified relevant Quranic verses for this Bab
+  const babEntry = useMemo(() => {
+    if (!babId || !crossIndexData[babId]) return null;
+    return crossIndexData[babId];
+  }, [babId]);
+
+  const rawAyahs = useMemo(() => {
+    return babEntry?.daftar_ayat || [];
+  }, [babEntry]);
+
+  // Filter by tab and search keyword
   const matchingAyahs = useMemo(() => {
-    if (!babId) return [];
+    let list = rawAyahs;
 
-    // Exact bab match
-    let matches = exercisesData.filter(ex => ex.fokus_bab_nahwu === babId);
-
-    // If matches are few, search by semantic keywords from the Bab title
-    if (matches.length < 5 && babJudul) {
-      const keywords = babJudul.toLowerCase().split(/\s+/).filter(w => w.length > 3);
-      const moreMatches = exercisesData.filter(ex => {
-        if (matches.some(m => m.id_latihan === ex.id_latihan)) return false;
-        const target = (ex.kategori_binyah + ' ' + ex.fokus_bab_nahwu + ' ' + ex.rincian_irab_tathbiqi).toLowerCase();
-        return keywords.some(k => target.includes(k));
-      });
-      matches = [...matches, ...moreMatches];
+    if (filterType === 'SYAHID') {
+      list = list.filter(item => item.tipe === 'DALIL_SYAHID');
+    } else if (filterType === 'TATHBIQ') {
+      list = list.filter(item => item.tipe !== 'DALIL_SYAHID');
     }
 
     if (searchWord.trim()) {
       const q = searchWord.toLowerCase().trim();
-      matches = matches.filter(ex => 
-        ex.teks_ayat_arab.includes(q) ||
-        ex.terjemahan_indo.toLowerCase().includes(q) ||
-        ex.kategori_binyah.toLowerCase().includes(q)
+      list = list.filter(item => 
+        (item.kalimat_arab && item.kalimat_arab.includes(q)) ||
+        (item.terjemahan_indo && item.terjemahan_indo.toLowerCase().includes(q)) ||
+        (item.sumber_dalil && item.sumber_dalil.toLowerCase().includes(q)) ||
+        (item.kata_kunci && item.kata_kunci.includes(q)) ||
+        (item.penjelasan_irab_indo && item.penjelasan_irab_indo.toLowerCase().includes(q)) ||
+        (item.kategori_binyah && item.kategori_binyah.toLowerCase().includes(q))
       );
     }
 
-    return matches;
-  }, [babId, babJudul, searchWord]);
+    return list;
+  }, [rawAyahs, filterType, searchWord]);
 
   if (!isOpen) return null;
 
   const currentItem = matchingAyahs[selectedAyahIndex] || matchingAyahs[0];
+
+  const syahidCount = rawAyahs.filter(x => x.tipe === 'DALIL_SYAHID').length;
+  const tathbiqCount = rawAyahs.filter(x => x.tipe !== 'DALIL_SYAHID').length;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/70 backdrop-blur-xs animate-in fade-in duration-150">
@@ -67,37 +77,66 @@ export default function LiveQuranCrossIndexerModal({
           <div className="space-y-0.5">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-400 text-emerald-950 text-[11px] font-extrabold">
               <Sparkles className="w-3 h-3 fill-current" />
-              Live Quran Cross-Indexer (Jembatan Kaidah ↔ Al-Qur'an)
+              Jelajahi Ayat Terkait Kaidah (Tathbiq Qur'ani Otentik)
             </div>
             <h3 className="text-base sm:text-lg font-extrabold flex items-center gap-2">
-              <span>Ayat-Ayat Syahid untuk: {babJudul}</span>
+              <span>Ayat-Ayat Terkait: {babJudul}</span>
               <span className="font-arabic text-amber-300 font-normal text-sm sm:text-base hidden sm:inline">({babJudulArab})</span>
             </h3>
           </div>
 
           <button
             onClick={onClose}
-            className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition"
+            className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Search & Filter Toolbar */}
+        {/* Filter Tabs & Search Toolbar */}
         <div className="px-6 py-3 bg-slate-50 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3 shrink-0">
-          <div className="flex items-center gap-2">
-            <span className="text-xs font-bold text-slate-700">
-              Ditemukan: <strong className="text-emerald-700">{matchingAyahs.length} Ayat</strong> dengan pola kaidah ini
-            </span>
+          <div className="flex items-center gap-1.5">
+            <button
+              onClick={() => { setFilterType('ALL'); setSelectedAyahIndex(0); }}
+              className={`px-3 py-1 rounded-lg text-xs font-bold transition cursor-pointer ${
+                filterType === 'ALL'
+                  ? 'bg-emerald-900 text-amber-300 shadow-xs'
+                  : 'bg-slate-200/80 text-slate-700 hover:bg-slate-300'
+              }`}
+            >
+              Semua ({rawAyahs.length})
+            </button>
+            <button
+              onClick={() => { setFilterType('SYAHID'); setSelectedAyahIndex(0); }}
+              className={`px-3 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1 cursor-pointer ${
+                filterType === 'SYAHID'
+                  ? 'bg-amber-500 text-emerald-950 shadow-xs'
+                  : 'bg-slate-200/80 text-slate-700 hover:bg-slate-300'
+              }`}
+            >
+              <Star className="w-3 h-3 fill-current" />
+              <span>Syahid Utama ({syahidCount})</span>
+            </button>
+            <button
+              onClick={() => { setFilterType('TATHBIQ'); setSelectedAyahIndex(0); }}
+              className={`px-3 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1 cursor-pointer ${
+                filterType === 'TATHBIQ'
+                  ? 'bg-emerald-800 text-white shadow-xs'
+                  : 'bg-slate-200/80 text-slate-700 hover:bg-slate-300'
+              }`}
+            >
+              <BookmarkCheck className="w-3 h-3" />
+              <span>Latihan Tathbiq ({tathbiqCount})</span>
+            </button>
           </div>
 
           <div className="relative w-full sm:w-72">
             <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-2.5" />
             <input
               type="text"
-              placeholder="Cari lafazh atau terjemahan..."
+              placeholder="Cari lafazh, kata kunci, surah..."
               value={searchWord}
-              onChange={(e) => setSearchWord(e.target.value)}
+              onChange={(e) => { setSearchWord(e.target.value); setSelectedAyahIndex(0); }}
               className="w-full pl-8 pr-3 py-1.5 bg-white border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-emerald-600"
             />
           </div>
@@ -111,30 +150,42 @@ export default function LiveQuranCrossIndexerModal({
             {matchingAyahs.length > 0 ? (
               matchingAyahs.map((item, idx) => {
                 const isSelected = selectedAyahIndex === idx;
+                const isSyahid = item.tipe === 'DALIL_SYAHID';
+
                 return (
                   <button
-                    key={item.id_latihan}
+                    key={item.id_contoh || item.id_latihan || idx}
                     onClick={() => setSelectedAyahIndex(idx)}
-                    className={`w-full p-4 text-left transition flex flex-col gap-1.5 ${
+                    className={`w-full p-4 text-left transition flex flex-col gap-1.5 cursor-pointer ${
                       isSelected
                         ? 'bg-emerald-50 text-emerald-950 font-bold border-l-4 border-emerald-600'
                         : 'hover:bg-slate-50 text-slate-800'
                     }`}
                   >
                     <div className="flex items-center justify-between text-xs">
-                      <span className="font-mono font-bold bg-slate-200/80 px-2 py-0.5 rounded text-slate-700">
-                        QS. {item.surah} : {item.ayat} (Juz {item.juz})
+                      <span className={`font-mono font-bold px-2 py-0.5 rounded text-[11px] ${
+                        isSyahid ? 'bg-amber-100 text-amber-900 border border-amber-300' : 'bg-slate-200/80 text-slate-700'
+                      }`}>
+                        {item.sumber_dalil}
                       </span>
-                      <span className="text-[10px] text-emerald-700 font-semibold truncate max-w-[150px]">
-                        {item.kategori_binyah}
-                      </span>
+                      {isSyahid ? (
+                        <span className="inline-flex items-center gap-1 text-[10px] bg-amber-400/90 text-emerald-950 font-extrabold px-1.5 py-0.5 rounded">
+                          <Star className="w-2.5 h-2.5 fill-current" />
+                          Syahid Utama
+                        </span>
+                      ) : (
+                        <span className="text-[10px] text-emerald-700 font-semibold truncate max-w-[150px]">
+                          {item.kategori_binyah || 'Tathbiq Kaidah'}
+                        </span>
+                      )}
                     </div>
 
                     <p className="font-arabic text-right text-base font-bold text-slate-900 line-clamp-1 pt-1">
-                      {item.teks_ayat_arab}
+                      {item.kalimat_arab}
                     </p>
 
                     <p className="text-xs text-slate-500 line-clamp-1">
+                      {item.kata_kunci ? <span className="font-bold text-emerald-800 mr-1">[{item.kata_kunci}]</span> : null}
                       {item.terjemahan_indo}
                     </p>
                   </button>
@@ -156,35 +207,66 @@ export default function LiveQuranCrossIndexerModal({
                 <div className="bg-white rounded-2xl border border-slate-200 p-6 space-y-3 shadow-xs">
                   <div className="flex items-center justify-between border-b border-slate-100 pb-2">
                     <span className="text-xs font-bold font-mono text-emerald-900 bg-emerald-100 px-3 py-1 rounded-full">
-                      QS. {currentItem.surah} [{currentItem.ayat}] • Juz {currentItem.juz}
+                      {currentItem.sumber_dalil} {currentItem.juz ? `• Juz ${currentItem.juz}` : ''}
                     </span>
-                    <span className="text-xs text-amber-800 font-bold bg-amber-100 px-2.5 py-0.5 rounded-md">
-                      {currentItem.kategori_binyah}
-                    </span>
+                    {currentItem.tipe === 'DALIL_SYAHID' ? (
+                      <span className="text-xs text-amber-900 font-bold bg-amber-200 border border-amber-300 px-2.5 py-0.5 rounded-md flex items-center gap-1">
+                        <Star className="w-3 h-3 fill-amber-500 text-amber-700" />
+                        Dalil Syahid Utama Kaidah
+                      </span>
+                    ) : (
+                      <span className="text-xs text-emerald-800 font-bold bg-emerald-100 px-2.5 py-0.5 rounded-md">
+                        {currentItem.kategori_binyah}
+                      </span>
+                    )}
                   </div>
 
                   <p className="font-arabic text-2xl font-extrabold text-slate-900 text-right leading-loose pt-2">
-                    {currentItem.teks_ayat_arab}
+                    {currentItem.kalimat_arab}
                   </p>
+
+                  {currentItem.kata_kunci && (
+                    <div className="flex items-center justify-end gap-2 text-xs">
+                      <span className="text-slate-500 font-medium">Lafadz Syahid / Kata Kunci:</span>
+                      <span className="font-arabic font-bold text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">
+                        {currentItem.kata_kunci}
+                      </span>
+                    </div>
+                  )}
 
                   <p className="text-xs text-slate-600 italic pt-2 border-t border-slate-100">
                     "{currentItem.terjemahan_indo}"
                   </p>
                 </div>
 
-                {/* Tathbiq Kaidah Explanation */}
-                <div className="bg-white rounded-2xl border border-slate-200 p-5 space-y-2 shadow-xs">
-                  <h4 className="font-extrabold text-xs text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
-                    <Layers className="w-3.5 h-3.5 text-emerald-700" />
-                    Pembahasan Tathbiq Kaidah:
-                  </h4>
-                  <p className="text-xs sm:text-sm text-slate-800 leading-relaxed font-medium">
-                    {currentItem.rincian_irab_tathbiqi || currentItem.pertanyaan_latihan?.pembahasan}
-                  </p>
-                </div>
+                {/* Tathbiq / Penjelasan Syahid */}
+                {(currentItem.penjelasan_irab_indo || currentItem.rincian_irab_tathbiqi) && (
+                  <div className="bg-white rounded-2xl border border-slate-200 p-5 space-y-2 shadow-xs">
+                    <h4 className="font-extrabold text-xs text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
+                      <Layers className="w-3.5 h-3.5 text-emerald-700" />
+                      {currentItem.tipe === 'DALIL_SYAHID' ? "Keterkaitan Syahid dengan Kaidah:" : "Pembahasan Tathbiq Kaidah:"}
+                    </h4>
+                    <p className="text-xs sm:text-sm text-slate-800 leading-relaxed font-medium">
+                      {currentItem.penjelasan_irab_indo || currentItem.rincian_irab_tathbiqi}
+                    </p>
+                  </div>
+                )}
 
-                {/* Word by Word Breakdown Preview */}
-                {currentItem.kata_per_kata && (
+                {/* Full Classical I'rab if Syahid */}
+                {currentItem.irab_arab && (
+                  <div className="bg-white rounded-2xl border border-slate-200 p-5 space-y-2 shadow-xs">
+                    <h4 className="font-extrabold text-xs text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
+                      <BookOpen className="w-3.5 h-3.5 text-emerald-700" />
+                      Analisis I'rab Klasik Lengkap:
+                    </h4>
+                    <p className="font-arabic text-sm text-slate-900 text-right leading-relaxed bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                      {currentItem.irab_arab}
+                    </p>
+                  </div>
+                )}
+
+                {/* Word by Word Breakdown Preview if Available */}
+                {currentItem.kata_per_kata && currentItem.kata_per_kata.length > 0 && (
                   <div className="bg-white rounded-2xl border border-slate-200 p-5 space-y-3 shadow-xs">
                     <h4 className="font-extrabold text-xs text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
                       <BookOpen className="w-3.5 h-3.5 text-emerald-700" />
@@ -196,18 +278,18 @@ export default function LiveQuranCrossIndexerModal({
                         <thead className="bg-slate-100 text-slate-700 font-bold text-[11px]">
                           <tr>
                             <th className="p-2.5 text-right font-arabic">الْكَلِمَةُ</th>
-                            <th className="p-2.5">Binyah Sharaf</th>
                             <th className="p-2.5">Status I'rab</th>
                             <th className="p-2.5">Tanda I'rab</th>
+                            <th className="p-2.5">Kedudukan I'rab</th>
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-slate-100">
                           {currentItem.kata_per_kata.map((w, wIdx) => (
                             <tr key={wIdx} className="hover:bg-slate-50">
                               <td className="p-2.5 text-right font-arabic font-bold text-base text-slate-900">{w.kata_arab}</td>
-                              <td className="p-2.5 text-slate-600 font-mono text-[11px]">{w.binyah_sharaf}</td>
                               <td className="p-2.5 font-semibold text-emerald-800">{w.status_hukum}</td>
                               <td className="p-2.5 text-slate-600 font-mono text-[11px]">{w.tanda_irab}</td>
+                              <td className="p-2.5 text-slate-700 text-xs font-arabic text-right">{w.kedudukan_irab}</td>
                             </tr>
                           ))}
                         </tbody>
@@ -217,16 +299,16 @@ export default function LiveQuranCrossIndexerModal({
                 )}
 
                 {/* Direct Jump to Mushaf Button */}
-                {onJumpToQuran && (
+                {onJumpToQuran && currentItem.surah && currentItem.ayat && (
                   <div className="pt-2 flex justify-end">
                     <button
                       onClick={() => {
                         onClose();
                         onJumpToQuran(currentItem.surah, currentItem.ayat);
                       }}
-                      className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-900 hover:bg-emerald-800 text-amber-300 font-extrabold text-xs shadow-md transition"
+                      className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-900 hover:bg-emerald-800 text-amber-300 font-extrabold text-xs shadow-md transition cursor-pointer"
                     >
-                      <span>Buka di Mushaf I'rab Lengkap</span>
+                      <span>Buka di Mushaf I'rab Lengkap (QS. {currentItem.surah}: {currentItem.ayat})</span>
                       <ExternalLink className="w-4 h-4" />
                     </button>
                   </div>
