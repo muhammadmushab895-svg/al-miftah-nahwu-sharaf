@@ -1,0 +1,631 @@
+{
+  "bab": [
+    {
+      "id_bab": "BAB-22",
+      "urutan": 22,
+      "kategori": "Al-Marfu'at & An-Nawasikh",
+      "level": "Mutawassith - Mutaqaddim",
+      "judul_arab": "المبتدأ والخبر وأقسامهما وأحكامهما الأساسية",
+      "judul_indo": "Mubtada' dan Khabar: Klasifikasi, Syarat Ibtida' dengan Nakirah, dan Macam-Macam Khabar",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi, Hal. 265-285 (Al-Jumlah Al-Ismiyyah: Al-Mubtada' wal Khabar)",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah Juz 2, Hal. 210-228 (Bab Al-Mubtada' wal Khabar)",
+      "ringkasan_cakupan": "Membahas hakikat Jumlah Ismiyyah, dua jenis Mubtada' (Mubtada' lahu Khabar dan Mubtada' Washf yang merafa'kan isim yang mencukupkan dari khabar/Sadda Masaddal Khabar beserta syarat nafi/istifham dan rincian kesesuaiannya), Musawwighat Al-Ibtida' bin-Nakirah (alasan dibolehkannya mubtada' nakirah), tiga bentuk Khabar (Mufrad, Jumlah beserta 4 jenis Rabith, dan Syibhul Jumlah beserta ta'alluq-nya), serta hukum Ta'addudul Khabar.",
+      "estimasi_jam_belajar": 6
+    },
+    {
+      "id_bab": "BAB-23",
+      "urutan": 23,
+      "kategori": "Al-Marfu'at & An-Nawasikh",
+      "level": "Mutaqaddim",
+      "judul_arab": "أحكام المبتدأ والخبر: التقديم والتأخير والحذف واقتران الخبر بالفاء",
+      "judul_indo": "Hukum Mubtada' dan Khabar: Wajib Taqdim, Wajib Ta'khir, Wajib Hadzf, dan Masuknya Fa' pada Khabar",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi, Hal. 286-306 (Ahkam Al-Mubtada' wal Khabar)",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah Juz 2, Hal. 229-243 (Taqdimul Mubtada' wal Khabar wa Hadzfuhuma)",
+      "ringkasan_cakupan": "Mengupas tuntas dinamika urutan dan pelesapan dalam Jumlah Ismiyyah: 4 tempat wajib mendahulukan Mubtada' (Wujub Taqdimil Mubtada'), 4 tempat wajib mendahulukan Khabar (Wujub Taqdimil Khabar), 4 tempat wajib membuang Mubtada' (Wujub Hadzfil Mubtada'), 4 tempat wajib membuang Khabar (Wujub Hadzfil Khabar), serta kaidah masuknya Fa' Rabithah pada Khabar ketika Mubtada' mengandung makna syarat.",
+      "estimasi_jam_belajar": 6
+    },
+    {
+      "id_bab": "BAB-24",
+      "urutan": 24,
+      "kategori": "Al-Marfu'at & An-Nawasikh",
+      "level": "Mutawassith - Mutaqaddim",
+      "judul_arab": "كان وأخواتها والحروف المشبهة بليس",
+      "judul_indo": "Kana dan Saudara-Saudaranya serta Huruf-Huruf yang Menyerupai Laisa",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi, Hal. 309-336 (An-Nawasikh: Kana wa Akhawatuha wa Ma Ya'malu 'Amalaha)",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah Juz 2, Hal. 244-267 (Al-Af'al An-Naqishah & Al-Ahruf Al-Musyabbahah bi-Laisa)",
+      "ringkasan_cakupan": "Membahas 13 fi'il nasikhah (Kana wa Akhawatuha), klasifikasi syarat amalnya (tanpa syarat, syarat didahului nafi/syibhu nafi, syarat didahului Ma Mashdariyyah Zharfiyyah), perbedaan Kana Naqishah vs Tammah, hukum urutan khabarnya, karakteristik khusus Kana (ziyadah, hadzf nun mudhari' majzum, hadzf Kana bersama isimnya setelah In dan Law), serta syarat amal 4 huruf yang beramal seperti Laisa (Ma Hijaziyyah, La, Lata, dan In Nafiyah).",
+      "estimasi_jam_belajar": 6
+    },
+    {
+      "id_bab": "BAB-25",
+      "urutan": 25,
+      "kategori": "Al-Marfu'at & An-Nawasikh",
+      "level": "Mutaqaddim",
+      "judul_arab": "كاد وأخواتها: أفعال المقاربة والرجاء والشروع",
+      "judul_indo": "Kada dan Saudara-Saudaranya: Fi'il Muqarabah, Raja', dan Syuru'",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi, Hal. 337-352 (Kada wa Akhawatuha)",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah Juz 2, Hal. 268-277 (Af'alul Muqarabah war-Raja' wasy-Syuru')",
+      "ringkasan_cakupan": "Membedah secara komprehensif kelompok Kada wa Akhawatuha yang terbagi menjadi Af'alul Muqarabah (Kada, Karaba, Ausyaka), Af'alul Raja' ('Asa, Hara, Ikhlawlaqa), dan Af'alul Syuru' (Syara'a, Ansya'a, Thafiqa, Akhadza, 'Aliqa, Ja'ala, Habba). Mencakup syarat khabarnya yang wajib berupa jumlah fi'liyyah mudhari'iyyah, 4 hukum bersambungnya khabar dengan An Mashdariyyah, serta penggunaan 'Asa, Ikhlawlaqa, dan Ausyaka sebagai fi'il Tam.",
+      "estimasi_jam_belajar": 5
+    }
+  ],
+  "materi": [
+    {
+      "id_materi": "MAT-2201",
+      "id_bab": "BAB-22",
+      "sub_topik_arab": "تعريف المبتدأ وقسماه: ذو الخبر والوصف الرافع لمكتفى به",
+      "sub_topik_indo": "Definisi dan Dua Jenis Mubtada': Mubtada' lahu Khabar & Mubtada' Washf (Sadda Masaddal Khabar)",
+      "kaidah_arab": "المُبْتَدَأُ: هُوَ الاسْمُ المَرْفُوعُ العَارِي عَنِ العَوَامِلِ اللَّفْظِيَّةِ غَيْرِ الزَّائِدَةِ، المُخْبَرُ عَنْهُ. وَيَنْقَسِمُ إِلَى نَوْعَيْنِ: الأَوَّلُ: مُبْتَدَأٌ لَهُ خَبَرٌ يُتَمِّمُ مَعْنَاهُ نَحْوُ: (اللهُ رَبُّنَا)، وَالثَّانِي: مُبْتَدَأٌ وَصْفٌ (اسْمُ فَاعِلٍ أَوْ مَفْعُولٍ أَوْ صِفَةٌ مُشَبَّهَةٌ) مُعْتَمِدٌ عَلَى نَفْيٍ أَوْ اسْتِفْهَامٍ رَفَعَ اسْمًا ظَاهِرًا سَدَّ مَسَدَّ الخَبَرِ وَأَغْنَى عَنْهُ نَحْوُ: (أَقَائِمٌ الزَّيْدَانِ؟ مَا مَضْرُوبٌ العَبْدَانِ).",
+      "penjelasan_indo": "Mubtada' adalah isim sharih (jelas) atau muawwal bish-sharih (mashdar muawwal) yang dibaca rafa', bebas dari amil lafzhi asli (amil yang merafa'kannya adalah amil ma'nawi yaitu al-ibtida'). Mubtada' terbagi menjadi dua:\n1. Mubtada' lahu Khabar: Mubtada' berupa isim sharih atau mashdar muawwal yang membutuhkan khabar sebagai penyempurna makna kalimat, seperti (العلمُ نورٌ) dan (وأنْ تصوموا خيرٌ لكم).\n2. Mubtada' Washf (Isim Fa'il, Isim Maf'ul, atau Shifat Musyabbahah) yang tidak membutuhkan khabar, melainkan merafa'kan isim zhahir atau dhamir munfashil setelahnya sebagai Fa'il atau Na'ibul Fa'il yang menempati posisi khabar (سدّ مسدّ الخبر / أغنى عن الخبر). Syaratnya: washf tersebut harus didahului oleh Nafi (baik huruf, fi'il, maupun isim nafi) atau Istifham (baik huruf maupun isim istifham).",
+      "rincian_hukum_dan_syarat": [
+        "Kesesuaian (Muthabaqah) antara Mubtada' Washf dan Marfu'-nya memiliki 3 kondisi:",
+        "1. Muthabaqah dalam Tatsniyah (Mutsanna) atau Jamak (مثاله: أَكاتِبانِ الدرسَ الطالبانِ؟ / ما فائزونَ المتكاسلونَ): Dalam kondisi ini, washf TIDAK BOLEH menjadi Mubtada' karena washf yang beramal seperti fi'il wajib tetap mufrad. Maka washf tersebut wajib di-i'rab sebagai Khabar Muqaddam, dan isim setelahnya adalah Mubtada' Muakhkhar.",
+        "2. Muthabaqah dalam Ifrad / Mufrad (مثاله: أَناجحٌ أخوكَ؟ / ما مهزومٌ جيشُنا): Boleh dua wajah i'rab: (a) Washf sebagai Mubtada', dan isim setelahnya Fa'il/Na'ibul Fa'il sadda masaddal khabar; atau (b) Washf sebagai Khabar Muqaddam, dan isim setelahnya Mubtada' Muakhkhar.",
+        "3. Tidak Muthabaqah: Washf Mufrad sedangkan isim setelahnya Mutsanna atau Jamak (مثاله: أَمسافرٌ الضيفانِ؟ / ما مقصِّرٌ المخلصونَ): Di sini WAJIB hanya satu wajah: Washf adalah Mubtada', dan isim setelahnya adalah Fa'il/Na'ibul Fa'il yang sadda masaddal khabar."
+      ],
+      "rumus_ringkas": "Mubtada' = (1) Isim/Mashdar Muawwal + Khabar | (2) [Nafi/Istifham] + Washf Mufrad (Mubtada') + Marfu' (Fa'il/Na'ibul Fa'il Sadda Masaddal Khabar).",
+      "tanbihat_dan_khilaf": "Ulama Bashrah mensyaratkan Mubtada' Washf harus bersandar (i'timad) pada Nafi atau Istifham. Sedangkan Ulama Kufah dan Al-Akhfasy membolehkannya tanpa didahului Nafi atau Istifham, seperti perkataan penyair: (خبيرٌ بنو لهبٍ فلا تكُ ملغياً ... مقالةَ لهبيٍّ إذا الطيرُ مرّتِ), di mana (خبيرٌ) menurut Kufah adalah mubtada' dan (بنو) fa'il sadda masaddal khabar, sedangkan menurut Bashrah (خبيرٌ) adalah khabar muqaddam yang boleh mufrad karena bermakna jamak seperti mashdar."
+    },
+    {
+      "id_materi": "MAT-2202",
+      "id_bab": "BAB-22",
+      "sub_topik_arab": "مسوغات الابتداء بالنكرة",
+      "sub_topik_indo": "Alasan-Alasan Dibolehkannya Mubtada' Berupa Isim Nakirah (Musawwighat Al-Ibtida' bin-Nakirah)",
+      "kaidah_arab": "الأَصْلُ فِي المُبْتَدَأِ أَنْ يَكُونَ مَعْرِفَةً لِأَنَّ الحُكْمَ عَلَى المَجْهُولِ لَا يُفِيدُ، وَلَا يَجُوزُ الِابْتِدَاءُ بِالنَّكِرَةِ إِلَّا إِذَا حَصَلَتِ الفَائِدَةُ بِمُسَوِّغٍ، وَمِنْ أَشْهَرِ مُسَوِّغَاتِ الِابْتِدَاءِ بِالنَّكِرَةِ: أَنْ تُوصَفَ النَّكِرَةُ لَفْظًا أَوْ تَقْدِيرًا نَحْوُ: ﴿وَلَعَبْدٌ مُؤْمِنٌ خَيْرٌ مِنْ مُشْرِكٍ﴾، أَوْ تُضَافَ نَحْوُ: (عَمَلُ بِرٍّ يَزِينُ)، أَوْ تَقَعَ بَعْدَ نَفْيٍ أَوْ اسْتِفْهَامٍ نَحْوُ: (مَا رَجُلٌ فِي الدَّارِ)، أَوْ يَتَقَدَّمَ عَلَيْهَا خَبَرُهَا وَهُوَ شِبْهُ جُمْلَةٍ نَحْوُ: ﴿وَعَلَى أَبْصَارِهِمْ غِشَاوَةٌ﴾، أَوْ تَدُلَّ عَلَى عُمُومٍ كَـ(كُلٌّ يَمُوتُ) أَوْ دُعَاءٍ كَـ﴿سَلَامٌ عَلَى إِلْ يَاسِينَ﴾.",
+      "penjelasan_indo": "Hukum asal Mubtada' adalah berupa isim Ma'rifah, karena Mubtada' adalah المحكوم عليه (subjek yang dihukumi), dan menghukumi sesuatu yang tidak dikenal (nakirah murni) tidak memberikan faedah baru bagi pendengar. Namun, isim Nakirah BOLEH menjadi Mubtada' apabila memberikan faedah (إفادة), yang secara garis besar kembali pada dua hal utama: adanya pengkhususan (التخصيص) atau adanya keumuman (العموم).",
+      "rincian_hukum_dan_syarat": [
+        "1. Nakirah dikhususkan dengan sifat/na'at (موصوفة), baik sifatnya disebutkan secara lafazh seperti: (ولعبدٌ مؤمنٌ خيرٌ من مشركٍ) maupun ditakdirkan seperti: (السمنُ منوانِ بدرهمٍ) yakni (منوانِ منه).",
+        "2. Nakirah dikhususkan dengan idhafah kepada nakirah lain (مضافة إلى نكرة), seperti sabda Nabi: (خمسُ صلواتٍ كتبهنّ اللهُ على العباد).",
+        "3. Nakirah beramal terhadap kata setelahnya (عاملة فيما بعدها), seperti: (رغبةٌ في الخيرِ خيرٌ) atau (أمرٌ بمعروفٍ صدقةٌ).",
+        "4. Nakirah didahului oleh Nafi atau Istifham (مسبوقة بنفي أو استفهام) sehingga berfaedah umum, seperti: (ما رجلٌ في الدارِ) dan (أإلهٌ مع اللهِ؟).",
+        "5. Khabar berupa Syibhul Jumlah (zharaf atau jar majrur) yang didahulukan atas Mubtada' nakirah, seperti: (في الدارِ رجلٌ) dan (ولدينا مزيدٌ).",
+        "6. Nakirah bermakna doa (دالة على دعاء) baik kebaikan maupun keburukan, seperti: (سلامٌ على إل ياسين) dan (ويلٌ للمطففين).",
+        "7. Nakirah termasuk kata yang memiliki hak الصدارة (permulaan kalimat) atau bermakna syarat/ta'ajjub, seperti: (مَنْ يقمْ أقمْ معه) dan (ما أحسنَ زيداً!).",
+        "8. Nakirah terletak setelah إِذَا الفجائية (Idza bermakna tiba-tiba) atau لَوْلَا, seperti: (خرجتُ فإذا أسدٌ بالبابِ) dan (لولا اصطبارٌ لأودى كلُّ ذي مقةٍ).",
+        "9. Nakirah dimaksudkan untuk التنوع والتفصيل (perincian/pembagian), seperti: (يومٌ لنا ويومٌ علينا)."
+      ],
+      "rumus_ringkas": "Mubtada' Nakirah = Boleh jika memberi faedah melalui Takhshish (Washf, Idhafah, 'Amal) atau 'Umum (didahului Nafi/Istifham) atau Taqdim Khabar Syibhul Jumlah.",
+      "tanbihat_dan_khilaf": "Imam Sibawaih merangkum seluruh musawwighat (yang oleh sebagian ulama dirinci hingga lebih dari 30 poin) ke dalam satu kaidah emas: (حصول الفائدة) yaitu tercapainya faedah makna yang dapat diterima akal lawan bicara dan tidak membuat kalimat menjadi sia-sia."
+    },
+    {
+      "id_materi": "MAT-2203",
+      "id_bab": "BAB-22",
+      "sub_topik_arab": "أنواع الخبر: المفرد، والجملة وشروط الرابط، وشبه الجملة",
+      "sub_topik_indo": "Tiga Jenis Khabar: Mufrad, Jumlah (Beserta 4 Jenis Rabith), dan Syibhul Jumlah",
+      "kaidah_arab": "الخَبَرُ: هُوَ الجُزْءُ المُنْتَظِمُ مِنْهُ مَعَ المُبْتَدَأِ جُمْلَةٌ مُفِيدَةٌ، وَالأَصْلُ فِيهِ أَنْ يَكُونَ مَرْفُوعًا بِالمُبْتَدَأِ. وَيَنْقَسِمُ إِلَى ثَلَاثَةِ أَقْسَامٍ: 1) مُفْرَدٌ (مَا لَيْسَ جُمْلَةً وَلَا شِبْهَ جُمْلَةٍ وَلَوْ كَانَ مُثَنًّى أَوْ مَجْمُوعًا). 2) جُمْلَةٌ (اسْمِيَّةٌ أَوْ فِعْلِيَّةٌ، وَيُشْتَرَطُ فِيهَا رَابِطٌ يَرْبِطُهَا بِالمُبْتَدَأِ: كَالضَّمِيرِ، أَوِ اسْمِ الإِشَارَةِ، أَوْ إِعَادَةِ لَفْظِ المُبْتَدَأِ، أَوْ عُمُومٍ يَدْخُلُ فِيهِ المُبْتَدَأُ). 3) شِبْهُ جُمْلَةٍ (الظَّرْفُ أَوِ الجَارُّ وَالمَجْرُورُ التَّامَّانِ المُتَعَلِّقَانِ بِكَائِنٍ أَوْ اسْتَقَرَّ مَحْذُوفًا).",
+      "penjelasan_indo": "Khabar adalah bagian yang menyempurnakan faedah bersama Mubtada'. Khabar terbagi menjadi tiga jenis:\n1. Khabar Mufrad: Yaitu khabar yang bukan jumlah dan bukan syibhul jumlah (meskipun secara bilangan berupa mutsanna atau jamak). Jika berupa isim جامد (bukan musytaq), ia tidak mengandung dhamir; jika berupa isim مشتق (seperti isim fa'il/maf'ul), ia mengandung dhamir mustatir yang kembali ke mubtada'.\n2. Khabar Jumlah: Baik Jumlah Ismiyyah (الحديقةُ أشجارُها مثمرةٌ) maupun Jumlah Fi'liyyah (اللهُ يبسطُ الرزقَ). Apabila jumlah khabar tersebut bukan merupakan dzat/makna yang sama persis dengan mubtada', maka WAJIB memiliki penghubung (الرابط).\n3. Khabar Syibhul Jumlah: Berupa Zharaf (tempat/waktu) atau Jar-Majrur yang تام (memberikan faedah sempurna). Pada hakikatnya, syibhul jumlah berkaitan (متعلق) dengan khabar yang dibuang yang wajib ditakdirkan dengan (كائنٌ / مستقرٌّ) atau (كان / استقرّ).",
+      "rincian_hukum_dan_syarat": [
+        "Empat Jenis Rabith (Penghubung) pada Khabar Jumlah:",
+        "1. Dhamir (الضمير) yang kembali kepada Mubtada', baik zhahir seperti (زيدٌ أبوهُ كريمٌ), mustatir seperti (زيدٌ قامَ), maupun muqaddar/mahdzuf seperti (السمنُ منوانِ بدرهمٍ) yakni (منوانِ منه).",
+        "2. Isim Isyarah (اسم الإشارة) yang menunjuk kepada Mubtada', seperti firman Allah: (ولباسُ التقوى ذلكَ خيرٌ).",
+        "3. Pengulangan Mubtada' dengan lafazhnya (إعادة المبتدأ بلفظه) untuk tujuan تفخيم (pengagungan) atau تهويل (menakut-nakuti), seperti: (الحاقةُ ما الحاقةُ) dan (القارعةُ ما القارعةُ).",
+        "4. العموم (Keumuman) yang mencakup Mubtada', seperti: (زيدٌ نِعْمَ الرجلُ) karena (الرجل) mencakup Zaid.",
+        "Adapun jika Jumlah Khabar adalah عين المبتدأ في المعنى (maknanya adalah mubtada' itu sendiri), maka TIDAK butuh rabith, seperti: (نطقي اللهُ حسبي) dan (دعائي الحمدُ للهِ).",
+        "Syarat Zharaf Zaman menjadi Khabar: Zharaf tempat (makan) boleh menjadi khabar bagi mubtada' dzat (الكتابُ فوقَ المكتبِ) maupun mubtada' makna (العلمُ في الصدورِ). Namun Zharaf waktu (zaman) TIDAK BOLEH menjadi khabar bagi mubtada' dzat (tidak boleh: زيدٌ اليومَ), kecuali jika mubtada'nya adalah isim makna/mashdar (الصومُ اليومَ) atau mubtada' dzat yang ditakwilkan ke makna, seperti (الليلةَ الهلالُ) yakni (طلوعُ الهلالِ الليلةَ)."
+      ],
+      "rumus_ringkas": "Khabar = (1) Mufrad | (2) Jumlah [Ismiyyah/Fi'liyyah + Rabith: Dhamir/Isyarah/I'adah/'Umum] | (3) Syibhul Jumlah [Muta'alliq bi-Mahdzuf: Ka'inun/Istaqarra].",
+      "tanbihat_dan_khilaf": "Terkait Khabar Syibhul Jumlah, mayoritas ulama Bashrah berpendapat bahwa khabar hakikinya adalah kata yang dibuang (كائنٌ أو استقرّ), sedangkan zharaf/jar-majrur hanyalah muta'alluq-nya. Sementara Ibnu Malik dan sebagian ulama membolehkan penyebutan bahwa zharaf/jar-majrur itu sendiri yang telah menempati posisi khabar (انتقل الضمير من المحذوف إلى الظرف)."
+    },
+    {
+      "id_materi": "MAT-2204",
+      "id_bab": "BAB-22",
+      "sub_topik_arab": "تعدد الخبر لمبتدأ واحد",
+      "sub_topik_indo": "Berbilangnya Khabar untuk Satu Mubtada' (Ta'addudul Khabar)",
+      "kaidah_arab": "يَجُوزُ أَنْ يَتَعَدَّدَ الخَبَرُ لِمُبْتَدَأٍ وَاحِدٍ دُونَ حَرْفِ عَطْفٍ، سَوَاءٌ كَانَ الخَبَرُ مُفْرَدًا أَوْ جُمْلَةً أَوْ شِبْهَ جُمْلَةٍ، مِثْلَ قَوْلِهِ تَعَالَى: ﴿وَهُوَ الغَفُورُ الوَدُودُ * ذُو العَرْشِ المَجِيدُ * فَعَّالٌ لِمَا يُرِيدُ﴾، فَهَذِهِ كُلُّهَا أَخْبَارٌ مُتَتَابِعَةٌ لِلْمُبْتَدَأِ (هُوَ). فَإِنْ دَخَلَ حَرْفُ العَطْفِ كَانَ الثَّانِي مَعْطُوفًا لَا خَبَرًا مُسْتَقِلًّا فِي الإِعْرَابِ اللَّفْظِيِّ.",
+      "penjelasan_indo": "Sebagaimana satu sifat (na'at) boleh berbilang untuk satu maushuf, Khabar juga boleh berbilang (lebih dari satu) untuk satu Mubtada', baik dengan perantara huruf 'athaf maupun tanpa huruf 'athaf.",
+      "rincian_hukum_dan_syarat": [
+        "Tiga Kategori Ta'addudul Khabar:",
+        "1. Berbilang secara lafazh dan makna (تعدد لفظاً ومعنى): Masing-masing khabar dapat berdiri sendiri memberikan hukum pada mubtada'. Contohnya firman Allah: (وهوَ الغفورُ الودودُ * ذو العرشِ المجيدُ * فعّالٌ لما يريدُ). Di sini boleh tanpa huruf 'athaf (seperti ayat tersebut) dan boleh pula dengan 'athaf.",
+        "2. Berbilang secara lafazh namun satu secara makna (تعدد لفظاً لا معنى) karena kedua kata membentuk satu pengertian gabungan, seperti: (هذا حلوٌ حامضٌ) yang bermakna (مزّ / asam-manis), atau (أعزُّ مكانٍ في الدنا سرجُ سابحٍ). Dalam kategori ini TIDAK BOLEH dipisah dengan huruf 'athaf karena maknanya satu kesatuan.",
+        "3. Berbilang karena mubtada'nya mutsanna atau jamak yang dirinci bagian-bagiannya, seperti: (الكتابانِ فقهٌ ونحوٌ) atau ucapan penyair: (يداكَ يدٌ خيرُها يُرتجى ... وأخرى لأعدائِها غائظةْ). Dalam kategori ini WAJIB menggunakan huruf 'athaf."
+      ],
+      "rumus_ringkas": "Ta'addudul Khabar: (1) Lafzhan wa Ma'nan -> Boleh tanpa/dengan 'Athaf | (2) Makna gabungan (seperti حلو حامض) -> Wajib tanpa 'Athaf | (3) Perincian bagian mubtada' -> Wajib dengan 'Athaf.",
+      "tanbihat_dan_khilaf": "Sebagian ulama yang menolak ta'addudul khabar tanpa huruf 'athaf menakwilkan kata kedua dan seterusnya pada (وهو الغفور الودود) sebagai khabar dari mubtada' yang dibuang, atau sebagai na'at. Namun pendapat jumhur (termasuk Ibnu Malik dan Ibnu Hisyam) adalah boleh secara mutlak tanpa perlu takwil karena Khabar menyerupai Na'at dalam memberi hukum."
+    },
+    {
+      "id_materi": "MAT-2301",
+      "id_bab": "BAB-23",
+      "sub_topik_arab": "مواضع وجوب تقديم المبتدأ على الخبر",
+      "sub_topik_indo": "Empat Tempat Wajib Mendahulukan Mubtada' atas Khabar (Wujub Taqdimil Mubtada')",
+      "kaidah_arab": "يَجِبُ تَقْدِيمُ المُبْتَدَأِ عَلَى الخَبَرِ فِي أَرْبَعَةِ مَوَاضِعَ رَئِيسَةٍ: 1) إِذَا كَانَ المُبْتَدَأُ وَالخَبَرُ مَعْرِفَتَيْنِ أَوْ نَكِرَتَيْنِ مُتَسَاوِيَتَيْنِ فِي التَّعْرِيفِ وَالتَّخْصِيصِ وَلَا قَرِينَةَ تُعَيِّنُ أَحَدَهُمَا كَـ(زَيْدٌ أَخُوكَ). 2) إِذَا كَانَ الخَبَرُ جُمْلَةً فِعْلِيَّةً فَاعِلُهَا ضَمِيرٌ مُسْتَتِرٌ يَعُودُ عَلَى المُبْتَدَأِ نَحْوُ: (زَيْدٌ قَامَ). 3) إِذَا كَانَ المُبْتَدَأُ مِنْ أَسْمَاءِ الصَّدَارَةِ (كَأَسْمَاءِ الشَّرْطِ وَالاسْتِفْهَامِ وَمَا التَّعَجُّبِيَّةِ وَكَمِ الخَبَرِيَّةِ). 4) إِذَا اقْتَرَنَ المُبْتَدَأُ بِلَامِ الِابْتِدَاءِ نَحْوُ: ﴿لَأَنْتُمْ أَشَدُّ رَهْبَةً﴾، أَوْ انْحَصَرَ فِيهِ الخَبَرُ بِـ(إِنَّمَا) أَوْ (إِلَّا) نَحْوُ: (إِنَّمَا زَيْدٌ كَاتِبٌ).",
+      "penjelasan_indo": "Pada dasarnya urutan kalimat ismiyyah adalah Mubtada' lalu Khabar, namun boleh dibalik jika tidak menimbulkan kerancuan. Akan tetapi, Mubtada' WAJIB didahulukan atas Khabar pada beberapa kondisi spesifik.",
+      "rincian_hukum_dan_syarat": [
+        "1. Mubtada' termasuk lafazh yang memiliki hak الصدارة (wajib di awal kalimat), yang meliputi 5 hal: (a) Isim Istifham (مَنْ عندكَ؟), (b) Isim Syarat (مَنْ يجتهدْ ينجحْ), (c) Ma Ta'ajjubiyyah (ما أجملَ السماءَ!), (d) Kam Khabariyyah (كمْ كتابٍ عندي!), (e) Mubtada' yang bersambung dengan Lamul Ibtida' (لَزيدٌ قائمٌ).",
+        "2. Mubtada' menyerupai isim syarat dalam keumuman dan masuknya Fa' pada khabarnya, seperti Isim Maushul atau Nakirah yang disifati dengan jumlah/syibhul jumlah: (الذي يأتيني فلهُ درهمٌ).",
+        "3. Khabar diringkas/dibatasi (محصور) pada Mubtada' dengan إِنَّمَا atau إِلَّا (قصر الصفة على الموصوف), seperti: (إنما المؤمنونَ إخوةٌ) dan (ما محمدٌ إلا رسولٌ).",
+        "4. Mubtada' dan Khabar sama-sama Ma'rifah atau sama-sama Nakirah yang setara tingkatannya tanpa ada قرينة (indikasi) yang membedakan mana subjek dan mana predikat, sehingga jika dibalik akan merubah makna, seperti: (زيدٌ أخوكَ) dan (أفضلُ منكَ أفضلُ مني). Termasuk juga dalam poin ke-4: jika Khabar berupa jumlah fi'liyyah yang fa'ilnya adalah dhamir mustatir yang kembali ke mubtada' seperti (زيدٌ قامَ), karena jika didahulukan menjadi (قامَ زيدٌ), maka (زيدٌ) berubah menjadi Fa'il, bukan lagi Mubtada'."
+      ],
+      "rumus_ringkas": "Wajib Taqdim Mubtada': (1) Lafazh Shadarah (Istifham, Syarat, Ma Ta'ajjub, Kam Khabariyyah, Lam Ibtida') | (2) Musyabbah bisy-Syarth | (3) Khabar Mahshur bi-Innama/Illa | (4) Khauf اللبس / Khabar Fi'il ber-dhamir mustatir.",
+      "tanbihat_dan_khilaf": "Apabila Mubtada' dan Khabar sama-sama Ma'rifah TETAPI terdapat qarinah (indikasi makna) yang jelas sehingga tidak tertukar, maka BOLEH mendahulukan khabar, seperti ucapan penyair: (بنونا بنو أبنائنا وبناتُنا ... بنوهنّ أبناءُ الرجالِ الأباعدِ), di mana (بنونا) adalah khabar muqaddam dan (بنو أبنائنا) adalah mubtada' muakhkhar karena maksudnya adalah menyamakan cucu laki-laki dari anak laki-laki seperti anak kandung sendiri."
+    },
+    {
+      "id_materi": "MAT-2302",
+      "id_bab": "BAB-23",
+      "sub_topik_arab": "مواضع وجوب تقديم الخبر على المبتدأ",
+      "sub_topik_indo": "Empat Tempat Wajib Mendahulukan Khabar atas Mubtada' (Wujub Taqdimil Khabar)",
+      "kaidah_arab": "يَجِبُ تَقْدِيمُ الخَبَرِ عَلَى المُبْتَدَأِ فِي أَرْبَعَةِ مَوَاضِعَ رَئِيسَةٍ: 1) إِذَا كَانَ الخَبَرُ شِبْهَ جُمْلَةٍ وَالمُبْتَدَأُ نَكِرَةً غَيْرَ مَخْصُوصَةٍ نَحْوُ: (فِي الدَّارِ رَجُلٌ). 2) إِذَا كَانَ فِي المُبْتَدَأِ ضَمِيرٌ يَعُودُ عَلَى شَيْءٍ فِي الخَبَرِ لِئَلَّا يَعُودَ الضَّمِيرُ عَلَى مُتَأَخِّرٍ لَفْظًا وَرُتْبَةً نَحْوُ: ﴿أَمْ عَلَى قُلُوبٍ أَقْفَالُهَا﴾. 3) إِذَا كَانَ الخَبَرُ لَهُ صَدَارَةُ الكَلَامِ كَأَسْمَاءِ الاسْتِفْهَامِ نَحْوُ: (أَيْنَ المَفَرُّ؟ مَتَى نَصْرُ اللهِ؟). 4) إِذَا كَانَ المُبْتَدَأُ مَحْصُورًا بِـ(إِنَّمَا) أَوْ (إِلَّا) نَحْوُ: (إِنَّمَا فِي المَسْجِدِ زَيْدٌ).",
+      "penjelasan_indo": "Khabar WAJIB didahulukan atas Mubtada' (dan Mubtada' wajib diakhirkan) apabila terdapat salah satu dari empat penghalang yang melarang Mubtada' berada di depan.",
+      "rincian_hukum_dan_syarat": [
+        "1. Mubtada' berupa isim Nakirah غير مفيدة (nakirah murni yang tidak memiliki musawwigh selain taqdim khabar), sedangkan Khabarnya berupa Syibhul Jumlah (zharaf atau jar-majrur), seperti: (في الدارِ رجلٌ) dan (وفوقَ كلِّ ذي علمٍ عليمٌ). Jika mubtada' nakirah tersebut memiliki sifat/musawwigh lain, maka hukumnya menjadi JAIZ (boleh taqdim atau ta'khir), seperti: (في الدارِ رجلٌ كريمٌ / رجلٌ كريمٌ في الدارِ).",
+        "2. Pada Mubtada' melekat dhamir yang kembali kepada bagian dari Khabar (في المبتدأ ضمير يعود على ملابِس الخبر), seperti: (في الدارِ صاحبُها) dan (أمْ على قلوبٍ أقفالُها). Jika mubtada' didahulukan menjadi (صاحبُها في الدارِ), maka dhamir akan kembali kepada lafazh yang terletak di belakangnya secara lafazh dan rutbah (عود الضمير على متأخر لفظاً ورتبة), dan hal itu terlarang.",
+        "3. Khabar termasuk lafazh yang memiliki hak الصدارة (seperti Isim Istifham atau mudhaf kepada Isim Istifham), seperti: (أينَ المفرُّ؟)، (متى نصرُ اللهِ؟)، dan (صبيحةَ أيِّ يومٍ سفرُكَ؟).",
+        "4. Mubtada' dibatasi/diringkas (محصور) pada Khabar dengan إِنَّمَا atau إِلَّا (قصر الموصوف على الصفة), seperti: (إنما في الدارِ زيدٌ) dan (ما فائزٌ إلا المجتهدُ)."
+      ],
+      "rumus_ringkas": "Wajib Taqdim Khabar: (1) Khabar Syibhul Jumlah + Mubtada' Nakirah Mahdhah | (2) Di Mubtada' ada dhamir kembali ke Khabar | (3) Khabar memiliki hak Shadarah (Istifham) | (4) Mubtada' Mahshur bi-Innama/Illa.",
+      "tanbihat_dan_khilaf": "Dalam contoh klasik (في الدارِ صاحبُها), dhamir (ها) kembali ke (الدار) yang merupakan bagian dari khabar. Namun dalam kalimat seperti (أصحابَ الجنةِ همُ الفائزونَ) tidak masalah, dan dalam masalah (في بيتهِ يؤتى الحكمُ) terjadi pembahasan menarik karena rutbah maf'ul di belakang fa'il."
+    },
+    {
+      "id_materi": "MAT-2303",
+      "id_bab": "BAB-23",
+      "sub_topik_arab": "مواضع وجوب حذف المبتدأ ووجوب حذف الخبر",
+      "sub_topik_indo": "Empat Tempat Wajib Membuang Mubtada' dan Empat Tempat Wajib Membuang Khabar",
+      "kaidah_arab": "يَجِبُ حَذْفُ المُبْتَدَأِ فِي أَرْبَعَةِ مَوَاضِعَ: إِذَا كَانَ الخَبَرُ نَعْتًا مَقْطُوعًا لِلْمَدْحِ أَوِ الذَّمِّ أَوِ التَّرَحُّمِ، أَوْ مَصْدَرًا نَائِبًا عَنْ فِعْلِهِ نَحْوُ: ﴿فَصَبْرٌ جَمِيلٌ﴾، أَوْ مَشْعِرًا بِالقَسَمِ كَـ(فِي ذِمَّتِي لَأَفْعَلَنَّ)، أَوْ كَانَ مَخْصُوصَ (نِعْمَ وَبِئْسَ) مُؤَخَّرًا. وَيَجِبُ حَذْفُ الخَبَرِ فِي أَرْبَعَةِ مَوَاضِعَ: بَعْدَ (لَوْلَا) الامْتِنَاعِيَّةِ إِذَا كَانَ كَوْنًا عَامًّا نَحْوُ: ﴿وَلَوْلَا فَضْلُ اللهِ عَلَيْكُمْ وَرَحْمَتُهُ﴾، وَبَعْدَ صَرِيحِ القَسَمِ كَـ(لَعَمْرُكَ لَأَجْتَهِدَنَّ)، وَبَعْدَ وَاوِ المَعِيَّةِ المَسْبُوقَةِ بِمُبْتَدَأٍ كَـ(كُلُّ رَجُلٍ وَضَيْعَتُهُ)، وَإِذَا كَانَ المُبْتَدَأُ مَصْدَرًا أَوْ اسْمَ تَفْضِيلٍ مَعْمُولُهُ حَالٌ سَدَّتْ مَسَدَّ الخَبَرِ كَـ(ضَرْبِي العَبْدَ مُسِيئًا).",
+      "penjelasan_indo": "Mubtada' atau Khabar boleh dibuang (جوازاً) jika ada indikasi kalimat, seperti jawaban atas pertanyaan (مَنْ في الدارِ؟ -> زيدٌ، أي: زيدٌ في الدارِ). Namun pembuangan tersebut menjadi WAJIB (وجوباً) pada tempat-tempat قياسية berikut.",
+      "rincian_hukum_dan_syarat": [
+        "A. Empat Tempat WAJIB Membuang Mubtada' (وجوب حذف المبتدأ):",
+        "1. Setelah Na'at yang diputus i'rabnya menjadi rafa' (النعت المقطوع إلى الرفع) untuk tujuan pujian (مدح), celaan (ذم), atau belas kasihan (ترحم), seperti: (مررتُ بزيدٍ الكريمُ) atau (الحمدُ للهِ الحميدُ), takdirnya: (هوَ الكريمُ / هوَ الحميدُ).",
+        "2. Jika Khabar adalah المخصوص بالمدح أو الذم setelah نِعْمَ dan بِئْسَ yang diakhirkan, seperti: (نِعْمَ الرجلُ الصادقُ), jika kita meng-i'rab (الصادقُ) sebagai khabar bagi mubtada' mahdzuf (هوَ الصادقُ).",
+        "3. Jika Khabar berupa teks sumpah yang tidak sharih (مشعر بالقسم), seperti: (في ذمتي لأفعلنّ), takdirnya: (في ذمتي عهدٌ أو يمينٌ).",
+        "4. Jika Khabar berupa Mashdar yang menggantikan fi'ilnya (مصدر نائب عن فعله), seperti: (فصبرٌ جميلٌ) dan (سمعٌ وطاعةٌ), takdirnya: (أمري صبرٌ جميلٌ / أمري سمعٌ وطاعةٌ).",
+        "B. Empat Tempat WAJIB Membuang Khabar (وجوب حذف الخبر):",
+        "1. Apabila Mubtada' terletak setelah لَوْلَا dan khabarnya berupa كون عام (keberadaan mutlak), seperti: (لولا اللهُ ما اهتدينا), takdirnya: (لولا اللهُ موجودٌ). Jika khabarnya berupa كون خاص (keberadaan khusus yang tidak diketahui tanpa disebutkan), maka khabarnya WAJIB disebutkan, seperti hadits: (لولا قومُكِ حديثو عهدٍ بكفرٍ لأسستُ البيتَ على قواعدِ إبراهيمَ).",
+        "2. Apabila Mubtada' berupa lafazh yang sharih dalam sumpah (نصٌّ في القسم), seperti: (لعمرُكَ إنهم لفي سكرتهم يعمهون) dan (يمينُ اللهِ لأجتهدنّ), takdirnya: (لعمرُكَ قسمي / يمينُ اللهِ قسمي).",
+        "3. Apabila Mubtada' di-'athafkan dengan Wawu yang bermakna مَعَ (واو المعية / المصاحبة), seperti: (كلُّ رجلٍ وضيعتُهُ) dan (كلُّ جنديٍّ وسلاحُهُ), takdirnya: (مقترنانِ).",
+        "4. Apabila Mubtada' berupa mashdar (atau isim tafdhil yang mudhaf ke mashdar) dan setelahnya terdapat Hal yang tidak pantas menjadi khabar tetapi menempati posisi khabar (حال سدت مسد الخبر), seperti: (ضربي العبدَ مسيئاً) dan (أكثرُ شربي السويقَ ملتوتاً), takdirnya: (إذْ كانَ مسيئاً)."
+      ],
+      "rumus_ringkas": "Wajib Hadzf Mubtada': (1) Na'at Maqthu', (2) Makhshush Ni'ma/Bi'sa, (3) Khabar Syibhu Qasam, (4) Mashdar Na'ib 'an Fi'lihi. | Wajib Hadzf Khabar: (1) Ba'da Lawla (Kaun 'Am), (2) Mubtada' Sharih Qasam, (3) Ba'da Wawu Ma'iyyah, (4) Sebelum Hal Sadda Masaddal Khabar.",
+      "tanbihat_dan_khilaf": "Pada kasus (ضربي العبدَ مسيئاً), kata (مسيئاً) adalah Hal dari (العبد) atau dari dhamir di jumlah khabar yang dibuang, dan ia tidak sah menjadi khabar dari (ضربي) karena pukulan bukanlah orang yang berbuat buruk."
+    },
+    {
+      "id_materi": "MAT-2304",
+      "id_bab": "BAB-23",
+      "sub_topik_arab": "اقتران خبر المبتدأ بالفاء لشبه المبتدأ بالشرط",
+      "sub_topik_indo": "Masuknya Fa' pada Khabar karena Mubtada' Menyerupai Isim Syarat",
+      "kaidah_arab": "تَدْخُلُ الفَاءُ جَوَازًا فِي خَبَرِ المُبْتَدَأِ إِذَا كَانَ المُبْتَدَأُ اسْمًا مُوصُولًا صِلَتُهُ فِعْلٌ أَوْ ظَرْفٌ، أَوْ نَكِرَةً مَوْصُوفَةً بِفِعْلٍ أَوْ ظَرْفٍ، لِشَبَهِهِ بِاسْمِ الشَّرْطِ فِي العُمُومِ وَالتَّسَبُّبِ، مِثْلَ قَوْلِهِ تَعَالَى: ﴿الَّذِينَ يُنْفِقُونَ أَمْوَالَهُمْ بِاللَّيْلِ وَالنَّهَارِ سِرًّا وَعَلَانِيَةً فَلَهُمْ أَجْرُهُمْ عِنْدَ رَبِّهِمْ﴾ وَ﴿وَمَا بِكُمْ مِنْ نِعْمَةٍ فَمِنَ اللهِ﴾.",
+      "penjelasan_indo": "Apabila Mubtada' mengandung makna syarat (sebab-akibat dan keumuman), maka khabarnya menyerupai jawab syarat sehingga BOLEH (dan banyak dalam Al-Qur'an) dimasuki huruf Fa' Rabithah. Namun jika dimasuki oleh (أَمَّا) التفصيلية, maka masuknya Fa' pada khabar menjadi WAJIB.",
+      "rincian_hukum_dan_syarat": [
+        "Dua jenis Mubtada' yang menyerupai Isim Syarat (sehingga boleh dimasuki Fa' pada khabarnya):",
+        "1. Isim Maushul yang shilah-nya berupa jumlah fi'liyyah (yang bisa menerima makna syarat) atau zharaf/jar-majrur, dengan syarat tidak dimasuki amil nasikh yang membatalkan makna syarat. Contoh: (الذي يأتيني فلهُ درهمٌ) dan firman Allah: (وما أصابكم من مصيبةٍ فبما كسبتْ أيديكم).",
+        "2. Isim Nakirah umum yang disifati dengan jumlah atau syibhul jumlah, atau mudhaf pada kata (كلّ), seperti: (كلُّ رجلٍ يأتيني فلهُ درهمٌ).",
+        "Pengaruh Amil Nasikh terhadap Fa' Khabar:",
+        "- Jika dimasuki إِنَّ، أَنَّ، atau لَكِنَّ: Fa' TETAP BOLEH masuk pada khabarnya, seperti firman Allah: (إنّ الذينَ قالوا ربُّنا اللهُ ثم استقاموا فلا خوفٌ عليهم) dan (واعلموا أنّ ما غنمتم من شيءٍ فإنّ للهِ خمسَهُ).",
+        "- Jika dimasuki كَانَ، لَيْتَ، atau لَعَلَّ: Fa' TIDAK BOLEH masuk karena makna syarat menjadi hilang."
+      ],
+      "rumus_ringkas": "Fa' pada Khabar: (1) Wajib setelah أَمَّا (فأما اليتيم فلا تقهر) | (2) Jaiz pada Maushul/Nakirah Maushufah yang bermakna syarat (dan tetap jaiz jika dimasuki Inna/Anna/Lakinna).",
+      "tanbihat_dan_khilaf": "Al-Akhfasy melarang masuknya Fa' pada khabar jika dimasuki Inna, namun pendapat beliau terbantahkan oleh nash Al-Qur'an yang sharih seperti QS. Al-Jumu'ah: 8 (قُلْ إِنَّ الْمَوْتَ الَّذِي تَفِرُّونَ مِنْهُ فَإِنَّهُ مُلَاقِيكُمْ)."
+    },
+    {
+      "id_materi": "MAT-2401",
+      "id_bab": "BAB-24",
+      "sub_topik_arab": "كان وأخواتها: معانيها وشروط عملها والتصرف فيها",
+      "sub_topik_indo": "13 Fi'il Kana wa Akhawatuha: Makna, Syarat Amal, dan Tingkat Tasharrif-nya",
+      "kaidah_arab": "كَانَ وَأَخَوَاتُهَا ثَلَاثَةَ عَشَرَ فِعْلًا نَاسِخًا نَاقِصًا تَدْخُلُ عَلَى الجُمْلَةِ الاسْمِيَّةِ، فَتَرْفَعُ المُبْتَدَأَ وَيُسَمَّى اسْمَهَا، وَتَنْصِبُ الخَبَرَ وَيُسَمَّى خَبَرَهَا. وَتَنْقَسِمُ مِنْ حَيْثُ العَمَلُ إِلَى: 1) مَا يَعْمَلُ بِلَا شَرْطٍ وَهِيَ ثَمَانِيَةٌ: (كَانَ، أَصْبَحَ، أَضْحَى، أَمْسَى، ظَلَّ، بَاتَ، صَارَ، لَيْسَ). 2) مَا يَعْمَلُ بِشَرْطِ تَقَدُّمِ نَفْيٍ أَوْ شِبْهِهِ (نَهْيٍ أَوْ دُعَاءٍ) وَهِيَ أَرْبَعَةٌ: (زَالَ، بَرِحَ، فَتِئَ، انْفَكَّ). 3) مَا يَعْمَلُ بِشَرْطِ تَقَدُّمِ (مَا) المَصْدَرِيَّةِ الظَّرْفِيَّةِ وَهُوَ فِعْلٌ وَاحِدٌ: (دَامَ) كَقَوْلِهِ: ﴿مَا دُمْتُ حَيًّا﴾.",
+      "penjelasan_indo": "Kana dan saudara-saudaranya berjumlah 13 fi'il nasikh yang masuk ke Jumlah Ismiyyah, merafa'kan Mubtada' sebagai Isim-nya, dan menashabkan Khabar sebagai Khabar-nya. Ke-13 fi'il tersebut adalah: (كانَ، أصبحَ، أضحى، ظلَّ، أمسى، باتَ، صارَ، ليسَ، ما زالَ، ما برحَ، ما فتئَ، ما انفكَّ، ما دامَ).",
+      "rincian_hukum_dan_syarat": [
+        "A. Klasifikasi Berdasarkan Syarat Amal (3 Kelompok):",
+        "1. Beramal TANPA SYARAT (8 Fi'il): (كانَ، أصبحَ، أضحى، ظلَّ، أمسى، باتَ، صارَ، ليسَ).",
+        "2. Beramal dengan syarat didahului NAFI atau SYIBHU NAFI (Nahi atau Doa) (4 Fi'il Istimrar): (زالَ [yang mudhari'-nya يَزَالُ]، برحَ، فتئَ، انفكَّ). Keempatnya bermakna senantiasa/terus-menerus (ملازمة الخبر للاسم) karena penggabungan nafi dengan fi'il yang asalnya bermakna nafi (نفي النفي إثبات). Contoh: (لا يزالونَ مختلفينَ)، (تاللهِ تفتأُ تذكرُ يوسفَ) [أي: لا تفتأُ، حذفت لا النافية بعد القسم].",
+        "3. Beramal dengan syarat didahului مَا المصدرية الظرفية (1 Fi'il): (دامَ), di mana (ما دام) ditakwilkan menjadi (مدةَ دوامِ), seperti firman Allah: (وأوصاني بالصلاةِ والزكاةِ ما دمتُ حيّاً).",
+        "B. Klasifikasi Berdasarkan Tasharrif (Perubahan Bentuk Fi'il):",
+        "1. التام التصرف (Berubah sempurna ke Madhi, Mudhari', Amr, Mashdar, Isim Fa'il): 7 fi'il pertama (كان، أصبح، أضحى، ظل، أمسى، بات، صار).",
+        "2. الناقص التصرف (Hanya punya Madhi, Mudhari', dan Isim Fa'il, tanpa Amr dan Mashdar): 4 fi'il istimrar (ما زال، ما برح، ما فتئ، ما انفك).",
+        "3. الجامد (Hanya bentuk Madhi saja): 2 fi'il yaitu (ليسَ) dan (ما دامَ)."
+      ],
+      "rumus_ringkas": "13 Kana: 8 Tanpa Syarat + 4 Syarat Nafi/Syibhu Nafi (Zala, Bariha, Fati'a, Infakka) + 1 Syarat Ma Mashdariyyah Zharfiyyah (Dama).",
+      "tanbihat_dan_khilaf": "Perhatikan perbedaan tiga fi'il (زالَ): (1) زالَ - يَزَالُ (باب تَعِبَ): inilah fi'il naqish saudara Kana; (2) زالَ - يَزُولُ: fi'il tam bermakna lenyap/hilang; (3) زالَ - يَزِيلُ: fi'il tam muta'addi bermakna memisahkan."
+    },
+    {
+      "id_materi": "MAT-2402",
+      "id_bab": "BAB-24",
+      "sub_topik_arab": "استعمال كان وأخواتها تامة وناقصة وأحكام ترتيب خبرها",
+      "sub_topik_indo": "Penggunaan Kana Tam vs Naqish serta Hukum Urutan Khabarnya",
+      "kaidah_arab": "تَنْقَسِمُ أَفْعَالُ هَذَا البَابِ إِلَى تَامَّةٍ (تَكْتَفِي بِمَرْفُوعِهَا فَيَكُونُ فَاعِلًا وَتَسْتَغْنِي عَنِ الخَبَرِ لِتَمَامِ المَعْنَى) نَحْوُ: ﴿فَسُبْحَانَ اللهِ حِينَ تُمْسُونَ وَحِينَ تُصْبِحُونَ﴾، وَنَاقِصَةٍ (لَا تَتِمُّ الفَائِدَةُ بِمَرْفُوعِهَا حَتَّى يُذْكَرَ مَنْصُوبُهَا). وَكُلُّهَا تَأْتِي تَامَّةً مَا عَدَا ثَلَاثَةَ أَفْعَالٍ تُلازِمُ النُّقْصَانَ دَائِمًا وَهِيَ: (لَيْسَ، زَالَ الَّتِي مُضَارِعُهَا يَزَالُ، وَفَتِئَ). وَيَجُوزُ فِي خَبَرِهَا التَّوَسُّطُ بَيْنَ الفِعْلِ وَاسْمِهِ نَحْوُ: ﴿وَكَانَ حَقًّا عَلَيْنَا نَصْرُ المُؤْمِنِينَ﴾.",
+      "penjelasan_indo": "Seluruh saudara Kana dapat digunakan sebagai Fi'il Tam (تامة)—yaitu cukup merafa'kan Fa'il dan tidak membutuhkan khabar manshub—KECUALI tiga fi'il yang selalu Naqishah (ملازمة للنقص) yaitu: (ليسَ، ما فتئَ، ما زالَ).\nContoh penggunaan Tam:\n- (وَإِنْ كَانَ ذُو عُسْرَةٍ فَنَظِرَةٌ إِلَى مَيْسَرَةٍ): (كانَ) bermakna وُجِدَ / حَصَلَ, dan (ذو) adalah Fa'il.\n- (فَسُبْحَانَ اللَّهِ حِينَ تُمْسُونَ وَحِينَ تُصْبِحُونَ): bermakna memasuki waktu sore dan waktu pagi.\n- (خَالِدِينَ فِيهَا مَا دَامَتِ السَّمَاوَاتُ وَالْأَرْضُ): bermakna بَقِيَتْ (selama langit dan bumi masih kekal).",
+      "rincian_hukum_dan_syarat": [
+        "Hukum Urutan Khabar Kana wa Akhawatuha:",
+        "1. Tawasuth (Khabar berada di tengah antara Fi'il Nasikh dan Isimnya): Hukum asalnya JAIZ bagi seluruh 13 fi'il, seperti firman Allah: (وكانَ حقّاً علينا نصرُ المؤمنينَ). Bahkan menjadi WAJIB tawasuth jika di dalam isimnya ada dhamir yang kembali ke khabar (كانَ في الدارِ صاحبُها), dan menjadi TERLARANG (ممتنع) jika takut tertukar seperti (كانَ صاحبي عدوّي).",
+        "2. Taqaddum Khabar atas Fi'il Nasikh itu sendiri (تقدم الخبر على الفعل الناسخ نفسه):",
+        "a) DILARANG (ممتنع) pada: (ليسَ)، (ما دامَ)، serta fi'il istimrar yang didahului oleh (ما) النافية seperti (ما زالَ). Tidak boleh mengatakan: (قائماً ليسَ زيدٌ) atau (حيّاً ما دامَ زيدٌ).",
+        "b) BOLEH (جائز) pada 7 fi'il mutasharrifah (كان، أصبح...) serta 4 fi'il istimrar jika didahului nafi selain (ما) seperti (لم يزل / لا يزال). Contoh: (قائماً كانَ زيدٌ) dan (قائماً لا يزالُ زيدٌ).",
+        "c) WAJIB mendahulukan khabar atas fi'il nasikh jika khabar berupa lafazh yang memiliki hak الصدارة (seperti isim istifham): (أينَ كانَ زيدٌ؟)."
+      ],
+      "rumus_ringkas": "Selalu Naqish = Laisa, Fati'a, Zala. | Khabar mendahului Fi'il Nasikh = Terlarang pada Laisa, Ma Dama, dan yang didahului Ma Nafiyah.",
+      "tanbihat_dan_khilaf": "Terjadi khilaf mengenai taqaddum khabar atas (ليسَ): Jumhur ulama Bashrah dan Kufah melarangnya karena Laisa adalah fi'il jamid yang menyerupai huruf (ما) النافية, sedangkan Ibnu Barhan dan sebagian ulama membolehkannya dengan berdalil firman Allah: (أَلَا يَوْمَ يَأْتِيهِمْ لَيْسَ مَصْرُوفًا عَنْهُمْ) karena ma'mul khabar (يومَ يأتيهم) mendahului Laisa; namun jumhur menjawab bahwa (يوم) adalah zharaf yang muta'alliq dengan mahdzuf atau bahwa kaidah untuk zharaf lebih longgar."
+    },
+    {
+      "id_materi": "MAT-2403",
+      "id_bab": "BAB-24",
+      "sub_topik_arab": "خصائص (كان) من بين أخواتها",
+      "sub_topik_indo": "Karakteristik Khusus (Khasha'ish) Lafazh Kana Dibandingkan Saudara-Saudaranya",
+      "kaidah_arab": "تَخْتَصُّ (كَانَ) بَيْنَ أَخَوَاتِهَا بِأَحْكَامٍ فَرِيدَةٍ: 1) جَوَازُ زِيَادَتِهَا بَيْنَ شَيْئَيْنِ مُتَلَازِمَيْنِ لَيْسَا جَارًّا وَمَجْرُورًا نَحْوُ: (مَا كَانَ أَحْسَنَ زَيْدًا!). 2) جَوَازُ حَذْفِهَا مَعَ اسْمِهَا وَإِبْقَاءِ خَبَرِهَا كَثِيرًا بَعْدَ (إِنْ) وَ(لَوْ) الشَّرْطِيَّتَيْنِ كَحَدِيثِ: «التَمِسْ وَلَوْ خَاتَمًا مِنْ حَدِيدٍ». 3) جَوَازُ حَذْفِ نُونِ مُضَارِعِهَا المَجْزُومِ بِالسُّكُونِ تَخْفِيفًا بِشَرْطِ أَلَّا يَلِيَهُ سَاكِنٌ وَلَا ضَمِيرُ نَصْبٍ مُتَّصِلٌ نَحْوُ: ﴿وَلَمْ أَكُ بَغِيًّا﴾.",
+      "penjelasan_indo": "Karena seringnya penggunaan (كَانَ) dalam kalam Arab dan luasnya maknanya sebagai induk bab ini (أمّ الباب), orang Arab memberikan empat keringanan dan keistimewaan khusus bagi (كان) yang tidak dimiliki oleh saudara-saudaranya.",
+      "rincian_hukum_dan_syarat": [
+        "1. Ziyadah Kana (زيادة كان): Boleh ditambahkan sebagai tambahan penguat makna (زائدة للتوكيد لا عمل لها) dengan dua syarat: (a) Berbentuk fi'il Madhi, dan (b) Terletak di antara dua kata yang saling berkaitan erat (بين متلازمين) yang bukan jar-majrur, paling banyak di antara (ما) التعجبية dan fi'il ta'ajjub, seperti: (ما كانَ أعدلَ عمرَ!), atau antara Mubtada' dan Khabar (زيدٌ كانَ فاضلٌ), atau antara Shilah dan Maushul.",
+        "2. Pembuangan Nun pada Mudhari'-nya yang Majzum (حذف نون مضارعها المجزوم): Lafazh (يَكُنْ، تَكُنْ، أَكُنْ، نَكُنْ) boleh dibuang huruf Nun-nya menjadi (يَكُ، تَكُ، أَكُ، نَكُ) untuk meringankan bacaan dengan 4 syarat: (a) Berbentuk mudhari' majzum dengan sukun, (b) Tidak bertemu dengan huruf sukun setelahnya (tidak boleh di: لم يكنِ اللهُ ليغفرَ لهم), (c) Tidak bersambung dengan dhamir nashab muttashil (tidak boleh di: إنْ يكنْهُ فلن تسلطَ عليه), dan (d) Tidak berhenti (waqaf) padanya. Contoh: (ولمْ أكُ بغيّاً) dan (وإنْ تكُ حسنةً يضاعفْها).",
+        "3. Pembuangan Kana bersama Isimnya (حذف كان مع اسمها وبقاء خبرها): Banyak terjadi setelah (إِنْ) dan (لَوْ) الشرطيتين, seperti: (الناسُ مجزيونَ بأعمالهم، إنْ خيراً فخيرٌ، وإنْ شرّاً فشرٌّ) yakni (إنْ كانَ عملُهم خيراً), dan hadits: (التمسْ ولو خاتماً من حديدٍ) yakni (ولو كانَ الملتمَسُ خاتماً).",
+        "4. Pembuangan Kana saja setelah (أَنْ) المصدرية dan digantikan oleh (مَا) الزائدة: Seperti dalam kalimat (أمّا أنتَ منطلقاً انطلقتُ), asalnya: (لأنْ كنتَ منطلقاً) -> Kana dibuang sehingga dhamir muttashil (تَ) berubah menjadi munfashil (أنتَ), lalu didatangkan (ما) sebagai pengganti Kana, dan diidghamkan (أنْ + ما = أمّا)."
+      ],
+      "rumus_ringkas": "4 Khasha'ish Kana: (1) Ziyadah bi-Lafzhi Madhi baina Mutalazimain | (2) Hadzf Nun (لم يكُ) dengan 4 syarat | (3) Hadzf Kana + Isimnya setelah إِنْ dan لَوْ | (4) Hadzf Kana diganti مَا setelah أَنْ (أمّا أنتَ منطلقاً).",
+      "tanbihat_dan_khilaf": "Syahid syair terkenal untuk hadzf Kana bersama isimnya setelah (لَوْ) adalah: (لا يأمنِ الدهرَ ذو بغيٍ ولو ملكاً ... جنودُهُ ضاقَ عنها السهلُ والجبلُ), yakni (ولو كانَ الباغي ملكاً)."
+    },
+    {
+      "id_materi": "MAT-2404",
+      "id_bab": "BAB-24",
+      "sub_topik_arab": "الحروف المشبهة بليس: (ما، لا، لاتَ، إنْ) وشروط عملها",
+      "sub_topik_indo": "Empat Huruf yang Beramal Seperti Laisa: Ma Hijaziyyah, La, Lata, dan In Nafiyah",
+      "kaidah_arab": "الحُرُوفُ المُشَبَّهَةُ بِـ(لَيْسَ) أَرْبَعَةُ أَحْرُفٍ تَعْمَلُ عَمَلَهَا فِي رَفْعِ الاسْمِ وَنَصْبِ الخَبَرِ: 1) (مَا) الحِجَازِيَّةُ بِشُرُوطِهَا (أَلَّا يَقْتَرِنَ اسْمُهَا بِإِنْ الزَّائِدَةِ، وَأَلَّا يُنْقَضَ نَفْيُ خَبَرِهَا بِإِلَّا) كَقَوْلِهِ تَعَالَى: ﴿مَا هَذَا بَشَرًا﴾. 2) (لَا) النَّافِيَةُ لِلْوَاحِدِ (بِشَرْطِ تَنْكِيرِ مَعْمُولَيْهَا). 3) (لَاتَ) وَتَخْتَصُّ بِحِينِ الزَّمَانِ مَعَ حَذْفِ أَحَدِ مَعْمُولَيْهَا غَالِبًا نَحْوُ: ﴿وَلَاتَ حِينَ مَنَاصٍ﴾. 4) (إِنْ) النَّافِيَةُ عَلَى لُغَةِ أَهْلِ العَالِيَةِ.",
+      "penjelasan_indo": "Terdapat empat huruf nafi yang diserupakan dengan (لَيْسَ) karena kesamaan makna penafian keadaan saat ini (نفي الحال). Keempat huruf ini merafa'kan isim dan menashabkan khabar dengan syarat-syarat ketat (sedangkan menurut Bani Tamim, huruf-huruf ini selain Lata tidak beramal / مهملة).",
+      "rincian_hukum_dan_syarat": [
+        "1. مَا الحجازية: Beramal seperti Laisa dengan 4 syarat: (a) Tidak ditambah dengan (إنْ) الزائدة setelahnya (jika ditambah seperti: ما إنْ زيدٌ قائمٌ، maka batal amalnya), (b) Penafiannya tidak dibatalkan oleh (إلّا) pada khabarnya (مثل: وما محمدٌ إلا رسولٌ), (c) Khabarnya tidak mendahului isimnya kecuali jika berupa syibhul jumlah, dan (d) Ma'mul khabarnya tidak mendahului isimnya kecuali syibhul jumlah. Contoh Al-Qur'an: (ما هذا بشراً) dan (ما هنَّ أمهاتِهم). Boleh menambahkan Ba' Za'idah pada khabarnya: (وما ربُّكَ بظلّامٍ للعبيدِ).",
+        "2. لَا النافية (العاملة عمل ليس): Beramal dengan 4 syarat (sama seperti syarat Ma Hijaziyyah ditambah satu syarat khusus): Isim dan Khabarnya WAJIB berupa isim NAKIRAH. Contoh syair: (تعزَّ فلا شيءٌ على الأرضِ باقياً ... ولا وزرٌ مما قضى اللهُ واقياً).",
+        "3. لَاتَ (Berasal dari لا النافية ditambah Ta' Ta'nits yang difathahkan): Beramal seperti Laisa dengan 2 syarat khusus: (a) Isim dan Khabarnya WAJIB berupa isim zaman (kata penunjuk waktu seperti: حين، ساعة، أوان), dan (b) Salah satu dari isim atau khabarnya WAJIB dibuang (dan yang hampir selalu dibuang adalah Isim-nya). Contoh firman Allah: (فنادوا ولاتَ حينَ مناصٍ), takdirnya: (ولاتَ الحينُ حينَ مناصٍ).",
+        "4. إِنْ النافية: Beramal seperti Laisa (baik pada ma'rifah maupun nakirah) dengan syarat-syarat yang sama seperti Ma Hijaziyyah. Contoh syair: (إنْ هوَ مستولياً على أحدٍ ... إلا على أضعفِ المجانينِ)."
+      ],
+      "rumus_ringkas": "Huruf Musyabbahah bi-Laisa: (1) Ma Hijaziyyah (4 syarat) | (2) La (Isim & Khabar wajib Nakirah) | (3) Lata (Khusus Isim Zaman + Isimnya wajib mahdzuf) | (4) In Nafiyah.",
+      "tanbihat_dan_khilaf": "Jika setelah khabar (ما) الحجازية terdapat huruf 'athaf yang memberi makna الإثبات (penetapan) yaitu (بَلْ) dan (لَكِنْ), maka kata yang di-'athafkan wajib dibaca rafa' sebagai khabar bagi mubtada' yang dibuang, karena Ma tidak beramal pada kalimat positif: (ما زيدٌ قائماً بل قاعدٌ) yakni (بل هوَ قاعدٌ)."
+    },
+    {
+      "id_materi": "MAT-2501",
+      "id_bab": "BAB-25",
+      "sub_topik_arab": "تقسيم كاد وأخواتها ومعانيها وشروط خبرها",
+      "sub_topik_indo": "Klasifikasi Kada wa Akhawatuha (Muqarabah, Raja', Syuru') dan Syarat Khabarnya",
+      "kaidah_arab": "كَادَ وَأَخَوَاتُهَا (أَفْعَالُ المُقَارَبَةِ وَالرَّجَاءِ وَالشُّرُوعِ): أَفْعَالٌ نَاسِخَةٌ تَعْمَلُ عَمَلَ كَانَ فِي رَفْعِ الاسْمِ وَنَصْبِ الخَبَرِ، لَكِنْ يُشْتَرَطُ فِي خَبَرِهَا دَائِمًا أَنْ يَكُونَ جُمْلَةً فِعْلِيَّةً فِعْلُهَا مُضَارِعٌ. وَهِيَ ثَلَاثَةُ أَقْسَامٍ: 1) أَفْعَالُ المُقَارَبَةِ لِلدَّلَالَةِ عَلَى قُرْبِ وُقُوعِ الخَبَرِ: (كَادَ، كَرَبَ، أَوْشَكَ). 2) أَفْعَالُ الرَّجَاءِ لِرَجَاءِ حُصُولِهِ: (عَسَى، حَرَى، اخْلَوْلَقَ). 3) أَفْعَالُ الشُّرُوعِ لِلْبَدْءِ فِيهِ: (شَرَعَ، أَنْشَأَ، طَفِقَ، أَخَذَ، عَلِقَ، هَبَّ، جَعَلَ).",
+      "penjelasan_indo": "Kada dan saudara-saudaranya adalah fi'il-fi'il naqishah yang beramal seperti Kana (merafa'kan isim dan menashabkan khabar secara mahalli). Perbedaan fundamentalnya dengan Kana adalah: Khabar Kada wa Akhawatuha WAJIB berupa Jumlah Fi'liyyah yang fi'ilnya berupa Fi'il Mudhari' dan merafa'kan dhamir yang kembali kepada Isim-nya.",
+      "rincian_hukum_dan_syarat": [
+        "Tiga Kelompok Kada wa Akhawatuha:",
+        "1. أفعال المقاربة (Fi'il yang menunjukkan dekatnya waktu terjadinya khabar - 3 Fi'il): (كادَ، كَرَبَ، أَوْشَكَ). Contoh: (يكادُ البرقُ يخطفُ أبصارَهم).",
+        "2. أفعال الرجاء (Fi'il yang menunjukkan harapan terjadinya khabar - 3 Fi'il): (عَسَى، حَرَى، اخْلَوْلَقَ). Contoh: (عسى اللهُ أنْ يأتيَ بالفتحِ).",
+        "3. أفعال الشروع / الإنشاء (Fi'il yang menunjukkan dimulainya perbuatan pada khabar - banyak, yang masyhur 7 Fi'il): (شَرَعَ، أَنْشَأَ، طَفِقَ، أَخَذَ، عَلِقَ، جَعَلَ، هَبَّ). Contoh: (وطفقا يخصفانِ عليهما من ورقِ الجنةِ) dan (شرعَ الأستاذُ يشرحُ الدرسَ).",
+        "Tiga Syarat Mutlak Khabar Kada wa Akhawatuha:",
+        "a) Berupa Jumlah Fi'liyyah yang fi'ilnya Mudhari'.",
+        "b) Merafa'kan dhamir yang kembali kepada Isimnya (kecuali pada kasus السببي yang jarang seperti: عسى زيدٌ أنْ يقومَ أبوهُ).",
+        "c) Khabarnya WAJIB diakhirkan dari fi'il nasikhnya (tidak boleh mendahului fi'il-fi'il ini)."
+      ],
+      "rumus_ringkas": "Kada wa Akhawatuha = Muqarabah (3) + Raja' (3) + Syuru' (7+) | Khabar = Jumlah Fi'liyyah Mudhari'iyyah fi Mahalli Nashbin.",
+      "tanbihat_dan_khilaf": "Seluruh fi'il dalam bab Kada wa Akhawatuha adalah جامدة (hanya beramal dalam bentuk Fi'il Madhi saja), KECUALI dua fi'il yaitu (كادَ - يكادُ) dan (أوشكَ - يوشكُ) yang dapat beramal dalam bentuk Madhi maupun Mudhari' (serta Isim Fa'il bagi موشك)."
+    },
+    {
+      "id_materi": "MAT-2502",
+      "id_bab": "BAB-25",
+      "sub_topik_arab": "حكم اقتران خبر كاد وأخواتها بـ (أنْ) المصدرية",
+      "sub_topik_indo": "Empat Hukum Bersambungnya Khabar Kada wa Akhawatuha dengan (أَنْ) Mashdariyyah",
+      "kaidah_arab": "حُكْمُ اقْتِرَانِ خَبَرِ (كَادَ وَأَخَوَاتِهَا) بِـ(أَنْ) المَصْدَرِيَّةِ عَلَى أَرْبَعَةِ أَقْسَامٍ: 1) وَاجِبُ الِاقْتِرَانِ فِي (حَرَى وَاخْلَوْلَقَ). 2) كَثِيرُ الِاقْتِرَانِ فِي (عَسَى وَأَوْشَكَ) نَحْوُ: ﴿عَسَى رَبُّكُمْ أَنْ يَرْحَمَكُمْ﴾. 3) قَلِيلُ الِاقْتِرَانِ وَالغَالِبُ تَجْرِيدُهُ فِي (كَادَ وَكَرَبَ) نَحْوُ: ﴿فَذَبَحُوهَا وَمَا كَادُوا يَفْعَلُونَ﴾. 4) مُمْتَنِعُ الِاقْتِرَانِ دَائِمًا فِي جَمِيعِ أَفْعَالِ الشُّرُوعِ، لِأَنَّ الشُّرُوعَ يَدُلُّ عَلَى الحَالِ وَ(أَنْ) تَخْلُصُ الفِعْلَ لِلِاسْتِقْبَالِ فَيَتَنَاقَضَانِ.",
+      "penjelasan_indo": "Meskipun khabar seluruh fi'il bab ini berupa fi'il mudhari', tingkat keserasian maknanya dengan huruf (أَنْ) المصدرية (yang mengarahkan makna mudhari' ke masa depan/استقبال) berbeda-beda menjadi empat tingkatan hukum.",
+      "rincian_hukum_dan_syarat": [
+        "1. WAJIB Bersambung dengan أَنْ (واجب الاقتران بأنْ): Pada 2 fi'il Raja' yaitu (حَرَى) dan (اخْلَوْلَقَ). Contoh: (حرى المريضُ أنْ يبرأَ) dan (اخلولقتِ السماءُ أنْ تمطرَ). Tidak pernah ditemukan dalam kalam Arab tanpa (أنْ).",
+        "2. BANYAK / DOMINAN Bersambung dengan أَنْ (كثير الاقتران بأنْ): Pada 2 fi'il yaitu (عَسَى) dan (أَوْشَكَ). Dalam Al-Qur'an, seluruh khabar (عسى) selalu bersambung dengan (أنْ), seperti: (عسى ربُّكم أنْ يرحمَكم). Namun dalam syair Arab boleh tanpa (أنْ), seperti: (عسى الكربُ الذي أمسيتَ فيهِ ... يكونُ وراءَهُ فرجٌ قريبُ).",
+        "3. SEDIKIT / JARANG Bersambung dengan أَنْ (قليل الاقتران بأنْ - والأكثر تجرده منها): Pada 2 fi'il Muqarabah yaitu (كَادَ) dan (كَرَبَ). Yang fasih dan selalu digunakan dalam Al-Qur'an adalah TANPA (أنْ), seperti: (فذبحوها وما كادوا يفعلونَ). Adapun dalam syair terkadang memakai (أنْ), seperti: (كادتِ النفسُ أنْ تفيضَ عليهِ).",
+        "4. TERLARANG Bersambung dengan أَنْ (ممتنع الاقتران بأنْ): Pada seluruh أفعال الشروع (شرع، طفق، أخذ، جعل، أنشأ، علق، هبّ). Alasannya: Fi'il Syuru' bermakna dimulainya perbuatan SEKARANG (الحال), sedangkan huruf (أنْ) bermakna masa depan (الاستقبال), sehingga terjadi kontradiksi makna (تناقض بين الحال والاستقبال)."
+      ],
+      "rumus_ringkas": "Hukum أنْ pada Khabar: (1) Wajib: حرى، اخلولق | (2) Katsir: عسى، أوشك | (3) Qalil: كاد، كرب | (4) Mumtani' (Haram): Semua Af'alul Syuru'.",
+      "tanbihat_dan_khilaf": "Ketika khabar (عسى) atau (حرى) bersambung dengan (أنْ), ulama Nahwu tetap meng-i'rab jumlah (أنْ + الفعل المضارع) sebagai jumlah fi'liyyah fi mahalli nashbin khabar 'Asa, bukan ditakwilkan menjadi mashdar mufrad, agar tidak keluar dari kaidah bahwa khabar bab ini wajib berupa jumlah fi'liyyah."
+    },
+    {
+      "id_materi": "MAT-2503",
+      "id_bab": "BAB-25",
+      "sub_topik_arab": "استعمال (عسى واخلولق وأوشك) تامة وأحكام إسناد (عسى) إلى الضمير",
+      "sub_topik_indo": "Penggunaan 'Asa, Ikhlawlaqa, dan Ausyaka sebagai Fi'il Tam serta Hukum 'Asa Bersama Dhamir",
+      "kaidah_arab": "تَسْتَعْمِلُ العَرَبُ (عَسَى، وَاخْلَوْلَقَ، وَأَوْشَكَ) أَفْعَالًا تَامَّةً إِذَا وَلِيَهَا (أَنْ وَالفِعْلُ) مُبَاشَرَةً دُونَ اسْمٍ ظَاهِرٍ يَتَقَدَّمُ أَوْ يَتَأَخَّرُ، فَيَكُونُ المَصْدَرُ المُؤَوَّلُ فَاعِلًا لَهَا فِي مَحَلِّ رَفْعٍ مُغْنِيًا عَنِ الخَبَرِ نَحْوُ: ﴿وَعَسَى أَنْ تَكْرَهُوا شَيْئًا وَهُوَ خَيْرٌ لَكُمْ﴾. وَإِذَا اتَّصَلَ بِـ(عَسَى) ضَمِيرُ نَصْبٍ نَحْوُ (عَسَانِي، عَسَاكَ) جَازَ إِعْرَابُ الضَّمِيرِ اسْمًا لَهَا فِي مَحَلِّ نَصْبٍ أَوْ جَرٍّ شَبِيهٍ بِحَرْفِ التَّرَجِّي (لَعَلَّ).",
+      "penjelasan_indo": "Tiga fi'il dari bab ini—yaitu (عَسَى، اخْلَوْلَقَ، أَوْشَكَ)—memiliki keistimewaan dapat digunakan sebagai Fi'il Tam (تامة) apabila langsung diikuti oleh Mashdar Muawwal (أنْ + الفعل المضارع) tanpa didahului atau diikuti isim zhahir.",
+      "rincian_hukum_dan_syarat": [
+        "1. Kondisi Pertama (Murni Tam): Jika setelah (عسى / اخلولق / أوشك) langsung berupa (أنْ + المضارع) dan tidak didahului isim sebelumnya, seperti firman Allah: (وَعَسَى أَنْ تَكْرَهُوا شَيْئًا وَهُوَ خَيْرٌ لَكُمْ). Di sini (عسى) adalah fi'il madhi tam, dan mashdar muawwal (أنْ تكرهوا) berada pada posisi rafa' sebagai Fa'il dari 'Asa.",
+        "2. Kondisi Kedua (Didahului Isim Zhahir, seperti: زيدٌ عسى أنْ يقومَ / الهنداتُ عسى أنْ يقمنَ): Berlaku dua mazhab bahasa Arab:",
+        "a) لغة الحجاز (Bahasa Hijaz): Menganggap (عسى) sebagai Fi'il Tam yang tidak mengandung dhamir, sedangkan mashdar muawwal (أنْ يقومَ / أنْ يقمنَ) adalah Fa'il-nya. Keuntungannya: Lafazh (عسى) tetap berbentuk mufrad mudzakkar dalam segala kondisi (زيدٌ عسى أنْ يقومَ، الزيدانِ عسى أنْ يقوما، الهنداتُ عسى أنْ يقمنَ).",
+        "b) لغة تميم (Bahasa Bani Tamim): Menganggap (عسى) sebagai Fi'il Naqish yang menyimpan dhamir yang kembali ke mubtada' sebelumnya, sehingga (عسى) wajib menyesuaikan mutsanna/jamak/muannats-nya: (الزيدانِ عَسَيَا أنْ يقوما، الزيدونَ عَسَوْا أنْ يقوموا، الهنداتُ عَسَيْنَ أنْ يقمنَ).",
+        "3. Hukum harakat Sin pada (عَسَى) jika bertemu dhamir rafa' mutaharrik (تُ، تَ، تِ، نَا، نَ): Boleh difathahkan (عَسَيْتُ - وهو الأشهر) dan boleh dikasrahkan (عَسِيتُ - قراءة نافع في قوله تعالى: فهلْ عَسِيتُمْ إنْ توليتم)."
+      ],
+      "rumus_ringkas": "عسى + أنْ يفعلَ = 'Asa Tam, Mashdar Muawwal Fa'il. | Isim + عسى + أنْ يفعلَ = Hijaz (Tam, 'Asa tetap mufrad) vs Tamim (Naqish, 'Asa menyesuaikan dhamir).",
+      "tanbihat_dan_khilaf": "Perhatikan juga perbedaan antara Af'alul Syuru' yang Naqishah vs Tammah: Jika setelah (شرعَ / أخذَ / جعلَ) adalah fi'il mudhari', maka ia Naqishah (أخذَ الطالبُ يكتبُ الدرسَ). Namun jika setelahnya adalah maf'ul bih (isim), maka ia adalah Fi'il Tam biasa (أخذَ الطالبُ الكتابَ)."
+    },
+    {
+      "id_materi": "MAT-2504",
+      "id_bab": "BAB-25",
+      "sub_topik_arab": "أحكام خاصة بأفعال المقاربة والشروع وشواهدها",
+      "sub_topik_indo": "Kaidah Khusus pada Lafazh Kada (Nafi vs Itsbat) dan Rincian Af'alul Syuru'",
+      "kaidah_arab": "لَفْظُ (كَادَ) فِي النَّفْيِ وَالإِثْبَاتِ يَجْرِي عَلَى قَاعِدَةِ سَائِرِ الأَفْعَالِ عِنْدَ جُمْهُورِ النُّحَاةِ: فَنَفْيُهُ نَفْيٌ وَإِثْبَاتُهُ إِثْبَاتٌ. فَإِذَا قِيلَ: (كَادَ يَفْعَلُ) فَمَعْنَاهُ قَارَبَ وَلَمْ يَفْعَلْ، وَإِذَا قِيلَ: ﴿وَمَا كَادُوا يَفْعَلُونَ﴾ أَيْ لَمْ يُقَارِبُوا فِعْلَهُ لِشِدَّةِ تَرَدُّدِهِمْ ثُمَّ فَعَلُوهُ بَعْدَ لَأْيٍ. وَيُشْتَرَطُ فِي أَفْعَالِ الشُّرُوعِ أَنْ تَكُونَ جَامِدَةً فِي صِيغَةِ المَاضِي لِتَدُلَّ عَلَى الشُّرُوعِ؛ فَإِنْ جَاءَتْ بِلَفْظِ المُضَارِعِ أَوْ وَلِيَهَا اسْمٌ صَرِيحٌ كَانَتْ أَفْعَالًا تَامَّةً تَنْصِبُ مَفْعُولًا بِهِ.",
+      "penjelasan_indo": "Terdapat pembahasan klasik yang sangat terkenal di kalangan ulama Nahwu dan Balaghah mengenai makna (كَادَ) ketika positif (إثبات) dan ketika dinafikan (نفي), serta rincian derivasi Af'alul Syuru'.",
+      "rincian_hukum_dan_syarat": [
+        "1. Makna (كادَ) saat Itsbat dan Nafi:",
+        "- Saat Itsbat (مثاله: كادَ زيدٌ يفعلُ): Menunjukkan bahwa perbuatan hampir saja terjadi, namun pada saat itu BELUM terjadi (مقاربة الفعل مع عدم وقوعه).",
+        "- Saat Nafi (مثاله: ما كادَ يفعلُ): Pendapat yang shahih dan dipegang oleh jumhur muhaqqiqin adalah bahwa (كادَ) sama seperti fi'il lainnya: penafian (كاد) berarti menafikan 'hampirnya' perbuatan tersebut, sehingga secara logika perbuatan itu lebih jauh lagi dari terjadi (نفي المقاربة يقتضي نفي الوقوع من باب أولى), seperti firman Allah: (إِذَا أَخْرَجَ يَدَهُ لَمْ يَكَدْ يَرَاهَا). Adapun pada firman Allah: (فَذَبَحُوهَا وَمَا كَادُوا يَفْعَلُونَ), terjadinya penyembelihan diketahui dari kalimat sebelumnya (فذبحوها), sedangkan (وما كادوا يفعلون) menjelaskan keadaan mereka sebelumnya yang hampir-hampir tidak mau melakukannya karena banyaknya tanya jawab dan keberatan mereka.",
+        "2. Syarat Amal Af'alul Syuru': Apabila salah satu dari fi'il syuru' diubah ke bentuk Mudhari' atau Amr, maka BATAL amalnya sebagai saudara Kada dan kembali menjadi fi'il tam. Sebagai contoh, (طَفِقَ يخصفُ) adalah naqish, namun (يَطْفَقُ) tidak beramal."
+      ],
+      "rumus_ringkas": "كادَ يفعلُ = Hampir terjadi (belum terjadi) | ما كادَ يفعلُ = Hampir-hampir tidak terjadi (kecuali ada qarinah terjadinya setelah kesulitan besar).",
+      "tanbihat_dan_khilaf": "Sebagian ulama terdahulu sempat melontarkan klaim ganjil bahwa 'Itsbat Kada adalah Nafi, dan Nafi Kada adalah Itsbat', namun klaim ini telah dibantah tuntas oleh Ibnu Hisyam dalam Mughni Al-Labib dan Abu Hayyan dalam Al-Bahr Al-Muhith."
+    }
+  ],
+  "irab": [
+    {
+      "id_contoh": "IRB-2201",
+      "id_bab": "BAB-22",
+      "id_materi": "MAT-2201",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Al-Anbiya': 55 / Contoh القياسي",
+      "kalimat_arab": "أَرَاغِبٌ أَنْتَ عَنْ آلِهَتِي يَا إِبْرَاهِيمُ",
+      "terjemahan_indo": "Apakah engkau membenci (berpaling dari) tuhan-tuhanku, wahai Ibrahim? (QS. Maryam: 46)",
+      "kata_kunci": "أَرَاغِبٌ أَنْتَ",
+      "irab_arab": "الهمزة: حرف استفهام مبني على الفتح لا محل له من الإعراب. راغبٌ: مبتدأ مرفوع وعلامة رفعه الضمة الظاهرة على آخره (وهو اسم فاعل اعتمد على استفهام). أنتَ: ضمير منفصل مبني على الفتح في محل رفع فاعل لاسم الفاعل (راغب) سدّ مسدّ الخبر.",
+      "penjelasan_irab_indo": "Ayat ini adalah dalil utama Mubtada' jenis kedua (الوصف الرافع لمكتفى به). Karena (راغبٌ) dan (أنتَ) sama-sama mufrad, sebenarnya boleh dua wajah i'rab: (1) راغبٌ sebagai Mubtada' dan أنتَ sebagai Fa'il yang menempati posisi khabar (سد مسد الخبر), atau (2) راغبٌ sebagai Khabar Muqaddam dan أنتَ sebagai Mubtada' Muakhkhar."
+    },
+    {
+      "id_contoh": "IRB-2202",
+      "id_bab": "BAB-22",
+      "id_materi": "MAT-2202",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Al-Baqarah: 221",
+      "kalimat_arab": "وَلَعَبْدٌ مُؤْمِنٌ خَيْرٌ مِنْ مُشْرِكٍ وَلَوْ أَعْجَبَكُمْ",
+      "terjemahan_indo": "Dan sesungguhnya seorang budak yang mukmin lebih baik daripada orang musyrik, walaupun dia menarik hatimu.",
+      "kata_kunci": "وَلَعَبْدٌ مُؤْمِنٌ خَيْرٌ",
+      "irab_arab": "الواو: استئنافية. اللام: لام الابتداء تفيد التوكيد حرف مبني على الفتح لا محل له من الإعراب. عبدٌ: مبتدأ مرفوع وعلامة رفعه الضمة الظاهرة، وسوّغ الابتداء به كونه نكرة موصوفة. مؤمنٌ: نعت لـ (عبد) مرفوع وعلامة رفعه الضمة الظاهرة. خيرٌ: خبر المبتدأ مرفوع وعلامة رفعه الضمة الظاهرة.",
+      "penjelasan_irab_indo": "Kata (عبدٌ) adalah isim nakirah, namun sah menjadi Mubtada' karena adanya musawwigh (alasan pembolehan) yaitu التخصيص بالوصف (dikhususkan dengan sifat/na'at مؤمنٌ). Selain itu, masuknya Lamul Ibtida' padanya mewajibkan Mubtada' didahulukan."
+    },
+    {
+      "id_contoh": "IRB-2203",
+      "id_bab": "BAB-22",
+      "id_materi": "MAT-2203",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Al-A'raf: 26",
+      "kalimat_arab": "وَلِبَاسُ التَّقْوَىٰ ذَٰلِكَ خَيْرٌ",
+      "terjemahan_indo": "Dan pakaian takwa, itulah yang paling baik.",
+      "kata_kunci": "وَلِبَاسُ التَّقْوَىٰ ذَٰلِكَ خَيْرٌ",
+      "irab_arab": "لباسُ: مبتدأ أول مرفوع وعلامة رفعه الضمة الظاهرة، وهو مضاف. التقوى: مضاف إليه مجرور وعلامة جره الكسرة المقدرة على الألف للتعذر. ذلكَ: (ذا) اسم إشارة مبني على السكون في محل رفع مبتدأ ثانٍ (أو بدل/عطف بيان على قول آخر)، واللام للبعد، والكاف للخطاب. خيرٌ: خبر المبتدأ الثاني مرفوع بالضمة، والجملة الاسمية (ذلك خير) في محل رفع خبر المبتدأ الأول، والرابط هو اسم الإشارة.",
+      "penjelasan_irab_indo": "Contoh Khabar berupa Jumlah Ismiyyah di mana penghubung (الرابط) antara jumlah khabar dengan Mubtada' pertama adalah Isim Isyarah (ذلك). Boleh juga (ذلك) di-i'rab sebagai Badal atau 'Athaf Bayan dari (لباس), dan (خيرٌ) langsung menjadi khabar (لباس)."
+    },
+    {
+      "id_contoh": "IRB-2301",
+      "id_bab": "BAB-23",
+      "id_materi": "MAT-2302",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Muhammad: 24",
+      "kalimat_arab": "أَفَلَا يَتَدَبَّرُونَ الْقُرْآنَ أَمْ عَلَىٰ قُلُوبٍ أَقْفَالُهَا",
+      "terjemahan_indo": "Maka apakah mereka tidak memperhatikan Al-Qur'an ataukah pada hati (mereka) terdapat gembok-gemboknya?",
+      "kata_kunci": "عَلَىٰ قُلُوبٍ أَقْفَالُهَا",
+      "irab_arab": "أم: حرف إضراب بمعنى (بل) مبني على السكون. على قلوبٍ: جار ومجرور متعلق بمحذوف واجب التقديم في محل رفع خبر مقدم. أقفالُها: (أقفالُ) مبتدأ مؤخر وجوباً مرفوع وعلامة رفعه الضمة الظاهرة وهو مضاف، و(ها) ضمير متصل مبني على السكون في محل جر مضاف إليه يعود على (قلوب).",
+      "penjelasan_irab_indo": "Pada kalimat (على قلوبٍ أقفالُها), Khabar (على قلوبٍ) WAJIB didahulukan atas Mubtada' (أقفالُها) karena di dalam Mubtada' terdapat dhamir (ها) yang kembali kepada bagian dari Khabar yaitu (قلوب). Jika Mubtada' didahulukan, maka dhamir akan kembali pada kata yang terletak di belakangnya secara lafazh dan rutbah."
+    },
+    {
+      "id_contoh": "IRB-2302",
+      "id_bab": "BAB-23",
+      "id_materi": "MAT-2303",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Al-Hijr: 72",
+      "kalimat_arab": "لَعَمْرُكَ إِنَّهُمْ لَفِي سَكْرَتِهِمْ يَعْمَهُونَ",
+      "terjemahan_indo": "Demi umurmu (Muhammad), sesungguhnya mereka terombang-ambing di dalam kemabukan (kesesatan) mereka.",
+      "kata_kunci": "لَعَمْرُكَ",
+      "irab_arab": "اللام: لام الابتداء حرف مبني على الفتح لا محل له من الإعراب. عمرُكَ: (عمرُ) مبتدأ مرفوع وعلامة رفعه الضمة الظاهرة، وهو مضاف، والكاف ضمير متصل مبني على الفتح في محل جر مضاف إليه، والخبر محذوف وجوباً تقديره (قسمي) أو (يميني). وجملة (إنهم لفي سكرتهم يعمهون) جواب القسم لا محل لها من الإعراب.",
+      "penjelasan_irab_indo": "Kata (عَمْرُكَ) dengan fathah 'ain bermakna hidupmu/umurmu yang digunakan khusus dalam sumpah. Karena mubtada' ini adalah نصٌّ في القسم (lafazh yang sharih khusus untuk sumpah), maka khabarnya WAJIB dibuang dengan takdir (قسمي)."
+    },
+    {
+      "id_contoh": "IRB-2303",
+      "id_bab": "BAB-23",
+      "id_materi": "MAT-2304",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Al-Jumu'ah: 8",
+      "kalimat_arab": "قُلْ إِنَّ الْمَوْتَ الَّذِي تَفِرُّونَ مِنْهُ فَإِنَّهُ مُلَاقِيكُمْ",
+      "terjemahan_indo": "Katakanlah: Sesungguhnya kematian yang kamu lari daripadanya, maka sesungguhnya kematian itu akan menemui kamu.",
+      "kata_kunci": "إِنَّ الْمَوْتَ الَّذِي تَفِرُّونَ مِنْهُ فَإِنَّهُ مُلَاقِيكُمْ",
+      "irab_arab": "إنّ: حرف توكيد ونصب. الموتَ: اسم (إنّ) منصوب بالفتحة. الذي: اسم موصول مبني على السكون في محل نصب نعت لـ (الموت). تفرونَ منهُ: الجملة صلة الموصول لا محل لها. فإنهُ: الفاء رابطة لجواب شبه الشرط، و(إنّ) حرف توكيد ونصب، والهاء اسمها. ملاقيكم: خبر (إنّ) الثانية مرفوع بالضمة المقدرة على الياء للثقل، وجملة (فإنه ملاقيكم) في محل رفع خبر (إنّ) الأولى.",
+      "penjelasan_irab_indo": "Karena isim Inna (الموتَ) disifati dengan isim maushul (الذي تفرون منه) sehingga mengandung makna syarat dan keumuman, maka khabar Inna boleh dimasuki Fa' Rabithah (فإنه ملاقيكم). Ayat ini sekaligus membantah pendapat yang mengatakan bahwa masuknya Inna menghalangi masuknya Fa'."
+    },
+    {
+      "id_contoh": "IRB-2401",
+      "id_bab": "BAB-24",
+      "id_materi": "MAT-2401",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Yusuf: 85",
+      "kalimat_arab": "قَالُوا تَاللَّهِ تَفْتَأُ تَذْكُرُ يُوسُفَ حَتَّىٰ تَكُونَ حَرَضًا",
+      "terjemahan_indo": "Mereka berkata: Demi Allah, engkau senantiasa mengingat Yusuf, sehingga engkau mengidap penyakit berat.",
+      "kata_kunci": "تَفْتَأُ تَذْكُرُ يُوسُفَ",
+      "irab_arab": "تاللهِ: التاء حرف جر وقسم، واسم الجلالة مقسم به مجرور بالتاء، والجار والمجرور متعلق بفعل قسم محذوف. تفتأُ: فعل مضارع ناقص مرفوع وعلامة رفعه الضمة الظاهرة، وحُذف حرف النفي قبله لدلالة القسم عليه والتقدير (لا تفتأُ)، واسم (تفتأ) ضمير مستتر وجوباً تقديره (أنت). تذكرُ يوسفَ: الجملة الفعلية في محل نصب خبر (تفتأ).",
+      "penjelasan_irab_indo": "Fi'il (تفتأُ) adalah saudara Kana yang mensyaratkan didahului oleh Nafi. Pada ayat ini, huruf Nafi (لا) dibuang secara qiyasi karena terletak sebagai jawab qasam (تالله) dan fi'il mudhari', sebab jika positif pasti menggunakan Lam dan Nun Taukid (لتفتأنّ). Tidak adanya Lam dan Nun menunjukkan bahwa kalimat ini manfi (لا تفتأُ)."
+    },
+    {
+      "id_contoh": "IRB-2402",
+      "id_bab": "BAB-24",
+      "id_materi": "MAT-2402",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Al-Baqarah: 280",
+      "kalimat_arab": "وَإِنْ كَانَ ذُو عُسْرَةٍ فَنَظِرَةٌ إِلَىٰ مَيْسَرَةٍ",
+      "terjemahan_indo": "Dan jika (orang yang berhutang itu) berada dalam kesulitan, maka berilah tangguh sampai dia berkelapangan.",
+      "kata_kunci": "كَانَ ذُو عُسْرَةٍ فَنَظِرَةٌ",
+      "irab_arab": "إنْ: حرف شرط جازم. كانَ: فعل ماضٍ تام مبني على الفتح في محل جزم فعل الشرط بمعنى (وُجِدَ أو حَضَرَ). ذو: فاعل (كان) التامة مرفوع وعلامة رفعه الواو لأنه من الأسماء الستة، وهو مضاف. عسرةٍ: مضاف إليه مجرور بالكسرة. فنظرةٌ: الفاء واقعة في جواب الشرط، و(نظرةٌ) خبر لمبتدأ محذوف وجوباً تقديره (فالأمرُ نظرةٌ) والجملة في محل جزم جواب الشرط.",
+      "penjelasan_irab_indo": "Contoh penggunaan (كانَ) sebagai Fi'il Tam (تامة) yang bermakna ditemukan/terjadi, sehingga kata (ذو عسرةٍ) di-i'rab sebagai Fa'il marfu' dengan Wawu, dan tidak membutuhkan khabar."
+    },
+    {
+      "id_contoh": "IRB-2403",
+      "id_bab": "BAB-24",
+      "id_materi": "MAT-2404",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Yusuf: 31",
+      "kalimat_arab": "مَا هَٰذَا بَشَرًا إِنْ هَٰذَا إِلَّا مَلَكٌ كَرِيمٌ",
+      "terjemahan_indo": "Bukanlah ini seorang manusia. Tidak lain ini hanyalah malaikat yang mulia.",
+      "kata_kunci": "مَا هَٰذَا بَشَرًا إِنْ هَٰذَا إِلَّا مَلَكٌ",
+      "irab_arab": "ما: نافية حجازية تعمل عمل (ليس) حرف مبني على السكون. هذا: اسم إشارة مبني على السكون في محل رفع اسم (ما). بشراً: خبر (ما) الحجازية منصوب وعلامة نصبه الفتحة الظاهرة. إنْ: حرف نفي بمعنى (ما) بطل عمله لانتقاض نفيه بـ (إلا). هذا: اسم إشارة في محل رفع مبتدأ. إلا: أداة حصر لا عمل لها. ملكٌ: خبر المبتدأ مرفوع بالضمة.",
+      "penjelasan_irab_indo": "Ayat ini menggabungkan dua kaidah sekaligus: Pada potongan pertama (ما هذا بشراً), huruf (ما) الحجازية beramal seperti Laisa karena keempat syaratnya terpenuhi. Sedangkan pada potongan kedua (إنْ هذا إلا ملكٌ), huruf (إنْ) النافية batal amalnya (مهملة) karena penafiannya dirusak/dibatalkan oleh masuknya (إلا) pada khabar."
+    },
+    {
+      "id_contoh": "IRB-2404",
+      "id_bab": "BAB-24",
+      "id_materi": "MAT-2404",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Shad: 3",
+      "kalimat_arab": "فَنَادَوْا وَلَاتَ حِينَ مَنَاصٍ",
+      "terjemahan_indo": "Maka mereka menyeru (meminta pertolongan) padahal waktu itu bukanlah waktu untuk lari melepaskan diri.",
+      "kata_kunci": "وَلَاتَ حِينَ مَنَاصٍ",
+      "irab_arab": "الواو: واو الحال. لاتَ: حرف نفي مشبه بـ (ليس) مبني على الفتح لا محل له من الإعراب، واسم (لاتَ) محذوف وجوباً تقديره (الحينُ). حينَ: خبر (لاتَ) منصوب وعلامة نصبه الفتحة الظاهرة على آخره، وهو مضاف. مناصٍ: مضاف إليه مجرور بالكسرة الظاهرة، وجملة (لات حين مناص) في محل نصب حال.",
+      "penjelasan_irab_indo": "Syahid utama untuk amal huruf (لاتَ) yang khusus masuk pada isim zaman (حين) dan mewajibkan pembuangan isimnya (ولاتَ الحينُ حينَ مناصٍ)."
+    },
+    {
+      "id_contoh": "IRB-2501",
+      "id_bab": "BAB-25",
+      "id_materi": "MAT-2501",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Al-A'raf: 22",
+      "kalimat_arab": "وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِنْ وَرَقِ الْجَنَّةِ",
+      "terjemahan_indo": "Dan mulailah keduanya menutup (aurat) keduanya dengan daun-daun surga.",
+      "kata_kunci": "وَطَفِقَا يَخْصِفَانِ",
+      "irab_arab": "طفقا: (طفقَ) فعل ماضٍ ناقص من أفعال الشروع يعمل عمل (كان) مبني على الفتح، وألف الاثنين ضمير متصل مبني على السكون في محل رفع اسم (طفق). يخصفانِ: فعل مضارع مرفوع وعلامة رفعه ثبوت النون لأنه من الأمثلة الخمسة، وألف الاثنين ضمير متصل في محل رفع فاعل، والجملة الفعلية (يخصفان) في محل نصب خبر (طفق)، ويمتنع اقترانها بـ (أنْ).",
+      "penjelasan_irab_indo": "Contoh penggunaan (طَفِقَ) dari Af'alul Syuru'. Khabarnya berupa jumlah fi'liyyah mudhari'iyyah (يخصفان) yang wajib terbebas dari (أنْ) Mashdariyyah karena fi'il syuru' bermakna sekarang (الحال)."
+    },
+    {
+      "id_contoh": "IRB-2502",
+      "id_bab": "BAB-25",
+      "id_materi": "MAT-2503",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Al-Baqarah: 216",
+      "kalimat_arab": "وَعَسَىٰ أَنْ تَكْرَهُوا شَيْئًا وَهُوَ خَيْرٌ لَكُمْ",
+      "terjemahan_indo": "Dan boleh jadi kamu membenci sesuatu, padahal ia amat baik bagimu.",
+      "kata_kunci": "وَعَسَىٰ أَنْ تَكْرَهُوا شَيْئًا",
+      "irab_arab": "عسى: فعل ماضٍ تام جامد يفيد الرجاء مبني على الفتح المقدر على الألف للتعذر. أنْ: حرف مصدري ونصب مبني على السكون. تكرهوا: فعل مضارع منصوب بـ (أنْ) وعلامة نصبه حذف النون، وواو الجماعة فاعل. شيئاً: مفعول به منصوب. والمصدر المؤول من (أنْ تكرهوا) في محل رفع فاعل لـ (عسى) التامة.",
+      "penjelasan_irab_indo": "Karena setelah (عسى) langsung diikuti oleh (أنْ + الفعل المضارع) tanpa ada isim marfu' sebelumnya maupun setelahnya, maka (عسى) di sini berfungsi sebagai Fi'il Tam, dan mashdar muawwal (أنْ تكرهوا) adalah Fa'il-nya."
+    }
+  ],
+  "soal": [
+    {
+      "id_soal": "SOL-2201",
+      "id_bab": "BAB-22",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Perhatikan tiga kalimat berikut:\n(1) أَصَادِقٌ الرَّجُلَانِ؟\n(2) أَصَادِقٌ أَخُوكَ؟\n(3) أَصَادِقَانِ الرَّجُلَانِ؟\nManakah analisis i'rab yang PALING TEPAT menurut kaidah Mubtada' Washf (الوصف الرافع لمكتفى به)?",
+      "opsi_a": "Pada kalimat (1), kata (صادقٌ) wajib di-i'rab sebagai Mubtada' dan (الرجلان) sebagai Fa'il sadda masaddal khabar; sedangkan pada kalimat (3), kata (صادقان) wajib di-i'rab sebagai Khabar Muqaddam dan (الرجلان) sebagai Mubtada' Muakhkhar.",
+      "opsi_b": "Pada ketiga kalimat tersebut, kata pertama boleh di-i'rab sebagai Mubtada' maupun sebagai Khabar Muqaddam karena semuanya didahului oleh Hamzah Istifham.",
+      "opsi_c": "Kalimat (1) salah secara nahwu karena Mubtada' dan Khabar wajib sesuai dalam bilangan mutsanna, sehingga yang benar hanyalah kalimat (3).",
+      "opsi_d": "Pada kalimat (2), kata (صادقٌ) wajib di-i'rab sebagai Mubtada' saja dan tidak boleh menjadi Khabar Muqaddam karena (أخوك) adalah Asma'ul Khamsah.",
+      "jawaban_benar": "A",
+      "pembahasan": "Jika Mubtada' Washf mufrad sedangkan kata setelahnya mutsanna/jamak seperti kalimat (1) (أصادقٌ الرجلانِ؟), maka WAJIB satu wajah: Washf adalah Mubtada', dan (الرجلان) adalah Fa'il sadda masaddal khabar. Sebaliknya, jika keduanya sama-sama mutsanna/jamak seperti kalimat (3) (أصادقانِ الرجلانِ؟), maka WAJIB Washf menjadi Khabar Muqaddam dan (الرجلان) Mubtada' Muakhkhar. Adapun kalimat (2) yang sama-sama mufrad boleh dua wajah."
+    },
+    {
+      "id_soal": "SOL-2202",
+      "id_bab": "BAB-22",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Khabar berupa Zharaf Zaman pada dasarnya tidak boleh mengkhabari Mubtada' berupa Isim Dzat (الجثة), sehingga kalimat (زَيْدٌ اليَوْمَ) adalah batal. Namun orang Arab mengatakan: (اللَّيْلَةَ الهِلَالُ) dan (فِي أَكْمَامِهَا الوَرْدُ أَيَّارَ). Mengapa kalimat tersebut sah secara nahwu?",
+      "opsi_a": "Karena kata (الهلال) dan (الورد) adalah isim jamid yang tidak memiliki mashdar.",
+      "opsi_b": "Karena Mubtada' Isim Dzat tersebut ditakwilkan ke makna Isim Ma'na (Mashdar), yaitu (طلوعُ الهلالِ الليلةَ) dan (تفتّحُ الوردِ في أكمامهِ أيارَ), serta memperoleh faedah waktu tertentu.",
+      "opsi_c": "Karena Zharaf Zaman (الليلةَ) di sini berubah fungsi menjadi Zharaf Makan secara majazi.",
+      "opsi_d": "Karena Khabar Zharaf Zaman didahulukan atas Mubtada', dan setiap zharaf yang didahulukan otomatis sah menjadi khabar bagi isim dzat apa pun.",
+      "jawaban_benar": "B",
+      "pembahasan": "Kaidah Ibnu Malik menyebutkan: (ولا يكونُ اسمُ زمانٍ خبرا ... عن جثةٍ وإنْ يفدْ فأخبرا). Isim zaman tidak boleh menjadi khabar bagi isim dzat (جثة), kecuali jika isim dzat tersebut menyerupai isim makna (mashdar) sehingga dapat ditakwilkan dengan mashdar yang sesuai dan memberikan faedah informasi waktu tertentu, seperti (الليلةَ الهلالُ) yang bermakna (الليلةَ طلوعُ الهلالِ)."
+    },
+    {
+      "id_soal": "SOL-2301",
+      "id_bab": "BAB-23",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Bandingkan dua kalimat berikut:\n(1) فِى الدَّارِ صَاحِبُهَا\n(2) فِى الدَّارِ زَيْدٌ\nManakah pernyataan hukum urutan Mubtada'-Khabar yang benar dari kedua kalimat di atas?",
+      "opsi_a": "Pada kedua kalimat tersebut, Khabar (في الدار) sama-sama WAJIB didahulukan karena berupa Syibhul Jumlah.",
+      "opsi_b": "Pada kalimat (1), Khabar WAJIB didahulukan karena di dalam Mubtada' ada dhamir yang kembali kepada bagian Khabar; sedangkan pada kalimat (2), Khabar BOLEH didahulukan atau diakhirkan karena Mubtada' (زيد) adalah ma'rifah dan tidak mengandung dhamir yang kembali ke Khabar.",
+      "opsi_c": "Pada kalimat (1), Khabar BOLEH diakhirkan menjadi (صاحبُها في الدارِ) karena dhamir boleh kembali ke belakang secara rutbah.",
+      "opsi_d": "Pada kalimat (2), Khabar WAJIB didahulukan karena (زيد) adalah isim 'alam.",
+      "jawaban_benar": "B",
+      "pembahasan": "Kalimat (في الدارِ صاحبُها) wajib mendahulukan khabar karena pada mubtada' (صاحبها) terdapat dhamir (ها) yang kembali kepada bagian khabar (الدار). Sedangkan pada (في الدارِ زيدٌ), mubtada'nya adalah isim ma'rifah tanpa dhamir yang kembali ke khabar, sehingga taqdim khabarnya hanya bersifat Jaiz (boleh: زيدٌ في الدارِ)."
+    },
+    {
+      "id_soal": "SOL-2302",
+      "id_bab": "BAB-23",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Dalam kalimat (ضَرْبِي العَبْدَ مُسِيئًا), di manakah letak Khabar dari Mubtada' (ضربي) dan apa status i'rab kata (مسيئًا)?",
+      "opsi_a": "Kata (مسيئًا) adalah Khabar dari (ضربي) yang dinashabkan karena menyerupai khabar Kana.",
+      "opsi_b": "Kata (العبدَ) adalah Khabar yang dinashabkan, sedangkan (مسيئًا) adalah Na'at.",
+      "opsi_c": "Khabar dari (ضربي) WAJIB dibuang (محذوف وجوباً) dengan takdir (إذْ كانَ مسيئاً), sedangkan kata (مسيئًا) adalah Hal yang menempati posisi Khabar (حال سدت مسد الخبر).",
+      "opsi_d": "Khabar dari (ضربي) boleh disebutkan menjadi (ضربي العبدَ مسيئاً حاصلٌ) tanpa merusak struktur kalimat.",
+      "jawaban_benar": "C",
+      "pembahasan": "Apabila Mubtada' berupa Mashdar yang beramal (ضربي العبدَ) lalu diikuti oleh Hal (مسيئاً) yang secara makna tidak sah menjadi khabar bagi mashdar tersebut, maka Khabar wajib dibuang dan Hal tersebut menempati posisi Khabar (سد مسد الخبر). Takdirnya: (ضربي العبدَ حاصلٌ إذْ كانَ مسيئاً)."
+    },
+    {
+      "id_soal": "SOL-2401",
+      "id_bab": "BAB-24",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Manakah di antara empat kalimat berikut yang SALAH secara kaidah nahwu terkait pembuangan Nun pada mudhari' (كان) yang majzum?",
+      "opsi_a": "وَلَمْ أَكُ بَغِيًّا",
+      "opsi_b": "وَإِنْ تَكُ حَسَنَةً يُضَاعِفْهَا",
+      "opsi_c": "لَمْ يَكُ الرَّجُلُ حَاضِرًا",
+      "opsi_d": "إِنْ يَكُنْهُ فَلَنْ تُسَلَّطَ عَلَيْهِ",
+      "jawaban_benar": "C",
+      "pembahasan": "Pembuangan Nun pada (يَكُنْ) yang majzum mensyaratkan 4 hal: (1) majzum dengan sukun, (2) TIDAK bertemu huruf sukun setelahnya (لا يليها ساكن), (3) tidak bersambung dengan dhamir muttashil nashab, dan (4) tidak waqaf. Pada opsi C (لَمْ يَكُ الرَّجُلُ), setelah (يكُ) terdapat Alif-Lam sukun pada (الرجل), sehingga menurut jumhur ulama Bashrah tidak boleh membuang Nun (wajib: لم يكنِ الرجلُ). Adapun opsi D sudah benar karena ketika bersambung dengan dhamir (ـهُ), Nun wajib dipertahankan (إنْ يكنْهُ)."
+    },
+    {
+      "id_soal": "SOL-2402",
+      "id_bab": "BAB-24",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Perhatikan kalimat berikut: (مَا زَيْدٌ مُتَكَاسِلًا بَلْ ...). Bagaimanakah harakat kata yang tepat untuk mengisi titik-titik setelah huruf (بَلْ) menurut kaidah Ma Hijaziyyah?",
+      "opsi_a": "مُجْتَهِدًا (wajib nashab karena ma'thuf pada khabar Ma Hijaziyyah).",
+      "opsi_b": "مُجْتَهِدٌ (wajib rafa' sebagai khabar bagi mubtada' yang dibuang, yakni: بلْ هوَ مجتهدٌ).",
+      "opsi_c": "Boleh مُجْتَهِدًا (nashab) dan boleh مُجْتَهِدٌ (rafa') secara setara.",
+      "opsi_d": "مُجْتَهِدٍ (majrur dengan takwil Ba' Za'idah).",
+      "jawaban_benar": "B",
+      "pembahasan": "Apabila setelah khabar (ما) الحجازية terdapat huruf 'athaf yang memberikan makna الإثبات (penetapan positif) seperti (بَلْ) atau (لَكِنْ), maka kata setelahnya WAJIB dibaca rafa' sebagai khabar dari mubtada' mahdzuf (بلْ هوَ مجتهدٌ), karena (ما) adalah huruf nafi yang tidak dapat beramal pada kalimat yang positif (موجب)."
+    },
+    {
+      "id_soal": "SOL-2501",
+      "id_bab": "BAB-25",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Mengapa seluruh Af'alul Syuru' (seperti شَرَعَ، طَفِقَ، أَخَذَ، جَعَلَ) haram/terlarang khabarnya bersambung dengan huruf (أَنْ) Mashdariyyah, sedangkan Af'alul Raja' seperti (حَرَى، اخْلَوْلَقَ) justru wajib bersambung dengan (أَنْ)?",
+      "opsi_a": "Karena Af'alul Syuru' adalah fi'il mutasharrif, sedangkan Af'alul Raja' adalah fi'il jamid.",
+      "opsi_b": "Karena Af'alul Syuru' bermakna dimulainya perbuatan pada waktu sekarang (الحال), sedangkan (أَنْ) Mashdariyyah memalingkan makna mudhari' ke waktu yang akan datang (الاستقبال), sehingga terjadi kontradiksi waktu; sebaliknya Af'alul Raja' bermakna harapan di masa depan sehingga sangat serasi dengan (أَنْ).",
+      "opsi_c": "Karena Af'alul Syuru' sudah mengandung makna (أَنْ) di dalam huruf pertamanya.",
+      "opsi_d": "Karena Af'alul Syuru' menashabkan mudhari' secara langsung tanpa perantara huruf nashab.",
+      "jawaban_benar": "B",
+      "pembahasan": "Alasan ilmiyah (ta'lil nahwi) terlarangnya (أَنْ) pada khabar Af'alul Syuru' adalah adanya التنافي بين الحال والاستقبال (pertentangan antara makna waktu sekarang pada Syuru' dan makna masa depan pada huruf أنْ). Sebaliknya, Raja' (harapan) selalu tertuju pada masa depan sehingga selaras dengan (أَنْ)."
+    },
+    {
+      "id_soal": "SOL-2502",
+      "id_bab": "BAB-25",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Jika kita ingin mengungkapkan kalimat: 'Para siswi semoga lulus' dengan mendahulukan kata (الطَّالِبَاتُ), manakah dua susunan yang benar berdasarkan perbedaan Lughah Hijaz dan Lughah Bani Tamim?",
+      "opsi_a": "Hijaz: (الطَّالِبَاتُ عَسَى أَنْ يَنْجَحْنَ) [عسى Tam] | Tamim: (الطَّالِبَاتُ عَسَيْنَ أَنْ يَنْجَحْنَ) [عسى Naqish].",
+      "opsi_b": "Hijaz: (الطَّالِبَاتُ عَسَيْنَ أَنْ يَنْجَحْنَ) | Tamim: (الطَّالِبَاتُ عَسَتْ أَنْ يَنْجَحْنَ).",
+      "opsi_c": "Hijaz: (الطَّالِبَاتُ عَسَى يَنْجَحْنَ) | Tamim: (الطَّالِبَاتُ عَسَوْا أَنْ يَنْجَحُوا).",
+      "opsi_d": "Hanya ada satu susunan yang benar yaitu (الطَّالِبَاتُ عَسَيْنَ أَنْ يَنْجَحْنَ) karena 'Asa tidak boleh mendahului fa'ilnya.",
+      "jawaban_benar": "A",
+      "pembahasan": "Apabila (عسى) didahului oleh isim zhahir (الطالباتُ) dan diikuti oleh (أنْ + المضارع), maka menurut Lughah Hijaz: (عسى) adalah fi'il Tam yang fa'ilnya adalah mashdar muawwal (أنْ ينجحنَ) sehingga lafazh (عسى) tetap mufrad mudzakkar tanpa dhamir. Sedangkan menurut Lughah Bani Tamim: (عسى) adalah fi'il Naqish yang menyimpan dhamir isimnya, sehingga wajib diberi Nun Niswah menjadi (عَسَيْنَ)."
+    }
+  ],
+  "istilah": [
+    {
+      "id_istilah": "IST-401",
+      "istilah_arab": "الوصف الرافع لمكتفًى به (سدّ مسدّ الخبر)",
+      "bidang": "Nahwu - Al-Jumlah Al-Ismiyyah",
+      "definisi_arab": "المبتدأ الذي يكون اسماً مشتقاً (اسم فاعل أو اسم مفعول أو صفة مشبهة) مسبوقاً بنفي أو استفهام، ويرفع فاعلاً أو نائب فاعل يغني عن الخبر وتتم به الجملة.",
+      "definisi_indo": "Jenis Mubtada' kedua yang berupa isim musytaq (isim fa'il, isim maf'ul, atau shifat musyabbahah) yang didahului oleh Nafi atau Istifham, di mana ia merafa'kan Fa'il atau Na'ibul Fa'il yang langsung mencukupkan kalimat sehingga tidak membutuhkan Khabar lagi.",
+      "contoh": "أَقَائِمٌ الزَّيْدَانِ؟ / مَا مَحْبُوبٌ الكَسُولَانِ"
+    },
+    {
+      "id_istilah": "IST-402",
+      "istilah_arab": "مسوغات الابتداء بالنكرة",
+      "bidang": "Nahwu - Al-Jumlah Al-Ismiyyah",
+      "definisi_arab": "الأمور التي تجعل الإخبار عن المبتدأ النكرة مفيداً فائدة يعتد بها، وترجع في أصلها إلى التخصيص (بوصف أو إضافة أو عمل) أو التعميم (بنفي أو استفهام).",
+      "definisi_indo": "Faktor-faktor gramatikal dan semantis yang membolehkan isim Nakirah menjadi Mubtada' karena telah menghasilkan faedah makna yang sempurna, baik melalui pengkhususan (takhshish) maupun keumuman (ta'mim).",
+      "contoh": "وَلَعَبْدٌ مُؤْمِنٌ خَيْرٌ مِنْ مُشْرِكٍ / أَإِلَٰهٌ مَعَ اللَّهِ"
+    },
+    {
+      "id_istilah": "IST-403",
+      "istilah_arab": "الرابط في جملة الخبر",
+      "bidang": "Nahwu - Al-Jumlah Al-Ismiyyah",
+      "definisi_arab": "العنصر اللفظي أو المعنوي الذي يربط جملة الخبر بالمبتدأ حين لا تكون الجملة عين المبتدأ في المعنى، كالضمير أو اسم الإشارة أو إعادة المبتدأ بلفظه أو العموم.",
+      "definisi_indo": "Unsur pengikat (baik berupa dhamir, isim isyarah, pengulangan lafazh mubtada', maupun keumuman) yang menghubungkan Khabar Jumlah dengan Mubtada'-nya agar kalimat tidak terputus menjadi dua kalimat asing.",
+      "contoh": "زَيْدٌ أَبُوهُ كَرِيمٌ / وَلِبَاسُ التَّقْوَىٰ ذَٰلِكَ خَيْرٌ / الحَاقَّةُ مَا الحَاقَّةُ"
+    },
+    {
+      "id_istilah": "IST-404",
+      "istilah_arab": "الفعل الناقص والفعل التام",
+      "bidang": "Nahwu - An-Nawasikh",
+      "definisi_arab": "الفعل الناقص هو ما لا يكتفي بمرفوعه بل يحتاج إلى منصوب يتمم الفائدة (خبره)؛ والفعل التام هو ما يكتفي بمرفوعه (فاعله) ولا يحتاج إلى خبر.",
+      "definisi_indo": "Fi'il Naqish adalah fi'il yang tidak cukup hanya dengan marfu'-nya (isimnya) melainkan membutuhkan manshub (khabarnya) untuk menyempurnakan makna; sedangkan Fi'il Tam adalah fi'il yang cukup dengan marfu'-nya sebagai Fa'il.",
+      "contoh": "الناقص: وَكَانَ اللَّهُ عَلِيمًا حَكِيمًا | التام: وَإِنْ كَانَ ذُو عُسْرَةٍ فَنَظِرَةٌ إِلَى مَيْسَرَةٍ"
+    },
+    {
+      "id_istilah": "IST-405",
+      "istilah_arab": "ما الحجازية",
+      "bidang": "Nahwu - An-Nawasikh",
+      "definisi_arab": "(ما) النافية العاملة عمل (ليس) في لغة أهل الحجاز، فترفع الاسم وتنصب الخبر بأربعة شروط: ألا يقترن اسمها بـ (إنْ)، وألا ينتقض نفيها بـ (إلا)، وألا يتقدم خبرها ولا معمول خبرها على اسمها.",
+      "definisi_indo": "Huruf (مَا) Nafiyah yang dalam dialek penduduk Hijaz (dan bahasa Al-Qur'an) beramal seperti (لَيْسَ) merafa'kan isim dan menashabkan khabar apabila memenuhi empat syarat amalnya.",
+      "contoh": "مَا هَٰذَا بَشَرًا / مَا هُنَّ أُمَّهَاتِهِمْ"
+    },
+    {
+      "id_istilah": "IST-406",
+      "istilah_arab": "أفعال المقاربة والرجاء والشروع",
+      "bidang": "Nahwu - An-Nawasikh",
+      "definisi_arab": "أفعال ناسخة (كاد وأخواتها) ترفع المبتدأ وتنصب الخبر، ويشترط في خبرها أن يكون جملة فعلية فعلها مضارع رافع لضمير اسمها، وتدل على قرب وقوع الخبر أو رجائه أو الابتداء فيه.",
+      "definisi_indo": "Kelompok fi'il nasikhah (Kada wa Akhawatuha) yang merafa'kan isim dan menashabkan khabar berupa jumlah fi'liyyah mudhari'iyyah, yang menunjukkan makna hampir terjadinya khabar (Muqarabah), harapan terjadinya khabar (Raja'), atau mulainya perbuatan pada khabar (Syuru').",
+      "contoh": "يَكَادُ البَرْقُ يَخْطَفُ أَبْصَارَهُمْ / عَسَى اللَّهُ أَنْ يَأْتِيَ بِالفَتْحِ / وَطَفِقَا يَخْصِفَانِ"
+    }
+  ]
+}

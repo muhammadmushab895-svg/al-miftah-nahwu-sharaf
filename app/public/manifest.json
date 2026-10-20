@@ -1,0 +1,50 @@
+{
+  "id": "/?source=pwa",
+  "name": "Al-Miftah (المفتاح) | Ensiklopedia & Laboratorium Nahwu-Sharaf",
+  "short_name": "Al-Miftah",
+  "description": "Ensiklopedia Gramatika Arab & Laboratorium I'rab Al-Qur'an 30 Juz Terpadu berbasis An-Nahwu At-Tathbiqi & Jami'ud Durus Al-'Arabiyyah",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#064E3B",
+  "theme_color": "#064E3B",
+  "orientation": "portrait-primary",
+  "lang": "id",
+  "dir": "ltr",
+  "categories": [
+    "education",
+    "books",
+    "reference"
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "bab": [
+    {
+      "id_bab": "BAB-12",
+      "urutan": 12,
+      "kategori": "Sharaf Isim & Klasifikasi",
+      "level": "Menengah",
+      "judul_arab": "المُذَكَّرُ وَالمُؤَنَّثُ وَأَقْسَامُ جَمْعِ التَّكْسِيرِ (جُمُوعُ القِلَّةِ وَالكَثْرَةِ)",
+      "judul_indo": "Mudzakkar-Muannats serta Pembagian Jama' Taksir (Jumu'ul Qillah dan Jumu'ul Katsrah)",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi (Khaled Abdul Aziz), Bab Jam'ut Taksir wa Al-Muannats, hlm. 185-204",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah (Syaikh Musthafa Al-Ghalayini), Juz 2, Bab Al-Mudzakkar wal Muannats & Bab Jam'it Taksir, hlm. 45-86",
+      "ringkasan_cakupan": "Klasifikasi isim menjadi Mudzakkar dan Muannats (Haqiqi, Majazi, Lafzhi, Ma'nawi), 3 tanda ta'nits, wazan-wazan yang sama antara pria dan wanita; serta pembagian Jama' Taksir: 4 wazan Jumu'ul Qillah (أَفْعُل، أَفْعَال، أَفْعِلَة، فِعْلَة) yang menunjukkan 3-10, wazan-wazan Jumu'ul Katsrah (17 wazan), dan Shighah Muntahal Jumu'.",
+      "estimasi_jam_belajar": 6
+    },
+    {
+      "id_bab": "BAB-13",
+      "urutan": 13,
+      "kategori": "Sharaf Terapan",
+      "level": "Menengah - Lanjut",
+      "judul_arab": "التَّصْغِيرُ وَالنَّسَبُ وَأَحْكَامُهُمَا الصَّرْفِيَّةُ",
+      "judul_indo": "At-Tashghir (Pengecilan Makna) dan An-Nasab (Penisbatan) beserta Kaidah Morfologisnya",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi (Khaled Abdul Aziz), Mulhaq Tashrifil Asma', hlm. 205-220",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah (Syaikh Musthafa Al-Ghalayini), Juz 2, Bab At-Tashghir & Bab An-Nasab, hlm. 115-168",
+      "ringkasan_cakupan": "Faidah tashghir (tashghir tahqir, taqrib zaman/makan, taqlil, tahabbub), 3 wazan qiyasi tashghir (فُعَيْل، فُعَيْعِل، فُعَيْعِيل), aturan pengembalian huruf mahdzuf saat tashghir; serta kaidah penambahan Ya' Musyaddadah pada Nasab dan hukum perubahan pada Isim Maqshur, Manqush, Mamdud, Murakkab, dan wazan فَعِيلَة/فُعَيْلَة.",
+      "estimasi_jam_belajar": 8
+    },
+    {
+      "id_bab": "BAB-14",
+      "urutan": 14,
+      "kategori": "Sharaf Lanjutan (Kaidah Inti)",
+      "level": "Mahir (Mutaqaddim)",
+      "judul_arab": "الإِعْلَالُ وَالإِبْدَالُ وَالإِدْغَامُ وَأَحْكَامُ الوَقْفِ",
+      "judul_indo": "Kaidah Komprehensif I'lal, Ibdal, Idgham, dan Hukum Waqaf",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi (Khaled Abdul Aziz), Qawa'idul I'lal wal Ibdal, hlm. 221-248",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah (Syaikh Musthafa Al-Ghalayini), Juz 1, Bab Al-I'lal wal Ibdal wal Idgham wal Waqf, hlm. 253-318",
+      "ringkasan_cakupan": "Bedah mendalam kaidah-kaidah I'lal: I'lal bil Qalb (10 kaidah perubahan wawu dan ya' menjadi alif, hamzah, atau ya'), I'lal bin-Naql/Taskin, dan I'lal bil Hadzf; kaidah Ibdal pada wazan افتعل (huruf ithbaq mengubah ta' menjadi tha', huruf zay/dal/dzal mengubah ta' menjadi dal, wawu/ya' menjadi ta'); kaidah wajib/jaiz/mumtani' idgham; serta kaidah waqaf (sukun, raum, isymam, ibdal, dan ha' sakt).",
+      "estimasi_jam_belajar": 10
+    }
+  ],
+  "materi": [
+    {
+      "id_materi": "MAT-1201",
+      "id_bab": "BAB-12",
+      "sub_topik_arab": "أَقْسَامُ المُؤَنَّثِ وَالأَوْزَانُ الَّتِي يَسْتَوِي فِيهَا المُذَكَّرُ وَالمُؤَنَّثُ",
+      "sub_topik_indo": "Pembagian Muannats dan Sifat yang Berlaku Sama untuk Pria dan Wanita",
+      "kaidah_arab": "المُؤَنَّثُ: حَقِيقِيٌّ (مَا يَلِدُ أَوْ يَبِيضُ)، وَمَجَازِيٌّ (مَا يُعَامَلُ مُعَامَلَةَ الأُنْثَى وَلَا يَلِدُ كَالشَّمْسِ وَالنَّفْسِ). وَمِنْ حَيْثُ العَلَامَةُ: لَفْظِيٌّ (فِيهِ تَاءٌ أَوْ أَلِفٌ وَهُوَ لِمُذَكَّرٍ كَحَمْزَةَ)، وَمَعْنَوِيٌّ (دَلَّ عَلَى مُؤَنَّثٍ بِلَا عَلَامَةٍ كَهِنْدَ وَمَرْيَمَ)، وَلَفْظِيٌّ مَعْنَوِيٌّ مَعًا كَفَاطِمَةَ. وَيَسْتَوِي المُذَكَّرُ وَالمُؤَنَّثُ فِي خَمْسَةِ أَوْزَانٍ: فَعُولٌ بِمَعْنَى فَاعِلٍ، فَعِيلٌ بِمَعْنَى مَفْعُولٍ، مِفْعَالٌ، مِفْعِيلٌ، مِفْعَلٌ.",
+      "penjelasan_indo": "Muannats terbagi menjadi Haqiqi (bernyawa yang melahirkan/bertelur: اِمْرَأَة، نَاقَة) dan Majazi (benda tak bernyawa yang disepakati bangsa Arab sebagai muannats: شَمْس، دَار، عَيْن). Berdasarkan tanda ta'nits (Ta' Marbuthah, Alif Maqshurah Ta'nits, Alif Mamdudah Ta'nits): Lafzhi (nama pria bertanda ta'nits: حَمْزَة، طَلْحَة), Ma'nawi (nama wanita tanpa tanda: هِنْد، زَيْنَب), dan gabungan Lafzhi-Ma'nawi (فَاطِمَة). Sifat yang wazannya sama untuk pria dan wanita (tidak boleh diberi ta' marbuthah): فَعُول bermakna fa'il (رَجُلٌ صَبُورٌ / اِمْرَأَةٌ صَبُورٌ), فَعِيل bermakna maf'ul (رَجُلٌ جَرِيحٌ / اِمْرَأَةٌ جَرِيحٌ), serta wazan alat/mubalaghah مِفْعَال (مِعْطَار), مِفْعِيل (مِعْطِير), dan مِفْعَل (مِغْشَم).",
+      "rincian_hukum_dan_syarat": "Catatan Ta' Ta'nits pada Sifat: Jika فَعُول bermakna maf'ul (seperti رَكُوبَة bermakna مَرْكُوبَة), maka wajib diberi ta' saat muannats. Begitu pula jika فَعِيل bermakna fa'il (seperti رَحِيمَة، كَرِيمَة), maka wajib diberi ta' saat menyifati muannats.",
+      "rumus_ringkas": "5 Wazan Tanpa Ta' Ta'nits: [فَعُول = Fa'il, فَعِيل = Maf'ul, مِفْعَال, مِفْعِيل, مِفْعَل]",
+      "tanbihat_dan_khilaf": "Anggota tubuh manusia yang berpasangan umumnya Muannats Majazi (عَيْنٌ، يَدٌ، رِجْلٌ، أُذُنٌ)، sedangkan anggota tubuh yang tunggal umumnya Mudzakkar (رَأْسٌ، أَنْفٌ، لِسَانٌ، قَلْبٌ)."
+    },
+    {
+      "id_materi": "MAT-1202",
+      "id_bab": "BAB-12",
+      "sub_topik_arab": "جُمُوعُ القِلَّةِ وَجُمُوعُ الكَثْرَةِ وَصِيغَةُ مُنْتَهَى الجُمُوعِ",
+      "sub_topik_indo": "Empat Wazan Jumu'ul Qillah, Jumu'ul Katsrah, dan Muntahal Jumu'",
+      "kaidah_arab": "جَمْعُ التَّكْسِيرِ نَوْعَانِ: (1) جَمْعُ قِلَّةٍ: يَدُلُّ حَقِيقَةً عَلَى مَا بَيْنَ الثَّلَاثَةِ إِلَى العَشَرَةِ، وَلَهُ أَرْبَعَةُ أَوْزَانٍ قِيَاسِيَّةٍ جَمَعَهَا ابْنُ مَالِكٍ فِي قَوْلِهِ: (بِأَفْعُلٍ وَبِأَفْعَالٍ وَأَفْعِلَةٍ ... وَفِعْلَةٍ كَذَا يُعْرَفُ جَمْعُ القِلَّةِ). (2) جَمْعُ كَثْرَةٍ: يَدُلُّ عَلَى مَا فَوْقَ العَشَرَةِ إِلَى مَا لَا نِهَايَةَ لَهُ، وَلَهُ سَبْعَةَ عَشَرَ وَزْنًا. وَصِيغَةُ مُنْتَهَى الجُمُوعِ كُلُّ جَمْعٍ بَعْدَ أَلِفِ تِكْسِيرِهِ حَرْفَانِ أَوْ ثَلَاثَةٌ أَوْسَطُهَا سَاكِنٌ (مَفَاعِلُ وَمَفَاعِيلُ).",
+      "penjelasan_indo": "Jama' Taksir terbagi dua dari segi kuantitas: 1. Jumu'ul Qillah: Khusus untuk jumlah sedikit (3 hingga 10). Empat wazannya adalah: أَفْعُلٌ (نَفْس -> أَنْفُس), أَفْعَالٌ (قَلَم -> أَقْلَام), أَفْعِلَةٌ (طَعَام -> أَطْعِمَة), dan فِعْلَةٌ (فَتَى -> فِتْيَة). 2. Jumu'ul Katsrah: Untuk jumlah banyak (11 ke atas tanpa batas), seperti فُعَلٌ (غُرَف), فِعَلٌ (قِطَع), فُعُولٌ (قُلُوب), فِعَالٌ (جِبَال), فُعَّالٌ (كُتَّاب), فُعَلَاءُ (عُلَمَاء), فِعْلَانٌ (غِلْمَان). 3. Shighah Muntahal Jumu' adalah puncak jama' taksir yang berwazan مَفَاعِلُ (مَسَاجِد) atau مَفَاعِيلُ (مَصَابِيح) dan dihukumi Mamnu' minash Sharf.",
+      "rincian_hukum_dan_syarat": "Bila suatu kata memiliki bentuk Jumu'ul Qillah dan Jumu'ul Katsrah sekaligus, maka dalam sastra tinggi bahasa Arab penggunaannya dibedakan secara presisi: أَعْيُنٌ (qillah: 3-10 mata) vs عُيُونٌ (katsrah: banyak mata air); أَشْهُرٌ (qillah: beberapa bulan) vs شُهُورٌ (katsrah).",
+      "rumus_ringkas": "4 Wazan Qillah: [أَفْعُل، أَفْعَال، أَفْعِلَة، فِعْلَة] | Muntahal Jumu': Huruf ke-3 Alif + 2 huruf / 3 huruf tengah sukun",
+      "tanbihat_dan_khilaf": "Dalam Al-Qur'an: (فَتَرَبَّصُوا بِأَنْفُسِهِنَّ أَرْبَعَةَ أَشْهُرٍ وَعَشْرًا), digunakan أَشْهُرٍ (wazan qillah) karena bilangannya 4 (antara 3 dan 10), bukan شُهُور."
+    },
+    {
+      "id_materi": "MAT-1301",
+      "id_bab": "BAB-13",
+      "sub_topik_arab": "أَوْزَانُ التَّصْغِيرِ الثَّلَاثَةُ وَقَوَاعِدُهُ الصَّرْفِيَّةُ",
+      "sub_topik_indo": "Tiga Wazan Tashghir dan Kaidah Pengembalian Huruf Asli",
+      "kaidah_arab": "أَوْزَانُ التَّصْغِيرِ ثَلَاثَةٌ: (1) فُعَيْلٌ لِلثُّلَاثِيِّ (رَجُلٌ -> رُجَيْلٌ)، (2) فُعَيْعِلٌ لِلرُّبَاعِيِّ (دِرْهَمٌ -> دُرَيْهِمٌ)، (3) فُعَيْعِيلٌ لِلْخُمَاسِيِّ الَّذِي قَبْلَ آخِرِهِ حَرْفُ مَدٍّ سَاكِنٌ (مِفْتَاحٌ -> مُفَيْتِيحٌ، قِنْدِيلٌ -> قُنَيْدِيلٌ). وَكُلُّ اسْمٍ ثُلَاثِيٍّ حُذِفَ مِنْهُ حَرْفٌ يُرَدُّ إِلَيْهِ عِنْدَ التَّصْغِيرِ (يَدٌ -> يُدَيَّةٌ، أَبٌ -> أُبَيٌّ).",
+      "penjelasan_indo": "Tashghir bertujuan menyatakan kecilnya ukuran fisik, rendahnya martabat/kehinaan, sedikitnya jumlah, dekatnya waktu/tempat, atau kasih sayang (tahabbub). Caranya: huruf pertama didhammahkan, huruf kedua difathahkan, lalu ditambah 'Ya' Tashghir Sakinah'. Isim Tsulatsi muannats tanpa ta' ta'nits wajib dimunculkan ta' ta'nits-nya saat ditashghir: شَمْسٌ -> شُمَيْسَةٌ, أَرْضٌ -> أُرَيْضَةٌ, دَارٌ -> دُوَيْرَةٌ. Huruf yang terbuang dari kata tsulatsi wajib dikembalikan: أَبٌ (asalnya أَبَوٌ) -> أُبَيٌّ, يَدٌ (asalnya يَدَيٌ) -> يُدَيَّةٌ, عِدَةٌ (asalnya وَعْدٌ) -> وُعَيْدٌ.",
+      "rincian_hukum_dan_syarat": "Kata yang Tidak Boleh Ditashghir: (1) Isim-isim Mabni (kecuali beberapa isim isyarah dan maushul yang sama'i seperti ذَيَّا dan اللَّذَيَّا), (2) Asma'ul Husna dan nama para malaikat/nabi demi pengagungan, (3) Kata yang sudah berpola tashghir secara asal (كُمَيْت، شُعَيْب), (4) Kalimah Fi'il dan Harf.",
+      "rumus_ringkas": "3 Huruf = فُعَيْلٌ | 4 Huruf = فُعَيْعِلٌ | 5 Huruf (mad sebelum akhir) = فُعَيْعِيلٌ | Tsulatsi Muannats = + Ta' Marbuthah (شُمَيْسَة)",
+      "tanbihat_dan_khilaf": "Pengecualian khusus: Tashghir pada kata كِتَابٌ adalah كُتَيِّبٌ (bukan kutaytib), karena huruf alif mad diubah menjadi ya' lalu diidghamkan ke ya' tashghir."
+    },
+    {
+      "id_materi": "MAT-1302",
+      "id_bab": "BAB-13",
+      "sub_topik_arab": "قَوَاعِدُ النَّسَبِ إِلَى المَقْصُورِ وَالمَنْقُوصِ وَالمَمْدُودِ وَفَعِيلَةَ",
+      "sub_topik_indo": "Kaidah An-Nasab (Ya' Nisbah) pada Berbagai Bentuk Isim",
+      "kaidah_arab": "النَّسَبُ إِلْحَاقُ يَاءٍ مُشَدَّدَةٍ مَكْسُورٍ مَا قَبْلَهَا بِآخِرِ الاسْمِ لِلدَّلَالَةِ عَلَى نِسْبَتِهِ إِلَى المُجَرَّدِ مِنْهَا (مِصْرُ -> مِصْرِيٌّ). وَتُحْذَفُ تَاءُ التَّأْنِيثِ عِنْدَ النَّسَبِ (مَكَّةُ -> مَكِّيٌّ). وَفِي المَقْصُورِ تُقْلَبُ أَلِفُهُ الثَّالِثَةُ وَاوًا (عَصًا -> عَصَوِيٌّ). وَفِي وَزْنِ (فَعِيلَةَ) صَحِيحِ العَيْنِ غَيْرِ المُضَعَّفِ تُحْذَفُ اليَاءُ وَالتَّاءُ وَتُفْتَحُ العَيْنُ (حَنِيفَةُ -> حَنَفِيٌّ، مَدِينَةُ -> مَدَنِيٌّ).",
+      "penjelasan_indo": "Penisbatan (An-Nasab) berfungsi menghubungkan suatu isim dengan suku, negeri, mazhab, atau kerajinan. Kaidah hukumnya: 1. Ta' Ta'nits wajib dibuang (بَصْرَة -> بَصْرِيّ). 2. Isim Maqshur: Alif ke-3 wajib diganti wawu (فَتَى -> فَتَوِيّ); Alif ke-4 jika huruf ke-2 sakin boleh dibuang atau diganti wawu (طَنْطَا -> طَنْطِيّ atau طَنْطَوِيّ). 3. Isim Manqush: Ya' ke-3 diganti wawu dan huruf sebelumnya difathahkan (شَجٍ -> شَجَوِيّ); Ya' ke-4 boleh dibuang atau diganti wawu (القَاضِي -> القَاضِيّ atau القَضَوِيّ). 4. Isim Mamdud: jika hamzah ta'nits wajib diganti wawu (صَحْرَاء -> صَحْرَاوِيّ); jika hamzah asli tetap dipertahankan (قُرَّاء -> قُرَّائِيّ). 5. Wazan فَعِيلَة (shahih 'ain tanpa tadha'if) wajib membuang ya' dan ta' lalu membuka 'ainnya: حَنِيفَة -> حَنَفِيّ, مَدِينَة -> مَدَنِيّ, قَبِيلَة -> قَبَلِيّ.",
+      "rincian_hukum_dan_syarat": "Pengecualian Wazan فَعِيلَة: Jika 'ain kalimahnya berupa huruf mu'tal (طَوِيلَة) atau mudha'af (جَلِيلَة), huruf Ya' TIDAK BOLEH DIBUANG demi mencegah kerancuan: طَوِيلِيّ dan جَلِيلِيّ.",
+      "rumus_ringkas": "Buang Ta' Ta'nits | فَعِيلَة -> فَعَلِيّ (حَنَفِيّ) | صَحْرَاء -> صَحْرَاوِيّ | فَتَى -> فَتَوِيّ",
+      "tanbihat_dan_khilaf": "Nasab pada Murakkab Idhafi: Dinisbatkan ke bagian pertama (shadr) seperti امْرُؤُ القَيْسِ -> امْرَئِيّ, KECUALI jika bagian pertama berupa 'Alam Abu/Ibnu atau ditakutkan menimbulkan kerancuan, maka dinisbatkan ke bagian kedua ('ajuz): أَبُو بَكْرٍ -> بَكْرِيٌّ, عَبْدُ مَنَافٍ -> مَنَافِيٌّ."
+    },
+    {
+      "id_materi": "MAT-1401",
+      "id_bab": "BAB-14",
+      "sub_topik_arab": "قَوَاعِدُ الإِعْلَالِ بِالقَلْبِ وَالنَّقْلِ وَالحَذْفِ",
+      "sub_topik_indo": "Kaidah Lengkap I'lal: Qalb, Taskin/Naql, dan Hadzf",
+      "kaidah_arab": "الإِعْلَالُ بِالقَلْبِ: تُقْلَبُ الوَاوُ وَاليَاءُ أَلِفًا إِذَا تَحَرَّكَتَا وَانْفَتَحَ مَا قَبْلَهُمَا (قَوَلَ -> قَالَ، بَيَعَ -> بَاعَ). وَتُقْلَبُ الوَاوُ وَاليَاءُ هَمْزَةً إِذَا تَطَرَّفَتَا بَعْدَ أَلِفٍ زَائِدَةٍ (دُعَاوٌ -> دُعَاءٌ، بِنَايٌ -> بِنَاءٌ) أَوْ وَقَعَتَا عَيْنًا لِاسْمِ فَاعِلٍ أُعِلَّتْ فِي فِعْلِهِ (قَاوِلٌ -> قَائِلٌ، بَايِعٌ -> بَائِعٌ). وَالإِعْلَالُ بِالنَّقْلِ: نَقْلُ حَرَكَةِ حَرْفِ العِلَّةِ إِلَى السَّاكِنِ الصَّحِيحِ قَبْلَهُ (يَقْوُلُ -> يَقُولُ، يَبْيِعُ -> يَبِيعُ).",
+      "penjelasan_indo": "I'lal adalah perubahan huruf 'illat demi meringankan ucapan. Tiga jenis utamanya: 1. I'lal bil Qalb (penggantian huruf): (a) Wawu/Ya' berharakat setelah fathah menjadi Alif (دَعَوَ -> دَعَا، رَمَيَ -> رَمَى). (b) Wawu/Ya' di akhir setelah alif tambahan menjadi Hamzah (سَمَاء، بِنَاء). (c) Wawu/Ya' sebagai 'ain isim fa'il dari fi'il ajwaf menjadi Hamzah (قَائِل، بَائِع). (d) Wawu sukun setelah kasrah menjadi Ya' (مِوْزَان -> مِيزَان). 2. I'lal bin-Naql/Taskin: Memindahkan harakat wawu/ya' ke huruf shahih sukun sebelumnya (يَقْوُمُ -> يَقُومُ، أَقْوَمَ -> أَقَامَ). 3. I'lal bil Hadzf: Membuang huruf 'illat karena bertemunya dua sukun (قُلْ، بِعْ) atau pada fi'il amr naqish (ادْعُ، ارْمِ).",
+      "rincian_hukum_dan_syarat": "Syarat I'lal Qalb Wawu/Ya' jadi Alif: Harus huruf berharakat asli dalam satu kata, huruf sebelumnya berharakat fathah bersambung, dan huruf setelahnya tidak berupa alif atau ya' tasydid.",
+      "rumus_ringkas": "Wawu/Ya' berharakat + Fathah sebelumnya = ALIF (قَالَ، بَاعَ) | Akhir setelah Alif = HAMZAH (دُعَاء) | Naql = Pindah harakat ke sukun depan",
+      "tanbihat_dan_khilaf": "Kata عَوِرَ dan حَيِدَ tidak mengalami i'lal bil qalb (tidak menjadi عار atau حاد) karena menunjukkan cacat lahiriah yang mengikuti wazan sifat مشبهة (أَعْوَر)."
+    },
+    {
+      "id_materi": "MAT-1402",
+      "id_bab": "BAB-14",
+      "sub_topik_arab": "قَوَاعِدُ الإِبْدَالِ فِي صِيغَةِ (افْتَعَلَ) وَفُرُوعِهَا",
+      "sub_topik_indo": "Kaidah Ibdal pada Wazan افتعل dan Turunannya",
+      "kaidah_arab": "تُبْدَلُ تَاءُ (افْتَعَلَ) وَمُشْتَقَّاتِهِ: (1) طَاءً إِذَا كَانَتْ فَاؤُهُ حَرْفًا مِنْ حُرُوفِ الإِطْبَاقِ (ص، ض، ط، ظ) مِثْلُ: اصْطَبَرَ، اضْطَرَبَ، اطَّرَدَ، اظْطَلَمَ. (2) دَالًا إِذَا كَانَتْ فَاؤُهُ (د، ذ، ز) مِثْلُ: ادَّرَأَ، اذْدَكَرَ/ادَّكَرَ، ازْدَهَرَ. (3) وَتُبْدَلُ فَاءُ (افْتَعَلَ) تَاءً إِذَا كَانَتْ وَاوًا أَوْ يَاءً ثُمَّ تُدْغَمُ فِي تَاءِ الافْتِعَالِ (وَصَلَ -> اوْتَصَلَ -> اتَّصَلَ، يَسَرَ -> ايْتَسَرَ -> اتَّسَرَ).",
+      "penjelasan_indo": "Ibdal adalah mengganti suatu huruf dengan huruf lain untuk melenyapkan ketidaksesuaian makhraj bunyi: 1. Jika Fa' fi'il berupa huruf Ithbaq (ص، ض، ط، ظ), maka Ta' wazan افتعل wajib diganti menjadi Tha' (ط): صَبَرَ -> اصْتَبَرَ -> اصْطَبَرَ; ضَرَبَ -> اضْتَرَبَ -> اضْطَرَبَ. 2. Jika Fa' fi'il berupa (د، ذ، ز), maka Ta' افتعل wajib diganti menjadi Dal (د): زَهَرَ -> ازْتَهَرَ -> ازْدَهَرَ; زَادَ -> ازْدَادَ. 3. Jika Fa' fi'il berupa huruf 'illat Wawu atau Ya' asli, maka huruf Wawu/Ya' tersebut diganti menjadi Ta' lalu dilebur bertasydid: وَقَى -> اوْتَقَى -> اتَّقَى; وَحَدَ -> اتَّحَدَ.",
+      "rincian_hukum_dan_syarat": "Aplikasi Penelusuran Kamus: Mengetahui kaidah ibdal sangat menentukan dalam membuka kamus Arab. Kata مُتَّقُونَ bukan dicari di huruf Ta', melainkan di huruf Wawu (وَقَى); kata مُزْدَهِرٌ dicari di huruf Zay (زَهَرَ); kata مُصْطَفًى dicari di huruf Shad (صَفَا).",
+      "rumus_ringkas": "[ص، ض، ط، ظ] + ت = ط (اصْطَبَرَ) | [د، ذ، ز] + ت = د (ازْدَهَرَ) | [و، ي] + ت = تّ (اتَّصَلَ، اتَّقَى)",
+      "tanbihat_dan_khilaf": "Pada kata ذَكَرَ ketika masuk wazan افتعل (اذْتَكَرَ), terdapat 3 wajah pelafalan bangsa Arab yang diakui: اذْدَكَرَ (mengganti Ta' jadi Dal), ادَّكَرَ (mengidghamkan Dzal ke Dal - bacaan mayoritas Al-Qur'an: فَهَلْ مِنْ مُدَّكِرٍ), dan اذَّكَرَ (mengidghamkan Dal ke Dzal)."
+    }
+  ],
+  "irab": [
+    {
+      "id_contoh": "IRB-1201",
+      "id_bab": "BAB-12",
+      "id_materi": "MAT-1202",
+      "jenis_dalil": "Al-Qur'an (QS. Al-Kahfi: 10)",
+      "sumber_dalil": "An-Nahwu At-Tathbiqi, Bab Jumu'ul Qillah",
+      "kalimat_arab": "إِذْ أَوَى الفِتْيَةُ إِلَى الكَهْفِ فَقَالُوا رَبَّنَا آتِنَا مِنْ لَدُنْكَ رَحْمَةً",
+      "terjemahan_indo": "(Ingatlah) tatkala pemuda-pemuda itu berlindung ke dalam gua lalu mereka berdoa: 'Wahai Tuhan kami berikanlah rahmat kepada kami dari sisi-Mu...'",
+      "kata_kunci": "الفِتْيَةُ",
+      "irab_arab": "الفِتْيَةُ: فَاعِلٌ لِلْفِعْلِ (أَوَى) مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ، وَهُوَ جَمْعُ تَكْسِيرٍ عَلَى وَزْنِ (فِعْلَةٍ) مِنْ جُمُوعِ القِلَّةِ مَفْرُودُهُ فَتًى.",
+      "penjelasan_irab_indo": "Lafazh الفِتْيَةُ berwazan فِعْلَةٌ yang merupakan salah satu dari 4 wazan Jumu'ul Qillah (menunjukkan jumlah antara 3 sampai 10 orang). Ini selaras dengan fakta historis Ashabul Kahfi yang berjumlah sedikit (tiga, lima, atau tujuh orang pemuda)."
+    },
+    {
+      "id_contoh": "IRB-1301",
+      "id_bab": "BAB-13",
+      "id_materi": "MAT-1302",
+      "jenis_dalil": "Kalimat Standar Ilmiah & Sastra Arab",
+      "sumber_dalil": "Jami'ud Durus Al-'Arabiyyah, Juz 2, Bab An-Nasab",
+      "kalimat_arab": "الإِمَامُ أَبُو حَنِيفَةَ فَقِيهٌ حَنَفِيٌّ عِرَاقِيٌّ مَعْرُوفٌ",
+      "terjemahan_indo": "Imam Abu Hanifah adalah seorang fakih bermazhab Hanafi berkebangsaan Irak yang sangat terkenal.",
+      "kata_kunci": "حَنَفِيٌّ / عِرَاقِيٌّ",
+      "irab_arab": "فَقِيهٌ: خَبَرُ المُبْتَدَأِ مَرْفُوعٌ بِالضَّمَّةِ. حَنَفِيٌّ: نَعْتٌ أَوَّلُ مَرْفُوعٌ، مَنْسُوبٌ إِلَى (حَنِيفَةَ) عَلَى وَزْنِ (فَعَلِيٍّ) بِحَذْفِ اليَاءِ وَالتَّاءِ لِأَنَّهُ عَلَى وَزْنِ فَعِيلَةَ صَحِيحِ العَيْنِ. عِرَاقِيٌّ: نَعْتٌ ثَانٍ مَرْفُوعٌ، مَنْسُوبٌ إِلَى العِرَاقِ.",
+      "penjelasan_irab_indo": "Contoh penerapan kaidah nisbah: Kata حَنَفِيٌّ berasal dari حَنِيفَةَ (wazan فَعِيلَة yang 'ainnya berupa huruf shahih ن). Kaidah bakunya mewajibkan membuang Ya' dan Ta' marbuthah serta membuka 'ain kalimahnya sehingga menjadi حَنَفِيٌّ (bukan Hanifiy)."
+    },
+    {
+      "id_contoh": "IRB-1401",
+      "id_bab": "BAB-14",
+      "id_materi": "MAT-1402",
+      "jenis_dalil": "Al-Qur'an (QS. Al-Qamar: 15)",
+      "sumber_dalil": "An-Nahwu At-Tathbiqi, Bab Al-Ibdal",
+      "kalimat_arab": "وَلَقَدْ تَرَكْنَاهَا آيَةً فَهَلْ مِنْ مُدَّكِرٍ",
+      "terjemahan_indo": "Dan sungguh Kami telah meninggalkan kisah itu sebagai suatu pelajaran, maka adakah orang yang mau mengambil pelajaran?",
+      "kata_kunci": "مُدَّكِرٍ",
+      "irab_arab": "مُدَّكِرٍ: مُبْتَدَأٌ مُؤَخَّرٌ مَجْرُورٌ لَفْظًا بِـ (مِنْ) الزَّائِدَةِ مَرْفُوعٌ مَحَلًّا، وَهُوَ اسْمُ فَاعِلٍ مِنْ (ادَّكَرَ) أَصْلُهُ (مُذْتَكِرٌ) أُبْدِلَتِ التَّاءُ دَالًا ثُمَّ أُدْغِمَتِ الذَّالُ فِي الدَّالِ.",
+      "penjelasan_irab_indo": "Lafazh مُدَّكِرٍ merupakan bukti mahakarya Ibdal dan Idgham: berasal dari akar kata ذَكَرَ pada wazan مُفْتَعِلٌ -> مُذْتَكِرٌ. Huruf Ta' افتعل diubah menjadi Dal (مُذْدَكِرٌ), lalu huruf Dzal dilebur ke dalam Dal menjadi Dal bertasydid (مُدَّكِرٍ). Secara sintaksis ia adalah mubtada' muakhkhar yang majrur lafazhnya karena huruf jarr za'id مِنْ."
+    }
+  ],
+  "soal": [
+    {
+      "id_soal": "SOL-1201",
+      "id_bab": "BAB-12",
+      "tingkat_kesulitan": "Dasar",
+      "pertanyaan": "Manakah di antara wazan jama' taksir berikut yang termasuk dalam Jumu'ul Qillah (menunjukkan hitungan 3 sampai 10)?",
+      "opsi_a": "فُعُولٌ (seperti قُلُوب) dan فِعَالٌ (seperti جِبَال)",
+      "opsi_b": "أَفْعُلٌ (seperti أَنْفُس) dan أَفْعِلَةٌ (seperti أَطْعِمَة)",
+      "opsi_c": "فُعَلَاءُ (seperti عُلَمَاء) dan فُعَّالٌ (seperti كُتَّاب)",
+      "opsi_d": "مَفَاعِلُ (seperti مَسَاجِد) dan فِعْلَانٌ (seperti غِلْمَان)",
+      "jawaban_benar": "B",
+      "pembahasan": "Empat wazan Jumu'ul Qillah qiyasi adalah: أَفْعُلٌ، أَفْعَالٌ، أَفْعِلَةٌ، dan فِعْلَةٌ. Di luar empat wazan ini (seperti فُعُول، فِعَال، فُعَلَاء) termasuk kategori Jumu'ul Katsrah."
+    },
+    {
+      "id_soal": "SOL-1301",
+      "id_bab": "BAB-13",
+      "tingkat_kesulitan": "Menengah",
+      "pertanyaan": "Bagaimanakah bentuk penisbatan (An-Nasab) yang benar untuk kota (مَدِينَةٌ) dan mazhab Imam (مَالِكِ بْنِ أَنَسٍ) serta kitabnya (المُوَطَّأُ)?",
+      "opsi_a": "مَدِينِيٌّ dan مَالِكِيٌّ",
+      "opsi_b": "مَدَنِيٌّ (wazan فَعَلِيّ menghapus ya' dan ta') dan مَالِكِيٌّ",
+      "opsi_c": "مَدِينَتِيٌّ dan مَالِكِيٌّ",
+      "opsi_d": "مَدْنَوِيٌّ dan مَالِكِيٌّ",
+      "jawaban_benar": "B",
+      "pembahasan": "Kata مَدِينَةٌ berwazan فَعِيلَة (shahih 'ain dan tidak mudha'af), sehingga kaidah nasab mewajibkan pembuangan huruf Ya' dan Ta' ta'nits serta memfathahkan 'ain kalimah menjadi مَدَنِيٌّ. Adapun مَالِكٌ isim tsulatsi mazid biasa dinisbatkan dengan menambahkan ya' musyaddadah menjadi مَالِكِيٌّ."
+    },
+    {
+      "id_soal": "SOL-1401",
+      "id_bab": "BAB-14",
+      "tingkat_kesulitan": "Mahir",
+      "pertanyaan": "Ketika fi'il (وَصَلَ) dan (صَفَا) dimasukkan ke dalam wazan (افْتَعَلَ), bentuk apakah yang terbentuk secara kaidah Ibdal dan I'lal?",
+      "opsi_a": "اوْتَصَلَ dan اصْتَفَى",
+      "opsi_b": "اتَّصَلَ (mengganti wawu jadi ta' lalu idgham) dan اصْطَفَى (mengganti ta' افتعل jadi tha')",
+      "opsi_c": "اتَّصَلَ dan اصْتَفَى",
+      "opsi_d": "اوْتَصَلَ dan اصْطَفَى",
+      "jawaban_benar": "B",
+      "pembahasan": "Pada وَصَلَ, fa' fi'il berupa Wawu sehingga diganti menjadi Ta' lalu diidghamkan ke Ta' افتعل menjadi اتَّصَلَ. Pada صَفَا, fa' fi'il berupa huruf Ithbaq (Shad) sehingga Ta' افتعل diganti menjadi Tha' menjadi اصْطَفَى."
+    }
+  ],
+  "istilah": [
+    {
+      "id_istilah": "IST-207",
+      "istilah_arab": "جُمُوعُ القِلَّةِ وَجُمُوعُ الكَثْرَةِ",
+      "bidang": "Sharaf & Nahwu",
+      "definisi_arab": "جَمْعُ القِلَّةِ مَا وُضِعَ لِلْعَدَدِ مِنْ ثَلَاثَةٍ إِلَى عَشَرَةٍ وَأَوْزَانُهُ أَرْبَعَةٌ، وَجَمْعُ الكَثْرَةِ مَا وُضِعَ لِمَا فَوْقَ العَشَرَةِ.",
+      "definisi_indo": "Klasifikasi jama' taksir berdasarkan cakupan kuantitas bilangan: qillah untuk rentang 3 s/d 10 (4 wazan), dan katsrah untuk lebih dari 10 tanpa batas (17 wazan).",
+      "contoh": "أَنْفُسٌ (Qillah) vs نُفُوسٌ (Katsrah)"
+    },
+    {
+      "id_istilah": "IST-208",
+      "istilah_arab": "التَّصْغِيرُ (At-Tashghir)",
+      "bidang": "Sharaf",
+      "definisi_arab": "تَغْيِيرٌ مَخْصُوصٌ يَطْرَأُ عَلَى بِنْيَةِ الاسْمِ المُعْرَبِ لِفَائِدَةٍ كَتَقْلِيلِ الحَجْمِ أَوِ التَّحْقِيرِ أَوْ تَقْرِيبِ الزَّمَانِ أَوِ التَّحَبُّبِ.",
+      "definisi_indo": "Pengubahan struktur kata benda mu'rab dengan pola tertentu (dhammah awal, fathah kedua, plus ya' sukun) untuk mengekspresikan makna kecil, sedikit, hina, dekat, atau kasih sayang.",
+      "contoh": "كَلْبٌ -> كُلَيْبٌ، جَبَلٌ -> جُبَيْلٌ، قَبْلَ -> قُبَيْلَ"
+    },
+    {
+      "id_istilah": "IST-209",
+      "istilah_arab": "الإِبْدَالُ (Al-Ibdal)",
+      "bidang": "Sharaf",
+      "definisi_arab": "جَعْلُ حَرْفٍ صَحِيحٍ أَوْ مُعْتَلٍّ مَكَانَ حَرْفٍ آخَرَ لِتَسْهِيلِ النُّطْقِ وَتَقَارُبِ المَخَارِجِ.",
+      "definisi_indo": "Penggantian suatu huruf dengan huruf lain (baik huruf shahih maupun mu'tal) agar pelafalannya selaras dengan makhraj huruf di sekitarnya.",
+      "contoh": "اصْتَبَرَ -> اصْطَبَرَ، ازْتَهَرَ -> ازْدَهَرَ"
+    }
+  ]
+}

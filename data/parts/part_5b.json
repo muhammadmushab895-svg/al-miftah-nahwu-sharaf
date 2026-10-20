@@ -1,0 +1,456 @@
+{
+  "bab": [
+    {
+      "id_bab": "BAB-33",
+      "urutan": 33,
+      "kategori": "Nahwu - Al-Manshubat",
+      "level": "Mutaqaddimin (Lanjut)",
+      "judul_arab": "التَّمْيِيزُ وَالاِسْتِثْنَاءُ وَأَحْكَامُهُمَا",
+      "judul_indo": "At-Tamyiz (Malfuzh & Malhuzh) dan Al-Istitsna' Lengkap",
+      "ref_nahwu_tathbiqi": "Al-Manshubat: Bab At-Tamyiz, Al-Farq bainal Hal wat Tamyiz, Bab Al-Istitsna'",
+      "ref_jami_durus": "Juz 3: Al-Manshubat - At-Tamyiz, Al-Mustatsna bi-Illa wa Ghairiha",
+      "ringkasan_cakupan": "Membahas tuntas التمييز الملفوظ (تمييز الذات) setelah timbangan, takaran, ukuran luas, syibhul miqdar, dan 'adad; التمييز الملحوظ (تمييز النسبة) baik yang muhawwal ('anil fa'il, 'anil maf'ul, 'anil mubtada') maupun ghairu muhawwal, beserta perbandingan komprehensif antara Hal dan Tamyiz; dilanjutkan dengan أحكام المستثنى بإلا (Tam Mutsbat, Tam Manfi, Mufarragh, Muttashil vs Munqathi', taqdimul mustatsna) serta istitsna' dengan غير، سوى، خلا، عدا، حاشا، ليس، لا يكون.",
+      "estimasi_jam_belajar": 9
+    },
+    {
+      "id_bab": "BAB-34",
+      "urutan": 34,
+      "kategori": "Nahwu - Al-Manshubat",
+      "level": "Mutaqaddimin (Lanjut)",
+      "judul_arab": "المُنَادَى وَتَوَابِعُهُ، الاِسْتِغَاثَةُ، النُّدْبَةُ، وَالتَّرْخِيمُ",
+      "judul_indo": "Al-Munada, Tawabi' Munada, Uslub Istighatsah, Nudbah, dan Tarkhim",
+      "ref_nahwu_tathbiqi": "Al-Manshubat: Bab An-Nida' wa Tawabi'ul Munada, Al-Istighatsah, An-Nudbah, At-Tarkhim",
+      "ref_jami_durus": "Juz 3: Al-Manshubat - Al-Munada wa Ahkamuhu, Al-Istighatsah, An-Nudbah, At-Tarkhim",
+      "ringkasan_cakupan": "Mengupas 8 huruf Nida' dan peruntukannya, 5 jenis Munada dan hukum i'rab/bina'nya, nida' kata ber-Al (أيها، أيتها، الله -> اللهم), 5 wajah bacaan Munada Mudhaf ke Ya' Mutakallim serta kekhususan (يا أبتِ / يا أمي) dan (يا ابن أم / يا ابن عم), hukum Tabi' bagi Munada Mabni; ditambah tiga uslub turunan Nida': Al-Istighatsah (dengan Lam Maftuhah & Maksurah), An-Nudbah (dengan وا), dan At-Tarkhim (syarat & dua cara baca: لغتا من ينتظر ومن لا ينتظر).",
+      "estimasi_jam_belajar": 8
+    },
+    {
+      "id_bab": "BAB-35",
+      "urutan": 35,
+      "kategori": "Nahwu - Al-Manshubat",
+      "level": "Mutaqaddimin (Lanjut)",
+      "judul_arab": "أَسَالِيبُ التَّحْذِيرِ وَالإِغْرَاءِ وَالاِخْتِصَاصِ",
+      "judul_indo": "Uslub At-Tahdzir, Al-Ighra', dan Al-Ikhtishash",
+      "ref_nahwu_tathbiqi": "Al-Manshubat: Uslub At-Tahdzir, Uslub Al-Ighra', Uslub Al-Ikhtishash",
+      "ref_jami_durus": "Juz 3: Al-Manshubat - At-Tahdzir wal Ighra', Al-Ikhtishash",
+      "ringkasan_cakupan": "Mengkaji tiga uslub manshubat yang dinashabkan oleh fi'il mahdzuf: (1) Uslub At-Tahdzir (dengan إياك dan tanpa إياك dalam bentuk Ifrad, Takrar, dan 'Athaf beserta hukum membuang fi'il أحذر); (2) Uslub Al-Ighra' (Ifrad, Takrar, 'Athaf dengan takdir ألزم); dan (3) Uslub Al-Ikhtishash (syarat Isim Mukhtash: المعرف بأل، المضاف إلى معرفة، أيها/أيتها dengan takdir أخص، serta perbedaannya dengan Nida' dan Khabar).",
+      "estimasi_jam_belajar": 6
+    }
+  ],
+  "materi": [
+    {
+      "id_materi": "MAT-3301",
+      "id_bab": "BAB-33",
+      "sub_topik_arab": "تمييز الذات (التمييز الملفوظ): المقادير وأشباهها والعدد",
+      "sub_topik_indo": "Tamyiz Dzat (Malfuzh) Setelah Miqdar, Syibhul Miqdar, dan 'Adad",
+      "kaidah_arab": "التَّمْيِيزُ هُوَ اسْمٌ نَكِرَةٌ جَامِدٌ فَضْلَةٌ يُفَسِّرُ مَا انْبَهَمَ مِنَ الذَّوَاتِ أَوِ النِّسَبِ بِتَقْدِيرِ (مِنْ). وَتَمْيِيزُ الذَّاتِ (المَلْفُوظُ) هُوَ مَا يَرْفَعُ إِبْهَامَ اسْمٍ مَذْكُورٍ قَبْلَهُ دَالٍّ عَلَى المَقَادِيرِ (الوَزْنِ، الكَيْلِ، المِسَاحَةِ) أَوْ شِبْهِهَا أَوِ العَدَدِ.",
+      "penjelasan_indo": "Tamyiz adalah isim nakirah (pada asalnya jamid) yang dibaca manshub karena menyimpan makna huruf jar (مِنْ) البَيَانِيَّةِ untuk menghilangkan kesamaran (إِبْهَامٌ) pada kata benda (ذَاتٌ) atau hubungan kalimat (نِسْبَةٌ) sebelumnya. Tamyiz Dzat (disebut juga المَلْفُوظُ atau تَمْيِيزُ المُفْرَدِ) menjelaskan kesamaran kata tunggal yang terucap sebelumnya.",
+      "rincian_hukum_dan_syarat": "1. Jenis-Jenis Mumayyaz Malfuzh:\n   - (A) المَقَادِيرُ الثَّلَاثَةُ (Tiga Ukuran Baku):\n     * الوَزْنُ (Timbangan): (اشْتَرَيْتُ رِطْلًا عَسَلًا / جِرَامًا ذَهَبًا).\n     * الكَيْلُ (Takaran): (تَصَدَّقْتُ بِصَاعٍ تَمْرًا / لِتْرٍ لَبَنًا).\n     * المِسَاحَةُ (Luas/Panjang): (عِنْدِي فَدَّانٌ أَرْضًا / مِتْرٌ حَرِيرًا).\n   - (B) أَشْبَاهُ المَقَادِيرِ (Serupa Ukuran / Wadah Tidak Baku):\n     * Wadah/Tempat: (شَرِبْتُ كُوبًا مَاءً)، (عِنْدِي جَرَّةٌ سَمْنًا)، (مِلْءُ الأَرْضِ ذَهَبًا).\n     * Ukuran tidak baku: (مَا فِي السَّمَاءِ قَدْرُ رَاحَةٍ سَحَابًا)، (فَمَنْ يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُ).\n     * ما كان فرعا للتمييز (cabang/produk dari bahan tamyiz): (عِنْدِي خَاتَمٌ فِضَّةً)، (ثَوْبٌ صُوفًا).\n   - (C) العَدَدُ (Bilangan) dan كِنَايَاتُ العَدَدِ (كَمْ، كَأَيِّنْ، كَذَا):\n     * Bilangan 11 s/d 99: tamyiznya MUFRAD MANSHUB (إِنِّي رَأَيْتُ أَحَدَ عَشَرَ كَوْكَبًا)، (إِنَّ هَذَا أَخِي لَهُ تِسْعٌ وَتِسْعُونَ نَعْجَةً).\n     * Bilangan 3 s/d 10: tamyiznya JAMAK MAJRUR bil-Idhafah (سَبْعَ لَيَالٍ وَثَمَانِيَةَ أَيَّامٍ).\n     * Bilangan 100 dan 1000: tamyiznya MUFRAD MAJRUR bil-Idhafah (مِائَةَ جَلْدَةٍ).\n2. Hukum I'rab Tamyiz Miqdar & Syibhul Miqdar (selain 'Adad):\n   - BOLEH 3 WAJAH: (1) Nashab sebagai Tamyiz: (اشْتَرَيْتُ رِطْلًا زَيْتًا); (2) Jar dengan مِنْ: (رِطْلًا مِنْ زَيْتٍ); (3) Jar dengan Idhafah: (رِطْلَ زَيْتٍ).",
+      "rumus_ringkas": "Mumayyaz Malfuzh: 1. Wazn, Kail, Misahah, Syibhul Miqdar (Boleh 3 Wajah: Nashab, Jar بـ من, Jar Idhafah) | 2. 'Adad (11-99 = Mufrad Manshub; 3-10 = Jamak Majrur; 100/1000 = Mufrad Majrur).",
+      "tanbihat_dan_khilaf": "'Amil yang menashabkan Tamyiz Dzat adalah isim mubham itu sendiri (المُمَيَّزُ مثل رطل، صاع، عشرون) karena keserupaannya dengan isim fa'il dalam menuntut pelengkap makna."
+    },
+    {
+      "id_materi": "MAT-3302",
+      "id_bab": "BAB-33",
+      "sub_topik_arab": "تمييز النسبة (التمييز الملحوظ): المحول وغير المحول",
+      "sub_topik_indo": "Tamyiz Nisbah (Malhuzh): Muhawwal ('anil Fa'il, 'anil Maf'ul, 'anil Mubtada') & Ghairu Muhawwal",
+      "kaidah_arab": "تَمْيِيزُ النِّسْبَةِ (المَلْحُوظُ) هُوَ مَا يَرْفَعُ إِبْهَامَ نِسْبَةِ الفِعْلِ أَوِ الوَصْفِ إِلَى مَعْمُولِهِ فِي الجُمْلَةِ، وَيَنْقَسِمُ إِلَى مُحَوَّلٍ (عَنِ الفَاعِلِ، أَوِ المَفْعُولِ، أَوِ المُبْتَدَإِ) وَغَيْرِ مُحَوَّلٍ.",
+      "penjelasan_indo": "Tamyiz Nisbah (disebut juga التَّمْيِيزُ المَلْحُوظُ atau تَمْيِيزُ الجُمْلَةِ) adalah tamyiz yang menjelaskan kesamaran hubungan (nisbah) predikat terhadap subjek atau objeknya dalam suatu kalimat. 'Amil yang menashabkannya adalah fi'il atau syibhul fi'il yang ada dalam kalimat tersebut.",
+      "rincian_hukum_dan_syarat": "1. Tamyiz Nisbah Muhawwal (المُحَوَّلُ) — WAJIB NASHAB (tidak boleh di-jarkan dengan مِنْ):\n   - (A) Muhawwal 'anil Fa'il (مُحَوَّلٌ عَنِ الفَاعِلِ): (وَاشْتَعَلَ الرَّأْسُ شَيْبًا) -> asalnya: اشْتَعَلَ شَيْبُ الرَّأْسِ; (طَابَ مُحَمَّدٌ نَفْسًا) -> asalnya: طَابَتْ نَفْسُ مُحَمَّدٍ.\n   - (B) Muhawwal 'anil Maf'ul Bih (مُحَوَّلٌ عَنِ المَفْعُولِ بِهِ): (وَفَجَّرْنَا الأَرْضَ عُيُونًا) -> asalnya: فَجَّرْنَا عُيُونَ الأَرْضِ; (غَرَسْتُ الحَدِيقَةَ شَجَرًا) -> asalnya: غَرَسْتُ شَجَرَ الحَدِيقَةِ.\n   - (C) Muhawwal 'anil Mubtada' (مُحَوَّلٌ عَنِ المُبْتَدَإِ): jatuh setelah أفعل التفضيل, seperti: (أَنَا أَكْثَرُ مِنْكَ مَالًا وَأَعَزُّ نَفَرًا) -> asalnya: مَالِي أَكْثَرُ مِنْ مَالِكَ.\n2. Tamyiz Nisbah Ghairu Muhawwal (غَيْرُ المُحَوَّلِ) — Boleh Nashab dan boleh Jar dengan مِنْ:\n   - Jatuh setelah uslub Ta'ajjub, المدح والذم, atau fi'il seperti امْتَلَأَ، كَفَى، زَادَ:\n   - Contoh: (لِلَّهِ دَرُّهُ فَارِسًا!)، (مَا أَحْسَنَ زَيْدًا أَدَبًا!)، (نِعْمَ خُلُقًا الصِّدْقُ)، (كَفَى بِاللَّهِ شَهِيدًا)، (امْتَلَأَ الإِنَاءُ مَاءً).\n3. Kaidah Emas Tamyiz setelah Af'alut Tafdhil (أَفْعَلُ التَّفْضِيلِ):\n   - Jika isim setelah أفعل التفضيل adalah FA'IL secara makna (berbeda jenis dari mufaddhal), maka ia WAJIB NASHAB sebagai Tamyiz: (أَنْتَ أَعْلَى مَنْزِلَةً وَأَكْثَرُ مَالًا) -> tandanya: tidak sah dikatakan المَنْزِلَةُ أَعْلَى atau المَالُ أَكْثَرُ untuk menunjuk pada orangnya.\n   - Jika isim setelah أفعل التفضيل adalah SEJENIS dengan mufaddhal (sah menjadi mubtada' bagi أفعل), maka ia WAJIB MAJRUR bil-Idhafah: (مُحَمَّدٌ أَفْضَلُ رَجُلٍ)، (هِنْدٌ أَفْضَلُ امْرَأَةٍ) -> kecuali jika أفعل التفضيل sudah mudhaf ke kata lain, maka ia dinashabkan sebagai tamyiz: (هُوَ أَفْضَلُ النَّاسِ رَجُلًا).",
+      "rumus_ringkas": "Muhawwal ('anil Fa'il, 'anil Maf'ul, 'anil Mubtada') = Wajib Nashab | Ghairu Muhawwal = Boleh Nashab / Jar بـ من | Pasca أفعل التفضيل: Berbeda jenis = Nashab Tamyiz; Sejenis = Majrur Idhafah (أفضل رجلٍ).",
+      "tanbihat_dan_khilaf": "Tamyiz TIDAK BOLEH mendahului 'amilnya jika 'amilnya adalah isim (seperti رطل، عشرون، أكثر) atau fi'il jamid (ما أحسن، نعم). Adapun jika 'amilnya fi'il mutasharrif (مثل: طَابَ زَيْدٌ نَفْسًا), jumhur Bashrah tetap melarang mendahulukannya, sedangkan Al-Mazini, Al-Mubarrad, dan Ibnu Malik membolehkannya namun qalil (نَفْسًا طَابَ زَيْدٌ)."
+    },
+    {
+      "id_materi": "MAT-3303",
+      "id_bab": "BAB-33",
+      "sub_topik_arab": "المُقَارَنَةُ الشَّامِلَةُ بَيْنَ الحَالِ وَالتَّمْيِيزِ (أَوْجُهُ الاِتِّفَاقِ وَالاِفْتِرَاقِ)",
+      "sub_topik_indo": "Perbandingan Komprehensif antara Hal dan Tamyiz (5 Persamaan & 7 Perbedaan)",
+      "kaidah_arab": "يَتَّفِقُ الحَالُ وَالتَّمْيِيزُ فِي خَمْسَةِ أُمُورٍ: كَوْنِهِمَا اسْمَيْنِ، نَكِرَتَيْنِ، فَضْلَتَيْنِ، مَنْصُوبَتَيْنِ، رَافِعَتَيْنِ لِإِبْهَامِ مَا قَبْلَهُمَا. وَيَفْتَرِقَانِ فِي سَبْعَةِ أَوْجُهٍ جَوْهَرِيَّةٍ.",
+      "penjelasan_indo": "Hal dan Tamyiz sering kali tampak mirip karena keduanya sama-sama isim, nakirah, fadhlah, manshub, dan berfungsi menjelaskan kata sebelumnya. Namun keduanya memiliki tujuh perbedaan mendasar yang menjadi tolok ukur analisis i'rab.",
+      "rincian_hukum_dan_syarat": "Tujuh Perbedaan Mendasar antara Hal dan Tamyiz:\n1. DARI SEGI MAKNA HURUF YANG DISIMPAN:\n   - Hal menyimpan makna (فِي): (جَاءَ زَيْدٌ ضَاحِكًا = فِي حَالِ ضَحِكِهِ).\n   - Tamyiz menyimpan makna (مِنْ): (اشْتَرَيْتُ رِطْلًا عَسَلًا = مِنْ عَسَلٍ).\n2. DARI SEGI FUNGSI PENJELASAN:\n   - Hal menjelaskan KEADAAN/SIFAT (مُبَيِّنَةٌ لِلْهَيْئَاتِ).\n   - Tamyiz menjelaskan DZAT atau NISBAH (مُبَيِّنٌ لِلذَّوَاتِ أَوِ النِّسَبِ).\n3. DARI SEGI BENTUK ASAL (ISIM MUSYTAQ vs JAMID):\n   - Hal asalnya MUSYTAQ (ضَاحِكًا، مَسْرُورًا) dan kadang jamid muawwal.\n   - Tamyiz asalnya JAMID (ذَهَبًا، مَاءً، شَيْبًا) dan jarang musytaq (مثل: لِلَّهِ دَرُّهُ فَارِسًا).\n4. DARI SEGI KEBERAGAMAN BENTUK (MUFRAD vs JUMLAH):\n   - Hal bisa berupa Mufradah, Jumlah (Ismiyyah/Fi'liyyah), dan Syibhul Jumlah.\n   - Tamyiz HANYA berupa Isim Mufrad (tidak pernah berupa jumlah atau syibhul jumlah).\n5. DARI SEGI BERBILANGNYA (التَّعَدُّدُ):\n   - Hal BOLEH berbilang tanpa huruf 'athaf: (فَرَجَعَ مُوسَى إِلَى قَوْمِهِ غَضْبَانَ أَسِفًا).\n   - Tamyiz TIDAK BOLEH berbilang kecuali dengan huruf 'athaf.\n6. DARI SEGI MENDAHULUI 'AMIL:\n   - Hal BOLEH mendahului 'amilnya bila berupa fi'il mutasharrif atau sifat musytaqqah.\n   - Tamyiz TIDAK BOLEH mendahului 'amilnya menurut jumhur.\n7. DARI SEGI FUNGSI TAUKID:\n   - Hal bisa berfungsi sebagai Muakkidah (فَتَبَسَّمَ ضَاحِكًا).\n   - Tamyiz selalu Muassis (penjelas kesamaran), kecuali setelah 'adad/kam yang sudah jelas.",
+      "rumus_ringkas": "5 Persamaan: Isim, Nakirah, Fadhlah, Manshub, Rafi' lil-Ibham | 7 Perbedaan: 1. Makna في vs من | 2. Hai'at vs Dzawat/Nisab | 3. Musytaq vs Jamid | 4. Bisa Jumlah vs Hanya Mufrad | 5. Ta'addud tanpa 'Athaf vs Wajib 'Athaf | 6. Boleh Taqdim vs Terlarang | 7. Bisa Muakkidah vs Muassis.",
+      "tanbihat_dan_khilaf": "Pada kalimat (لِلَّهِ دَرُّهُ فَارِسًا!) dan (كَفَى بِاللَّهِ شَهِيدًا), kata فَارِسًا dan شَهِيدًا meskipun musytaq lebih tepat dii'rab sebagai TAMYIZ apabila yang dimaksud adalah kekaguman/kecukupan pada dzat kefarisannya atau kesaksiannya secara mutlak (بِتَقْدِيرِ مِنْ فَارِسٍ), dan dii'rab sebagai HAL jika dimaksudkan keadaannya saat terjadi perbuatan."
+    },
+    {
+      "id_materi": "MAT-3304",
+      "id_bab": "BAB-33",
+      "sub_topik_arab": "أَحْكَامُ المُسْتَثْنَى بِإِلَّا (التَّامُّ المُثْبَتُ، التَّامُّ المَنْفِيُّ، المُفَرَّغُ، المُتَّصِلُ وَالمُنْقَطِعُ، وَتَقْدِيمُ المُسْتَثْنَى)",
+      "sub_topik_indo": "Hukum Mustatsna dengan إِلَّا (Tam Mutsbat, Tam Manfi, Mufarragh, Muttashil vs Munqathi', & Taqdim)",
+      "kaidah_arab": "الاِسْتِثْنَاءُ هُوَ إِخْرَاجُ مَا بَعْدَ (إِلَّا) أَوْ إِحْدَى أَخَوَاتِهَا مِنْ حُكْمِ مَا قَبْلَهَا. وَلِلْمُسْتَثْنَى بِإِلَّا ثَلَاثَةُ أَحْكَامٍ رَئِيسَةٍ بِحَسَبِ نَوْعِ الكَلَامِ قَبْلَهَا، مَعَ تَفْصِيلٍ خَاصٍّ فِي المُنْقَطِعِ وَالمُتَقَدِّمِ.",
+      "penjelasan_indo": "Istitsna' memiliki 4 rukun: (1) المُسْتَثْنَى مِنْهُ (kelompok asal), (2) أَدَاةُ الاِسْتِثْنَاءِ (alat pengecuali), (3) المُسْتَثْنَى (yang dikecualikan), dan (4) الحُكْمُ (predikat hukum). Berdasarkan kelengkapan rukun dan positif/negatifnya kalimat, kalam istitsna' terbagi menjadi: Tam Mutsbat (الموجب), Tam Manfi (غير الموجب: didahului nafi, nahi, atau istifham inkari), dan Naqish/Mufarragh (مستثنى منه tidak disebutkan). Berdasarkan kesamaan jenis, terbagi menjadi Muttashil (sejenis) dan Munqathi' (tidak sejenis).",
+      "rincian_hukum_dan_syarat": "1. KALAM TAM MUTSBAT (تَامٌّ مُثْبَتٌ / مُوجَبٌ) -> WAJIB NASHAB atas Istitsna' (baik Muttashil maupun Munqathi'):\n   - Muttashil: (فَشَرِبُوا مِنْهُ إِلَّا قَلِيلًا مِنْهُمْ).\n   - Munqathi': (حَضَرَ المسَافِرُونَ إِلَّا أَمْتِعَتَهُمْ).\n2. KALAM TAM MANFI (تَامٌّ مَنْفِيٌّ / غَيْرُ مُوجَبٍ):\n   - (A) Jika MUTTASHIL -> BOLEH 2 WAJAH, dan yang RAJIH adalah الإِتْبَاعُ عَلَى البَدَلِيَّةِ (menjadi Badal Ba'dh min Kull mengikuti i'rab mustatsna minhu), sedangkan wajah kedua adalah Nashab atas Istitsna':\n     * Contoh Rafa' (Rajih) & Nashab (Jaiz): (مَا فَعَلُوهُ إِلَّا قَلِيلٌ مِنْهُمْ) [Qira'at Jumhur: قَلِيلٌ badal marfu' | Qira'at Ibnu 'Amir: قَلِيلًا مستثنى منصوب].\n   - (B) Jika MUNQATHI' -> WAJIB NASHAB menurut JUMHUR HIJAZ (dan itulah bahasa Al-Qur'an: مَا لَهُمْ بِهِ مِنْ عِلْمٍ إِلَّا اتِّبَاعَ الظَّنِّ), sedangkan BANI TAMIM membolehkan Badal jika memungkinkan secara 'amil.\n3. KALAM NAQISH / MUFARRAGH (نَاقِصٌ مَنْفِيٌّ / مُفَرَّغٌ):\n   - إِلَّا menjadi مُلْغَاةٌ (أَدَاةُ حَصْرٍ لَا عَمَلَ لَهَا), dan kata setelahnya dii'rab SESUAI TUNTUTAN 'AMIL sebelum إِلَّا (حَسَبَ مَوْقِعِهِ فِي الجُمْلَةِ):\n     * Fa'il: (وَمَا يَخْدَعُونَ إِلَّا أَنْفُسَهُمْ) -> maf'ul bih; (مَا قَامَ إِلَّا زَيْدٌ) -> fa'il.\n     * Khabar: (وَمَا مُحَمَّدٌ إِلَّا رَسُولٌ) -> khabar marfu'.\n     * Na'ibul Fa'il: (وَلَا يُقْبَلُ مِنْهَا شَفَاعَةٌ... / مَا يُنْصَرُ إِلَّا الحَقُّ).\n4. Hukum Mendahulukan Mustatsna atas Mustatsna Minhu (تَقْدِيمُ المُسْتَثْنَى عَلَى المُسْتَثْنَى مِنْهُ):\n   - Apabila Mustatsna mendahului Mustatsna Minhu, maka WAJIB NASHAB secara mutlak pada Tam Mutsbat, dan juga WAJIB NASHAB pada Tam Manfi menurut jumhur (karena tabi'/badal tidak boleh mendahului matbu'-nya): (مَا قَامَ إِلَّا زَيْدًا القَوْمُ)، (مَا لِي إِلَّا آلَ أَحْمَدَ شِيعَةٌ وَمَا لِي إِلَّا مَذْهَبَ الحَقِّ مَذْهَبُ).",
+      "rumus_ringkas": "1. Tam Mutsbat = Wajib Nashab | 2. Tam Manfi Muttashil = Rajih Badal + Jaiz Nashab | 3. Tam Manfi Munqathi' = Wajib Nashab (Hijaz) / Jaiz Badal (Tamim) | 4. Mufarragh = Sesuai 'Amil (إلا = أداة حصر) | 5. Mustatsna Mutaqaddim = Wajib Nashab.",
+      "tanbihat_dan_khilaf": "Istitsna' Mufarragh hanya terjadi pada kalimat Manfi (atau syibhun nafi: nahi & istifham inkari). Namun boleh terjadi pada kalimat Mutsbat jika memberi faedah yang benar pada zharaf, jar-majrur, atau hal, seperti: (قَرَأْتُ الكِتَابَ إِلَّا يَوْمَ الجُمُعَةِ)."
+    },
+    {
+      "id_materi": "MAT-3305",
+      "id_bab": "BAB-33",
+      "sub_topik_arab": "الاِسْتِثْنَاءُ بِغَيْرِ وَسِوَى، وَبِخَلَا وَعَدَا وَحَاشَا، وَبِلَيْسَ وَلَا يَكُونُ",
+      "sub_topik_indo": "Istitsna' dengan غير، سوى، خلا، عدا، حاشا، ليس، dan لا يكون",
+      "kaidah_arab": "أَدَوَاتُ الاِسْتِثْنَاءِ ثَمَانِيَةٌ تَنْقَسِمُ إِلَى أَرْبَعَةِ أَقْسَامٍ: حَرْفٌ دَائِمًا (إِلَّا)، وَاسْمَانِ دَائِمًا (غَيْرُ وَسِوَى)، وَفِعْلَانِ دَائِمًا (لَيْسَ وَلَا يَكُونُ)، وَثَلَاثَةٌ تَتَرَدَّدُ بَيْنَ الفِعْلِيَّةِ وَالحَرْفِيَّةِ (خَلَا وَعَدَا وَحَاشَا).",
+      "penjelasan_indo": "Selain إِلَّا (yang berstatus huruf), terdapat 7 alat istitsna' lainnya yang terbagi menjadi: Isim (غَيْرُ dan سِوَى dengan ragam bahasanya: سُوى، سَوَاء), Fi'il (لَيْسَ dan لَا يَكُونُ), serta kelompok yang bisa menjadi Fi'il Madhi atau Huruf Jar (خَلَا، عَدَا، حَاشَا).",
+      "rincian_hukum_dan_syarat": "1. Istitsna' dengan (غَيْرُ) dan (سِوَى):\n   - Hukum Kata SETELAH غير dan سوى: SELALU MAJRUR sebagai Mudhaf Ilaih (مَجْرُورٌ بِالإِضَافَةِ دَائِمًا).\n   - Hukum I'rab (غَيْرُ) dan (سِوَى) itu sendiri: MENGAMBIL HUKUM I'RAB MUSTATSNA بِإِلَّا (يَأْخُذَانِ حُكْمَ الاِسْمِ الوَاقِعِ بَعْدَ إِلَّا):\n     * Pada Tam Mutsbat -> غيرَ wajib Nashab (sebagai اسم منصوب على الاستثناء): (حَضَرَ الطُّلَّابُ غَيْرَ زَيْدٍ).\n     * Pada Tam Manfi Muttashil -> غيرُ / غيرَ boleh Badal (rajih) atau Nashab atas Istitsna': (مَا حَضَرَ الطُّلَّابُ غَيْرُ / غَيْرَ زَيْدٍ).\n     * Pada Mufarragh -> غير dii'rab sesuai tuntutan 'amil: (مَا حَضَرَ غَيْرُ زَيْدٍ) [Fa'il], (مَا رَأَيْتُ غَيْرَ زَيْدٍ) [Maf'ul Bih].\n   - Catatan: (غَيْرُ) dii'rab dengan harakat zhahirah, sedangkan (سِوَى) dii'rab dengan harakat muqaddarah لِلتَّعَذُّرِ.\n2. Istitsna' dengan (خَلَا، عَدَا، حَاشَا):\n   - (A) Jika TIDAK didahului (مَا المَصْدَرِيَّةُ) -> BOLEH 2 WAJAH:\n     * Wajah 1: Kata setelahnya MANSHUB sebagai Maf'ul Bih, dengan menganggap خلا/عدا/حاشا sebagai Fi'il Madhi Jamid yang fa'ilnya dhamir mustatir wujuban: (حَضَرَ القَوْمُ خَلَا زَيْدًا).\n     * Wajah 2: Kata setelahnya MAJRUR sebagai Isim Majrur, dengan menganggap خلا/عدا/حاشا sebagai Huruf Jar Syabih biz-Zaid: (حَضَرَ القَوْمُ خَلَا زَيْدٍ). Catatan: pada حَاشَا lebih populer sebagai huruf jar.\n   - (B) Jika DIDAHULUI oleh (مَا المَصْدَرِيَّةُ): (مَا خَلَا، مَا عَدَا) -> WAJIB NASHAB sebagai Maf'ul Bih karena مَا المَصْدَرِيَّةُ hanya masuk pada Fi'il: (أَلَا كُلُّ شَيْءٍ مَا خَلَا اللَّهَ بَاطِلٌ). Adapun حَاشَا jarang dimasuki مَا المَصْدَرِيَّةُ.\n3. Istitsna' dengan (لَيْسَ) dan (لَا يَكُونُ):\n   - Kata setelahnya WAJIB NASHAB sebagai Khabar لَيْسَ / لَا يَكُونُ, sedangkan Isim keduanya adalah dhamir mustatir wujuban yang kembali pada البَعْضُ المَفْهُومُ مِنَ الكُلِّ السَّابِقِ: (قَرَأْتُ الكُتُبَ لَيْسَ كِتَابًا / لَا يَكُونُ كِتَابًا).",
+      "rumus_ringkas": "غير/سوى: Mengambil i'rab mustatsna بإلا, kata setelahnya Mudhaf Ilaih | خلا/عدا/حاشا tanpa ما: Boleh Nashab (Fi'il) atau Jar (Huruf Jar) | ما خلا / ما عدا: Wajib Nashab | ليس / لا يكون: Wajib Nashab (Khabar).",
+      "tanbihat_dan_khilaf": "Jumlah (مَا خَلَا زَيْدًا) atau (لَيْسَ زَيْدًا) menurut ulama nahwu berkedudukan في محل نصب حال dari mustatsna minhu (بمعنى: حَضَرَ القَوْمُ خَالِينَ مِنْ زَيْدٍ)."
+    },
+    {
+      "id_materi": "MAT-3401",
+      "id_bab": "BAB-34",
+      "sub_topik_arab": "حُرُوفُ النِّدَاءِ الثَّمَانِيَةُ وَأَنْوَاعُ المُنَادَى الخَمْسَةُ وَأَحْكَامُهَا الإِعْرَابِيَّةُ",
+      "sub_topik_indo": "Delapan Huruf Nida' dan Lima Jenis Munada Beserta Hukum I'rab/Bina'nya",
+      "kaidah_arab": "المُنَادَى هُوَ الاِسْمُ المَطْلُوبُ إِقْبَالُهُ بِيَا أَوْ إِحْدَى أَخَوَاتِهَا، وَهُوَ فِي الأَصْلِ مَفْعُولٌ بِهِ لِفِعْلٍ مَحْذُوفٍ وُجُوبًا تَقْدِيرُهُ (أُنَادِي أَوْ أَدْعُو) نَابَ حَرْفُ النِّدَاءِ مَنَابَهُ. وَالمُنَادَى خَمْسَةُ أَنْوَاعٍ: ثَلَاثَةٌ مُعْرَبَةٌ مَنْصُوبَةٌ، وَاثْنَانِ مَبْنِيَّانِ عَلَى مَا يُرْفَعَانِ بِهِ فِي مَحَلِّ نَصْبٍ.",
+      "penjelasan_indo": "Munada pada hakikatnya adalah Maf'ul Bih yang dinashabkan oleh fi'il mahdzuf wujuban (أَدْعُو / أُنَادِي) yang posisinya telah digantikan oleh huruf Nida'. Oleh sebab itu, seluruh Munada menempati kedudukan নashab (مَنْصُوبٌ لَفْظًا أَوْ مَحَلًّا).",
+      "rincian_hukum_dan_syarat": "1. Delapan Huruf Nida' dan Peruntukannya:\n   - Untuk Munada DEKAT (القَرِيبُ): الهَمْزَةُ (أَ) dan أَيْ: (أَفَاطِمُ مَهْلًا)، (أَيْ بُنَيَّ).\n   - Untuk Munada JAUH (البَعِيدُ) atau yang dihukumi jauh (karena tidur, lalai, atau pengagungan): أَيَا، هَيَا، آ، آيْ، dan يَا (yang merupakan أم الباب dan bisa dipakai untuk segala munada, serta satu-satunya huruf untuk memanggil lafazh الجَلَالَةِ اللَّه dan أَيُّهَا).\n   - Untuk Nudbah (النُّدْبَةُ / ratapan): وَا (dan boleh يَا jika aman dari kesamaran): (وَإِسْلَامَاهْ!).\n2. LIMA JENIS MUNADA:\n   - [A] TIGA JENIS MU'RAB MANSHUB (يُعْرَبُ مَنْصُوبًا لَفْظًا):\n     * (1) المُنَادَى المُضَافُ: (يَا طَالِبَ العِلْمِ)، (يَا أَبَا بَكْرٍ)، (يَا بَنِي إِسْرَائِيلَ).\n     * (2) المُنَادَى الشَّبِيهُ بِالمُضَافِ (kata yang bersambung dengan sesuatu yang menyempurnakan maknanya, baik ma'mul marfu', manshub, majrur, atau ma'thuf): (يَا طَالِعًا جَبَلًا)، (يَا حَسَنًا وَجْهُهُ)، (يَا رَفِيقًا بِالعِبَادِ)، (يَا ثَلَاثَةً وَثَلَاثِينَ).\n     * (3) المُنَادَى النَّكِرَةُ غَيْرُ المَقْصُودَةِ (nakirah umum yang tidak tertuju pada individu tertentu, seperti seruan orang buta atau khatib): (يَا غَافِلًا تَنَبَّهْ!)، (يَا رَجُلًا خُذْ بِيَدِي).\n   - [B] DUA JENIS MABNI ATAS TANDA RAFA'NYA DALAM MAHALL NASHAB (يُبْنَى عَلَى مَا يُرْفَعُ بِهِ فِي مَحَلِّ نَصْبٍ):\n     * (4) المُنَادَى العَلَمُ المُفْرَدُ (nama tunggal, bukan mudhaf/syabih bil-mudhaf): (يَا نُوحُ) [mabni atas Dhammah], (يَا مُحَمَّدَانِ) [mabni atas Alif], (يَا مُحَمَّدُونَ) [mabni atas Wawu]. Jika 'alam tersebut asalnya mabni (مثل: سِيبَوَيْهِ), maka mabni atas الضم المقدر.\n     * (5) المُنَادَى النَّكِرَةُ المَقْصُودَةُ (nakirah yang ditujukan pada orang tertentu di hadapan pembicara): (يَا جِبَالُ أَوِّبِي مَعَهُ)، (يَا نَارُ كُونِي بَرْدًا وَسَلَامًا)، (يَا رَجُلُ اتَّقِ اللَّهَ).",
+      "rumus_ringkas": "3 Munada Manshub: 1. Mudhaf | 2. Syabih bil-Mudhaf | 3. Nakirah Ghairu Maqshudah || 2 Munada Mabni (على الضم/الألف/الواو في محل نصب): 4. 'Alam Mufrad | 5. Nakirah Maqshudah.",
+      "tanbihat_dan_khilaf": "Huruf Nida' boleh dibuang jika munada bukan nakirah ghairu maqshudah, bukan mustaghats, bukan mandub, bukan dhamir, dan bukan isim isyarah (menurut Bashrah). Bila dibuang, wajib ditakdirkan dengan (يَا) saja: (يُوسُفُ أَعْرِضْ عَنْ هَذَا)، (رَبَّنَا لَا تُؤَاخِذْنَا)."
+    },
+    {
+      "id_materi": "MAT-3402",
+      "id_bab": "BAB-34",
+      "sub_topik_arab": "نِدَاءُ مَا فِيهِ (أَلْ)، وَالمُنَادَى المُضَافُ إِلَى يَاءِ المُتَكَلِّمِ، وَأَحْكَامُ تَوَابِعِ المُنَادَى",
+      "sub_topik_indo": "Nida' Kata Ber-Al, Munada Mudhaf ke Ya' Mutakallim (يا أبتِ / يا ابن أم), dan Tawabi' Munada",
+      "kaidah_arab": "لَا يَجْتَمِعُ حَرْفُ النِّدَاءِ وَ(أَلْ) إِلَّا فِي لَفْظِ الجَلَالَةِ (يَا اللَّهُ / اللَّهُمَّ) وَالجُمَلِ المَحْكِيَّةِ، وَيُتَوَسَّلُ إِلَى نِدَاءِ المُعَرَّفِ بِأَلْ بِـ(أَيُّهَا / أَيَّتُهَا) أَوِ اسْمِ الإِشَارَةِ. وَلِلْمُنَادَى المُضَافِ إِلَى يَاءِ المُتَكَلِّمِ وَتَوَابِعِ المُنَادَى المَبْنِيِّ أَحْكَامٌ تَفْصِيلِيَّةٌ دَقِيقَةٌ.",
+      "penjelasan_indo": "Kata yang berawalan Alif Lam (أَلْ) tidak boleh dimasuki huruf Nida' secara langsung (kecuali lafazh الجلالة الله, nama dari jumlah mahkiyyah seperti يَا المُنْطَلِقُ زَيْدٌ, atau darurat syair), melainkan harus menggunakan perantara (وَاسِطَةٌ). Selain itu, bab ini merinci hukum Munada yang mudhaf kepada Ya' Mutakallim serta hukum Tabi' (Na'at, Taukid, 'Athaf, Badal) bagi Munada Mabni.",
+      "rincian_hukum_dan_syarat": "1. Nida' Kata Ber-Al:\n   - Menggunakan (أَيُّهَا) untuk mudzakkar dan (أَيَّتُهَا) untuk muannats, atau isim isyarah (يَا هَذَا الرَّجُلُ):\n     * I'rab (أَيُّ / أَيَّةُ): منادى مبني على الضم في محل نصب (karena termasuk Nakirah Maqshudah), dan (هَا) حرف تنبيه.\n     * I'rab kata ber-Al setelah أيها/أيتها: WAJIB MARFU' (mengikuti lafazh أيُّ menurut jumhur, sedangkan Al-Mazini membolehkan nashab mengikuti mahall). Jika kata ber-Al itu MUSYTAQ (يَا أَيُّهَا النَّبِيُّ / المُزَّمِّلُ), maka dii'rab sebagai NA'AT. Jika JAMID (يَا أَيُّهَا الإِنْسَانُ / النَّاسُ), maka dii'rab sebagai BADAL atau 'Athaf Bayan.\n   - Khusus Lafazh الجَلَالَةِ (اللَّهُ): Boleh (يَا اللَّهُ) dengan hamzah qatha' atau washal, namun yang paling fasih adalah mengganti يَا dengan Mim Musyaddadah di akhir: (اللَّهُمَّ) -> اللهُ منادى مبني على الضم في محل نصب، والميم المشددة عوض عن حرف النداء المحذوف، ولا يجتمعان إلا شذوذا.\n2. Munada Mudhaf kepada Ya' Mutakallim:\n   - Bila Shahih Akhir (مثل: عَبْدِي، رَبِّي): Boleh 5 wajah bacaan, yang paling fasih adalah membuang Ya' dan mencukupkan dengan Kasrah: (يَا عِبَادِ فَاتَّقُونِ)، (رَبِّ اغْفِرْ لِي), atau menetapkan Ya' sukun (يَا عِبَادِيْ), atau menetapkan Ya' maftuhah (يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا), atau membalik kasrah jadi fathah dan Ya' jadi Alif (يَا حَسْرَتَا / يَا أَسَفَا), atau membuang Alif dan mencukupkan fathah (يَا حَسْرَتَ).\n   - Khusus (أَبٌ) dan (أُمٌّ): selain 5 wajah di atas, boleh mengganti Ya' Mutakallim dengan Ta' Ta'nits yang dikasrah (paling fasih) atau difathah: (يَا أَبَتِ / يَا أَبَتَ)، (يَا أُمَّتِ / يَا أُمَّتَ). Tidak boleh menggabungkan Ta' dan Ya' (tidak boleh: يَا أَبَتِي).\n   - Khusus (يَا ابْنَ أُمَّ) dan (يَا ابْنَ عَمَّ): Ya' mutakallim dibuang dan huruf Mim boleh dikasrah atau difathah.\n3. Hukum Tabi' bagi Munada Mabni (على الضم):\n   - (A) WAJIB NASHAB: Jika Tabi' (Na'at, Taukid, 'Athaf Bayan) berupa MUDHAF tanpa Al: (يَا زَيْدُ صَاحِبَ عَمْرٍو)، (يَا تَمِيمُ كُلَّهُمْ).\n   - (B) BOLEH RAFA' (mengikuti lafazh) dan NASHAB (mengikuti mahall): Jika Na'at mufrad, atau mudhaf ber-Al, atau Taukid/Bayan mufrad: (يَا زَيْدُ العَاقِلُ / العَاقِلَ)، (يَا زَيْدُ الحَسَنُ الوَجْهِ / الحَسَنَ الوَجْهِ).\n   - (C) Hukum Badal dan 'Athaf Nasaq tanpa Al: diperlakukan seperti Munada independen (يُعَامَلُ مُعَامَلَةَ المُنَادَى المُسْتَقِلِّ) -> jika mufrad 'alam maka mabni atas dhammah (يَا زَيْدُ وَعَمْرُ / يَا أَخَانَا زَيْدُ), dan jika mudhaf maka manshub (يَا زَيْدُ وَأَبَا عَبْدِ اللَّهِ).\n   - (D) Khusus apabila 'Alam Mufrad disifati dengan kata (ابْنُ) yang terletak di antara dua 'alam tanpa pemisah: boleh Munada-nya tetap Dhammah atau ikut Fathah (أتباعا لفتحة ابن): (يَا زَيْدُ بْنَ عَمْرٍو) atau (يَا زَيْدَ بْنَ عَمْرٍو), sedangkan kata (ابْنَ) wajib nashab.",
+      "rumus_ringkas": "أيها + Musytaq = Na'at Marfu'; أيها + Jamid = Badal Marfu' | اللهم = الميم عوض عن يا | يا أبتِ = التاء عوض عن الياء | Tabi' Munada Mabni: Mudhaf tanpa Al = Wajib Nashab; Mufrad = Boleh Rafa'/Nashab; Badal/'Athaf tanpa Al = Seperti Munada Mustaqill.",
+      "tanbihat_dan_khilaf": "Pada (يَا جِبَالُ أَوِّبِي مَعَهُ وَالطَّيْرَ), kata الطَّيْرَ adalah 'Athaf Nasaq yang ber-Al, sehingga boleh dibaca Rafa' (mengikuti lafazh جِبَالُ) dan Nashab (mengikuti mahall جِبَالُ atau sebagai maf'ul ma'ah / maf'ul bagi وَسَخَّرْنَا), dan Al-Khalil serta Sibawaih memilih Rafa' jika tidak ada kehendak ma'iyyah."
+    },
+    {
+      "id_materi": "MAT-3403",
+      "id_bab": "BAB-34",
+      "sub_topik_arab": "أُسْلُوبَا الاِسْتِغَاثَةِ وَالنُّدْبَةِ وَأَحْكَامُهُمَا",
+      "sub_topik_indo": "Uslub Al-Istighatsah (Lam Maftuhah & Maksurah) dan Uslub An-Nudbah",
+      "kaidah_arab": "الاِسْتِغَاثَةُ نِدَاءُ مَنْ يُعِينُ عَلَى دَفْعِ شِدَّةٍ، وَأَدَاتُهَا (يَا) دُونَ غَيْرِهَا، وَيُجَرُّ المُسْتَغَاثُ بِهِ بِلَامٍ مَفْتُوحَةٍ وَالمُسْتَغَاثُ لَهُ بِلَامٍ مَكْسُورَةٍ. وَالنُّدْبَةُ نِدَاءُ المُتَفَجَّعِ عَلَيْهِ أَوِ المُتَوَجَّعِ مِنْهُ بِـ(وَا) أَوْ (يَا)، وَلِلْمَنْدُوبِ أَحْكَامُ المُنَادَى مَعَ جَوَازِ زِيَادَةِ أَلِفِ النُّدْبَةِ وَهَاءِ السَّكْتِ.",
+      "penjelasan_indo": "Istighatsah dan Nudbah adalah dua uslub turunan dari Nida'. Istighatsah adalah memanggil seseorang untuk meminta pertolongan menghadapi kesulitan, sedangkan Nudbah adalah memanggil sesuatu yang diratapi (المُتَفَجَّعُ عَلَيْهِ seperti وَاعُمَرَاهْ!) atau anggota tubuh yang dirasakan sakitnya (المُتَوَجَّعُ مِنْهُ seperti وَاظَهْرَاهْ!).",
+      "rincian_hukum_dan_syarat": "1. Rukun dan Hukum I'rab Al-Istighatsah:\n   - Huruf Nida': WAJIB menggunakan (يَا) saja dan tidak boleh dibuang.\n   - Al-Mustaghats Bihi (المُسْتَغَاثُ بِهِ / pihak yang dimintai tolong) memiliki 3 bentuk:\n     * (A) Bentuk Asal: Di-jarkan dengan LAM MAFTUHAH (لَـ): (يَا لَلَّهِ لِلْمُسْلِمِينَ)، (يَا لَزَيْدٍ لِعَمْرٍو). Mengapa Lam-nya difathah? Karena Mustaghats Bihi menempati posisi dhamir mukhathab (sebab ia dipanggil), sedangkan Lam Jar bersama dhamir selalu difathah (لَكَ، لَهُ)، serta untuk membedakannya dari Mustaghats Lahu. I'rabnya: مجرور باللام المفتوحة لفظا في محل نصب منادى (أو متعلق بفعل النداء المحذوف).\n     * (B) Diakhiri Alif Tambahan di akhir kata (tanpa Lam Jar): (يَا زَيْدَا لِعَمْرٍو) -> untuk mubalaghah suara.\n     * (C) Tetap seperti Munada biasa (tanpa Lam dan tanpa Alif): (يَا زَيْدُ لِعَمْرٍو).\n   - Al-Mustaghats Lahu / Min Ajlih (المُسْتَغَاثُ لَهُ): Di-jarkan dengan LAM MAKSURAH (لِـ) jika berupa isim zhahir: (لِلْمَظْلُومِ), atau dengan (مِنْ) jika meminta tolong untuk melawan sesuatu: (يَا لَقَوْمِي مِنَ الظَّالِمِينَ!).\n   - Catatan Penting: Jika Mustaghats Bihi di-'athafkan kepada Mustaghats Bihi lain, maka: jika (يَا) diulang, Lam kedua tetap MAFTUHAH (يَا لَزَيْدٍ وَيَا لَعَمْرٍو); tetapi jika (يَا) TIDAK diulang, maka Lam kedua kembali MAKSURAH (يَا لَزَيْدٍ وَلِعَمْرٍو لِبَكْرٍ).\n2. Hukum Uslub An-Nudbah:\n   - Hurufnya: (وَا) secara khusus, atau (يَا) jika aman dari iltibas dengan nida' biasa.\n   - Syarat Mandub (المَنْدُوبُ): Harus berupa Isim MA'RIFAH yang spesifik (tidak boleh nakirah seperti رجل, tidak boleh mubham seperti اسم الإشارة والضمير والموصول الا اذا اشتهر بالصلة مثل: وَامَنْ حَفَرَ بِئْرَ زَمْزَمَاهْ!).\n   - Tiga Bentuk Akhir Mandub:\n     * (1) Tetap seperti Munada biasa: (وَامُحَمَّدُ! / وَاعَبْدَ اللَّهِ!).\n     * (2) Ditambah Alif Nudbah di akhir: (وَامُحَمَّدَا! / وَاعَبْدَ اللَّهَا!).\n     * (3) Ditambah Alif Nudbah + Ha' Sakt saat waqaf: (وَامُحَمَّدَاهْ! / وَارَأْسَاهْ!).\n   - I'rab Mandub: منادى مندوب مبني على الضم المقدر (إن كان مفردا علما) أو منصوب بفتحة مقدرة (إن كان مضافا) لاشتغال المحل بحركة المناسبة لألف الندبة، والألف للندبة، والهاء للسكت.",
+      "rumus_ringkas": "Istighatsah: يا + لَـ (Fathah pada Mustaghats Bihi) + لِـ (Kasrah pada Mustaghats Lahu) | Bila 'Athaf tanpa ulang يا -> Lam ke-2 Kasrah || Nudbah: وا + Mandub Ma'rifah + ا / اهْ (Alif Nudbah + Ha' Sakt).",
+      "tanbihat_dan_khilaf": "Uslub التعجب (kagum) dengan يَا diperlakukan persis seperti Istighatsah dengan Lam Maftuhah atau Alif di akhir, contoh: (يَا لَلدَّاهِيَةِ!)، (يَا لَجَمَالِ الطَّبِيعَةِ!)، (يَا عَجَبَا لِهَذَا الأَمْرِ!)."
+    },
+    {
+      "id_materi": "MAT-3404",
+      "id_bab": "BAB-34",
+      "sub_topik_arab": "تَرْخِيمُ المُنَادَى: شُرُوطُهُ وَاللُّغَتَانِ فِيهِ (مَنْ يَنْتَظِرُ وَمَنْ لَا يَنْتَظِرُ)",
+      "sub_topik_indo": "Tarkhimul Munada: Definisi, Syarat-Syarat, dan Dua Cara Baca (Man Yantazhir vs Man La Yantazhir)",
+      "kaidah_arab": "التَّرْخِيمُ هُوَ حَذْفُ آخِرِ المُنَادَى تَخْفِيفًا، وَيَجُوزُ فِي كُلِّ اسْمٍ مَخْتُومٍ بِتَاءِ التَّأْنِيثِ مُطْلَقًا، أَوْ فِي العَلَمِ المُفْرَدِ الزَّائِدِ عَلَى ثَلَاثَةِ أَحْرُفٍ. وَفِي إِعْرَابِ المُرَخَّمِ لُغَتَانِ: لُغَةُ مَنْ يَنْتَظِرُ، وَلُغَةُ مَنْ لَا يَنْتَظِرُ.",
+      "penjelasan_indo": "Tarkhim secara bahasa bermakna ترقيق الصوت (melembutkan suara), dan secara istilah nahwu adalah membuang huruf akhir (atau dua huruf akhir) dari Munada untuk meringankan pengucapan.",
+      "rincian_hukum_dan_syarat": "1. Dua Kategori Munada yang Boleh Ditarkhim:\n   - (A) Setiap Munada yang diakhiri Ta' Ta'nits (مَا خُتِمَ بِتَاءِ التَّأْنِيثِ): boleh ditarkhim secara mutlak, baik berupa 'alam maupun nakirah maqshudah, baik 3 huruf maupun lebih: (يَا فَاطِمَةُ -> يَا فَاطِمُ)، (يَا عَائِشَةُ -> يَا عَائِشُ)، (يَا شَاةُ -> يَا شَا).\n   - (B) Munada yang TIDAK diakhiri Ta' Ta'nits: boleh ditarkhim dengan 4 SYARAT:\n     * (1) Harus Mabni atas Dhammah.\n     * (2) Harus berupa 'ALAM (nama): tidak boleh nakirah maqshudah selain kata (يَا صَاحِ) yang berasal dari يَا صَاحِبُ.\n     * (3) Bukan Murakkab Idhafi atau Isnadi (adapun Murakkab Mazji dibuang kata keduanya: يَا مَعْدِي كَرِبُ -> يَا مَعْدِي).\n     * (4) Harus LEBIH DARI 3 HURUF: (يَا جَعْفَرُ -> يَا جَعْفَ)، (يَا سُعَادُ -> يَا سُعَا)، (يَا حَارِثُ -> يَا حَارِ). Jika sebelum huruf akhir terdapat huruf mad zaidah yang keempat atau lebih, maka dibuang dua huruf sekaligus: (يَا مَنْصُورُ -> يَا مَنْصُ)، (يَا عُثْمَانُ -> يَا عُثْمُ)، (يَا مِسْكِينُ -> يَا مِسْكُ).\n2. Dua Cara Baca (Lughah) pada Munada Murakkham:\n   - (1) لُغَةُ مَنْ يَنْتَظِرُ الحَرْفَ المَحْذُوفَ (Bahasa orang yang tetap mengingat huruf yang dibuang): Huruf terakhir yang tersisa DIBIARKAN DENGAN HARAKAT ASLINYA sebelum pembuangan: (يَا جَعْفَ) [fathah], (يَا حَارِ) [kasrah], (يَا مَنْصُ) [dhammah], (يَا فَاطِمَ) [fathah].\n     * I'rabnya: منادى مرخم مبني على الضم المقدر على الحرف المحذوف للترخيم في محل نصب.\n   - (2) لُغَةُ مَنْ لَا يَنْتَظِرُ الحَرْفَ المَحْذُوفَ (Bahasa orang yang menganggap kata yang tersisa sebagai kata utuh mandiri): Huruf terakhir yang tersisa DIBERI HARAKAT DHAMMAH seperti munada baru: (يَا جَعْفُ)، (يَا حَارُ)، (يَا فَاطِمُ).\n     * I'rabnya: منادى مرخم مبني على الضم الظاهر على آخره في محل نصب.",
+      "rumus_ringkas": "Boleh Tarkhim: 1. Berakhiran Ta' Ta'nits (فاطمَة -> يا فاطمَ/فاطمُ) | 2. 'Alam > 3 Huruf (جعفر -> يا جعفَ/جعفُ; منصور -> يا منصُ) || 2 Lughah: Man Yantazhir (Harakat Asli) vs Man La Yantazhir (Dhammah).",
+      "tanbihat_dan_khilaf": "Apabila terjadi kesamaran makna jika dibaca dengan لغة من لا ينتظر (misalnya nama perempuan يَا مُسْلِمَةُ jika ditarkhim lalu didhammahkan menjadi يَا مُسْلِمُ akan dikira memanggil laki-laki), maka WAJIB menggunakan لغة من ينتظر (يَا مُسْلِمَ dengan fathah Mim)."
+    },
+    {
+      "id_materi": "MAT-3501",
+      "id_bab": "BAB-35",
+      "sub_topik_arab": "أُسْلُوبُ التَّحْذِيرِ: صُوَرُهُ بِـ(إِيَّاكَ) وَبِغَيْرِهَا وَحُكْمُ حَذْفِ عَامِلِهِ",
+      "sub_topik_indo": "Uslub At-Tahdzir: Bentuk-Bentuknya (Dengan إِيَّاكَ & Tanpa إِيَّاكَ) serta Hukum Membuang Fi'ilnya",
+      "kaidah_arab": "التَّحْذِيرُ هُوَ تَنْبِيهُ المُخَاطَبِ عَلَى أَمْرٍ مَكْرُوهٍ لِيَجْتَنِبَهُ، وَيُنْصَبُ المُحَذَّرُ مِنْهُ بِفِعْلٍ مَحْذُوفٍ تَقْدِيرُهُ (احْذَرْ / بَاعِدْ / قِ نَفْسَكَ). وَيَأْتِي التَّحْذِيرُ بِلفْظِ (إِيَّاكَ وَفُرُوعِهِ) أَوْ بِدُونِهِ عَلَى ثَلَاثِ صُوَرٍ: الإِفْرَادِ، وَالتَّكْرَارِ، وَالعَطْفِ.",
+      "penjelasan_indo": "Tahdzir adalah memperingatkan lawan bicara terhadap sesuatu yang membahayakan atau tercela agar ia menjauhinya. Unsur-unsur Tahdzir meliputi: المُحَذِّرُ (pembicara), المُحَذَّرُ (yang diperingatkan), dan المُحَذَّرُ مِنْهُ (hal yang harus dijauhi). Uslub ini terbagi menjadi dua kelompok besar: menggunakan (إِيَّاكَ وفروعه: إياكِ، إياكما، إياكم، إياكن) dan tanpa (إِيَّاكَ).",
+      "rincian_hukum_dan_syarat": "1. Tahdzir dengan (إِيَّاكَ وَفُرُوعِهِ) -> FI'ILNYA WAJIB DIBUANG SECARA MUTLAK (يجب إضمار عامله مطلقا) dalam seluruh bentuknya:\n   - (A) Tanpa Wawu, diikuti مِنْ atau أَنْ المَصْدَرِيَّةِ: (إِيَّاكَ مِنَ الكَذِبِ)، (إِيَّاكَ أَنْ تَكْذِبَ).\n     * I'rab: إِيَّاكَ مفعول به لفعل محذوف وجوبا تقديره (احْذَرْ أو بَاعِدْ نَفْسَكَ عن الكذب).\n   - (B) Dengan Wawu 'Athaf: (إِيَّاكَ وَالكَذِبَ)، (إِيَّاكُمْ وَالحَسَدَ).\n     * I'rab: إِيَّاكَ مفعول به لفعل محذوف وجوبا تقديره (احْذَرْ)، والواو عاطفة، والكذبَ مفعول به لفعل محذوف وجوبا تقديره (وَاحْذَرِ الكَذِبَ) عطف جملة على جملة، أو معطوف على إياك بتقدير فعل يتعدى لمفعولين مثل (بَاعِدْ).\n   - (C) Tanpa Wawu dan tanpa مِنْ (Mudhaf Ilaih atau Maf'ul Kedua): (إِيَّاكَ الكَذِبَ) -> إياك مفعول أول والكذبَ مفعول ثان لفعل محذوف وجوبا تقديره (جَنِّبْ نَفْسَكَ الكَذِبَ).\n2. Tahdzir TANPA (إِيَّاكَ) -> Memiliki 3 Bentuk:\n   - (1) الإِفْرَادُ (Tunggal, tanpa pengulangan & tanpa 'athaf): BOLEH membuang fi'il dan boleh menampakkannya (يَجُوزُ إِضْمَارُ العَامِلِ وَإِظْهَارُهُ): (الأَسَدَ!) atau (احْذَرِ الأَسَدَ!).\n   - (2) التَّكْرَارُ (Diulang): WAJIB MEMBUANG FI'ILNYA (يَجِبُ إِضْمَارُ العَامِلِ): (النَّارَ النَّارَ!)، (الكَذِبَ الكَذِبَ!) -> kata pertama maf'ul bih bagi (احْذَرْ) yang wajib dibuang, dan kata kedua taukid lafzhi manshub.\n   - (3) العَطْفُ (Dengan Wawu 'Athaf): WAJIB MEMBUANG FI'ILNYA: (نَاقَةَ اللَّهِ وَسُقْيَاهَا)، (رَأْسَكَ وَالسَّيْفَ!)، (النِّفَاقَ وَالرِّيَاءَ!).",
+      "rumus_ringkas": "Tahdzir dengan إياك (Semua Bentuk) = Wajib Buang Fi'il | Tahdzir tanpa إياك: 1. Ifrad (الأسدَ) = Jaiz Buang/Tampakkan Fi'il | 2. Takrar (النارَ النارَ) = Wajib Buang Fi'il | 3. 'Athaf (ناقةَ الله وسقياها) = Wajib Buang Fi'il.",
+      "tanbihat_dan_khilaf": "Tahdzir pada asalnya hanya untuk dhamir mukhathab (إِيَّاكَ), namun secara syadz/qalil pernah datang untuk mutakallim (فَإِيَّايَ وَإِيَّاكُمْ أَنْ تَحْقِرُوا شَيْئًا مِنَ الشَّرِّ) dan ghaib (إِذَا بَلَغَ الرَّجُلُ السِّتِّينَ فَإِيَّاهُ وَإِيَّا الشَّوَابِّ)."
+    },
+    {
+      "id_materi": "MAT-3502",
+      "id_bab": "BAB-35",
+      "sub_topik_arab": "أُسْلُوبُ الإِغْرَاءِ: صُوَرُهُ الثَّلَاثُ وَأَحْكَامُهُ الإِعْرَابِيَّةُ",
+      "sub_topik_indo": "Uslub Al-Ighra': Tiga Bentuknya (Ifrad, Takrar, 'Athaf) dan Hukum Membuang Fi'ilnya",
+      "kaidah_arab": "الإِغْرَاءُ هُوَ حَثُّ المُخَاطَبِ عَلَى أَمْرٍ مَحْمُودٍ لِيَفْعَلَهُ، وَيُنْصَبُ المُغْرَى بِهِ مَفْعُولًا بِهِ لِفِعْلٍ مَحْذُوفٍ تَقْدِيرُهُ (الْزَمْ). وَلَهُ ثَلَاثُ صُوَرٍ كَالتَّحْذِيرِ بِلَا إِيَّاكَ: الإِفْرَادُ، وَالتَّكْرَارُ، وَالعَطْفُ.",
+      "penjelasan_indo": "Ighra' adalah kebalikan dari Tahdzir, yaitu menganjurkan atau memotivasi lawan bicara terhadap suatu hal terpuji agar ia melakukannya atau berpegang teguh padanya. Kata yang dianjurkan (المُغْرَى بِهِ) dibaca manshub sebagai Maf'ul Bih bagi fi'il mahdzuf yang takdirnya adalah (الْزَمْ / افْعَلْ / اتَّبِعْ). Berbeda dengan Tahdzir, Ighra' tidak pernah menggunakan lafazh (إِيَّاكَ).",
+      "rincian_hukum_dan_syarat": "Tiga Bentuk Uslub Al-Ighra' dan Hukum 'Amilnya:\n1. الإِفْرَادُ (Tunggal): BOLEH membuang fi'il (الْزَمْ) dan boleh menampakkannya:\n   - Contoh: (الصِّدْقَ يَا فَتَى!) atau (الْزَمِ الصِّدْقَ يَا فَتَى!).\n   - I'rab: الصِّدْقَ: مفعول به منصوب على الإغراء لفعل محذوف جوازا تقديره (الْزَمْ).\n2. التَّكْرَارُ (Diulang): WAJIB MEMBUANG FI'ILNYA (لِكَوْنِ التَّكْرَارِ عِوَضًا عَنْ ذِكْرِ الفِعْلِ):\n   - Contoh: (الصَّلَاةَ الصَّلَاةَ وَمَا مَلَكَتْ أَيْمَانُكُمْ!)، (أَخَاكَ أَخَاكَ إِنَّ مَنْ لَا أَخَا لَهُ كَسَاعٍ إِلَى الهَيْجَا بِغَيْرِ سِلَاحِ).\n   - I'rab: الصَّلَاةَ الأولى: مفعول به منصوب على الإغراء لفعل محذوف وجوبا تقديره (الْزَمُوا). الصَّلَاةَ الثانية: توكيد لفظي منصوب.\n3. العَطْفُ (Dengan Wawu 'Athaf): WAJIB MEMBUANG FI'ILNYA:\n   - Contoh: (المُرُوءَةَ وَالنَّجْدَةَ!)، (الإِخْلَاصَ وَالمُثَابَرَةَ!).\n   - I'rab: المُرُوءَةَ: مفعول به لفعل محذوف وجوبا تقديره (الْزَمْ)، والواو حرف عطف، والنَّجْدَةَ: معطوف منصوب (أو مفعول به لفعل محذوف وجوبا).",
+      "rumus_ringkas": "Ighra' (Takdir: الْزَمْ): 1. Ifrad (الصدقَ) = Jaiz Buang Fi'il | 2. Takrar (الصلاةَ الصلاةَ) = Wajib Buang Fi'il | 3. 'Athaf (المروءةَ والنجدةَ) = Wajib Buang Fi'il.",
+      "tanbihat_dan_khilaf": "Perhatikan perbedaan i'rab ketika sebuah kata tunggal di awal kalimat dibaca rafa' vs nashab: (الصَّبْرُ جَمِيلٌ) -> الصَّبْرُ mubtada' marfu' (jumlah khabariyyah). Sedangkan (الصَّبْرَ يَا أَخِي!) -> الصَّبْرَ maf'ul bih atas ighra' (jumlah thalabiyyah/insya'iyyah)."
+    },
+    {
+      "id_materi": "MAT-3503",
+      "id_bab": "BAB-35",
+      "sub_topik_arab": "أُسْلُوبُ الاِخْتِصَاصِ: شُرُوطُ الاِسْمِ المُخْتَصِّ وَصُوَرُهُ وَفَرْقُهُ عَنِ النِّدَاءِ وَالخَبَرِ",
+      "sub_topik_indo": "Uslub Al-Ikhtishash: Syarat Isim Mukhtash, Tiga Bentuknya, dan Perbedaannya dengan Nida' & Khabar",
+      "kaidah_arab": "الاِخْتِصَاصُ هُوَ قَصْرُ حُكْمٍ مُسْنَدٍ لِضَمِيرٍ عَلَى اسْمٍ ظَاهِرٍ مَعْرِفَةٍ يَذْكُرُ بَعْدَهُ مَنْصُوبًا بِفِعْلٍ مَحْذُوفٍ وُجُوبًا تَقْدِيرُهُ (أَخُصُّ أَوْ أَعْنِي). وَيَأْتِي المُخْتَصُّ مُعَرَّفًا بِأَلْ، أَوْ مُضَافًا إِلَى مَعْرِفَةٍ، أَوْ بِلَفْظِ (أَيُّهَا وَأَيَّتُهَا).",
+      "penjelasan_indo": "Uslub Ikhtishash adalah struktur kalimat di mana seorang pembicara menyebutkan sebuah isim zhahir ma'rifah (disebut الاِسْمُ المُخْتَصُّ) setelah dhamir mutakallim (أَنَا، نَحْنُ، لِي، بِنَا، إِنَّنَا — dan kadang dhamir mukhathab seperti بِكَ اللَّهَ نَرْجُو الفَضْلَ) untuk mengkhususkan dan menjelaskan siapa yang dimaksud oleh dhamir tersebut. Isim Mukhtash selalu berkedudukan sebagai Maf'ul Bih bagi fi'il yang WAJIB DIBUANG dengan takdir (أَخُصُّ / أَعْنِي), dan jumlah ikhtishash merupakan جُمْلَةٌ اعْتِرَاضِيَّةٌ لَا مَحَلَّ لَهَا مِنَ الإِعْرَابِ (atau dalam محل نصب حال).",
+      "rincian_hukum_dan_syarat": "1. Tiga Bentuk Isim Mukhtash (المَنْصُوبُ عَلَى الاِخْتِصَاصِ):\n   - (1) المُعَرَّفُ بِأَلْ (Ber-Alif Lam): (نَحْنُ — العَرَبَ — أَسْخَى النَّاسِ لِلضَّيْفِ)، (نَحْنُ — المُسْلِمِينَ — نُؤْمِنُ بِجَمِيعِ الأَنْبِيَاءِ).\n   - (2) المُضَافُ إِلَى مَعْرِفَةٍ (Mudhaf kepada Ma'rifah): (نَحْنُ — مَعَاشِرَ الأَنْبِيَاءِ — لَا نُورَثُ، مَا تَرَكْنَاهُ صَدَقَةٌ)، (نَحْنُ — طُلَّابَ العِلْمِ — نَسْهَرُ لِطَلَبِ الحَقِّ).\n   - (3) لَفْظَا (أَيُّهَا) وَ(أَيَّتُهَا) yang diikuti sifat ber-Al yang wajib marfu': (أَنَا — أَيُّهَا العَبْدُ — فَقِيرٌ إِلَى عَفْوِ رَبِّي)، (اللَّهُمَّ اغْفِرْ لَنَا أَيَّتُهَا العِصَابَةُ).\n     * I'rab أَيُّهَا pada Ikhtishash: (أَيُّ) اسم مبني على الضم في محل نصب مفعول به لفعل محذوف وجوبا تقديره (أَخُصُّ)، و(هَا) حرف تنبيه، والاسم المعرف بأل بعدها نعت مرفوع وجوبا.\n2. Empat Perbedaan Uslub Ikhtishash dengan Uslub Nida':\n   - (a) Ikhtishash TIDAK menggunakan huruf Nida', sedangkan Nida' menggunakan huruf Nida' (secara lafazh atau takdir).\n   - (b) Ikhtishash WAJIB jatuh setelah dhamir (di tengah atau akhir kalimat), sedangkan Nida' boleh di awal kalimat.\n   - (c) Isim Mukhtash boleh langsung ber-Alif Lam (نَحْنُ العَرَبَ), sedangkan Munada tidak boleh langsung ber-Alif Lam (kecuali اللَّه).\n   - (d) Makna Ikhtishash adalah khabariyyah (pengkhususan dan penjelasan dhamir), bukan memanggil lawan bicara.\n3. Perbedaan I'rab antara Khabar dan Ikhtishash:\n   - (نَحْنُ طُلَّابُ العِلْمِ) [dengan Dhammah]: نَحْنُ mubtada', dan طُلَّابُ adalah KHABAR marfu'.\n   - (نَحْنُ — طُلَّابَ العِلْمِ — مُجْتَهِدُونَ) [dengan Fathah]: نَحْنُ mubtada', طُلَّابَ adalah MAF'UL BIH atas Ikhtishash oleh fi'il mahdzuf wujuban (أَخُصُّ), dan مُجْتَهِدُونَ adalah khabar bagi نَحْنُ.",
+      "rumus_ringkas": "Dhamir Mutakallim (نحن/أنا/بنا) + Isim Mukhtash (1. المعرف بأل | 2. المضاف لمعرفة | 3. أيها/أيتها) + Pelengkap Kalimat -> Mukhtash = Maf'ul Bih bagi (أَخُصُّ) yang wajib dibuang.",
+      "tanbihat_dan_khilaf": "Isim Mukhtash TIDAK BOLEH berupa isim nakirah, isim isyarah, isim maushul, maupun 'alam mufrad (kecuali sangat jarang dalam amtsilah seperti: بِكَ اللَّهَ نَرْجُو الفَضْلَ)."
+    }
+  ],
+  "irab": [
+    {
+      "id_contoh": "IRB-3301",
+      "id_bab": "BAB-33",
+      "id_materi": "MAT-3302",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Maryam: 4",
+      "kalimat_arab": "قَالَ رَبِّ إِنِّي وَهَنَ العَظْمُ مِنِّي وَاشْتَعَلَ الرَّأْسُ شَيْبًا",
+      "terjemahan_indo": "Ia berkata: Ya Tuhanku, sesungguhnya tulangku telah lemah dan kepalaku telah ditumbuhi uban.",
+      "kata_kunci": "وَاشْتَعَلَ الرَّأْسُ شَيْبًا",
+      "irab_arab": "اشْتَعَلَ: فِعْلٌ مَاضٍ مَبْنِيٌّ عَلَى الفَتْحِ. الرَّأْسُ: فَاعِلٌ مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ. شَيْبًا: تَمْيِيزُ نِسْبَةٍ (مَلْحُوظٌ) مُحَوَّلٌ عَنِ الفَاعِلِ مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ، وَالأَصْلُ: (وَاشْتَعَلَ شَيْبُ الرَّأْسِ).",
+      "penjelasan_irab_indo": "Kata (شَيْبًا) adalah Tamyiz Nisbah yang muhawwal 'anil fa'il. Asal kalimatnya adalah (اشْتَعَلَ شَيْبُ الرَّأْسِ), kemudian kata (الرَّأْسُ) dijadikan fa'il untuk memberikan kesan mubalaghah (menyeluruhnya uban di seluruh kepala), lalu ketika timbul kesamaran apa yang menyala di kepala, didatangkanlah (شَيْبًا) sebagai tamyiz."
+    },
+    {
+      "id_contoh": "IRB-3302",
+      "id_bab": "BAB-33",
+      "id_materi": "MAT-3302",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Al-Qamar: 12",
+      "kalimat_arab": "وَفَجَّرْنَا الأَرْضَ عُيُونًا فَالْتَقَى المَاءُ عَلَى أَمْرٍ قَدْ قُدِرَ",
+      "terjemahan_indo": "Dan Kami jadikan bumi memancarkan mata air-mata air, maka bertemulah air-air itu untuk satu urusan yang sungguh telah ditetapkan.",
+      "kata_kunci": "وَفَجَّرْنَا الأَرْضَ عُيُونًا",
+      "irab_arab": "فَجَّرْنَا: فِعْلٌ مَاضٍ مَبْنِيٌّ عَلَى السُّكُونِ، وَ(نَا) ضَمِيرٌ مُتَّصِلٌ فِي مَحَلِّ رَفْعٍ فَاعِلٌ. الأَرْضَ: مَفْعُولٌ بِهِ مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ. عُيُونًا: تَمْيِيزُ نِسْبَةٍ مُحَوَّلٌ عَنِ المَفْعُولِ بِهِ مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ، وَالأَصْلُ: (وَفَجَّرْنَا عُيُونَ الأَرْضِ).",
+      "penjelasan_irab_indo": "Kata (عُيُونًا) adalah Tamyiz Nisbah muhawwal 'anil maf'ul bih, yang asalnya (فَجَّرْنَا عُيُونَ الأَرْضِ), sehingga wajib dibaca nashab dan tidak boleh di-jarkan dengan مِنْ."
+    },
+    {
+      "id_contoh": "IRB-3303",
+      "id_bab": "BAB-33",
+      "id_materi": "MAT-3302",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Al-Kahfi: 34",
+      "kalimat_arab": "أَنَا أَكْثَرُ مِنْكَ مَالًا وَأَعَزُّ نَفَرًا",
+      "terjemahan_indo": "Hartaku lebih banyak daripada hartamu dan pengikut-pengikutku lebih kuat.",
+      "kata_kunci": "أَكْثَرُ مِنْكَ مَالًا وَأَعَزُّ نَفَرًا",
+      "irab_arab": "أَنَا: ضَمِيرٌ مُنْفَصِلٌ فِي مَحَلِّ رَفْعٍ مُبْتَدَأٌ. أَكْثَرُ: خَبَرُ المُبْتَدَإِ مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ. مِنْكَ: جَارٌّ وَمَجْرُورٌ مُتَعَلِّقٌ بِـ(أَكْثَرُ). مَالًا: تَمْيِيزُ نِسْبَةٍ مُحَوَّلٌ عَنِ المُبْتَدَإِ مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ. وَأَعَزُّ: مَعْطُوفٌ عَلَى (أَكْثَرُ) مَرْفُوعٌ. نَفَرًا: تَمْيِيزٌ مَنْصُوبٌ.",
+      "penjelasan_irab_indo": "Kata (مَالًا) dan (نَفَرًا) jatuh setelah أفعل التفضيل (أَكْثَرُ / أَعَزُّ) dan merupakan tamyiz muhawwal 'anil mubtada' (asalnya: مَالِي أَكْثَرُ مِنْ مَالِكَ وَنَفَرِي أَعَزُّ مِنْ نَفَرِكَ). Karena berbeda jenis dengan mubtada' (أَنَا), keduanya wajib dibaca nashab."
+    },
+    {
+      "id_contoh": "IRB-3304",
+      "id_bab": "BAB-33",
+      "id_materi": "MAT-3304",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. An-Nisa': 66",
+      "kalimat_arab": "وَلَوْ أَنَّا كَتَبْنَا عَلَيْهِمْ أَنِ اقْتُلُوا أَنْفُسَكُمْ أَوِ اخْرُجُوا مِنْ دِيَارِكُمْ مَا فَعَلُوهُ إِلَّا قَلِيلٌ مِنْهُمْ",
+      "terjemahan_indo": "Dan sesungguhnya kalau Kami perintahkan kepada mereka: 'Bunuhlah dirimu atau keluarlah kamu dari kampungmu', niscaya mereka tidak akan melakukannya, kecuali sebagian kecil dari mereka.",
+      "kata_kunci": "مَا فَعَلُوهُ إِلَّا قَلِيلٌ مِنْهُمْ",
+      "irab_arab": "مَا: حَرْفُ نَفْيٍ. فَعَلُوهُ: فِعْلٌ مَاضٍ، وَوَاوُ الجَمَاعَةِ فَاعِلٌ (وَهُوَ المُسْتَثْنَى مِنْهُ)، وَالهَاءُ مَفْعُولٌ بِهِ. إِلَّا: أَدَاةُ اسْتِثْنَاءٍ مُلْغَاةٌ (أَوْ حَرْفُ اسْتِثْنَاءٍ). قَلِيلٌ: بَدَلُ بَعْضٍ مِنْ كُلٍّ مَرْفُوعٌ تَبَعًا لِوَاوِ الجَمَاعَةِ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ (وَفِي قِرَاءَةِ ابْنِ عَامِرٍ: إِلَّا قَلِيلًا، مُسْتَثْنًى مَنْصُوبٌ).",
+      "penjelasan_irab_indo": "Kalimat (مَا فَعَلُوهُ إِلَّا قَلِيلٌ مِنْهُمْ) adalah Kalam Tam Manfi Muttashil (mustatsna minhu ada yaitu wawu jama'ah, dan didahului nafi مَا). Maka hukum yang rajih adalah الإِتْبَاعُ عَلَى البَدَلِيَّةِ (dibaca rafa' قَلِيلٌ sebagai badal dari wawu jama'ah sebagaimana qira'at jumhur), dan boleh dibaca nashab (قَلِيلًا) atas istitsna' sebagaimana qira'at mutawatirah Ibnu 'Amir."
+    },
+    {
+      "id_contoh": "IRB-3305",
+      "id_bab": "BAB-33",
+      "id_materi": "MAT-3304",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. An-Nisa': 157",
+      "kalimat_arab": "مَا لَهُمْ بِهِ مِنْ عِلْمٍ إِلَّا اتِّبَاعَ الظَّنِّ",
+      "terjemahan_indo": "Mereka tidak mempunyai keyakinan tentang siapa yang dibunuh itu, kecuali mengikuti persangkaan belaka.",
+      "kata_kunci": "إِلَّا اتِّبَاعَ الظَّنِّ",
+      "irab_arab": "مَا: نَافِيَةٌ. لَهُمْ: جَارٌّ وَمَجْرُورٌ فِي مَحَلِّ رَفْعٍ خَبَرٌ مُقَدَّمٌ. مِنْ: حَرْفُ جَرٍّ زَائِدٌ. عِلْمٍ: مُبْتَدَأٌ مُؤَخَّرٌ مَجْرُورٌ لَفْظًا مَرْفُوعٌ مَحَلًّا (وَهُوَ المُسْتَثْنَى مِنْهُ). إِلَّا: حَرْفُ اسْتِثْنَاءٍ. اتِّبَاعَ: مُسْتَثْنًى مَنْصُوبٌ وُجُوبًا عَلَى اللُّغَةِ الحِجَازِيَّةِ لِأَنَّ الاِسْتِثْنَاءَ مُنْقَطِعٌ، وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ، وَهُوَ مُضَافٌ، وَالظَّنِّ: مُضَافٌ إِلَيْهِ.",
+      "penjelasan_irab_indo": "Mengikuti persangkaan (اتِّبَاعَ الظَّنِّ) bukanlah bagian dari ilmu (عِلْمٍ), sehingga istitsna' ini adalah Istitsna' Munqathi' (tidak sejenis). Meskipun berada dalam Kalam Tam Manfi, menurut jumhur Hijaz (dan seluruh qira'at sab'ah dalam ayat ini) wajib dibaca nashab."
+    },
+    {
+      "id_contoh": "IRB-3306",
+      "id_bab": "BAB-33",
+      "id_materi": "MAT-3305",
+      "jenis_dalil": "Syair Arab",
+      "sumber_dalil": "Diwan Labid bin Rabi'ah (Hadits: أصدق كلمة قالها شاعر)",
+      "kalimat_arab": "أَلَا كُلُّ شَيْءٍ مَا خَلَا اللَّهَ بَاطِلٌ ... وَكُلُّ نَعِيمٍ لَا مَحَالَةَ زَائِلُ",
+      "terjemahan_indo": "Ketahuilah, segala sesuatu selain Allah adalah fana (bathil), dan setiap kenikmatan pasti akan sirna.",
+      "kata_kunci": "مَا خَلَا اللَّهَ",
+      "irab_arab": "مَا: مَصْدَرِيَّةٌ مَبْنِيَّةٌ عَلَى السُّكُونِ. خَلَا: فِعْلٌ مَاضٍ جَامِدٌ لِلِاسْتِثْنَاءِ مَبْنِيٌّ عَلَى الفَتْحِ المُقَدَّرِ، وَفَاعِلُهُ ضَمِيرٌ مُسْتَتِرٌ وُجُوبًا تَقْدِيرُهُ (هُوَ) يَعُودُ عَلَى البَعْضِ المَفْهُومِ مِنْ (كُلُّ شَيْءٍ). اللَّهَ: اسْمُ الجَلَالَةِ مَفْعُولٌ بِهِ مَنْصُوبٌ وُجُوبًا وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ.",
+      "penjelasan_irab_indo": "Karena (خَلَا) didahului oleh (مَا المَصْدَرِيَّةُ), maka ia dipastikan berstatus sebagai Fi'il Madhi (sebab ما المصدرية tidak masuk pada huruf jar), sehingga lafazh الجلالة (اللَّهَ) setelahnya WAJIB dibaca manshub sebagai Maf'ul Bih."
+    },
+    {
+      "id_contoh": "IRB-3401",
+      "id_bab": "BAB-34",
+      "id_materi": "MAT-3401",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Hud: 44",
+      "kalimat_arab": "وَقِيلَ يَا أَرْضُ ابْلَعِي مَاءَكِ وَيَا سَمَاءُ أَقْلِعِي",
+      "terjemahan_indo": "Dan difirmankan: 'Hai bumi telanlah airmu, dan hai langit (hujan) berhentilah.'",
+      "kata_kunci": "يَا أَرْضُ ... وَيَا سَمَاءُ",
+      "irab_arab": "يَا: حَرْفُ نِدَاءٍ مَبْنِيٌّ عَلَى السُّكُونِ لَا مَحَلَّ لَهُ مِنَ الإِعْرَابِ. أَرْضُ: مُنَادًى (نَكِرَةٌ مَقْصُودَةٌ) مَبْنِيٌّ عَلَى الضَّمِّ فِي مَحَلِّ نَصْبٍ بِفِعْلِ النِّدَاءِ المَحْذُوفِ وُجُوبًا. وَيَا سَمَاءُ: مِثْلُ إِعْرَابِ (يَا أَرْضُ).",
+      "penjelasan_irab_indo": "Kata (أَرْضُ) dan (سَمَاءُ) adalah isim nakirah yang ditujukan secara spesifik (نَكِرَةٌ مَقْصُودَةٌ), sehingga dihukumi mabni atas Dhammah tanpa tanwin dalam محل نصب."
+    },
+    {
+      "id_contoh": "IRB-3402",
+      "id_bab": "BAB-34",
+      "id_materi": "MAT-3402",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Maryam: 42",
+      "kalimat_arab": "إِذْ قَالَ لِأَبِيهِ يَا أَبَتِ لِمَ تَعْبُدُ مَا لَا يَسْمَعُ وَلَا يُبْصِرُ",
+      "terjemahan_indo": "Ingatlah ketika ia berkata kepada bapaknya: 'Wahai bapakku, mengapa kamu menyembah sesuatu yang tidak mendengar dan tidak melihat?'",
+      "kata_kunci": "يَا أَبَتِ",
+      "irab_arab": "يَا: حَرْفُ نِدَاءٍ مَبْنِيٌّ عَلَى السُّكُونِ. أَبَتِ: (أَبَ) مُنَادًى مُضَافٌ مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ، وَ(التَّاءُ) حَرْفُ تَأْنِيثٍ مَبْنِيٌّ عَلَى الكَسْرِ لَا مَحَلَّ لَهُ مِنَ الإِعْرَابِ جِيءَ بِهِ عِوَضًا عَنْ يَاءِ المُتَكَلِّمِ المَحْذُوفَةِ، وَيَاءُ المُتَكَلِّمِ المَحْذُوفَةُ فِي مَحَلِّ جَرٍّ مُضَافٌ إِلَيْهِ.",
+      "penjelasan_irab_indo": "Kata (أَبَتِ) asalnya adalah (يَا أَبِي) yang termasuk Munada Mudhaf kepada Ya' Mutakallim. Khusus pada kata (أَبٌ) dan (أُمٌّ), Ya' Mutakallim boleh dibuang dan diganti dengan Ta' Ta'nits yang dikasrah untuk menunjukkan Ya' yang terbuang. Munada-nya tetap mu'rab manshub dengan fathah di atas huruf Ba'."
+    },
+    {
+      "id_contoh": "IRB-3403",
+      "id_bab": "BAB-34",
+      "id_materi": "MAT-3403",
+      "jenis_dalil": "Kalimat Atsar / Nahwu",
+      "sumber_dalil": "Atsar Umar bin Khattab & Syawahid Nahwu",
+      "kalimat_arab": "يَا لَلَّهِ لِلْمُسْلِمِينَ!",
+      "terjemahan_indo": "Wahai Allah, tolonglah kaum muslimin!",
+      "kata_kunci": "يَا لَلَّهِ لِلْمُسْلِمِينَ",
+      "irab_arab": "يَا: حَرْفُ نِدَاءٍ وَاسْتِغَاثَةٍ مَبْنِيٌّ عَلَى السُّكُونِ. لَلَّهِ: (اللَّامُ) حَرْفُ جَرٍّ وَاسْتِغَاثَةٍ مَبْنِيٌّ عَلَى الفَتْحِ، وَ(اللَّهِ) اسْمُ الجَلَالَةِ مُسْتَغَاثٌ بِهِ مَجْرُورٌ لَفْظًا مَبْنِيٌّ عَلَى الضَّمِّ المُقَدَّرِ فِي مَحَلِّ نَصْبٍ مُنَادًى. لِلْمُسْلِمِينَ: (اللَّامُ) حَرْفُ جَرٍّ مَبْنِيٌّ عَلَى الكَسْرِ، وَ(المُسْلِمِينَ) مُسْتَغَاثٌ لَهُ مَجْرُورٌ بِاللَّامِ وَعَلَامَةُ جَرِّهِ اليَاءُ لِأَنَّهُ جَمْعُ مُذَكَّرٍ سَالِمٌ.",
+      "penjelasan_irab_indo": "Contoh prototipe Uslub Al-Istighatsah: Lam pada المستغاث به (لَلَّهِ) wajib difathah karena ia menduduki posisi munada (mukhathab), sedangkan Lam pada المستغاث له (لِلْمُسْلِمِينَ) tetap dikasrah sesuai hukum asal Lam Jar."
+    },
+    {
+      "id_contoh": "IRB-3501",
+      "id_bab": "BAB-35",
+      "id_materi": "MAT-3501",
+      "jenis_dalil": "Al-Qur'an",
+      "sumber_dalil": "QS. Asy-Syams: 13",
+      "kalimat_arab": "فَقَالَ لَهُمْ رَسُولُ اللَّهِ نَاقَةَ اللَّهِ وَسُقْيَاهَا",
+      "terjemahan_indo": "Lalu Rasul Allah (Shalih) berkata kepada mereka: '(Biarkanlah) unta betina Allah dan minumannya.'",
+      "kata_kunci": "نَاقَةَ اللَّهِ وَسُقْيَاهَا",
+      "irab_arab": "نَاقَةَ: مَفْعُولٌ بِهِ مَنْصُوبٌ عَلَى التَّحْذِيرِ بِفِعْلٍ مَحْذُوفٍ وُجُوبًا تَقْدِيرُهُ (احْذَرُوا أَوْ ذَرُوا نَاقَةَ اللَّهِ)، وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ، وَهُوَ مُضَافٌ. اللَّهِ: اسْمُ الجَلَالَةِ مُضَافٌ إِلَيْهِ مَجْرُورٌ. وَسُقْيَاهَا: الوَاوُ حَرْفُ عَطْفٍ، سُقْيَا: مَعْطُوفٌ عَلَى (نَاقَةَ) مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ المُقَدَّرَةُ عَلَى الأَلِفِ لِلتَّعَذُّرِ، وَ(هَا) مُضَافٌ إِلَيْهِ.",
+      "penjelasan_irab_indo": "Kata (نَاقَةَ اللَّهِ) dinashabkan atas dasar Tahdzir (peringatan keras agar tidak mengganggu unta Allah), dan karena diikuti oleh 'athaf (وَسُقْيَاهَا), maka fi'il yang menashabkannya (احْذَرُوا) wajib dibuang."
+    },
+    {
+      "id_contoh": "IRB-3502",
+      "id_bab": "BAB-35",
+      "id_materi": "MAT-3503",
+      "jenis_dalil": "Hadits Nabawi",
+      "sumber_dalil": "HR. Bukhari & Muslim",
+      "kalimat_arab": "نَحْنُ مَعَاشِرَ الأَنْبِيَاءِ لَا نُورَثُ مَا تَرَكْنَاهُ صَدَقَةٌ",
+      "terjemahan_indo": "Kami — kalangan para nabi — tidak diwarisi; apa yang kami tinggalkan adalah sedekah.",
+      "kata_kunci": "مَعَاشِرَ الأَنْبِيَاءِ",
+      "irab_arab": "نَحْنُ: ضَمِيرٌ مُنْفَصِلٌ مَبْنِيٌّ عَلَى الضَّمِّ فِي مَحَلِّ رَفْعٍ مُبْتَدَأٌ. مَعَاشِرَ: مَفْعُولٌ بِهِ مَنْصُوبٌ عَلَى الاِخْتِصَاصِ بِفِعْلٍ مَحْذُوفٍ وُجُوبًا تَقْدِيرُهُ (أَخُصُّ أَوْ أَعْنِي)، وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ، وَهُوَ مُضَافٌ. الأَنْبِيَاءِ: مُضَافٌ إِلَيْهِ مَجْرُورٌ. وَجُمْلَةُ الاِخْتِصَاصِ اعْتِرَاضِيَّةٌ لَا مَحَلَّ لَهَا مِنَ الإِعْرَابِ. وَجُمْلَةُ (لَا نُورَثُ) فِي مَحَلِّ رَفْعٍ خَبَرُ المُبْتَدَإِ (نَحْنُ).",
+      "penjelasan_irab_indo": "Hadits ini adalah syahid utama bagi Uslub Al-Ikhtishash. Kata (مَعَاشِرَ الأَنْبِيَاءِ) datang setelah dhamir mutakallim (نَحْنُ) dalam bentuk mudhaf kepada ma'rifah untuk mengkhususkan siapa yang dimaksud oleh dhamir نَحْنُ, dan wajib dibaca manshub oleh fi'il mahdzuf wujuban (أَخُصُّ)."
+    }
+  ],
+  "soal": [
+    {
+      "id_soal": "Q-3301",
+      "id_bab": "BAB-33",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Perhatikan dua kalimat berikut:\n(1) خَالِدٌ أَفْضَلُ طَالِبٍ فِي المَعْهَدِ\n(2) خَالِدٌ أَكْثَرُ اجْتِهَادًا مِنْ زَمِيلِهِ\nMengapa kata (طَالِبٍ) setelah أفعل التفضيل pada kalimat (1) wajib dibaca majrur dengan idhafah, sedangkan kata (اجْتِهَادًا) pada kalimat (2) wajib dibaca manshub sebagai Tamyiz?",
+      "opsi_a": "Karena (طَالِبٍ) sejenis dengan mufaddhal (خَالِدٌ) sehingga sah dikatakan خَالِدٌ طَالِبٌ, sedangkan (اجْتِهَادًا) berbeda jenis dengan خَالِدٌ dan merupakan fa'il secara makna (اجْتِهَادُ خَالِدٍ أَكْثَرُ).",
+      "opsi_b": "Karena (أَفْضَلُ) adalah isim jamid, sedangkan (أَكْثَرُ) adalah isim musytaq.",
+      "opsi_c": "Karena pada kalimat (1) terdapat jar-majrur setelahnya, sedangkan pada kalimat (2) terdapat مِنْ.",
+      "opsi_d": "Karena (طَالِبٍ) adalah Tamyiz Malfuzh, sedangkan (اجْتِهَادًا) adalah Hal.",
+      "jawaban_benar": "A",
+      "pembahasan": "Kaidah isim nakirah setelah أفعل التفضيل: Apabila nakirah tersebut merupakan jenis dari mufaddhal (خالد adalah bagian dari جنس الطلاب), maka wajib di-jarkan sebagai mudhaf ilaih (أَفْضَلُ طَالِبٍ). Namun apabila nakirah tersebut bukan jenis dari mufaddhal melainkan fa'il secara makna (asalnya: اجْتِهَادُ خَالِدٍ أَكْثَرُ), maka wajib dinashabkan sebagai Tamyiz Nisbah."
+    },
+    {
+      "id_soal": "Q-3302",
+      "id_bab": "BAB-33",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Manakah di antara pernyataan berikut yang BUKAN merupakan perbedaan sahih antara Hal dan Tamyiz?",
+      "opsi_a": "Hal menyimpan makna huruf (فِي), sedangkan Tamyiz menyimpan makna huruf (مِنْ).",
+      "opsi_b": "Hal bisa datang dalam bentuk Mufradah, Jumlah, dan Syibhul Jumlah, sedangkan Tamyiz hanya datang dalam bentuk Mufrad.",
+      "opsi_c": "Hal asalnya adalah isim jamid yang tidak boleh berbilang, sedangkan Tamyiz asalnya adalah isim musytaq yang boleh berbilang tanpa 'athaf.",
+      "opsi_d": "Hal boleh mendahului 'amilnya jika berupa fi'il mutasharrif, sedangkan Tamyiz tidak boleh mendahului 'amilnya menurut jumhur.",
+      "jawaban_benar": "C",
+      "pembahasan": "Opsi C membalik kaidah yang sebenarnya. Yang benar: Hal asalnya adalah isim MUSYTAQ dan BOLEH berbilang tanpa 'athaf (غَضْبَانَ أَسِفًا), sedangkan Tamyiz asalnya adalah isim JAMID dan TIDAK BOLEH berbilang kecuali dengan huruf 'athaf."
+    },
+    {
+      "id_soal": "Q-3303",
+      "id_bab": "BAB-33",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Tentukan seluruh wajah bacaan yang benar menurut jumhur bagi kata (زَيْد) pada empat kalimat berikut:\n(1) مَا حَضَرَ الضُّيُوفُ إِلَّا (زَيْد)\n(2) مَا حَضَرَ إِلَّا (زَيْد) الضُّيُوفُ\n(3) حَضَرَ الضُّيُوفُ مَا عَدَا (زَيْد)\n(4) مَا حَضَرَ غَيْرُ (زَيْد)",
+      "opsi_a": "(1) Boleh زَيْدٌ [rajih badal] & زَيْدًا [nashab] | (2) Wajib زَيْدًا | (3) Wajib زَيْدًا | (4) Wajib زَيْدٍ [mudhaf ilaih].",
+      "opsi_b": "(1) Wajib زَيْدٌ | (2) Boleh زَيْدٌ & زَيْدًا | (3) Boleh زَيْدًا & زَيْدٍ | (4) Wajib زَيْدٌ.",
+      "opsi_c": "(1) Wajib زَيْدًا | (2) Wajib زَيْدٌ | (3) Wajib زَيْدٍ | (4) Wajib زَيْدًا.",
+      "opsi_d": "(1) Boleh زَيْدٌ & زَيْدًا | (2) Wajib زَيْدٌ | (3) Boleh زَيْدًا & زَيْدٍ | (4) Wajib زَيْدٍ.",
+      "jawaban_benar": "A",
+      "pembahasan": "(1) Tam Manfi Muttashil: rajih badal marfu' (زَيْدٌ) dan boleh nashab (زَيْدًا). (2) Mustatsna mendahului mustatsna minhu (الضُّيُوفُ): wajib nashab (زَيْدًا) karena badal tidak boleh mendahului mubdal minhu. (3) Didahului مَا المَصْدَرِيَّةُ (مَا عَدَا): wajib nashab sebagai maf'ul bih (زَيْدًا). (4) Jatuh setelah غَيْرُ: selalu majrur sebagai mudhaf ilaih (زَيْدٍ), sedangkan yang marfu' adalah kata غَيْرُ."
+    },
+    {
+      "id_soal": "Q-3401",
+      "id_bab": "BAB-34",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Bandingkan dua kalimat Nida' berikut:\n(1) قَالَ الأَعْمَى: يَا رَجُلًا خُذْ بِيَدِي!\n(2) قَالَ المُعَلِّمُ لِطَالِبٍ أَمَامَهُ: يَا رَجُلُ انْتَبِهْ!\nApa jenis Munada dan hukum i'rabnya pada kedua kalimat tersebut?",
+      "opsi_a": "Kalimat (1) adalah Nakirah Ghairu Maqshudah sehingga Mu'rab Manshub dengan fathah; Kalimat (2) adalah Nakirah Maqshudah sehingga Mabni atas Dhammah dalam mahall nashab.",
+      "opsi_b": "Kalimat (1) adalah Syabih bil-Mudhaf; Kalimat (2) adalah 'Alam Mufrad.",
+      "opsi_c": "Keduanya adalah Nakirah Maqshudah yang boleh dibaca rafa' dan nashab.",
+      "opsi_d": "Kalimat (1) adalah Nakirah Maqshudah; Kalimat (2) adalah Nakirah Ghairu Maqshudah.",
+      "jawaban_benar": "A",
+      "pembahasan": "Orang buta pada kalimat (1) tidak menunjuk pada laki-laki tertentu, melainkan siapa saja yang mendengar seruannya (نكرة غير مقصودة), sehingga tetap pada hukum asal nakirah yaitu mu'rab manshub dengan tanwin (يَا رَجُلًا). Sedangkan guru pada kalimat (2) berbicara kepada satu orang tertentu di hadapannya (نكرة مقصودة), sehingga kata tersebut menjadi ma'rifah karena nida' dan mabni atas dhammah tanpa tanwin (يَا رَجُلُ)."
+    },
+    {
+      "id_soal": "Q-3402",
+      "id_bab": "BAB-34",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Jika kita memanggil (خَالِد) lalu memberinya Na'at berupa mudhaf tanpa Al (صَاحِب العِلْمِ), dan pada kalimat kedua kita meng-'athafkannya kepada (أَبُو بَكْرٍ) dan (عُمَر), manakah susunan yang paling tepat?",
+      "opsi_a": "(1) يَا خَالِدُ صَاحِبَ العِلْمِ | (2) يَا خَالِدُ وَأَبَا بَكْرٍ وَعُمَرُ",
+      "opsi_b": "(1) يَا خَالِدُ صَاحِبُ العِلْمِ | (2) يَا خَالِدُ وَأَبُو بَكْرٍ وَعُمَرَ",
+      "opsi_c": "(1) يَا خَالِدَ صَاحِبُ العِلْمِ | (2) يَا خَالِدُ وَأَبِي بَكْرٍ وَعُمَرُ",
+      "opsi_d": "(1) يَا خَالِدُ صَاحِبِ العِلْمِ | (2) يَا خَالِدُ وَأَبَا بَكْرٍ وَعُمَرَ",
+      "jawaban_benar": "A",
+      "pembahasan": "Kaidah Tabi' Munada Mabni: (1) Na'at yang berupa mudhaf tanpa Al WAJIB NASHAB mengikuti mahall munada, sehingga menjadi: يَا خَالِدُ صَاحِبَ العِلْمِ. (2) 'Athaf Nasaq yang tidak ber-Al diperlakukan seperti Munada Mustaqill (independen), sehingga yang mudhaf wajib manshub (وَأَبَا بَكْرٍ) dan yang 'alam mufrad wajib mabni atas dhammah (وَعُمَرُ)."
+    },
+    {
+      "id_soal": "Q-3403",
+      "id_bab": "BAB-34",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Apabila nama (مَنْصُورٌ) dan (جَعْفَرٌ) ditarkhim dalam Nida' dengan menggunakan لُغَةُ مَنْ يَنْتَظِرُ (mengingat huruf yang dibuang), bagaimanakah cara pengucapan yang benar?",
+      "opsi_a": "يَا مَنْصُ (dengan dhammah Shad, karena Wawu mad keempat ikut dibuang bersama Ra') dan يَا جَعْفَ (dengan fathah Fa').",
+      "opsi_b": "يَا مَنْصُوْ dan يَا جَعْفُ.",
+      "opsi_c": "يَا مَنْصَرَ dan يَا جَعْفِرُ.",
+      "opsi_d": "يَا مَنَصُّ dan يَا جَعَفُ.",
+      "jawaban_benar": "A",
+      "pembahasan": "Pada (مَنْصُورٌ), sebelum huruf akhir (Ra') terdapat huruf mad zaidah keempat (Wawu), sehingga dalam Tarkhim keduanya dibuang sekaligus dan tersisa (مَنْصُ) dengan dhammah di atas Shad. Sedangkan pada (جَعْفَرٌ), dibuang huruf akhirnya saja (Ra'), dan menurut لغة من ينتظر harakat huruf Fa' tetap dibiarkan fathah sebagaimana asalnya: (يَا جَعْفَ)."
+    },
+    {
+      "id_soal": "Q-3501",
+      "id_bab": "BAB-35",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Manakah di antara kalimat Tahdzir dan Ighra' berikut yang BOLEH ditampakkan fi'ilnya (يَجُوزُ إِظْهَارُ العَامِلِ)?",
+      "opsi_a": "إِيَّاكَ مِنَ الغِيبَةِ!",
+      "opsi_b": "الغِيبَةَ وَالنَّمِيمَةَ!",
+      "opsi_c": "الأَمَانَةَ الأَمَانَةَ!",
+      "opsi_d": "الإِخْلَاصَ فِي العَمَلِ!",
+      "jawaban_benar": "D",
+      "pembahasan": "Pada opsi A (menggunakan إِيَّاكَ), opsi B (bentuk 'Athaf), dan opsi C (bentuk Takrar), fi'ilnya WAJIB DIBUANG dan tidak boleh ditampakkan. Sedangkan pada opsi D (الإِخْلَاصَ فِي العَمَلِ!), bentuknya adalah Ifrad (tanpa takrar, tanpa 'athaf, dan tanpa إياك), sehingga boleh membuang fi'ilnya dan boleh menampakkannya: الْزَمِ الإِخْلَاصَ فِي العَمَلِ."
+    },
+    {
+      "id_soal": "Q-3502",
+      "id_bab": "BAB-35",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Perhatikan tiga kalimat berikut:\n(1) نَحْنُ عُلَمَاءُ الأُمَّةِ\n(2) نَحْنُ — عُلَمَاءَ الأُمَّةِ — نَحْمِلُ الأَمَانَةَ\n(3) بِنَا — أَيُّهَا الشَّبَابُ — تَنْهَضُ الأَوْطَانُ\nManakah analisis i'rab yang paling presisi untuk ketiga kalimat tersebut?",
+      "opsi_a": "(1) عُلَمَاءُ adalah Khabar Marfu' | (2) عُلَمَاءَ adalah Maf'ul Bih Manshub atas Ikhtishash | (3) أَيُّ adalah Isim Mabni atas Dhammah في محل نصب atas Ikhtishash, dan الشَّبَابُ Na'at Marfu'.",
+      "opsi_b": "(1) عُلَمَاءُ adalah Munada | (2) عُلَمَاءَ adalah Hal | (3) أَيُّ adalah Munada dan الشَّبَابُ Maf'ul Bih.",
+      "opsi_c": "(1) عُلَمَاءُ adalah Badal | (2) عُلَمَاءَ adalah Tamyiz | (3) أَيُّ adalah Mubtada' Muakhkhar.",
+      "opsi_d": "Ketiganya adalah Uslub Ikhtishash yang wajib dibaca manshub secara lafazh.",
+      "jawaban_benar": "A",
+      "pembahasan": "Pada kalimat (1), (عُلَمَاءُ الأُمَّةِ) adalah penyempurna kalam bagi mubtada' (نَحْنُ) sehingga ia adalah Khabar Marfu'. Pada kalimat (2), khabarnya adalah jumlah (نَحْمِلُ الأَمَانَةَ), sedangkan (عُلَمَاءَ الأُمَّةِ) adalah Isim Mukhtash yang manshub oleh (أَخُصُّ) mahdzuf wujuban. Pada kalimat (3), (أَيُّهَا الشَّبَابُ) jatuh setelah dhamir mutakallim (بِنَا) tanpa huruf nida', sehingga (أَيُّ) adalah isim mukhtash mabni atas dhammah في محل نصب مفعول به, dan (الشَّبَابُ) wajib marfu' sebagai na'at bagi أي."
+    }
+  ],
+  "istilah": [
+    {
+      "id_istilah": "IST-507",
+      "istilah_arab": "التَّمْيِيزُ المَلْفُوظُ وَالتَّمْيِيزُ المَلْحُوظُ",
+      "bidang": "Nahwu - Al-Manshubat",
+      "definisi_arab": "المَلْفُوظُ (تَمْيِيزُ الذَّاتِ) مَا يُفَسِّرُ اسْمًا مُبْهَمًا مَذْكُورًا قَبْلَهُ كَالمَقَادِيرِ وَالعَدَدِ، وَالمَلْحُوظُ (تَمْيِيزُ النِّسْبَةِ) مَا يُفَسِّرُ إِبْهَامَ نِسْبَةٍ فِي جُمْلَةٍ سَابِقَةٍ.",
+      "definisi_indo": "Tamyiz Malfuzh (Tamyiz Dzat) adalah tamyiz yang menjelaskan kesamaran kata benda terucap sebelumnya (ukuran, takaran, timbangan, bilangan). Sedangkan Tamyiz Malhuzh (Tamyiz Nisbah) adalah tamyiz yang menjelaskan kesamaran hubungan predikat dalam kalimat sebelumnya.",
+      "contoh": "Malfuzh: أَحَدَ عَشَرَ كَوْكَبًا | Malhuzh: وَاشْتَعَلَ الرَّأْسُ شَيْبًا"
+    },
+    {
+      "id_istilah": "IST-508",
+      "istilah_arab": "الاِسْتِثْنَاءُ المُفَرَّغُ وَالاِسْتِثْنَاءُ المُنْقَطِعُ",
+      "bidang": "Nahwu - Al-Manshubat",
+      "definisi_arab": "المُفَرَّغُ مَا حُذِفَ فِيهِ المُسْتَثْنَى مِنْهُ وَسُبِقَ بِنَفْيٍ فَتَفَرَّغَ العَامِلُ لِمَا بَعْدَ إِلَّا، وَالمُنْقَطِعُ مَا لَمْ يَكُنْ فِيهِ المُسْتَثْنَى مِنْ جِنْسِ المُسْتَثْنَى مِنْهُ.",
+      "definisi_indo": "Istitsna' Mufarragh adalah kalimat pengecualian negatif yang tidak menyebutkan mustatsna minhu sehingga 'amil sebelum إلا langsung beramal pada kata setelah إلا. Sedangkan Istitsna' Munqathi' adalah pengecualian di mana mustatsna tidak sejenis dengan mustatsna minhu.",
+      "contoh": "Mufarragh: وَمَا مُحَمَّدٌ إِلَّا رَسُولٌ | Munqathi': مَا لَهُمْ بِهِ مِنْ عِلْمٍ إِلَّا اتِّبَاعَ الظَّنِّ"
+    },
+    {
+      "id_istilah": "IST-509",
+      "istilah_arab": "الاِسْتِغَاثَةُ وَالنُّدْبَةُ",
+      "bidang": "Nahwu - Al-Manshubat",
+      "definisi_arab": "الاِسْتِغَاثَةُ نِدَاءُ مَنْ يُخَلِّصُ مِنْ شِدَّةٍ بِيَا وَاللَّامِ المَفْتُوحَةِ، وَالنُّدْبَةُ نِدَاءُ المُتَفَجَّعِ عَلَيْهِ أَوِ المُتَوَجَّعِ مِنْهُ بِوَا وَأَلِفِ النُّدْبَةِ.",
+      "definisi_indo": "Istighatsah adalah memanggil pihak yang dapat menolong dari kesulitan menggunakan يا dan Lam Maftuhah pada mustaghats bihi serta Lam Maksurah pada mustaghats lahu. Nudbah adalah memanggil sesuatu yang diratapi atau anggota tubuh yang sakit menggunakan وا dan Alif Nudbah.",
+      "contoh": "Istighatsah: يَا لَلَّهِ لِلْمُسْلِمِينَ! | Nudbah: وَامُعْتَصِمَاهْ! / وَارَأْسَاهْ!"
+    },
+    {
+      "id_istilah": "IST-510",
+      "istilah_arab": "تَرْخِيمُ المُنَادَى (لُغَةُ مَنْ يَنْتَظِرُ وَمَنْ لَا يَنْتَظِرُ)",
+      "bidang": "Nahwu - Al-Manshubat",
+      "definisi_arab": "حَذْفُ آخِرِ المُنَادَى تَخْفِيفًا، فَإِنْ بَقِيَ مَا قَبْلَ المَحْذُوفِ عَلَى حَرَكَتِهِ الأَصْلِيَّةِ فَهِيَ لُغَةُ مَنْ يَنْتَظِرُ، وَإِنْ ضُمَّ فَهِيَ لُغَةُ مَنْ لَا يَنْتَظِرُ.",
+      "definisi_indo": "Pembuangan huruf akhir munada untuk meringankan pengucapan; bila huruf terakhir yang tersisa dibiarkan dengan harakat aslinya disebut lughah man yantazhir, dan bila diberi dhammah baru disebut lughah man la yantazhir.",
+      "contoh": "يَا فَاطِمَ / يَا فَاطِمُ (من فاطمة) | يَا جَعْفَ / يَا جَعْفُ (من جعفر)"
+    },
+    {
+      "id_istilah": "IST-511",
+      "istilah_arab": "التَّحْذِيرُ وَالإِغْرَاءُ",
+      "bidang": "Nahwu - Al-Manshubat",
+      "definisi_arab": "التَّحْذِيرُ تَنْبِيهُ المُخَاطَبِ عَلَى أَمْرٍ مَكْرُوهٍ لِيَجْتَنِبَهُ بِتَقْدِيرِ (احْذَرْ)، وَالإِغْرَاءُ حَثُّهُ عَلَى أَمْرٍ مَحْمُودٍ لِيَفْعَلَهُ بِتَقْدِيرِ (الْزَمْ).",
+      "definisi_indo": "Tahdzir adalah memperingatkan lawan bicara dari hal buruk agar dijauhi (dinashabkan dengan takdir احذر), sedangkan Ighra' adalah menganjurkan lawan bicara pada hal terpuji agar dilakukan (dinashabkan dengan takdir الزم).",
+      "contoh": "Tahdzir: إِيَّاكَ وَالكَذِبَ! / النَّارَ النَّارَ! | Ighra': الصَّلَاةَ الصَّلَاةَ! / الصِّدْقَ وَالأَمَانَةَ!"
+    },
+    {
+      "id_istilah": "IST-512",
+      "istilah_arab": "الاِخْتِصَاصُ (الاِسْمُ المُخْتَصُّ)",
+      "bidang": "Nahwu - Al-Manshubat",
+      "definisi_arab": "اسْمٌ ظَاهِرٌ مَعْرِفَةٌ يَقَعُ بَعْدَ ضَمِيرِ المُتَكَلِّمِ غَالِبًا لِبَيَانِ المَقْصُودِ مِنْهُ وَقَصْرِ الحُكْمِ عَلَيْهِ، وَيُنْصَبُ بِفِعْلٍ مَحْذُوفٍ وُجُوبًا تَقْدِيرُهُ (أَخُصُّ).",
+      "definisi_indo": "Isim zhahir ma'rifah (ber-Al, mudhaf ke ma'rifah, atau أيها/أيتها) yang jatuh setelah dhamir mutakallim untuk menjelaskan dan mengkhususkan siapa yang dimaksud oleh dhamir tersebut, dinashabkan oleh fi'il (أَخُصُّ) yang wajib dibuang.",
+      "contoh": "نَحْنُ — مَعَاشِرَ الأَنْبِيَاءِ — لَا نُورَثُ / نَحْنُ — العَرَبَ — أَسْخَى النَّاسِ"
+    }
+  ]
+}

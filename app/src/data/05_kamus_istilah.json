@@ -1,0 +1,506 @@
+[
+    {
+        "id_istilah":  "IST-101",
+        "istilah_arab":  "التَّرْكِيبُ الإِسْنَادِيُّ",
+        "bidang":  "Nahwu",
+        "definisi_arab":  "هُوَ ضَمُّ كَلِمَةٍ (وَهِيَ المُسْنَدُ) إِلَى أُخْرَى (وَهِيَ المُسْنَدُ إِلَيْهِ) عَلَى وَجْهٍ يُفِيدُ الحُكْمَ بِإِحْدَاهُمَا عَلَى الأُخْرَى إِثْبَاتًا أَوْ نَفْيًا.",
+        "definisi_indo":  "Penyandaran suatu kata (Musnad/predikat) kepada kata lainnya (Musnad Ilaih/subjek) dengan cara yang menghasilkan ketetapan hukum (positif atau negatif), seperti penyandaran Khabar kepada Mubtada\u0027 atau Fi\u0027il kepada Fa\u0027il.",
+        "contoh":  "العِلْمُ نُورٌ — نَصَرَ اللهُ المُؤْمِنِينَ"
+    },
+    {
+        "id_istilah":  "IST-102",
+        "istilah_arab":  "تَنْوِينُ التَّمْكِينِ (تَنْوِينُ الأَمْكَنِيَّةِ)",
+        "bidang":  "Nahwu \u0026 Sharaf",
+        "definisi_arab":  "هُوَ التَّنْوِينُ اللَّاحِقُ لِلْأَسْمَاءِ المُعْرَبَةِ المُنْصَرِفَةِ لِلدَّلَالَةِ عَلَى تَمَكُّنِهَا فِي بَابِ الاسْمِيَّةِ لِعَدَمِ شَبَهِهَا بِالحَرْفِ فَتُبْنَى وَلَا بِالفِعْلِ فَتُمْنَعُ مِنَ الصَّرْفِ.",
+        "definisi_indo":  "Tanwin yang melekat pada isim-isim mu\u0027rab munsharif untuk menunjukkan kemantapan posisinya dalam kategori isim, karena ia tidak menyerupai harf (sehingga tidak mabni) dan tidak menyerupai fi\u0027il (sehingga tidak mamnu\u0027 minash sharf).",
+        "contoh":  "مُحَمَّدٌ — كِتَابٌ — رَجُلٌ"
+    },
+    {
+        "id_istilah":  "IST-103",
+        "istilah_arab":  "القَلْبُ المَكَانِيُّ",
+        "bidang":  "Sharaf",
+        "definisi_arab":  "هُوَ تَقْدِيمُ بَعْضِ حُرُوفِ الكَلِمَةِ الأَصْلِيَّةِ عَلَى بَعْضٍ مَعَ حِفْظِ المَعْنَى الأَصْلِيِّ، فَيُقْلَبُ تَرْتِيبُ المِيزَانِ الصَّرْفِيِّ تَبَعًا لِتَرْتِيبِ المَوْزُونِ.",
+        "definisi_indo":  "Perpindahan atau pertukaran posisi sebagian huruf asli suatu kata mendahului huruf asli lainnya dengan tetap menjaga makna dasarnya, yang mengakibatkan urutan (ف-ع-ل) pada mizan sharfi ikut dipertukarkan.",
+        "contoh":  "جَاهٌ (عَفَلٌ مِنْ وَجَهَ) — حَادِي (عَالِفٌ مِنْ وَحَدَ) — قِسِيٌّ (فِلِعٌ جَمْعُ قَوْسٍ)"
+    },
+    {
+        "id_istilah":  "IST-104",
+        "istilah_arab":  "الإِلْحَاقُ الصَّرْفِيُّ",
+        "bidang":  "Sharaf",
+        "definisi_arab":  "هُوَ زِيَادَةُ حَرْفٍ أَوْ أَكْثَرَ عَلَى الكَلِمَةِ لَا لِإِفَادَةِ مَعْنًى جَدِيدٍ مِنْ مَعَانِي الزِّيَادَةِ، بَلْ لِجَعْلِ الكَلِمَةِ عَلَى زِنَةِ كَلِمَةٍ أُخْرَى أَكْثَرَ مِنْهَا أُصُولًا لِتُعَامَلَ مُعَامَلَتَهَا فِي التَّصْرِيفِ.",
+        "definisi_indo":  "Penambahan satu huruf atau lebih pada suatu kata bukan untuk menghasilkan makna ziyadah baru, melainkan agar pola kata tersebut menyamai wazan kata lain yang jumlah huruf aslinya lebih banyak (seperti menyamakan tsulatsi dengan ruba\u0027i mujarrad) sehingga memiliki pola tashrif dan mashdar yang sama.",
+        "contoh":  "جَلْبَبَ وَحَوْقَلَ وَسَيْطَرَ (مُلْحَقَاتٌ بِـ دَحْرَجَ)"
+    },
+    {
+        "id_istilah":  "IST-105",
+        "istilah_arab":  "المُطَاوَعَةُ",
+        "bidang":  "Sharaf \u0026 Nahwu",
+        "definisi_arab":  "هِيَ قَبُولُ المَفْعُولِ بِهِ أَثَرَ الفِعْلِ المُتَعَدِّي وَاسْتِجَابَتُهُ لَهُ، فَيَصِيرُ المَفْعُولُ بِهِ فَاعِلًا لِفِعْلِ المُطَاوَعَةِ اللَّازِمِ.",
+        "definisi_indo":  "Penerimaan objek (maf\u0027ul bih) terhadap dampak perbuatan dari fi\u0027il muta\u0027addi, sehingga maf\u0027ul bih pada kalimat pertama beralih menjadi fa\u0027il pada fi\u0027il muthawa\u0027ah yang bersifat lazim.",
+        "contoh":  "كَسَرْتُ الزُّجَاجَ فَانْكَسَرَ — عَلَّمْتُهُ فَتَعَلَّمَ — دَحْرَجْتُ الحَجَرَ فَتَدَحْرَجَ"
+    },
+    {
+        "id_istilah":  "IST-106",
+        "istilah_arab":  "المَنْصُوبُ عَلَى نَزْعِ الخَافِضِ",
+        "bidang":  "Nahwu",
+        "definisi_arab":  "هُوَ اسْمٌ مَنْصُوبٌ بَعْدَ فِعْلٍ لَازِمٍ (أَوْ مُتَعَدٍّ لِوَاحِدٍ) إِذَا حُذِفَ حَرْفُ الجَرِّ الَّذِي كَانَ يَتَعَدَّى بِهِ الفِعْلُ إِلَيْهِ تَوَسُّعًا فِي الكَلَامِ.",
+        "definisi_indo":  "Isim yang dinashabkan secara langsung oleh fi\u0027il lazim (atau fi\u0027il muta\u0027addi ke satu maf\u0027ul) setelah huruf jar yang semestinya menjadi perantara dibuang untuk perluasan gaya bahasa (tawassu\u0027).",
+        "contoh":  "وَاخْتَارَ مُوسَى قَوْمَهُ سَبْعِينَ رَجُلًا (أَيْ: مِنْ قَوْمِهِ) — تَمُرُّونَ الدِّيَارَ (أَيْ: بِالدِّيَارِ)"
+    },
+    {
+        "id_istilah":  "IST-107",
+        "istilah_arab":  "إِسْنَادُ الفِعْلِ (Isnadul Fi\u0027li)",
+        "bidang":  "Sharaf",
+        "definisi_arab":  "ضَمُّ الفِعْلِ إِلَى الضَّمَائِرِ المَرْفُوعَةِ البَارِزَةِ وَمَا يَتَرَتَّبُ عَلَيْهِ مِنْ أَحْكَامِ الصِّحَّةِ وَالإِعْلَالِ وَالإِدْغَامِ.",
+        "definisi_indo":  "Proses konjugasi penyandaran kata kerja kepada dhamir-dhamir rafa\u0027 bariz (mutaharrik maupun sakin) beserta kaidah perubahan morfologis yang menyertainya.",
+        "contoh":  "نَصَرْتُ، نَصَرَا، نَصَرُوا، نَصَرْنَ"
+    },
+    {
+        "id_istilah":  "IST-108",
+        "istilah_arab":  "فَكُّ الإِدْغَامِ (Fakkul Idgham)",
+        "bidang":  "Sharaf",
+        "definisi_arab":  "الفَصْلُ بَيْنَ الحَرْفَيْنِ المُتَمَاثِلَيْنِ فِي الكَلِمَةِ المُضَعَّفَةِ وَنُطْقُ كُلٍّ مِنْهُمَا مُنْفَصِلًا بِحَرَكَتِهِ أَوْ سُكُونِهِ.",
+        "definisi_indo":  "Penguraian dua huruf sejenis pada kata yang bertasydid sehingga masing-masing dilafalkan terpisah.",
+        "contoh":  "مَدَّ -\u003e مَدَدْتُ، رَدَّ -\u003e ارْدُدْ"
+    },
+    {
+        "id_istilah":  "IST-109",
+        "istilah_arab":  "نُونُ التَّوْكِيدِ المُبَاشِرَةُ وَغَيْرُ المُبَاشِرَةِ",
+        "bidang":  "Nahwu \u0026 Sharaf",
+        "definisi_arab":  "المُبَاشِرَةُ مَا اتَّصَلَتْ بِآخِرِ المُضَارِعِ دُونَ فَاصِلٍ فَيُبْنَى عَلَى الفَتْحِ، وَغَيْرُ المُبَاشِرَةِ مَا فُصِلَ بَيْنَهَا وَبَيْنَ الفِعْلِ بِأَلِفِ اثْنَيْنِ أَوْ وَاوِ جَمَاعَةٍ أَوْ يَاءِ مُخَاطَبَةٍ فَيَظَلُّ مُعْرَبًا.",
+        "definisi_indo":  "Nun taukid mubasyirah adalah yang melekat langsung di akhir fi\u0027il sehingga memabnikannya di atas fathah; ghairu mubasyirah terpisah oleh alif, wawu, atau ya\u0027 dhamir sehingga fi\u0027il tetap mu\u0027rab.",
+        "contoh":  "لَيَكْتُبَنَّ (Mabni) vs لَتَكْتُبَانِّ، لَتَكْتُبُنَّ، لَتَكْتُبِنَّ (Mu\u0027rab)"
+    },
+    {
+        "id_istilah":  "IST-201",
+        "istilah_arab":  "اسْمُ المَصْدَرِ",
+        "bidang":  "Sharaf \u0026 Nahwu",
+        "definisi_arab":  "مَا سَاوَى المَصْدَرَ فِي الدَّلَالَةِ عَلَى الحَدَثِ، وَنَقَصَتْ حُرُوفُهُ عَنْ حُرُوفِ فِعْلِهِ لَفْظًا وَتَقْدِيرًا مِنْ غَيْرِ عِوَضٍ.",
+        "definisi_indo":  "Kata benda yang sama dengan mashdar dalam menunjukkan makna peristiwa (hadats), namun jumlah hurufnya kurang dari huruf fi\u0027ilnya baik secara lafazh maupun taqdir tanpa adanya huruf pengganti (\u0027iwadh).",
+        "contoh":  "عَطَاءٌ (مِنْ أَعْطَى، وَمَصْدَرُهُ إِعْطَاءٌ)، كَلَامٌ (مِنْ تَكَلَّمَ، وَمَصْدَرُهُ تَكَلُّمٌ)، وُضُوءٌ (مِنْ تَوَضَّأَ)."
+    },
+    {
+        "id_istilah":  "IST-202",
+        "istilah_arab":  "المَصْدَرُ الصِّنَاعِيُّ",
+        "bidang":  "Sharaf",
+        "definisi_arab":  "اسْمٌ تَلْحَقُ آخِرَهُ يَاءٌ مُشَدَّدَةٌ تَلِيهَا تَاءُ التَّأْنِيثِ المَرْبُوطَةُ لِلدَّلَالَةِ عَلَى الحَقِيقَةِ وَالخَصَائِصِ المَعْنَوِيَّةِ، بِشَرْطِ أَلَّا يَقَعَ نَعْتًا.",
+        "definisi_indo":  "Isim yang diakhiri dengan ya\u0027 bertasydid dan ta\u0027 marbuthah (ـِيَّةٌ) untuk menunjukkan hakikat abstrak, karakteristik, atau paham/isme, dengan syarat kata tersebut tidak berkedudukan sebagai na\u0027at (sifat).",
+        "contoh":  "الإِنْسَانِيَّةُ، الحُرِّيَّةُ، الوَطَنِيَّةُ، المَسْؤُولِيَّةُ."
+    },
+    {
+        "id_istilah":  "IST-203",
+        "istilah_arab":  "الإِضَافَةُ اللَّفْظِيَّةُ",
+        "bidang":  "Nahwu",
+        "definisi_arab":  "إِضَافَةُ الوَصْفِ العَامِلِ (اسْمِ الفَاعِلِ أَوْ صِيغَةِ المُبَالَغَةِ أَوِ اسْمِ المَفْعُولِ أَوِ الصِّفَةِ المُشَبَّهَةِ) إِلَى مَعْمُولِهِ، وَلَا تُفِيدُ تَعْرِيفًا وَلَا تَخْصِيصًا وَإِنَّمَا تُفِيدُ التَّخْفِيفَ اللَّفْظِيَّ بِحَذْفِ التَّنْوِينِ أَوِ النُّونِ.",
+        "definisi_indo":  "Idhafah isim musytaq yang beramal (isim fa\u0027il, shighah mubalaghah, isim maf\u0027ul, atau shifat musyabbahah) kepada ma\u0027mulnya; idhafah ini tidak memberikan faedah ma\u0027rifah maupun takhshish, melainkan hanya meringankan lafazh.",
+        "contoh":  "هَذَا رَجُلٌ طَالِبُ عِلْمٍ، وَمُحَمَّدٌ حَسَنُ الخُلُقِ، وَهَدْيًا بَالِغَ الكَعْبَةِ."
+    },
+    {
+        "id_istilah":  "IST-204",
+        "istilah_arab":  "مَسْأَلَةُ الكُحْلِ",
+        "bidang":  "Nahwu",
+        "definisi_arab":  "الصُّورَةُ القِيَاسِيَّةُ الَّتِي يَرْفَعُ فِيهَا اسْمُ التَّفْضِيلِ فَاعِلًا ظَاهِرًا بِاتِّفَاقِ النُّحَاةِ، وَذَلِكَ إِذَا وَقَعَ بَعْدَ نَفْيٍ أَوْ شِبْهِهِ وَكَانَ مَرْفُوعُهُ أَجْنَبِيًّا مُفَضَّلًا عَلَى نَفْسِهِ بِاعْتِبَارَيْنِ.",
+        "definisi_indo":  "Konstruksi kalimat standar dimana Isim Tafdhil disepakati dapat merafa\u0027kan fa\u0027il berupa isim zhahir, yaitu ketika Isim Tafdhil jatuh setelah nafi (atau syibhun nafi) dan fa\u0027il zhahirnya diutamakan atas dirinya sendiri dalam dua keadaan yang berbeda.",
+        "contoh":  "مَا رَأَيْتُ رَجُلًا أَحْسَنَ فِي عَيْنِهِ الكُحْلُ مِنْهُ فِي عَيْنِ زَيْدٍ."
+    },
+    {
+        "id_istilah":  "IST-205",
+        "istilah_arab":  "الاسْمُ المَقْصُورُ",
+        "bidang":  "Sharaf \u0026 Nahwu",
+        "definisi_arab":  "كُلُّ اسْمٍ مُعْرَبٍ آخِرُهُ أَلِفٌ لَازِمَةٌ مَفْتُوحٌ مَا قَبْلَهَا، وَتُقَدَّرُ عَلَى آخِرِهِ جَمِيعُ حَرَكَاتِ الإِعْرَابِ لِلتَّعَذُّرِ.",
+        "definisi_indo":  "Setiap isim mu\u0027rab yang berakhiran alif lazimah (tetap) yang didahului oleh harakat fathah; seluruh harakat i\u0027rabnya (rafa\u0027, nashab, jarr) diperkirakan (muqaddarah) karena uzur/mustahil diucapkan (ta\u0027adzdur).",
+        "contoh":  "الفَتَى، الهُدَى، العَصَا، المُصْطَفَى، المُسْتَشْفَى، الدُّنْيَا."
+    },
+    {
+        "id_istilah":  "IST-206",
+        "istilah_arab":  "الاسْمُ المَنْقُوصُ",
+        "bidang":  "Sharaf \u0026 Nahwu",
+        "definisi_arab":  "كُلُّ اسْمٍ مُعْرَبٍ آخِرُهُ يَاءٌ لَازِمَةٌ غَيْرُ مُشَدَّدَةٍ مَكْسُورٌ مَا قَبْلَهَا، تُقَدَّرُ عَلَيْهِ الضَّمَّةُ وَالكَسْرَةُ لِلثِّقَلِ وَتَظْهَرُ الفَتْحَةُ لِخِفَّتِهَا.",
+        "definisi_indo":  "Setiap isim mu\u0027rab yang berakhiran ya\u0027 lazimah (tidak bertasydid) yang didahului harakat kasrah; tanda rafa\u0027 dan jarr-nya muqaddarah karena berat (tsiqal), sedangkan tanda nashabnya zhahirah karena ringan.",
+        "contoh":  "القَاضِي، الدَّاعِي، الهَادِي، المُحَامِي، المُتَّقِي."
+    },
+    {
+        "id_istilah":  "IST-207",
+        "istilah_arab":  "جُمُوعُ القِلَّةِ وَجُمُوعُ الكَثْرَةِ",
+        "bidang":  "Sharaf \u0026 Nahwu",
+        "definisi_arab":  "جَمْعُ القِلَّةِ مَا وُضِعَ لِلْعَدَدِ مِنْ ثَلَاثَةٍ إِلَى عَشَرَةٍ وَأَوْزَانُهُ أَرْبَعَةٌ، وَجَمْعُ الكَثْرَةِ مَا وُضِعَ لِمَا فَوْقَ العَشَرَةِ.",
+        "definisi_indo":  "Klasifikasi jama\u0027 taksir berdasarkan cakupan kuantitas bilangan: qillah untuk rentang 3 s/d 10 (4 wazan), dan katsrah untuk lebih dari 10 tanpa batas (17 wazan).",
+        "contoh":  "أَنْفُسٌ (Qillah) vs نُفُوسٌ (Katsrah)"
+    },
+    {
+        "id_istilah":  "IST-208",
+        "istilah_arab":  "التَّصْغِيرُ (At-Tashghir)",
+        "bidang":  "Sharaf",
+        "definisi_arab":  "تَغْيِيرٌ مَخْصُوصٌ يَطْرَأُ عَلَى بِنْيَةِ الاسْمِ المُعْرَبِ لِفَائِدَةٍ كَتَقْلِيلِ الحَجْمِ أَوِ التَّحْقِيرِ أَوْ تَقْرِيبِ الزَّمَانِ أَوِ التَّحَبُّبِ.",
+        "definisi_indo":  "Pengubahan struktur kata benda mu\u0027rab dengan pola tertentu (dhammah awal, fathah kedua, plus ya\u0027 sukun) untuk mengekspresikan makna kecil, sedikit, hina, dekat, atau kasih sayang.",
+        "contoh":  "كَلْبٌ -\u003e كُلَيْبٌ، جَبَلٌ -\u003e جُبَيْلٌ، قَبْلَ -\u003e قُبَيْلَ"
+    },
+    {
+        "id_istilah":  "IST-209",
+        "istilah_arab":  "الإِبْدَالُ (Al-Ibdal)",
+        "bidang":  "Sharaf",
+        "definisi_arab":  "جَعْلُ حَرْفٍ صَحِيحٍ أَوْ مُعْتَلٍّ مَكَانَ حَرْفٍ آخَرَ لِتَسْهِيلِ النُّطْقِ وَتَقَارُبِ المَخَارِجِ.",
+        "definisi_indo":  "Penggantian suatu huruf dengan huruf lain (baik huruf shahih maupun mu\u0027tal) agar pelafalannya selaras dengan makhraj huruf di sekitarnya.",
+        "contoh":  "اصْتَبَرَ -\u003e اصْطَبَرَ، ازْتَهَرَ -\u003e ازْدَهَرَ"
+    },
+    {
+        "id_istilah":  "IST-301",
+        "istilah_arab":  "الشَّبَهُ بِالْحَرْفِ",
+        "bidang":  "Nahwu - Mu\u0027rab \u0026 Mabni",
+        "definisi_arab":  "مشابهة الاسم للحرف في الوضع أو المعنى أو الاستعمال النيابي أو الافتقار اللازم، وهي العلة الجامعة لبناء الأسماء.",
+        "definisi_indo":  "Kemiripan suatu isim dengan huruf dari segi bentuk peletakan huruf (Wadh\u0027i), kandungan makna (Ma\u0027nawi), fungsi pengganti fi\u0027il tanpa dimasuki \u0027amil (Isti\u0027mali), atau kebutuhan mutlak terhadap jumlah sesudahnya (Iftiqari), yang menjadi alasan utama mengapa sebagian isim dihukumi mabni.",
+        "contoh":  "الضمائر (شبه وضعي)، متى وهنا (شبه معنوي)، هيهات وصه (شبه استعمالي)، الذي (شبه افتقاري)."
+    },
+    {
+        "id_istilah":  "IST-302",
+        "istilah_arab":  "التَّعَذُّرُ وَالثِّقَلُ وَالْمُنَاسَبَةُ",
+        "bidang":  "Nahwu - I\u0027rab Muqaddar",
+        "definisi_arab":  "الموانع الصوتية الثلاثة التي تمنع ظهور الحركات الإعرابية على أواخر الكلمات المعربة.",
+        "definisi_indo":  "Tiga penghalang fonologis munculnya harakat i\u0027rab zhahir: Ta\u0027adzzur (mustahil mengucapkan harakat di atas Alif), Tsiqal (berat mengucapkan dhammah/kasrah di atas Wawu dan Ya\u0027), dan Munasabah (tersibukkannya huruf akhir dengan kasrah demi menyesuaikan Ya\u0027 Mutakallim).",
+        "contoh":  "الفتى ويسعى (للتعذر)، القاضي ويدعو ويرمي (للثقل)، كتابي وصديقي (للمناسبة)."
+    },
+    {
+        "id_istilah":  "IST-303",
+        "istilah_arab":  "لُغَاتُ الْأَسْمَاءِ الْخَمْسَةِ (التَّمَامُ وَالْقَصْرُ وَالنَّقْصُ)",
+        "bidang":  "Nahwu - I\u0027rab Far\u0027iyyah",
+        "definisi_arab":  "المذاهب اللهجية الثلاثة للعرب في إعراب (أب، أخ، حم) المستوفية للشروط: الإعراب بالحروف الثلاثة، أو إلزام الألف مطلقًا، أو حذف لام الكلمة والإعراب بالحركات الظاهرة.",
+        "definisi_indo":  "Tiga dialek kabilah Arab dalam meng-i\u0027rab lafazh Ab, Akh, dan Ham yang memenuhi syarat: Lughah Tamam (dengan Wawu, Alif, Ya\u0027), Lughah Qashr (selalu dengan Alif seperti Isim Maqshur), dan Lughah Naqsh (membuang huruf illat dan meng-i\u0027rab dengan harakat zhahirah).",
+        "contoh":  "جاء أبوك / أباك / أبُك، مررت بأبيك / بأباك / بأبِك."
+    },
+    {
+        "id_istilah":  "IST-304",
+        "istilah_arab":  "ضَمِيرُ الْفَصْلِ (الْعِمَادُ) وَضَمِيرُ الشَّأْنِ (الْقِصَّةُ)",
+        "bidang":  "Nahwu - Dhama\u0027ir",
+        "definisi_arab":  "ضمير الفصل: لفظ بصورة المرفوع المنفصل يقع بين المبتدأ والخبر المعرفتين للتمييز بين الخبر والتابع ولا محل له عند البصريين. وضمير الشأن: ضمير غائب مفرد يتقدم جملة خبرية تفسره في محل رفع مبتدأ.",
+        "definisi_indo":  "Dhamir Fashl (\u0027Imad) adalah kata berbentuk dhamir rafa\u0027 munfashil di antara mubtada\u0027 dan khabar ma\u0027rifah untuk menegaskan bahwa kata setelahnya adalah khabar (bukan na\u0027at) dan tidak punya mahal i\u0027rab. Sedangkan Dhamir Sya\u0027n adalah dhamir ghaib mufrad di awal kalimat yang berkedudukan sebagai mubtada\u0027 dan ditafsirkan oleh jumlah sesudahnya.",
+        "contoh":  "أولئك هم المفلحون (ضمير فصل)، قل هو الله أحد (ضمير الشأن)."
+    },
+    {
+        "id_istilah":  "IST-305",
+        "istilah_arab":  "الْعَلَمُ الْمُرَكَّبُ (الْإِضَافِيُّ وَالْمَزْجِيُّ وَالْإِسْنَادِيُّ)",
+        "bidang":  "Nahwu - Al-\u0027Alam",
+        "definisi_arab":  "ما تركب من كلمتين فأكثر من الأعلام، إما بإضافة الأولى للثانية، أو بمزجهما كلمةً واحدة، أو بنقله من جملة فعلية أو اسمية محكية.",
+        "definisi_indo":  "Nama diri yang tersusun dari dua kata atau lebih: Murakkab Idhafi (mudhaf + mudhaf ilaih), Murakkab Mazji (dua kata dilebur jadi satu, mamnu\u0027 minash sharf seperti بعلبك atau mabni \u0027alal kasr seperti سيبويه), dan Murakkab Isnadi (dipindahkan dari jumlah dan di-i\u0027rab secara muqaddar dengan Hikayah).",
+        "contoh":  "عبدُ اللهِ (إضافي)، حضرموتُ وسيبويهِ (مزجي)، تأبطَ شرًّا وجادَ الحقُّ (إسنادي)."
+    },
+    {
+        "id_istilah":  "IST-306",
+        "istilah_arab":  "صَدْرُ الصِّلَةِ وَالْعَائِدُ",
+        "bidang":  "Nahwu - Isim Maushul",
+        "definisi_arab":  "العائد هو الضمير الرابط في جملة الصلة المطابق للاسم الموصول، وصدر الصلة هو المبتدأ الواقع في أول جملة الصلة الاسمية.",
+        "definisi_indo":  "\u0027Aid adalah dhamir penghubung di dalam jumlah shilah yang kembali dan sesuai dengan isim maushul, sedangkan Shadr Shilah adalah dhamir Mubtada\u0027 yang terletak di awal jumlah shilah ismiyyah (yang jika dibuang setelah أَيّ الموصولة المضافة menyebabkan أَيّ menjadi mabni \u0027aladh dhamm).",
+        "contoh":  "ثُمَّ لَنَنْزِعَنَّ مِنْ كُلِّ شِيعَةٍ أَيُّهُمْ أَشَدُّ (حُذف صدر الصلة والتقدير: أيهم هو أشد)."
+    },
+    {
+        "id_istilah":  "IST-307",
+        "istilah_arab":  "نُونُ التَّوْكِيدِ الْمُبَاشِرَةُ وَغَيْرُ الْمُبَاشِرَةِ",
+        "bidang":  "Nahwu - Bina\u0027 \u0026 I\u0027rab Mudhari\u0027",
+        "definisi_arab":  "المباشرة هي التي تتصل بآخر الفعل المضارع بلا فاصل فيُبنى معها على الفتح؛ وغير المباشرة هي التي يفصل بينها وبين آخر الفعل ألف الاثنين أو واو الجماعة أو ياء المخاطبة (لفظًا أو تقديرًا) فيبقى الفعل معها معربًا.",
+        "definisi_indo":  "Nun Taukid Mubasyirah adalah nun taukid yang menempel langsung pada huruf terakhir fi\u0027il mudhari\u0027 sehingga menyebabkannya mabni \u0027alal fath (مثل: لَيُسْجَنَنَّ). Sedangkan Nun Taukid Ghairu Mubasyirah adalah yang terpisah dari akhir fi\u0027il oleh Alif Itsnain, Wawu Jama\u0027ah, atau Ya\u0027 Mukhathabah sehingga fi\u0027ilnya tetap mu\u0027rab (مثل: لَتُبْلَوُنَّ، لَا تَتَّبِعَانِّ).",
+        "contoh":  "لَيَنْصُرَنَّ (مباشرة = مبني على الفتح)، لَتَنْصُرُنَّ يا قومُ (غير مباشرة = معرب مرفوع بثبوت النون المحذوفة)."
+    },
+    {
+        "id_istilah":  "IST-308",
+        "istilah_arab":  "الْأَفْعَالُ الْخَمْسَةُ (الْأَمْثِلَةُ الْخَمْسَةُ)",
+        "bidang":  "Nahwu - I\u0027rab Far\u0027iyyah",
+        "definisi_arab":  "كل فعل مضارع اتصلت به ألف الاثنين أو واو الجماعة أو ياء المخاطبة، فيُرفع بثبوت النون ويُنصب ويُجزم بحذفها.",
+        "definisi_indo":  "Setiap fi\u0027il mudhari\u0027 yang bersambung dengan Alif Itsnain, Wawu Jama\u0027ah, atau Ya\u0027 Mukhathabah (5 wazan: يفعلان، تفعلان، يفعلون، تفعلون، تفعلين), yang dirafa\u0027kan dengan tetapnya Nun (Tsubutun Nun) serta dinashabkan dan dijazmkan dengan membuang Nun (Hadzfun Nun).",
+        "contoh":  "الطلاب يجتهدون ولن يكسلوا ولم يقصروا."
+    },
+    {
+        "id_istilah":  "IST-309",
+        "istilah_arab":  "لَامُ الْجُحُودِ",
+        "bidang":  "Nahwu - Nawashibul Mudhari\u0027",
+        "definisi_arab":  "اللام المكسورة المسبوقة بكون ماضٍ منفي بـ(ما كان) أو (لم يكن) لتوكيد النفي، ويُنصب المضارع بعدها بـ(أنْ) مضمرة وجوبًا.",
+        "definisi_indo":  "Huruf Lam berharakat kasrah yang jatuh setelah الكون المنفي (ما كان / لم يكن) untuk menguatkan penafian (إنكار/جحود), yang setelahnya Fi\u0027il Mudhari\u0027 wajib dinashabkan oleh أَنْ المضمرة وجوبًا dan mashdar muawwalnya berta\u0027alluq kepada khabar Kana yang wajib dibuang (تقديره: مريدًا).",
+        "contoh":  "وَمَا كَانَ اللَّهُ لِيُعَذِّبَهُمْ، لَمْ يَكُنِ اللَّهُ لِيَغْفِرَ لَهُمْ."
+    },
+    {
+        "id_istilah":  "IST-310",
+        "istilah_arab":  "فَاءُ السَّبَبِيَّةِ وَوَاوُ الْمَعِيَّةِ",
+        "bidang":  "Nahwu - Nawashibul Mudhari\u0027",
+        "definisi_arab":  "حرفان ينصب المضارع بعدهما بـ(أنْ) مضمرة وجوبًا إذا سُبقا بنفي محض أو بطلب محض بالفعل، وتفيد الفاء أن ما قبلها سبب لما بعدها، وتفيد الواو مصاحبة ما قبلها لما بعدها.",
+        "definisi_indo":  "Dua huruf yang menyebabkan fi\u0027il mudhari\u0027 sesudahnya dinashabkan oleh أَنْ المضمرة وجوبًا apabila didahului oleh Nafi Mahdh atau Thalab Mahdh (الأمر، النهي، الدعاء، الاستفهام، العرض، التحضيض، التمني، الرجاء). Fa\u0027 Sababiyyah menunjukkan sebab-akibat, sedangkan Wawu Ma\u0027iyyah menunjukkan kebersamaan (بمعنى مَعَ).",
+        "contoh":  "لا يقضى عليهم فيموتوا، لا تنهَ عن خلقٍ وتأتيَ مثله."
+    },
+    {
+        "id_istilah":  "IST-311",
+        "istilah_arab":  "فَاءُ الْجَزَاءِ (الْفَاءُ الرَّابِطَةُ لِجَوَابِ الشَّرْطِ)",
+        "bidang":  "Nahwu - Uslub Asy-Syarth",
+        "definisi_arab":  "الفاء التي يجب اقتران جواب الشرط بها إذا لم يصلح الجواب لأن يقع فعلًا للشرط، وتجمع مواضعها في (اسمية طلبية وبجامد وبما ولن وبقد وبالتنفيس).",
+        "definisi_indo":  "Huruf Fa\u0027 pengikat yang wajib masuk pada Jumlah Jawab Syarat apabila kalimat jawab tersebut tidak memenuhi syarat untuk menjadi fi\u0027il syarat secara langsung (seperti berupa jumlah ismiyyah, jumlah thalabiyyah, fi\u0027il jamid, atau diawali ما، لن، قد، السين، سوف).",
+        "contoh":  "مَنْ يَهْدِ اللَّهُ فَهُوَ الْمُهْتَدِ، إِنْ كُنْتُمْ تُحِبُّونَ اللَّهَ فَاتَّبِعُونِي."
+    },
+    {
+        "id_istilah":  "IST-312",
+        "istilah_arab":  "حَرْفُ امْتِنَاعٍ لِامْتِنَاعٍ (لَوْ) وَحَرْفُ امْتِنَاعٍ لِوُجُودٍ (لَوْلَا)",
+        "bidang":  "Nahwu - Adawat Syarth Ghairu Jazimah",
+        "definisi_arab":  "(لو) حرف شرط غير جازم يدل على امتناع الجواب لامتناع الشرط في الماضي، و(لولا/لوما) حرف شرط غير جازم يدل على امتناع الجواب لوجود الشرط ويليه مبتدأ محذوف الخبر وجوبًا.",
+        "definisi_indo":  "Lau adalah huruf syarat ghairu jazim yang menunjukkan tidak terjadinya jawab karena tidak terjadinya syarat (امتناع لامتناع). Sedangkan Laula/Lauma menunjukkan tidak terjadinya jawab karena adanya syarat (امتناع لوجود), yang selalu diikuti Mubtada\u0027 dengan khabar yang wajib dibuang (تقديره: موجود).",
+        "contoh":  "لو اجتهدتَ لنجحتَ، لولا الهواءُ لهلكت الأحياءُ."
+    },
+    {
+        "id_istilah":  "IST-401",
+        "istilah_arab":  "الوصف الرافع لمكتفًى به (سدّ مسدّ الخبر)",
+        "bidang":  "Nahwu - Al-Jumlah Al-Ismiyyah",
+        "definisi_arab":  "المبتدأ الذي يكون اسماً مشتقاً (اسم فاعل أو اسم مفعول أو صفة مشبهة) مسبوقاً بنفي أو استفهام، ويرفع فاعلاً أو نائب فاعل يغني عن الخبر وتتم به الجملة.",
+        "definisi_indo":  "Jenis Mubtada\u0027 kedua yang berupa isim musytaq (isim fa\u0027il, isim maf\u0027ul, atau shifat musyabbahah) yang didahului oleh Nafi atau Istifham, di mana ia merafa\u0027kan Fa\u0027il atau Na\u0027ibul Fa\u0027il yang langsung mencukupkan kalimat sehingga tidak membutuhkan Khabar lagi.",
+        "contoh":  "أَقَائِمٌ الزَّيْدَانِ؟ / مَا مَحْبُوبٌ الكَسُولَانِ"
+    },
+    {
+        "id_istilah":  "IST-402",
+        "istilah_arab":  "مسوغات الابتداء بالنكرة",
+        "bidang":  "Nahwu - Al-Jumlah Al-Ismiyyah",
+        "definisi_arab":  "الأمور التي تجعل الإخبار عن المبتدأ النكرة مفيداً فائدة يعتد بها، وترجع في أصلها إلى التخصيص (بوصف أو إضافة أو عمل) أو التعميم (بنفي أو استفهام).",
+        "definisi_indo":  "Faktor-faktor gramatikal dan semantis yang membolehkan isim Nakirah menjadi Mubtada\u0027 karena telah menghasilkan faedah makna yang sempurna, baik melalui pengkhususan (takhshish) maupun keumuman (ta\u0027mim).",
+        "contoh":  "وَلَعَبْدٌ مُؤْمِنٌ خَيْرٌ مِنْ مُشْرِكٍ / أَإِلَٰهٌ مَعَ اللَّهِ"
+    },
+    {
+        "id_istilah":  "IST-403",
+        "istilah_arab":  "الرابط في جملة الخبر",
+        "bidang":  "Nahwu - Al-Jumlah Al-Ismiyyah",
+        "definisi_arab":  "العنصر اللفظي أو المعنوي الذي يربط جملة الخبر بالمبتدأ حين لا تكون الجملة عين المبتدأ في المعنى، كالضمير أو اسم الإشارة أو إعادة المبتدأ بلفظه أو العموم.",
+        "definisi_indo":  "Unsur pengikat (baik berupa dhamir, isim isyarah, pengulangan lafazh mubtada\u0027, maupun keumuman) yang menghubungkan Khabar Jumlah dengan Mubtada\u0027-nya agar kalimat tidak terputus menjadi dua kalimat asing.",
+        "contoh":  "زَيْدٌ أَبُوهُ كَرِيمٌ / وَلِبَاسُ التَّقْوَىٰ ذَٰلِكَ خَيْرٌ / الحَاقَّةُ مَا الحَاقَّةُ"
+    },
+    {
+        "id_istilah":  "IST-404",
+        "istilah_arab":  "الفعل الناقص والفعل التام",
+        "bidang":  "Nahwu - An-Nawasikh",
+        "definisi_arab":  "الفعل الناقص هو ما لا يكتفي بمرفوعه بل يحتاج إلى منصوب يتمم الفائدة (خبره)؛ والفعل التام هو ما يكتفي بمرفوعه (فاعله) ولا يحتاج إلى خبر.",
+        "definisi_indo":  "Fi\u0027il Naqish adalah fi\u0027il yang tidak cukup hanya dengan marfu\u0027-nya (isimnya) melainkan membutuhkan manshub (khabarnya) untuk menyempurnakan makna; sedangkan Fi\u0027il Tam adalah fi\u0027il yang cukup dengan marfu\u0027-nya sebagai Fa\u0027il.",
+        "contoh":  "الناقص: وَكَانَ اللَّهُ عَلِيمًا حَكِيمًا | التام: وَإِنْ كَانَ ذُو عُسْرَةٍ فَنَظِرَةٌ إِلَى مَيْسَرَةٍ"
+    },
+    {
+        "id_istilah":  "IST-405",
+        "istilah_arab":  "ما الحجازية",
+        "bidang":  "Nahwu - An-Nawasikh",
+        "definisi_arab":  "(ما) النافية العاملة عمل (ليس) في لغة أهل الحجاز، فترفع الاسم وتنصب الخبر بأربعة شروط: ألا يقترن اسمها بـ (إنْ)، وألا ينتقض نفيها بـ (إلا)، وألا يتقدم خبرها ولا معمول خبرها على اسمها.",
+        "definisi_indo":  "Huruf (مَا) Nafiyah yang dalam dialek penduduk Hijaz (dan bahasa Al-Qur\u0027an) beramal seperti (لَيْسَ) merafa\u0027kan isim dan menashabkan khabar apabila memenuhi empat syarat amalnya.",
+        "contoh":  "مَا هَٰذَا بَشَرًا / مَا هُنَّ أُمَّهَاتِهِمْ"
+    },
+    {
+        "id_istilah":  "IST-406",
+        "istilah_arab":  "أفعال المقاربة والرجاء والشروع",
+        "bidang":  "Nahwu - An-Nawasikh",
+        "definisi_arab":  "أفعال ناسخة (كاد وأخواتها) ترفع المبتدأ وتنصب الخبر، ويشترط في خبرها أن يكون جملة فعلية فعلها مضارع رافع لضمير اسمها، وتدل على قرب وقوع الخبر أو رجائه أو الابتداء فيه.",
+        "definisi_indo":  "Kelompok fi\u0027il nasikhah (Kada wa Akhawatuha) yang merafa\u0027kan isim dan menashabkan khabar berupa jumlah fi\u0027liyyah mudhari\u0027iyyah, yang menunjukkan makna hampir terjadinya khabar (Muqarabah), harapan terjadinya khabar (Raja\u0027), atau mulainya perbuatan pada khabar (Syuru\u0027).",
+        "contoh":  "يَكَادُ البَرْقُ يَخْطَفُ أَبْصَارَهُمْ / عَسَى اللَّهُ أَنْ يَأْتِيَ بِالفَتْحِ / وَطَفِقَا يَخْصِفَانِ"
+    },
+    {
+        "id_istilah":  "IST-407",
+        "istilah_arab":  "ما الكافّة (في باب إنّ)",
+        "bidang":  "Nahwu - An-Nawasikh",
+        "definisi_arab":  "(ما) الزائدة التي تتصل بـ (إنّ) وأخواتها فتكفّها عن العمل وتزيل اختصاصها بالجملة الاسمية فتهيئها للدخول على الجملة الفعلية، إلا (ليت) فيجوز معها الإعمال والإهمال.",
+        "definisi_indo":  "Huruf (مَا) tambahan yang bersambung dengan Inna dan saudara-saudaranya sehingga menahan/membatalkan amalnya dalam menashabkan isim dan merafa\u0027kan khabar, serta membolehkannya masuk ke jumlah fi\u0027liyyah (kecuali pada ليتما yang boleh beramal dan boleh batal).",
+        "contoh":  "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ / قُلْ إِنَّمَا يُوحَىٰ إِلَيَّ"
+    },
+    {
+        "id_istilah":  "IST-408",
+        "istilah_arab":  "اللام المزحلقة واللام الفارقة",
+        "bidang":  "Nahwu - An-Nawasikh",
+        "definisi_arab":  "اللام المزحلقة هي لام الابتداء المفتوحة التي زُحلقت من صدر الجملة إلى خبر (إنّ) أو اسمها المتأخر كراهية توالي مؤكدين؛ واللام الفارقة هي التي تلزم خبر (إنْ) المخففة المهملة للفرق بينها وبين (إنْ) النافية.",
+        "definisi_indo":  "Lam Muzahlaqah adalah Lamul Ibtida\u0027 berharakat fathah yang digeser dari awal kalimat ke khabar (إِنَّ) agar tidak berkumpul dua huruf taukid; sedangkan Lam Fariqah adalah Lam yang wajib masuk pada khabar (إِنْ) Mukhaffafah yang tidak beramal untuk membedakannya dari (إِنْ) Nafiyah.",
+        "contoh":  "المزحلقة: وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِيمٍ | الفارقة: وَإِنْ كُلٌّ لَمَّا جَمِيعٌ لَدَيْنَا مُحْضَرُونَ"
+    },
+    {
+        "id_istilah":  "IST-409",
+        "istilah_arab":  "الشبيه بالمضاف (المطوَّل)",
+        "bidang":  "Nahwu - La An-Nafiyah lil-Jinsi",
+        "definisi_arab":  "ما اتصل به شيء من تمام معناه غير المضاف إليه، بأن يكون عاملاً فيما بعده رفعاً (كفاعله أو نائب فاعله) أو نصباً (كمفعوله) أو متعلقاً بجر ومجرور، وحكمه في باب (لا) و(النداء) الإعراب بالنصب والتنوين.",
+        "definisi_indo":  "Isim musytaq yang bersambung dengan kata lain setelahnya yang menyempurnakan maknanya (baik merafa\u0027kan fa\u0027il/na\u0027ibul fa\u0027il, menashabkan maf\u0027ul bih, atau berkaitan dengan jar-majrur), di mana hukumnya dalam bab La Nafiyah lil Jinsi adalah mu\u0027rab manshub dengan tanwin.",
+        "contoh":  "لَا طَالِعًا جَبَلًا حَاضِرٌ / لَا مَحْمُودًا خُلُقُهُ مَكْرُوهٌ"
+    },
+    {
+        "id_istilah":  "IST-410",
+        "istilah_arab":  "الإلغاء والتعليق (في أفعال القلوب)",
+        "bidang":  "Nahwu - Zhanna wa Akhawatuha",
+        "definisi_arab":  "الإلغاء هو إبطال عمل الفعل القلبي المتصرف لفظاً ومحلاً جوازاً لضعفه بالتوسط أو التأخر؛ والتعليق هو إبطال عمله لفظاً لا محلاً وجوباً لاعتراض ما له صدارة الكلام بينه وبين معموليه.",
+        "definisi_indo":  "Al-Ilgha\u0027 adalah pembatalan amal fi\u0027il qulub secara lafazh dan mahal (jaiz) karena posisinya yang berada di tengah atau di akhir kalimat; sedangkan At-Ta\u0027liq adalah pembatalan amalnya secara lafazh saja namun tetap beramal secara mahal (wajib) karena terhalang oleh kata yang memiliki hak shadarah (seperti istifham, nafi, atau lam ibtida\u0027).",
+        "contoh":  "الإلغاء: زَيْدٌ ظَنَنْتُ قَائِمٌ | التعليق: لِنَعْلَمَ أَيُّ الْحِزْبَيْنِ أَحْصَىٰ"
+    },
+    {
+        "id_istilah":  "IST-411",
+        "istilah_arab":  "لغة أكلوني البراغيث",
+        "bidang":  "Nahwu - Al-Fa\u0027il",
+        "definisi_arab":  "لغة لبعض العرب (كطيئ وأزد شنوءة وبني الحارث) يلحقون فيها الفعلَ علامةَ تثنية أو جمع مع كون الفاعل اسماً ظاهراً مذكوراً بعده، وتُعرب تلك العلامة حرفاً لا محل له أو ضمير فاعل والظاهر بدلاً منه.",
+        "definisi_indo":  "Dialek sebagian kabilah Arab yang menyertakan huruf tanda tatsniyah atau jamak pada fi\u0027il meskipun Fa\u0027il berupa isim zhahir disebutkan setelahnya, sementara jumhur mewajibkan fi\u0027il tetap mufrad.",
+        "contoh":  "يَتَعَاقَبُونَ فِيكُمْ مَلَائِكَةٌ بِاللَّيْلِ وَمَلَائِكَةٌ بِالنَّهَارِ / وَأَسَرُّوا النَّجْوَى الَّذِينَ ظَلَمُوا"
+    },
+    {
+        "id_istilah":  "IST-412",
+        "istilah_arab":  "الأفعال الملازمة للبناء للمجهول لفظاً",
+        "bidang":  "Nahwu - Na\u0027ibul Fa\u0027il",
+        "definisi_arab":  "طائفة من الأفعال وردت عن العرب بصورة المبني للمجهول (بضم أولها وكسر ما قبل آخرها) ولا يُستعمل لها فعل مبني للمعلوم بمعناها، والاسم المرفوع بعدها يُعرب فاعلاً لا نائب فاعل على الصحيح.",
+        "definisi_indo":  "Sekelompok fi\u0027il dalam bahasa Arab yang selalu berbentuk Mabni lil-Majhul secara lafazh namun bermakna aktif dan tidak memiliki bentuk ma\u0027lum, sehingga isim marfu\u0027 setelahnya di-i\u0027rab sebagai Fa\u0027il, bukan Na\u0027ibul Fa\u0027il.",
+        "contoh":  "حُمَّ المَرِيضُ / جُنَّ الرَّجُلُ / غُمَّ الهِلَالُ / عُنِيَ الطَّالِبُ بِالعِلْمِ"
+    },
+    {
+        "id_istilah":  "IST-501",
+        "istilah_arab":  "الاِشْتِغَالُ (المَشْغُولُ عَنْهُ وَالمَشْغُولُ بِهِ)",
+        "bidang":  "Nahwu - Al-Manshubat",
+        "definisi_arab":  "أَنْ يَتَقَدَّمَ اسْمٌ وَيَتَأَخَّرَ عَنْهُ عَامِلٌ مُشْتَغِلٌ عَنْهُ بِالعَمَلِ فِي ضَمِيرِهِ أَوْ مُلَابِسِ ضَمِيرِهِ، بِحَيْثُ لَوْ فَرَغَ لَهُ لَنَصَبَهُ.",
+        "definisi_indo":  "Struktur kalimat di mana sebuah isim maju di awal kalimat, lalu diikuti oleh \u0027amil (fi\u0027il/sifat) yang sibuk beramal pada dhamir isim tersebut, sehingga jika isim di awal dibaca nashab, ia dinashabkan oleh fi\u0027il yang wajib dibuang yang ditafsirkan oleh fi\u0027il setelahnya.",
+        "contoh":  "وَالأَنْعَامَ خَلَقَهَا / إِنَّا كُلَّ شَيْءٍ خَلَقْنَاهُ بِقَدَرٍ"
+    },
+    {
+        "id_istilah":  "IST-502",
+        "istilah_arab":  "التَّنَازُعُ فِي العَمَلِ",
+        "bidang":  "Nahwu - Al-Manshubat",
+        "definisi_arab":  "تَوَجُّهُ عَامِلَيْنِ فَأَكْثَرَ إِلَى مَعْمُولٍ وَاحِدٍ فَأَكْثَرَ مُتَأَخِّرٍ عَنْهُمَا، فَيَعْمَلُ أَحَدُهُمَا فِي الظَّاهِرِ وَالآخَرُ فِي ضَمِيرِهِ.",
+        "definisi_indo":  "Perebutan amal oleh dua \u0027amil atau lebih yang berada di depan terhadap satu ma\u0027mul zhahir atau lebih yang berada di belakang, di mana salah satu \u0027amil beramal pada isim zhahir dan \u0027amil lainnya (al-muhmal) beramal pada dhamirnya.",
+        "contoh":  "آتُونِي أُفْرِغْ عَلَيْهِ قِطْرًا / هَاؤُمُ اقْرَءُوا كِتَابِيَهْ"
+    },
+    {
+        "id_istilah":  "IST-503",
+        "istilah_arab":  "النَّائِبُ عَنِ المَفْعُولِ المُطْلَقِ",
+        "bidang":  "Nahwu - Al-Manshubat",
+        "definisi_arab":  "لَفْظٌ غَيْرُ المَصْدَرِ الصَّرِيحِ يَنُوبُ عَنِ المَصْدَرِ فِي الدَّلَالَةِ عَلَى التَّوْكِيدِ أَوِ النَّوْعِ أَوِ العَدَدِ فَيُنْصَبُ نَصْبَهُ.",
+        "definisi_indo":  "Lafazh selain mashdar sharih dari fi\u0027il yang menggantikan posisi mashdar dalam menunjukkan taukid, jenis, atau bilangan (seperti كل، بعض، العدد، الصفة، المرادف، الآلة), sehingga dinashabkan sebagai pengganti maf\u0027ul muthlaq.",
+        "contoh":  "فَلَا تَمِيلُوا كُلَّ المَيْلِ / وَاذْكُرُوا اللَّهَ كَثِيرًا"
+    },
+    {
+        "id_istilah":  "IST-504",
+        "istilah_arab":  "الظَّرْفُ المُتَصَرِّفُ وَغَيْرُ المُتَصَرِّفِ",
+        "bidang":  "Nahwu - Al-Manshubat",
+        "definisi_arab":  "المُتَصَرِّفُ مَا يُسْتَعْمَلُ ظَرْفًا وَغَيْرَ ظَرْفٍ كَالمُبْتَدَإِ وَالفَاعِلِ، وَغَيْرُ المُتَصَرِّفِ مَا يَلْزَمُ النَّصْبَ عَلَى الظَّرْفِيَّةِ أَوِ الجَرَّ بِمِنْ وَنَحْوِهَا.",
+        "definisi_indo":  "Zharaf Mutasharrif adalah isim zaman/makan yang dapat digunakan sebagai zharaf maupun selain zharaf (seperti menjadi mubtada\u0027 atau fa\u0027il). Sedangkan Ghairu Mutasharrif adalah kata yang hanya bisa menjadi zharaf atau majrur dengan huruf jar tertentu.",
+        "contoh":  "Mutasharrif: يَوْمٌ سَعِيدٌ | Ghairu Mutasharrif: قَطُّ، عِوَضُ، عِنْدَ، لَدُنْ"
+    },
+    {
+        "id_istilah":  "IST-505",
+        "istilah_arab":  "الحَالُ المُوَطِّئَةُ",
+        "bidang":  "Nahwu - Al-Manshubat",
+        "definisi_arab":  "الحَالُ الجَامِدَةُ المَوْصُوفَةُ بِمُشْتَقٍّ، سُمِّيَتْ مُوَطِّئَةً لِأَنَّهَا تُمَهِّدُ لِمَجِيءِ الوَصْفِ بَعْدَهَا وَهُوَ المَقْصُودُ بِالحَالِيَّةِ مَعْنًى.",
+        "definisi_indo":  "Hal yang berupa isim jamid yang diikuti oleh sifat musytaq, dinamakan muwaththi\u0027ah (pembuka jalan) karena ia menjadi pengantar bagi sifat setelahnya yang sebenarnya menjadi inti keterangan keadaan.",
+        "contoh":  "إِنَّا أَنْزَلْنَاهُ قُرْآنًا عَرَبِيًّا / فَتَمَثَّلَ لَهَا بَشَرًا سَوِيًّا"
+    },
+    {
+        "id_istilah":  "IST-506",
+        "istilah_arab":  "الحَالُ المُؤَكِّدَةُ لِمَضْمُونِ الجُمْلَةِ",
+        "bidang":  "Nahwu - Al-Manshubat",
+        "definisi_arab":  "حَالٌ تَقَعُ بَعْدَ جُمْلَةٍ اسْمِيَّةٍ طَرَفَاهَا مَعْرِفَتَانِ جَامِدَانِ، وَتُنْصَبُ بِعَامِلٍ مَحْذُوفٍ وُجُوبًا تَقْدِيرُهُ (أَحُقُّهُ أَوْ أَعْرِفُهُ).",
+        "definisi_indo":  "Hal yang jatuh setelah jumlah ismiyyah yang mubtada\u0027 dan khabarnya sama-sama berupa isim ma\u0027rifah dan jamid, berfungsi menguatkan kandungan jumlah tersebut dan dinashabkan oleh \u0027amil yang wajib dibuang.",
+        "contoh":  "وَهُوَ الحَقُّ مُصَدِّقًا لِمَا مَعَهُمْ / زَيْدٌ أَبُوكَ عَطُوفًا"
+    },
+    {
+        "id_istilah":  "IST-507",
+        "istilah_arab":  "التَّمْيِيزُ المَلْفُوظُ وَالتَّمْيِيزُ المَلْحُوظُ",
+        "bidang":  "Nahwu - Al-Manshubat",
+        "definisi_arab":  "المَلْفُوظُ (تَمْيِيزُ الذَّاتِ) مَا يُفَسِّرُ اسْمًا مُبْهَمًا مَذْكُورًا قَبْلَهُ كَالمَقَادِيرِ وَالعَدَدِ، وَالمَلْحُوظُ (تَمْيِيزُ النِّسْبَةِ) مَا يُفَسِّرُ إِبْهَامَ نِسْبَةٍ فِي جُمْلَةٍ سَابِقَةٍ.",
+        "definisi_indo":  "Tamyiz Malfuzh (Tamyiz Dzat) adalah tamyiz yang menjelaskan kesamaran kata benda terucap sebelumnya (ukuran, takaran, timbangan, bilangan). Sedangkan Tamyiz Malhuzh (Tamyiz Nisbah) adalah tamyiz yang menjelaskan kesamaran hubungan predikat dalam kalimat sebelumnya.",
+        "contoh":  "Malfuzh: أَحَدَ عَشَرَ كَوْكَبًا | Malhuzh: وَاشْتَعَلَ الرَّأْسُ شَيْبًا"
+    },
+    {
+        "id_istilah":  "IST-508",
+        "istilah_arab":  "الاِسْتِثْنَاءُ المُفَرَّغُ وَالاِسْتِثْنَاءُ المُنْقَطِعُ",
+        "bidang":  "Nahwu - Al-Manshubat",
+        "definisi_arab":  "المُفَرَّغُ مَا حُذِفَ فِيهِ المُسْتَثْنَى مِنْهُ وَسُبِقَ بِنَفْيٍ فَتَفَرَّغَ العَامِلُ لِمَا بَعْدَ إِلَّا، وَالمُنْقَطِعُ مَا لَمْ يَكُنْ فِيهِ المُسْتَثْنَى مِنْ جِنْسِ المُسْتَثْنَى مِنْهُ.",
+        "definisi_indo":  "Istitsna\u0027 Mufarragh adalah kalimat pengecualian negatif yang tidak menyebutkan mustatsna minhu sehingga \u0027amil sebelum إلا langsung beramal pada kata setelah إلا. Sedangkan Istitsna\u0027 Munqathi\u0027 adalah pengecualian di mana mustatsna tidak sejenis dengan mustatsna minhu.",
+        "contoh":  "Mufarragh: وَمَا مُحَمَّدٌ إِلَّا رَسُولٌ | Munqathi\u0027: مَا لَهُمْ بِهِ مِنْ عِلْمٍ إِلَّا اتِّبَاعَ الظَّنِّ"
+    },
+    {
+        "id_istilah":  "IST-509",
+        "istilah_arab":  "الاِسْتِغَاثَةُ وَالنُّدْبَةُ",
+        "bidang":  "Nahwu - Al-Manshubat",
+        "definisi_arab":  "الاِسْتِغَاثَةُ نِدَاءُ مَنْ يُخَلِّصُ مِنْ شِدَّةٍ بِيَا وَاللَّامِ المَفْتُوحَةِ، وَالنُّدْبَةُ نِدَاءُ المُتَفَجَّعِ عَلَيْهِ أَوِ المُتَوَجَّعِ مِنْهُ بِوَا وَأَلِفِ النُّدْبَةِ.",
+        "definisi_indo":  "Istighatsah adalah memanggil pihak yang dapat menolong dari kesulitan menggunakan يا dan Lam Maftuhah pada mustaghats bihi serta Lam Maksurah pada mustaghats lahu. Nudbah adalah memanggil sesuatu yang diratapi atau anggota tubuh yang sakit menggunakan وا dan Alif Nudbah.",
+        "contoh":  "Istighatsah: يَا لَلَّهِ لِلْمُسْلِمِينَ! | Nudbah: وَامُعْتَصِمَاهْ! / وَارَأْسَاهْ!"
+    },
+    {
+        "id_istilah":  "IST-510",
+        "istilah_arab":  "تَرْخِيمُ المُنَادَى (لُغَةُ مَنْ يَنْتَظِرُ وَمَنْ لَا يَنْتَظِرُ)",
+        "bidang":  "Nahwu - Al-Manshubat",
+        "definisi_arab":  "حَذْفُ آخِرِ المُنَادَى تَخْفِيفًا، فَإِنْ بَقِيَ مَا قَبْلَ المَحْذُوفِ عَلَى حَرَكَتِهِ الأَصْلِيَّةِ فَهِيَ لُغَةُ مَنْ يَنْتَظِرُ، وَإِنْ ضُمَّ فَهِيَ لُغَةُ مَنْ لَا يَنْتَظِرُ.",
+        "definisi_indo":  "Pembuangan huruf akhir munada untuk meringankan pengucapan; bila huruf terakhir yang tersisa dibiarkan dengan harakat aslinya disebut lughah man yantazhir, dan bila diberi dhammah baru disebut lughah man la yantazhir.",
+        "contoh":  "يَا فَاطِمَ / يَا فَاطِمُ (من فاطمة) | يَا جَعْفَ / يَا جَعْفُ (من جعفر)"
+    },
+    {
+        "id_istilah":  "IST-511",
+        "istilah_arab":  "التَّحْذِيرُ وَالإِغْرَاءُ",
+        "bidang":  "Nahwu - Al-Manshubat",
+        "definisi_arab":  "التَّحْذِيرُ تَنْبِيهُ المُخَاطَبِ عَلَى أَمْرٍ مَكْرُوهٍ لِيَجْتَنِبَهُ بِتَقْدِيرِ (احْذَرْ)، وَالإِغْرَاءُ حَثُّهُ عَلَى أَمْرٍ مَحْمُودٍ لِيَفْعَلَهُ بِتَقْدِيرِ (الْزَمْ).",
+        "definisi_indo":  "Tahdzir adalah memperingatkan lawan bicara dari hal buruk agar dijauhi (dinashabkan dengan takdir احذر), sedangkan Ighra\u0027 adalah menganjurkan lawan bicara pada hal terpuji agar dilakukan (dinashabkan dengan takdir الزم).",
+        "contoh":  "Tahdzir: إِيَّاكَ وَالكَذِبَ! / النَّارَ النَّارَ! | Ighra\u0027: الصَّلَاةَ الصَّلَاةَ! / الصِّدْقَ وَالأَمَانَةَ!"
+    },
+    {
+        "id_istilah":  "IST-512",
+        "istilah_arab":  "الاِخْتِصَاصُ (الاِسْمُ المُخْتَصُّ)",
+        "bidang":  "Nahwu - Al-Manshubat",
+        "definisi_arab":  "اسْمٌ ظَاهِرٌ مَعْرِفَةٌ يَقَعُ بَعْدَ ضَمِيرِ المُتَكَلِّمِ غَالِبًا لِبَيَانِ المَقْصُودِ مِنْهُ وَقَصْرِ الحُكْمِ عَلَيْهِ، وَيُنْصَبُ بِفِعْلٍ مَحْذُوفٍ وُجُوبًا تَقْدِيرُهُ (أَخُصُّ).",
+        "definisi_indo":  "Isim zhahir ma\u0027rifah (ber-Al, mudhaf ke ma\u0027rifah, atau أيها/أيتها) yang jatuh setelah dhamir mutakallim untuk menjelaskan dan mengkhususkan siapa yang dimaksud oleh dhamir tersebut, dinashabkan oleh fi\u0027il (أَخُصُّ) yang wajib dibuang.",
+        "contoh":  "نَحْنُ — مَعَاشِرَ الأَنْبِيَاءِ — لَا نُورَثُ / نَحْنُ — العَرَبَ — أَسْخَى النَّاسِ"
+    },
+    {
+        "id_istilah":  "IST-601",
+        "istilah_arab":  "النَّزْعُ الخَافِضُ",
+        "bidang":  "Nahwu - Al-Majrurat",
+        "definisi_arab":  "حَذْفُ حَرْفِ الجَرِّ الأَصْلِيِّ وَنَصْبُ الاسْمِ المَجْرُورِ بَعْدَهُ بِالفِعْلِ اللَّازِمِ قَبْلَهُ.",
+        "definisi_indo":  "Pembuangan huruf jarr ashli setelah fi\u0027il lazim sehingga isim yang tadinya majrur menjadi manshub secara lafazh (المنصوب على نزع الخافض).",
+        "contoh":  "اخْتَرْتُكَ الرِّجَالَ (أَصْلُهُ: مِنَ الرِّجَالِ) وَقَوْلُهُ تَعَالَى: وَاخْتَارَ مُوسَى قَوْمَهُ سَبْعِينَ رَجُلًا (أَيْ: مِنْ قَوْمِهِ)."
+    },
+    {
+        "id_istilah":  "IST-602",
+        "istilah_arab":  "الإِضَافَةُ اللَّفْظِيَّةُ (غَيْرُ المَحْضَةِ)",
+        "bidang":  "Nahwu - Al-Majrurat",
+        "definisi_arab":  "إِضَافَةُ الوَصْفِ العَامِلِ (اسْمِ الفَاعِلِ أَوِ اسْمِ المَفْعُولِ أَوِ الصِّفَةِ المُشَبَّهَةِ) إِلَى مَعْمُولِهِ، وَلَا تُفِيدُ تَعْرِيفًا وَلَا تَخْصِيصًا بَلْ تُفِيدُ التَّخْفِيفَ فِي اللَّفْظِ.",
+        "definisi_indo":  "Penisbatan isim musytaq yang beramal kepada ma\u0027mulnya (fa\u0027il/maf\u0027ulnya), yang hanya bertujuan meringankan lafazh (membuang tanwin/nun) tanpa menjadikan mudhaf menjadi ma\u0027rifah.",
+        "contoh":  "هٰذَا رَجُلٌ حَسَنُ الخُلُقِ، وَقَوْلُهُ تَعَالَى: هَدْيًا بَالِغَ الكَعْبَةِ."
+    },
+    {
+        "id_istilah":  "IST-603",
+        "istilah_arab":  "صِيغَةُ مُنْتَهَى الجُمُوعِ",
+        "bidang":  "Nahwu - Al-Mamnu\u0027 minash Sharf",
+        "definisi_arab":  "كُلُّ جَمْعِ تَكْسِيرٍ وَقَعَ بَعْدَ أَلِفِ تَكْسِيرِهِ حَرْفَانِ أَوْ ثَلَاثَةُ أَحْرُفٍ أَوْسَطُهَا سَاكِنٌ، فَيُمْنَعُ مِنَ الصَّرْفِ لِعِلَّةٍ وَاحِدَةٍ.",
+        "definisi_indo":  "Bentuk puncak jama\u0027 taksir yang setelah alif taksirnya terdapat dua huruf (مَفَاعِل) atau tiga huruf yang huruf tengahnya sukun (مَفَاعِيل), sehingga tercegah dari tanwin karena satu \u0027illat.",
+        "contoh":  "مَسَاجِدُ، مَصَابِيحُ، قَوَاعِدُ، قَنَادِيلُ."
+    },
+    {
+        "id_istilah":  "IST-604",
+        "istilah_arab":  "النَّعْتُ السَّبَبِيُّ",
+        "bidang":  "Nahwu - At-Tawabi\u0027",
+        "definisi_arab":  "تَابِعٌ مُشْتَقٌّ يَدُلُّ عَلَى صِفَةٍ فِي اسْمٍ ظَاهِرٍ بَعْدَهُ لَهُ ارْتِبَاطٌ وَسَبَبٌ بِالمَنْعُوتِ، فَيَرْفَعُ ذٰلِكَ الاسْمَ الظَّاهِرَ وَيَلْزَمُ الإِفْرَادَ.",
+        "definisi_indo":  "Sifat yang menjelaskan keadaan isim zhahir setelahnya yang memiliki ikatan dhamir dengan man\u0027ut; ia merafa\u0027kan isim zhahir tersebut, selalu berbentuk mufrad, mengikuti man\u0027ut dalam i\u0027rab \u0026 ta\u0027rif/tankir, serta mengikuti isim setelahnya dalam tadzkir/ta\u0027nits.",
+        "contoh":  "رَبَّنَا أَخْرِجْنَا مِنْ هٰذِهِ القَرْيَةِ الظَّالِمِ أَهْلُهَا."
+    },
+    {
+        "id_istilah":  "IST-605",
+        "istilah_arab":  "القَطْعُ فِي النَّعْتِ",
+        "bidang":  "Nahwu - At-Tawabi\u0027",
+        "definisi_arab":  "عُدُولُ المُتَكَلِّمِ بِالنَّعْتِ عَنْ إِتْبَاعِهِ لِلْمَنْعُوتِ إِلَى الرَّفْعِ عَلَى إِضْمَارِ مُبْتَدَإٍ أَوِ النَّصْبِ عَلَى إِضْمَارِ فِعْلٍ لِغَرَضِ المَدْحِ أَوِ الذَّمِّ أَوِ التَّرَحُّمِ.",
+        "definisi_indo":  "Memutus sifat dari mengikuti i\u0027rab man\u0027utnya menjadi marfu\u0027 (sebagai khabar bagi mubtada\u0027 محذوف) atau manshub (sebagai maf\u0027ul bih bagi fi\u0027il محذوف) untuk tujuan pujian, celaan, atau belas kasih.",
+        "contoh":  "وَامْرَأَتُهُ حَمَّالَةَ الحَطَبِ (بِنَصْبِ حَمَّالَةَ عَلَى إِضْمَارِ أَذُمُّ)."
+    },
+    {
+        "id_istilah":  "IST-606",
+        "istilah_arab":  "بَدَلُ الاشْتِمَالِ",
+        "bidang":  "Nahwu - At-Tawabi\u0027",
+        "definisi_arab":  "بَدَلُ الشَّيْءِ مِمَّا يَشْتَمِلُ عَلَيْهِ مِنْ مَعْنًى أَوْ صِفَةٍ عَارِضَةٍ بِحَيْثُ لَا يَكُونُ جُزْءًا حَقِيقِيًّا مَادِّيًّا مِنْهُ، وَيَشْتَرِطُ اشْتِمَالَهُ عَلَى ضَمِيرٍ يَعُودُ عَلَى المُبْدَلِ مِنْهُ.",
+        "definisi_indo":  "Badal yang menunjukkan sifat atau makna abstrak yang tercakup pada Mubdal Minhu (bukan bagian fisik/materi), dan wajib mengandung dhamir yang kembali kepada Mubdal Minhu.",
+        "contoh":  "أَعْجَبَنِي العَالِمُ عِلْمُهُ، وَقَوْلُهُ تَعَالَى: يَسْأَلُونَكَ عَنِ الشَّهْرِ الحَرَامِ قِتَالٍ فِيهِ."
+    },
+    {
+        "id_istilah":  "IST-607",
+        "istilah_arab":  "كِنَايَاتُ العَدَدِ (Kinayatul \u0027Adad)",
+        "bidang":  "Nahwu",
+        "definisi_arab":  "أَلْفَاظٌ تَدُلُّ عَلَى مِقْدَارٍ غَيْرِ مُعَيَّنٍ مِنَ الأَعْدَادِ مِثْلُ: كَمْ، كَأَيِّنْ، كَذَا، بِضْع، نَيِّف.",
+        "definisi_indo":  "Lafazh-lafazh yang mengindikasikan kuantitas bilangan tertentu secara samar/metaforis tanpa menyebutkan nominal angka pastinya.",
+        "contoh":  "كَمْ كِتَابًا عِنْدَكَ؟، كَمْ مِنْ فِئَةٍ!، بِضْعَةُ رِجَالٍ"
+    },
+    {
+        "id_istilah":  "IST-608",
+        "istilah_arab":  "التَّعَلُّقُ فِي شِبْهِ الجُمْلَةِ (At-Ta\u0027alluq)",
+        "bidang":  "Nahwu",
+        "definisi_arab":  "ارْتِبَاطُ مَعْنَى الجَارِّ وَالمَجْرُورِ أَوِ الظَّرْفِ بِفِعْلٍ أَوْ شِبْهِ فِعْلٍ لِإِتْمَامِ المَعْنَى الدَّلَالِيِّ.",
+        "definisi_indo":  "Keterikatan semantis dan gramatikal antara Syibhul Jumlah (Jar-Majrur atau Zharaf) dengan kata kerja (fi\u0027il) atau isim yang menyerupai fi\u0027il dalam suatu kalimat.",
+        "contoh":  "كَتَبْتُ بِالقَلَمِ (بِالقَلَمِ متعلق بـ كَتَبَ)"
+    },
+    {
+        "id_istilah":  "IST-609",
+        "istilah_arab":  "مَحَلُّ الإِعْرَابِ لِلْجُمَلِ (Mahallul I\u0027rab)",
+        "bidang":  "Nahwu",
+        "definisi_arab":  "المَوْقِعُ الإِعْرَابِيُّ الَّذِي تَسُدُّ فِيهِ الجُمْلَةُ مَسَدَّ كَلِمَةٍ مُفْرَدَةٍ فَتَأْخُذُ حُكْمَهَا رَفْعًا أَوْ نَصْبًا أَوْ جَرًّا أَوْ جَزْمًا.",
+        "definisi_indo":  "Kedudukan gramatikal di mana satu kalimat utuh menempati posisi satu kata tunggal sehingga berstatus hukum rafa\u0027, nashab, jarr, atau jazm.",
+        "contoh":  "زَيْدٌ (يَكْتُبُ) -\u003e di mahal rafa\u0027 khabar mubtada\u0027"
+    }
+]

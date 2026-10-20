@@ -1,0 +1,199 @@
+{
+  "bab": [
+    {
+      "id_bab": "BAB-05",
+      "urutan": 5,
+      "kategori": "Sharaf & Isnad Fi'il",
+      "level": "Menengah",
+      "judul_arab": "إِسْنَادُ الفِعْلِ الصَّحِيحِ (السَّالِمِ وَالمَهْمُوزِ وَالمُضَعَّفِ) إِلَى الضَّمَائِرِ",
+      "judul_indo": "Penyandaran Fi'il Shahih (Salim, Mahmuz, Mudha'af) ke Dhamir Rafa' Bariz dan Hukum Fakkul Idgham",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi (Khaled Abdul Aziz), Bab Isnadul Af'al ila Adh-Dhama'ir, hlm. 75-88",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah (Syaikh Musthafa Al-Ghalayini), Juz 1, Bab Isnadul Fi'li Ash-Shahih ilad Dhama'ir wa Ahkamul Idgham, hlm. 179-198",
+      "ringkasan_cakupan": "Kaidah lengkap penyandaran fi'il madhi, mudhari', dan amr dari jenis shahih (salim, mahmuz, mudha'af) kepada dhamir rafa' mutaharrik (Ta' Fa'il, Na, Nun Niswah) dan sakin (Alif Itsnain, Wawu Jama'ah, Ya' Mukhathabah), serta hukum wajib, jaiz, dan mumtani' fakkul idgham pada mudha'af.",
+      "estimasi_jam_belajar": 6
+    },
+    {
+      "id_bab": "BAB-06",
+      "urutan": 6,
+      "kategori": "Sharaf & Isnad Fi'il",
+      "level": "Menengah - Lanjut",
+      "judul_arab": "إِسْنَادُ الفِعْلِ المُعْتَلِّ (المِثَالِ وَالأَجْوَفِ وَالنَّاقِصِ وَاللَّفِيفِ) إِلَى الضَّمَائِرِ",
+      "judul_indo": "Penyandaran Fi'il Mu'tal (Mitsal, Ajwaf, Naqish, Lafif) ke Dhamir Rafa' Bariz",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi (Khaled Abdul Aziz), Bab Isnadul Mu'tall, hlm. 89-106",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah (Syaikh Musthafa Al-Ghalayini), Juz 1, Bab Isnadul Fi'li Al-Mu'tall ilad Dhama'ir, hlm. 199-232",
+      "ringkasan_cakupan": "Perubahan morfologis pada fi'il mu'tal saat bersambung dengan dhamir: penghapusan wawu pada mudhari' mitsal, pembuangan 'ain pada ajwaf saat sukun karena bertemu dhamir mutaharrik beserta penentuan harakat fa' fi'il (dhammah/kasrah), serta kembalinya lam kalimah pada naqish ke asalnya (wawu/ya') atau pembuangannya saat bertemu wawu jama'ah/ya' mukhathabah.",
+      "estimasi_jam_belajar": 8
+    },
+    {
+      "id_bab": "BAB-07",
+      "urutan": 7,
+      "kategori": "Sharaf & Uslub Taukid",
+      "level": "Menengah - Lanjut",
+      "judul_arab": "تَوْكِيدُ الفِعْلِ بِنُونِ التَّوْكِيدِ الثَّقِيلَةِ وَالخَفِيفَةِ",
+      "judul_indo": "Hukum Penguatan Fi'il dengan Nun Taukid Tsaqilah dan Khafifah",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi (Khaled Abdul Aziz), Bab Taukidul Af'al bin-Nun, hlm. 107-118",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah (Syaikh Musthafa Al-Ghalayini), Juz 1, Bab Ahkamu Nunait Taukid, hlm. 233-252",
+      "ringkasan_cakupan": "Hukum penegasan fi'il dengan nun taukid tsaqilah (نَّ) dan khafifah (نْ): fi'il amr (jaiz mutlak), fi'il madhi (mumtani'/terlarang mutlak), dan fi'il mudhari' (wajib, qarib minal wajib, katsir, qalil, mumtani'), serta perubahan struktur akhir fi'il mufrad, mutsanna, dan jama'.",
+      "estimasi_jam_belajar": 6
+    }
+  ],
+  "materi": [
+    {
+      "id_materi": "MAT-0501",
+      "id_bab": "BAB-05",
+      "sub_topik_arab": "إِسْنَادُ الفِعْلِ السَّالِمِ وَالمَهْمُوزِ إِلَى ضَمَائِرِ الرَّفْعِ",
+      "sub_topik_indo": "Kaidah Penyandaran Fi'il Salim dan Mahmuz ke Dhamir Rafa'",
+      "kaidah_arab": "الفِعْلُ السَّالِمُ وَالمَهْمُوزُ لَا يَحْدُثُ فِيهِمَا تَغْيِيرٌ عِنْدَ الإِسْنَادِ إِلَى ضَمَائِرِ الرَّفْعِ البَارِزَةِ، مُتَحَرِّكَةً كَانَتْ أَوْ سَاكِنَةً، إِلَّا مَا وَرَدَ مِنْ حَذْفِ هَمْزَةِ (أَخَذَ، أَكَلَ، أَمَرَ) فِي الأَمْرِ وُجُوبًا أَوْ جَوَازًا.",
+      "penjelasan_indo": "Fi'il Salim (seperti كَتَبَ، يَكْتُبُ، اكْتُبْ) dan Mahmuz (seperti سَأَلَ، قَرَأَ) tidak mengalami perubahan susunan huruf asli ketika disandarkan ke dhamir manapun. Pengecualian khusus terjadi pada fi'il amr dari أَخَذَ dan أَكَلَ yang hamzahnya wajib dibuang secara sama'i menjadi خُذْ dan كُلْ. Adapun أَمَرَ boleh dibuang (مُرْ) jika di awal kalimat, dan boleh dipertahankan (وَأْمُرْ) jika didahului wawu atau fa'.",
+      "rincian_hukum_dan_syarat": "1. Dhamir Rafa' Mutaharrik (Ta' Fa'il, Na, Nun Niswah): Madhi dimabnikan di atas sukun (كَتَبْتُ، كَتَبْنَا، كَتَبْنَ). 2. Dhamir Rafa' Sakin (Alif Itsnain, Wawu Jama'ah, Ya' Mukhathabah): Madhi bersambung Wawu mabni di atas dhammah (كَتَبُوا). 3. Pada Fi'il Mudhari' dan Amr, bersambungnya Alif Itsnain, Wawu Jama'ah, dan Ya' Mukhathabah menjadikannya Al-Af'al Al-Khamsah (يَكْتُبَانِ، يَكْتُبُونَ، تَكْتُبِينَ).",
+      "rumus_ringkas": "Salim & Mahmuz = Tidak ada perubahan huruf | Pengecualian Amr: أَخَذَ -> خُذْ, أَكَلَ -> كُلْ, أَمَرَ -> مُرْ / وَأْمُرْ",
+      "tanbihat_dan_khilaf": "Syaikh Musthafa Al-Ghalayini dalam Jami'ud Durus mencatat bahwa fi'il سَأَلَ pada bentuk amr memiliki dua lughah: اسْأَلْ (mengikuti qiyas) dan سَلْ (dengan pemindahan harakat hamzah ke sin lalu hamzah dibuang, seperti dalam QS. Al-Baqarah: 211)."
+    },
+    {
+      "id_materi": "MAT-0502",
+      "id_bab": "BAB-05",
+      "sub_topik_arab": "أَحْكَامُ فَكِّ الإِدْغَامِ وَوُجُوبِهِ فِي الفِعْلِ المُضَعَّفِ",
+      "sub_topik_indo": "Hukum Wajib, Jaiz, dan Mumtani' Fakkul Idgham pada Fi'il Mudha'af",
+      "kaidah_arab": "يَجِبُ فَكُّ الإِدْغَامِ فِي المُضَعَّفِ إِذَا اتَّصَلَ بِهِ ضَمِيرُ رَفْعٍ مُتَحَرِّكٌ (مَدَدْتُ، مَدَدْنَا، يَمْدُدْنَ، امْدُدْنَ). وَيَجِبُ الإِدْغَامُ إِذَا اتَّصَلَ بِهِ ضَمِيرُ رَفْعٍ سَاكِنٌ أَوْ كَانَ الحَرْفُ الثَّانِي مُتَحَرِّكًا (مَدَّ، مَدَّا، مَدُّوا). وَيَجُوزُ الفَكُّ وَالإِدْغَامُ فِي مَوْضِعَيْنِ: عِنْدَ جَزْمِ المُضَارِعِ بِالسُّكُونِ (لَمْ يَمُدَّ / لَمْ يَمْدُدْ)، وَفِي فِعْلِ الأَمْرِ لِلْمُفْرَدِ المُذَكَّرِ (مُدَّ / امْدُدْ).",
+      "penjelasan_indo": "Fi'il Mudha'af Tsulatsi (seperti مَدَّ، فَرَّ، عَضَّ) memiliki dua huruf sejenis di akhir. 1. Wajib Fakk (diurai menjadi dua huruf terpisah): saat bertemu dhamir rafa' mutaharrik karena huruf kedua menjadi sukun asli (مَدَدْتُ). 2. Wajib Idgham (dilebur bertasydid): saat huruf kedua berharakat atau bertemu dhamir rafa' sakin (مَدَّا، مَدُّوا). 3. Jaiz Wajhain (boleh fakk boleh idgham): saat mudhari' majzum dengan sukun (لَمْ يَرُدَّ / لَمْ يَرْدُدْ) dan amr mufrad mudzakkar (رُدَّ / ارْدُدْ).",
+      "rincian_hukum_dan_syarat": "Kaidah Harakat Idgham pada Majzum: Jika memilih idgham saat majzum (لَمْ يَمُدَّ), harakat huruf kedua adalah fathah (karena paling ringan), atau mengikuti harakat 'ain kalimah (dhammah pada يَمُدُّ -> لَمْ يَمُدُّ), atau kasrah karena kaidah iltiqa'us sakinain.",
+      "rumus_ringkas": "+ Dhamir Mutaharrik = Wajib Fakk | + Dhamir Sakin = Wajib Idgham | Majzum Sukun & Amr Mufrad = Boleh Fakk / Idgham",
+      "tanbihat_dan_khilaf": "Dalam Al-Qur'an terdapat ragam bacaan keduanya: dialek Hijaz lebih memilih fakk (وَاغْضُضْ مِنْ صَوْتِكَ), sedangkan dialek Tamim lebih memilih idgham (وَمَنْ يَرْتَدَّ مِنْكُمْ)."
+    },
+    {
+      "id_materi": "MAT-0601",
+      "id_bab": "BAB-06",
+      "sub_topik_arab": "إِسْنَادُ الفِعْلِ المِثَالِ وَالأَجْوَفِ إِلَى الضَّمَائِرِ",
+      "sub_topik_indo": "Penyandaran Fi'il Mitsal dan Ajwaf ke Dhamir Rafa'",
+      "kaidah_arab": "المِثَالُ الوَاوِيُّ تُحْذَفُ فَاؤُهُ فِي المُضَارِعِ وَالأَمْرِ إِذَا كَانَتْ عَيْنُهُ مَكْسُورَةً فِي المُضَارِعِ (وَعَدَ - يَعِدُ - عِدْ). وَالأَجْوَفُ تُحْذَفُ عَيْنُهُ إِذَا سَكَنَتْ لَامُهُ لِاتِّصَالِهِ بِضَمِيرِ رَفْعٍ مُتَحَرِّكٍ (قُلْتُ، بِعْتُ، خِفْتُ) لِمَنْعِ التِقَاءِ السَّاكِنَيْنِ.",
+      "penjelasan_indo": "1. Fi'il Mitsal Wawi: Huruf wawu wajib dibuang pada mudhari' dan amr jika wazannya فَعَلَ - يَفْعِلُ (وَعَدَ -> يَعِدُ -> عِدْ) karena wawu jatuh di antara ya' fathah dan kasrah. Jika 'ain mudhari'-nya fathah atau dhammah, wawu tetap ada (وَجِلَ -> يَوْجَلُ). 2. Fi'il Ajwaf: Ketika disandarkan ke dhamir rafa' mutaharrik (Madhi), lam kalimahnya disukunkan sehingga 'ain kalimah (alif) dibuang demi menghindari iltiqa' sakinain. Fa' fi'il diberi dhammah jika asalnya wawu (قَالَ -> قُلْتُ), dan diberi kasrah jika asalnya ya' atau kasrah 'ain (بَاعَ -> بِعْتُ، خَافَ -> خِفْتُ).",
+      "rincian_hukum_dan_syarat": "Penentuan Harakat Fa' pada Ajwaf Madhi: (a) Bab 1 (فَعَلَ-يَفْعُلُ asalnya wawu): fa' kalimah diberi dhammah (صُمْتُ، قُمْتُ). (b) Bab 2 (فَعَلَ-يَفْعِلُ asalnya ya'): fa' kalimah diberi kasrah (بِعْتُ، سِرْتُ). (c) Bab 4 (فَعِلَ-يَفْعَلُ): fa' kalimah diberi kasrah sebagai penunjuk harakat kasrah aslinya (خِفْتُ، نِمْتُ).",
+      "rumus_ringkas": "Mitsal: Wawu buang jika mudhari' kasrah (وَعَدَ -> يَعِدُ) | Ajwaf: Buang tengah + dhamir mutaharrik (قَالَ -> قُلْتُ, بَاعَ -> بِعْتُ)",
+      "tanbihat_dan_khilaf": "Nahwu Tathbiqi menegaskan: Fi'il Ajwaf saat bertemu dhamir rafa' sakin (قَالَا، قَالُوا) huruf tengahnya TIDAK DIBUANG karena lam kalimahnya tetap berharakat (fathah/dhammah) sehingga tidak terjadi iltiqa' sakinain."
+    },
+    {
+      "id_materi": "MAT-0602",
+      "id_bab": "BAB-06",
+      "sub_topik_arab": "إِسْنَادُ الفِعْلِ النَّاقِصِ وَاللَّفِيفِ إِلَى الضَّمَائِرِ",
+      "sub_topik_indo": "Penyandaran Fi'il Naqish dan Lafif ke Dhamir Rafa'",
+      "kaidah_arab": "النَّاقِصُ إِذَا اتَّصَلَ بِوَاوِ الجَمَاعَةِ أَوْ يَاءِ المُخَاطَبَةِ حُذِفَتْ لَامُهُ مُطْلَقًا (دَعَوْا، يَدْعُونَ، يَرْمُونَ، تَرْمِينَ). وَإِذَا اتَّصَلَ بِتَاءِ الفَاعِلِ أَوْ نُونِ النِّسْوَةِ رُدَّتْ أَلِفُهُ إِلَى أَصْلِهَا (دَعَوْتُ، رَمَيْتُ). وَاللَّفِيفُ المَفْرُوقُ يُعَامَلُ فِي فَائِهِ مُعَامَلَةَ المِثَالِ وَفِي لَامِهِ مُعَامَلَةَ النَّاقِصِ (وَقَى - يَقِي - قِ).",
+      "penjelasan_indo": "Fi'il Naqish (berakhir huruf 'illat) memiliki perubahan paling mendalam: 1. Jika bertemu Wawu Jama'ah atau Ya' Mukhathabah, lam kalimah wajib dibuang. Jika huruf sebelum lam yang dibuang berharakat fathah, fathah tersebut dipertahankan (سَعَوْا، تَرْضَيْنَ); jika dhammah/kasrah, disesuaikan dengan wawu (dhammah: دَعَوْا -> يَدْعُونَ) atau ya' (kasrah: تَدْعِينَ). 2. Jika Alif Naqish bertemu dhamir mutaharrik, alif dikembalikan ke asalnya: Wawu pada دَعَا -> دَعَوْتُ, atau Ya' pada رَمَى -> رَمَيْتُ.",
+      "rincian_hukum_dan_syarat": "Amr Fi'il Lafif Mafruq: Huruf fa' dibuang karena mitsal, dan huruf lam dibuang karena jazm/bina' amr naqish. Akibatnya tersisa 1 huruf saja: وَقَى -> قِ, وَفَى -> فِ, وَعَى -> عِ. Ketika waqaf wajib ditambah Ha' Sakt (قِهْ، فِهْ، عِهْ).",
+      "rumus_ringkas": "Naqish + Wawu/Ya' = Lam Dibuang (يَدْعُونَ، تَرْمِينَ) | Naqish + Ta'/Na/Nun = Alif balik ke asal (دَعَوْتُ، رَمَيْتُ) | Lafif Mafruq Amr = 1 huruf (قِ، فِ)",
+      "tanbihat_dan_khilaf": "Jami'ud Durus mencatat kasus unik: Bentuk antum (أَنْتُمْ) dan antunna (أَنْتُنَّ) pada mudhari' fi'il naqish yang berakar wawu lafaznya tampak sama persis tetapi beda i'rab! Contoh: أَنْتُمْ تَدْعُونَ (wawu = fa'il, lam kalimah terbuang, mu'rab marfu' tsubut nun), sedangkan أَنْتُنَّ تَدْعُونَ (wawu = lam kalimah asli, nun = fa'il nun niswah, mabni 'alas sukun!)."
+    },
+    {
+      "id_materi": "MAT-0701",
+      "id_bab": "BAB-07",
+      "sub_topik_arab": "أَحْكَامُ تَوْكِيدِ الفِعْلِ بِنُونِ التَّوْكِيدِ (الوُجُوبُ وَالجَوَازُ وَالمَنِعُ)",
+      "sub_topik_indo": "Kondisi Hukum Taukid Fi'il Mudhari' dengan Nun Taukid",
+      "kaidah_arab": "يَجِبُ تَوْكِيدُ المُضَارِعِ بِالنُّونِ إِذَا كَانَ: (1) جَوَابًا لِقَسَمٍ، (2) مُثْبَتًا، (3) مُسْتَقْبَلًا، (4) مُتَّصِلًا بِاللَّامِ غَيْرَ مَفْصُولٍ عَنْهَا (وَتَاللَّهِ لَأَكِيدَنَّ أَصْنَامَكُمْ). وَيَمْتَنِعُ إِذَا فَقَدَ شَرْطًا مِنْهَا. وَيَكُونُ قَرِيبًا مِنَ الوَاجِبِ بَعْدَ (إِمَّا) الشَّرْطِيَّةِ، وَكَثِيرًا بَعْدَ أَدَوَاتِ الطَّلَبِ (الأَمْرِ، النَّهْيِ، التَّمَنِّي، الاسْتِفْهَامِ).",
+      "penjelasan_indo": "Penegasan Fi'il dengan Nun Taukid (Tsaqilah نَّ bertasydid atau Khafifah نْ sukun): 1. Fi'il Madhi: MAMTANI' (terlarang mutlak) karena maknanya masa lalu sedangkan nun taukid untuk masa depan. 2. Fi'il Amr: JAIZ (boleh secara mutlak tanpa syarat, contoh: اكْتُبْ atau اكْتُبَنَّ). 3. Fi'il Mudhari' memiliki 5 hukum: (a) Wajib: bila memenuhi 4 syarat sekaligus (Jawab Qasam, Mutsbat, Istiqbal, Mubasyir dengan Lam Qasam). (b) Qarib minal Wajib: setelah إِنْ Syarthiyyah yang bersambung مَا (إِمَّا يَبْلُغَنَّ). (c) Katsir: setelah adawat thalab (لَا تَحْسَبَنَّ). (d) Qalil: setelah La Nafiyah atau Ma Za'idah. (e) Mumtani': jika kehilangan salah satu syarat wajib (misal ada pemisah antara lam dan fi'il seperti: وَلَسَوْفَ يُعْطِيكَ).",
+      "rincian_hukum_dan_syarat": "Syarat I'rab Bina' Mudhari' dengan Nun Taukid: Fi'il Mudhari' HANYA MABNI 'ALA FATHI jika bersambung LANGSUNG (Mubasyirah) tanpa pemisah. Jika dipisahkan secara lafaz atau taqdir oleh Alif Itsnain, Wawu Jama'ah, atau Ya' Mukhathabah, fi'il mudhari' TETAP MU'RAB (contoh: لَتُبْلَوُنَّ، وَلَا تَتَّبِعَانِّ).",
+      "rumus_ringkas": "Madhi = Mumtani' | Amr = Jaiz Mutlak | Mudhari': Wajib (Sumpah + Lam + Mutsbat + Istiqbal) | Mudhari' + Nun Langsung = Mabni Fathah",
+      "tanbihat_dan_khilaf": "Dalam mushaf Al-Qur'an, Nun Taukid Khafifah ditulis dengan fathatain (alif) pada dua tempat: (1) وَلَيَكُونًا مِنَ الصَّاغِرِينَ (QS. Yusuf: 32) dan (2) لَنَسْفَعًا بِالنَّاصِيَةِ (QS. Al-'Alaq: 15). Saat waqaf, ia dibaca mad 'iwadh (وَلَيَكُونَا، لَنَسْفَعَا)."
+    }
+  ],
+  "irab": [
+    {
+      "id_contoh": "IRB-0501",
+      "id_bab": "BAB-05",
+      "id_materi": "MAT-0502",
+      "jenis_dalil": "Al-Qur'an (QS. Al-Baqarah: 217)",
+      "sumber_dalil": "An-Nahwu At-Tathbiqi, Bab Al-Fi'l Al-Mudha'af",
+      "kalimat_arab": "وَمَنْ يَرْتَدِدْ مِنْكُمْ عَنْ دِينِهِ فَيَمُتْ وَهُوَ كَافِرٌ",
+      "terjemahan_indo": "Dan barangsiapa di antara kalian yang murtad dari agamanya lalu dia mati dalam keadaan kafir...",
+      "kata_kunci": "يَرْتَدِدْ",
+      "irab_arab": "يَرْتَدِدْ: فِعْلٌ مُضَارِعٌ فِعْلُ الشَّرْطِ مَجْزُومٌ بِـ (مَنْ) وَعَلَامَةُ جَزْمِهِ السُّكُونُ الظَّاهِرُ، وَفُكَّ فِيهِ الإِدْغَامُ عَلَى لُغَةِ أَهْلِ الحِجَازِ، وَالفَاعِلُ ضَمِيرٌ مُسْتَتِرٌ تَقْدِيرُهُ هُوَ.",
+      "penjelasan_irab_indo": "Ayat ini merupakan syahid pembuktian dialek Hijaz yang memilih fakkul idgham (يَرْتَدِدْ dengan dua dal) pada fi'il mudha'af saat majzum sukun, berbeda dengan dialek Tamim yang membaca idgham (يَرْتَدَّ) sebagaimana pada Surah Al-Ma'idah: 54."
+    },
+    {
+      "id_contoh": "IRB-0601",
+      "id_bab": "BAB-06",
+      "id_materi": "MAT-0601",
+      "jenis_dalil": "Al-Qur'an (QS. Maryam: 26)",
+      "sumber_dalil": "Jami'ud Durus Al-'Arabiyyah, Juz 1, Isnadul Ajwaf",
+      "kalimat_arab": "فَقُولِي إِنِّي نَذَرْتُ لِلرَّحْمَنِ صَوْمًا فَلَنْ أُكَلِّمَ اليَوْمَ إِنْسِيًّا",
+      "terjemahan_indo": "Maka katakanlah: 'Sesungguhnya aku telah bernazar puasa untuk Tuhan Yang Maha Pengasih, maka aku tidak akan berbicara dengan seorang manusia pun hari ini.'",
+      "kata_kunci": "قُولِي / نَذَرْتُ",
+      "irab_arab": "قُولِي: فِعْلُ أَمْرٍ مَبْنِيٌّ عَلَى حَذْفِ النُّونِ لِاتِّصَالِهِ بِيَاءِ المُخَاطَبَةِ، وَاليَاءُ ضَمِيرٌ مُتَّصِلٌ فِي مَحَلِّ رَفْعٍ فَاعِلٌ، وَلَمْ تُحْذَفْ عَيْنُهُ (الوَاوُ) لِتَحَرُّكِ اللَّامِ. نَذَرْتُ: فِعْلٌ مَاضٍ مَبْنِيٌّ عَلَى السُّكُونِ لِاتِّصَالِهِ بِتَاءِ الفَاعِلِ.",
+      "penjelasan_irab_indo": "Pada kata قُولِي (fi'il ajwaf), huruf Wawu ('ain kalimah) tetap ada dan tidak dibuang karena lam kalimahnya berharakat kasrah untuk ya' mukhathabah sehingga tidak bertemu dua sukun. Ini mempertegas kaidah bahwa 'ain ajwaf hanya dibuang jika lam kalimahnya sukun."
+    },
+    {
+      "id_contoh": "IRB-0701",
+      "id_bab": "BAB-07",
+      "id_materi": "MAT-0701",
+      "jenis_dalil": "Al-Qur'an (QS. Al-Anbiya: 57)",
+      "sumber_dalil": "An-Nahwu At-Tathbiqi, Bab Taukidul Mudhari'",
+      "kalimat_arab": "وَتَاللَّهِ لَأَكِيدَنَّ أَصْنَامَكُمْ بَعْدَ أَنْ تُوَلُّوا مُدْبِرِينَ",
+      "terjemahan_indo": "Demi Allah, sungguh aku akan melakukan tipu daya terhadap berhala-berhalamu setelah kamu pergi meninggalkannya.",
+      "kata_kunci": "لَأَكِيدَنَّ",
+      "irab_arab": "اللَّامُ: وَاقِعَةٌ فِي جَوَابِ القَسَمِ حَرْفٌ مَبْنِيٌّ عَلَى الفَتْحِ. أَكِيدَنَّ: فِعْلٌ مُضَارِعٌ مَبْنِيٌّ عَلَى الفَتْحِ لِاتِّصَالِهِ بِنُونِ التَّوْكِيدِ الثَّقِيلَةِ مُبَاشَرَةً، وَالنُّونُ حَرْفُ تَوْكِيدٍ لَا مَحَلَّ لَهُ مِنَ الإِعْرَابِ، وَالفَاعِلُ ضَمِيرٌ مُسْتَتِرٌ وُجُوبًا تَقْدِيرُهُ أَنَا.",
+      "penjelasan_irab_indo": "Fi'il mudhari' أَكِيدَنَّ wajib ditegaskan dengan nun taukid karena terkumpul 4 syarat wajib: jatuh sebagai jawab qasam (وَتَاللَّهِ), berbentuk kalimat positif (mutsbat), bermakna masa depan (istiqbal), dan bersambung langsung tanpa pemisah dengan Lam Qasam. Karena nun bersambung mubasyirah, fi'il ini dimabnikan di atas fathah."
+    }
+  ],
+  "soal": [
+    {
+      "id_soal": "SOL-0501",
+      "id_bab": "BAB-05",
+      "tingkat_kesulitan": "Menengah",
+      "pertanyaan": "Bagaimanakah bentuk fi'il madhi mudha'af (شَدَّ) ketika disandarkan kepada dhomir (أَنْتُمْ) dan (أَنْتُنَّ)?",
+      "opsi_a": "أَنْتُمْ شَدَدْتُمْ dan أَنْتُنَّ شَدَدْتُنَّ (keduanya wajib fakkul idgham)",
+      "opsi_b": "أَنْتُمْ شَدُّوا dan أَنْتُنَّ شَدَدْنَ",
+      "opsi_c": "أَنْتُمْ شَدَّتُمْ dan أَنْتُنَّ شَدَّتُنَّ",
+      "opsi_d": "أَنْتُمْ شَدَدْتُمْ (fakk) dan أَنْتُنَّ شَدَّتُنَّ (idgham)",
+      "jawaban_benar": "A",
+      "pembahasan": "Baik أَنْتُمْ (Ta' Fa'il mudzakkar) maupun أَنْتُنَّ (Ta' Fa'il muannats) merupakan dhamir rafa' mutaharrik. Ketika fi'il mudha'af bertemu dhamir rafa' mutaharrik, huruf kedua wajib sukun sehingga idgham wajib diurai (wajib fakk): شَدَدْتُمْ dan شَدَدْتُنَّ."
+    },
+    {
+      "id_soal": "SOL-0601",
+      "id_bab": "BAB-06",
+      "tingkat_kesulitan": "Mahir",
+      "pertanyaan": "Perhatikan dua kalimat berikut: (1) الرِّجَالُ يَدْعُونَ إِلَى الخَيْرِ dan (2) النِّسَاءُ يَدْعُونَ إِلَى الخَيْرِ. Apakah status i'rab dan fungsi huruf Wawu pada kedua kata (يَدْعُونَ)?",
+      "opsi_a": "Keduanya mu'rab marfu' dengan tsubutun nun, dan Wawu adalah wawu jama'ah fa'il",
+      "opsi_b": "Kalimat (1) Mu'rab marfu' tsubut nun (Wawu = Fa'il); Kalimat (2) Mabni 'alas sukun (Wawu = Lam kalimah asli, Nun = Fa'il)",
+      "opsi_c": "Kalimat (1) Mabni 'alas sukun; Kalimat (2) Mu'rab tsubut nun",
+      "opsi_d": "Keduanya mabni di atas sukun karena bersambung nun niswah",
+      "jawaban_benar": "B",
+      "pembahasan": "Pada الرِّجَالُ يَدْعُونَ, wazannya يَفْعُونَ (lam kalimah wawu asli dibuang karena bertemu wawu jama'ah fa'il, mu'rab marfu' tsubut nun). Pada النِّسَاءُ يَدْعُونَ, wazannya يَفْعُلْنَ (wawu adalah lam kalimah asli yang tetap utuh, dan nun adalah dhamir nun niswah fa'il, fi'il mabni 'ala sukun)."
+    },
+    {
+      "id_soal": "SOL-0701",
+      "id_bab": "BAB-07",
+      "tingkat_kesulitan": "Mahir",
+      "pertanyaan": "Mengapa fi'il mudhari' pada firman Allah Ta'ala (لَتُبْلَوُنَّ فِي أَمْوَالِكُمْ) berstatus MU'RAB dan bukan MABNI meskipun bersambung dengan Nun Taukid Tsaqilah?",
+      "opsi_a": "Karena didahului oleh Lam Taukid",
+      "opsi_b": "Karena nun taukidnya tidak bersambung secara mubasyir (terpisah oleh Wawu Jama'ah yang mahdzufah secara taqdir)",
+      "opsi_c": "Karena fi'il tersebut bermakna masa lampau",
+      "opsi_d": "Karena fi'il tersebut berakar dari fi'il shahih salim",
+      "jawaban_benar": "B",
+      "pembahasan": "Kaidah fundamental Nahwu: Fi'il mudhari' hanya mabni jika bersambung LANGSUNG (mubasyirah) dengan Nun Taukid. Pada لَتُبْلَوُنَّ, asalnya adalah تُبْلَوْنَنَّ, di mana ada Wawu Jama'ah fa'il yang memisahkan antara fi'il dengan nun taukid. Wawu dibuang karena iltiqa' sakinain tetapi keberadaannya secara taqdir membatalkan status bina', sehingga fi'il tetap mu'rab (marfu' dengan hadzfun nun li-tawali al-amtsal)."
+    }
+  ],
+  "istilah": [
+    {
+      "id_istilah": "IST-107",
+      "istilah_arab": "إِسْنَادُ الفِعْلِ (Isnadul Fi'li)",
+      "bidang": "Sharaf",
+      "definisi_arab": "ضَمُّ الفِعْلِ إِلَى الضَّمَائِرِ المَرْفُوعَةِ البَارِزَةِ وَمَا يَتَرَتَّبُ عَلَيْهِ مِنْ أَحْكَامِ الصِّحَّةِ وَالإِعْلَالِ وَالإِدْغَامِ.",
+      "definisi_indo": "Proses konjugasi penyandaran kata kerja kepada dhamir-dhamir rafa' bariz (mutaharrik maupun sakin) beserta kaidah perubahan morfologis yang menyertainya.",
+      "contoh": "نَصَرْتُ، نَصَرَا، نَصَرُوا، نَصَرْنَ"
+    },
+    {
+      "id_istilah": "IST-108",
+      "istilah_arab": "فَكُّ الإِدْغَامِ (Fakkul Idgham)",
+      "bidang": "Sharaf",
+      "definisi_arab": "الفَصْلُ بَيْنَ الحَرْفَيْنِ المُتَمَاثِلَيْنِ فِي الكَلِمَةِ المُضَعَّفَةِ وَنُطْقُ كُلٍّ مِنْهُمَا مُنْفَصِلًا بِحَرَكَتِهِ أَوْ سُكُونِهِ.",
+      "definisi_indo": "Penguraian dua huruf sejenis pada kata yang bertasydid sehingga masing-masing dilafalkan terpisah.",
+      "contoh": "مَدَّ -> مَدَدْتُ، رَدَّ -> ارْدُدْ"
+    },
+    {
+      "id_istilah": "IST-109",
+      "istilah_arab": "نُونُ التَّوْكِيدِ المُبَاشِرَةُ وَغَيْرُ المُبَاشِرَةِ",
+      "bidang": "Nahwu & Sharaf",
+      "definisi_arab": "المُبَاشِرَةُ مَا اتَّصَلَتْ بِآخِرِ المُضَارِعِ دُونَ فَاصِلٍ فَيُبْنَى عَلَى الفَتْحِ، وَغَيْرُ المُبَاشِرَةِ مَا فُصِلَ بَيْنَهَا وَبَيْنَ الفِعْلِ بِأَلِفِ اثْنَيْنِ أَوْ وَاوِ جَمَاعَةٍ أَوْ يَاءِ مُخَاطَبَةٍ فَيَظَلُّ مُعْرَبًا.",
+      "definisi_indo": "Nun taukid mubasyirah adalah yang melekat langsung di akhir fi'il sehingga memabnikannya di atas fathah; ghairu mubasyirah terpisah oleh alif, wawu, atau ya' dhamir sehingga fi'il tetap mu'rab.",
+      "contoh": "لَيَكْتُبَنَّ (Mabni) vs لَتَكْتُبَانِّ، لَتَكْتُبُنَّ، لَتَكْتُبِنَّ (Mu'rab)"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": 108,
+  "name_ar": "الكوثر",
+  "name_id": "Al-Kautsar",
+  "ayat_count": 3,
+  "type": "Makkiyyah",
+  "juz": 30,
+  "total_kata": 10,
+  "ayat": [
+    {
+      "surah_id": 108,
+      "surah_name": "Al-Kautsar",
+      "surah_arab": "الكوثر",
+      "ayat_id": 1,
+      "teks_ayat_arab": "إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ",
+      "total_kata": 3,
+      "kata_per_kata": [
+        {
+          "id_kata": "108:1:1",
+          "kata_arab": "إِنَّآ",
+          "status_hukum": "Mabni",
+          "kedudukan_irab": "إن حرف ناسخ مبني على الفتح لا محل له من الإعراب، ونا ضمير مبني على السكون في محل نصب اسم إن.",
+          "kedudukan_indo": "Huruf Nasikh (Inna wa Akhwatuha) + Isim Dhamir (manshub)",
+          "tanda_irab": "Mabni 'alal Fath",
+          "jenis_kata_sharaf": "Harf Ma'ani (حرف معنى)",
+          "wazan_sharaf": "حَرْفٌ مَبْنِيٌّ",
+          "akar_kata": "-",
+          "jenis_bina": "Mabni (Ghair Mutasharrif)",
+          "keterangan_sharaf": "Huruf yang tidak memiliki makna mandiri kecuali jika bersanding dengan isim atau fi'il.",
+          "lemma": "إِنّ",
+          "rincian_segmen": "إِنَّ + آ [Sufiks]"
+        },
+        {
+          "id_kata": "108:1:2",
+          "kata_arab": "أَعْطَيْنَٰكَ",
+          "status_hukum": "Mabni",
+          "kedudukan_irab": "فعل ماض مبني على السكون، ونا ضمير مبني على السكون في محل رفع فاعل، والكاف ضمير مبني على الفتح في محل نصب مفعول به أول، وجملة ﴿أعطيناك﴾ في محل رفع خبر إن.",
+          "kedudukan_indo": "Fi'il Madhi mabni 'alas sukun, Fa'il dhamir muttashil",
+          "tanda_irab": "Mabni 'alas Sukun (لاتصاله بضمير الرفع)",
+          "jenis_kata_sharaf": "Fi'il Madhi Mazid (Form 4)",
+          "wazan_sharaf": "أَفْعَلَ / يُفْعِلُ",
+          "akar_kata": "ع - ط - و",
+          "jenis_bina": "Bina' Mu'tal Naqish Wawi (ناقص واوي)",
+          "keterangan_sharaf": "Kata kerja lampau (madhi) dari akar ع - ط - و.",
+          "lemma": "أَعْطَى",
+          "rincian_segmen": "أَعْطَيْ (Akar: عطو) + نَٰ [Sufiks] + كَ [Sufiks]"
+        },
+        {
+          "id_kata": "108:1:3",
+          "kata_arab": "ٱلْكَوْثَرَ",
+          "status_hukum": "Manshub",
+          "kedudukan_irab": "مفعول به ثان لـ﴿أعطيناك﴾ منصوب بالفتحة، وجملة ﴿إنا أعطيناك الكوثر﴾ ابتدائية لا محل لها من الإعراب.",
+          "kedudukan_indo": "Maf'ul Bih kedua manshub",
+          "tanda_irab": "Fathah Zhahirah (Ashliyyah)",
+          "jenis_kata_sharaf": "Isim Jamid / Musytaq",
+          "wazan_sharaf": "فوعل",
+          "akar_kata": "ك - ث - ر",
+          "jenis_bina": "Bina' Shahih Salim (صحيح سالم)",
+          "keterangan_sharaf": "، اسم علم لنهر في الجنّة، وزنه فوعل من الكثرة، والعرب تسمّي كلّ شيء كثير العدد أو كثير القدر والخطر كوثر، أو هو وصف لموصوف محذوف أي الخير الكوثر.. وفي التفسير لمعنى الكوثر ستة عشر ...",
+          "lemma": "كَوْثَر",
+          "rincian_segmen": "ٱلْ [Prefiks] + كَوْثَرَ (Akar: كثر)"
+        }
+      ]
+    },
+    {
+      "surah_id": 108,
+      "surah_name": "Al-Kautsar",
+      "surah_arab": "الكوثر",
+      "ayat_id": 2,
+      "teks_ayat_arab": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
+      "total_kata": 3,
+      "kata_per_kata": [
+        {
+          "id_kata": "108:2:1",
+          "kata_arab": "فَصَلِّ",
+          "status_hukum": "Mabni",
+          "kedudukan_irab": "الفاء حرف عطف للتعقيب، وصل: فعل أمر مبني على حذف حرف العلة، وفاعله مستتر تقديره أنت.",
+          "kedudukan_indo": "Fi'il Amr mabni, Fa'il dhamir mustatir wujuban (anta)",
+          "tanda_irab": "Mabni 'ala Hadzfi Harfil 'Illah",
+          "jenis_kata_sharaf": "Fi'il Amr Mazid (Form 2)",
+          "wazan_sharaf": "فَعَّلَ / يُفَعِّلُ",
+          "akar_kata": "ص - ل - و",
+          "jenis_bina": "Bina' Mu'tal Naqish Wawi (ناقص واوي)",
+          "keterangan_sharaf": "Kata kerja perintah (amr) dari akar ص - ل - و, berfaedah thalab (tuntutan tindakan).",
+          "lemma": "صَلَّى",
+          "rincian_segmen": "فَ [Prefiks] + صَلِّ (Akar: صلو)"
+        },
+        {
+          "id_kata": "108:2:2",
+          "kata_arab": "لِرَبِّكَ",
+          "status_hukum": "Majrur",
+          "kedudukan_irab": "اللام حرف جر، ورب اسم مجرور باللام وعلامة جره الكسرة، ورب مضاف، والكاف ضمير مبني على الفتح في محل جر مضاف إليه، والجار والمجرور متعلقان بـ﴿صل﴾.",
+          "kedudukan_indo": "Jar-Majrur Syibhul Jumlah (huruf jar + isim dhamir)",
+          "tanda_irab": "Kasrah Zhahirah (Ashliyyah)",
+          "jenis_kata_sharaf": "Isim Jamid / Musytaq",
+          "wazan_sharaf": "فَعِّكَ",
+          "akar_kata": "ر - ب - ب",
+          "jenis_bina": "Bina' Shahih Mudha'af (مضاعف)",
+          "keterangan_sharaf": "Isim dasar dari akar kata ر - ب - ب.",
+          "lemma": "رَبّ",
+          "rincian_segmen": "لِ [Prefiks] + رَبِّ (Akar: ربب) + كَ [Sufiks]"
+        },
+        {
+          "id_kata": "108:2:3",
+          "kata_arab": "وَٱنْحَرْ",
+          "status_hukum": "Mabni",
+          "kedudukan_irab": "الواو حرف عطف، وانحر فعل أمر مبني على السكون، وفاعله مستتر تقديره أنت، وجملة ﴿صل...﴾ لا محل لها من الإعراب معطوفة على سابقتها عند من يجيز عطف الإنشاء على الخبر، أو معطوفة على جملة مستأنفة لا محل لها من الإعراب، أي: انتبه فصل، وجملة ﴿انحر﴾ معطوفة على جملة ﴿صل﴾ لا محل لها من الإعراب.",
+          "kedudukan_indo": "Fi'il Amr mabni, Fa'il dhamir mustatir wujuban (anta)",
+          "tanda_irab": "Mabni 'alas Sukun",
+          "jenis_kata_sharaf": "Fi'il Amr Tsulatsi Mujarrad",
+          "wazan_sharaf": "اِفْعَلْ / فُلْ",
+          "akar_kata": "ن - ح - ر",
+          "jenis_bina": "Bina' Shahih Salim (صحيح سالم)",
+          "keterangan_sharaf": "Kata kerja perintah (amr) dari akar ن - ح - ر, berfaedah thalab (tuntutan tindakan).",
+          "lemma": "انْحَرْ",
+          "rincian_segmen": "وَ [Prefiks] + ٱنْحَرْ (Akar: نحر)"
+        }
+      ]
+    },
+    {
+      "surah_id": 108,
+      "surah_name": "Al-Kautsar",
+      "surah_arab": "الكوثر",
+      "ayat_id": 3,
+      "teks_ayat_arab": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
+      "total_kata": 4,
+      "kata_per_kata": [
+        {
+          "id_kata": "108:3:1",
+          "kata_arab": "إِنَّ",
+          "status_hukum": "Mabni",
+          "kedudukan_irab": "حرف ناسخ مبني على الفتح لا محل له من الإعراب.",
+          "kedudukan_indo": "Huruf Nasikh (Inna wa Akhwatuha) mabni",
+          "tanda_irab": "Mabni 'alal Fath",
+          "jenis_kata_sharaf": "Harf Ma'ani (حرف معنى)",
+          "wazan_sharaf": "حَرْفٌ مَبْنِيٌّ",
+          "akar_kata": "-",
+          "jenis_bina": "Mabni (Ghair Mutasharrif)",
+          "keterangan_sharaf": "Huruf yang tidak memiliki makna mandiri kecuali jika bersanding dengan isim atau fi'il.",
+          "lemma": "إِنّ",
+          "rincian_segmen": "إِنَّ"
+        },
+        {
+          "id_kata": "108:3:2",
+          "kata_arab": "شَانِئَكَ",
+          "status_hukum": "Manshub",
+          "kedudukan_irab": "شانئ اسم إن منصوب بالفتحة وهو مضاف، والكاف ضمير مبني على الفتح في محل جر مضاف إليه.",
+          "kedudukan_indo": "Isim Inna manshub",
+          "tanda_irab": "Fathah Zhahirah (Ashliyyah)",
+          "jenis_kata_sharaf": "Isim Fa'il Tsulatsi Mujarrad",
+          "wazan_sharaf": "فَاعِلٌ",
+          "akar_kata": "ش - ن - أ",
+          "jenis_bina": "Bina' Shahih Mahmuzul Lam (مهموز اللام)",
+          "keterangan_sharaf": "، اسم فاعل من شنأ بمعنى أبغض، وزنه فاعل...",
+          "lemma": "شانِئ",
+          "rincian_segmen": "شَانِئَ (Akar: شنأ) + كَ [Sufiks]"
+        },
+        {
+          "id_kata": "108:3:3",
+          "kata_arab": "هُوَ",
+          "status_hukum": "Mabni",
+          "kedudukan_irab": "ضمير مبني على الفتح في محل رفع مبتدأ.",
+          "kedudukan_indo": "Isim Dhamir mabni fi mahalli raf'in (Mubtada')",
+          "tanda_irab": "Mabni 'alal Fath",
+          "jenis_kata_sharaf": "Isim Dhamir (ضمير)",
+          "wazan_sharaf": "مَبْنِيٌّ (ضمير)",
+          "akar_kata": "-",
+          "jenis_bina": "Mabni (Ghair Mutasharrif)",
+          "keterangan_sharaf": "Kata ganti isim ma'rifah paling tinggi tingkatannya setelah lafzhul jalalah.",
+          "lemma": "هُوَ",
+          "rincian_segmen": "هُوَ"
+        },
+        {
+          "id_kata": "108:3:4",
+          "kata_arab": "ٱلْأَبْتَرُ",
+          "status_hukum": "Marfu'",
+          "kedudukan_irab": "خبر هو مرفوع بالضمة، وجملة ﴿هو الأبتر﴾ في محل رفع خبر إن، أو: هو ضمير فصل، والأبتر خبر إن مرفوع بالضمة، وجملة ﴿إن شانئك هو الأبتر﴾ مستأنفة لا محل لها من الإعراب.",
+          "kedudukan_indo": "Khabar Inna marfu'",
+          "tanda_irab": "Dhammah Zhahirah (Ashliyyah)",
+          "jenis_kata_sharaf": "Isim Jamid / Musytaq",
+          "wazan_sharaf": "أفعل",
+          "akar_kata": "ب - ت - ر",
+          "jenis_bina": "Bina' Shahih Salim (صحيح سالم)",
+          "keterangan_sharaf": "، صفة مشبهة من بتر بمعنى قطع باب نصر متعدّ، ومن باب فرح بمعى انقطع لازم، وزنه أفعل أي منقطع العقب...",
+          "lemma": "أَبْتَر",
+          "rincian_segmen": "ٱلْ [Prefiks] + أَبْتَرُ (Akar: بتر)"
+        }
+      ]
+    }
+  ]
+}

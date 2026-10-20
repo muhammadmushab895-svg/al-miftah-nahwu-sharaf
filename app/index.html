@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <title>Al-Miftah (المفتاح) | Ensiklopedia & Laboratorium Nahwu-Sharaf Terpadu</title>
+    
+    <!-- PWA & Android Meta Tags -->
+    <meta name="application-name" content="Al-Miftah" />
+    <meta name="apple-mobile-web-app-title" content="Al-Miftah" />
+    <meta name="description" content="Ensiklopedia Gramatika Arab & Laboratorium I'rab Al-Qur'an 30 Juz Terpadu berbasis An-Nahwu At-Tathbiqi & Jami'ud Durus Al-'Arabiyyah" />
+    <meta name="theme-color" content="#064E3B" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#022C22" media="(prefers-color-scheme: dark)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Manifest & Favicons -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/icons/icon.svg" color="#064E3B" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Scheherazade+New:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#FDFBF7] text-slate-800 antialiased selection:bg-amber-200 selection:text-emerald-950 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('Al-Miftah PWA Service Worker terdaftar:', registration.scope);
+            })
+            .catch((error) => {
+              console.warn('PWA Service Worker registration error:', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

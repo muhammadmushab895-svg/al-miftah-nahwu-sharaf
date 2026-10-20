@@ -1,0 +1,421 @@
+{
+  "bab": [
+    {
+      "id_bab": "BAB-19",
+      "urutan": 19,
+      "kategori": "Nahwu - Bina' & I'rabul Af'al",
+      "level": "Mutawassith",
+      "judul_arab": "بناء الأفعال (الماضي والأمر والمضارع) والأفعال الخمسة",
+      "judul_indo": "Bina' Fi'il (Madhi, Amr, Mudhari') dan Al-Af'al Al-Khamsah",
+      "ref_nahwu_tathbiqi": "Bab Bina'ul Af'al wa I'rabul Mudhari', Hal. 226-265",
+      "ref_jami_durus": "Juz 1 & 2: Mabniyyatul Af'al wal Af'al al-Khamsah, Hal. 251-285",
+      "ringkasan_cakupan": "Kajian tuntas 3 keadaan bina' Fi'il Madhi (beserta khilaf tahqiq saat bersambung Wawu Jama'ah dan Dhamir Rafa' Mutaharrik), 4 keadaan bina' Fi'il Amr, 2 keadaan bina' Fi'il Mudhari' (saat bersambung dengan Nun Niswah dan Nun Taukid Mubasyirah vs Ghairu Mubasyirah yang dipisah Alif Itsnain/Wawu Jama'ah/Ya' Mukhathabah secara lafazh atau takdir), serta hukum lengkap Al-Af'al Al-Khamsah.",
+      "estimasi_jam_belajar": 6
+    },
+    {
+      "id_bab": "BAB-20",
+      "urutan": 20,
+      "kategori": "Nahwu - Nawashibul Mudhari'",
+      "level": "Mutawassith - Mutaqaddim",
+      "judul_arab": "نواصب الفعل المضارع: النواصب الظاهرة وأنْ المضمرة جوازًا ووجوبًا",
+      "judul_indo": "Amil-Amil Penashab Fi'il Mudhari' (Zhahirah dan An Mudhmarah Jawazan & Wujuban)",
+      "ref_nahwu_tathbiqi": "Bab Nawashibul Fi'lil Mudhari', Hal. 266-312",
+      "ref_jami_durus": "Juz 2: Nawashibul Mudhari', Hal. 142-182",
+      "ringkasan_cakupan": "Pembahasan mendalam 4 huruf penashab langsung (أنْ المصدرية، لنْ، كيْ، إذنْ beserta 3 syarat amalnya dan perbedaan أنْ المصدرية vs المفسرة vs المخففة من الثقيلة), serta 5 tempat tersembunyinya أنْ المضمرة: secara Ja'iz setelah Lam Ta'lil (dan setelah huruf 'athaf الواو، الفاء، ثم، أو), dan secara Wajib setelah Lam Juhud, Hatta, Fa' Sababiyyah, dan Wawu Ma'iyyah yang didahului Nafi Mahdh atau Thalab Mahdh yang 8 jenis.",
+      "estimasi_jam_belajar": 8
+    },
+    {
+      "id_bab": "BAB-21",
+      "urutan": 21,
+      "kategori": "Nahwu - Jawazimul Mudhari' & Syarth",
+      "level": "Mutaqaddim",
+      "judul_arab": "جوازم الفعل المضارع وأسلوب الشرط (الجازم وغير الجازم) والجزم في جواب الطلب",
+      "judul_indo": "Amil-Amil Penjazm Fi'il Mudhari', Uslub Syarat (Jazim & Ghairu Jazim), dan Jazm dalam Jawab Thalab",
+      "ref_nahwu_tathbiqi": "Bab Jawazimul Mudhari' wa Uslub Asy-Syarth, Hal. 313-375",
+      "ref_jami_durus": "Juz 2: Jawazimul Mudhari' wa Adawatusy Syarth, Hal. 183-240",
+      "ringkasan_cakupan": "Rincian 4 huruf penjazm satu fi'il (لم، لما، لام الأمر/الدعاء، لا الناهية/الدعائية + 5 perbedaan لم dan لما), 12 Adawat Syarat Jazimah beserta kaidah presisi I'rab Isim-Isim Syarat, hukum kombinasi Fi'il Syarat & Jawab, 7 tempat wajib masuknya Fa'ul Jaza' (اسمية طلبية وبجامد...), syarat Jazm dalam Jawab Thalab, serta Adawat Syarat Ghairu Jazimah (لو، لولا، لوما، إذا، كلما، لما الحينية، أما).",
+      "estimasi_jam_belajar": 10
+    }
+  ],
+  "materi": [
+    {
+      "id_materi": "MAT-1901",
+      "id_bab": "BAB-19",
+      "sub_topik_arab": "أحوال بناء الفعل الماضي وفعل الأمر (المذهب الميسر ومذهب التحقيق)",
+      "sub_topik_indo": "Keadaan Bina' Fi'il Madhi (3 Keadaan) dan Fi'il Amr (4 Keadaan) beserta Tahqiq Ulama",
+      "kaidah_arab": "بِنَاءُ الفِعْلِ: الفِعْلُ المَاضِي مَبْنِيٌّ دَائِمًا؛ يُبْنَى عَلَى الفَتْحِ إِذَا لَمْ يَتَّصِلْ بِهِ شَيْءٌ أَوْ اتَّصَلَتْ بِهِ تَاءُ التَّأْنِيثِ السَّاكِنَةُ أَوِ أَلِفُ الِاثْنَيْنِ، وَعَلَى الضَّمِّ إِذَا اتَّصَلَتْ بِهِ وَاوُ الجَمَاعَةِ (كَتَبُوا)، وَعَلَى السُّكُونِ إِذَا اتَّصَلَ بِهِ ضَمِيرُ رَفْعٍ مُتَحَرِّكٌ (كَتَبْتُ، كَتَبْنَا، كَتَبْنَ). وَفِعْلُ الأَمْرِ يُبْنَى عَلَى مَا يُجْزَمُ بِهِ مُضَارِعُهُ؛ فَيُبْنَى عَلَى السُّكُونِ إِذَا كَانَ صَحِيحَ الآخِرِ أَوْ اتَّصَلَتْ بِهِ نُونُ النِّسْوَةِ، وَعَلَى حَذْفِ حَرْفِ العِلَّةِ إِذَا كَانَ مُعْتَلَّ الآخِرِ، وَعَلَى حَذْفِ النُّونِ إِذَا كَانَ مُسْنَدًا لِأَلِفِ اثْنَيْنِ أَوْ وَاوِ جَمَاعَةٍ أَوْ يَاءِ مُخَاطَبَةٍ، وَعَلَى الفَتْحِ إِذَا اتَّصَلَتْ بِهِ نُونُ التَّوْكِيدِ مُبَاشَرَةً.",
+      "penjelasan_indo": "Seluruh Fi'il Madhi dan Fi'il Amr berstatus MABNI tanpa terkecuali. Para ulama menyajikan cara i'rabnya dalam dua metode: Metode Taysir (berdasarkan harakat akhir yang tampak) dan Metode Tahqiq (menyatakan bahwa asal bina' Madhi adalah Fathah dan asal bina' Amr adalah Sukun).",
+      "rincian_hukum_dan_syarat": "A. Tiga Keadaan Bina' Fi'il Madhi:\n1. Mabni 'alal Fath (مبني على الفتح):\n- Fathah Zhahirah: Jika shahih akhir dan tidak bersambung dhamir rafa' mutaharrik atau wawu jama'ah, baik berdiri sendiri (كَتَبَ), bersambung Ta' Ta'nits Sakinah (كَتَبَتْ), maupun Alif Itsnain (كَتَبَا).\n- Fathah Muqaddarah: Jika mu'tal akhir dengan Alif karena Ta'adzzur (دَعَا، سَعَى، رَمَى), atau jika mu'tal akhir diikuti Ta' Ta'nits sehingga alifnya dibuang karena bertemu dua sukun (دَعَتْ، رَمَتْ: فعل ماض مبني على الفتح المقدر على الألف المحذوفة لالتقاء الساكنين!).\n2. Mabni 'alas Sukun (مبني على السكون): Jika bersambung dengan Dhamir Rafa' Mutaharrik (تاء الفاعل: كَتَبْتُ/تَ/تِ، نا الفاعلين: كَتَبْنَا، نون النسوة: كَتَبْنَ). Alasan sukunnya: mencegah berturut-turutnya 4 harakat dalam satu kata (كراهة توالي أربع متحركات فيما هو كالكلمة الواحدة).\n3. Mabni 'aladh Dhamm (مبني على الضم): Jika bersambung dengan Wawu Jama'ah:\n- Dhammah Zhahirah pada shahih akhir: كَتَبُوا.\n- Dhammah Muqaddarah pada mu'tal akhir yang huruf illatnya dibuang: دَعَوْا، رَمَوْا، رَضُوا، سَرُوا (فعل ماض مبني على الضم المقدر على حرف العلة المحذوف لالتقاء الساكنين!).\nB. Empat Keadaan Bina' Fi'il Amr (قاعدة: يُبنى الأمر على ما يُجزم به مضارعه):\n1. Mabni 'alas Sukun: Jika shahih akhir dan tidak bersambung sesuatu (اُكْتُبْ) atau bersambung Nun Niswah (اُكْتُبْنَ).\n2. Mabni 'ala Hadzfi Harfil 'Illah: Jika mu'tal akhir (اُدْعُ، اِرْمِ، اِسْعَ).\n3. Mabni 'ala Hadzfin Nun: Jika bersambung Alif Itsnain (اُكْتُبَا), Wawu Jama'ah (اُكْتُبُوا), atau Ya' Mukhathabah (اُكْتُبِي).\n4. Mabni 'alal Fath: Jika bersambung secara langsung dengan Nun Taukid Tsaqilah atau Khafifah (اُكْتُبَنَّ، اُكْتُبَنْ).",
+      "rumus_ringkas": "Madhi = Fathah (أصلي) / Sukun (+ ت، نا، ن) / Dhammah (+ واو الجماعة؛ وفي دعَوْا/رمَوْا ضم مقدر على المحذوف!) | Amr = Sukun / Hadzfu 'Illah / Hadzfu Nun / Fathah (+ نون التوكيد)",
+      "tanbihat_dan_khilaf": "Menurut Mazhab Tahqiq (Ibnu Malik & Ibnu Hisyam): Fi'il Madhi SELALU mabni 'alal fath; pada كَتَبْتُ ia mabni 'alal fath muqaddar karena tersibukkan sukun pencegah 4 harakat, dan pada كَتَبُوا ia mabni 'alal fath muqaddar karena tersibukkan dhammah munasabah Wawu. Adapun Kufah berpendapat bahwa Fi'il Amr adalah mu'rab majzum dengan Lam Amr yang dibuang (أصل اُكْتُبْ = لِتَكْتُبْ), namun pendapat Bashrah (mabni) adalah yang rajih."
+    },
+    {
+      "id_materi": "MAT-1902",
+      "id_bab": "BAB-19",
+      "sub_topik_arab": "بناء الفعل المضارع وإعرابه: نون النسوة ونون التوكيد المباشرة وغير المباشرة",
+      "sub_topik_indo": "Bina' dan I'rab Fi'il Mudhari': Nun Niswah serta Perbedaan Krusial Nun Taukid Mubasyirah vs Ghairu Mubasyirah",
+      "kaidah_arab": "الفِعْلُ المُضَارِعُ مُعْرَبٌ إِلَّا فِي حَالَتَيْنِ: يُبْنَى عَلَى السُّكُونِ إِذَا اتَّصَلَتْ بِهِ نُونُ النِّسْوَةِ اتِّصَالًا مُطْلَقًا نَحْوُ: ﴿وَالوَالِدَاتُ يُرْضِعْنَ﴾، وَيُبْنَى عَلَى الفَتْحِ إِذَا اتَّصَلَتْ بِهِ نُونُ التَّوْكِيدِ اتِّصَالًا مُبَاشِرًا نَحْوُ: ﴿لَيُسْجَنَنَّ وَلَيَكُونًا مِنَ الصَّاغِرِينَ﴾. فَإِنْ فُصِلَ بَيْنَ الفِعْلِ وَنُونِ التَّوْكِيدِ بِفَاصِلٍ مَلْفُوظٍ أَوْ مُقَدَّرٍ (كَأَلِفِ الِاثْنَيْنِ أَوْ وَاوِ الجَمَاعَةِ أَوْ يَاءِ المُخَاطَبَةِ) كَانَ الفِعْلُ مُعْرَبًا لَا مَبْنِيًّا كَقَوْلِهِ تَعَالَى: ﴿لَتُبْلَوُنَّ فِي أَمْوَالِكُمْ﴾ وَ﴿فَإِمَّا تَرَيِنَّ مِنَ البَشَرِ أَحَدًا﴾.",
+      "penjelasan_indo": "Fi'il Mudhari' adalah satu-satunya fi'il yang MU'RAB (karena menyerupai Isim Fa'il dalam lafazh, makna, dan penerimaan Lam Ibtida'). Ia hanya menjadi MABNI dalam 2 keadaan: (1) Mabni 'alas Sukun jika bersambung dengan Nun Niswah (الْوَالِدَاتُ يُرْضِعْنَ), dan (2) Mabni 'alal Fath jika bersambung dengan Nun Taukid yang MUBASYIRAH (menempel langsung pada huruf terakhir fi'il tanpa pemisah).",
+      "rincian_hukum_dan_syarat": "Perbedaan Sangat Penting antara Nun Taukid Mubasyirah (المباشرة) dan Ghairu Mubasyirah (غير المباشرة):\n1. Nun Taukid Mubasyirah (Menempel langsung pada Lam Fi'il): Terjadi ketika fa'ilnya adalah Dhamir Mustatir (تَكْتُبَنَّ أنت، يَكْتُبَنَّ هو) atau Isim Zhahir. Hukumnya: MABNI 'ALAL FATH.\n2. Nun Taukid Ghairu Mubasyirah (Terpisah dari Lam Fi'il oleh Alif Itsnain, Wawu Jama'ah, atau Ya' Mukhathabah, baik secara lafazh maupun takdir): Hukumnya MU'RAB (BUKAN MABNI!). Berikut proses morfologis dan i'rabnya:\n- Bersama Alif Itsnain: تَكْتُبَانِ + نَّ -> تَكْتُبَانِنَّ -> Nun Rafa' dibuang karena berturut-turutnya tiga nun (كراهة توالي الأمثال), dan Nun Taukid dikasrahkan menyerupai nun mutsanna -> menjadi تَكْتُبَانِّ! I'rabnya: فعل مضارع مرفوع وعلامة رفعه ثبوت النون المحذوفة لتوالي الأمثال، وألف الاثنين فاعل (atau jika didahului لا الناهية seperti لَا تَتَّبِعَانِّ maka مجزوم بحذف النون!).\n- Bersama Wawu Jama'ah (Shahih Akhir): تَكْتُبُونَ + نَّ -> Nun Rafa' dibuang karena توالي الأمثال -> menjadi تَكْتُبُونَّ -> bertemu dua sukun (Wawu Jama'ah dan Nun pertama dari نَّ), maka Wawu Jama'ah DIBUANG karena dhammah sebelumnya sudah menunjukkannya -> menjadi تَكْتُبُنَّ (contoh QS. Ali 'Imran: 186: لَتُبْلَوُنَّ فِي أَمْوَالِكُمْ، ولتَسْمَعُنَّ)! I'rab تَكْتُبُنَّ: فعل مضارع مرفوع وعلامة رفعه ثبوت النون المحذوفة لتوالي الأمثال، وواو الجماعة المحذوفة لالتقاء الساكنين ضمير متصل في محل رفع فاعل، والنون للتوكيد!\n- Bersama Ya' Mukhathabah: تَكْتُبِينَ + نَّ -> dengan proses yang sama dibuang Nun Rafa' dan Ya' Mukhathabah -> menjadi تَكْتُبِنَّ! I'rabnya: مرفوع بثبوت النون المحذوفة، وياء المخاطبة المحذوفة فاعل.\n- Bersama Nun Niswah: يَكْتُبْنَ + نَّ -> dipisah dengan Alif Fashilah (الألف الفاصلة كراهة توالي النونات) menjadi يَكْتُبْنَانِّ (tetap mabni 'alas sukun karena Nun Niswah!).",
+      "rumus_ringkas": "تَكْتُبَنَّ (مفرد) = مبني على الفتح | تَكْتُبُنَّ (جمع أصله تكتبوننّ) & تَكْتُبِنَّ (مؤنثة أصله تكتبيننّ) & تَكْتُبَانِّ = مُعْرَب مرفوع بثبوت النون المحذوفة لتوالي الأمثال!",
+      "tanbihat_dan_khilaf": "Perhatikan betapa miripnya تَكْتُبَنَّ (fathah Ba': untuk 1 orang, mabni 'alal fath), تَكْتُبُنَّ (dhammah Ba': untuk jama' mudzakkar, mu'rab marfu' bi-tsubutin nun al-mahdzufah), dan تَكْتُبِنَّ (kasrah Ba': untuk 1 wanita mukhathabah, mu'rab marfu' bi-tsubutin nun al-mahdzufah). Jika fi'ilnya mu'tal akhir bil alif seperti تَسْعَى / تَرْضَى / تَبْلَى ketika disندkan ke Wawu Jama'ah + Nun Taukid, maka Wawu Jama'ah TIDAK dibuang melainkan diharakati dhammah (لَتُبْلَوُنَّ، تَسْعَوُنَّ) dan dengan Ya' Mukhathabah diharakati kasrah (تَسْعَيِنَّ) agar tidak hilang jejak dhamir fa'ilnya!"
+    },
+    {
+      "id_materi": "MAT-1903",
+      "id_bab": "BAB-19",
+      "sub_topik_arab": "الأفعال الخمسة (الأمثلة الخمسة) وإعرابها",
+      "sub_topik_indo": "Al-Af'al Al-Khamsah (Al-Amtsilah Al-Khamsah) dan Hukum I'rabnya",
+      "kaidah_arab": "الأَفْعَالُ الخَمْسَةُ (الأَمْثِلَةُ الخَمْسَةُ): هِيَ كُلُّ فِعْلٍ مُضَارِعٍ اتَّصَلَتْ بِهِ أَلِفُ الِاثْنَيْنِ (يَفْعَلَانِ، تَفْعَلَانِ)، أَوْ وَاوُ الجَمَاعَةِ (يَفْعَلُونَ، تَفْعَلُونَ)، أَوْ يَاءُ المُخَاطَبَةِ (تَفْعَلِينَ). وَحُكْمُ إِعْرَابِهَا أَنْ تُرْفَعَ بِثُبُوتِ النُّونِ نِيَابَةً عَنِ الضَّمَّةِ، وَتُنْصَبَ وَتُجْزَمَ بِحَذْفِ النُّونِ نِيَابَةً عَنِ الفَتْحَةِ وَالسُّكُونِ، كَقَوْلِهِ تَعَالَى: ﴿فَإِنْ لَمْ تَفْعَلُوا وَلَنْ تَفْعَلُوا فَاتَّقُوا النَّارَ﴾.",
+      "penjelasan_indo": "Disebut Al-Af'al Al-Khamsah (atau secara lebih presisi Al-Amtsilah Al-Khamsah / lima pola wazan) karena Fi'il Mudhari' yang bersambung dengan tiga dhamir rafa' bariz sakin ini menghasilkan 5 cabang tashrif: (1) يَفْعَلَانِ (ghaibain), (2) تَفْعَلَانِ (mukhathabain atau ghaibatain), (3) يَفْعَلُونَ (ghaibin), (4) تَفْعَلُونَ (mukhathabin), dan (5) تَفْعَلِينَ (mukhathabah).",
+      "rincian_hukum_dan_syarat": "1. Tanda I'rab Al-Af'al Al-Khamsah:\n- Rafa': dengan Tsubutun Nun (ثبوت النون) sebagai pengganti Dhammah.\n- Nashab dan Jazm: dengan Hadzfun Nun (حذف النون) sebagai pengganti Fathah dan Sukun.\n2. Kedudukan Dhamir yang Bersambung: Alif Itsnain, Wawu Jama'ah, dan Ya' Mukhathabah pada Af'al Khamsah SELALU merupakan ISIM DHAMIR مبني على السكون في محل رفع فاعل (atau نائب فاعل pada fi'il majhul seperti يُكْرَمُونَ، atau اسم كان pada كُونُوا).",
+      "rumus_ringkas": "Af'al Khamsah = Mudhari' + (Alif Itsnain / Wawu Jama'ah / Ya' Mukhathabah) | Rafa' = Tsubutun Nun | Nashab & Jazm = Hadzfun Nun",
+      "tanbihat_dan_khilaf": "Bedakan antara Nun Rafa' dan Nun Wiqayah ketika keduanya berkumpul pada Af'al Khamsah yang bersambung Ya' Mutakallim (seperti تَأْمُرُونَنِي): Boleh menetapkan kedua nun (تَأْمُرُونَنِي), boleh meng-idghamkan keduanya (تَأْمُرُونِّي كما في قراءة نافع وابن عامر وحفص: أَفَغَيْرَ اللَّهِ تَأْمُرُونِّي أَعْبُدُ), dan boleh membuang salah satu nun untuk takhfif (تَأْمُرُونِي كما في قراءة ابن كثير: مرفوع بثبوت النون المحذوفة تخفيفًا، أو حُذفت نون الوقاية)!"
+    },
+    {
+      "id_materi": "MAT-2001",
+      "id_bab": "BAB-20",
+      "sub_topik_arab": "النواصب الأربعة الظاهرة (أنْ، لنْ، كيْ، إذنْ) وشروط عملها",
+      "sub_topik_indo": "Empat Huruf Penashab Fi'il Mudhari' secara Langsung (Zhahirah) beserta Syarat-Syaratnya",
+      "kaidah_arab": "يُنْصَبُ الفِعْلُ المُضَارِعُ بِأَرْبَعَةِ أَحْرُفٍ نَاصِبَةٍ بِنَفْسِهَا مُبَاشَرَةً، وَهِيَ: (أَنْ) المَصْدَرِيَّةُ (وَهِيَ أُمُّ البَابِ وَأَقْوَاهَا)، وَ(لَنْ) النَّافِيَةُ لِلْمُسْتَقْبَلِ نَفْيًا مُؤَكَّدًا، وَ(إِذَنْ) حَرْفُ جَوَابٍ وَجَزَاءٍ وَنَصْبٍ (بِشَرْطِ تَصَدُّرِهَا فِي جُمْلَةِ الجَوَابِ، وَكَوْنِ الفِعْلِ مُسْتَقْبَلًا، وَأَلَّا يُفْصَلَ بَيْنَهَا وَبَيْنَ الفِعْلِ بِفَاصِلٍ غَيْرِ القَسَمِ أَوِ النَّفْيِ)، وَ(كَيْ) المَصْدَرِيَّةُ الدَّالَّةُ عَلَى السَّبَبِيَّةِ المَسْبُوقَةِ بِلَامِ التَّعْلِيلِ لَفْظًا أَوْ تَقْدِيرًا.",
+      "penjelasan_indo": "Menurut mazhab Bashrah yang rajih, huruf yang menashabkan Fi'il Mudhari' secara langsung (بنفسها) hanya ada 4: أَنْ، لَنْ، كَيْ، إِذَنْ. Adapun huruf-huruf lainnya (seperti لام التعليل، لام الجحود، حتى، فاء السببية، واو المعية) menashabkan mudhari' dengan perantara أَنْ المصدرية yang tersembunyi (مضمرة) sesudahnya.",
+      "rincian_hukum_dan_syarat": "1. أَنْ المصدرية (حرف مصدري ونصب واستقبال): Menashabkan mudhari' dengan syarat tidak didahului fi'il bermakna العلم واليقين (karena jika didahului العلم مثل: عَلِمَ أَنْ سَيَكُونُ مِنْكُمْ مَرْضَى maka أَنْ adalah المخففة من الثقيلة واسمها ضمير الشأن محذوف والمضارع مرفوع!). Jika didahului الظن والرجحان (مثل: وَحَسِبُوا أَلَّا تَكُونَ فِتْنَةٌ) maka boleh dua wajah: أَنْ المصدرية الناصبة (تكونَ) atau المخففة من الثقيلة فيرتفع المضارع (تكونُ). Bedakan pula dengan أَنْ المفسِّرة (yang didahului jumlah bermakna القول دون حروفه مثل: فَأَوْحَيْنَا إِلَيْهِ أَنِ اصْنَعِ الْفُلْكَ) dan أَنْ الزائدة (setelah لَمَّا الحينية).\n2. لَنْ (حرف نفي ونصب واستقبال): Menafikan kejadian di masa mendatang secara kuat (tetapi tidak bermakna abadi/selamanya menurut jumhur Ahlus Sunnah, berbeda dengan klaim الزمخشري المعتزلي).\n3. كَيْ (حرف مصدري ونصب واستقبال): Menashabkan secara langsung jika didahului Lam Ta'lil secara lafazh (لِكَيْلَا تَأْسَوْا) atau secara takdir. Jika tidak didahului Lam, maka كَيْ bisa dianggap حرف تعليل وجر dan mudhari' sesudahnya dinashabkan oleh أَنْ مضمرة.\n4. إِذَنْ (حرف جواب وجزاء ونصب واستقبال): Menashabkan mudhari' dengan 3 SYARAT MUTLAK:\n- Terletak di awal kalimat jawab (فلو قيل: أنا إذن أُكرمُك رُفع لوقوعها حشوًا).\n- Fi'il Mudhari'-nya bermakna Istiqbal/masa depan (فلو دل على الحال مثل: إذن أظنُّك صادقًا رُفع).\n- Tidak ada pemisah antara إِذَنْ dan Fi'il Mudhari', KECUALI Sumpah/Qasam (إِذَنْ وَاللَّهِ أُكْرِمَكَ) atau La Nafiyah (إِذَنْ لَا أَخِيبَ) — dan sebagian membolehkan Nida'.",
+      "rumus_ringkas": "أَنْ + اليقين (عَلِمَ) = مخففة من الثقيلة + مضارع مرفوع | أَنْ + الظن (حَسِبَ) = ناصبة أو مخففة | شروط إِذَنْ = التصدير + الاستقبال + عدم الفصل (إلا بالقسم أو لا)",
+      "tanbihat_dan_khilaf": "Apabila sebelum إِذَنْ terdapat huruf 'athaf الواو atau الفاء (seperti dalam firman Allah QS. An-Nisa': 53: فَإِذًا لَا يُؤْتُونَ النَّاسَ نَقِيرًا, dan QS. Al-Isra': 76: وَإِذًا لَا يَلْبَثُونَ خِلَافَكَ إِلَّا قَلِيلًا), maka boleh dua wajah (الإعمال والإهمال), namun yang paling fashih dan datang dalam qira'at mutawatirah adalah الرَّفْع (الإهمال) karena hilangnya syarat التصدير التام!"
+    },
+    {
+      "id_materi": "MAT-2002",
+      "id_bab": "BAB-20",
+      "sub_topik_arab": "إضمار (أنْ) جوازًا بعد لام التعليل وبعد عاطف على اسم خالص",
+      "sub_topik_indo": "Penashaban Mudhari' dengan An Mudhmarah Jawazan (Setelah Lam Ta'lil dan Huruf 'Athaf)",
+      "kaidah_arab": "يُنْصَبُ المُضَارِعُ بِـ(أَنْ) مُضْمَرَةً جَوَازًا فِي مَوْضِعَيْنِ: الأَوَّلُ: بَعْدَ لَامِ التَّعْلِيلِ (لَامِ كَيْ) إِذَا لَمْ تَقْتَرِنْ بِـ(لَا) النَّافِيَةِ نَحْوُ: (جِئْتُ لِأَتَعَلَّمَ)، فَإِنِ اقْتَرَنَتْ بِـ(لَا) وَجَبَ إِظْهَارُهَا نَحْوُ: ﴿لِئَلَّا يَعْلَمَ أَهْلُ الكِتَابِ﴾. الثَّانِي: بَعْدَ حَرْفِ عَطْفٍ (الوَاوِ، الفَاءِ، ثُمَّ، أَوْ) مَعْطُوفًا عَلَى اسْمٍ خَالِصٍ صَرِيحٍ مِنَ التَّأْوِيلِ بِالفِعْلِ كَقَوْلِ الشَّاعِرِ: (وَلَبْسُ عَبَاءَةٍ وَتَقَرَّ عَيْنِي ... أَحَبُّ إِلَيَّ مِنْ لَبْسِ الشُّفُوفِ).",
+      "penjelasan_indo": "أَنْ المصدرية boleh disembunyikan dan boleh ditampakkan (إضمار جائز) setelah Lam Ta'lil dan setelah empat huruf 'athaf yang meng-'athafkan fi'il kepada isim murni (mashdar).",
+      "rincian_hukum_dan_syarat": "1. Setelah Lam Ta'lil (لام التعليل / لام كي): Contoh: جِئْتُ لِأَتَعَلَّمَ (boleh juga جِئْتُ لِأَنْ أَتَعَلَّمَ). Syaratnya:a) Lam tersebut bukan Lam Juhud (tidak didahului ما كان / لم يكن), dan b) Tidak diikuti oleh لَا النافية/الزائدة. Jika diikuti لَا (seperti لِئَلَّا يَعْلَمَ أَهْلُ الْكِتَابِ / لِئَلَّا يَكُونَ لِلنَّاسِ عَلَيْكُمْ حُجَّةٌ), maka أَنْ WAJIB DITAMPAKKAN (واجب الإظهار) dan di-idghamkan ke لَا menjadi لِئَلَّا!\n2. Setelah Huruf 'Athaf (الواو، الفاء، ثم، أو) yang meng-'athafkan Fi'il Mudhari' kepada Isim Khalish (اسم خالص من شائبة الفعلية، أي المصدر الصريح): Contoh QS. Asy-Syura: 51: (وَمَا كَانَ لِبَشَرٍ أَنْ يُكَلِّمَهُ اللَّهُ إِلَّا وَحْيًا أَوْ مِنْ وَرَاءِ حِجَابٍ أَوْ يُرْسِلَ رَسُولًا) — fi'il يُرْسِلَ dinashabkan oleh أَنْ مضمرة جوازًا karena di-'athafkan kepada mashdar وَحْيًا! Contoh syair: (وَلُبْسُ عَبَاءَةٍ وَتَقَرَّ عَيْنِي ... أَحَبُّ إِلَيَّ مِنْ لُبْسِ الشُّفُوفِ).",
+      "rumus_ringkas": "لِتَفْعَلَ = أنْ مضمرة جوازًا | لِئَلَّا تَفْعَلَ (لام + أنْ + لا) = أنْ واجبة الإظهار! | كانَ ... لِيَفْعَلَ = لام الجحود (أنْ مضمرة وجوبًا)",
+      "tanbihat_dan_khilaf": "Mengapa setelah لِئَلَّا huruf أَنْ wajib ditampakkan? Agar tidak berkumpul dua huruf Lam secara langsung (لِـ + لَا -> لِلَا) yang tidak disukai dalam fonologi Arab."
+    },
+    {
+      "id_materi": "MAT-2003",
+      "id_bab": "BAB-20",
+      "sub_topik_arab": "إضمار (أنْ) وجوبًا: بعد لام الجحود، وحتى، وأو",
+      "sub_topik_indo": "Penashaban Mudhari' dengan An Mudhmarah Wujuban (Bagian 1): Lam Juhud, Hatta, dan Au",
+      "kaidah_arab": "يُنْصَبُ المُضَارِعُ بِـ(أَنْ) مُضْمَرَةً وُجُوبًا فِي خَمْسَةِ مَوَاضِعَ (القِسْمُ الأَوَّلُ): 1) بَعْدَ لَامِ الجُحُودِ (وَهِيَ المَسْبُوقَةُ بِكَوْنٍ مَنْفِيٍّ مَاضِيًا كَقَوْلِهِ تَعَالَى: ﴿وَمَا كَانَ اللهُ لِيُعَذِّبَهُمْ وَأَنْتَ فِيهِمْ﴾). 2) بَعْدَ (حَتَّى) إِذَا كَانَ الفِعْلُ دَالًّا عَلَى الاسْتِقْبَالِ بِالنِّسْبَةِ لِمَا قَبْلَهَا كَقَوْلِهِ: ﴿حَتَّى يَرْجِعَ إِلَيْنَا مُوسَى﴾. 3) بَعْدَ (أَوْ) الَّتِي بِمَعْنَى (إِلَى أَنْ) أَوْ (إِلَّا أَنْ) كَقَوْلِهِ: (لَأَسْتَسْهِلَنَّ الصَّعْبَ أَوْ أُدْرِكَ المُنَى).",
+      "penjelasan_indo": "Dalam 5 posisi ini, أَنْ المصدرية WAJIB disembunyikan (مضمرة وجوبًا) dan tidak boleh ditampakkan secara lafazh, karena huruf-huruf sebelumnya telah menggantikan posisinya secara zhahir.",
+      "rincian_hukum_dan_syarat": "1. Setelah Lam Juhud (لام الجحود — Lam penguat penafian): Yaitu Lam yang jatuh setelah كَانَ المنفية بـ(مَا) atau يَكُنْ المنفية بـ(لَمْ) — disebut الكون المنفي الماضوي. Contoh QS. Al-Anfal: 33 (وَمَا كَانَ اللَّهُ لِيُعَذِّبَهُمْ وَأَنْتَ فِيهِمْ) dan QS. An-Nisa': 137 (لَمْ يَكُنِ اللَّهُ لِيَغْفِرَ لَهُمْ). Kaidah I'rab Penting menurut Bashrah: Lam Juhud adalah حرف جر زائد لتوكيد النفي، والمصدر المؤول من (أنْ المضمرة + الفعل) في محل جر باللام، والجار والمجرور متعلقان بمحذوف هو خبر كان/يكن والتقدير: (ما كان الله مريدًا لتعذيبهم)!\n2. Setelah حَتَّى الجارة (yang bermakna إِلَى للانتهاء الغائي مثل: حَتَّى يَرْجِعَ إِلَيْنَا مُوسَى، أو بمعنى كَيْ للتعليل مثل: أَسْلِمْ حَتَّى تَدْخُلَ الْجَنَّةَ، أو بمعنى إِلَّا للاستثناء). Syarat mudhari' dinashabkan setelah حَتَّى: Harus bermakna ISTIQBAL (masa depan, baik secara hakiki maupun nisbi/hikayah hal madhiyah seperti وَزُلْزِلُوا حَتَّى يَقُولَ الرَّسُولُ). Jika mudhari' setelah حَتَّى bermakna HAL (sekarang/nyata) dan menjadi penyebab, maka حَتَّى menjadi الابتدائية dan mudhari' sesudahnya WAJIB MARFU' (contoh: مَرِضَ زَيْدٌ حَتَّى لَا يَرْجُونَهُ)!\n3. Setelah أَوْ العاطفة yang bermakna إِلَى (لأستسهلن الصعب أو أدركَ المنى = إلى أن أدرك) atau bermakna إِلَّا (لأقتلن الكافر أو يُسلمَ = إلا أن يسلم).",
+      "rumus_ringkas": "Lam Juhud = Didahului مَا كَانَ / لَمْ يَكُنْ (Khabar Kana mahdzuf تقديره مريدًا) | حَتَّى + Istiqbal = Nashab بـ(أنْ مضمرة وجوبًا) | حَتَّى + Hal = Rafa' (حَتَّى ابتدائية)",
+      "tanbihat_dan_khilaf": "Pada ayat وَزُلْزِلُوا حَتَّى يَقُولَ الرَّسُولُ: Qira'at jumhur membaca يَقُولَ (dengan nashab) karena menakdirkan istiqbal nisbi (مستقبل بالنسبة لوقت الزلزلة)، sedangkan qira'at Nafi' membaca حَتَّى يَقُولُ (dengan rafa') dengan menghadirkan kejadian tersebut seolah-olah sedang berlangsung sekarang (حكاية الحال)!"
+    },
+    {
+      "id_materi": "MAT-2004",
+      "id_bab": "BAB-20",
+      "sub_topik_arab": "إضمار (أنْ) وجوبًا بعد فاء السببية وواو المعية (النفي المحض والطلب المحض الثمانية)",
+      "sub_topik_indo": "Penashaban Mudhari' dengan An Mudhmarah Wujuban (Bagian 2): Fa' Sababiyyah & Wawu Ma'iyyah setelah Nafi/Thalab Mahdh",
+      "kaidah_arab": "يُنْصَبُ المُضَارِعُ بِـ(أَنْ) مُضْمَرَةً وُجُوبًا (القِسْمُ الثَّانِي): 4) بَعْدَ (فَاءِ السَّبَبِيَّةِ)، وَ5) بَعْدَ (وَاوِ المَعِيَّةِ)؛ بِشَرْطِ أَنْ تَقَعَ كُلٌّ مِنْهُمَا فِي جَوَابِ نَفْيٍ مَحْضٍ أَوْ طَلَبٍ مَحْضٍ بِأَحَدِ أَنْوَاعِهِ الثَّمَانِيَةِ المَشْهُورَةِ: الأَمْرِ، النَّهْيِ، الدُّعَاءِ، الاسْتِفْهَامِ، العَرْضِ، التَّحْضِيضِ، التَّمَنِّي، وَالتَّرَجِّي؛ يَجْمَعُهَا النَّظْمُ: (مُرْ وَادْعُ وَانْهَ وَسَلْ وَاعْرِضْ لِحَضِّهِمُ ... تَمَنَّ وَارْجُ كَذَاكَ النَّفْيُ قَدْ كَمُلَا).",
+      "penjelasan_indo": "Fa' Sababiyyah (yang menunjukkan bahwa kalimat sebelumnya adalah sebab terjadinya kalimat sesudahnya) dan Wawu Ma'iyyah (yang bermakna مَعَ / kebersamaan dua hal) menashabkan Fi'il Mudhari' dengan أَنْ مضمرة وجوبًا apabila didahului oleh Nafi Mahdh atau Thalab Mahdh.",
+      "rincian_hukum_dan_syarat": "1. Nafi Mahdh (نفي محض — Penafian murni yang tidak batal menjadi itsbat): Contoh QS. Fathir: 36 (لَا يُقْضَى عَلَيْهِمْ فَيَمُوتُوا). Jika nafinya tidak murni (misal dirusak oleh إِلَّا atau مَا زَالَ), maka mudhari' setelah Fa' wajib marfu' (مَا أَنْتَ إِلَّا تَأْتِينَا فَتُحَدِّثُنَا).\n2. Delapan Jenis Thalab Mahdh (طلب محض بالفعل — tidak boleh dengan Isim Fi'il seperti صَهْ!):\n- (1) Al-Amr (الأمر): اُدْعُونِي أَسْتَجِبْ لَكُمْ / اِجْتَهِدْ فَتَنْجَحَ وَتَفُوزَ.\n- (2) An-Nahyu (النهي): وَلَا تَطْغَوْا فِيهِ فَيَحِلَّ عَلَيْكُمْ غَضَبِي / لَا تَنْهَ عَنْ خُلُقٍ وَتَأْتِيَ مِثْلَهُ.\n- (3) Ad-Du'a' (الدعاء): رَبِّ انْصُرْنِي فَلَا أَخْذَلَ.\n- (4) Al-Istifham (الاستفهام): فَهَلْ لَنَا مِنْ شُفَعَاءَ فَيَشْفَعُوا لَنَا.\n- (5) Al-'Ardh (العرض - permintaan lembut dengan أَلَا): أَلَا تَنْزِلُ بِنَا فَتُصِيبَ خَيْرًا.\n- (6) At-Tahdhidh (التحضيض - dorongan kuat dengan هَلَّا / لَوْلَا): لَوْلَا أَخَّرْتَنِي إِلَى أَجَلٍ قَرِيبٍ فَأَصَّدَّقَ.\n- (7) At-Tamanni (التمني dengan لَيْتَ / لَوْ): يَا لَيْتَنِي كُنْتُ مَعَهُمْ فَأَفُوزَ فَوْزًا عَظِيمًا.\n- (8) Ar-Raja' (الرجاء dengan لَعَلَّ): لَعَلِّي أَبْلُغُ الْأَسْبَابَ أَسْبَابَ السَّمَاوَاتِ فَأَطَّلِعَ.",
+      "rumus_ringkas": "Fa' Sababiyyah / Wawu Ma'iyyah + Mudhari' Manshub = Wajib didahului Nafi Mahdh atau 8 Thalab Mahdh (أمر، نهي، دعاء، استفهام، عرض، تحضيض، تمنٍّ، رجاء)",
+      "tanbihat_dan_khilaf": "Apa bedanya jika Thalab dinyatakan dengan Isim Fi'il (seperti صَهْ فَأُحَدِّثُكَ) atau Lafazh Khabar (حَسْبُكَ الْحَدِيثُ فَيَنَامُ النَّاسُ)? Karena Thalab-nya tidak murni dengan Fi'il (غير محض), maka TIDAK BOLEH dinashabkan setelah Fa' menurut jumhur Bashrah, melainkan wajib dirafa'kan (atau dijazmkan jika Fa'-nya dibuang pada jawab thalab)."
+    },
+    {
+      "id_materi": "MAT-2101",
+      "id_bab": "BAB-21",
+      "sub_topik_arab": "ما يجزم فعلًا واحدًا (لم، لما، لام الأمر، لا الناهية) والفروق الخمسة بين (لم) و(لما)",
+      "sub_topik_indo": "Empat Huruf Penjazm Satu Fi'il Mudhari' dan 5 Perbedaan Mendalam antara Lam (لَمْ) dan Lamma (لَمَّا)",
+      "kaidah_arab": "الأَدَوَاتُ الجَازِمَةُ لِفِعْلٍ وَاحِدٍ أَرْبَعَةُ أَحْرُفٍ: (لَمْ) حَرْفُ نَفْيٍ وَجَزْمٍ وَقَلْبٍ يَقْلِبُ زَمَنَ المُضَارِعِ إِلَى المَاضِي، وَ(لَمَّا) حَرْفُ جَزْمٍ يَنْفِي الفِعْلَ إِلَى وَقْتِ التَّكَلُّمِ مَعَ تَوَقُّعِ حُصُولِهِ، وَ(لَامُ الأَمْرِ وَالدُّعَاءِ) الدَّالَّةُ عَلَى طَلَبِ الفِعْلِ، وَ(لَا النَّاهِيَةُ) الدَّالَّةُ عَلَى طَلَبِ الكَفِّ عَنِ الفِعْلِ. وَالفَرْقُ بَيْنَ (لَمْ) وَ(لَمَّا): أَنَّ النَّفْيَ بِلَمَّا مُسْتَمِرٌّ إِلَى حَالِ التَّكَلُّمِ، وَمَنْفِيَّهَا مُتَوَقَّعُ الحُصُولِ، وَيَجُوزُ حَذْفُ مَجْزُومِهَا اخْتِصَارًا.",
+      "penjelasan_indo": "Empat huruf yang menjazmkan satu Fi'il Mudhari' semuanya adalah huruf (حروف بالإجماع). Dua di antaranya berfungsi menafikan dan membalik zaman mudhari' ke masa lampau (لَمْ dan لَمَّا), dan dua lainnya berfungsi menuntut (لام الأمر dan لا الناهية).",
+      "rincian_hukum_dan_syarat": "1. لَمْ dan لَمَّا: Keduanya disebut حرف نفي وجزم وقلب (menafikan kejadian, menjazmkan lafazh mudhari', dan membalik maknanya menjadi masa lampau/madhi). Namun terdapat 5 PERBEDAAN KRUSIAL antara لَمْ dan لَمَّا:\n- (a) لَمَّا menafikan kejadian dari masa lalu yang BERlanjut SAMPAI waktu bicara (مستغرق للماضي متصل بالحال: بَلْ لَمَّا يَذُوقُوا عَذَابِ)، sedangkan لَمْ bisa terputus dan bisa berlanjut (لَمْ يَكُنْ شَيْئًا مَذْكُورًا).\n- (b) Menafikan dengan لَمَّا mengandung ekspektasi bahwa hal itu AKAN terjadi (متوقع الثبوت غالبًا: وَلَمَّا يَدْخُلِ الْإِيمَانُ فِي قُلُوبِكُمْ = belum, tapi diharapkan akan masuk)، sedangkan لَمْ tidak harus متوقع.\n- (c) Fi'il setelah لَمَّا BOLEH DIBUANG jika ada bukti konteks (قَارَبْتُ الْمَدِينَةَ وَلَمَّا = ولما أدخلْها)، sedangkan fi'il setelah لَمْ tidak boleh dibuang dalam kalam fashih.\n- (d) لَمْ boleh dimasuki Adat Syarat (فَإِنْ لَمْ تَفْعَلُوا)، sedangkan لَمَّا TIDAK BOLEH dimasuki Adat Syarat (tidak boleh: إنْ لمَّا تفعلوا).\n- (e) لَمْ adalah pasangan penafian bagi فَعَلَ (الماضي المطلق)، sedangkan لَمَّا adalah pasangan penafian bagi قَدْ فَعَلَ (الماضي القريب من الحال).\n2. لَامُ الْأَمْرِ (أو الدعاء): Harakat asalnya Kasrah (لِيُنْفِقْ ذُو سَعَةٍ), namun BOLEH DISUKUNKAN setelah الواو، الفاء، ثم (فَلْيَسْتَجِيبُوا لِي وَلْيُؤْمِنُوا بِي، ثُمَّ لْيَقْضُوا تَفَثَهُمْ).\n3. لَا النَّاهِيَةُ (أو الدعائية): Contoh: لَا تُشْرِكْ بِاللَّهِ / رَبَّنَا لَا تُؤَاخِذْنَا.",
+      "rumus_ringkas": "لَمْ & لَمَّا = نفي + جزم + قلب للماضي | لَمَّا = متصل بالحال + متوقع الثبوت + يجوز حذف مجزومها + لا تقترن بإن الشرطية | لام الأمر = تُسكن بعد (و، ف، ثم)",
+      "tanbihat_dan_khilaf": "Hati-hati membedakan 3 jenis لَمَّا dalam bahasa Arab:\n1. لَمَّا الجازمة (حرف نفي وجزم وقلب): Masuk HANYA pada Fi'il Mudhari' (لَمَّا يَقُمْ).\n2. لَمَّا الحينية (ظرف زمان بمعنى حِين أو حرف وجود لوجود): Masuk pada Fi'il Madhi (فَلَمَّا نَجَّاكُمْ إِلَى الْبَرِّ أَعْرَضْتُمْ).\n3. لَمَّا الاستثنائية (بمعنى إِلَّا): Masuk setelah qasam atau nafi (إِنْ كُلُّ نَفْسٍ لَمَّا عَلَيْهَا حَافِظٌ = ما كل نفس إلا عليها حافظ)."
+    },
+    {
+      "id_materi": "MAT-2102",
+      "id_bab": "BAB-21",
+      "sub_topik_arab": "أدوات الشرط الجازمة لفعلين وقواعد إعراب أسماء الشرط بالتفصيل",
+      "sub_topik_indo": "Adawat Syarat yang Menjazmkan Dua Fi'il dan Kaidah Presisi I'rab Isim-Isim Syarat",
+      "kaidah_arab": "الأَدَوَاتُ الجَازِمَةُ لِفِعْلَيْنِ تُسَمَّى أَدَوَاتِ الشَّرْطِ الجَازِمَةِ: تَجْزِمُ فِعْلَ الشَّرْطِ وَفِعْلَ الجَوَابِ، وَهِيَ حَرْفَانِ بِاتِّفَاقٍ: (إِنْ، وَإِذْمَا)، وَأَسْمَاءٌ لَهَا مَحَلٌّ مِنَ الإِعْرَابِ: (مَنْ) لِلْعَاقِلِ، (مَا، مَهْمَا) لِغَيْرِ العَاقِلِ، (مَتَى، أَيَّانَ) لِلزَّمَانِ فِي مَحَلِّ نَصْبٍ ظَرْفِيَّةً، (أَيْنَ، أَيَّانَمَا، أَنَّى، حَيْثُمَا) لِلْمَكَانِ، (كَيْفَمَا) لِلْحَالِ، وَ(أَيٌّ) بِحَسَبِ مَا تُضَافُ إِلَيْهِ، وَهِيَ الوَحِيدَةُ المُعْرَبَةُ بَيْنَ أَسْمَاءِ الشَّرْطِ.",
+      "penjelasan_indo": "Adawat Syarat Jazimah mengikat dua jumlah: Jumlah Syarat (sebab) dan Jumlah Jawab/Jaza' (akibat). Dua di antaranya adalah HURUF (tidak punya mahal i'rab) yaitu إِنْ (dengan ijma') dan إِذْمَا (menurut Sibawaih), sedangkan 10 sisanya adalah ISIM yang memiliki kedudukan (mahal i'rab) di dalam jumlah syaratnya!",
+      "rincian_hukum_dan_syarat": "Kaidah Emas Menentukan Kedudukan I'rab Isim-Isim Syarat:\n1. Kelompok الدالة على الذات (مَنْ للعاقل، مَا ومَهْمَا لغير العاقل):\n- Di mahal RAFA' MUBTADA': Jika diikuti oleh (a) Fi'il Lazim (مَنْ يَجْتَهِدْ يَنْجَحْ), atau (b) Fi'il Muta'addi yang SUDAH mengambil Maf'ul Bih-nya (مَنْ يُكْرِمْهُ زَيْدٌ يَفْرَحْ / مَنْ يَعْمَلْ سُوءًا يُجْزَ بِهِ), atau (c) Fi'il Naqish yang sudah mengambil Khabarnya.\n- Di mahal NASHAB MAF'UL BIH MUQADDAM: Jika diikuti oleh Fi'il Muta'addi yang BELUM mengambil Maf'ul Bih-nya (مَا تَفْعَلُوا مِنْ خَيْرٍ يَعْلَمْهُ اللَّهُ — مَا: مفعول به مقدم لـ تفعلوا!).\n2. Kelompok الدالة على الزمان أو المكان (مَتَى، أَيَّانَ للزمان؛ أَيْنَ، أَيْنَمَا، أَنَّى، حَيْثُمَا للمكان): Di mahal NASHAB MAF'UL FIH (Zharaf Zaman/Makan) yang berta'alluq pada fi'il syaratnya (أَيْنَمَا تَكُونُوا يُدْرِكْكُمُ الْمَوْتُ).\n3. Kelompok الدالة على الحال (كَيْفَمَا): Di mahal NASHAB HAL jika fi'ilnya tamm, atau KHABAR MUQADDAM jika fi'ilnya naqish (كَيْفَمَا تَكُنْ يَكُنْ قَرِينُكَ).\n4. أَيّ الشرطية (المعربة بالحركات): Kedudukan i'rabnya mengikuti kata yang menjadi MUDHAF ILAIH-nya:\n- Jika mudhaf kepada Mashdar dari lafazh fi'il sesudahnya -> MAF'UL MUTHLAQ (أَيَّ قِرَاءَةٍ تَقْرَأْ تَسْتَفِدْ).\n- Jika mudhaf kepada Isim Zaman/Makan -> MAF'UL FIH (أَيَّ يَوْمٍ تَصُمْ أَصُمْ).\n- Jika mudhaf kepada Dzat ('Aqil/Ghairu 'Aqil) -> mengikuti kaidah مَنْ/مَا (Mubtada' atau Maf'ul Bih, seperti: أَيًّا مَا تَدْعُوا فَلَهُ الْأَسْمَاءُ الْحُسْنَى: مفعول به مقدم منصوب!).\n- Catatan: Jika Isim Syarat mana pun didahului Huruf Jarr atau Mudhaf, maka ia berada di mahal JARR (عَمَّنْ تَتَعَلَّمْ أَتَعَلَّمْ / غُلَامَ مَنْ تَضْرِبْ أَضْرِبْ).",
+      "rumus_ringkas": "مَنْ/مَا + لازم أو متعدٍّ استوفى مفعوله = مبتدأ | مَنْ/مَا + متعدٍّ لم يستوفِ = مفعول به مقدم | متى/أينما = ظرف | أيّ + مصدر = مفعول مطلق",
+      "tanbihat_dan_khilaf": "Siapakah yang menjadi Khabar apabila مَنْ / مَا berkedudukan sebagai Mubtada'? Terdapat 3 pendapat ulama: (1) Jumlah Fi'il Syarat saja (pendapat paling rajih menurut Ibnu Malik & kebanyakan mu'ribin), (2) Jumlah Jawab Syarat saja, atau (3) Gabungan Jumlah Syarat dan Jawab secara bersama-sama."
+    },
+    {
+      "id_materi": "MAT-2103",
+      "id_bab": "BAB-21",
+      "sub_topik_arab": "أحوال فعل الشرط وجوابه ومواضع اقتران جواب الشرط بالفاء وجوبًا والجزم في جواب الطلب",
+      "sub_topik_indo": "Kombinasi Fi'il Syarat-Jawab, 7 Tempat Wajib Fa'ul Jaza', dan Jazm dalam Jawab Thalab",
+      "kaidah_arab": "يَجِبُ اقْتِرَانُ جَوَابِ الشَّرْطِ بِالفَاءِ (فَاءِ الجَزَاءِ) إِذَا لَمْ يَصْلُحْ أَنْ يَكُونَ شَرْطًا لِنَفْسِهِ، وَذَلِكَ فِي سَبْعَةِ مَوَاضِعَ يَجْمَعُهَا البَيْتُ المَشْهُورُ: (اسْمِيَّةٌ طَلَبِيَّةٌ وَبِجَامِدٍ ... وَبِمَا وَقَدْ وَبِلَنْ وَبِالتَّنْفِيسِ). وَحِينَئِذٍ تَكُونُ الجُمْلَةُ فِي مَحَلِّ جَزْمٍ جَوَابًا لِلشَّرْطِ. وَيُجْزَمُ المُضَارِعُ أَيْضًا فِي (جَوَابِ الطَّلَبِ) إِذَا تَقَدَّمَهُ أَمْرٌ أَوْ نَهْيٌ وَقُصِدَ بِهِ الجَزَاءُ وَصَحَّ تَقْدِيرُ شَرْطٍ مُقَدَّرٍ قَبْلَهُ نَحْوُ: (اسْتَقِمْ تَنْجُ).",
+      "penjelasan_indo": "Tidak semua kalimat layak dimasuki 'amil jazm secara langsung sebagai Jawab Syarat. Apabila Jawab Syarat tidak layak menjadi Fi'il Syarat (karena berupa jumlah ismiyyah, thalabiyyah, dll.), maka WAJIB diikat dengan Fa'ul Jaza' (فاء الجزاء أو الفاء الرابطة لجواب الشرط), dan seluruh jumlah setelah Fa' tersebut berada DI MAHAL JAZM (في محل جزم جواب الشرط) apabila adat syaratnya jazimah.",
+      "rincian_hukum_dan_syarat": "A. 7 Tempat Wajib Masuknya Fa'ul Jaza' pada Jawab Syarat:\n1. Jumlah Ismiyyah: وَإِنْ يَمْسَسْكَ اللَّهُ بِضُرٍّ فَلَا كَاشِفَ لَهُ إِلَّا هُوَ / مَنْ يَهْدِ اللَّهُ فَهُوَ الْمُهْتَدِ (Boleh diganti dengan إِذَا الفجائية khusus setelah إِنْ dan إِذَا jika jumlah ismiyyahnya mutsbatah ghairu thalabiyyah, contoh QS. Ar-Rum: 36: وَإِنْ تُصِبْهُمْ سَيِّئَةٌ بِمَا قَدَّمَتْ أَيْدِيهِمْ إِذَا هُمْ يَقْنَطُونَ!).\n2. Jumlah Fi'liyyah Thalabiyyah (Amr, Nahyu, Istifham): قُلْ إِنْ كُنْتُمْ تُحِبُّونَ اللَّهَ فَاتَّبِعُونِي.\n3. Jumlah Fi'liyyah yang Fi'ilnya Jamid (عسى، ليس، نِعْمَ، بئس): إِنْ تُبْدُوا الصَّدَقَاتِ فَنِعِمَّا هِيَ / مَنْ غَشَّنَا فَلَيْسَ مِنَّا.\n4. Jumlah Fi'liyyah yang diawali مَا النافية: فَإِنْ تَوَلَّيْتُمْ فَمَا سَأَلْتُكُمْ مِنْ أَجْرٍ.\n5. Jumlah Fi'liyyah yang diawali لَنْ: وَمَا يَفْعَلُوا مِنْ خَيْرٍ فَلَنْ يُكْفَرُوهُ.\n6. Jumlah Fi'liyyah yang diawali قَدْ: إِنْ يَسْرِقْ فَقَدْ سَرَقَ أَخٌ لَهُ مِنْ قَبْلُ.\n7. Jumlah Fi'liyyah yang diawali التنفيس (السين أو سوف): وَإِنْ خِفْتُمْ عَيْلَةً فَسَوْفَ يُغْنِيكُمُ اللَّهُ مِنْ فَضْلِهِ.\nB. Hukum Kombinasi Fi'il Syarat dan Jawab:\n- Jika Fi'il Syarat = Madhi, dan Jawab = Mudhari' (مَنْ كَانَ يُرِيدُ حَرْثَ الْآخِرَةِ نَزِدْ لَهُ فِي حَرْثِهِ): Jawab BOLEH Jazm (نَزِدْ - paling fashih) dan BOLEH Rafa'!\n- Jika Fi'il Syarat = Mudhari', dan Jawab = Mudhari': Keduanya WAJIB Jazm.\nC. Jazm dalam Jawab Thalab (الجزم في جواب الطلب): Fi'il Mudhari' dijazmkan (oleh إنْ شرطية مقدرة menurut jumhur) jika jatuh setelah Thalab без الفاء dengan 2 syarat:\n1. Mudhari' tersebut dimaksudkan sebagai akibat/balasan (مقصودًا به الجزاء والمسببية).\n2. Setelah Nahi (النهي), harus berupa sesuatu yang DISUKAI/TERPUJI (محبوبًا), seperti: لَا تَدْنُ مِنَ الْأَسَدِ تَسْلَمْ (Jazm!). Jika setelah Nahi berupa sesuatu yang TIDAK DISUKAI/BURUK, maka WAJIB RAFA' (لَا تَدْنُ مِنَ الْأَسَدِ يَأْكُلُكَ — wajib rafa' يَأْكُلُكَ karena dimakan singa bukan akibat dari 'tidak mendekat'!).",
+      "rumus_ringkas": "7 Wajib Fa' = اسمية طلبية وبجامد وبما ولن وبقد وبالتنفيس | الجملة بعد الفاء = في محل جزم (مع أداة جازمة) | جواب النهي = يُجزم إن كان محبوبًا (تسلمْ) ويُرفع إن كان مكروهًا (يأكلُك)",
+      "tanbihat_dan_khilaf": "Kaidah Mahal I'rab Jumlah Jawab Syarat: Jumlah Jawab Syarat HANYA memiliki mahal جزم apabila memenuhi 2 syarat sekaligus: (1) Adat syaratnya JAZIMAH, dan (2) Jawabnya bersambung dengan الفاء atau إذا الفجائية. Jika salah satu syarat hilang (misal tanpa الفاء مثل: إِنْ قَامَ زَيْدٌ قَامَ عَمْرٌو, atau adatnya غير جازمة مثل: إِذَا جَاءَ نَصْرُ اللَّهِ فَسَبِّحْ), maka Jumlah Jawab Syarat secara keseluruhan لا محل لها من الإعراب!"
+    },
+    {
+      "id_materi": "MAT-2104",
+      "id_bab": "BAB-21",
+      "sub_topik_arab": "أدوات الشرط غير الجازمة (لو، لولا، لوما، إذا، كلما، لما الحينية، أما) وأحكامها",
+      "sub_topik_indo": "Adawat Syarat Ghairu Jazimah (Lau, Laula, Lauma, Idza, Kullama, Lamma, Amma) dan Hukum I'rabnya",
+      "kaidah_arab": "أَدَوَاتُ الشَّرْطِ غَيْرُ الجَازِمَةِ تَرْبِطُ بَيْنَ الشَّرْطِ وَالجَوَابِ دُونَ عَمَلِ الجَزْمِ فِي اللَّفْظِ، وَهِيَ: (لَوْ) حَرْفُ امْتِنَاعٍ لِامْتِنَاعٍ، (لَوْلَا وَلَوْمَا) حَرْفَا امْتِنَاعٍ لِوُجُودٍ يَلِيهِمَا مُبْتَدَأٌ حُذِفَ خَبَرُهُ وُجُوبًا، (إِذَا) ظَرْفٌ لِمَا يُسْتَقْبَلُ مِنَ الزَّمَانِ خَافِضٌ لِشَرْطِهِ مَنْصُوبٌ بِجَوَابِهِ، (كُلَّمَا) ظَرْفٌ يُفِيدُ التَّكْرَارَ لَا يَلِيهِ إِلَّا المَاضِي، (لَمَّا) الحِينِيَّةُ ظَرْفُ زَمَانٍ بِمَعْنَى حِينَ، وَ(أَمَّا) الشَّرْطِيَّةُ التَّفْصِيلِيَّةُ الَّتِي يَلْزَمُ جَوَابَهَا الفَاءُ دَائِمًا كَقَوْلِهِ: ﴿فَأَمَّا اليَتِيمَ فَلَا تَقْهَرْ﴾.",
+      "penjelasan_indo": "Adawat Syarat Ghairu Jazimah membentuk struktur syarat dan jawab dari segi makna, tetapi tidak menjazmkan fi'il sesudahnya. Terbagi menjadi Huruf dan Zharaf.",
+      "rincian_hukum_dan_syarat": "1. لَوْ (حرف امتناع لامتناع — terhalangnya jawab karena terhalangnya syarat di masa lalu): Jawab لَوْ biasanya berupa Fi'il Madhi (positif atau negatif dengan مَا) atau Mudhari' yang dinafikan dengan لَمْ. Jika jawabnya Madhi Mutsbat (positif), yang paling banyak adalah masuknya اللَّام (وَلَوْ شَاءَ رَبُّكَ لَجَعَلَ النَّاسَ أُمَّةً وَاحِدَةً / لَوْ أَنْزَلْنَا هَذَا الْقُرْآنَ عَلَى جَبَلٍ لَرَأَيْتَهُ). Jika jawabnya dinafikan dengan مَا, mayoritas tanpa Lam (وَلَوْ شَاءَ رَبُّكَ مَا فَعَلُوهُ).\n2. لَوْلَا dan لَوْمَا (حرف امتناع لوجود — terhalangnya jawab karena adanya syarat): WAJIB diikuti oleh ISIM MARFU' yang berkedudukan sebagai MUBTADA', dan khabarnya WAJIB DIBUANG apabila berupa كَوْن عَام (تقديره: موجود)، contoh: وَلَوْلَا دَفْعُ اللَّهِ النَّاسَ بَعْضَهُمْ بِبَعْضٍ لَفَسَدَتِ الْأَرْضُ (دَفْعُ: مبتدأ مرفوع، وخبره محذوف وجوبًا تقديره موجود!).\n3. إِذَا (ظرف لما يُستقبل من الزمان خافض لشرطه منصوب بجوابه أو بشرطه متضمن معنى الشرط): Jumlah tepat sesudah إِذَا selalu berada DI MAHAL JARR MUDHAF ILAIH! Apabila setelah إِذَا terdapat Isim Marfu' (seperti: إِذَا السَّمَاءُ انْشَقَّتْ)، maka menurut jumhur Bashrah isim tersebut adalah FA'IL (أو نائب فاعل) bagi fi'il yang dibuang yang ditafsirkan oleh fi'il sesudahnya!\n4. كُلَّمَا (ظرف زمان يفيد التكرار منصوب بجوابه): Hanya masuk pada Fi'il Madhi, dan TIDAK BOLEH diulang dua kali dalam satu kalimat (salah mengatakan: كلما قرأتَ كلما فهمتَ؛ yang benar: كُلَّمَا قَرَأْتَ فَهِمْتَ)!\n5. أَمَّا (حرف شرط وتفصيل وتوكيد يقوم مقام أداة الشرط وفعل الشرط، ومعناه: مهما يكن من شيء): Jawabnya WAJIB diikat dengan الفاء (فَأَمَّا الْيَتِيمَ فَلَا تَقْهَرْ).",
+      "rumus_ringkas": "لَوْ = امتناع لامتناع | لَوْلَا + اسم = مبتدأ خبره محذوف وجوبًا (موجود) | إِذَا + اسم مرفوع = فاعل لفعل محذوف يفسره المذكور | أَمَّا = واجب الفاء في جوابها",
+      "tanbihat_dan_khilaf": "Siapakah yang menashabkan Zharaf إِذَا الشرطية? Jumhur ulama dahulu berpendapat ia dinashabkan oleh fi'il JAWAB-nya (خافض لشرطه منصوب بجوابه), namun para muhaqqiq (seperti الرضي وابن هشام) memilih bahwa ia dinashabkan oleh FI'IL SYARAT-nya sendiri karena mudhaf ilaih (jumlah syarat) tidak bisa memisahkan zharaf dari 'amilnya jika 'amilnya di luar mudhaf ilaih."
+    }
+  ],
+  "irab": [
+    {
+      "id_contoh": "IRB-1901",
+      "id_bab": "BAB-19",
+      "id_materi": "MAT-1902",
+      "jenis_dalil": "Al-Quran",
+      "sumber_dalil": "QS. Ali 'Imran: 186 & QS. Yusuf: 32",
+      "kalimat_arab": "لَتُبْلَوُنَّ فِي أَمْوَالِكُمْ وَأَنْفُسِكُمْ وَلَتَسْمَعُنَّ * وَلَئِنْ لَمْ يَفْعَلْ مَا آمُرُهُ لَيُسْجَنَنَّ وَلَيَكُونًا مِنَ الصَّاغِرِينَ",
+      "terjemahan_indo": "Kamu sungguh-sungguh akan diuji pada hartamu dan dirimu, dan kamu sungguh-sungguh akan mendengar... * Dan sungguh jika dia tidak melakukan apa yang aku perintahkan kepadanya, niscaya dia akan dipenjarakan dan dia akan termasuk golongan orang-orang yang hina.",
+      "kata_kunci": "لَتُبْلَوُنَّ، وَلَتَسْمَعُنَّ، لَيُسْجَنَنَّ، وَلَيَكُونًا",
+      "irab_arab": "لَتُبْلَوُنَّ: اللام موطئة للقسم، و(تُبْلَوُنَّ) فعل مضارع مبني للمجهول مرفوع وعلامة رفعه ثبوت النون المحذوفة لتوالي الأمثال (لأن نون التوكيد غير مباشرة لوجود واو الجماعة الفاصلة)، وواو الجماعة المحركة بالضم لالتقاء الساكنين ضمير متصل في محل رفع نائب فاعل، والنون المشددة حرف توكيد لا محل له. وَلَتَسْمَعُنَّ: فعل مضارع مرفوع بثبوت النون المحذوفة لتوالي الأمثال، وواو الجماعة المحذوفة لالتقاء الساكنين في محل رفع فاعل، والنون للتوكيد. لَيُسْجَنَنَّ: فعل مضارع مبني للمجهول مبني على الفتح لاتصاله بنون التوكيد الثقيلة المباشرة، ونائب الفاعل مستتر جوازًا (هو). وَلَيَكُونًا (وَلَيَكُونَنْ): فعل مضارع ناقص مبني على الفتح لاتصاله بنون التوكيد الخفيفة المباشرة المكتوبة ألفًا على رسم الوقف.",
+      "penjelasan_irab_indo": "Perbandingan luar biasa antara Nun Taukid Ghairu Mubasyirah dan Mubasyirah dalam Al-Qur'an: Pada لَتُبْلَوُنَّ (أصلها: تُبْلَيُونَ + نَّ) dan وَلَتَسْمَعُنَّ (أصلها: تَسْمَعُونَ + نَّ), fi'il mudhari'-nya berstatus MU'RAB MARFU' dengan Tsubutun Nun yang dibuang karena berturut-turutnya tiga nun (karena dipisah oleh Wawu Jama'ah). Sedangkan pada لَيُسْجَنَنَّ dan وَلَيَكُونًا, fi'il mudhari'-nya berstatus MABNI 'ALAL FATH karena Nun Taukid (tsaqilah dan khafifah) menempel langsung tanpa pemisah dhamir bariz!"
+    },
+    {
+      "id_contoh": "IRB-1902",
+      "id_bab": "BAB-19",
+      "id_materi": "MAT-1902",
+      "jenis_dalil": "Al-Quran",
+      "sumber_dalil": "QS. Yunus: 89 & QS. Al-Baqarah: 233",
+      "kalimat_arab": "فَاسْتَقِيمَا وَلَا تَتَّبِعَانِّ سَبِيلَ الَّذِينَ لَا يَعْلَمُونَ * وَالْوَالِدَاتُ يُرْضِعْنَ أَوْلَادَهُنَّ",
+      "terjemahan_indo": "Maka tetaplah kamu berdua pada jalan yang lurus dan janganlah sekali-kali kamu berdua mengikuti jalan orang-orang yang tidak mengetahui. * Para ibu hendaklah menyusukan anak-anaknya.",
+      "kata_kunci": "فَاسْتَقِيمَا، وَلَا تَتَّبِعَانِّ، يُرْضِعْنَ",
+      "irab_arab": "فَاسْتَقِيمَا: فعل أمر مبني على حذف النون لاتصاله بألف الاثنين، والألف فاعل. وَلَا تَتَّبِعَانِّ: (لا) ناهية جازمة، و(تَتَّبِعَانِّ) فعل مضارع مجزوم بـ(لا) وعلامة جزمه حذف النون لأنه من الأفعال الخمسة (وليس مبنيًّا لأن نون التوكيد غير مباشرة لوجود ألف الاثنين الفاصلة)، وألف الاثنين ضمير متصل في محل رفع فاعل، والنون المشددة المكسورة حرف توكيد لا محل له من الإعراب. يُرْضِعْنَ: فعل مضارع مبني على السكون لاتصاله بنون النسوة، ونون النسوة ضمير متصل مبني على الفتح في محل رفع فاعل، والجملة في محل رفع خبر المبتدأ (الوالدات).",
+      "penjelasan_irab_indo": "Ayat وَلَا تَتَّبِعَانِّ adalah bukti nyata bahwa ketika Nun Taukid dipisah oleh Alif Itsnain, fi'il mudhari' tetap MU'RAB (di sini majzum dengan hadzfun nun oleh لَا الناهية, bukan mabni!). Adapun يُرْضِعْنَ adalah contoh Fi'il Mudhari' yang mabni 'alas sukun karena bersambung dengan Nun Niswah."
+    },
+    {
+      "id_contoh": "IRB-2001",
+      "id_bab": "BAB-20",
+      "id_materi": "MAT-2001",
+      "jenis_dalil": "Al-Quran",
+      "sumber_dalil": "QS. Al-Muzzammil: 20 & QS. Al-Ma'idah: 71",
+      "kalimat_arab": "عَلِمَ أَنْ سَيَكُونُ مِنْكُمْ مَرْضَى * وَحَسِبُوا أَلَّا تَكُونَ فِتْنَةٌ",
+      "terjemahan_indo": "Dia mengetahui bahwa akan ada di antara kamu orang-orang yang sakit. * Dan mereka mengira bahwa tidak akan terjadi suatu bencana pun.",
+      "kata_kunci": "أَنْ سَيَكُونُ، أَلَّا تَكُونَ",
+      "irab_arab": "أَنْ سَيَكُونُ: (أَنْ) مخففة من الثقيلة حرف مبني على السكون، واسمها ضمير الشأن محذوف وجوبًا تقديره (أنه)، والسين حرف استقبال، و(يَكُونُ) فعل مضارع مرفوع وعلامة رفعه الضمة الظاهرة (لأن أنْ سُبقت بفعل اليقين عَلِمَ فلا تنصب)، والجملة في محل رفع خبر (أنْ)، والمصدر المؤول سد مسد مفعولي (علم). أَلَّا تَكُونَ: مكونة من (أنْ + لا)؛ على قراءة النصب (تَكُونَ): (أنْ) مصدرية ناصبة، و(لا) نافية، و(تَكُونَ) فعل مضارع تام منصوب بـ(أنْ) و(فتنةٌ) فاعل؛ وعلى قراءة الرفع (تَكُونُ): (أنْ) مخففة من الثقيلة لأنها سُبقت بفعل الرجحان (حَسِبُوا) فجاز الوجهان!",
+      "penjelasan_irab_indo": "Dua ayat kunci untuk membedakan أَنْ المصدرية الناصبة dan أَنْ المخففة من الثقيلة: Setelah عَلِمَ (fi'il yaqin), أَنْ pasti Mukhaffafah sehingga سَيَكُونُ wajib marfu'. Sedangkan setelah حَسِبُوا (fi'il rujhan/zhann), boleh diperlakukan sebagai أَنْ الناصبة (قراءة: أَلَّا تَكُونَ) dan boleh sebagai المخففة (قراءة: أَلَّا تَكُونُ)."
+    },
+    {
+      "id_contoh": "IRB-2002",
+      "id_bab": "BAB-20",
+      "id_materi": "MAT-2003",
+      "jenis_dalil": "Al-Quran",
+      "sumber_dalil": "QS. Al-Anfal: 33 & QS. Al-Baqarah: 214",
+      "kalimat_arab": "وَمَا كَانَ اللَّهُ لِيُعَذِّبَهُمْ وَأَنْتَ فِيهِمْ * وَزُلْزِلُوا حَتَّى يَقُولَ الرَّسُولُ",
+      "terjemahan_indo": "Dan Allah sekali-kali tidak akan mengazab mereka, sedang engkau berada di antara mereka. * Dan mereka diguncangkan (dengan bermacam-macam cobaan) sehingga Rasul berkata...",
+      "kata_kunci": "لِيُعَذِّبَهُمْ، حَتَّى يَقُولَ",
+      "irab_arab": "لِيُعَذِّبَهُمْ: اللام لام الجحود (مسبوقة بـ ما كان)، و(يُعَذِّبَ) فعل مضارع منصوب بـ(أنْ) مضمرة وجوبًا بعد لام الجحود وعلامة نصبه الفتحة الظاهرة، والفاعل مستتر (هو)، و(هم) مفعول به، والمصدر المؤول من (أنْ المضمرة والفعل) في محل جر باللام متعلق بمحذوف خبر (كان) تقديره (مريدًا). حَتَّى يَقُولَ: (حَتَّى) حرف غاية وجر، و(يَقُولَ) فعل مضارع منصوب بـ(أنْ) مضمرة وجوبًا بعد حتى (على إرادة الاستقبال النسبي بالنسبة لوقت الزلزلة)، والمصدر المؤول في محل جر بـ(حتى).",
+      "penjelasan_irab_indo": "Contoh penashaban wajib dengan أَنْ المضمرة وجوبًا setelah Lam Juhud (لِيُعَذِّبَهُمْ) yang didahului مَا كَانَ, dan setelah حَتَّى (حَتَّى يَقُولَ)."
+    },
+    {
+      "id_contoh": "IRB-2003",
+      "id_bab": "BAB-20",
+      "id_materi": "MAT-2004",
+      "jenis_dalil": "Al-Quran & Syair Arab",
+      "sumber_dalil": "QS. Fathir: 36, QS. An-Nisa': 73 & Syair Abu al-Aswad ad-Du'ali",
+      "kalimat_arab": "لَا يُقْضَى عَلَيْهِمْ فَيَمُوتُوا * يَا لَيْتَنِي كُنْتُ مَعَهُمْ فَأَفُوزَ فَوْزًا عَظِيمًا * لَا تَنْهَ عَنْ خُلُقٍ وَتَأْتِيَ مِثْلَهُ",
+      "terjemahan_indo": "Mereka tidak dibinasakan sehingga mereka mati. * Wahai, kiranya aku ada bersama mereka, tentu aku mendapat kemenangan yang besar. * Janganlah engkau melarang suatu perangai sementara engkau sendiri melakukan hal yang serupa dengannya.",
+      "kata_kunci": "فَيَمُوتُوا، فَأَفُوزَ، وَتَأْتِيَ",
+      "irab_arab": "فَيَمُوتُوا: الفاء للسببية (مسبوقة بنفي محض)، و(يَمُوتُوا) فعل مضارع منصوب بـ(أنْ) مضمرة وجوبًا بعد فاء السببية وعلامة نصبه حذف النون لأنه من الأفعال الخمسة، والواو فاعل. فَأَفُوزَ: الفاء للسببية (مسبوقة بطلب محض وهو التمني بليت)، و(أَفُوزَ) فعل مضارع منصوب بـ(أنْ) مضمرة وجوبًا وعلامة نصبه الفتحة الظاهرة. وَتَأْتِيَ: الواو للمعية (مسبوقة بطلب محض وهو النهي)، و(تَأْتِيَ) فعل مضارع منصوب بـ(أنْ) مضمرة وجوبًا بعد واو المعية وعلامة نصبه الفتحة الظاهرة على الياء لخفتها.",
+      "penjelasan_irab_indo": "Tiga syahid utama untuk Fa' Sababiyyah dan Wawu Ma'iyyah: فَيَمُوتُوا dinashabkan dengan hadzfun nun setelah Nafi Mahdh; فَأَفُوزَ dinashabkan dengan fathah setelah Tamanni (لَيْتَ); dan وَتَأْتِيَ dinashabkan dengan fathah zhahirah setelah Wawu Ma'iyyah yang didahului Nahi (لَا تَنْهَ)."
+    },
+    {
+      "id_contoh": "IRB-2101",
+      "id_bab": "BAB-21",
+      "id_materi": "MAT-2101",
+      "jenis_dalil": "Al-Quran",
+      "sumber_dalil": "QS. Al-Hujurat: 14 & QS. Al-Hajj: 29",
+      "kalimat_arab": "قَالَتِ الْأَعْرَابُ آمَنَّا قُلْ لَمْ تُؤْمِنُوا وَلَكِنْ قُولُوا أَسْلَمْنَا وَلَمَّا يَدْخُلِ الْإِيمَانُ فِي قُلُوبِكُمْ * ثُمَّ لْيَقْضُوا تَفَثَهُمْ وَلْيُوفُوا نُذُورَهُمْ",
+      "terjemahan_indo": "Orang-orang Arab Badui itu berkata: Kami telah beriman. Katakanlah: Kalian belum beriman, tetapi katakanlah 'kami telah tunduk', karena iman itu belum masuk ke dalam hatimu. * Kemudian, hendaklah mereka menghilangkan kotoran yang ada pada badan mereka dan hendaklah mereka menyempurnakan nazar-nazar mereka.",
+      "kata_kunci": "لَمْ تُؤْمِنُوا، وَلَمَّا يَدْخُلِ، ثُمَّ لْيَقْضُوا، وَلْيُوفُوا",
+      "irab_arab": "لَمْ تُؤْمِنُوا: (لم) حرف نفي وجزم وقلب، و(تؤمنوا) فعل مضارع مجزوم بـ(لم) وعلامة جزمه حذف النون، والواو فاعل. وَلَمَّا يَدْخُلِ: (لمَّا) حرف نفي وجزم وقلب (يفيد اتصال النفي بالحال وتوقع الدخول مستقبلًا)، و(يَدْخُلِ) فعل مضارع مجزوم بـ(لما) وعلامة جزمه السكون المقدر (أو المحرك بالكسر العارض لالتقاء الساكنين). ثُمَّ لْيَقْضُوا وَلْيُوفُوا: اللام لام الأمر مبنية على السكون (لسكونها بعد ثم والواو)، و(يَقْضُوا / يُوفُوا) فعل مضارع مجزوم بلام الأمر وعلامة جزمه حذف النون لأنه من الأفعال الخمسة.",
+      "penjelasan_irab_indo": "Ayat pertama memamerkan mukjizat balaghah perbedaan لَمْ تُؤْمِنُوا (bantahan terhadap klaim آمَنَّا) dan وَلَمَّا يَدْخُلِ الْإِيمَانُ (iman belum masuk sampai detik ini, namun diharapkan segera masuk ke hati mereka). Ayat kedua menunjukkan sukunnya Lam Amr setelah ثُمَّ dan الواو serta jazmnya Af'al Khamsah dengan hadzfun nun."
+    },
+    {
+      "id_contoh": "IRB-2102",
+      "id_bab": "BAB-21",
+      "id_materi": "MAT-2102",
+      "jenis_dalil": "Al-Quran",
+      "sumber_dalil": "QS. Al-Isra': 110 & QS. Al-Baqarah: 197",
+      "kalimat_arab": "أَيًّا مَا تَدْعُوا فَلَهُ الْأَسْمَاءُ الْحُسْنَى * وَمَا تَفْعَلُوا مِنْ خَيْرٍ يَعْلَمْهُ اللَّهُ",
+      "terjemahan_indo": "Dengan nama yang mana saja kamu seru, Dia mempunyai al-Asma'ul Husna (nama-nama yang terbaik). * Dan apa saja kebaikan yang kamu kerjakan, niscaya Allah mengetahuinya.",
+      "kata_kunci": "أَيًّا مَا تَدْعُوا فَلَهُ، وَمَا تَفْعَلُوا ... يَعْلَمْهُ",
+      "irab_arab": "أَيًّا: اسم شرط جازم مفعول به مقدم للفعل (تدعوا) منصوب وعلامة نصبه الفتحة الظاهرة (وقطع عن الإضافة لفظًا وعُوِّض عنها التنوين). مَا: حرف زائد للتوكيد مبني على السكون لا محل له. تَدْعُوا: فعل مضارع فعل الشرط مجزوم وعلامة جزمه حذف النون، والواو فاعل. فَلَهُ الْأَسْمَاءُ الْحُسْنَى: الفاء رابطة لجواب الشرط (لأن الجواب جملة اسمية)، و(له) جار ومجرور خبر مقدم، و(الأسماءُ) مبتدأ مؤخر، والجملة الاسمية في محل جزم جواب الشرط. وَمَا تَفْعَلُوا: (ما) اسم شرط جازم مبني على السكون في محل نصب مفعول به مقدم لـ(تفعلوا) لأنه متعدٍّ لم يستوفِ مفعوله، و(تفعلوا) فعل الشرط مجزوم بحذف النون، و(يَعْلَمْهُ) جواب الشرط مجزوم بالسكون.",
+      "penjelasan_irab_indo": "Kedua ayat ini menampilkan Isim Syarat (أَيًّا dan مَا) yang berkedudukan sebagai Maf'ul Bih Muqaddam karena fi'il syarat sesudahnya (تَدْعُوا dan تَفْعَلُوا) adalah fi'il muta'addi yang belum mengambil maf'ul bih-nya. Pada ayat pertama, jumlah jawab syarat (فَلَهُ الْأَسْمَاءُ الْحُسْنَى) wajib memakai Fa'ul Jaza' karena berupa Jumlah Ismiyyah dan berada di mahal jazm."
+    },
+    {
+      "id_contoh": "IRB-2103",
+      "id_bab": "BAB-21",
+      "id_materi": "MAT-2103",
+      "jenis_dalil": "Al-Quran",
+      "sumber_dalil": "QS. Maryam: 5-6 & QS. Ar-Rum: 36",
+      "kalimat_arab": "فَهَبْ لِي مِنْ لَدُنْكَ وَلِيًّا * يَرِثْنِي وَيَرِثْ مِنْ آلِ يَعْقُوبَ * وَإِنْ تُصِبْهُمْ سَيِّئَةٌ بِمَا قَدَّمَتْ أَيْدِيهِمْ إِذَا هُمْ يَقْنَطُونَ",
+      "terjemahan_indo": "Maka anugerahilah aku dari sisi Engkau seorang putra, yang akan mewarisi aku dan mewarisi sebagian keluarga Ya'qub. * Dan apabila mereka ditimpa suatu musibah disebabkan apa yang telah dikerjakan oleh tangan mereka sendiri, tiba-tiba mereka berputus asa.",
+      "kata_kunci": "فَهَبْ ... يَرِثْنِي، إِذَا هُمْ يَقْنَطُونَ",
+      "irab_arab": "فَهَبْ ... يَرِثْنِي: (هَبْ) فعل أمر للدعاء مبني على السكون، و(يَرِثْنِي) على قراءة الجزم (لأبي عمرو والكسائي): فعل مضارع مجزوم في جواب الطلب (فَهَبْ) وعلامة جزمه السكون، والنون للوقاية، والياء مفعول به (وعلى قراءة الجمهور بالرفع يَرِثُنِي: الجملة في محل نصب نعت لـ وليًّا). إِذَا هُمْ يَقْنَطُونَ: (إِذَا) الفجائية حرف مبني على السكون لا محل له (ناب مناب فاء الجزاء في ربط الجملة الاسمية بجواب الشرط)، و(هُمْ) مبتدأ، وجملة (يَقْنَطُونَ) خبر، والجملة الاسمية (إذا هم يقنطون) في محل جزم جواب الشرط (إنْ)!",
+      "penjelasan_irab_indo": "Ayat pertama adalah contoh indah Jazm dalam Jawab Thalab/Du'a' (فَهَبْ لِي ... يَرِثْنِي). Ayat kedua adalah bukti Al-Qur'an bahwa إِذَا الفجائية dapat menggantikan posisi Fa'ul Jaza' ketika Jawab Syarat berupa Jumlah Ismiyyah, sehingga jumlah إِذَا هُمْ يَقْنَطُونَ berada di mahal jazm."
+    },
+    {
+      "id_contoh": "IRB-2104",
+      "id_bab": "BAB-21",
+      "id_materi": "MAT-2104",
+      "jenis_dalil": "Al-Quran",
+      "sumber_dalil": "QS. Al-Baqarah: 251 & QS. Al-Insyiqaq: 1",
+      "kalimat_arab": "وَلَوْلَا دَفْعُ اللَّهِ النَّاسَ بَعْضَهُمْ بِبَعْضٍ لَفَسَدَتِ الْأَرْضُ * إِذَا السَّمَاءُ انْشَقَّتْ",
+      "terjemahan_indo": "Seandainya Allah tidak menolak (keganasan) sebagian manusia dengan sebagian yang lain, pasti rusaklah bumi ini. * Apabila langit terbelah.",
+      "kata_kunci": "وَلَوْلَا دَفْعُ اللَّهِ ... لَفَسَدَتِ، إِذَا السَّمَاءُ انْشَقَّتْ",
+      "irab_arab": "وَلَوْلَا دَفْعُ: (لولا) حرف امتناع لوجود (شرط غير جازم) لا محل له، و(دَفْعُ) مبتدأ مرفوع وعلامة رفعه الضمة الظاهرة، وخبره محذوف وجوبًا تقديره (موجود)، وجملة (لَفَسَدَتِ الْأَرْضُ) جواب الشرط غير الجازم لا محل لها من الإعراب. إِذَا السَّمَاءُ انْشَقَّتْ: (إِذَا) ظرف لما يُستقبل من الزمان متضمن معنى الشرط غير الجازم مبني على السكون في محل نصب بفعل الشرط، و(السَّمَاءُ) فاعل مرفوع لفعل محذوف وجوبًا يفسره الفعل المذكور بعده والتقدير (إذا انشقَّتِ السماءُ انشقَّتْ)، وجملة الفعل المحذوف وفاعله في محل جر مضاف إليه، وجملة (انْشَقَّتْ) المذكورة تفسيرية لا محل لها من الإعراب.",
+      "penjelasan_irab_indo": "Dua kaidah paling sering diujikan dalam Adawat Syarat Ghairu Jazimah: (1) Isim setelah لَوْلَا (yaitu دَفْعُ) selalu Mubtada' yang khabarnya wajib dibuang takdirnya مَوْجُودٌ؛ dan (2) Isim marfu' setelah إِذَا الشرطية (yaitu السَّمَاءُ) menurut jumhur Bashrah bukan Mubtada', melainkan Fa'il bagi fi'il yang dibuang yang ditafsirkan oleh fi'il sesudahnya (karena إِذَا khusus masuk pada jumlah fi'liyyah!)."
+    },
+    {
+      "id_contoh": "IRB-2105",
+      "id_bab": "BAB-21",
+      "id_materi": "MAT-2104",
+      "jenis_dalil": "Al-Quran",
+      "sumber_dalil": "QS. Adh-Dhuha: 9-10",
+      "kalimat_arab": "فَأَمَّا الْيَتِيمَ فَلَا تَقْهَرْ * وَأَمَّا السَّائِلَ فَلَا تَنْهَرْ",
+      "terjemahan_indo": "Maka terhadap anak yatim janganlah engkau berlaku sewenang-wenang. Dan terhadap orang yang meminta-minta, janganlah engkau menghardiknya.",
+      "kata_kunci": "فَأَمَّا الْيَتِيمَ فَلَا تَقْهَرْ",
+      "irab_arab": "فَأَمَّا: الفاء رابطة أو استئنافية، و(أَمَّا) حرف شرط وتفصيل وتوكيد مبني على السكون لا محل له من الإعراب (ينوب عن أداة الشرط وفعل الشرط والتقدير: مهما يكن من شيء). الْيَتِيمَ: مفعول به مقدم للفعل (تقهر) منصوب وعلامة نصبه الفتحة الظاهرة (قُدِّم ليفصل بين أمَّا والفاء لأن الفاء لا تتصدر). فَلَا تَقْهَرْ: الفاء واقعة في جواب (أمَّا) رابطة وجوبًا، و(لَا) ناهية جازمة، و(تَقْهَرْ) فعل مضارع مجزوم بـ(لا) وعلامة جزمه السكون، والفاعل مستتر وجوبًا (أنت)، والجملة لا محل لها لأن أداة الشرط غير جازمة.",
+      "penjelasan_irab_indo": "Dalam uslub أَمَّا ... فَـ، kata الْيَتِيمَ dinashabkan sebagai Maf'ul Bih Muqaddam bagi تَقْهَرْ yang sengaja dikedepankan untuk memisahkan antara أَمَّا dan الفاء (karena huruf الفاء tidak boleh langsung menempel pada أَمَّا tanpa pemisah)."
+    }
+  ],
+  "soal": [
+    {
+      "id_soal": "Q-1901",
+      "id_bab": "BAB-19",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Bandingkan dua kalimat berikut:\n(1) «يَا طَالِبُ، وَاللَّهِ لَتَنْجَحَنَّ بِاجْتِهَادِكَ»\n(2) «يَا طُلَّابُ، وَاللَّهِ لَتَنْجَحُنَّ بِاجْتِهَادِكُمْ»\nBagaimana status i'rab dan bina' fi'il mudhari' pada kalimat (1) dan (2) serta mana fa'ilnya?",
+      "opsi_a": "Keduanya mabni 'alal fath pada kalimat (1) dan mabni 'aladh dhamm pada kalimat (2), dan fa'il keduanya dhamir mustatir.",
+      "opsi_b": "Pada (1) لَتَنْجَحَنَّ adalah MABNI 'ALAL FATH karena Nun Taukid mubasyirah dan fa'ilnya dhamir mustatir وجوبًا (أنت); sedangkan pada (2) لَتَنْجَحُنَّ adalah MU'RAB MARFU' bi-tsubutin nun yang dibuang karena توالي الأمثال dan fa'ilnya adalah Wawu Jama'ah yang dibuang karena التقاء الساكنين.",
+      "opsi_c": "Pada (1) dan (2) keduanya mu'rab marfu' dengan dhammah muqaddarah.",
+      "opsi_d": "Pada (1) mu'rab marfu', sedangkan pada (2) mabni 'aladh dhamm seperti fi'il madhi.",
+      "jawaban_benar": "B",
+      "pembahasan": "Ini adalah perbedaan paling fundamental dalam bab Bina' Fi'il Mudhari': Pada (1) khithab ditujukan kepada mufrad (يا طالبُ), sehingga Nun Taukid menempel langsung (مباشرة) -> maka لَتَنْجَحَنَّ mabni 'alal fath dan fa'ilnya mustatir وجوبًا. Pada (2) khithab ditujukan kepada jama' (يا طلابُ), asal katanya تَنْجَحُونَ + نَّ -> dipisah oleh Wawu Jama'ah (غير مباشرة), maka ia MU'RAB MARFU' dengan Tsubutun Nun yang dibuang karena berturut-turut 3 nun, lalu Wawu Jama'ah (yang menjadi Fa'il!) dibuang karena bertemu dua sukun dan disisakan dhammah di atas Ha' sebagai buktinya!"
+    },
+    {
+      "id_soal": "Q-1902",
+      "id_bab": "BAB-19",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Apa tanda bina' yang paling presisi pada fi'il-fi'il yang bergaris bawah dalam kalimat: «الْقُضَاةُ دَعَوْا إِلَى الْحَقِّ وَالْمَرْأَةُ دَعَتْ إِلَى الْخَيْرِ»?",
+      "opsi_a": "دَعَوْا: Mabni 'alal fath zhahir; دَعَتْ: Mabni 'alas sukun karena Ta' Ta'nits.",
+      "opsi_b": "دَعَوْا: Mabni 'aladh dhamm muqaddar di atas huruf illat (Alif) yang dibuang karena التقاء الساكنين; دَعَتْ: Mabni 'alal fath muqaddar di atas Alif yang dibuang karena التقاء الساكنين.",
+      "opsi_c": "دَعَوْا: Mabni 'alas sukun di atas Wawu; دَعَتْ: Mabni 'alal fath zhahir di atas 'Ain.",
+      "opsi_d": "Keduanya mu'rab dengan hadzfu harfil 'illah.",
+      "jawaban_benar": "B",
+      "pembahasan": "Asal kata دَعَوْا adalah دَعَا + واو الجماعة: Fi'il Madhi yang bersambung Wawu Jama'ah mabni 'aladh dhamm, namun karena huruf terakhirnya (Alif dari دَعَا) dibuang akibat bertemu sukun Wawu Jama'ah, maka tanda bina'-nya adalah Dhammah Muqaddarah di atas Alif yang dibuang (مبني على الضم المقدر على الألف المحذوفة لالتقاء الساكنين), sedangkan fathah di atas 'Ain adalah harakat asli sebelum Alif! Begitu pula دَعَتْ (أصلها دَعَا + تْ): mabni 'alal fath muqaddar di atas Alif yang dibuang karena bertemu sukun Ta' Ta'nits."
+    },
+    {
+      "id_soal": "Q-2001",
+      "id_bab": "BAB-20",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Perhatikan empat kalimat berikut:\n(1) «أَنَا إِذَنْ أُكْرِمُكَ»\n(2) «إِذَنْ وَاللَّهِ أُكْرِمَكَ»\n(3) «عَلِمْتُ أَنْ سَيَقُومُ زَيْدٌ»\n(4) «مَا كَانَ الْمُؤْمِنُ لِيَكْذِبَ»\nManakah pernyataan yang BENAR mengenai hukum i'rab fi'il mudhari' pada keempat kalimat di atas?",
+      "opsi_a": "Semua fi'il mudhari' pada kalimat (1), (2), (3), dan (4) wajib dinashabkan.",
+      "opsi_b": "Pada (1) dan (3) wajib MARFU' (karena إِذَنْ tidak di awal kalimat dan أَنْ didahului fi'il yaqin sehingga mukhaffafah); sedangkan pada (2) dan (4) wajib MANSHUB (karena pemisah Qasam tidak membatalkan إِذَنْ, dan Lam pada لِيَكْذِبَ adalah Lam Juhud).",
+      "opsi_c": "Pada (1) dan (2) wajib marfu'; sedangkan pada (3) dan (4) wajib manshub.",
+      "opsi_d": "Pada (2) wajib marfu' karena terpisah oleh Qasam; sedangkan pada (1) wajib manshub.",
+      "jawaban_benar": "B",
+      "pembahasan": "Evaluasi syarat: Pada (1) أَنَا إِذَنْ أُكْرِمُكَ, kata إِذَنْ jatuh di tengah kalimat (حشوًا) sehingga kehilangan syarat التصدير -> wajib marfu'. Pada (2) إِذَنْ وَاللَّهِ أُكْرِمَكَ, pemisah berupa Qasam (وَاللَّهِ) dimaafkan oleh ulama nahwu -> tetap manshub. Pada (3) عَلِمْتُ أَنْ سَيَقُومُ, didahului عَلِمَ (yaqin) sehingga أَنْ adalah Mukhaffafah minat Tsaqilah -> wajib marfu'. Pada (4) مَا كَانَ ... لِيَكْذِبَ, Lam-nya adalah Lam Juhud -> wajib manshub dengan أَنْ مضمرة وجوبًا."
+    },
+    {
+      "id_soal": "Q-2002",
+      "id_bab": "BAB-20",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Dalam kondisi apakah huruf «أَنْ» المصدرية WAJIB DITAMPAKKAN (واجب الإظهار) dan haram disembunyikan?",
+      "opsi_a": "Apabila jatuh setelah Lam Juhud yang didahului مَا كَانَ.",
+      "opsi_b": "Apabila terletak di antara Lam Ta'lil (لام الجر) dan «لَا» النافية أو الزائدة, seperti dalam firman Allah: «لِئَلَّا يَعْلَمَ أَهْلُ الْكِتَابِ».",
+      "opsi_c": "Apabila jatuh setelah Fa' Sababiyyah yang didahului Tamanni.",
+      "opsi_d": "Apabila jatuh setelah حَتَّى الجارة yang bermakna إِلَى.",
+      "jawaban_benar": "B",
+      "pembahasan": "Kaidah أَنْ المصدرية memiliki 3 status: (1) Boleh ditampakkan & boleh disembunyikan (جائز الإضهار والإضمار): setelah Lam Ta'lil biasa (لِيَعْلَمَ / لِأَنْ يَعْلَمَ) dan setelah 'athaf pada isim khalish; (2) Wajib disembunyikan (واجب الإضمار): setelah Lam Juhud, Hatta, Au, Fa' Sababiyyah, Wawu Ma'iyyah; dan (3) WAJIB DITAMPAKKAN (واجب الإظهار): apabila jatuh di antara Lam Ta'lil dan لَا (لِـ + أَنْ + لَا -> لِئَلَّا) agar tidak berkumpul dua huruf Lam (لِلَا)."
+    },
+    {
+      "id_soal": "Q-2101",
+      "id_bab": "BAB-21",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Tentukan kedudukan i'rab (محل الإعراب) dari ketiga Isim Syarat dalam kalimat-kalimat berikut:\n(1) «مَنْ يَتَّقِ اللَّهَ يَجْعَلْ لَهُ مَخْرَجًا»\n(2) «مَنْ تُكْرِمْ يُكْرِمْكَ»\n(3) «أَيَّ يَوْمٍ تُسَافِرْ أُسَافِرْ»",
+      "opsi_a": "(1) Maf'ul Bih, (2) Mubtada', (3) Mubtada'.",
+      "opsi_b": "(1) مَنْ: di mahal rafa' Mubtada' (karena يَتَّقِ اللَّهَ sudah mengambil maf'ul bih-nya yaitu لفظ الجلالة); (2) مَنْ: di mahal nashab Maf'ul Bih Muqaddam (karena تُكْرِمْ muta'addi belum mengambil maf'ulnya); (3) أَيَّ: Maf'ul Fih (Zharaf Zaman) manshub karena mudhaf kepada isim zaman (يَوْمٍ).",
+      "opsi_c": "(1) Mubtada', (2) Mubtada', (3) Maf'ul Muthlaq.",
+      "opsi_d": "Ketiganya tidak memiliki mahal i'rab karena merupakan adat syarat jazimah.",
+      "jawaban_benar": "B",
+      "pembahasan": "Penerapan kaidah presisi I'rab Isim Syarat: Pada (1), fi'il syarat يَتَّقِ adalah muta'addi dan SUDAH mengambil maf'ul bih-nya (اللَّهَ), maka مَنْ wajib menjadi Mubtada'. Pada (2), fi'il syarat تُكْرِمْ adalah muta'addi namun BELUM mengambil maf'ul bih-nya, maka مَنْ itu sendirilah yang menjadi Maf'ul Bih Muqaddam! Pada (3), أَيَّ di-idhafahkan kepada Isim Zaman (يَوْمٍ), sehingga أَيَّ mengambil i'rab Zharaf Zaman (Maf'ul Fih manshub dengan fathah zhahirah)."
+    },
+    {
+      "id_soal": "Q-2102",
+      "id_bab": "BAB-21",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Bandingkan dua kalimat setelah Nahi (النهي) berikut ini:\n(1) «لَا تَعْصِ اللَّهَ تَدْخُلِ الْجَنَّةَ»\n(2) «لَا تَعْصِ اللَّهَ تَدْخُلُ النَّارَ»\nMengapa pada kalimat (1) fi'il «تَدْخُلْ» dijazmkan (dan diharakati kasrah karena التقاء الساكنين), sedangkan pada kalimat (2) fi'il «تَدْخُلُ» WAJIB DIRAFA'KAN?",
+      "opsi_a": "Karena kata الجنة adalah muannats sedangkan النار adalah mudzakkar.",
+      "opsi_b": "Karena syarat Jazm dalam Jawab النهي adalah maknanya harus sah ditakdirkan dengan (إِنْ لَا تَفْعَلْ يَحْصُلْ كَذَا — yaitu perkaranya محبوب/disukai). Pada (1) 'jika engkau tidak bermaksiat, engkau masuk surga' adalah benar secara makna, sedangkan pada (2) tidak sah dikatakan 'jika engkau tidak bermaksiat, engkau masuk neraka', sehingga rusak syarat sababiyyah-nya dan wajib rafa'!",
+      "opsi_c": "Karena kalimat (2) merupakan jumlah ismiyyah yang wajib memakai Fa'ul Jaza'.",
+      "opsi_d": "Karena لَا pada kalimat (2) berubah menjadi La Nafiyah.",
+      "jawaban_benar": "B",
+      "pembahasan": "Kaidah emas الجزم في جواب النهي: Jawab dari larangan (النهي) hanya boleh dijazmkan apabila sah disisipkan (إِنْ + لَا النافية) di awalnya dan merupakan perkara yang terpuji/diharapkan (أمر محبوب) sebagai buah dari meninggalkan larangan tersebut. Masuk neraka (تَدْخُلُ النَّارَ) bukanlah akibat dari 'tidak bermaksiat', sehingga tidak sah menjadi jawab syarat dan wajib dirafa'kan!"
+    },
+    {
+      "id_soal": "Q-2103",
+      "id_bab": "BAB-21",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Manakah di antara empat Jumlah Jawab Syarat berikut yang MEMILIKI MAHAL I'RAB (في محل جزم جواب الشرط)?",
+      "opsi_a": "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ * فَسَبِّحْ بِحَمْدِ رَبِّكَ.",
+      "opsi_b": "إِنْ تَجْتَهِدْ تَنْجَحْ فِي الِامْتِحَانِ.",
+      "opsi_c": "مَنْ يَهْدِ اللَّهُ فَهُوَ الْمُهْتَدِ.",
+      "opsi_d": "لَوْلَا الْعِلْمُ لَشَقِيَ النَّاسُ.",
+      "jawaban_benar": "C",
+      "pembahasan": "Ingat syarat mutlak agar Jumlah Jawab Syarat berada di mahal jazm: (1) Adat syaratnya harus JAZIMAH, dan (2) Jumlah jawabnya harus bersambung dengan الفاء atau إذا الفجائية! Pada opsi A dan D, adat syaratnya (إِذَا dan لَوْلَا) adalah Ghairu Jazimah -> maka jumlah jawabnya لا محل لها من الإعراب. Pada opsi B, meskipun إِنْ jazimah, tidak ada الفاء (karena jazm sudah tampak langsung pada lafazh تَنْجَحْ) -> maka jumlahnya لا محل لها. Hanya opsi C (مَنْ يَهْدِ اللَّهُ فَهُوَ الْمُهْتَدِ) yang memenuhi kedua syarat (مَنْ jazimah + فَهُوَ الْمُهْتَدِ bersambung Fa'ul Jaza'), sehingga jumlah ismiyyah tersebut berada في محل جزم جواب الشرط!"
+    }
+  ],
+  "istilah": [
+    {
+      "id_istilah": "IST-307",
+      "istilah_arab": "نُونُ التَّوْكِيدِ الْمُبَاشِرَةُ وَغَيْرُ الْمُبَاشِرَةِ",
+      "bidang": "Nahwu - Bina' & I'rab Mudhari'",
+      "definisi_arab": "المباشرة هي التي تتصل بآخر الفعل المضارع بلا فاصل فيُبنى معها على الفتح؛ وغير المباشرة هي التي يفصل بينها وبين آخر الفعل ألف الاثنين أو واو الجماعة أو ياء المخاطبة (لفظًا أو تقديرًا) فيبقى الفعل معها معربًا.",
+      "definisi_indo": "Nun Taukid Mubasyirah adalah nun taukid yang menempel langsung pada huruf terakhir fi'il mudhari' sehingga menyebabkannya mabni 'alal fath (مثل: لَيُسْجَنَنَّ). Sedangkan Nun Taukid Ghairu Mubasyirah adalah yang terpisah dari akhir fi'il oleh Alif Itsnain, Wawu Jama'ah, atau Ya' Mukhathabah sehingga fi'ilnya tetap mu'rab (مثل: لَتُبْلَوُنَّ، لَا تَتَّبِعَانِّ).",
+      "contoh": "لَيَنْصُرَنَّ (مباشرة = مبني على الفتح)، لَتَنْصُرُنَّ يا قومُ (غير مباشرة = معرب مرفوع بثبوت النون المحذوفة)."
+    },
+    {
+      "id_istilah": "IST-308",
+      "istilah_arab": "الْأَفْعَالُ الْخَمْسَةُ (الْأَمْثِلَةُ الْخَمْسَةُ)",
+      "bidang": "Nahwu - I'rab Far'iyyah",
+      "definisi_arab": "كل فعل مضارع اتصلت به ألف الاثنين أو واو الجماعة أو ياء المخاطبة، فيُرفع بثبوت النون ويُنصب ويُجزم بحذفها.",
+      "definisi_indo": "Setiap fi'il mudhari' yang bersambung dengan Alif Itsnain, Wawu Jama'ah, atau Ya' Mukhathabah (5 wazan: يفعلان، تفعلان، يفعلون، تفعلون، تفعلين), yang dirafa'kan dengan tetapnya Nun (Tsubutun Nun) serta dinashabkan dan dijazmkan dengan membuang Nun (Hadzfun Nun).",
+      "contoh": "الطلاب يجتهدون ولن يكسلوا ولم يقصروا."
+    },
+    {
+      "id_istilah": "IST-309",
+      "istilah_arab": "لَامُ الْجُحُودِ",
+      "bidang": "Nahwu - Nawashibul Mudhari'",
+      "definisi_arab": "اللام المكسورة المسبوقة بكون ماضٍ منفي بـ(ما كان) أو (لم يكن) لتوكيد النفي، ويُنصب المضارع بعدها بـ(أنْ) مضمرة وجوبًا.",
+      "definisi_indo": "Huruf Lam berharakat kasrah yang jatuh setelah الكون المنفي (ما كان / لم يكن) untuk menguatkan penafian (إنكار/جحود), yang setelahnya Fi'il Mudhari' wajib dinashabkan oleh أَنْ المضمرة وجوبًا dan mashdar muawwalnya berta'alluq kepada khabar Kana yang wajib dibuang (تقديره: مريدًا).",
+      "contoh": "وَمَا كَانَ اللَّهُ لِيُعَذِّبَهُمْ، لَمْ يَكُنِ اللَّهُ لِيَغْفِرَ لَهُمْ."
+    },
+    {
+      "id_istilah": "IST-310",
+      "istilah_arab": "فَاءُ السَّبَبِيَّةِ وَوَاوُ الْمَعِيَّةِ",
+      "bidang": "Nahwu - Nawashibul Mudhari'",
+      "definisi_arab": "حرفان ينصب المضارع بعدهما بـ(أنْ) مضمرة وجوبًا إذا سُبقا بنفي محض أو بطلب محض بالفعل، وتفيد الفاء أن ما قبلها سبب لما بعدها، وتفيد الواو مصاحبة ما قبلها لما بعدها.",
+      "definisi_indo": "Dua huruf yang menyebabkan fi'il mudhari' sesudahnya dinashabkan oleh أَنْ المضمرة وجوبًا apabila didahului oleh Nafi Mahdh atau Thalab Mahdh (الأمر، النهي، الدعاء، الاستفهام، العرض، التحضيض، التمني، الرجاء). Fa' Sababiyyah menunjukkan sebab-akibat, sedangkan Wawu Ma'iyyah menunjukkan kebersamaan (بمعنى مَعَ).",
+      "contoh": "لا يقضى عليهم فيموتوا، لا تنهَ عن خلقٍ وتأتيَ مثله."
+    },
+    {
+      "id_istilah": "IST-311",
+      "istilah_arab": "فَاءُ الْجَزَاءِ (الْفَاءُ الرَّابِطَةُ لِجَوَابِ الشَّرْطِ)",
+      "bidang": "Nahwu - Uslub Asy-Syarth",
+      "definisi_arab": "الفاء التي يجب اقتران جواب الشرط بها إذا لم يصلح الجواب لأن يقع فعلًا للشرط، وتجمع مواضعها في (اسمية طلبية وبجامد وبما ولن وبقد وبالتنفيس).",
+      "definisi_indo": "Huruf Fa' pengikat yang wajib masuk pada Jumlah Jawab Syarat apabila kalimat jawab tersebut tidak memenuhi syarat untuk menjadi fi'il syarat secara langsung (seperti berupa jumlah ismiyyah, jumlah thalabiyyah, fi'il jamid, atau diawali ما، لن، قد، السين، سوف).",
+      "contoh": "مَنْ يَهْدِ اللَّهُ فَهُوَ الْمُهْتَدِ، إِنْ كُنْتُمْ تُحِبُّونَ اللَّهَ فَاتَّبِعُونِي."
+    },
+    {
+      "id_istilah": "IST-312",
+      "istilah_arab": "حَرْفُ امْتِنَاعٍ لِامْتِنَاعٍ (لَوْ) وَحَرْفُ امْتِنَاعٍ لِوُجُودٍ (لَوْلَا)",
+      "bidang": "Nahwu - Adawat Syarth Ghairu Jazimah",
+      "definisi_arab": "(لو) حرف شرط غير جازم يدل على امتناع الجواب لامتناع الشرط في الماضي، و(لولا/لوما) حرف شرط غير جازم يدل على امتناع الجواب لوجود الشرط ويليه مبتدأ محذوف الخبر وجوبًا.",
+      "definisi_indo": "Lau adalah huruf syarat ghairu jazim yang menunjukkan tidak terjadinya jawab karena tidak terjadinya syarat (امتناع لامتناع). Sedangkan Laula/Lauma menunjukkan tidak terjadinya jawab karena adanya syarat (امتناع لوجود), yang selalu diikuti Mubtada' dengan khabar yang wajib dibuang (تقديره: موجود).",
+      "contoh": "لو اجتهدتَ لنجحتَ، لولا الهواءُ لهلكت الأحياءُ."
+    }
+  ]
+}

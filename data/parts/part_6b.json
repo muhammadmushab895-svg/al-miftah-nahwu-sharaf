@@ -1,0 +1,210 @@
+{
+  "bab": [
+    {
+      "id_bab": "BAB-40",
+      "urutan": 40,
+      "kategori": "Nahwu Terapan & Bilangan",
+      "level": "Mahir (Mutaqaddim)",
+      "judul_arab": "أَحْكَامُ العَدَدِ وَالمَعْدُودِ وَكِنَايَاتُ العَدَدِ",
+      "judul_indo": "Kaidah Lengkap Bilangan (Al-'Adad wal Ma'dud), 'Adad Tartibi, dan Kinayatul 'Adad",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi (Khaled Abdul Aziz), Bab Al-'Adad, hlm. 555-580",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah (Syaikh Musthafa Al-Ghalayini), Juz 3, Bab Al-'Adad wa Kinayatuhu, hlm. 165-210",
+      "ringkasan_cakupan": "Kaidah menyeluruh tentang bilangan bahasa Arab: aturan kesesuaian jenis kelamin (Tadzkir & Ta'nits) untuk 1-2, 3-10, 11-12, 13-19, puluhan (20-90), ratusan dan ribuan; aturan harakat syin pada kata 'asyrah; i'rab dan bentuk tamyiz bilangan; 'Adad Tartibi (berwazan Fa'il); cara memasukkan Alif-Lam pada bilangan; serta Kinayatul 'Adad: perbedaan Kam Istifhamiyyah dan Khabariyyah, Ka'ayyin, Kadza, Bidh', dan Nayyif.",
+      "estimasi_jam_belajar": 8
+    },
+    {
+      "id_bab": "BAB-41",
+      "urutan": 41,
+      "kategori": "Asalib Nahwiyyah Khusus",
+      "level": "Mahir (Mutaqaddim)",
+      "judul_arab": "أَسَالِيبُ التَّعَجُّبِ وَالمَدْحِ وَالذَّمِّ وَأَسْمَاءِ الأَفْعَالِ",
+      "judul_indo": "Uslub Ta'ajjub, Pujian & Celaan (Madah & Dzamm), serta Isim-Isim Fi'il (Asma'ul Af'al)",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi (Khaled Abdul Aziz), Bab Asalib Nahwiyyah & Asma'ul Af'al, hlm. 581-610",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah (Syaikh Musthafa Al-Ghalayini), Juz 2 & 3, Bab At-Ta'ajjub, Af'alul Madhi wadz Dzamm, Asma'ul Af'al, hlm. 95-140 & 211-236",
+      "ringkasan_cakupan": "Dua rumus baku Ta'ajjub (ما أفعله dan أفعل به) beserta 7 syarat fi'il asalnya dan cara ta'ajjub bertingkat dengan bantuan أشد/أعظم; fi'il pujian dan celaan (نعم، بئس، ساء، حبذا، لا حبذا) beserta 4 bentuk fa'ilnya dan i'rab makhshush bil madah/dzamm; serta Asma'ul Af'al (Madhi, Mudhari', Amr), klasifikasi Murtajal vs Manqul, dan wazan qiyasi فَعَالِ.",
+      "estimasi_jam_belajar": 8
+    },
+    {
+      "id_bab": "BAB-42",
+      "urutan": 42,
+      "kategori": "I'rab Tingkat Tinggi (Sintaksis Lanjut)",
+      "level": "Mahir (Mutaqaddim)",
+      "judul_arab": "الجُمَلُ الَّتِي لَهَا مَحَلٌّ مِنَ الإِعْرَابِ وَالَّتِي لَا مَحَلَّ لَهَا وَأَحْكَامُ التَّعَلُّقِ",
+      "judul_indo": "Kedudukan Sintaksis Kalimat (I'rabul Jumal: 7 Jumlah Ber-Mahal & 7 Jumlah La Mahalla Laha) dan Kaidah Ta'alluq",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi (Khaled Abdul Aziz), Bab I'rabul Jumal wa Ta'alluqul Jar wal Majrur, hlm. 611-645",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah (Syaikh Musthafa Al-Ghalayini), Juz 3, Bab I'rabul Jumal & Bab At-Ta'alluq, hlm. 237-285",
+      "ringkasan_cakupan": "Rincian paripurna i'rab tingkat kalimat: tujuh jumlah yang menempati posisi i'rab (Khabariyyah, Haliyyah, Maf'ulul Qaul, Mudhaf Ilaih, Jawab Syarat Jazim ber-Fa'/Idza, Tabi'ah li-Mufrad, Tabi'ah li-Jumlatil Laha Mahall); tujuh jumlah yang tidak memiliki posisi i'rab (Ibtida'iyyah, Shilah Maushul, Mu'taridhah, Tafsiriyyah, Jawab Qasam, Jawab Syarat Ghairu Jazim / Jazim bila Fa', Tabi'ah li-Jumlatil La Mahalla Laha); serta kaidah ta'alluq (keterikatan) Jar-Majrur dan Zharaf.",
+      "estimasi_jam_belajar": 10
+    }
+  ],
+  "materi": [
+    {
+      "id_materi": "MAT-4001",
+      "id_bab": "BAB-40",
+      "sub_topik_arab": "قَوَاعِدُ تَذْكِيرِ العَدَدِ وَتَأْنِيثِهِ وَإِعْرَابِهِ وَتَمْيِيزِهِ",
+      "sub_topik_indo": "Kaidah Menyeluruh Tadzkir-Ta'nits, I'rab, dan Tamyiz Bilangan 1-1000",
+      "kaidah_arab": "العَدَدُ: (1-2) يُوَافِقَانِ المَعْدُودَ دَائِمًا فِي التَّذْكِيرِ وَالتَّأْنِيثِ وَيُعْرَبَانِ نَعْتًا لَهُ. (3-10) تُخَالِفُ المَعْدُودَ دَائِمًا، وَتَمْيِيزُهَا جَمْعٌ مَجْرُورٌ. (11-12) يُوَافِقَانِ فِي الجُزْأَيْنِ. (13-19) يُخَالِفُ الجُزْءُ الأَوَّلُ وَيُوَافِقُ الثَّانِي، وَتُبْنَى عَلَى فَتْحِ الجُزْأَيْنِ. أَلْفَاظُ العُقُودِ (20-90) تَلْزَمُ صُورَةً وَاحِدَةً وَتُعْرَبُ إِعْرَابَ جَمْعِ المُذَكَّرِ السَّالِمِ. وَتَمْيِيزُ (11-99) مُفْرَدٌ مَنْصُوبٌ، وَتَمْيِيزُ (100 وَ1000) مُفْرَدٌ مَجْرُورٌ.",
+      "penjelasan_indo": "Ringkasan komprehensif bilangan bahasa Arab: 1. Angka 1 dan 2: Selalu cocok jenis mudzakkar/muannats dengan ma'dudnya, ma'dud diletakkan di depan dan angka menjadi na'at (كِتَابٌ وَاحِدٌ، اِمْرَأَتَانِ اثْنَتَانِ). 2. Angka 3-10: Berlawanan jenis dengan mufrad ma'dudnya (ثَلَاثَةُ رِجَالٍ karena mufradnya rajul mudzakkar; ثَلَاثُ نِسْوَةٍ), ma'dudnya berupa Jama' Majrur bil-Idhafah. 3. Angka 11-12: Kedua bagian bilangan selaras dengan ma'dud (أَحَدَ عَشَرَ كَوْكَبًا، إِحْدَى عَشْرَةَ طَالِبَةً، اثْنَا عَشَرَ شَهْرًا، اثْنَتَا عَشْرَةَ عَيْنًا). 4. Angka 13-19: Bagian satuan berlawanan dengan ma'dud, bagian belasan (عَشَرَ) selaras dengan ma'dud, mabni di atas fathul juz'ain (أَرْبَعَةَ عَشَرَ كِتَابًا، أَرْبَعَ عَشْرَةَ مَجَلَّةً). 5. Ma'dud 11 s/d 99 wajib Mufrad Manshub sebagai Tamyiz. 6. Angka 100 dan 1000: Ma'dudnya Mufrad Majrur (مِائَةُ رَجُلٍ، أَلْفُ دِينَارٍ).",
+      "rincian_hukum_dan_syarat": "Hukum Huruf Syin pada Kata 'Asyrah (عشرة): Huruf syin difathahkan jika ma'dudnya mudzakkar (عَشَرَ / عَشَرَةَ رِجَالٍ), dan disukunkan jika ma'dudnya muannats (عَشْرَ / عَشْرِ نِسْوَةٍ، عَشْرَةَ طَالِبَاتٍ).",
+      "rumus_ringkas": "3-10: Lawan + Jama' Majrur | 11-12: Cocok dua bagian | 13-19: Lawan + Cocok + Fathul Juz'ain | Tamyiz 11-99 = Mufrad Manshub | 100/1000 = Mufrad Majrur",
+      "tanbihat_dan_khilaf": "Patokan mudzakkar atau muannats pada ma'dud angka 3-10 adalah BENTUK MUFRADNYA, bukan bentuk jama'nya. Contoh: جُنَيْهَات jama'nya berakhiran at tapi mufradnya جُنَيْه (mudzakkar), maka wajib diucapkan: خَمْسَةُ جُنَيْهَاتٍ."
+    },
+    {
+      "id_materi": "MAT-4002",
+      "id_bab": "BAB-40",
+      "sub_topik_arab": "كِنَايَاتُ العَدَدِ: كَمِ الاسْتِفْهَامِيَّةُ وَالخَبَرِيَّةُ وَكَأَيِّنْ وَكَذَا",
+      "sub_topik_indo": "Kinayatul 'Adad: Perbedaan Fundamental Kam Istifhamiyyah vs Khabariyyah",
+      "kaidah_arab": "كِنَايَاتُ العَدَدِ أَلْفَاظٌ تَدُلُّ عَلَى كَمِّيَّةٍ مُبْهَمَةٍ وَأَهَمُّهَا: (كَمِ الاسْتِفْهَامِيَّةُ) وَيُطْلَبُ بِهَا تَعْيِينُ عَدَدٍ مَجْهُولٍ، وَتَمْيِيزُهَا مُفْرَدٌ مَنْصُوبٌ (كَمْ كِتَابًا قَرَأْتَ؟). وَ(كَمِ الخَبَرِيَّةُ) وَتَدُلُّ عَلَى التَّكْثِيرِ وَالإِخْبَارِ، وَتَمْيِيزُهَا مَجْرُورٌ مُفْرَدًا أَوْ جَمْعًا بِالإِضَافَةِ أَوْ بِـ (مِنْ) مِثْلُ: كَمْ عَالِمٍ خَدَمَ الإِسْلَامَ! أَوْ كَمْ مِنْ عَالِمٍ!",
+      "penjelasan_indo": "Kinayatul 'Adad adalah kata yang mewakili bilangan samar. Yang paling krusial adalah perbedaan antara Kam Istifhamiyyah dan Kam Khabariyyah: 1. Kam Istifhamiyyah (pertanyaan): Memerlukan jawaban angka pasti, intonasinya bertanya, dan tamyiz setelahnya WAJIB MUFRAD MANSHUB (كَمْ طَالِبًا فِي الفَصْلِ؟). Jika didahului huruf jarr, tamyiznya boleh majrur (بِكَمْ دِرْهَمٍ / دِرْهَمًا اشْتَرَيْتَهُ؟). 2. Kam Khabariyyah (berita banyak): Tidak butuh jawaban melainkan ekspresi kekaguman atas banyaknya jumlah, dan tamyiz setelahnya WAJIB MAJRUR baik mufrad maupun jama', baik langsung idhafah maupun dengan perantara huruf مِنْ (كَمْ مِنْ فِئَةٍ قَلِيلَةٍ غَلَبَتْ فِئَةً كَثِيرَةً). 3. كَأَيِّنْ bermakna banyak seperti Kam Khabariyyah dan tamyiznya majrur dengan مِنْ (وَكَأَيِّنْ مِنْ نَبِيٍّ). 4. كَذَا untuk bilangan samar yang sudah diketahui pembicara.",
+      "rincian_hukum_dan_syarat": "I'rab Kata كَمْ: Baik Istifhamiyyah maupun Khabariyyah dii'rab sesuai konteksnya: (a) Di mahal nashab Maf'ul Bih jika setelahnya fi'il muta'addi yang belum mengambil maf'ul (كَمْ كِتَابًا قَرَأْتَ؟), (b) Di mahal rafa' Mubtada' jika setelahnya fi'il lazim atau muta'addi yang sudah mengambil maf'ul (كَمْ طَالِبًا حَضَرَ؟ / كَمْ كِتَابًا قَرَأْتَهُ؟), (c) Di mahal nashab Zharaf jika setelahnya bermakna waktu/tempat.",
+      "rumus_ringkas": "Kam Tanya: + Mufrad Manshub (كَمْ كِتَابًا؟) | Kam Berita Banyak: + Majrur / مِنْ (كَمْ عَالِمٍ! / كَمْ مِنْ عَالِمٍ!)",
+      "tanbihat_dan_khilaf": "Tanda baca dalam tulisan modern: Kalimat dengan Kam Istifhamiyyah diakhiri tanda tanya (?), sedangkan Kam Khabariyyah diakhiri tanda seru (!)."
+    },
+    {
+      "id_materi": "MAT-4101",
+      "id_bab": "BAB-41",
+      "sub_topik_arab": "أُسْلُوبَا التَّعَجُّبِ القِيَاسِيَّانِ: (مَا أَفْعَلَهُ) وَ(أَفْعِلْ بِهِ)",
+      "sub_topik_indo": "Analisis Dua Rumus Baku Ta'ajjub dan I'rab Rincinya",
+      "kaidah_arab": "لِلتَّعَجُّبِ القِيَاسِيِّ صِيغَتَانِ: (1) مَا أَفْعَلَهُ: (مَا) نَكِرَةٌ تَمَّتْ بِمَعْنَى شَيْءٍ مَبْنِيَّةٌ فِي مَحَلِّ رَفْعٍ مُبْتَدَأٌ، وَ(أَفْعَلَ) فِعْلٌ مَاضٍ لِلتَّعَجُّبِ مَبْنِيٌّ عَلَى الفَتْحِ وَفَاعِلُهُ مُسْتَتِرٌ وُجُوبًا، وَالمُتَعَجَّبُ مِنْهُ مَفْعُولٌ بِهِ مَنْصُوبٌ، وَالجُمْلَةُ الفِعْلِيَّةُ خَبَرُ (مَا). (2) أَفْعِلْ بِهِ: فِعْلٌ مَاضٍ جَاءَ عَلَى صُورَةِ الأَمْرِ لِلتَّعَجُّبِ، وَالبَاءُ حَرْفُ جَرٍّ زَائِدٌ، وَالمُتَعَجَّبُ مِنْهُ فَاعِلٌ مَجْرُورٌ لَفْظًا مَرْفُوعٌ مَحَلًّا.",
+      "penjelasan_indo": "Dua shighah qiyasiyyah untuk mengungkapkan rasa kagum/takjub: 1. Rumus مَا أَفْعَلَهُ (contoh: مَا أَحْسَنَ الصِّدْقَ!): Komponennya adalah (مَا) Ta'ajjubiyyah di mahal rafa' mubtada'; (أَحْسَنَ) fi'il madhi ta'ajjub mabni fathah dengan fa'il mustatir wujuban takdirnya هُوَ; (الصِّدْقَ) sebagai Muta'ajjab Minhu dii'rab sebagai Maf'ul Bih manshub; dan jumlah fi'liyyah di mahal rafa' khabar bagi مَا. 2. Rumus أَفْعِلْ بِهِ (contoh: أَحْسِنْ بِالصِّدْقِ!): Komponennya adalah (أَحْسِنْ) fi'il madhi yang datang dalam bentuk menyerupai amr; huruf Ba' adalah huruf jarr za'id lazim; dan (الصِّدْقِ) adalah Fa'il yang majrur lafazhnya namun marfu' kedudukan mahalnya.",
+      "rincian_hukum_dan_syarat": "7 Syarat Fi'il yang Bisa Ditashrif Langsung ke Ta'ajjub: (1) Tsulatsi, (2) Tam, (3) Mutsbat, (4) Mutasharrif, (5) Mabni lil Ma'lum, (6) Qabil lit Tafawut (bisa bertingkat), (7) Sifatnya bukan di atas wazan أفعل-فعلاء. Jika tidak memenuhi syarat (misal lebih dari 3 huruf atau berupa warna), harus dibantu dengan kata perantara: مَا أَشَدَّ اسْتِخْرَاجَ المَالِ! / مَا أَجْمَلَ خُضْرَةَ الزَّرْعِ!",
+      "rumus_ringkas": "مَا أَفْعَلَ + Manshub (Maf'ul Bih) | أَفْعِلْ بِـ + Majrur Lafazh (Fa'il Marfu' Mahal)",
+      "tanbihat_dan_khilaf": "Dalam Jami'ud Durus dijelaskan pendapat madzhab Kufah: Bagi ulama Kufah, أَفْعَلَ pada مَا أَفْعَلَ adalah Isim dan bukan Fi'il. Namun jumhur ulama Basrah membuktikan ia adalah Fi'il Madhi karena bisa bersambung dengan Nun Wiqayah (مَا أَفْقَرَنِي إِلَى عَفْوِ اللهِ)."
+    },
+    {
+      "id_materi": "MAT-4102",
+      "id_bab": "BAB-41",
+      "sub_topik_arab": "أَسَالِيبُ المَدْحِ وَالذَّمِّ (نِعْمَ، بِئْسَ، حَبَّذَا) وَأَسْمَاءُ الأَفْعَالِ",
+      "sub_topik_indo": "Kaidah Uslub Madah/Dzamm dan Karakteristik Asma'ul Af'al",
+      "kaidah_arab": "نِعْمَ فِعْلٌ مَاضٍ جَامِدٌ لِلْمَدْحِ، وَبِئْسَ وَسَاءَ لِلذَّمِّ، وَفَاعِلُهَا يَكُونُ: (1) مُقْتَرِنًا بِأَلْ، (2) مُضَافًا لِمَا فِيهِ أَلْ، (3) ضَمِيرًا مُسْتَتِرًا مُفَسَّرًا بِتَمْيِيزٍ نَكِرَةٍ، (4) كَلِمَةَ (مَا). وَالمَخْصُوصُ بِالمَدْحِ أَوِ الذَّمِّ يُعْرَبُ مُبْتَدَأً مُؤَخَّرًا خَبَرُهُ الجُمْلَةُ قَبْلَهُ (أَوْ خَبَرًا لِمُبْتَدَأٍ مَحْذُوفٍ). وَمِثْلُهَا: حَبَّذَا (حَبَّ فِعْلٌ وَذَا فَاعِلٌ) وَلَا حَبَّذَا. وَأَسْمَاءُ الأَفْعَالِ كَلِمَاتٌ تَدُلُّ عَلَى مَعْنَى الفِعْلِ وَتَعْمَلُ عَمَلَهُ وَلَا تَقْبَلُ عَلَامَاتِهِ.",
+      "penjelasan_indo": "1. Uslub Madah & Dzamm: نِعْمَ (memuji) dan بِئْسَ / سَاءَ (mencela) adalah fi'il jamid mabni fathah. Fa'ilnya ada 4 bentuk: (a) Ber-Al (نِعْمَ الرَّجُلُ زَيْدٌ), (b) Mudhaf ke kata ber-Al (نِعْمَ خُلُقُ المَرْءِ الصِّدْقُ), (c) Dhamir mustatir yang dijelaskan oleh Tamyiz nakirah (نِعْمَ خُلُقًا الصِّدْقُ), (d) Berupa مَا (بِئْسَمَا اشْتَرَوْا بِهِ أَنْفُسَهُمْ). Yang dipuji/dicela (Al-Makhshush) dii'rab sebagai Mubtada' Muakhkhar atau Khabar dari mubtada' mahdzuf. Pada حَبَّذَا dan لَا حَبَّذَا, kata ذَا langsung menjadi fa'ilnya dan makhshush wajib diakhirkan. 2. Asma'ul Af'al adalah kata yang bermakna fi'il dan menashabkan/merafa'kan ma'mul seperti fi'il tetapi tidak menerima tanda fi'il: Madhi (هَيْهَاتَ = بَعُدَ، شَتَّانَ = افْتَرَقَ), Mudhari' (أُفٍّ = أَتَضَجَّرُ، آهِ = أَتَوَجَّعُ، وَيْ = أَعْجَبُ), Amr (صَهْ = اسْكُتْ، آمِينَ = اسْتَجِبْ، حَيَّ = أَقْبِلْ، عَلَيْكَ = الْزَمْ).",
+      "rincian_hukum_dan_syarat": "Asma'ul Af'al Qiyasiyyah: Seluruh isim fi'il bersifat sama'i KECUALI satu wazan qiyasi yaitu فَعَالِ yang bermakna fi'il amr dari setiap fi'il tsulatsi mutasharrif tam, mabni kasrah: حَذَارِ (artinya احْذَرْ), نَزَالِ (انْزِلْ), تَرَاكِ (اتْرُكْ).",
+      "rumus_ringkas": "نِعْمَ + Fa'il + Makhshush (Mubtada' Muakhkhar) | حَبَّ + ذَا (Fa'il) + Makhshush | Asma'ul Af'al: Madhi (هَيْهَاتَ), Mudhari' (أُفٍّ), Amr (صَهْ، عَلَيْكَ)",
+      "tanbihat_dan_khilaf": "Makhshush pada نِعْمَ dan بِئْسَ boleh didahulukan (زَيْدٌ نِعْمَ الرَّجُلُ), namun pada حَبَّذَا makhshush TIDAK BOLEH didahulukan (tidak boleh: الصِّدْقُ حَبَّذَا)."
+    },
+    {
+      "id_materi": "MAT-4201",
+      "id_bab": "BAB-42",
+      "sub_topik_arab": "الجُمَلُ السَّبْعُ الَّتِي لَهَا مَحَلٌّ مِنَ الإِعْرَابِ",
+      "sub_topik_indo": "Tujuh Jenis Kalimat (Jumlah) yang Menempati Kedudukan I'rab",
+      "kaidah_arab": "الجُمَلُ الَّتِي لَهَا مَحَلٌّ مِنَ الإِعْرَابِ سَبْعٌ: (1) الخَبَرِيَّةُ فِي مَحَلِّ رَفْعٍ أَوْ نَصْبٍ، (2) الحَالِيَّةُ فِي مَحَلِّ نَصْبٍ، (3) المَفْعُولِيَّةُ (مَقُولُ القَوْلِ) فِي مَحَلِّ نَصْبٍ، (4) المُضَافُ إِلَيْهَا بَعْدَ ظُرُوفِ الزَّمَانِ فِي مَحَلِّ جَرٍّ، (5) جَوَابُ الشَّرْطِ الجَازِمِ المُقْتَرِنِ بِالفَاءِ أَوْ إِذَا الفُجَائِيَّةِ فِي مَحَلِّ جَزْمٍ، (6) التَّابِعَةُ لِمُفْرَدٍ (النَّعْتُ) بِحَسَبِ المَنْعُوتِ، (7) التَّابِعَةُ لِجُمْلَةٍ لَهَا مَحَلٌّ.",
+      "penjelasan_indo": "Suatu kalimat (jumlah ismiyyah/fi'liyyah) memiliki kedudukan i'rab (mahallun minal i'rab) jika posisinya bisa digantikan oleh kata tunggal (mufrad). Ada 7 posisi: 1. Jumlah Khabariyyah: di mahal rafa' (khabar mubtada'/inna: زَيْدٌ يَقُومُ) atau di mahal nashab (khabar kana/kada: كَانَ زَيْدٌ يَقُومُ). 2. Jumlah Haliyyah: di mahal nashab setelah ma'rifah (جَاءَ زَيْدٌ يَضْحَكُ / وَهُوَ يَضْحَكُ). 3. Jumlah Maf'uliyyah: di mahal nashab sebagai Maqulul Qaul setelah fi'il qala (قَالَ: إِنِّي عَبْدُ اللهِ). 4. Jumlah Mudhaf Ilaih: di mahal jarr setelah zharaf zaman seperti حَيْثُ، إِذْ، إِذَا، يَوْمَ (هَذَا يَوْمُ يَنْفَعُ الصَّادِقِينَ). 5. Jumlah Jawab Syarat Jazim: di mahal jazm jika bersambung Fa'ul Jaza' atau Idza Fuja'iyyah (مَنْ يُضْلِلِ اللَّهُ فَلَا هَادِيَ لَهُ). 6. Jumlah Na'tiyyah: mengikuti i'rab man'ut nakirah sebelumnya (رَأَيْتُ رَجُلًا يَعْمَلُ). 7. Jumlah Tabi'ah: ma'thuf pada jumlah lain yang memiliki mahal i'rab.",
+      "rincian_hukum_dan_syarat": "Kaidah Fundamental Jumal: (الجُمَلُ وَأَشْبَاهُ الجُمَلِ بَعْدَ النَّكِرَاتِ صِفَاتٌ، وَبَعْدَ المَعَارِفِ أَحْوَالٌ) - Kalimat setelah kata nakirah berkedudukan sebagai sifat (na'at), dan setelah kata ma'rifah mahdhah berkedudukan sebagai hal.",
+      "rumus_ringkas": "7 Jumlah Ber-Mahal: [Khabar, Hal, Maqulul Qaul, Mudhaf Ilaih, Jawab Syarat Jazim + Fa', Na'at, Tabi'ah]",
+      "tanbihat_dan_khilaf": "Jika Jawab Syarat Jazim TIDAK bersambung dengan Fa' (misal: إِنْ تَجْتَهِدْ تَنْجَحْ), maka fi'ilnya majzum secara lafazh tetapi kalimat jawab syaratnya TIDAK MEMILIKI MAHAL I'RAB (لا محل لها من الإعراب)."
+    },
+    {
+      "id_materi": "MAT-4202",
+      "id_bab": "BAB-42",
+      "sub_topik_arab": "الجُمَلُ السَّبْعُ الَّتِي لَا مَحَلَّ لَهَا وَقَوَاعِدُ التَّعَلُّقِ",
+      "sub_topik_indo": "Tujuh Jenis Kalimat yang Tidak Ber-Mahal I'rab dan Kaidah Ta'alluq",
+      "kaidah_arab": "الجُمَلُ الَّتِي لَا مَحَلَّ لَهَا مِنَ الإِعْرَابِ سَبْعٌ: (1) الِابْتِدَائِيَّةُ وَالاسْتِئْنَافِيَّةُ، (2) صِلَةُ المَوْصُولِ الاسْمِيِّ أَوِ الحَرْفِيِّ، (3) المُعْتَرِضَةُ بَيْنَ شَيْئَيْنِ مُتَلَازِمَيْنِ، (4) التَّفْسِيرِيَّةُ، (5) جَوَابُ القَسَمِ، (6) جَوَابُ الشَّرْطِ غَيْرِ الجَازِمِ (أَوْ جَازِمٍ لَمْ يَقْتَرِنْ بِالفَاءِ)، (7) التَّابِعَةُ لِجُمْلَةٍ لَا مَحَلَّ لَهَا. وَشِبْهُ الجُمْلَةِ (الجَارُّ وَالمَجْرُورُ وَالظَّرْفُ) لَا بُدَّ لَهُ مِنْ مُتَعَلَّقٍ يَرْتَبِطُ بِهِ مَعْنًى (فِعْلٍ أَوْ شِبْهِ فِعْلٍ أَوْ مَا فِي مَعْنَاهُ).",
+      "penjelasan_indo": "Tujuh kalimat yang tidak memiliki kedudukan rafa', nashab, jarr, maupun jazm: 1. Ibtida'iyyah: Kalimat pembuka wacana di awal kalam (إِنَّا أَعْطَيْنَاكَ الكَوْثَرَ). 2. Shilah Maushul: Kalimat penjelas setelah isim maushul (جَاءَ الَّذِي نَجَحَ). 3. Mu'taridhah: Kalimat sisipan di antara dua unsur terkait seperti antara fi'il-fa'il atau qasam-jawab (قَالَ - رَحِمَهُ اللَّهُ - كَذَا). 4. Tafsiriyyah: Kalimat penjelas hakikat kata sebelumnya, sering setelah أَيْ atau أَنْ (فَأَوْحَيْنَا إِلَيْهِ أَنِ اصْنَعِ الفُلْكَ). 5. Jawab Qasam: Kalimat pelengkap sumpah (وَاللَّهِ لَأَجْتَهِدَنَّ). 6. Jawab Syarat Ghairu Jazim (setelah إذا، لو، لولا: لَوْ أَنْزَلْنَا هَذَا القُرْآنَ... لَرَأَيْتَهُ) atau Jawab Syarat Jazim tanpa Fa'. 7. Tabi'ah bagi kalimat yang tidak punya mahal i'rab. Kaidah Ta'alluq: Jar-majrur dan zharaf bukan unsur independen, maknanya wajib terikat (muta'allaq) dengan Fi'il, Isim Musytaq, atau di-taqdir-kan pada kata كَائِنٌ / اسْتَقَرَّ saat menjadi khabar atau hal.",
+      "rincian_hukum_dan_syarat": "Huruf Jarr yang Tidak Membutuhkan Ta'alluq: (1) Huruf Jarr Za'id (karena hanya untuk taukid), (2) Huruf Syabih biz-Za'id yaitu رُبَّ, (3) لَوْلَا Imtina'iyyah jika bersambung isim dhamir menurut sebagian ulama.",
+      "rumus_ringkas": "7 Jumlah Tanpa Mahal: [Ibtida'iyyah, Shilah, Mu'taridhah, Tafsiriyyah, Jawab Qasam, Jawab Syarat Tanpa Fa', Tabi'ah] | Jar-Majrur wajib punya Ta'alluq!",
+      "tanbihat_dan_khilaf": "Dalam ayat Al-Qur'an (وَإِنَّهُ لَقَسَمٌ لَوْ تَعْلَمُونَ عَظِيمٌ), kalimat لَوْ تَعْلَمُونَ adalah Jumlah Mu'taridhah yang menyela di antara Man'ut (قَسَمٌ) dan Na'at-nya (عَظِيمٌ)."
+    }
+  ],
+  "irab": [
+    {
+      "id_contoh": "IRB-4001",
+      "id_bab": "BAB-40",
+      "id_materi": "MAT-4001",
+      "jenis_dalil": "Al-Qur'an (QS. Yusuf: 4)",
+      "sumber_dalil": "An-Nahwu At-Tathbiqi, Bab Al-'Adad wal Ma'dud",
+      "kalimat_arab": "إِذْ قَالَ يُوسُفُ لِأَبِيهِ يَا أَبَتِ إِنِّي رَأَيْتُ أَحَدَ عَشَرَ كَوْكَبًا",
+      "terjemahan_indo": "(Ingatlah) ketika Yusuf berkata kepada ayahnya: 'Wahai ayahku sesungguhnya aku bermimpi melihat sebelas bintang...'",
+      "kata_kunci": "أَحَدَ عَشَرَ كَوْكَبًا",
+      "irab_arab": "أَحَدَ عَشَرَ: عَدَدٌ مُرَكَّبٌ مَبْنِيٌّ عَلَى فَتْحِ الجُزْأَيْنِ فِي مَحَلِّ نَصْبٍ مَفْعُولٌ بِهِ لِلْفِعْلِ (رَأَيْتُ). كَوْكَبًا: تَمْيِيزٌ مَنْصُوبٌ بِالفَتْحَةِ الظَّاهِرَةِ.",
+      "penjelasan_irab_indo": "Angka 11 (أَحَدَ عَشَرَ) adalah bilangan tersusun ('adad murakkab) yang kedua bagiannya selalu mabni di atas fathah dalam seluruh posisi sintaksis (di sini di posisi nashab maf'ul bih). Karena ma'dudnya mudzakkar (كَوْكَب), maka kedua bagian selaras menggunakan mudzakkar (أَحَدَ mudzakkar dan عَشَرَ fathah syin)."
+    },
+    {
+      "id_contoh": "IRB-4101",
+      "id_bab": "BAB-41",
+      "id_materi": "MAT-4101",
+      "jenis_dalil": "Al-Qur'an (QS. Maryam: 38)",
+      "sumber_dalil": "An-Nahwu At-Tathbiqi, Bab At-Ta'ajjub",
+      "kalimat_arab": "أَسْمِعْ بِهِمْ وَأَبْصِرْ يَوْمَ يَأْتُونَنَا",
+      "terjemahan_indo": "Alangkah tajam pendengaran mereka dan alangkah terang penglihatan mereka pada hari mereka datang kepada Kami.",
+      "kata_kunci": "أَسْمِعْ بِهِمْ",
+      "irab_arab": "أَسْمِعْ: فِعْلٌ مَاضٍ جَاءَ عَلَى صُورَةِ الأَمْرِ لِإِنْشَاءِ التَّعَجُّبِ مَبْنِيٌّ عَلَى السُّكُونِ. البَاءُ: حَرْفُ جَرٍّ زَائِدٌ وُجُوبًا. (هِمْ): ضَمِيرٌ مُتَّصِلٌ مَبْنِيٌّ عَلَى السُّكُونِ فِي مَحَلِّ جَرٍّ لَفْظًا رَفْعٍ مَحَلًّا فَاعِلٌ.",
+      "penjelasan_irab_indo": "Ayat ini merupakan syahid Al-Qur'an untuk shighah ta'ajjub kedua (أَفْعِلْ بِهِ). Kata أَسْمِعْ secara bentuk lahiriah adalah fi'il amr, tetapi secara hakikat dan maknanya adalah Fi'il Madhi Ta'ajjub, sedangkan dhamir هِمْ setelah Ba' za'idah berposisi sebagai Fa'il yang marfu' secara mahal."
+    },
+    {
+      "id_contoh": "IRB-4201",
+      "id_bab": "BAB-42",
+      "id_materi": "MAT-4201",
+      "jenis_dalil": "Al-Qur'an (QS. Maryam: 30)",
+      "sumber_dalil": "Jami'ud Durus Al-'Arabiyyah, Juz 3, I'rabul Jumal",
+      "kalimat_arab": "قَالَ إِنِّي عَبْدُ اللَّهِ آتَانِيَ الكِتَابَ وَجَعَلَنِي نَبِيًّا",
+      "terjemahan_indo": "Dia (Isa) berkata: 'Sesungguhnya aku adalah hamba Allah, Dia memberiku Al-Kitab (Injil) dan Dia menjadikanku seorang nabi.'",
+      "kata_kunci": "إِنِّي عَبْدُ اللَّهِ",
+      "irab_arab": "قَالَ: فِعْلٌ مَاضٍ مَبْنِيٌّ عَلَى الفَتْحِ، وَالفَاعِلُ مُسْتَتِرٌ تَقْدِيرُهُ هُوَ. جُمْلَةُ (إِنِّي عَبْدُ اللَّهِ): جُمْلَةٌ اسْمِيَّةٌ فِي مَحَلِّ نَصْبٍ مَفْعُولٌ بِهِ مَقُولُ القَوْلِ.",
+      "penjelasan_irab_indo": "Ayat ini menunjukkan contoh Jumlah Maqulul Qaul: seluruh isi ucapan setelah fi'il قَالَ (yaitu jumlah ismiyyah إِنِّي عَبْدُ اللَّهِ) memiliki posisi i'rab (laha mahallun minal i'rab) yaitu menempati posisi Nashab sebagai Maf'ul Bih bagi fi'il قَالَ."
+    }
+  ],
+  "soal": [
+    {
+      "id_soal": "SOL-4001",
+      "id_bab": "BAB-40",
+      "tingkat_kesulitan": "Menengah",
+      "pertanyaan": "Perhatikan kalimat berikut: (اشْتَرَيْتُ 14 كِتَابًا وَ18 مَجَلَّةً). Bagaimanakah penulisan huruf Arab dan harakat yang benar sesuai kaidah 'Adad Murakkab?",
+      "opsi_a": "أَرْبَعَةَ عَشَرَ كِتَابًا وَثَمَانِيَ عَشْرَةَ مَجَلَّةً",
+      "opsi_b": "أَرْبَعَ عَشَرَ كِتَابًا وَثَمَانِيَةَ عَشْرَةَ مَجَلَّةً",
+      "opsi_c": "أَرْبَعَةَ عَشْرَ كِتَابًا وَثَمَانِيَ عَشَرَ مَجَلَّةً",
+      "opsi_d": "أَرْبَعَةُ عَشَرَ كِتَابًا وَثَمَانِيَ عَشْرَةِ مَجَلَّةً",
+      "jawaban_benar": "A",
+      "pembahasan": "Kaidah 13-19: Satuan berlawanan dengan ma'dud, puluhan sesuai ma'dud, mabni fathul juz'ain. Untuk كِتَابًا (mudzakkar): satuan muannats (أَرْبَعَةَ) + puluhan mudzakkar (عَشَرَ). Untuk مَجَلَّةً (muannats): satuan mudzakkar (ثَمَانِيَ) + puluhan muannats sukun syin (عَشْرَةَ). Jawaban yang benar adalah A."
+    },
+    {
+      "id_soal": "SOL-4101",
+      "id_bab": "BAB-41",
+      "tingkat_kesulitan": "Mahir",
+      "pertanyaan": "Pada kalimat (نِعْمَ الخُلُقُ الأَمَانَةُ), bagaimanakah dua wajah i'rab yang sah bagi kata (الأَمَانَةُ) menurut kesepakatan ulama Nahwu?",
+      "opsi_a": "Sebagai Fa'il marfu' atau Na'at marfu'",
+      "opsi_b": "Sebagai Mubtada' Muakhkhar (khabarnya jumlah sebelumnya) ATAU sebagai Khabar dari mubtada' yang wajib dibuang (takdirnya: هِيَ الأَمَانَةُ)",
+      "opsi_c": "Sebagai Maf'ul Bih atau Tamyiz manshub",
+      "opsi_d": "Sebagai Badal muthabiq secara mutlak",
+      "jawaban_benar": "B",
+      "pembahasan": "Kata الأَمَانَةُ adalah Al-Makhshush bil Madah. Kaidah Nahwu memberikan 2 wajah i'rab masyhur: (1) Mubtada' Muakhkhar yang khabarnya adalah jumlah fi'liyyah نِعْمَ الخُلُقُ yang didahulukan, atau (2) Khabar bagi mubtada' mahdzuf wujuban dengan takdir (المَمْدُوحُ الأَمَانَةُ atau هِيَ الأَمَانَةُ)."
+    },
+    {
+      "id_soal": "SOL-4201",
+      "id_bab": "BAB-42",
+      "tingkat_kesulitan": "Mahir",
+      "pertanyaan": "Perhatikan kalimat: (جَاءَ رَجُلٌ يَسْعَى) dan (جَاءَ الرَّجُلُ يَسْعَى). Apakah kedudukan sintaksis dari jumlah fi'liyyah (يَسْعَى) pada kedua kalimat tersebut?",
+      "opsi_a": "Keduanya di mahal nashab sebagai Hal",
+      "opsi_b": "Kalimat (1) di mahal rafa' sebagai Na'at bagi رَجُلٌ; Kalimat (2) di mahal nashab sebagai Hal bagi الرَّجُلُ",
+      "opsi_c": "Kalimat (1) di mahal nashab Hal; Kalimat (2) di mahal rafa' Na'at",
+      "opsi_d": "Keduanya tidak memiliki mahal i'rab (la mahalla laha)",
+      "jawaban_benar": "B",
+      "pembahasan": "Berdasarkan kaidah emas sintaksis: (الجُمَلُ بَعْدَ النَّكِرَاتِ صِفَاتٌ، وَبَعْدَ المَعَارِفِ أَحْوَالٌ). Pada kalimat 1, kata رَجُلٌ adalah nakirah marfu', maka jumlah يَسْعَى menempati mahal rafa' na'at. Pada kalimat 2, kata الرَّجُلُ adalah ma'rifah, maka jumlah يَسْعَى menempati mahal nashab hal."
+    }
+  ],
+  "istilah": [
+    {
+      "id_istilah": "IST-607",
+      "istilah_arab": "كِنَايَاتُ العَدَدِ (Kinayatul 'Adad)",
+      "bidang": "Nahwu",
+      "definisi_arab": "أَلْفَاظٌ تَدُلُّ عَلَى مِقْدَارٍ غَيْرِ مُعَيَّنٍ مِنَ الأَعْدَادِ مِثْلُ: كَمْ، كَأَيِّنْ، كَذَا، بِضْع، نَيِّف.",
+      "definisi_indo": "Lafazh-lafazh yang mengindikasikan kuantitas bilangan tertentu secara samar/metaforis tanpa menyebutkan nominal angka pastinya.",
+      "contoh": "كَمْ كِتَابًا عِنْدَكَ؟، كَمْ مِنْ فِئَةٍ!، بِضْعَةُ رِجَالٍ"
+    },
+    {
+      "id_istilah": "IST-608",
+      "istilah_arab": "التَّعَلُّقُ فِي شِبْهِ الجُمْلَةِ (At-Ta'alluq)",
+      "bidang": "Nahwu",
+      "definisi_arab": "ارْتِبَاطُ مَعْنَى الجَارِّ وَالمَجْرُورِ أَوِ الظَّرْفِ بِفِعْلٍ أَوْ شِبْهِ فِعْلٍ لِإِتْمَامِ المَعْنَى الدَّلَالِيِّ.",
+      "definisi_indo": "Keterikatan semantis dan gramatikal antara Syibhul Jumlah (Jar-Majrur atau Zharaf) dengan kata kerja (fi'il) atau isim yang menyerupai fi'il dalam suatu kalimat.",
+      "contoh": "كَتَبْتُ بِالقَلَمِ (بِالقَلَمِ متعلق بـ كَتَبَ)"
+    },
+    {
+      "id_istilah": "IST-609",
+      "istilah_arab": "مَحَلُّ الإِعْرَابِ لِلْجُمَلِ (Mahallul I'rab)",
+      "bidang": "Nahwu",
+      "definisi_arab": "المَوْقِعُ الإِعْرَابِيُّ الَّذِي تَسُدُّ فِيهِ الجُمْلَةُ مَسَدَّ كَلِمَةٍ مُفْرَدَةٍ فَتَأْخُذُ حُكْمَهَا رَفْعًا أَوْ نَصْبًا أَوْ جَرًّا أَوْ جَزْمًا.",
+      "definisi_indo": "Kedudukan gramatikal di mana satu kalimat utuh menempati posisi satu kata tunggal sehingga berstatus hukum rafa', nashab, jarr, atau jazm.",
+      "contoh": "زَيْدٌ (يَكْتُبُ) -> di mahal rafa' khabar mubtada'"
+    }
+  ]
+}

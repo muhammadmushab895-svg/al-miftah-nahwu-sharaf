@@ -1,0 +1,548 @@
+{
+  "bab": [
+    {
+      "id_bab": "BAB-08",
+      "urutan": 8,
+      "kategori": "Sharaf & Nahwu (Al-Musytaqqat wa Al-Mashadir)",
+      "level": "Mutawassith - Mutaqaddim",
+      "judul_arab": "المَصَادِرُ وَإِعْمَالُهَا",
+      "judul_indo": "Mashdar (Kata Benda Verbal), Pembentukannya, dan Pengamalannya",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi (Khalid Abdul Aziz), Bab I'malul Mashdar wa Ismil Mashdar, hlm. 415–428",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah (Syaikh Musthafa Al-Ghalayaini), Juz 1: Bab Al-Mashdar (hlm. 154–172) & Juz 3: I'malul Mashdar (hlm. 255–261)",
+      "ringkasan_cakupan": "Membahas hakikat mashdar sebagai asal musytaqqat menurut Bashrah, kaidah pembentukan mashdar tsulatsi (sama'i dan indikasi makna qiyasi), mashdar ruba'i, khumasi, dan sudasi beserta i'lalnya, mashdar mimi, mashdar shina'i, mashdar marrah, mashdar hai'ah, perbedaan mashdar dan ismul mashdar, serta syarat dan tiga keadaan pengamalan mashdar terhadap fa'il dan maf'ul bih.",
+      "estimasi_jam_belajar": 8
+    },
+    {
+      "id_bab": "BAB-09",
+      "urutan": 9,
+      "kategori": "Sharaf & Nahwu (Al-Musytaqqat wa I'maluha)",
+      "level": "Mutawassith - Mutaqaddim",
+      "judul_arab": "اسْمُ الفَاعِلِ وَصِيَغُ المُبَالَغَةِ وَاسْمُ المَفْعُولِ وَإِعْمَالُهَا",
+      "judul_indo": "Isim Fa'il, Shighah Mubalaghah, Isim Maf'ul, serta Syarat Pengamalannya",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi (Khalid Abdul Aziz), Bab I'malu Ismil Fa'il wa Shiyaghil Mubalaghah wa Ismil Maf'ul, hlm. 429–452",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah (Syaikh Musthafa Al-Ghalayaini), Juz 1: Al-Musytaqqat (hlm. 173–188) & Juz 3: I'malul Musytaqqat (hlm. 262–275)",
+      "ringkasan_cakupan": "Membahas pembentukan isim fa'il dari fi'il tsulatsi dan ghairu tsulatsi (termasuk mu'tal ajwaf dan naqish), 5 wazan qiyasi dan wazan sama'i shighah mubalaghah, pembentukan isim maf'ul dan penggantiannya pada fi'il lazim, syarat pengamalan isim fa'il/mubalaghah/maf'ul saat beralif-lam (المحلّى بأل) dan saat tanpa alif-lam (المجرّد من أل), hukum idhafah isim fa'il kepada ma'mulnya, serta na'ibul fa'il pada isim maf'ul.",
+      "estimasi_jam_belajar": 9
+    },
+    {
+      "id_bab": "BAB-10",
+      "urutan": 10,
+      "kategori": "Sharaf & Nahwu (Al-Musytaqqat wa I'maluha)",
+      "level": "Mutawassith - Mutaqaddim",
+      "judul_arab": "الصِّفَةُ المُشَبَّهَةُ وَاسْمُ التَّفْضِيلِ وَاسْمَا الزَّمَانِ وَالمَكَانِ وَاسْمُ الآلَةِ",
+      "judul_indo": "Shifat Musyabbahah, Isim Tafdhil, Isim Zaman & Makan, serta Isim Alat",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi (Khalid Abdul Aziz), Bab Ash-Shifatul Musyabbahah wa Ismut Tafdhil, hlm. 453–476",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah (Syaikh Musthafa Al-Ghalayaini), Juz 1: hlm. 189–215 & Juz 3: hlm. 276–288",
+      "ringkasan_cakupan": "Membahas pembentukan shifat musyabbahah dari fi'il lazim, perbedaan mendasarnya dengan isim fa'il, tiga keadaan i'rab ma'mul shifat musyabbahah (rafa', nashab, jarr), 7 syarat pembentukan isim tafdhil, cara tafdhil untuk kata yang tidak memenuhi syarat, 4 keadaan isim tafdhil beserta hukum muthabaqah dan pengamalannya (termasuk masalah Al-Kuhl), serta wazan qiyasi isim zaman, isim makan, dan isim alat.",
+      "estimasi_jam_belajar": 8
+    },
+    {
+      "id_bab": "BAB-11",
+      "urutan": 11,
+      "kategori": "Sharaf Isim & I'rab",
+      "level": "Mutawassith",
+      "judul_arab": "المَقْصُورُ وَالمَنْقُوصُ وَالمَمْدُودُ وَأَحْكَامُ تَثْنِيَتِهَا وَجَمْعِهَا",
+      "judul_indo": "Isim Maqshur, Manqush, dan Mamdud beserta Kaidah Tatsniyah dan Jama'-nya",
+      "ref_nahwu_tathbiqi": "An-Nahwu At-Tathbiqi (Khalid Abdul Aziz), Bab Al-Mutsanna wa Al-Jumu' wa I'rabul Mu'tall, hlm. 95–128",
+      "ref_jami_durus": "Jami'ud Durus Al-'Arabiyyah (Syaikh Musthafa Al-Ghalayaini), Juz 1: hlm. 112–125 & Juz 2: Tatsniyatul الأسماء وجمعها (hlm. 5–36)",
+      "ringkasan_cakupan": "Membahas definisi dan ketentuan i'rab isim maqshur, manqush (beserta kaidah pembuangan dan penetapan ya'-nya), dan mamdud; klasifikasi 4 jenis hamzah mamdud (ashliyyah, munqalibah, zaidah lit-ta'nits, zaidah lil-ilhaq); serta kaidah morfologis perubahan huruf akhir ketiganya ketika diubah menjadi mutsanna, jama' mudzakkar salim, dan jama' muannats salim.",
+      "estimasi_jam_belajar": 7
+    }
+  ],
+  "materi": [
+    {
+      "id_materi": "MAT-0801",
+      "id_bab": "BAB-08",
+      "sub_topik_arab": "تَعْرِيفُ المَصْدَرِ وَأَوْزَانُ المَصْدَرِ الثُّلَاثِيِّ (السَّمَاعِيَّةُ وَالقِيَاسِيَّةُ الغَالِبَةُ)",
+      "sub_topik_indo": "Definisi Mashdar dan Wazan Mashdar Tsulatsi (Sama'i dan Indikasi Makna Qiyasi)",
+      "kaidah_arab": "المَصْدَرُ هُوَ مَا دَلَّ عَلَى حَدَثٍ مُجَرَّدٍ عَنِ الزَّمَانِ، وَهُوَ أَصْلُ المُشْتَقَّاتِ عِنْدَ البَصْرِيِّينَ. وَمَصَادِرُ الفِعْلِ الثُّلَاثِيِّ سَمَاعِيَّةٌ فِي الأَصْلِ، لَكِنَّ العُلَمَاءَ اسْتَقْرَوْا لَهَا ضَوَابِطَ غَالِبَةً بِحَسَبِ المَعْنَى أَوِ الوَزْنِ.",
+      "penjelasan_indo": "Mashdar adalah isim yang menunjukkan makna peristiwa/pekerjaan (hadats) murni tanpa terikat oleh waktu (lampau, sekarang, atau akan datang). Menurut madzhab Bashrah, mashdar adalah asal dari segala kata turunan (al-musytaqqat) termasuk fi'il, karena mashdar hanya memiliki satu indikasi (hadats), sedangkan fi'il memiliki dua indikasi (hadats dan zaman). Untuk fi'il tsulatsi mujarrad (3 huruf), wazan mashdarnya pada dasarnya bersifat sama'i (diketahui lewat kamus dan pendengaran dari orang Arab), namun para ulama Sharaf merumuskan kaidah mayoritas (ghalibah) berdasarkan makna dan struktur fi'ilnya.",
+      "rincian_hukum_dan_syarat": "1. Berdasarkan indikasi makna (الضوابط المعنوية): (a) Profesi/keahlian (حِرْفَة) berwazan فِعَالَةٌ seperti زَرَعَ - زِرَاعَةً، تَجَرَ - تِجَارَةً; (b) Penolakan/enggan (إِبَاء وامتناع) berwazan فِعَالٌ seperti أَبَى - إِبَاءً، نَفَرَ - نِفَارًا; (c) Gerakan/goncangan (تَقَلُّب واضطراب) berwazan فَعَلَانٌ seperti غَلَى - غَلَيَانًا، طَافَ - طَوَفَانًا; (d) Penyakit (دَاء) berwazan فُعَالٌ seperti سَعَلَ - سُعَالًا، زُكِمَ - زُكَامًا; (e) Suara (صَوْت) berwazan فُعَالٌ atau فَعِيلٌ seperti صَرَخَ - صُرَاخًا، صَهَلَ - صَهِيلًا; (f) Perjalanan (سَيْر) berwazan فَعِيلٌ seperti رَحَلَ - رَحِيلًا; (g) Warna (لَوْن) berwazan فُعْلَةٌ seperti حَمِرَ - حُمْرَةً.\n2. Berdasarkan struktur/transitivitas fi'il (الضوابط اللفظية) jika tidak menunjukkan makna khusus di atas: (a) فَعَلَ dan فَعِلَ yang muta'addi (transitif) umumnya berwazan فَعْلٌ (بفتح فسكون) seperti فَتَحَ - فَتْحًا dan فَهِمَ - فَهْمًا; (b) فَعَلَ yang lazim (intransitif) shahih 'ain umumnya berwazan فُعُولٌ seperti جَلَسَ - جُلُوسًا; (c) فَعِلَ yang lazim umumnya berwazan فَعَلٌ (بفتحتين) seperti فَرِحَ - فَرَحًا; (d) فَعُلَ (selalu lazim) berwazan فُعُولَةٌ atau فَعَالَةٌ seperti سَهُلَ - سُهُولَةً dan فَصُحَ - فَصَاحَةً.",
+      "rumus_ringkas": "Mashdar = Hadats tanpa Zaman | Tsulatsi Muta'addi (فَعَلَ/فَعِلَ) -> فَعْلٌ | Tsulatsi Lazim (فَعَلَ) -> فُعُولٌ | Tsulatsi Lazim (فَعِلَ) -> فَعَلٌ | Tsulatsi (فَعُلَ) -> فُعُولَةٌ / فَعَالَةٌ.",
+      "tanbihat_dan_khilaf": "Khilaf Klasik Bashrah vs Kufah: Ulama Bashrah berpendapat Mashdar adalah asal isytiqaq (أصل المشتقات) karena yang tunggal (hadats saja) lebih dulu ada daripada yang majemuk (hadats + zaman pada fi'il). Sebaliknya, ulama Kufah berpendapat Fi'il adalah asal Mashdar karena mashdar mengikuti fi'il dalam hal shahih dan i'lal-nya (misal: قَامَ - قِيَامًا ikut i'lal, sedangkan قَاوَمَ - قِوَامًا shahih). Pendapat yang rajih dalam Jami'ud Durus dan Nahwu Tathbiqi adalah madzhab Bashrah."
+    },
+    {
+      "id_materi": "MAT-0802",
+      "id_bab": "BAB-08",
+      "sub_topik_arab": "مَصَادِرُ الأَفْعَالِ غَيْرِ الثُّلَاثِيَّةِ (الرُّبَاعِيِّ وَالخُمَاسِيِّ وَالسُّدَاسِيِّ)",
+      "sub_topik_indo": "Kaidah Qiyasi Mashdar Ruba'i, Khumasi, dan Sudasi",
+      "kaidah_arab": "مَصَادِرُ الأَفْعَالِ غَيْرِ الثُّلَاثِيَّةِ كُلُّهَا قِيَاسِيَّةٌ: فَالرُّبَاعِيُّ أَوْزَانُهُ (إِفْعَال، تَفْعِيل، مُفَاعَلَة/فِعَال، فَعْلَلَة/فِعْلَال)، وَالمَبْدُوءُ بِهَمْزَةِ وَصْلٍ يُكْسَرُ ثَالِثُهُ وَيُزَادُ أَلِفٌ قَبْلَ آخِرِهِ، وَالمَبْدُوءُ بِتَاءٍ زَائِدَةٍ يُضَمُّ مَا قَبْلَ آخِرِهِ.",
+      "penjelasan_indo": "Berbeda dengan tsulatsi yang banyak bersifat sama'i, seluruh mashdar dari fi'il ghairu tsulatsi (4, 5, dan 6 huruf) bersifat qiyasi (memiliki rumus baku). Perubahan bunyi hanya terjadi apabila terdapat huruf 'illat pada 'ain fi'il atau lam fi'il yang menuntut kaidah i'lal atau ta'widh (penggantian dengan ta' marbuthah).",
+      "rincian_hukum_dan_syarat": "1. Mashdar Fi'il Ruba'i (4 Huruf): (a) Wazan أَفْعَلَ mashdarnya إِفْعَالٌ (contoh: أَكْرَمَ - إِكْرَامًا). Jika mu'tal 'ain (ajwaf), alif 'ain fi'il dibuang dan diganti ta' marbuthah di akhir menjadi إِفَالَةٌ (seperti أَقَامَ - إِقَامَةً، أَعَانَ - إِعَانَةً). Jika mu'tal lam, ya'/wawu di akhir diubah menjadi hamzah setelah alif zaidah (أَعْطَى - إِعْطَاءً); (b) Wazan فَعَّلَ mashdarnya تَفْعِيلٌ (كَسَّرَ - تَكْسِيرًا). Jika mu'tal lam (naqish) atau mahmuz lam, wajib membuang ya' تَفْعِيل dan menggantinya dengan ta' di akhir menjadi تَفْعِلَةٌ (زَكَّى - تَزْكِيَةً، هَنَّأَ - تَهْنِئَةً); (c) Wazan فَاعَلَ mashdarnya فِعَالٌ dan مُفَاعَلَةٌ (جَاهَدَ - جِهَادًا وَمُجَاهَدَةً); (d) Wazan فَعْلَلَ mashdarnya فَعْلَلَةٌ (دَحْرَجَ - دَحْرَجَةً), dan jika mudha'af boleh juga فِعْلَالٌ (زَلْزَلَ - زَلْزَلَةً وَزِلْزَالًا).\n2. Mashdar Khumasi dan Sudasi (5 & 6 Huruf): (a) Jika diawali Hamzah Washal (انْفَعَلَ، افْتَعَلَ، افْعَلَّ، اسْتَفْعَلَ، افْعَوْعَلَ), rumusnya adalah mengikuti wazan fi'il madhi-nya dengan meng-kasrah huruf ketiga dan menambah alif sebelum huruf terakhir (انْطَلَقَ - انْطِلَاقًا، اسْتَغْفَرَ - اسْتِغْفَارًا). Khusus اسْتَفْعَلَ yang ajwaf, alif dibuang dan diganti ta' di akhir menjadi اسْتِفَالَةٌ (اسْتَقَامَ - اسْتِقَامَةً); (b) Jika diawali Ta' Zaidah (تَفَعَّلَ، تَفَاعَلَ، تَفَعْلَلَ), rumusnya adalah mengikuti wazan madhi-nya dengan men-dhammah huruf sebelum akhir (تَعَلَّمَ - تَعَلُّمًا، تَعَاوَنَ - تَعَاوُنًا). Namun jika mu'tal lam (seperti تَمَنَّى، تَعَالَى), dhammah diubah menjadi kasrah agar sesuai dengan ya' (تَمَنِّيًا / التَّمَنِّي، التَّعَالِي).",
+      "rumus_ringkas": "أَفْعَلَ -> إِفْعَال (إِفَالَة) | فَعَّلَ -> تَفْعِيل (تَفْعِلَة) | فَاعَلَ -> فِعَال/مُفَاعَلَة | فَعْلَلَ -> فَعْلَلَة | Hamzah Washal -> Kasrah huruf ke-3 + Alif sebelum akhir | Ta' Zaidah -> Dhammah sebelum akhir.",
+      "tanbihat_dan_khilaf": "Pada wazan إِقَامَة dan اسْتِقَامَة, terjadi khilaf antara Khalil bin Ahmad dan Al-Akhfasy tentang huruf mana yang dibuang: menurut Khalil yang dibuang adalah alif mashdar (alif إفعال/استفعال), sedangkan menurut Al-Akhfasy yang dibuang adalah 'ain fi'il. Ta' marbuthah di akhir adalah 'iwadh (pengganti) dari huruf yang dibuang, dan tidak boleh dibuang kecuali sesekali saat idhafah seperti dalam firman Allah: (وَإِقَامِ الصَّلَاةِ)."
+    },
+    {
+      "id_materi": "MAT-0803",
+      "id_bab": "BAB-08",
+      "sub_topik_arab": "المَصْدَرُ المِيمِيُّ وَالصِّنَاعِيُّ وَمَصْدَرُ المَرَّةِ وَالهَيْئَةِ وَاسْمُ المَصْدَرِ",
+      "sub_topik_indo": "Mashdar Mimi, Mashdar Shina'i, Mashdar Marrah, Mashdar Hai'ah, dan Ismul Mashdar",
+      "kaidah_arab": "المَصْدَرُ المِيمِيُّ يُبْدَأُ بِمِيمٍ زَائِدَةٍ لِغَيْرِ المُفَاعَلَةِ، وَالصِّنَاعِيُّ يُخْتَمُ بِيَاءٍ مُشَدَّدَةٍ تَلِيهَا تَاءٌ، وَمَصْدَرُ المَرَّةِ يَدُلُّ عَلَى العَدَدِ عَلَى وَزْنِ (فَعْلَة)، وَمَصْدَرُ الهَيْئَةِ يَدُلُّ عَلَى الصِّفَةِ عَلَى وَزْنِ (فِعْلَة)، وَاسْمُ المَصْدَرِ يَنْقُصُ حُرُوفُهُ عَنْ حُرُوفِ فِعْلِهِ.",
+      "penjelasan_indo": "Selain mashdar sharih/ashli, bahasa Arab memiliki variasi mashdar dengan fungsi semantik dan morfologis khusus: Mashdar Mimi (diawali mim tambahan dengan makna sama seperti mashdar ashli), Mashdar Shina'i (menunjukkan abstraksi/konsep/isme), Mashdar Marrah (menunjukkan jumlah terjadinya perbuatan), Mashdar Hai'ah (menunjukkan cara/gaya terjadinya perbuatan), dan Ismul Mashdar (kata benda yang bermakna mashdar tetapi hurufnya kurang dari huruf fi'ilnya).",
+      "rincian_hukum_dan_syarat": "1. Mashdar Mimi (المصدر الميمي): Dari tsulatsi berwazan مَفْعَلٌ (dengan fathah 'ain) seperti مَنْصَرٌ dan مَضْرَبٌ, kecuali jika mitsal wawi shahih lam yang terbuang wawunya saat mudhari' (seperti وَعَدَ - يَعِدُ) maka berwazan مَفْعِلٌ (dengan kasrah 'ain) seperti مَوْعِدٌ dan مَوْضِعٌ. Kadang diberi ta' di akhir seperti مَحَبَّةٌ، مَوَدَّةٌ، مَفْسَدَةٌ. Dari ghairu tsulatsi, wazannya sama persis dengan Isim Maf'ul (مُفْعَل، مُسْتَفْعَل) dan dibedakan lewat konteks kalimat (misal: مُنْطَلَقٌ، مُدْخَلٌ).\n2. Mashdar Shina'i (المصدر الصناعي): Dibentuk dari isim jamid maupun musytaq dengan menambahkan ya' tasydid dan ta' marbuthah (ـِيَّةٌ) untuk menunjukkan karakteristik atau konsep abstrak, seperti إِنْسَانِيَّةٌ (kemanusiaan), حُرِّيَّةٌ (kebebasan), وَطَنِيَّةٌ (nasionalisme). Syaratnya: kata tersebut tidak berkedudukan sebagai na'at (sifat); jika menjadi na'at (seperti الحَيَاةُ الإِنْسَانِيَّةُ), maka ia adalah Isim Mansub, bukan Mashdar Shina'i.\n3. Mashdar Marrah (مصدر المرة): Dari tsulatsi berwazan فَعْلَةٌ (dengan fathah fa') seperti ضَرْبَةٌ، نَظْرَةٌ. Dari ghairu tsulatsi cukup menambahkan ta' marbuthah pada mashdar ashlinya (انْطِلَاقَةٌ، تَكْبِيرَةٌ). Jika mashdar ashli sudah berakhiran ta' (seperti رَحْمَةٌ، إِقَامَةٌ، دَعْوَةٌ), maka untuk menunjukkan satu kali wajib disifati dengan kata وَاحِدَةٌ (رَحْمَةً وَاحِدَةً، إِقَامَةً وَاحِدَةً).\n4. Mashdar Hai'ah (مصدر الهيئة): Hanya dibentuk secara qiyasi dari fi'il tsulatsi dengan wazan فِعْلَةٌ (dengan kasrah fa') seperti جِلْسَةٌ حسنةٌ، مِشْيَةُ المُتَوَاضِعِ، ذِبْحَةٌ.\n5. Ismul Mashdar (اسم المصدر): Kata yang menunjukkan makna mashdar tetapi jumlah hurufnya lebih sedikit dari huruf fi'ilnya tanpa alasan i'lal/ta'widh, seperti تَوَضَّأَ -> وُضُوءٌ (mashdar ashlinya تَوَضُّؤٌ), تَكَلَّمَ -> كَلَامٌ (mashdar ashlinya تَكَلُّمٌ), أَعْطَى -> عَطَاءٌ (mashdar ashlinya إِعْطَاءٌ), سَلَّمَ -> سَلَامٌ (mashdar ashlinya تَسْلِيمٌ).",
+      "rumus_ringkas": "Mimi Tsulatsi: مَفْعَلٌ (Mitsal Wawi: مَفْعِلٌ) | Mimi Ghairu Tsulatsi: = Isim Maf'ul | Shina'i: + ـِيَّةٌ (bukan na'at) | Marrah: فَعْلَةٌ | Hai'ah: فِعْلَةٌ | Ismul Mashdar: Huruf < Fi'il (كَلَام، عَطَاء، سَلَام).",
+      "tanbihat_dan_khilaf": "Ismul Mashdar dapat beramal seperti fi'il (merafa'kan fa'il dan menashabkan maf'ul bih) menurut jumhur ulama, selama bukan berupa isim 'alam, sebagaimana dalam hadits: (مِنْ قُبْلَةِ الرَّجُلِ امْرَأَتَهُ الوُضُوءُ) dan syair: (بِعِشْرَتِكَ الكِرَامَ تُعَدُّ مِنْهُمْ)."
+    },
+    {
+      "id_materi": "MAT-0804",
+      "id_bab": "BAB-08",
+      "sub_topik_arab": "إِعْمَالُ المَصْدَرِ وَشُرُوطُهُ وَأَحْوَالُهُ الثَّلَاثَةُ",
+      "sub_topik_indo": "Pengamalan Mashdar (I'malul Mashdar), Syarat, dan Tiga Keadaannya",
+      "kaidah_arab": "يَعْمَلُ المَصْدَرُ عَمَلَ فِعْلِهِ فَيَرْفَعُ الفَاعِلَ وَيَنْصِبُ المَفْعُولَ بِهِ، بِشَرْطِ أَنْ يَصِحَّ حُلُولُ (أَنْ وَالفِعْلِ) أَوْ (مَا وَالفِعْلِ) مَحَلَّهُ، وَأَلَّا يَكُونَ مُصَغَّرًا وَلَا مَحْدُودًا بِالتَّاءِ وَلَا مَوْصُوفًا قَبْلَ تَمَامِ عَمَلِهِ. وَأَحْوَالُهُ ثَلَاثَةٌ: مُضَافٌ، وَمُنَوَّنٌ، وَمُحَلًّى بِأَلْ.",
+      "penjelasan_indo": "Mashdar (dan Ismul Mashdar) dapat beramal seperti fi'ilnya—merafa'kan fa'il dan menashabkan maf'ul bih—dalam dua posisi utama: (1) Ketika menggantikan fi'ilnya (نَائِبًا عَنْ فِعْلِهِ), seperti ضَرْبًا اللِّصَّ; dan (2) Ketika posisi mashdar tersebut sah ditakwil dengan (أَنْ + الفعل) untuk waktu lampau/mendatang atau (مَا + الفعل) untuk waktu sekarang (hal). Berbeda dengan isim fa'il, mashdar TIDAK disyaratkan harus bermakna hal atau istiqbal untuk bisa beramal karena ia adalah asal dari fi'il.",
+      "rincian_hukum_dan_syarat": "1. Delapan Syarat Pengamalan Mashdar (في النحو التطبيقي): (a) Tidak ditashghir (غير مصغر); (b) Tidak berupa dhamir (غير مضمر); (c) Tidak dibatasi jumlah dengan ta' marrah (غير محدود بالتاء); (d) Tidak disifati dengan na'at sebelum ma'mulnya disebutkan (غير موصوف قبل العمل); (e) Tidak terpisah dari ma'mulnya oleh pemisah asing; (f) Tidak diakhirkan dari ma'mulnya; (g) Tidak dijamakkan (kecuali jama' taksir yang langka).\n2. Tiga Bentuk Mashdar yang Beramal dan Urutan Kekuatannya:\n   - Pertama (Paling Banyak & Fasih): المَصْدَرُ المُضَافُ (Diidhafahkan). Terbagi menjadi 5 pola: (1) Idhafah kepada Fa'il lalu menashabkan Maf'ul Bih, ini yang paling banyak (contoh: وَلَوْلَا دَفْعُ اللَّهِ النَّاسَ — لفظ الجلالة مضاف إليه مجرور لفظا مرفوع محلا على أنه فاعل، والنّاسَ مفعول به منصوب); (2) Idhafah kepada Maf'ul Bih lalu merafa'kan Fa'il (contoh: وَلِلَّهِ عَلَى النَّاسِ حِجُّ البَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا — البَيْتِ مضاف إليه مجرور لفظا منصوب محلا، ومَنْ فاعل للمصدر مرفوع); (3) Idhafah kepada Fa'il tanpa menyebut Maf'ul; (4) Idhafah kepada Maf'ul tanpa menyebut Fa'il (seperti لَا يَسْأَمُ الإِنْسَانُ مِنْ دُعَاءِ الخَيْرِ); (5) Idhafah kepada Zharaf.\n   - Kedua (Sedang/Fasih): المَصْدَرُ المُنَوَّنُ (Bertanwin). Merafa'kan fa'il dan menashabkan maf'ul secara zhahir, seperti firman Allah: (أَوْ إِطْعَامٌ فِي يَوْمٍ ذِي مَسْغَبَةٍ يَتِيمًا).\n   - Ketiga (Paling Sedikit/Lemah): المَصْدَرُ المُحَلَّى بِأَلْ (Ber-Alif Lam). Seperti syair: (ضَعِيفُ النِّكَايَةِ أَعْدَاءَهُ).",
+      "rumus_ringkas": "Mashdar + Fa'il (Mudhaf Ilaih: Majrur lafzhan, Marfu' mahallan) + Maf'ul Bih (Manshub) | ATAU Mashdar + Maf'ul Bih (Mudhaf Ilaih: Majrur lafzhan, Manshub mahallan) + Fa'il (Marfu'). Hukum Tabi' (Na'at/'Athaf) pada Mudhaf Ilaih boleh mengikuti Lafazh (Majrur) atau Mahal (Marfu'/Manshub).",
+      "tanbihat_dan_khilaf": "Kaidah Penting Tabi' Ma'mul Mashdar: Apabila mashdar diidhafahkan kepada fa'ilnya (misal: سَرَّنِي فَهْمُ زَيْدٍ الذَّكِيِّ / الذَّكِيُّ الدَّرْسَ), maka kata sifat (تَابِع) dari زَيْدٍ boleh dibaca Jarr mengikuti lafazhnya (مراعاة للفظ), dan boleh dibaca Rafa' mengikuti mahalnya sebagai fa'il (مراعاة للمحل)."
+    },
+    {
+      "id_materi": "MAT-0901",
+      "id_bab": "BAB-09",
+      "sub_topik_arab": "صَوْغُ اسْمِ الفَاعِلِ وَصِيَغِ المُبَالَغَةِ",
+      "sub_topik_indo": "Pembentukan Isim Fa'il dan Shighah Mubalaghah (Qiyasi & Sama'i)",
+      "kaidah_arab": "يُصَاغُ اسْمُ الفَاعِلِ مِنَ الثُّلَاثِيِّ المَبْنِيِّ لِلْمَعْلُومِ عَلَى وَزْنِ (فَاعِل)، وَمِنْ غَيْرِ الثُّلَاثِيِّ عَلَى وَزْنِ مُضَارِعِهِ مَعَ إِبْدَالِ حَرْفِ المُضَارَعَةِ مِيمًا مَضْمُومَةً وَكَسْرِ مَا قَبْلَ الآخِرِ. وَتُحَوَّلُ صِيغَةُ (فَاعِل) لِقَصْدِ المُبَالَغَةِ وَالتَّكْثِيرِ إِلَى خَمْسَةِ أَوْزَانٍ قِيَاسِيَّةٍ: فَعَّال، مِفْعَال، فَعُول، فَعِيل، فَعِل.",
+      "penjelasan_indo": "Isim Fa'il adalah isim musytaq yang dibentuk dari fi'il mabni lil-ma'lum untuk menunjukkan pelaku perbuatan atau pihak yang disifati dengan perbuatan tersebut secara tidak tetap (طَارِئ غَيْرُ ثَابِت). Apabila ingin menunjukkan intensitas, kuantitas yang banyak, atau pengulangan perbuatan (المُبَالَغَة وَالتَّكْثِير), maka Isim Fa'il dari fi'il tsulatsi diubah menjadi Shighah Mubalaghah.",
+      "rincian_hukum_dan_syarat": "1. Pembentukan Isim Fa'il Tsulatsi (وَزْنُ فَاعِل): (a) Shahih: كَتَبَ -> كَاتِبٌ; (b) Mudha'af: wajib idgham seperti مَدَّ -> مَادٌّ (asalnya مَادِدٌ); (c) Mahmuz Fa': أَكَلَ -> آكِلٌ; (d) Ajwaf (Mu'tal 'Ain): jika berupa alif maka diubah menjadi hamzah (قَالَ -> قَائِلٌ، بَاعَ -> بَائِعٌ), tetapi jika 'ain-nya tidak berubah jadi alif pada madhi (seperti عَوِرَ، حَيِيَ) maka tetap: عَاوِرٌ، حَايٍ; (e) Naqish (Mu'tal Lam): menjadi isim manqush (دَعَا -> دَاعٍ / الدَّاعِي، قَضَى -> قَاضٍ / القَاضِي).\n2. Pembentukan Isim Fa'il Ghairu Tsulatsi: Mengganti huruf mudhara'ah dengan mim dhammah dan meng-kasrah huruf sebelum akhir (أَكْرَمَ - يُكْرِمُ -> مُكْرِمٌ، اسْتَغْفَرَ -> مُسْتَغْفِرٌ). Pengecualian morfologis: pada wazan الخماسي yang mudha'af (seperti احْمَرَّ، انْشَقَّ، اخْتَارَ، انْقَادَ), bentuk Isim Fa'il dan Isim Maf'ul-nya sama persis secara lafazh (مُحْمَرٌّ، مُخْتَارٌ، مُنْقَادٌ) karena idgham atau i'lal; perbedaannya diketahui dari konteks kalimat dan taqdir asalnya (مُخْتَار sebagai isim fa'il asalnya مُخْتَيِرٌ, sebagai isim maf'ul asalnya مُخْتَيَرٌ).\n3. Lima Wazan Qiyasi Shighah Mubalaghah: (1) فَعَّالٌ (غَفَّار، عَلَّام، تَوَّاب); (2) مِفْعَالٌ (مِقْدَام، مِعْطَاء، مِهْذَار); (3) فَعُولٌ (غَفُور، شَكُور، صَبُور); (4) فَعِيلٌ (سَمِيع، عَلِيم، قَدِير); (5) فَعِلٌ (حَذِر، فَطِن، يَقِظ).\n4. Wazan Sama'i Shighah Mubalaghah: فِعِّيل (صِدِّيق)، مِفْعِيل (مِسْكِين، مِعْطِير)، فُعَلَة (هُمَزَة، لُمَزَة، ضُحَكَة)، فَاعُول (فَارُوق)، فُعَّال (كُبَّار)، فَعَّالَة (عَلَّامَة، فَهَّامَة — ta' di sini untuk mubalaghah, bukan ta'nits).",
+      "rumus_ringkas": "Tsulatsi -> فَاعِل | Ghairu Tsulatsi -> مُـ...ِ. (Mim Dhammah + Kasrah sebelum akhir) | 5 Wazan Qiyasi Mubalaghah: فَعَّال، مِفْعَال، فَعُول، فَعِيل، فَعِل (Jembatan keledai: هُوَ مِقْوَالٌ كَذَّابٌ، وَأَنْتَ حَذِرٌ وَاللَّهُ غَفُورٌ رَحِيمٌ).",
+      "tanbihat_dan_khilaf": "Shighah Mubalaghah pada asalnya hanya dibentuk dari fi'il tsulatsi muta'addi. Pembentukannya dari fi'il ruba'i sangat jarang (syadz/sama'i), seperti أَعْطَى -> مِعْطَاءٌ، أَدْرَكَ -> دَرَّاكٌ، أَنْذَرَ -> نَذِيرٌ، أَزْهَقَ -> زَهُوقٌ."
+    },
+    {
+      "id_materi": "MAT-0902",
+      "id_bab": "BAB-09",
+      "sub_topik_arab": "إِعْمَالُ اسْمِ الفَاعِلِ وَصِيَغِ المُبَالَغَةِ وَشُرُوطُهُمَا",
+      "sub_topik_indo": "Syarat Pengamalan Isim Fa'il dan Shighah Mubalaghah serta Hukum Idhafahnya",
+      "kaidah_arab": "يَعْمَلُ اسْمُ الفَاعِلِ وَصِيَغُ المُبَالَغَةِ عَمَلَ الفِعْلِ المَبْنِيِّ لِلْمَعْلُومِ: فَإِنْ كَانَ مُحَلًّى بِـ(أَلْ) عَمِلَ مُطْلَقًا بِلَا شَرْطٍ، وَإِنْ كَانَ مُجَرَّدًا مِنْ (أَلْ) عَمِلَ بِشَرْطَيْنِ: الدَّلَالَةِ عَلَى الحَالِ أَوِ الاسْتِقْبَالِ، وَاعْتِمَادِهِ عَلَى نَفْيٍ أَوِ اسْتِفْهَامٍ أَوْ مُبْتَدَأٍ أَوْ مَوْصُوفٍ أَوْ صَاحِبِ حَالٍ أَوْ نِدَاءٍ.",
+      "penjelasan_indo": "Isim Fa'il dan Shighah Mubalaghah dapat beramal seperti fi'il mabni lil-ma'lum (merafa'kan fa'il saja jika dari fi'il lazim, dan merafa'kan fa'il serta menashabkan satu, dua, atau tiga maf'ul bih jika dari fi'il muta'addi). Ketentuan pengamalannya terbagi menjadi dua keadaan utama: ketika dimasuki (أل) الموصولة dan ketika kosong dari (أل).",
+      "rincian_hukum_dan_syarat": "1. Keadaan Pertama: Bersambung dengan (أل) [المُحَلَّى بِأَلْ]. Karena (أل) di sini adalah Isim Maushul yang bermakna (الَّذِي), maka Isim Fa'il beramal secara mutlak tanpa syarat waktu (baik bermakna lampau/madhi, sekarang/hal, maupun akan datang/istiqbal) dan tanpa syarat i'timad. Contoh: جَاءَ المُكْرِمُ ضَيْفَهُ أَمْسِ / الآنَ / غَدًا.\n2. Keadaan Kedua: Kosong dari (أل) [المُجَرَّدُ مِنْ أَلْ]. Wajib memenuhi 2 syarat utama (khusus untuk menashabkan maf'ul bih atau merafa'kan fa'il zhahir): \n   - Syarat Pertama (Syarat Waktu): Harus menunjukkan waktu sekarang (الحال) atau yang akan datang (الاستقبال). Jika menunjukkan waktu lampau (الماضي), maka ia TIDAK BOLEH menashabkan maf'ul bih setelahnya, melainkan WAJIB diidhafahkan kepada ma'mulnya secara idhafah ma'nawiyyah (contoh: هَذَا كَاتِبُ الرِّسَالَةِ أَمْسِ — tidak boleh كَاتِبٌ الرِّسَالَةَ أَمْسِ), kecuali menurut Al-Kisai yang membolehkannya berdasarkan ayat (وَكَلْبُهُمْ بَاسِطٌ ذِرَاعَيْهِ بِالوَصِيدِ).\n   - Syarat Kedua (Syarat I'timad/Sandaran): Harus bersandar pada salah satu dari 6 hal: (a) Nafi (مَا خَائِبٌ السَّاعِي فِي الخَيْرِ); (b) Istifham (أَمُنْجِزٌ أَنْتَ وَعْدَكَ؟); (c) Mubtada' — yakni ia menjadi khabar mubtada', khabar inna, atau maf'ul kedua zhanna (المُؤْمِنُ شَاكِرٌ نِعْمَةَ رَبِّهِ); (d) Maushuf — yakni ia menjadi na'at (مَرَرْتُ بِرَجُلٍ حَافِظٍ لِسَانَهُ); (e) Shahibul Hal — yakni ia menjadi hal (دَعَوْتُ اللَّهَ مُخْلِصًا لَهُ الدِّينَ); (f) Huruf Nida' (يَا طَالِعًا جَبَلًا).\n3. Hukum Idhafah Isim Fa'il kepada Maf'ulnya: Jika Isim Fa'il memenuhi syarat amal (bermakna hal/istiqbal), maka kita BOLEH memilih dua cara terhadap maf'ul bih: menashabkannya dengan menetapkan tanwin pada isim fa'il (مُكْرِمٌ ضَيْفَهُ), atau menjarrkannya sebagai mudhaf ilaih (مُكْرِمُ ضَيْفِهِ) yang disebut الإضافة اللفظية (tidak memberi faedah ta'rif/takhshish, hanya meringankan lafazh). Jika fi'ilnya muta'addi kepada 2 maf'ul lalu diidhafahkan kepada maf'ul pertama, maka maf'ul kedua wajib tetap dibaca nashab (هَذَا مُعْطِي الفَقِيرِ دِرْهَمًا).",
+      "rumus_ringkas": "Ber-(أل) -> Beramal Mutlak (Madhi/Hal/Istiqbal) | Tanpa (أل) -> Syarat: (1) Hal/Istiqbal + (2) I'timad (Nafi / Istifham / Khabar / Na'at / Hal / Nida'). Jika bermakna Madhi tanpa (أل) -> Wajib Idhafah (كَاتِبُ الدَّرْسِ أَمْسِ).",
+      "tanbihat_dan_khilaf": "Apabila Isim Fa'il bersandar pada Nafi atau Istifham dan merafa'kan fa'il zhahir tanpa ada mubtada' sebelumnya (seperti: أَمُسَافِرٌ أَخُوكَ؟), maka Isim Fa'il (مُسَافِرٌ) di-i'rab sebagai Mubtada', dan (أَخُوكَ) adalah Fa'il سَدَّ مَسَدَّ الخَبَرِ (menempati posisi khabar)."
+    },
+    {
+      "id_materi": "MAT-0903",
+      "id_bab": "BAB-09",
+      "sub_topik_arab": "صَوْغُ اسْمِ المَفْعُولِ مِنَ الثُّلَاثِيِّ وَغَيْرِهِ (الصَّحِيحِ وَالمُعْتَلِّ)",
+      "sub_topik_indo": "Pembentukan Isim Maf'ul dari Fi'il Tsulatsi dan Ghairu Tsulatsi (Shahih & Mu'tal)",
+      "kaidah_arab": "يُصَاغُ اسْمُ المَفْعُولِ مِنَ الفِعْلِ المَبْنِيِّ لِلْمَجْهُولِ لِلدَّلَالَةِ عَلَى مَنْ وَقَعَ عَلَيْهِ الفِعْلُ: فَمِنَ الثُّلَاثِيِّ عَلَى وَزْنِ (مَفْعُول)، وَمِنْ غَيْرِ الثُّلَاثِيِّ عَلَى وَزْنِ مُضَارِعِهِ مَعَ إِبْدَالِ حَرْفِ المُضَارَعَةِ مِيمًا مَضْمُومَةً وَفَتْحِ مَا قَبْلَ الآخِرِ.",
+      "penjelasan_indo": "Isim Maf'ul adalah isim musytaq yang dibentuk dari fi'il mabni lil-majhul (kata kerja pasif) untuk menunjukkan objek yang dikenai pekerjaan. Perhatian khusus dalam ilmu Sharaf terletak pada proses i'lal saat membentuk isim maf'ul dari fi'il tsulatsi mu'tal 'ain (ajwaf) dan mu'tal lam (naqish), serta syarat adanya syibhul jumlah saat dibentuk dari fi'il lazim.",
+      "rincian_hukum_dan_syarat": "1. Dari Tsulatsi Shahih, Mahmuz, Mudha'af, dan Mitsal: Mengikuti wazan مَفْعُولٌ secara utuh tanpa pembuangan (كَتَبَ -> مَكْتُوبٌ، قَرَأَ -> مَقْرُوءٌ، شَدَّ -> مَشْدُودٌ، وَعَدَ -> مَوْعُودٌ).\n2. Dari Tsulatsi Ajwaf (Mu'tal 'Ain): Mengalami I'lal bit-Taskin wal-Hadzf sehingga wawu مَفْعُول terbuang:\n   - Ajwaf Wawi (قَالَ - يَقُولُ، صَانَ - يَصُونُ): Asalnya مَقْوُولٌ (berwazan مَفْعُول). Harakat dhammah pada wawu pertama dipindahkan ke huruf shahih sebelumnya (qaf), lalu bertemu dua sukun (wawu 'ain fi'il dan wawu مفعول). Menurut Sibawaih dan jumhur Bashrah, yang dibuang adalah wawu مَفْعُول sehingga menjadi مَقُولٌ (berwazan مَفْعُلٌ).\n   - Ajwaf Ya'i (بَاعَ - يَبِيعُ، دَانَ - يَدِينُ): Asalnya مَبْيُوعٌ. Harakat dhammah pada ya' dipindahkan ke ba', lalu dhammah ba' diubah menjadi kasrah agar sesuai dengan ya', kemudian wawu مَفْعُول dibuang karena bertemu dua sukun, menjadi مَبِيعٌ (berwazan مَفْعِلٌ). Catatan: Bani Tamim membiarkan wawu pada ajwaf ya'i (مَبْيُوعٌ، مَدْيُونٌ، مَعْيُوبٌ، مَخْيُوطٌ).\n3. Dari Tsulatsi Naqish (Mu'tal Lam):\n   - Naqish Wawi (دَعَا - يَدْعُو، رَجَا - يَرْجُو): Wawu مَفْعُول diidghamkan ke wawu lam fi'il menjadi مَدْعُوٌّ، مَرْجُوٌّ.\n   - Naqish Ya'i (رَمَى - يَرْمِي، هَدَى - يَهْدِي): Asalnya مَرْمُويٌ. Wawu مَفْعُول diubah menjadi ya' lalu diidghamkan ke ya' lam fi'il, dan dhammah sebelumnya diubah menjadi kasrah menjadi مَرْمِيٌّ، مَهْدِيٌّ.\n4. Dari Ghairu Tsulatsi: Mengganti huruf mudhara'ah dengan mim dhammah dan mem-fathah huruf sebelum akhir (أَكْرَمَ -> مُكْرَمٌ، اسْتَخْرَجَ -> مُسْتَخْرَجٌ).\n5. Dari Fi'il Lazim: Karena fi'il lazim tidak memiliki maf'ul bih langsung, Isim Maf'ul dari fi'il lazim WAJIB diikuti oleh jar-majrur atau zharaf yang berperan sebagai na'ibul fa'ilnya (contoh: مَرْغُوبٌ فِيهِ، مَذْهُوبٌ بِهِ، مُجْتَمَعٌ عِنْدَهُ).",
+      "rumus_ringkas": "Tsulatsi Shahih -> مَفْعُول | Ajwaf Wawi (قَالَ) -> مَقُول (wazan مَفْعُل) | Ajwaf Ya'i (بَاعَ) -> مَبِيع (wazan مَفْعِل) | Naqish Wawi (دَعَا) -> مَدْعُوٌّ | Naqish Ya'i (رَمَى) -> مَرْمِيٌّ | Ghairu Tsulatsi -> مُـ...َ. (Fathah sebelum akhir).",
+      "tanbihat_dan_khilaf": "Khilaf Sibawaih vs Al-Akhfasy pada مَقُول dan مَبِيع: Sibawaih berpendapat yang dibuang adalah wawu مَفْعُول karena ia huruf tambahan (zaidah), sehingga wazannya مَفْعُل (untuk مَقُول) dan مَفْعِل (untuk مَبِيع). Sedangkan Al-Akhfasy berpendapat yang dibuang adalah 'ain fi'il, sehingga wazannya مَفُول (untuk مَقُول) dan مَفِيل (untuk مَبِيع). Terdapat pula wazan فَعِيلٌ yang bermakna مَفْعُولٌ seperti قَتِيلٌ (مَقْتُول)، جَرِيحٌ (مَجْرُوح)."
+    },
+    {
+      "id_materi": "MAT-0904",
+      "id_bab": "BAB-09",
+      "sub_topik_arab": "إِعْمَالُ اسْمِ المَفْعُولِ وَنَائِبُ الفَاعِلِ فِيهِ",
+      "sub_topik_indo": "Pengamalan Isim Maf'ul dan Ketentuan Na'ibul Fa'il-nya",
+      "kaidah_arab": "يَعْمَلُ اسْمُ المَفْعُولِ عَمَلَ فِعْلِهِ المَبْنِيِّ لِلْمَجْهُولِ بِنَفْسِ شُرُوطِ إِعْمَالِ اسْمِ الفَاعِلِ، فَيَرْفَعُ نَائِبَ الفَاعِلِ إِنْ كَانَ فِعْلُهُ مُتَعَدِّيًا لِوَاحِدٍ، وَيَرْفَعُ الأَوَّلَ نَائِبَ فَاعِلٍ وَيَنْصِبُ الثَّانِيَ مَفْعُولًا بِهِ إِنْ كَانَ مُتَعَدِّيًا لِمَفْعُولَيْنِ.",
+      "penjelasan_indo": "Isim Maf'ul beramal persis seperti fi'il mudhari' mabni lil-majhul dengan syarat yang sama persis dengan syarat pengamalan Isim Fa'il (beramal mutlak jika ber-Al, dan beramal dengan syarat waktu Hal/Istiqbal + I'timad jika tanpa Al). Perbedaan utamanya adalah isim yang dirafa'kan oleh Isim Maf'ul berkedudukan sebagai Na'ibul Fa'il (نَائِبُ الفَاعِلِ), bukan Fa'il.",
+      "rincian_hukum_dan_syarat": "1. Jika berasal dari Fi'il Lazim: Na'ibul Fa'il-nya berupa Jar-Majrur atau Zharaf yang berada pada mahal rafa' (contoh: مَا مَغْضُوبٌ عَلَيْهِمْ — الجار والمجرور في محل رفع نائب فاعل لاسم المفعول).\n2. Jika berasal dari Fi'il Muta'addi kepada 1 Maf'ul: Merafa'kan satu isim setelahnya sebagai Na'ibul Fa'il (contoh: أَمَحْمُودَةٌ سِيرَتُهُ؟ — سِيرَتُهُ: نائب فاعل لاسم المفعول مرفوع سد مسد الخبر; dan المَظْلُومُ مُسْتَجَابٌ دُعَاؤُهُ — دُعَاؤُهُ: نائب فاعل مرفوع).\n3. Jika berasal dari Fi'il Muta'addi kepada 2 Maf'ul (seperti أَعْطَى، مَنَحَ، كَسَا، اتَّخَذَ، ظَنَّ): Maf'ul pertama berubah menjadi Na'ibul Fa'il (marfu'), sedangkan Maf'ul kedua tetap dibaca Nashab sebagai Maf'ul Bih Tsani. Contoh: الفَقِيرُ مُعْطًى كِسَاءً (Na'ibul fa'ilnya dhamir mustatir تقديره هو kembali ke الفقير, dan كِسَاءً adalah maf'ul bih kedua manshub); atau أَمَمْنُوحٌ المُجْتَهِدُ جَائِزَةً؟ (المُجْتَهِدُ: نائب فاعل مرفوع، وجَائِزَةً: مفعول به ثانٍ منصوب).\n4. Kebolehan Idhafah Isim Maf'ul kepada Na'ibul Fa'il-nya: Isim Maf'ul boleh diidhafahkan kepada na'ibul fa'ilnya (misal: زَيْدٌ مَحْمُودُ السِّيرَةِ / مَجْرُوحُ اليَدِ), namun ketika sudah diidhafahkan seperti ini, makna dan hukumnya beralih menyerupai Shifat Musyabbahah.",
+      "rumus_ringkas": "Isim Maf'ul (Muta'addi 1) + Na'ibul Fa'il (Marfu') | Isim Maf'ul (Muta'addi 2) + Na'ibul Fa'il (Marfu') + Maf'ul Bih II (Manshub) | Isim Maf'ul (Lazim) + Jar-Majrur/Zharaf (Fi Mahalli Raf'in Na'ibul Fa'il).",
+      "tanbihat_dan_khilaf": "Perhatikan perbedaan i'rab tiga kalimat ini: (1) زَيْدٌ مَحْمُودٌ خُلُقُهُ -> خُلُقُهُ adalah Na'ibul Fa'il marfu'; (2) زَيْدٌ مَحْمُودُ الخُلُقِ -> الخُلُقِ adalah Mudhaf Ilaih majrur (secara makna na'ibul fa'il); (3) زَيْدٌ مَحْمُودٌ خُلُقًا -> Na'ibul fa'ilnya dhamir mustatir (هو), sedangkan خُلُقًا adalah Tamyiz manshub."
+    },
+    {
+      "id_materi": "MAT-1001",
+      "id_bab": "BAB-10",
+      "sub_topik_arab": "الصِّفَةُ المُشَبَّهَةُ بِاسْمِ الفَاعِلِ: صَوْغُهَا وَالأَحْوَالُ الإِعْرَابِيَّةُ لِمَعْمُولِهَا",
+      "sub_topik_indo": "Shifat Musyabbahah: Wazan Pembentukan dan 3 Keadaan I'rab Ma'mul-nya",
+      "kaidah_arab": "الصِّفَةُ المُشَبَّهَةُ اسْمٌ مُشْتَقٌّ لَا يُصَاغُ إِلَّا مِنَ الثُّلَاثِيِّ اللَّازِمِ لِلدَّلَالَةِ عَلَى الثُّبُوتِ وَالدَّوَامِ. وَلِمَعْمُولِهَا السَّبَبِيِّ ثَلَاثُ حَالَاتٍ إِعْرَابِيَّةٍ: الرَّفْعُ عَلَى الفَاعِلِيَّةِ، وَالنَّصْبُ عَلَى التَّمْيِيزِ أَوِ الشَّبَهِ بِالمَفْعُولِ بِهِ، وَالجَرُّ بِالإِضَافَةِ.",
+      "penjelasan_indo": "Shifat Musyabbahah adalah isim musytaq yang hanya dibentuk dari fi'il tsulatsi lazim untuk menunjukkan sifat yang melekat/tetap (الثُّبُوت وَاللُّزُوم) pada pemiliknya. Dinamakan 'musyabbahah bi ismil fa'il' (diserupakan dengan isim fa'il) karena ia dapat ditatsniyahkan, dijamakkan, dimudzakkar/muannatskan, serta dapat beramal seperti isim fa'il meskipun berasal dari fi'il lazim.",
+      "rincian_hukum_dan_syarat": "1. Wazan-Wazan Shifat Musyabbahah:\n   - Dari Bab فَعِلَ (بِكَسْرِ العَيْن): (a) أَفْعَلُ yang muannatsnya فَعْلَاءُ untuk warna, cacat fisik, atau hiasan lahiriah (أَحْمَرُ/حَمْرَاءُ، أَعْرَجُ/عَرْجَاءُ، أَكْحَلُ/كَحْلَاءُ); (b) فَعْلَانُ yang muannatsnya فَعْلَى untuk kondisi kosong atau penuh secara batin/fisik (عَطْشَانُ/عَطْشَى، شَبْعَانُ/شَبْعَى، غَضْبَانُ/غَضْبَى); (c) فَعِلٌ yang muannatsnya فَعِلَةٌ untuk emosi/psikologis yang cepat berubah (فَرِحٌ، ضَجِرٌ، تَعِبٌ).\n   - Dari Bab فَعُلَ (بِضَمِّ العَيْن — watak/tabiat): فَعِيلٌ (كَرِيمٌ، شَرِيفٌ)، فَعْلٌ (سَهْلٌ، صَعْبٌ، ضَخْمٌ)، فُعْلٌ (صُلْبٌ، حُلْوٌ، مُرٌّ)، فَعَلٌ (حَسَنٌ، بَطَلٌ)، فَعَالٌ (جَبَانٌ، حَصَانٌ)، فُعَالٌ (شُجَاعٌ، فُرَاتٌ).\n2. Perbedaan Shifat Musyabbahah dengan Isim Fa'il: (a) Shifat Musyabbahah menunjukkan sifat tetap (ثبوت), sedangkan Isim Fa'il menunjukkan kejadian baru/sementara (حدوث وتجدد); (b) Shifat Musyabbahah hanya dari fi'il lazim, Isim Fa'il dari lazim dan muta'addi; (c) Ma'mul Shifat Musyabbahah harus berupa isim sababi (memiliki dhamir atau alif-lam yang kembali ke maushuf) dan tidak boleh mendahului shifat musyabbahah.\n3. Tiga Keadaan I'rab Ma'mul Shifat Musyabbahah:\n   - Pertama: الرَّفْعُ (Rafa') sebagai Fa'il, jika ma'mulnya bersambung dengan dhamir (مُحَمَّدٌ حَسَنٌ خُلُقُهُ) atau mudhaf ke kata yang berdhamir.\n   - Kedua: النَّصْبُ (Nashab), sebagai Tamyiz jika ma'mulnya berupa isim nakirah (مُحَمَّدٌ حَسَنٌ خُلُقًا), atau sebagai المشبَّه بالمفعول به jika ma'mulnya berupa isim ma'rifah (مُحَمَّدٌ حَسَنٌ الخُلُقَ / خُلُقَهُ).\n   - Ketiga: الجَرُّ (Jarr) sebagai Mudhaf Ilaih (مُحَمَّدٌ حَسَنُ الخُلُقِ / الحَسَنُ الخُلُقِ). Catatan Penting: Dilarang mengidhafahkan Shifat Musyabbahah yang ber-(أل) kepada ma'mul yang kosong dari (أل) dan tidak mudhaf kepada yang ber-(أل), sehingga TIDAK BOLEH mengatakan: (مُحَمَّدٌ الحَسَنُ خُلُقِهِ) atau (الحَسَنُ خُلُقٍ).",
+      "rumus_ringkas": "3 I'rab Ma'mul: (1) حَسَنٌ خُلُقُهُ -> Rafa' (Fa'il) | (2) حَسَنٌ خُلُقًا -> Nashab (Tamyiz) / حَسَنٌ الخُلُقَ -> Nashab (Syabih bil Maf'ul) | (3) حَسَنُ الخُلُقِ -> Jarr (Mudhaf Ilaih).",
+      "tanbihat_dan_khilaf": "Isim Fa'il atau Isim Maf'ul apabila dimaksudkan untuk sifat yang tetap (قُصِدَ بِهِ الثُّبُوتُ) dan diidhafahkan ke fa'ilnya (seperti: طَاهِرُ القَلْبِ، مُعْتَدِلُ القَامَةِ، مَحْمُودُ السِّيرَةِ), maka ia beralih status menjadi Shifat Musyabbahah (المُلْحَقُ بِالصِّفَةِ المُشَبَّهَةِ)."
+    },
+    {
+      "id_materi": "MAT-1002",
+      "id_bab": "BAB-10",
+      "sub_topik_arab": "اسْمُ التَّفْضِيلِ: شُرُوطُهُ السَّبْعَةُ وَأَحْوَالُهُ الأَرْبَعَةُ وَإِعْمَالُهُ (مَسْأَلَةُ الكُحْلِ)",
+      "sub_topik_indo": "Isim Tafdhil: 7 Syarat Pembentukan, 4 Keadaan Hukumnya, dan Masalah Al-Kuhl",
+      "kaidah_arab": "يُصَاغُ اسْمُ التَّفْضِيلِ عَلَى وَزْنِ (أَفْعَل) لِلْمُذَكَّرِ وَ(فُعْلَى) لِلْمُؤَنَّثِ بِسَبْعَةِ شُرُوطٍ فِي فِعْلِهِ، وَلَهُ أَرْبَعُ حَالَاتٍ مِنْ حَيْثُ الإِفْرَادُ وَالتَّذْكِيرُ وَالمُطَابَقَةُ. وَلَا يَرْفَعُ اسْمًا ظَاهِرًا إِلَّا فِي مَسْأَلَةِ الكُحْلِ.",
+      "penjelasan_indo": "Isim Tafdhil adalah isim musytaq berwazan أَفْعَلُ (muannatsnya فُعْلَى seperti كُبْرَى، صُغْرَى) yang menunjukkan bahwa dua hal bersekutu dalam satu sifat dan salah satunya melebihi yang lain. Terdapat tiga kata dalam bahasa Arab yang membuang hamzah أَفْعَلُ karena seringnya dipakai, yaitu: خَيْرٌ، شَرٌّ، حَبٌّ (asalnya أَخْيَرُ، أَشَرُّ، أَحَبُّ).",
+      "rincian_hukum_dan_syarat": "1. Tujuh Syarat Fi'il untuk Dibentuk Langsung Menjadi Isim Tafdhil: (1) Tsulatsi (3 huruf, bukan مثل دَحْرَجَ/أَكْرَمَ); (2) Tam (تَامّ، bukan naqish seperti كَانَ/صَارَ); (3) Mutsbat (مُثْبَت، tidak dinafikan); (4) Mutasharrif (مُتَصَرِّف، bukan jamid seperti نِعْمَ/بِئْسَ/عَسَى/لَيْسَ); (5) Mabni lil-Ma'lum (bukan mabni lil-majhul); (6) Qabil lit-Tafawut (قَابِلٌ لِلتَّفَاوُتِ، maknanya bertingkat-tingkat, bukan seperti مَاتَ، فَنِيَ، هَلَكَ); (7) Sifatnya bukan berwazan أَفْعَل yang muannatsnya فَعْلَاء (warna/cacat seperti أَحْمَر، أَعْمَى).\n2. Cara Tafdhil Jika Kurang Syarat: Jika fi'ilnya ghairu tsulatsi atau menunjukkan warna/cacat, datangkan Isim Tafdhil pembantu (seperti أَشَدُّ، أَكْثَرُ، أَقْوَى، أَحْسَنُ) diikuti mashdar sharih dari fi'il tersebut yang dibaca Nashab sebagai Tamyiz (contoh: السَّمَاءُ أَشَدُّ زُرْقَةً، والمُؤْمِنُ أَكْثَرُ اسْتِغْفَارًا). Jika manfi atau mabni lil-majhul, gunakan mashdar muawwal.\n3. Empat Keadaan Hukum Isim Tafdhil:\n   - Keadaan 1: المجرَّدُ مِنْ (أل) والإضافة (Kosong dari Al dan Idhafah). Hukumnya: WAJIB Mufrad dan Mudzakkar dalam segala kondisi, dan mufaddhal 'alaih didatangkan dengan huruf jarr (مِنْ). Contoh: الزَّيْدَانِ أَفْضَلُ مِنْ عَمْرٍو، وفاطمةُ أَفْضَلُ مِنْ هِنْدٍ.\n   - Keadaan 2: المُحَلَّى بِـ(أل) (Dimasuki Al). Hukumnya: WAJIB Muthabaqah (sesuai dengan mufaddhal dalam mufrad, mutsanna, jama', mudzakkar, dan muannats) dan DILARANG menyebut (مِنْ). Contoh: الرَّجُلُ الأَفْضَلُ، المَرْأَةُ الفُضْلَى، الرِّجَالُ الأَفَاضِلُ / الأَفْضَلُونَ، النِّسَاءُ الفُضْلَيَاتُ / الفُضَلُ.\n   - Keadaan 3: المُضَافُ إِلَى نَكِرَةٍ (Mudhaf kepada Isim Nakirah). Hukumnya: WAJIB Mufrad dan Mudzakkar, sedangkan mudhaf ilaih nakirah-nya wajib sesuai dengan mufaddhal. Contoh: الكِتَابَانِ أَفْضَلُ كِتَابَيْنِ، وفاطمةُ أَفْضَلُ طَالِبَةٍ.\n   - Keadaan 4: المُضَافُ إِلَى مَعْرِفَةٍ (Mudhaf kepada Isim Ma'rifah). Hukumnya: BOLEH dua wajah (جَوَازُ الوَجْهَيْنِ) jika dimaksudkan tafdhil: boleh tetap Mufrad-Mudzakkar dan boleh Muthabaqah. Contoh: هَؤُلَاءِ أَفْضَلُ القَوْمِ (atau أَفَاضِلُ القَوْمِ); فَاِطمَةُ أَفْضَلُ النِّسَاءِ (atau فُضْلَى النِّسَاءِ).\n4. Pengamalan Isim Tafdhil (مَسْأَلَةُ الكُحْلِ): Isim Tafdhil selalu merafa'kan fa'il berupa dhamir mustatir, dan TIDAK BISA merafa'kan fa'il isim zhahir kecuali dalam kasus (مَسْأَلَةُ الكُحْلِ), yaitu ketika Isim Tafdhil didahului oleh نَفْيٌ (atau شِبْهُ النَّفْيِ) dan isim zhahir setelahnya lebih diutamakan atas dirinya sendiri dalam dua sudut pandang berbeda. Contoh masyhur: (مَا رَأَيْتُ رَجُلًا أَحْسَنَ فِي عَيْنِهِ الكُحْلُ مِنْهُ فِي عَيْنِ زَيْدٍ) -> الكُحْلُ adalah Fa'il marfu' bagi أَحْسَنَ.",
+      "rumus_ringkas": "1. Mujarrad -> Wajib Mufrad Mudzakkar + (مِنْ) | 2. Ber-(أل) -> Wajib Muthabaqah, Tanpa (مِنْ) | 3. Mudhaf ke Nakirah -> Wajib Mufrad Mudzakkar | 4. Mudhaf ke Ma'rifah -> Boleh Mufrad Mudzakkar / Boleh Muthabaqah.",
+      "tanbihat_dan_khilaf": "Pada Keadaan 4 (Mudhaf ke Ma'rifah), kebolehan dua wajah hanya berlaku apabila dimaksudkan makna tafdhil (melebihkan atas yang lain). Namun jika dimaksudkan makna sifat mutlak tanpa perbandingan (tidak bermakna tafdhil), maka WAJIB Muthabaqah, seperti: النَّبِيُّ مُحَمَّدٌ وَإِبْرَاهِيمُ أَفْضَلَا قُرَيْشٍ وَالعَرَبِ."
+    },
+    {
+      "id_materi": "MAT-1003",
+      "id_bab": "BAB-10",
+      "sub_topik_arab": "اسْمَا الزَّمَانِ وَالمَكَانِ: أَوْزَانُهُمَا القِيَاسِيَّةُ وَالشَّاذَّةُ",
+      "sub_topik_indo": "Isim Zaman dan Isim Makan: Wazan Qiyasi (مَفْعَل dan مَفْعِل) serta Lafazh Sama'i",
+      "kaidah_arab": "يُصَاغُ اسْمَا الزَّمَانِ وَالمَكَانِ مِنَ الثُّلَاثِيِّ عَلَى وَزْنِ (مَفْعَل) بِفَتْحِ العَيْنِ أَوْ (مَفْعِل) بِكَسْرِهَا، وَمِنْ غَيْرِ الثُّلَاثِيِّ عَلَى وَزْنِ اسْمِ المَفْعُولِ (مِيمٌ مَضْمُومَةٌ وَفَتْحُ مَا قَبْلَ الآخِرِ).",
+      "penjelasan_indo": "Isim Zaman dan Isim Makan adalah isim musytaq yang dibentuk untuk menunjukkan waktu atau tempat terjadinya suatu perbuatan. Bentuk lafazh keduanya selalu sama, dan yang membedakan apakah suatu kata merupakan isim zaman, isim makan, atau mashdar mimi adalah qarinah (konteks kalimat).",
+      "rincian_hukum_dan_syarat": "1. Wazan מَفْعَلٌ (بِفَتْحِ المِيمِ وَالعَيْنِ) dari Fi'il Tsulatsi digunakan dalam 3 keadaan:\n   - (a) Jika fi'il mudhari'-nya ber-'ain Dhammah (يَفْعُلُ): كَتَبَ - يَكْتُبُ -> مَكْتَبٌ، دَخَلَ - يَدْخُلُ -> مَدْخَلٌ، طَلَعَ - يَطْلُعُ -> مَطْلَعٌ.\n   - (b) Jika fi'il mudhari'-nya ber-'ain Fathah (يَفْعَلُ): لَعِبَ - يَلْعَبُ -> مَلْعَبٌ، ذَهَبَ - يَذْهَبُ -> مَذْهَبٌ، شَرِبَ - يَشْرَبُ -> مَشْرَبٌ.\n   - (c) Jika fi'ilnya Mu'tal Lam (Naqish) secara mutlak (apapun harakat mudhari'nya): رَمَى - يَرْمِي -> مَرْمًى، سَعَى - يَسْعَى -> مَسْعًى، أَوَى - يَأْوِي -> مَأْوًى، غَزَا - يَغْزُو -> مَغْزًى.\n2. Wazan مَفْعِلٌ (بِفَتْحِ المِيمِ وَكَسْرِ العَيْنِ) dari Fi'il Tsulatsi digunakan dalam 2 keadaan:\n   - (a) Jika fi'ilnya Shahih dan mudhari'-nya ber-'ain Kasrah (يَفْعِلُ): جَلَسَ - يَجْلِسُ -> مَجْلِسٌ، نَزَلَ - يَنْزِلُ -> مَنْزِلٌ، هَبَطَ - يَهْبِطُ -> مَهْبِطٌ.\n   - (b) Jika fi'ilnya Mitsal Wawi dan Shahih Lam (apapun harakat mudhari'nya): وَعَدَ -> مَوْعِدٌ، وَضَعَ - يَضَعُ -> مَوْضِعٌ، وَقَعَ - يَقَعُ -> مَوْقِعٌ، وَلَدَ -> مَوْلِدٌ، وَرَدَ -> مَوْرِدٌ.\n3. Dari Fi'il Ghairu Tsulatsi: Wazannya sama persis dengan Isim Maf'ul (mim dhammah dan fathah sebelum akhir), seperti: اجْتَمَعَ -> مُجْتَمَعٌ، اسْتَوْدَعَ -> مُسْتَوْدَعٌ، اسْتَشْفَى -> مُسْتَشْفًى، التَقَى -> مُلْتَقًى.\n4. Penambahan Ta' Marbuthah untuk Tempat yang Banyak (وَزْنُ مَفْعَلَةٍ لِلْكَثْرَةِ): Dapat dibentuk dari isim jamid tsulatsi dengan wazan مَفْعَلَةٌ untuk menunjukkan tempat yang banyak terdapat benda tersebut, seperti مَأْسَدَةٌ (tempat banyak singa), مَسْبَعَةٌ (tempat banyak binatang buas), مَبْطَخَةٌ (kebun semangka).",
+      "rumus_ringkas": "Tsulatsi (يَفْعُلُ / يَفْعَلُ / Naqish) -> مَفْعَلٌ | Tsulatsi (يَفْعِلُ Shahih / Mitsal Wawi) -> مَفْعِلٌ | Ghairu Tsulatsi -> = Isim Maf'ul (مُـ...َ.).",
+      "tanbihat_dan_khilaf": "Lafazh-Lafazh Sama'i (Syadz dari Kaidah): Terdapat sekitar 11–12 kata yang mudhari'nya ber-'ain dhammah (يَفْعُلُ), yang menurut qiyas seharusnya berwazan مَفْعَلٌ (dengan fathah), tetapi orang Arab mengucapkannya dengan kasrah (مَفْعِلٌ), yaitu: مَسْجِدٌ، مَشْرِقٌ، مَغْرِبٌ، مَطْلِعٌ، مَنْسِكٌ، مَجْزِرٌ، مَنْبِتٌ، مَسْقِطٌ، مَفْرِقٌ، مَرْفِقٌ، مَسْكِنٌ. Sebagian kata ini (seperti مَطْلَع/مَطْلِع dan مَسْكَن/مَسْكِن) boleh dibaca dua wajah (fathah sesuai qiyas dan kasrah sesuai sama'i)."
+    },
+    {
+      "id_materi": "MAT-1004",
+      "id_bab": "BAB-10",
+      "sub_topik_arab": "اسْمُ الآلَةِ: أَوْزَانُهُ القِيَاسِيَّةُ القَدِيمَةُ وَالحَدِيثَةُ وَالجَامِدَةُ",
+      "sub_topik_indo": "Isim Alat: Wazan Qiyasi Klasik, Wazan Majma' Lughawi, dan Isim Alat Jamid",
+      "kaidah_arab": "اسْمُ الآلَةِ اسْمٌ يُصَاغُ مِنَ الفِعْلِ الثُّلَاثِيِّ المُتَعَدِّي لِلدَّلَالَةِ عَلَى الأَدَاةِ الَّتِي يَقَعُ بِهَا الفِعْلُ، وَأَوْزَانُهُ القِيَاسِيَّةُ المَشْهُورَةُ: مِفْعَل، وَمِفْعَال، وَمِفْعَلَة، وَفَعَّالَة.",
+      "penjelasan_indo": "Isim Alat adalah isim musytaq yang pada asalnya dibentuk dari fi'il tsulatsi muta'addi untuk menunjukkan piranti atau alat yang digunakan pelaku dalam melakukan perbuatan. Isim Zaman, Isim Makan, dan Isim Alat sama sekali TIDAK DAPAT BERAMAL merafa'kan fa'il maupun menashabkan maf'ul bih.",
+      "rincian_hukum_dan_syarat": "1. Tiga Wazan Qiyasi Klasik (الأوزان القياسية القديمة عند الجمهور): Diawali dengan Mim Kasrah (مِـ): (a) مِفْعَلٌ: مِبْرَدٌ (kikir), مِقَصٌّ (gunting - asalnya مِقْصَصٌ), مِشْرَطٌ (pisau bedah), مِصْعَدٌ (lift); (b) مِفْعَالٌ: مِفْتَاحٌ (kunci), مِنْشَارٌ (gergaji), مِيزَانٌ (timbangan - asalnya مِوْزَانٌ), مِحْرَاثٌ (bajak); (c) مِفْعَلَةٌ: مِكْنَسَةٌ (sapu), مِسْطَرَةٌ (penggaris), مِلْعَقَةٌ (sendok), مِطْرَقَةٌ (palu), مِمْحَاةٌ (penghapus).\n2. Empat Wazan Qiyasi Tambahan Majma' Al-Lughah Al-'Arabiyyah: (a) فَعَّالَةٌ (sangat produktif di era modern): غَسَّالَةٌ (mesin cuci), ثَلَّاجَةٌ (kulkas), سَيَّارَةٌ (mobil), نَظَّارَةٌ (kacamata), دَبَّابَةٌ (tank); (b) فَعَّالٌ: خَلَّاطٌ (blender), سَخَّانٌ (pemanas), جَوَّالٌ (ponsel); (c) فَاعُولٌ: حَاسُوبٌ (komputer), صَارُوخٌ (roket), سَاطُورٌ (golok); (d) فَاعِلَةٌ: شَاحِنَةٌ (truk), طَابِعَةٌ (printer), حَاسِبَةٌ (kalkulator), سَاقِيَةٌ (kincir air).\n3. Isim Alat Sama'i yang Berharakat Dhammah Mim dan 'Ain (مُفْعُلٌ / مُفْعُلَةٌ): Terdapat beberapa kata isim alat yang keluar dari qiyas karena dibaca dhammah mim dan huruf ketiganya, yaitu: مُنْخُلٌ (ayakan), مُدْهُنٌ (tempat minyak), مُكْحُلَةٌ (tempat celak), مُسْعُطٌ (alat tetes hidung), مُدُقٌّ (alat penumbuk).\n4. Isim Alat Jamid (غير مشتق): Nama alat yang tidak diambil dari fi'il dan tidak terikat wazan tertentu, seperti: سِكِّينٌ (pisau), قَلَمٌ (pena), فَأْسٌ (kapak), سَيْفٌ (pedang), رُمْحٌ (tombak), قَوْسٌ (busur), إِبْرَةٌ (jarum).",
+      "rumus_ringkas": "3 Wazan Klasik (Mim Kasrah): مِفْعَلٌ، مِفْعَالٌ، مِفْعَلَةٌ | 4 Wazan Modern: فَعَّالَةٌ، فَعَّالٌ، فَاعُولٌ، فَاعِلَةٌ | Syadz (Mim Dhammah): مُنْخُلٌ، مُدْهُنٌ، مُكْحُلَةٌ.",
+      "tanbihat_dan_khilaf": "Meskipun kaidah asal menyatakan Isim Alat hanya dibentuk dari fi'il tsulatsi muta'addi, dalam pemakaian bahasa Arab ditemukan pula pembentukannya dari fi'il tsulatsi lazim (seperti صَعِدَ -> مِصْعَدٌ، طَارَ -> مِطْيَارٌ/طَيَّارَةٌ، سَارَ -> سَيَّارَةٌ) dan dari isim jamid (seperti حِبْرٌ -> مِحْبَرَةٌ، قَلَمٌ -> مِقْلَمَةٌ)."
+    },
+    {
+      "id_materi": "MAT-1101",
+      "id_bab": "BAB-11",
+      "sub_topik_arab": "الاسْمُ المَقْصُورُ: تَعْرِيفُهُ وَأَحْكَامُ تَثْنِيَتِهِ وَجَمْعِهِ",
+      "sub_topik_indo": "Isim Maqshur: Definisi serta Kaidah Tatsniyah dan Jama'-nya",
+      "kaidah_arab": "المَقْصُورُ هُوَ كُلُّ اسْمٍ مُعْرَبٍ آخِرُهُ أَلِفٌ لَازِمَةٌ مَفْتُوحٌ مَا قَبْلَهَا. وَعِنْدَ تَثْنِيَتِهِ أَوْ جَمْعِهِ جَمْعَ مُؤَنَّثٍ سَالِمًا: تُرَدُّ أَلِفُهُ إِلَى أَصْلِهَا (الوَاوِ أَوِ اليَاءِ) إِنْ كَانَتْ ثَالِثَةً، وَتُقْلَبُ يَاءً مُطْلَقًا إِنْ كَانَتْ رَابِعَةً فَصَاعِدًا. وَعِنْدَ جَمْعِهِ جَمْعَ مُذَكَّرٍ سَالِمًا تُحْذَفُ أَلِفُهُ وَيَبْقَى مَا قَبْلَهَا مَفْتُوحًا.",
+      "penjelasan_indo": "Isim Maqshur adalah isim mu'rab yang berakhiran alif lazimah (alif tetap) dan huruf sebelumnya berharakat fathah, seperti الفَتَى، العَصَا، الهُدَى، المُصْطَفَى، المُسْتَشْفَى. Seluruh tanda i'rabnya (rafa', nashab, jarr) bersifat muqaddarah (تُقَدَّرُ عَلَيْهِ جَمِيعُ الحَرَكَاتِ لِلتَّعَذُّرِ). Ketika ditanwin (saat nakirah), alifnya terbuang dalam pengucapan (لفظًا) karena bertemu dua sukun, namun tetap ditulis dalam tulisan (خطًّا) seperti فَتًى، هُدًى، عَصًا.",
+      "rincian_hukum_dan_syarat": "1. Tatsniyah (Mutsanna) dan Jama' Muannats Salim pada Isim Maqshur:\n   - (a) Jika Alif berada pada urutan ketiga (ثَالِثَة): Wajib dikembalikan ke asalnya (wawu atau ya'). Cara mudah mengenali asalnya dari rasm imla'i: jika ditulis dengan alif tegak (ا) maka asalnya Wawu (عَصَا -> عَصَوَانِ / عَصَوَاتٌ، رِضَا -> رِضَوَانِ، عُلَا -> عُلَوَاتٌ); jika ditulis dengan alif maqshurah/berbentuk ya' (ى) maka asalnya Ya' (فَتَى -> فَتَيَانِ / فَتَيَاتٌ، هُدَى -> هُدَيَانِ).\n   - (b) Jika Alif berada pada urutan keempat atau lebih (رَابِعَة فَصَاعِدًا): Wajib diubah menjadi Ya' secara mutlak tanpa melihat asalnya (مَلْهَى -> مَلْهَيَانِ، مُصْطَفَى -> مُصْطَفَيَانِ، كُبْرَى -> كُبْرَيَانِ / كُبْرَيَاتٌ، مُسْتَشْفَى -> مُسْتَشْفَيَانِ / مُسْتَشْفَيَاتٌ).\n2. Jama' Mudzakkar Salim pada Isim Maqshur:\n   - Alif Maqshur WAJIB DIBUANG karena bertemu dua sukun (alif dan wawu/ya' jama'), dan huruf sebelum alif tetap dibiarkan berharakat Fathah sebagai bukti adanya alif yang terbuang. Contoh: مُصْطَفَى -> مُصْطَفَوْنَ (rafa') dan مُصْطَفَيْنَ (nashab/jarr); أَعْلَى -> أَعْلَوْنَ dan أَعْلَيْنَ; مُوسَى -> مُوسَوْنَ dan مُوسَيْنَ.",
+      "rumus_ringkas": "Mutsanna & Jama' Muannats: Alif ke-3 -> Kembali ke asal (عَصَا -> عَصَوَانِ، فَتَى -> فَتَيَانِ) | Alif ke-4+ -> Wajib jadi Ya' (مُسْتَشْفَيَانِ / مُسْتَشْفَيَاتٌ) | Jama' Mudzakkar -> Buang Alif + Fathah sebelum الواو/الياء (مُصْطَفَوْنَ / مُصْطَفَيْنَ).",
+      "tanbihat_dan_khilaf": "Perhatikan perbedaan harakat antara Mutsanna dan Jama' Mudzakkar Salim pada kondisi nashab/jarr untuk kata seperti مُصْطَفَى: pada Mutsanna huruf fa' berfathah dan ya' bertasydid (مُصْطَفَيَيْنِ), sedangkan pada Jama' Mudzakkar Salim huruf fa' berfathah dan ya' sukun tanpa tasydid (مُصْطَفَيْنَ)."
+    },
+    {
+      "id_materi": "MAT-1102",
+      "id_bab": "BAB-11",
+      "sub_topik_arab": "الاسْمُ المَنْقُوصُ: حُكْمُ يَائِهِ وَأَحْكَامُ تَثْنِيَتِهِ وَجَمْعِهِ",
+      "sub_topik_indo": "Isim Manqush: Kaidah Pembuangan Ya' serta Aturan Tatsniyah dan Jama'-nya",
+      "kaidah_arab": "المَنْقُوصُ هُوَ كُلُّ اسْمٍ مُعْرَبٍ آخِرُهُ يَاءٌ لَازِمَةٌ مَكْسُورٌ مَا قَبْلَهَا. تُحْذَفُ يَاؤُهُ إِذَا تَجَرَّدَ مِنْ (أَلْ) وَالإِضَافَةِ فِي حَالَتَيِ الرَّفْعِ وَالجَرِّ، وَتَبْقَى فِي النَّصْبِ. وَعِنْدَ التَّثْنِيَةِ وَجَمْعِ المُؤَنَّثِ تَبْقَى يَاؤُهُ وَيُرَدُّ المَحْذُوفُ مِنْهَا، وَعِنْدَ جَمْعِ المُذَكَّرِ تُحْذَفُ يَاؤُهُ وَيُضَمُّ مَا قَبْلَ الوَاوِ وَيُكَسَرُ مَا قَبْلَ اليَاءِ.",
+      "penjelasan_indo": "Isim Manqush adalah isim mu'rab yang berakhiran ya' lazimah (tidak bertasydid) dan huruf sebelumnya berharakat kasrah, seperti القَاضِي، الدَّاعِي، الهَادِي، المُحَامِي، المُهْتَدِي. Tanda i'rab rafa' dan jarr-nya bersifat muqaddarah karena berat (لِلثِّقَلِ), sedangkan tanda nashabnya zhahirah (تَظْهَرُ الفَتْحَةُ لِخِفَّتِهَا).",
+      "rincian_hukum_dan_syarat": "1. Kaidah Penetapan dan Pembuangan Ya' Manqush:\n   - Ya' Manqush WAJIB DITETAPKAN (تَبْقَى) dalam 3 keadaan: (a) Jika dimasuki (أل) seperti جَاءَ القَاضِي; (b) Jika menjadi mudhaf seperti جَاءَ قَاضِي المَدِينَةِ; (c) Jika berada dalam keadaan Nashab meskipun nakirah seperti رَأَيْتُ قَاضِيًا / سَمِعْتُ مُنَادِيًا.\n   - Ya' Manqush WAJIB DIBUANG (تُحْذَفُ) dan diganti tanwin 'iwadh (تنوين العوض عن حرف) apabila kosong dari (أل) dan idhafah pada keadaan Rafa' dan Jarr: (جَاءَ قَاضٍ، وَمَرَرْتُ بِقَاضٍ — مرفوع/مجرور بضمة/كسرة مقدرة على الياء المحذوفة).\n2. Tatsniyah dan Jama' Muannats Salim pada Isim Manqush:\n   - Ya' tetap dipertahankan; jika sebelumnya terbuang karena nakirah, maka Ya' WAJIB DIKEMBALIKAN. Contoh: القَاضِي -> القَاضِيَانِ / القَاضِيَيْنِ; قَاضٍ -> قَاضِيَانِ / قَاضِيَيْنِ; قَاضِيَةٌ -> قَاضِيَاتٌ; مُحَامٍ -> مُحَامِيَانِ.\n3. Jama' Mudzakkar Salim pada Isim Manqush:\n   - Ya' Manqush WAJIB DIBUANG. Kemudian saat Rafa' (sebelum wawu jama'), huruf sebelum ya' di-dhammah agar sesuai dengan wawu; dan saat Nashab/Jarr (sebelum ya' jama'), huruf sebelum ya' di-kasrah agar sesuai dengan ya'. Contoh: القَاضِي / قَاضٍ -> القَاضُونَ / قَاضُونَ (rafa', asalnya قَاضِيُونَ) dan القَاضِينَ / قَاضِينَ (nashab/jarr, asalnya قَاضِيِينَ); المُهْتَدِي -> المُهْتَدُونَ / المُهْتَدِينَ.",
+      "rumus_ringkas": "Ya' Manqush Nakirah: Rafa' & Jarr -> Dibuang (قَاضٍ) | Nashab -> Tetap (قَاضِيًا) | Mutsanna & Jama' Muannats -> Ya' tetap/kembali (قَاضِيَانِ / قَاضِيَاتٌ) | Jama' Mudzakkar -> Buang Ya' + Dhammah sebelum Wawu (قَاضُونَ) / Kasrah sebelum Ya' (قَاضِينَ).",
+      "tanbihat_dan_khilaf": "Kata yang berakhiran ya' bertasydid (seperti كُرْسِيٌّ، شَافِعِيٌّ) atau yang sebelum ya'-nya berharakat sukun (seperti ظَبْيٌ، دَلْوٌ، سَعْيٌ) BUKAN termasuk Isim Manqush, melainkan isim shahih al-akhir (أو شبيه بالصحيح) sehingga seluruh harakat i'rabnya tampak jelas (ظَاهِرَة)."
+    },
+    {
+      "id_materi": "MAT-1103",
+      "id_bab": "BAB-11",
+      "sub_topik_arab": "الاسْمُ المَمْدُودُ: أَنْوَاعُ هَمْزَتِهِ الأَرْبَعَةُ وَأَحْكَامُ تَثْنِيَتِهِ وَجَمْعِهِ",
+      "sub_topik_indo": "Isim Mamdud: 4 Jenis Hamzah serta Kaidah Tatsniyah dan Jama'-nya",
+      "kaidah_arab": "المَمْدُودُ هُوَ كُلُّ اسْمٍ مُعْرَبٍ آخِرُهُ هَمْزَةٌ قَبْلَهَا أَلِفٌ زَائِدَةٌ. وَحُكْمُ هَمْزَتِهِ عِنْدَ التَّثْنِيَةِ وَالجَمْعِ يَتْبَعُ نَوْعَهَا: فَإِنْ كَانَتْ أَصْلِيَّةً بَقِيَتْ، وَإِنْ كَانَتْ لِلتَّأْنِيثِ قُلِبَتْ وَاوًا، وَإِنْ كَانَتْ مُنْقَلِبَةً عَنْ أَصْلٍ أَوْ لِلْإِلْحَاقِ جَازَ إِبْقَاؤُهَا وَقَلْبُهَا وَاوًا.",
+      "penjelasan_indo": "Isim Mamdud adalah isim mu'rab yang huruf terakhirnya berupa hamzah yang didahului oleh alif zaidah (tambahan), dimana sebelum alif tersebut terdapat minimal dua huruf asli, seperti ابْتِدَاءٌ، سَمَاءٌ، بِنَاءٌ، صَحْرَاءُ، عِلْبَاءٌ. Kunci utama dalam men-tatsniyah-kan dan menjamakkan Isim Mamdud adalah mengidentifikasi jenis hamzahnya terlebih dahulu.",
+      "rincian_hukum_dan_syarat": "1. Empat Jenis Hamzah Isim Mamdud dan Hukum Tatsniyah/Jama'-nya:\n   - Jenis Pertama: هَمْزَةٌ أَصْلِيَّةٌ (Hamzah Asli). Yaitu hamzah yang tetap ada pada akar kata fi'ilnya (قَرَأَ -> قُرَّاءٌ، ابْتَدَأَ -> ابْتِدَاءٌ، أَنْشَأَ -> إِنْشَاءٌ، وَضُؤَ -> وُضَاءٌ). Hukumnya saat Mutsanna dan Jama': WAJIB TETAP (تَبْقَى الهَمْزَةُ). Contoh: قُرَّاءٌ -> قُرَّاءَانِ / قُرَّاءُونَ; إِنْشَاءٌ -> إِنْشَاءَانِ / إِنْشَاءَاتٌ; ابْتِدَاءٌ -> ابْتِدَاءَانِ.\n   - Jenis Kedua: هَمْزَةٌ زَائِدَةٌ لِلتَّأْنِيثِ (Hamzah Tambahan untuk Ta'nits). Yaitu hamzah yang tidak ada pada akar katanya dan berfungsi menunjukkan muannats (sehingga kata tersebut menjadi mamnu' minash sharf), seperti صَحْرَاءُ (dari ص ح ر), حَمْرَاءُ (dari ح م ر), حَسْنَاءُ، عَذْرَاءُ، زَكَرِيَّاءُ. Hukumnya saat Mutsanna dan Jama': WAJIB DIUBAH MENJADI WAWU (تُقْلَبُ وَاوًا). Contoh: صَحْرَاءُ -> صَحْرَاوَانِ / صَحْرَاوَاتٌ; حَمْرَاءُ -> حَمْرَاوَانِ / حَمْرَاوَاتٌ; حَسْنَاءُ -> حَسْنَاوَانِ / حَسْنَاوَاتٌ.\n   - Jenis Ketiga: هَمْزَةٌ مُنْقَلِبَةٌ عَنْ أَصْلٍ (Hamzah Perubahan dari Wawu atau Ya'). Yaitu hamzah yang pada akar fi'ilnya berupa wawu atau ya': سَمَاءٌ (dari سَمَا - يَسْمُو), دُعَاءٌ (dari دَعَا - يَدْعُو), بِنَاءٌ (dari بَنَى - يَبْنِي), قَضَاءٌ (dari قَضَى - يَقْضِي). Hukumnya saat Mutsanna dan Jama': BOLEH DUA WAJAH (جَوَازُ الوَجْهَيْنِ) — boleh tetap hamzah (dan ini lebih utama/أرجح) dan boleh diubah menjadi wawu. Contoh: سَمَاءٌ -> سَمَاءَانِ / سَمَاوَانِ dan سَمَاءَاتٌ / سَمَاوَاتٌ; بِنَاءٌ -> بِنَاءَانِ / بِنَاوَانِ dan بِنَاءَاتٌ / بِنَاوَاتٌ; بَنَّاءٌ -> بَنَّاءُونَ / بَنَّاوُونَ.\n   - Jenis Keempat: هَمْزَةٌ زَائِدَةٌ لِلْإِلْحَاقِ (Hamzah Tambahan untuk Ilhaq/Menyamakan Wazan). Seperti عِلْبَاءٌ (urat leher) dan حِرْبَاءٌ (bunglon) yang diilhaqkan dengan wazan قِرْطَاسٌ. Hukumnya: BOLEH DUA WAJAH (tetap hamzah atau diubah menjadi wawu, namun mengubah jadi wawu lebih utama di sini): عِلْبَاءٌ -> عِلْبَاوَانِ / عِلْبَاءَانِ.",
+      "rumus_ringkas": "1. Ashliyyah (ابْتِدَاء) -> Wajib Tetap Hamzah (ابْتِدَاءَانِ) | 2. Zaidah lit-Ta'nits (صَحْرَاء) -> Wajib Jadi Wawu (صَحْرَاوَانِ) | 3. Munqalibah 'an Waw/Ya' (سَمَاء/بِنَاء) & 4. Lil-Ilhaq (حِرْبَاء) -> Boleh Tetap Hamzah / Boleh Jadi Wawu (سَمَاءَانِ / سَمَاوَانِ).",
+      "tanbihat_dan_khilaf": "Kata مَاءٌ (air) dan دَاءٌ (penyakit) BUKAN termasuk Isim Mamdud secara istilah sharaf, karena alif sebelum hamzahnya bukan alif zaidah, melainkan 'ain fi'il yang berubah dari wawu (asal مَاءٌ adalah مَوَهٌ، dan hamzahnya adalah pengganti huruf ha'). Oleh karena itu saat dijamakkan atau ditashghir kembali ke ha': مِيَاهٌ، أَمْوَاهٌ، مُوَيْهٌ."
+    },
+    {
+      "id_materi": "MAT-1104",
+      "id_bab": "BAB-11",
+      "sub_topik_arab": "شُرُوطُ التَّثْنِيَةِ وَجَمْعِ التَّصْحِيحِ وَأَحْكَامُ جَمْعِ المُؤَنَّثِ السَّالِمِ الصَّرْفِيَّةُ",
+      "sub_topik_indo": "Syarat Kata untuk Mutsanna/Jama' Salim dan Perubahan Harakat pada Jama' Muannats Salim",
+      "kaidah_arab": "يُشْتَرَطُ فِي الاسْمِ الَّذِي يُثَنَّى أَوْ يُجْمَعُ أَنْ يَكُونَ مُعْرَبًا، مُفْرَدًا، غَيْرَ مُرَكَّبٍ تَرْكِيبًا مَزْجِيًّا أَوْ إِسْنَادِيًّا. وَإِذَا جُمِعَ الاسْمُ الثُّلَاثِيُّ السَّاكِنُ العَيْنِ الصَّحِيحُهَا المَخْتُومُ بِالتَّاءِ (أَوِ المُجَرَّدُ مِنْهَا) جَمْعَ مُؤَنَّثٍ سَالِمًا، فَلِعَيْنِهِ أَحْكَامٌ فِي الإِتْبَاعِ وَالفَتْحِ وَالتَّسْكِينِ.",
+      "penjelasan_indo": "Selain perubahan huruf akhir pada Maqshur, Manqush, dan Mamdud, pembentukan Jama' Muannats Salim pada isim tsulatsi yang huruf keduanya ('ain kalimah) berharakat sukun memiliki kaidah perubahan harakat 'ain kalimah (تَحْرِيكُ العَيْنِ السَّاكِنَةِ) yang sangat penting dalam ilmu Sharaf.",
+      "rincian_hukum_dan_syarat": "1. Kaidah Harakat 'Ain pada Isim Tsulatsi Sukun 'Ain (فَعْلَة / فُعْلَة / فِعْلَة) saat Dijamakkan dengan Alif dan Ta' (جمع المؤنث السالم):\n   - (a) Jika Fa'-nya berharakat Fathah (فَعْلَةٌ) dan 'ain-nya huruf shahih: WAJIB mem-fathah 'ain-nya (تَمْرَةٌ -> تَمَرَاتٌ، سَجْدَةٌ -> سَجَدَاتٌ، رَكْعَةٌ -> رَكَعَاتٌ، نَظْرَةٌ -> نَظَرَاتٌ، دَعْدٌ -> دَعَدَاتٌ).\n   - (b) Jika Fa'-nya berharakat Dhammah (فُعْلَةٌ) dan 'ain-nya shahih: BOLEH 3 wajah (mengikuti dhammah fa', mem-fathah, atau membiarkan sukun): غُرْفَةٌ -> غُرُفَاتٌ / غُرَفَاتٌ / غُرْفَاتٌ; خطْوَةٌ -> خُطُوَاتٌ / خُطَوَاتٌ / خُطْوَاتٌ.\n   - (c) Jika Fa'-nya berharakat Kasrah (فِعْلَةٌ) dan 'ain-nya shahih: BOLEH 3 wajah (mengikuti kasrah fa', mem-fathah, atau membiarkan sukun): خِدْمَةٌ -> خِدِمَاتٌ / خِدَمَاتٌ / خِدْمَاتٌ; كِسْرَةٌ -> كِسِرَاتٌ / كِسَرَاتٌ / كِسْرَاتٌ.\n2. Empat Kondisi Dimana 'Ain WAJIB TETAP SUKUN (لَا يُحَرَّكُ العَيْنُ):\n   - (a) Jika 'ain-nya berupa huruf 'illat (wawu atau ya'): جَوْزَةٌ -> جَوْزَاتٌ، بَيْضَةٌ -> بَيْضَاتٌ، رَوْضَةٌ -> رَوْضَاتٌ، دَوْلَةٌ -> دَوْلَاتٌ (tidak boleh جَوَزَاتٌ atau بَيَضَاتٌ).\n   - (b) Jika kata tersebut berupa Sifat (مُشْتَقّ / صِفَة), bukan isim jamid: ضَخْمَةٌ -> ضَخْمَاتٌ، صَعْبَةٌ -> صَعْبَاتٌ، حُلْوَةٌ -> حُلْوَاتٌ.\n   - (c) Jika 'ain-nya diidghamkan (mudha'af): جَنَّةٌ -> جَنَّاتٌ، مَرَّةٌ -> مَرَّاتٌ.\n   - (d) Jika fa'-nya dhammah dan lam-nya ya' (فُعْيَة): دُمْيَةٌ -> دُمْيَاتٌ، atau fa'-nya kasrah dan lam-nya wawu: ذِرْوَةٌ -> ذِرْوَاتٌ.",
+      "rumus_ringkas": "Isim Tsulatsi Shahih Sukun 'Ain: فَعْلَةٌ (تَمْرَة) -> Wajib Fathah (تَمَرَاتٌ) | فُعْلَةٌ (غُرْفَة) & فِعْلَةٌ (خِدْمَة) -> Boleh 3 Wajah (Itba', Fathah, Sukun) | Jika Sifat (ضَخْمَة) atau Mu'tal 'Ain (بَيْضَة/رَوْضَة) -> Wajib Tetap Sukun (ضَخْمَاتٌ / بَيْضَاتٌ).",
+      "tanbihat_dan_khilaf": "Bani Hudzail membolehkan mem-fathah 'ain yang berupa huruf 'illat seperti بَيَضَاتٌ dan جَوَزَاتٌ, namun jumhur ulama menilai ini sebagai lughah syadzdzah dan tidak boleh diqiyaskan."
+    }
+  ],
+  "irab": [
+    {
+      "id_contoh": "IRAB-0801",
+      "id_bab": "BAB-08",
+      "id_materi": "MAT-0804",
+      "jenis_dalil": "Ayat Al-Qur'an",
+      "sumber_dalil": "QS. Al-Baqarah: 251",
+      "kalimat_arab": "وَلَوْلَا دَفْعُ اللَّهِ النَّاسَ بَعْضَهُمْ بِبَعْضٍ لَفَسَدَتِ الأَرْضُ",
+      "terjemahan_indo": "Dan seandainya Allah tidak menolak (keganasan) sebagian manusia dengan sebagian yang lain, pasti rusaklah bumi ini.",
+      "kata_kunci": "دَفْعُ اللَّهِ النَّاسَ",
+      "irab_arab": "لَوْلَا: حَرْفُ امْتِنَاعٍ لِوُجُودٍ مَبْنِيٌّ عَلَى السُّكُونِ. دَفْعُ: مُبْتَدَأٌ مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ، وَخَبَرُهُ مَحْذُوفٌ وُجُوبًا تَقْدِيرُهُ (مَوْجُودٌ)، وَهُوَ مُضَافٌ. اللَّهِ: اسْمُ الجَلَالَةِ مُضَافٌ إِلَيْهِ مَجْرُورٌ لَفْظًا مَرْفُوعٌ مَحَلًّا عَلَى أَنَّهُ فَاعِلٌ لِلْمَصْدَرِ (دَفْعُ). النَّاسَ: مَفْعُولٌ بِهِ لِلْمَصْدَرِ (دَفْعُ) مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ. بَعْضَهُمْ: بَدَلُ بَعْضٍ مِنْ كُلٍّ مَنْصُوبٌ.",
+      "penjelasan_irab_indo": "Ayat ini adalah syahid utama pengamalan mashdar yang diidhafahkan kepada fa'ilnya (إضافة المصدر إلى فاعله). Kata (دَفْعُ) adalah mashdar dari fi'il muta'addi (دَفَعَ). Ia diidhafahkan kepada lafazh الجلالة (اللَّهِ) sehingga lafazh اللَّهِ berstatus majrur secara lafazh (sebagai mudhaf ilaih) namun marfu' secara mahal (sebagai fa'il mashdar). Kemudian mashdar tersebut menashabkan maf'ul bih secara zhahir yaitu kata (النَّاسَ)."
+    },
+    {
+      "id_contoh": "IRAB-0802",
+      "id_bab": "BAB-08",
+      "id_materi": "MAT-0804",
+      "jenis_dalil": "Ayat Al-Qur'an",
+      "sumber_dalil": "QS. Al-Balad: 14–15",
+      "kalimat_arab": "أَوْ إِطْعَامٌ فِي يَوْمٍ ذِي مَسْغَبَةٍ يَتِيمًا ذَا مَقْرَبَةٍ",
+      "terjemahan_indo": "Atau memberi makan pada hari terjadi kelaparan, (kepada) anak yatim yang ada hubungan kerabat.",
+      "kata_kunci": "إِطْعَامٌ ... يَتِيمًا",
+      "irab_arab": "إِطْعَامٌ: مَعْطُوفٌ عَلَى (فَكُّ رَقَبَةٍ) مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ، وَهُوَ مَصْدَرٌ مُنَوَّنٌ عَامِلٌ عَمَلَ فِعْلِهِ، وَفَاعِلُهُ ضَمِيرٌ مُسْتَتِرٌ أَوْ مَحْذُوفٌ تَقْدِيرُهُ (إِطْعَامُهُ). يَتِيمًا: مَفْعُولٌ بِهِ لِلْمَصْدَرِ المُنَوَّنِ (إِطْعَامٌ) مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ. ذَا: نَعْتٌ لِـ(يَتِيمًا) مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الأَلِفُ لِأَنَّهُ مِنَ الأَسْمَاءِ الخَمْسَةِ.",
+      "penjelasan_irab_indo": "Ayat ini menjadi dalil pengamalan Mashdar Munawwan (المصدر المنوّن). Kata (إِطْعَامٌ) adalah mashdar dari fi'il ruba'i (أَطْعَمَ) yang bertanwin, dan ia beramal menashabkan maf'ul bih yaitu kata (يَتِيمًا) karena dapat ditakwil dengan (أَنْ يُطْعِمَ يَتِيمًا)."
+    },
+    {
+      "id_contoh": "IRAB-0803",
+      "id_bab": "BAB-08",
+      "id_materi": "MAT-0804",
+      "jenis_dalil": "Ayat Al-Qur'an",
+      "sumber_dalil": "QS. Ali 'Imran: 97",
+      "kalimat_arab": "وَلِلَّهِ عَلَى النَّاسِ حِجُّ البَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا",
+      "terjemahan_indo": "Dan (di antara) kewajiban manusia terhadap Allah adalah melaksanakan ibadah haji ke Baitullah, yaitu bagi orang yang mampu mengadakan perjalanan ke sana.",
+      "kata_kunci": "حِجُّ البَيْتِ مَنِ اسْتَطَاعَ",
+      "irab_arab": "حِجُّ: مُبْتَدَأٌ مُؤَخَّرٌ مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ، وَهُوَ مَصْدَرٌ مُضَافٌ. البَيْتِ: مُضَافٌ إِلَيْهِ مَجْرُورٌ لَفْظًا مَنْصُوبٌ مَحَلًّا عَلَى أَنَّهُ مَفْعُولٌ بِهِ لِلْمَصْدَرِ. مَنِ: اسْمٌ مَوْصُولٌ مَبْنِيٌّ عَلَى السُّكُونِ المُقَدَّرِ (حُرِّكَ بِالكَسْرِ لِالتِقَاءِ السَّاكِنَيْنِ) فِي مَحَلِّ رَفْعٍ فَاعِلٌ لِلْمَصْدَرِ (حِجُّ) عَلَى أَحَدِ الأَوْجُهِ القَوِيَّةِ (أَوْ بَدَلٌ مِنَ النَّاسِ).",
+      "penjelasan_irab_indo": "Menurut salah satu wajah i'rab yang kuat dalam kitab-kitab Nahwu, ayat ini adalah contoh mashdar (حِجُّ) yang diidhafahkan kepada maf'ul bih-nya (البَيْتِ -> majrur lafzhan manshub mahallan), kemudian merafa'kan fa'ilnya yaitu isim maushul (مَنْ -> fi mahalli raf'in fa'il). Taqdirnya: أَنْ يَحُجَّ البَيْتَ مَنِ اسْتَطَاعَ."
+    },
+    {
+      "id_contoh": "IRAB-0901",
+      "id_bab": "BAB-09",
+      "id_materi": "MAT-0902",
+      "jenis_dalil": "Ayat Al-Qur'an",
+      "sumber_dalil": "QS. An-Nisa': 75",
+      "kalimat_arab": "رَبَّنَا أَخْرِجْنَا مِنْ هَذِهِ القَرْيَةِ الظَّالِمِ أَهْلُهَا",
+      "terjemahan_indo": "Ya Tuhan kami, keluarkanlah kami dari negeri ini yang zalim penduduknya.",
+      "kata_kunci": "الظَّالِمِ أَهْلُهَا",
+      "irab_arab": "القَرْيَةِ: بَدَلٌ مِنْ اسْمِ الإِشَارَةِ (هَذِهِ) مَجْرُورٌ وَعَلَامَةُ جَرِّهِ الكَسْرَةُ الظَّاهِرَةُ. الظَّالِمِ: نَعْتٌ سَبَبِيٌّ لِـ(القَرْيَةِ) مَجْرُورٌ وَعَلَامَةُ جَرِّهِ الكَسْرَةُ الظَّاهِرَةُ، وَهُوَ اسْمُ فَاعِلٍ مُحَلًّى بِـ(أَلْ) المَوْصُولَةِ يَعْمَلُ عَمَلَ فِعْلِهِ بِلَا شَرْطٍ. أَهْلُهَا: (أَهْلُ) فَاعِلٌ لِاسْمِ الفَاعِلِ (الظَّالِمِ) مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ، وَهُوَ مُضَافٌ، وَ(هَا) ضَمِيرٌ مُتَّصِلٌ مَبْنِيٌّ فِي مَحَلِّ جَرٍّ مُضَافٌ إِلَيْهِ.",
+      "penjelasan_irab_indo": "Kata (الظَّالِمِ) adalah Isim Fa'il yang dimasuki (أل) الموصولة (bermakna الَّتِي ظَلَمَ أَهْلُهَا). Karena ber-(أل), ia beramal secara mutlak merafa'kan fa'il isim zhahir yaitu kata (أَهْلُهَا). Dari sisi nahwu, الظَّالِمِ juga merupakan Na'at Sababi yang mengikuti القَرْيَةِ dalam jarr dan ma'rifah-nya, tetapi tetap mufrad-mudzakkar mengikuti fa'ilnya (أَهْلُ)."
+    },
+    {
+      "id_contoh": "IRAB-0902",
+      "id_bab": "BAB-09",
+      "id_materi": "MAT-0902",
+      "jenis_dalil": "Ayat Al-Qur'an",
+      "sumber_dalil": "QS. Al-Kahfi: 18",
+      "kalimat_arab": "وَكَلْبُهُمْ بَاسِطٌ ذِرَاعَيْهِ بِالوَصِيدِ",
+      "terjemahan_indo": "Sedang anjing mereka menjulurkan kedua lengannya di muka pintu gua.",
+      "kata_kunci": "بَاسِطٌ ذِرَاعَيْهِ",
+      "irab_arab": "كَلْبُهُمْ: مُبْتَدَأٌ مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ، وَ(هُمْ) مُضَافٌ إِلَيْهِ. بَاسِطٌ: خَبَرُ المُبْتَدَإِ مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ، وَهُوَ اسْمُ فَاعِلٍ عَامِلٌ لاعْتِمَادِهِ عَلَى المُبْتَدَإِ وَدَلَالَتِهِ عَلَى حِكَايَةِ الحَالِ، وَفَاعِلُهُ ضَمِيرٌ مُسْتَتِرٌ تَقْدِيرُهُ (هُوَ). ذِرَاعَيْهِ: مَفْعُولٌ بِهِ لِاسْمِ الفَاعِلِ (بَاسِطٌ) مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ اليَاءُ لِأَنَّهُ مُثَنًّى، وَحُذِفَتِ النُّونُ لِلْإِضَافَةِ، وَ(الهَاءُ) مُضَافٌ إِلَيْهِ.",
+      "penjelasan_irab_indo": "Kata (بَاسِطٌ) adalah Isim Fa'il yang kosong dari (أل). Ia beramal menashabkan maf'ul bih (ذِرَاعَيْهِ) karena bersandar pada mubtada' (كَلْبُهُمْ). Meskipun kisah Ashhabul Kahfi terjadi di masa lampau, ayat ini menggunakan gaya bahasa حِكَايَةُ الحَالِ المَاضِيَةِ (menghadirkan peristiwa lampau seolah-olah sedang disaksikan sekarang, ditandai dengan واو الحال), sehingga syarat waktu Hal terpenuhi."
+    },
+    {
+      "id_contoh": "IRAB-0903",
+      "id_bab": "BAB-09",
+      "id_materi": "MAT-0902",
+      "jenis_dalil": "Syair Arab",
+      "sumber_dalil": "Syair Abu Thallab Al-Khuzza'i / Syawahid Ibnu 'Aqil",
+      "kalimat_arab": "ضَرُوبٌ بِنَصْلِ السَّيْفِ سُوقَ سِمَانِهَا ... إِذَا عَدِمُوا زَادًا فَإِنَّكَ عَاقِرُ",
+      "terjemahan_indo": "(Ia adalah sosok yang) sangat sering menebas betis unta-unta yang gemuk dengan mata pedang apabila mereka kehabisan bekal.",
+      "kata_kunci": "ضَرُوبٌ ... سُوقَ",
+      "irab_arab": "ضَرُوبٌ: خَبَرٌ لِمُبْتَدَإٍ مَحْذُوفٍ تَقْدِيرُهُ (هُوَ ضَرُوبٌ) مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ، وَهُوَ صِيغَةُ مُبَالَغَةٍ عَلَى وَزْنِ (فَعُول) وَفَاعِلُهُ ضَمِيرٌ مُسْتَتِرٌ تَقْدِيرُهُ (هُوَ). سُوقَ: مَفْعُولٌ بِهِ لِصِيغَةِ المُبَالَغَةِ (ضَرُوبٌ) مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ، وَهُوَ مُضَافٌ. سِمَانِهَا: مُضَافٌ إِلَيْهِ مَجْرُورٌ.",
+      "penjelasan_irab_indo": "Bait syair ini menjadi syahid pengamalan Shighah Mubalaghah berwazan (فَعُول). Kata (ضَرُوبٌ) bersandar pada mubtada' yang dibuang (تقديره: هو ضروبٌ), merafa'kan fa'il dhamir mustatir, dan menashabkan maf'ul bih yaitu kata (سُوقَ — jama' taksir dari سَاقٌ yang berarti betis)."
+    },
+    {
+      "id_contoh": "IRAB-0904",
+      "id_bab": "BAB-09",
+      "id_materi": "MAT-0904",
+      "jenis_dalil": "Ayat Al-Qur'an",
+      "sumber_dalil": "QS. Hud: 103",
+      "kalimat_arab": "ذَلِكَ يَوْمٌ مَجْمُوعٌ لَهُ النَّاسُ وَذَلِكَ يَوْمٌ مَشْهُودٌ",
+      "terjemahan_indo": "Itulah hari ketika semua manusia dikumpulkan (untuk dihisab), dan itulah hari yang disaksikan (oleh semua makhluk).",
+      "kata_kunci": "مَجْمُوعٌ لَهُ النَّاسُ",
+      "irab_arab": "ذَلِكَ: اسْمُ إِشَارَةٍ فِي مَحَلِّ رَفْعٍ مُبْتَدَأٌ. يَوْمٌ: خَبَرُ المُبْتَدَإِ مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ. مَجْمُوعٌ: نَعْتٌ لِـ(يَوْمٌ) مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ، وَهُوَ اسْمُ مَفْعُولٍ عَامِلٌ لاعْتِمَادِهِ عَلَى المَوْصُوفِ (يَوْمٌ). لَهُ: جَارٌّ وَمَجْرُورٌ مُتَعَلِّقٌ بِـ(مَجْمُوعٌ). النَّاسُ: نَائِبُ فَاعِلٍ لِاسْمِ المَفْعُولِ (مَجْمُوعٌ) مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ.",
+      "penjelasan_irab_indo": "Kata (مَجْمُوعٌ) adalah Isim Maf'ul berwazan مَفْعُولٌ yang kosong dari (أل). Ia memenuhi syarat pengamalan karena menunjukkan waktu yang akan datang (hari kiamat) dan bersandar pada maushuf (berkedudukan sebagai na'at bagi يَوْمٌ). Oleh karena itu, ia beramal seperti fi'il mabni lil-majhul (يُجْمَعُ) dengan merafa'kan kata (النَّاسُ) sebagai Na'ibul Fa'il."
+    },
+    {
+      "id_contoh": "IRAB-1001",
+      "id_bab": "BAB-10",
+      "id_materi": "MAT-1001",
+      "jenis_dalil": "Kalimat Tatslitsul Ma'mul (تثليث المعمول)",
+      "sumber_dalil": "Jami'ud Durus Al-'Arabiyyah & An-Nahwu At-Tathbiqi",
+      "kalimat_arab": "المُؤْمِنُ طَاهِرٌ قَلْبُهُ / طَاهِرٌ قَلْبًا / طَاهِرُ القَلْبِ",
+      "terjemahan_indo": "Seorang mukmin itu suci hatinya.",
+      "kata_kunci": "طَاهِرٌ قَلْبُهُ / قَلْبًا / القَلْبِ",
+      "irab_arab": "المُؤْمِنُ: مُبْتَدَأٌ مَرْفُوعٌ. طَاهِرٌ: خَبَرٌ مَرْفُوعٌ (صِفَةٌ مُشَبَّهَةٌ لِأَنَّهَا دَلَّتْ عَلَى الثُّبُوتِ). ١- (قَلْبُهُ): فَاعِلٌ لِلصِّفَةِ المُشَبَّهَةِ مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ، وَالهَاءُ مُضَافٌ إِلَيْهِ. ٢- (قَلْبًا): تَمْيِيزٌ مَنْصُوبٌ (وَإِنْ قِيلَ: طَاهِرٌ القَلْبَ بِالنَّصْبِ مَعَ أَلْ فَهُوَ شَبِيهٌ بِالمَفْعُولِ بِهِ مَنْصُوبٌ، وَالفَاعِلُ ضَمِيرٌ مُسْتَتِرٌ). ٣- (طَاهِرُ القَلْبِ): القَلْبِ مُضَافٌ إِلَيْهِ مَجْرُورٌ وَعَلَامَةُ جَرِّهِ الكَسْرَةُ الظَّاهِرَةُ.",
+      "penjelasan_irab_indo": "Contoh komparatif ini merangkum 3 keadaan i'rab ma'mul Shifat Musyabbahah: (1) Rafa' sebagai Fa'il ketika ma'mulnya mengandung dhamir (قَلْبُهُ); (2) Nashab sebagai Tamyiz ketika ma'mulnya nakirah (قَلْبًا), atau sebagai Syabih bil Maf'ul Bih ketika ma'mulnya ma'rifah (القَلْبَ); dan (3) Jarr sebagai Mudhaf Ilaih ketika shifat musyabbahah diidhafahkan kepadanya (طَاهِرُ القَلْبِ)."
+    },
+    {
+      "id_contoh": "IRAB-1002",
+      "id_bab": "BAB-10",
+      "id_materi": "MAT-1002",
+      "jenis_dalil": "Ayat Al-Qur'an",
+      "sumber_dalil": "QS. Al-Baqarah: 96",
+      "kalimat_arab": "وَلَتَجِدَنَّهُمْ أَحْرَصَ النَّاسِ عَلَى حَيَاةٍ",
+      "terjemahan_indo": "Dan sungguh engkau akan mendapati mereka (orang-orang musyrik) sebagai manusia yang paling tamak kepada kehidupan.",
+      "kata_kunci": "أَحْرَصَ النَّاسِ",
+      "irab_arab": "وَلَتَجِدَنَّهُمْ: اللَّامُ مُوَطِّئَةٌ لِلْقَسَمِ، وَ(تَجِدَنَّ) فِعْلٌ مُضَارِعٌ مَبْنِيٌّ عَلَى الفَتْحِ لِاتِّصَالِهِ بِنُونِ التَّوْكِيدِ، وَالفَاعِلُ ضَمِيرٌ مُسْتَتِرٌ تَقْدِيرُهُ (أَنْتَ)، وَ(هُمْ) ضَمِيرٌ مُتَّصِلٌ فِي مَحَلِّ نَصْبٍ مَفْعُولٌ بِهِ أَوَّلُ. أَحْرَصَ: مَفْعُولٌ بِهِ ثَانٍ مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ، وَهُوَ اسْمُ تَفْضِيلٍ مُضَافٌ إِلَى مَعْرِفَةٍ فَلَزِمَ الإِفْرَادَ وَالتَّذْكِيرَ. النَّاسِ: مُضَافٌ إِلَيْهِ مَجْرُورٌ وَعَلَامَةُ جَرِّهِ الكَسْرَةُ الظَّاهِرَةُ.",
+      "penjelasan_irab_indo": "Kata (أَحْرَصَ) adalah Isim Tafdhil yang diidhafahkan kepada isim ma'rifah (النَّاسِ). Meskipun mufaddhal-nya berupa jama' mudzakkar yaitu dhamir (هُمْ), kata (أَحْرَصَ) tetap berbentuk mufrad dan mudzakkar. Ini membuktikan kaidah bahwa Isim Tafdhil yang mudhaf kepada ma'rifah boleh tetap mufrad-mudzakkar (dan ini yang paling banyak dalam Al-Qur'an) di samping boleh juga muthabaqah."
+    },
+    {
+      "id_contoh": "IRAB-1003",
+      "id_bab": "BAB-10",
+      "id_materi": "MAT-1002",
+      "jenis_dalil": "Kalimat Kaidah Nahwu (مسألة الكحل)",
+      "sumber_dalil": "Syarah Ibnu 'Aqil & An-Nahwu At-Tathbiqi",
+      "kalimat_arab": "مَا رَأَيْتُ رَجُلًا أَحْسَنَ فِي عَيْنِهِ الكُحْلُ مِنْهُ فِي عَيْنِ زَيْدٍ",
+      "terjemahan_indo": "Aku tidak pernah melihat seorang laki-laki pun yang celak di matanya tampak lebih indah daripada indahnya celak itu di mata Zaid.",
+      "kata_kunci": "أَحْسَنَ فِي عَيْنِهِ الكُحْلُ",
+      "irab_arab": "مَا: حَرْفُ نَفْيٍ. رَأَيْتُ: فِعْلٌ وَفَاعِلٌ. رَجُلًا: مَفْعُولٌ بِهِ مَنْصُوبٌ. أَحْسَنَ: نَعْتٌ لِـ(رَجُلًا) مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ (وَمُنِعَ مِنَ التَّنْوِينِ لِلْوَصْفِيَّةِ وَوَزْنِ الفِعْلِ). فِي عَيْنِهِ: جَارٌّ وَمَجْرُورٌ مُتَعَلِّقٌ بِـ(أَحْسَنَ). الكُحْلُ: فَاعِلٌ لِاسْمِ التَّفْضِيلِ (أَحْسَنَ) مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ.",
+      "penjelasan_irab_indo": "Kalimat yang masyhur dengan sebutan 'Mas'alatul Kuhl' (مَسْأَلَةُ الكُحْلِ) ini adalah satu-satunya struktur dimana Isim Tafdhil (أَحْسَنَ) disepakati oleh seluruh ulama dapat merafa'kan fa'il berupa isim zhahir (الكُحْلُ). Hal ini karena أَحْسَنَ berada setelah nafi dan posisinya benar-benar setara dengan fi'il (تقديره: ما رأيتُ رجلاً يَحْسُنُ في عينه الكحلُ كزيدٍ)."
+    },
+    {
+      "id_contoh": "IRAB-1004",
+      "id_bab": "BAB-10",
+      "id_materi": "MAT-1003",
+      "jenis_dalil": "Ayat Al-Qur'an",
+      "sumber_dalil": "QS. Al-Qadr: 5 & QS. Al-Isra': 80",
+      "kalimat_arab": "سَلَامٌ هِيَ حَتَّى مَطْلَعِ الفَجْرِ ... وَقُلْ رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ",
+      "terjemahan_indo": "Sejahteralah (malam itu) sampai terbit fajar... Dan katakanlah: Ya Tuhanku, masukkanlah aku dengan cara masuk yang benar.",
+      "kata_kunci": "مَطْلَعِ الفَجْرِ / مُدْخَلَ صِدْقٍ",
+      "irab_arab": "حَتَّى: حَرْفُ غَايَةٍ وَجَرٍّ. مَطْلَعِ: اسْمُ زَمَانٍ (أَوْ مَصْدَرٌ مِيمِيٌّ) مَجْرُورٌ بِـ(حَتَّى) وَعَلَامَةُ جَرِّهِ الكَسْرَةُ الظَّاهِرَةُ، وَهُوَ مُضَافٌ. الفَجْرِ: مُضَافٌ إِلَيْهِ مَجْرُورٌ. وَفِي الآيَةِ الثَّانِيَةِ: (مُدْخَلَ): مَفْعُولٌ مُطْلَقٌ مَنْصُوبٌ لِأَنَّهُ مَصْدَرٌ مِيمِيٌّ مِنْ غَيْرِ الثُّلَاثِيِّ (أَدْخَلَ)، وَيَجُوزُ أَنْ يَكُونَ اسْمَ مَكَانٍ مَنْصُوبًا عَلَى الظَّرْفِيَّةِ المَكَانِيَّةِ.",
+      "penjelasan_irab_indo": "Kata (مَطْلَعِ) pada قراءة الجمهور dibaca dengan fathah lam (sesuai qiyas karena mudhari'nya يَطْلُعُ), dan pada قراءة الكسائي dibaca (مَطْلِعِ) dengan kasrah lam (mengikuti sama'i); maknanya di sini adalah waktu terbit (Isim Zaman) atau terbitnya (Mashdar Mimi). Sedangkan (مُدْخَلَ) adalah wazan dari ruba'i (أَدْخَلَ) yang sama dengan isim maf'ul dan di sini berfungsi sebagai Mashdar Mimi (maf'ul muthlaq) atau Isim Makan."
+    },
+    {
+      "id_contoh": "IRAB-1101",
+      "id_bab": "BAB-11",
+      "id_materi": "MAT-1101",
+      "jenis_dalil": "Ayat Al-Qur'an",
+      "sumber_dalil": "QS. Ali 'Imran: 139 & QS. Shad: 47",
+      "kalimat_arab": "وَلَا تَهِنُوا وَلَا تَحْزَنُوا وَأَنْتُمُ الأَعْلَوْنَ ... وَإِنَّهُمْ عِنْدَنَا لَمِنَ المُصْطَفَيْنَ الأَخْيَارِ",
+      "terjemahan_indo": "Dan janganlah kamu merasa lemah dan jangan bersedih hati, padahal kamulah orang-orang yang paling tinggi derajatnya... Dan sesungguhnya mereka pada sisi Kami benar-benar termasuk orang-orang pilihan yang paling baik.",
+      "kata_kunci": "الأَعْلَوْنَ / المُصْطَفَيْنَ",
+      "irab_arab": "الأَعْلَوْنَ: خَبَرُ المُبْتَدَإِ (أَنْتُمْ) مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الوَاوُ لِأَنَّهُ جَمْعُ مُذَكَّرٍ سَالِمٌ (وَالأَصْلُ: الأَعْلَيُونَ، حُذِفَتِ الأَلِفُ لِالتِقَاءِ السَّاكِنَيْنِ وَبَقِيَتِ الفَتْحَةُ قَبْلَ الوَاوِ دَلِيلًا عَلَيْهَا). لَمِنَ المُصْطَفَيْنَ: اللَّامُ لَامُ الابْتِدَاءِ المُزَحْلَقَةُ، وَ(مِنْ) حَرْفُ جَرٍّ، وَ(المُصْطَفَيْنَ) اسْمٌ مَجْرُورٌ بِـ(مِنْ) وَعَلَامَةُ جَرِّهِ اليَاءُ لِأَنَّهُ جَمْعُ مُذَكَّرٍ سَالِمٌ.",
+      "penjelasan_irab_indo": "Kedua ayat ini menampilkan kaidah Jama' Mudzakkar Salim pada Isim Maqshur (الأَعْلَى dan المُصْطَفَى). Alif maqshur pada akhir kata dibuang ketika bertemu wawu jama' (الأَعْلَوْنَ) maupun ya' jama' (المُصْطَفَيْنَ), sementara huruf sebelum wawu/ya' (yakni huruf lam pada الأَعْلَوْنَ dan huruf fa' pada المُصْطَفَيْنَ) tetap berharakat Fathah untuk menunjukkan adanya alif yang dibuang."
+    },
+    {
+      "id_contoh": "IRAB-1102",
+      "id_bab": "BAB-11",
+      "id_materi": "MAT-1102",
+      "jenis_dalil": "Ayat Al-Qur'an",
+      "sumber_dalil": "QS. Ar-Ra'd: 7 & QS. Ali 'Imran: 193",
+      "kalimat_arab": "إِنَّمَا أَنْتَ مُنْذِرٌ وَلِكُلِّ قَوْمٍ هَادٍ ... رَبَّنَا إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِي لِلْإِيمَانِ",
+      "terjemahan_indo": "Sesungguhnya engkau hanyalah seorang pemberi peringatan dan bagi tiap-tiap kaum ada orang yang memberi petunjuk... Ya Tuhan kami, sesungguhnya kami mendengar orang yang menyeru kepada iman.",
+      "kata_kunci": "هَادٍ / مُنَادِيًا",
+      "irab_arab": "لِكُلِّ: جَارٌّ وَمَجْرُورٌ فِي مَحَلِّ رَفْعٍ خَبَرٌ مُقَدَّمٌ. هَادٍ: مُبْتَدَأٌ مُؤَخَّرٌ مَرْفُوعٌ وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ المُقَدَّرَةُ لِلثِّقَلِ عَلَى اليَاءِ المَحْذُوفَةِ لِالتِقَاءِ السَّاكِنَيْنِ، وَالتَّنْوِينُ تَنْوِينُ عِوَضٍ عَنْ حَرْفٍ. مُنَادِيًا: مَفْعُولٌ بِهِ مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ عَلَى اليَاءِ لِخِفَّتِهَا.",
+      "penjelasan_irab_indo": "Perbandingan dua ayat ini memperjelas hukum Isim Manqush yang nakirah (kosong dari أل dan idhafah): pada kata (هَادٍ), karena berkedudukan sebagai mubtada' muakhkhar (marfu'), maka ya'-nya wajib dibuang dan tanda rafa'nya adalah dhammah muqaddarah pada ya' yang terbuang. Sedangkan pada kata (مُنَادِيًا), karena berkedudukan sebagai maf'ul bih (manshub), maka ya'-nya wajib kembali tampak dan tanda nashabnya adalah fathah zhahirah."
+    },
+    {
+      "id_contoh": "IRAB-1103",
+      "id_bab": "BAB-11",
+      "id_materi": "MAT-1103",
+      "jenis_dalil": "Hadits Nabawi",
+      "sumber_dalil": "HR. Abu Dawud & At-Tirmidzi",
+      "kalimat_arab": "لَا تَبِيعُوا الذَّهَبَ بِالذَّهَبِ إِلَّا سَوَاءً بِسَوَاءٍ، وَلَا تَبْنُوا بِنَاءَيْنِ فِي مَوْضِعٍ وَاحِدٍ",
+      "terjemahan_indo": "Janganlah kalian menjual emas dengan emas kecuali sama ukuran dengan sama ukuran, dan janganlah membangun dua bangunan di satu tempat.",
+      "kata_kunci": "سَوَاءً / بِنَاءَيْنِ",
+      "irab_arab": "سَوَاءً: حَالٌ مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ الفَتْحَةُ الظَّاهِرَةُ (وَهُوَ اسْمٌ مَمْدُودٌ مُنْصَرِفٌ لِأَنَّ هَمْزَتَهُ مُنْقَلِبَةٌ عَنْ يَاءٍ، فَيُنَوَّنُ). بِنَاءَيْنِ: مَفْعُولٌ بِهِ مَنْصُوبٌ وَعَلَامَةُ نَصْبِهِ اليَاءُ لِأَنَّهُ مُثَنًّى (وَهُوَ مَمْدُودٌ هَمْزَتُهُ مُنْقَلِبَةٌ عَنْ يَاءٍ مِنْ بَنَى يَبْنِي، فَجَازَ إِبْقَاءُ الهَمْزَةِ: بِنَاءَيْنِ، وَجَازَ قَلْبُهَا وَاوًا: بِنَاوَيْنِ).",
+      "penjelasan_irab_indo": "Kata (بِنَاءٌ) adalah Isim Mamdud yang hamzahnya munqalibah 'an ya' (berasal dari بَنَى - يَبْنِي). Oleh sebab itu, во-первых, ia menerima tanwin (munsharif, berbeda dengan صَحْرَاءُ yang mamnu' minash sharf); во-вторых, ketika ditatsniyahkan dalam keadaan nashab boleh dua wajah: (بِنَاءَيْنِ) dengan menetapkan hamzah, atau (بِنَاوَيْنِ) dengan mengubah hamzah menjadi wawu."
+    }
+  ],
+  "soal": [
+    {
+      "id_soal": "SOAL-0801",
+      "id_bab": "BAB-08",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Perhatikan kalimat berikut: (أَعْجَبَنِي إِكْرَامُ زَيْدٍ الكَرِيمُ الضَّيْفَ). Mengapa kata (الكَرِيمُ) yang menjadi na'at bagi (زَيْدٍ) pada kalimat tersebut sah dibaca Rafa' padahal kata (زَيْدٍ) dibaca Jarr?",
+      "opsi_a": "Karena kata (الكَرِيمُ) menjadi khabar kedua dari mashdar (إِكْرَامُ) yang berkedudukan sebagai mubtada'.",
+      "opsi_b": "Karena kata (زَيْدٍ) adalah mudhaf ilaih yang berkedudukan majrur secara lafazh namun marfu' secara mahal sebagai fa'il dari mashdar (إِكْرَامُ), sehingga na'atnya boleh mengikuti mahal (مراعاة للمحل).",
+      "opsi_c": "Karena kata (الكَرِيمُ) merupakan fa'il zhahir dari fi'il (أَعْجَبَ) yang diakhirkan, sedangkan (إِكْرَامُ) adalah maf'ul bih.",
+      "opsi_d": "Karena mashdar ruba'i berwazan (إِفْعَال) tidak boleh menashabkan maf'ul bih kecuali setelah merafa'kan na'at setelah mudhaf ilaih.",
+      "jawaban_benar": "B",
+      "pembahasan": "Dalam bab I'malul Mashdar (An-Nahwu At-Tathbiqi), bentuk pengamalan mashdar yang paling fasih adalah ketika mashdar diidhafahkan kepada fa'ilnya lalu menashabkan maf'ul bih (إِكْرَامُ زَيْدٍ الضَّيْفَ). Kata (زَيْدٍ) berstatus: مضاف إليه مجرور لفظًا مرفوع محلًّا على أنه فاعل للمصدر. Karena memiliki dua status (lafazh majrur dan mahal marfu'), maka tabi' (na'at/'athaf) dari زَيْدٍ boleh dibaca Jarr mengikuti lafazh (الكَرِيمِ) dan boleh dibaca Rafa' mengikuti mahal (الكَرِيمُ)."
+    },
+    {
+      "id_soal": "SOAL-0802",
+      "id_bab": "BAB-08",
+      "tingkat_kesulitan": "Sedang (HOTS)",
+      "pertanyaan": "Manakah di antara pasangan kata berikut yang secara berturut-turut merupakan (1) Ismul Mashdar, (2) Mashdar Shina'i, dan (3) Mashdar Marrah yang sah secara kaidah Sharaf?",
+      "opsi_a": "(١) إِعْطَاءٌ — (٢) الحَيَاةُ الإِنْسَانِيَّةُ — (٣) إِقَامَةٌ",
+      "opsi_b": "(١) عَطَاءٌ — (٢) الإِنْسَانِيَّةُ رائدةٌ — (٣) إِقَامَةٌ وَاحِدَةٌ",
+      "opsi_c": "(١) تَكْلِيمٌ — (٢) الوَطَنِيَّةُ — (٣) جِلْسَةٌ",
+      "opsi_d": "(١) وُضُوءٌ — (٢) العَرَبِيَّةُ الفُصْحَى — (٣) دَعْوَةٌ",
+      "jawaban_benar": "B",
+      "pembahasan": "Analisis: (1) Kata (عَطَاءٌ) adalah Ismul Mashdar dari fi'il (أَعْطَى) karena hurufnya berkurang dari mashdar ashlinya (إِعْطَاءٌ). (2) Kata (الإِنْسَانِيَّةُ) yang berkedudukan sebagai mubtada' (bukan na'at) adalah Mashdar Shina'i; jika menjadi na'at seperti pada (الحَيَاةُ الإِنْسَانِيَّةُ) maka ia disebut Isim Mansub. (3) Karena mashdar ashli dari (أَقَامَ) adalah (إِقَامَةٌ) yang sudah berakhiran ta' marbuthah, maka untuk membentuk Mashdar Marrah wajib disifati dengan kata (وَاحِدَةٌ) menjadi (إِقَامَةٌ وَاحِدَةٌ). Adapun (جِلْسَةٌ) dengan kasrah adalah Mashdar Hai'ah."
+    },
+    {
+      "id_soal": "SOAL-0901",
+      "id_bab": "BAB-09",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Perhatikan empat kalimat berikut:\n(١) مُحَمَّدٌ مُكْرِمٌ ضَيْفَهُ أَمْسِ.\n(٢) مُحَمَّدٌ مُكْرِمُ ضَيْفِهِ أَمْسِ.\n(٣) مُحَمَّدٌ المُكْرِمُ ضَيْفَهُ أَمْسِ.\n(٤) أَمُكْرِمٌ مُحَمَّدٌ ضَيْفَهُ غَدًا؟\nKalimat manakah yang SALAH (tidak sah) menurut jumhur ulama Nahwu (selain Al-Kisai)?",
+      "opsi_a": "Kalimat (١), karena Isim Fa'il yang kosong dari (أل) tidak boleh beramal menashabkan maf'ul bih apabila bermakna lampau (أَمْسِ).",
+      "opsi_b": "Kalimat (٢), karena Isim Fa'il dari fi'il ruba'i tidak boleh diidhafahkan kepada maf'ul bih dalam kondisi apa pun.",
+      "opsi_c": "Kalimat (٣), karena adanya kata keterangan waktu lampau (أَمْسِ) membatalkan fungsi (أل) الموصولة pada Isim Fa'il.",
+      "opsi_d": "Kalimat (٤), karena Isim Fa'il yang didahului istifham wajib diidhafahkan kepada fa'ilnya.",
+      "jawaban_benar": "A",
+      "pembahasan": "Isim Fa'il yang kosong dari (أل) [المجرّد من أل] hanya boleh beramal menashabkan maf'ul bih apabila memenuhi dua syarat: (1) bermakna Hal atau Istiqbal, dan (2) bersandar (i'timad) pada mubtada'/nafi/istifham/dll. Pada kalimat (١), terdapat kata (أَمْسِ) yang menunjukkan waktu lampau (Madhi), sehingga batal syarat pertamanya dan wajib diidhafahkan seperti pada kalimat (٢): (مُحَمَّدٌ مُكْرِمُ ضَيْفِهِ أَمْسِ). Adapun kalimat (٣) sah karena Isim Fa'il yang ber-(أل) beramal secara mutlak di semua waktu."
+    },
+    {
+      "id_soal": "SOAL-0902",
+      "id_bab": "BAB-09",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Tentukan wazan sharaf (الميزان الصرفي) menurut Sibawaih serta i'rab yang tepat untuk kata yang bergaris bawah pada kalimat: (أَمَبِيعَةٌ البِضَاعَةُ بثمنٍ غالٍ؟)!",
+      "opsi_a": "Wazan (مَبِيعَةٌ) adalah (مَفِيلَةٌ), dan (البِضَاعَةُ) adalah Fa'il سَدَّ مَسَدَّ الخَبَرِ.",
+      "opsi_b": "Wazan (مَبِيعَةٌ) adalah (مَفْعِلَةٌ), dan (البِضَاعَةُ) adalah Na'ibul Fa'il bagi Isim Maf'ul سَدَّ مَسَدَّ الخَبَرِ.",
+      "opsi_c": "Wazan (مَبِيعَةٌ) adalah (مَفْعُولَةٌ), dan (البِضَاعَةُ) adalah Mubtada' Muakhkhar.",
+      "opsi_d": "Wazan (مَبِيعَةٌ) adalah (مَفْعُلَةٌ), dan (البِضَاعَةُ) adalah Maf'ul Bih bagi Isim Maf'ul.",
+      "jawaban_benar": "B",
+      "pembahasan": "Kata (مَبِيعٌ / مَبِيعَةٌ) berasal dari fi'il ajwaf ya'i (بَاعَ - يَبِيعُ), asalnya (مَبْيُوعَةٌ) berwazan (مَفْعُولَةٌ). Setelah mengalami i'lal naql (pemindahan harakat) dan qalb dhammah ba' menjadi kasrah, bertemu dua sukun (ya' 'ain fi'il dan wawu مفعول). Menurut Sibawaih dan jumhur Bashrah, yang dibuang adalah wawu مفعول, sehingga wazannya menjadi (مَفْعِلَةٌ). Dari sisi nahwu, karena (مَبِيعَةٌ) adalah Isim Maf'ul yang didahului hamzah istifham, maka (مَبِيعَةٌ) menjadi Mubtada', dan (البِضَاعَةُ) adalah Na'ibul Fa'il marfu' yang menempati posisi khabar (سَدَّ مَسَدَّ الخَبَرِ)."
+    },
+    {
+      "id_soal": "SOAL-1001",
+      "id_bab": "BAB-10",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Di antara susunan kalimat Shifat Musyabbahah berikut, manakah satu-satunya susunan yang TERLARANG (مَمْنُوعٌ بِالإِجْمَاعِ) dalam kaidah Nahwu?",
+      "opsi_a": "الرَّجُلُ الحَسَنُ الوَجْهِ مُقْبِلٌ.",
+      "opsi_b": "الرَّجُلُ حَسَنٌ وَجْهُهُ مُقْبِلٌ.",
+      "opsi_c": "الرَّجُلُ الحَسَنُ وَجْهِهِ مُقْبِلٌ.",
+      "opsi_d": "الرَّجُلُ الحَسَنُ الوَجْهَ مُقْبِلٌ.",
+      "jawaban_benar": "C",
+      "pembahasan": "Dalam bab Idhafah Lafzhiyyah pada Shifat Musyabbahah, apabila Shifat Musyabbahah dimasuki (أل) seperti (الحَسَنُ), maka ia TIDAK BOLEH diidhafahkan (dijarrkan ma'mulnya) kecuali apabila mudhaf ilaih-nya juga ber-(أل) seperti (الحَسَنُ الوَجْهِ) atau mudhaf kepada kata yang ber-(أل) seperti (الحَسَنُ وَجْهِ الأَبِ). Mengidhafahkan Shifat Musyabbahah yang ber-(أل) kepada kata yang kosong dari (أل) seperti (الحَسَنُ وَجْهِهِ) atau (الحَسَنُ وَجْهٍ) adalah terlarang. Jika ma'mulnya berdhamir (وَجْهُهُ / وَجْهَهُ), hanya boleh dibaca Rafa' sebagai fa'il atau Nashab sebagai syabih bil maf'ul."
+    },
+    {
+      "id_soal": "SOAL-1002",
+      "id_bab": "BAB-10",
+      "tingkat_kesulitan": "Sedang (HOTS)",
+      "pertanyaan": "Bagaimana penerapan empat keadaan Isim Tafdhil yang benar untuk subjek (الطَّالِبَتَانِ - dua siswi perempuan)?",
+      "opsi_a": "(١) الطَّالِبَتَانِ أَفْضَلُ مِنْ غَيْرِهِمَا — (٢) الطَّالِبَتَانِ الفُضْلَيَانِ — (٣) الطَّالِبَتَانِ أَفْضَلُ طَالِبَتَيْنِ — (٤) الطَّالِبَتَانِ أَفْضَلُ الطَّالِبَاتِ (أَوْ فُضْلَيَا الطَّالِبَاتِ).",
+      "opsi_b": "(١) الطَّالِبَتَانِ فُضْلَيَانِ مِنْ غَيْرِهِمَا — (٢) الطَّالِبَتَانِ الأَفْضَلُ — (٣) الطَّالِبَتَانِ فُضْلَيَا طَالِبَتَيْنِ — (٤) الطَّالِبَتَانِ فُضْلَى الطَّالِبَاتِ.",
+      "opsi_c": "(١) الطَّالِبَتَانِ أَفْضَلَانِ مِنْ غَيْرِهِمَا — (٢) الطَّالِبَتَانِ الفُضْلَيَانِ مِنْ غَيْرِهِمَا — (٣) الطَّالِبَتَانِ أَفْضَلُ طَالِبَةٍ — (٤) الطَّالِبَتَانِ أَفْضَلَا الطَّالِبَاتِ.",
+      "opsi_d": "(١) الطَّالِبَتَانِ فُضْلَى مِنْ غَيْرِهِمَا — (٢) الطَّالِبَتَانِ الأَفْضَلَانِ — (٣) الطَّالِبَتَانِ أَفْضَلُ طَالِبَتَيْنِ — (٤) الطَّالِبَتَانِ أَفْضَلُ الطَّالِبَاتِ.",
+      "jawaban_benar": "A",
+      "pembahasan": "Empat keadaan Isim Tafdhil: (1) Mujarrad min Al wal Idhafah: wajib mufrad-mudzakkar + مِنْ (أَفْضَلُ مِنْ غَيْرِهِمَا); (2) Muhalla bi Al: wajib muthabaqah dan tanpa مِنْ (الطَّالِبَتَانِ الفُضْلَيَانِ); (3) Mudhaf ke Nakirah: wajib mufrad-mudzakkar dan nakirah setelahnya sesuai mufaddhal (أَفْضَلُ طَالِبَتَيْنِ); (4) Mudhaf ke Ma'rifah: boleh mufrad-mudzakkar (أَفْضَلُ الطَّالِبَاتِ) dan boleh muthabaqah (فُضْلَيَا الطَّالِبَاتِ)."
+    },
+    {
+      "id_soal": "SOAL-1101",
+      "id_bab": "BAB-11",
+      "tingkat_kesulitan": "Sulit (HOTS)",
+      "pertanyaan": "Jika kata (مُنْتَدًى — Maqshur), (مُحَامٍ — Manqush), dan (بَنَّاءٌ — Mamdud) diubah menjadi Jama' Mudzakkar Salim dalam keadaan Nashab, manakah bentuk yang paling tepat?",
+      "opsi_a": "مُنْتَدِيِينَ — مُحَامِيِينَ — بَنَّائِينَ (فَقَطْ)",
+      "opsi_b": "مُنْتَدَيْنَ (بِفَتْحِ الدَّالِ) — مُحَامِينَ (بِكَسْرِ المِيمِ) — بَنَّائِينَ أَوْ بَنَّاوِينَ",
+      "opsi_c": "مُنْتَدِينَ (بِكَسْرِ الدَّالِ) — مُحَامَيْنَ (بِفَتْحِ المِيمِ) — بَنَّاوِينَ (فَقَطْ)",
+      "opsi_d": "مُنْتَدَيَيْنِ — مُحَامِيَيْنِ — بَنَّاءَيْنِ",
+      "jawaban_benar": "B",
+      "pembahasan": "1. (مُنْتَدًى) adalah Isim Maqshur: saat dijamak mudzakkar salim, alifnya dibuang dan huruf sebelumnya (dal) tetap berharakat fathah: (مُنْتَدَوْنَ) saat rafa' dan (مُنْتَدَيْنَ) saat nashab/jarr.\n2. (مُحَامٍ / المُحَامِي) adalah Isim Manqush: ya'-nya dibuang, sebelum wawu didhammah (مُحَامُونَ) dan sebelum ya' dikasrah (مُحَامِينَ).\n3. (بَنَّاءٌ) adalah Isim Mamdud yang hamzahnya munqalibah 'an ya' (dari بَنَى - يَبْنِي): saat dijamak mudzakkar salim boleh dua wajah, yaitu menetapkan hamzah (بَنَّائِينَ) atau mengubahnya menjadi wawu (بَنَّاوِينَ)."
+    },
+    {
+      "id_soal": "SOAL-1102",
+      "id_bab": "BAB-11",
+      "tingkat_kesulitan": "Sedang (HOTS)",
+      "pertanyaan": "Manakah deretan Jama' Muannats Salim berikut yang SELURUHNYA benar sesuai kaidah harakat 'ain kalimah pada isim tsulatsi?",
+      "opsi_a": "سَجَدَاتٌ (مِنْ سَجْدَة) — رَوْضَاتٌ (مِنْ رَوْضَة) — ضَخْمَاتٌ (مِنْ ضَخْمَة)",
+      "opsi_b": "سَجْدَاتٌ (بِسُكُونِ الجِيمِ وُجُوبًا) — رَوَضَاتٌ (بِفَتْحِ الوَاوِ) — ضَخَمَاتٌ (بِفَتْحِ الخَاءِ)",
+      "opsi_c": "تَمْرَاتٌ (بِسُكُونِ المِيمِ) — بَيَضَاتٌ (بِفَتْحِ اليَاءِ) — صَعَبَاتٌ (بِفَتْحِ العَيْنِ)",
+      "opsi_d": "نَظَرَاتٌ — دَوَلَاتٌ (بِفَتْحِ الوَاوِ) — حُلَوَاتٌ (بِفَتْحِ الوَاوِ)",
+      "jawaban_benar": "A",
+      "pembahasan": "Kaidah Jama' Muannats Salim untuk tsulatsi sukun 'ain: (1) (سَجْدَةٌ) adalah isim (bukan sifat), fa'-nya fathah dan 'ain-nya shahih, maka wajib difathah 'ain-nya menjadi (سَجَدَاتٌ). (2) (رَوْضَةٌ) adalah mu'tal 'ain (wawu), maka wajib tetap sukun menjadi (رَوْضَاتٌ). (3) (ضَخْمَةٌ) adalah kata sifat (bukan isim jamid), maka wajib tetap sukun menjadi (ضَخْمَاتٌ)."
+    }
+  ],
+  "istilah": [
+    {
+      "id_istilah": "IST-201",
+      "istilah_arab": "اسْمُ المَصْدَرِ",
+      "bidang": "Sharaf & Nahwu",
+      "definisi_arab": "مَا سَاوَى المَصْدَرَ فِي الدَّلَالَةِ عَلَى الحَدَثِ، وَنَقَصَتْ حُرُوفُهُ عَنْ حُرُوفِ فِعْلِهِ لَفْظًا وَتَقْدِيرًا مِنْ غَيْرِ عِوَضٍ.",
+      "definisi_indo": "Kata benda yang sama dengan mashdar dalam menunjukkan makna peristiwa (hadats), namun jumlah hurufnya kurang dari huruf fi'ilnya baik secara lafazh maupun taqdir tanpa adanya huruf pengganti ('iwadh).",
+      "contoh": "عَطَاءٌ (مِنْ أَعْطَى، وَمَصْدَرُهُ إِعْطَاءٌ)، كَلَامٌ (مِنْ تَكَلَّمَ، وَمَصْدَرُهُ تَكَلُّمٌ)، وُضُوءٌ (مِنْ تَوَضَّأَ)."
+    },
+    {
+      "id_istilah": "IST-202",
+      "istilah_arab": "المَصْدَرُ الصِّنَاعِيُّ",
+      "bidang": "Sharaf",
+      "definisi_arab": "اسْمٌ تَلْحَقُ آخِرَهُ يَاءٌ مُشَدَّدَةٌ تَلِيهَا تَاءُ التَّأْنِيثِ المَرْبُوطَةُ لِلدَّلَالَةِ عَلَى الحَقِيقَةِ وَالخَصَائِصِ المَعْنَوِيَّةِ، بِشَرْطِ أَلَّا يَقَعَ نَعْتًا.",
+      "definisi_indo": "Isim yang diakhiri dengan ya' bertasydid dan ta' marbuthah (ـِيَّةٌ) untuk menunjukkan hakikat abstrak, karakteristik, atau paham/isme, dengan syarat kata tersebut tidak berkedudukan sebagai na'at (sifat).",
+      "contoh": "الإِنْسَانِيَّةُ، الحُرِّيَّةُ، الوَطَنِيَّةُ، المَسْؤُولِيَّةُ."
+    },
+    {
+      "id_istilah": "IST-203",
+      "istilah_arab": "الإِضَافَةُ اللَّفْظِيَّةُ",
+      "bidang": "Nahwu",
+      "definisi_arab": "إِضَافَةُ الوَصْفِ العَامِلِ (اسْمِ الفَاعِلِ أَوْ صِيغَةِ المُبَالَغَةِ أَوِ اسْمِ المَفْعُولِ أَوِ الصِّفَةِ المُشَبَّهَةِ) إِلَى مَعْمُولِهِ، وَلَا تُفِيدُ تَعْرِيفًا وَلَا تَخْصِيصًا وَإِنَّمَا تُفِيدُ التَّخْفِيفَ اللَّفْظِيَّ بِحَذْفِ التَّنْوِينِ أَوِ النُّونِ.",
+      "definisi_indo": "Idhafah isim musytaq yang beramal (isim fa'il, shighah mubalaghah, isim maf'ul, atau shifat musyabbahah) kepada ma'mulnya; idhafah ini tidak memberikan faedah ma'rifah maupun takhshish, melainkan hanya meringankan lafazh.",
+      "contoh": "هَذَا رَجُلٌ طَالِبُ عِلْمٍ، وَمُحَمَّدٌ حَسَنُ الخُلُقِ، وَهَدْيًا بَالِغَ الكَعْبَةِ."
+    },
+    {
+      "id_istilah": "IST-204",
+      "istilah_arab": "مَسْأَلَةُ الكُحْلِ",
+      "bidang": "Nahwu",
+      "definisi_arab": "الصُّورَةُ القِيَاسِيَّةُ الَّتِي يَرْفَعُ فِيهَا اسْمُ التَّفْضِيلِ فَاعِلًا ظَاهِرًا بِاتِّفَاقِ النُّحَاةِ، وَذَلِكَ إِذَا وَقَعَ بَعْدَ نَفْيٍ أَوْ شِبْهِهِ وَكَانَ مَرْفُوعُهُ أَجْنَبِيًّا مُفَضَّلًا عَلَى نَفْسِهِ بِاعْتِبَارَيْنِ.",
+      "definisi_indo": "Konstruksi kalimat standar dimana Isim Tafdhil disepakati dapat merafa'kan fa'il berupa isim zhahir, yaitu ketika Isim Tafdhil jatuh setelah nafi (atau syibhun nafi) dan fa'il zhahirnya diutamakan atas dirinya sendiri dalam dua keadaan yang berbeda.",
+      "contoh": "مَا رَأَيْتُ رَجُلًا أَحْسَنَ فِي عَيْنِهِ الكُحْلُ مِنْهُ فِي عَيْنِ زَيْدٍ."
+    },
+    {
+      "id_istilah": "IST-205",
+      "istilah_arab": "الاسْمُ المَقْصُورُ",
+      "bidang": "Sharaf & Nahwu",
+      "definisi_arab": "كُلُّ اسْمٍ مُعْرَبٍ آخِرُهُ أَلِفٌ لَازِمَةٌ مَفْتُوحٌ مَا قَبْلَهَا، وَتُقَدَّرُ عَلَى آخِرِهِ جَمِيعُ حَرَكَاتِ الإِعْرَابِ لِلتَّعَذُّرِ.",
+      "definisi_indo": "Setiap isim mu'rab yang berakhiran alif lazimah (tetap) yang didahului oleh harakat fathah; seluruh harakat i'rabnya (rafa', nashab, jarr) diperkirakan (muqaddarah) karena uzur/mustahil diucapkan (ta'adzdur).",
+      "contoh": "الفَتَى، الهُدَى، العَصَا، المُصْطَفَى، المُسْتَشْفَى، الدُّنْيَا."
+    },
+    {
+      "id_istilah": "IST-206",
+      "istilah_arab": "الاسْمُ المَنْقُوصُ",
+      "bidang": "Sharaf & Nahwu",
+      "definisi_arab": "كُلُّ اسْمٍ مُعْرَبٍ آخِرُهُ يَاءٌ لَازِمَةٌ غَيْرُ مُشَدَّدَةٍ مَكْسُورٌ مَا قَبْلَهَا، تُقَدَّرُ عَلَيْهِ الضَّمَّةُ وَالكَسْرَةُ لِلثِّقَلِ وَتَظْهَرُ الفَتْحَةُ لِخِفَّتِهَا.",
+      "definisi_indo": "Setiap isim mu'rab yang berakhiran ya' lazimah (tidak bertasydid) yang didahului harakat kasrah; tanda rafa' dan jarr-nya muqaddarah karena berat (tsiqal), sedangkan tanda nashabnya zhahirah karena ringan.",
+      "contoh": "القَاضِي، الدَّاعِي، الهَادِي، المُحَامِي، المُتَّقِي."
+    }
+  ]
+}

@@ -1,0 +1,914 @@
+[
+  {
+    "id": 1,
+    "name_ar": "الفاتحة",
+    "name_id": "Al-Fatihah",
+    "ayat_count": 7,
+    "type": "Makkiyyah",
+    "juz": 1
+  },
+  {
+    "id": 2,
+    "name_ar": "البقرة",
+    "name_id": "Al-Baqarah",
+    "ayat_count": 286,
+    "type": "Madaniyyah",
+    "juz": 1
+  },
+  {
+    "id": 3,
+    "name_ar": "آل عمران",
+    "name_id": "Ali 'Imran",
+    "ayat_count": 200,
+    "type": "Madaniyyah",
+    "juz": 3
+  },
+  {
+    "id": 4,
+    "name_ar": "النساء",
+    "name_id": "An-Nisa'",
+    "ayat_count": 176,
+    "type": "Madaniyyah",
+    "juz": 4
+  },
+  {
+    "id": 5,
+    "name_ar": "المائدة",
+    "name_id": "Al-Ma'idah",
+    "ayat_count": 120,
+    "type": "Madaniyyah",
+    "juz": 6
+  },
+  {
+    "id": 6,
+    "name_ar": "الأنعام",
+    "name_id": "Al-An'am",
+    "ayat_count": 165,
+    "type": "Makkiyyah",
+    "juz": 7
+  },
+  {
+    "id": 7,
+    "name_ar": "الأعراف",
+    "name_id": "Al-A'raf",
+    "ayat_count": 206,
+    "type": "Makkiyyah",
+    "juz": 8
+  },
+  {
+    "id": 8,
+    "name_ar": "الأنفال",
+    "name_id": "Al-Anfal",
+    "ayat_count": 75,
+    "type": "Madaniyyah",
+    "juz": 9
+  },
+  {
+    "id": 9,
+    "name_ar": "التوبة",
+    "name_id": "At-Taubah",
+    "ayat_count": 129,
+    "type": "Madaniyyah",
+    "juz": 10
+  },
+  {
+    "id": 10,
+    "name_ar": "يونس",
+    "name_id": "Yunus",
+    "ayat_count": 109,
+    "type": "Makkiyyah",
+    "juz": 11
+  },
+  {
+    "id": 11,
+    "name_ar": "هود",
+    "name_id": "Hud",
+    "ayat_count": 123,
+    "type": "Makkiyyah",
+    "juz": 11
+  },
+  {
+    "id": 12,
+    "name_ar": "يوسف",
+    "name_id": "Yusuf",
+    "ayat_count": 111,
+    "type": "Makkiyyah",
+    "juz": 12
+  },
+  {
+    "id": 13,
+    "name_ar": "الرعد",
+    "name_id": "Ar-Ra'd",
+    "ayat_count": 43,
+    "type": "Madaniyyah",
+    "juz": 13
+  },
+  {
+    "id": 14,
+    "name_ar": "إبراهيم",
+    "name_id": "Ibrahim",
+    "ayat_count": 52,
+    "type": "Makkiyyah",
+    "juz": 13
+  },
+  {
+    "id": 15,
+    "name_ar": "الحجر",
+    "name_id": "Al-Hijr",
+    "ayat_count": 99,
+    "type": "Makkiyyah",
+    "juz": 14
+  },
+  {
+    "id": 16,
+    "name_ar": "النحل",
+    "name_id": "An-Nahl",
+    "ayat_count": 128,
+    "type": "Makkiyyah",
+    "juz": 14
+  },
+  {
+    "id": 17,
+    "name_ar": "الإسراء",
+    "name_id": "Al-Isra'",
+    "ayat_count": 111,
+    "type": "Makkiyyah",
+    "juz": 15
+  },
+  {
+    "id": 18,
+    "name_ar": "الكهف",
+    "name_id": "Al-Kahf",
+    "ayat_count": 110,
+    "type": "Makkiyyah",
+    "juz": 15
+  },
+  {
+    "id": 19,
+    "name_ar": "مريم",
+    "name_id": "Maryam",
+    "ayat_count": 98,
+    "type": "Makkiyyah",
+    "juz": 16
+  },
+  {
+    "id": 20,
+    "name_ar": "طه",
+    "name_id": "Thaha",
+    "ayat_count": 135,
+    "type": "Makkiyyah",
+    "juz": 16
+  },
+  {
+    "id": 21,
+    "name_ar": "الأنبياء",
+    "name_id": "Al-Anbiya'",
+    "ayat_count": 112,
+    "type": "Makkiyyah",
+    "juz": 17
+  },
+  {
+    "id": 22,
+    "name_ar": "الحج",
+    "name_id": "Al-Hajj",
+    "ayat_count": 78,
+    "type": "Madaniyyah",
+    "juz": 17
+  },
+  {
+    "id": 23,
+    "name_ar": "المؤمنون",
+    "name_id": "Al-Mu'minun",
+    "ayat_count": 118,
+    "type": "Makkiyyah",
+    "juz": 18
+  },
+  {
+    "id": 24,
+    "name_ar": "النور",
+    "name_id": "An-Nur",
+    "ayat_count": 64,
+    "type": "Madaniyyah",
+    "juz": 18
+  },
+  {
+    "id": 25,
+    "name_ar": "الفرقان",
+    "name_id": "Al-Furqan",
+    "ayat_count": 77,
+    "type": "Makkiyyah",
+    "juz": 18
+  },
+  {
+    "id": 26,
+    "name_ar": "الشعراء",
+    "name_id": "Asy-Syu'ara'",
+    "ayat_count": 227,
+    "type": "Makkiyyah",
+    "juz": 19
+  },
+  {
+    "id": 27,
+    "name_ar": "النمل",
+    "name_id": "An-Naml",
+    "ayat_count": 93,
+    "type": "Makkiyyah",
+    "juz": 19
+  },
+  {
+    "id": 28,
+    "name_ar": "القصص",
+    "name_id": "Al-Qashash",
+    "ayat_count": 88,
+    "type": "Makkiyyah",
+    "juz": 20
+  },
+  {
+    "id": 29,
+    "name_ar": "العنكبوت",
+    "name_id": "Al-'Ankabut",
+    "ayat_count": 69,
+    "type": "Makkiyyah",
+    "juz": 20
+  },
+  {
+    "id": 30,
+    "name_ar": "الروم",
+    "name_id": "Ar-Rum",
+    "ayat_count": 60,
+    "type": "Makkiyyah",
+    "juz": 21
+  },
+  {
+    "id": 31,
+    "name_ar": "لقمان",
+    "name_id": "Luqman",
+    "ayat_count": 34,
+    "type": "Makkiyyah",
+    "juz": 21
+  },
+  {
+    "id": 32,
+    "name_ar": "السجدة",
+    "name_id": "As-Sajdah",
+    "ayat_count": 30,
+    "type": "Makkiyyah",
+    "juz": 21
+  },
+  {
+    "id": 33,
+    "name_ar": "الأحزاب",
+    "name_id": "Al-Ahzab",
+    "ayat_count": 73,
+    "type": "Madaniyyah",
+    "juz": 21
+  },
+  {
+    "id": 34,
+    "name_ar": "سبأ",
+    "name_id": "Saba'",
+    "ayat_count": 54,
+    "type": "Makkiyyah",
+    "juz": 22
+  },
+  {
+    "id": 35,
+    "name_ar": "فاطر",
+    "name_id": "Fathir",
+    "ayat_count": 45,
+    "type": "Makkiyyah",
+    "juz": 22
+  },
+  {
+    "id": 36,
+    "name_ar": "يس",
+    "name_id": "Ya-Sin",
+    "ayat_count": 83,
+    "type": "Makkiyyah",
+    "juz": 22
+  },
+  {
+    "id": 37,
+    "name_ar": "الصافات",
+    "name_id": "Ash-Shaffat",
+    "ayat_count": 182,
+    "type": "Makkiyyah",
+    "juz": 23
+  },
+  {
+    "id": 38,
+    "name_ar": "ص",
+    "name_id": "Shad",
+    "ayat_count": 88,
+    "type": "Makkiyyah",
+    "juz": 23
+  },
+  {
+    "id": 39,
+    "name_ar": "الزمر",
+    "name_id": "Az-Zumar",
+    "ayat_count": 75,
+    "type": "Makkiyyah",
+    "juz": 23
+  },
+  {
+    "id": 40,
+    "name_ar": "غافر",
+    "name_id": "Ghafir",
+    "ayat_count": 85,
+    "type": "Makkiyyah",
+    "juz": 24
+  },
+  {
+    "id": 41,
+    "name_ar": "فصلت",
+    "name_id": "Fushshilat",
+    "ayat_count": 54,
+    "type": "Makkiyyah",
+    "juz": 24
+  },
+  {
+    "id": 42,
+    "name_ar": "الشورى",
+    "name_id": "Asy-Syura",
+    "ayat_count": 53,
+    "type": "Makkiyyah",
+    "juz": 25
+  },
+  {
+    "id": 43,
+    "name_ar": "الزخرف",
+    "name_id": "Az-Zukhruf",
+    "ayat_count": 89,
+    "type": "Makkiyyah",
+    "juz": 25
+  },
+  {
+    "id": 44,
+    "name_ar": "الدخان",
+    "name_id": "Ad-Dukhan",
+    "ayat_count": 59,
+    "type": "Makkiyyah",
+    "juz": 25
+  },
+  {
+    "id": 45,
+    "name_ar": "الجاثية",
+    "name_id": "Al-Jatsiyah",
+    "ayat_count": 37,
+    "type": "Makkiyyah",
+    "juz": 25
+  },
+  {
+    "id": 46,
+    "name_ar": "الأحقاف",
+    "name_id": "Al-Ahqaf",
+    "ayat_count": 35,
+    "type": "Makkiyyah",
+    "juz": 26
+  },
+  {
+    "id": 47,
+    "name_ar": "محمد",
+    "name_id": "Muhammad",
+    "ayat_count": 38,
+    "type": "Madaniyyah",
+    "juz": 26
+  },
+  {
+    "id": 48,
+    "name_ar": "الفتح",
+    "name_id": "Al-Fath",
+    "ayat_count": 29,
+    "type": "Madaniyyah",
+    "juz": 26
+  },
+  {
+    "id": 49,
+    "name_ar": "الحجرات",
+    "name_id": "Al-Hujurat",
+    "ayat_count": 18,
+    "type": "Madaniyyah",
+    "juz": 26
+  },
+  {
+    "id": 50,
+    "name_ar": "ق",
+    "name_id": "Qaf",
+    "ayat_count": 45,
+    "type": "Makkiyyah",
+    "juz": 26
+  },
+  {
+    "id": 51,
+    "name_ar": "الذاريات",
+    "name_id": "Adz-Dzariyat",
+    "ayat_count": 60,
+    "type": "Makkiyyah",
+    "juz": 26
+  },
+  {
+    "id": 52,
+    "name_ar": "الطور",
+    "name_id": "Ath-Thur",
+    "ayat_count": 49,
+    "type": "Makkiyyah",
+    "juz": 27
+  },
+  {
+    "id": 53,
+    "name_ar": "النجم",
+    "name_id": "An-Najm",
+    "ayat_count": 62,
+    "type": "Makkiyyah",
+    "juz": 27
+  },
+  {
+    "id": 54,
+    "name_ar": "القمر",
+    "name_id": "Al-Qamar",
+    "ayat_count": 55,
+    "type": "Makkiyyah",
+    "juz": 27
+  },
+  {
+    "id": 55,
+    "name_ar": "الرحمن",
+    "name_id": "Ar-Rahman",
+    "ayat_count": 78,
+    "type": "Madaniyyah",
+    "juz": 27
+  },
+  {
+    "id": 56,
+    "name_ar": "الواقعة",
+    "name_id": "Al-Waqi'ah",
+    "ayat_count": 96,
+    "type": "Makkiyyah",
+    "juz": 27
+  },
+  {
+    "id": 57,
+    "name_ar": "الحديد",
+    "name_id": "Al-Hadid",
+    "ayat_count": 29,
+    "type": "Madaniyyah",
+    "juz": 27
+  },
+  {
+    "id": 58,
+    "name_ar": "المجادلة",
+    "name_id": "Al-Mujadilah",
+    "ayat_count": 22,
+    "type": "Madaniyyah",
+    "juz": 28
+  },
+  {
+    "id": 59,
+    "name_ar": "الحشر",
+    "name_id": "Al-Hasyr",
+    "ayat_count": 24,
+    "type": "Madaniyyah",
+    "juz": 28
+  },
+  {
+    "id": 60,
+    "name_ar": "الممتحنة",
+    "name_id": "Al-Mumtahanah",
+    "ayat_count": 13,
+    "type": "Madaniyyah",
+    "juz": 28
+  },
+  {
+    "id": 61,
+    "name_ar": "الصف",
+    "name_id": "Ash-Shaff",
+    "ayat_count": 14,
+    "type": "Madaniyyah",
+    "juz": 28
+  },
+  {
+    "id": 62,
+    "name_ar": "الجمعة",
+    "name_id": "Al-Jumu'ah",
+    "ayat_count": 11,
+    "type": "Madaniyyah",
+    "juz": 28
+  },
+  {
+    "id": 63,
+    "name_ar": "المنافقون",
+    "name_id": "Al-Munafiqun",
+    "ayat_count": 11,
+    "type": "Madaniyyah",
+    "juz": 28
+  },
+  {
+    "id": 64,
+    "name_ar": "التغابن",
+    "name_id": "At-Taghabun",
+    "ayat_count": 18,
+    "type": "Madaniyyah",
+    "juz": 28
+  },
+  {
+    "id": 65,
+    "name_ar": "الطلاق",
+    "name_id": "Ath-Thalaq",
+    "ayat_count": 12,
+    "type": "Madaniyyah",
+    "juz": 28
+  },
+  {
+    "id": 66,
+    "name_ar": "التحريم",
+    "name_id": "At-Tahrim",
+    "ayat_count": 12,
+    "type": "Madaniyyah",
+    "juz": 28
+  },
+  {
+    "id": 67,
+    "name_ar": "الملك",
+    "name_id": "Al-Mulk",
+    "ayat_count": 30,
+    "type": "Makkiyyah",
+    "juz": 29
+  },
+  {
+    "id": 68,
+    "name_ar": "القلم",
+    "name_id": "Al-Qalam",
+    "ayat_count": 52,
+    "type": "Makkiyyah",
+    "juz": 29
+  },
+  {
+    "id": 69,
+    "name_ar": "الحاقة",
+    "name_id": "Al-Haqqah",
+    "ayat_count": 52,
+    "type": "Makkiyyah",
+    "juz": 29
+  },
+  {
+    "id": 70,
+    "name_ar": "المعارج",
+    "name_id": "Al-Ma'arij",
+    "ayat_count": 44,
+    "type": "Makkiyyah",
+    "juz": 29
+  },
+  {
+    "id": 71,
+    "name_ar": "نوح",
+    "name_id": "Nuh",
+    "ayat_count": 28,
+    "type": "Makkiyyah",
+    "juz": 29
+  },
+  {
+    "id": 72,
+    "name_ar": "الجن",
+    "name_id": "Al-Jinn",
+    "ayat_count": 28,
+    "type": "Makkiyyah",
+    "juz": 29
+  },
+  {
+    "id": 73,
+    "name_ar": "المزمل",
+    "name_id": "Al-Muzzammil",
+    "ayat_count": 20,
+    "type": "Makkiyyah",
+    "juz": 29
+  },
+  {
+    "id": 74,
+    "name_ar": "المدثر",
+    "name_id": "Al-Muddatstsir",
+    "ayat_count": 56,
+    "type": "Makkiyyah",
+    "juz": 29
+  },
+  {
+    "id": 75,
+    "name_ar": "القيامة",
+    "name_id": "Al-Qiyamah",
+    "ayat_count": 40,
+    "type": "Makkiyyah",
+    "juz": 29
+  },
+  {
+    "id": 76,
+    "name_ar": "الإنسان",
+    "name_id": "Al-Insan",
+    "ayat_count": 31,
+    "type": "Madaniyyah",
+    "juz": 29
+  },
+  {
+    "id": 77,
+    "name_ar": "المرسلات",
+    "name_id": "Al-Mursalat",
+    "ayat_count": 50,
+    "type": "Makkiyyah",
+    "juz": 29
+  },
+  {
+    "id": 78,
+    "name_ar": "النبأ",
+    "name_id": "An-Naba'",
+    "ayat_count": 40,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 79,
+    "name_ar": "النازعات",
+    "name_id": "An-Nazi'at",
+    "ayat_count": 46,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 80,
+    "name_ar": "عبس",
+    "name_id": "'Abasa",
+    "ayat_count": 42,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 81,
+    "name_ar": "التكوير",
+    "name_id": "At-Takwir",
+    "ayat_count": 29,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 82,
+    "name_ar": "الانفطار",
+    "name_id": "Al-Infithar",
+    "ayat_count": 19,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 83,
+    "name_ar": "المطففين",
+    "name_id": "Al-Muthaffifin",
+    "ayat_count": 36,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 84,
+    "name_ar": "الانشقاق",
+    "name_id": "Al-Insyiqaq",
+    "ayat_count": 25,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 85,
+    "name_ar": "البروج",
+    "name_id": "Al-Buruj",
+    "ayat_count": 22,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 86,
+    "name_ar": "الطارق",
+    "name_id": "Ath-Thariq",
+    "ayat_count": 17,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 87,
+    "name_ar": "الأعلى",
+    "name_id": "Al-A'la",
+    "ayat_count": 19,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 88,
+    "name_ar": "الغاشية",
+    "name_id": "Al-Ghasyiyah",
+    "ayat_count": 26,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 89,
+    "name_ar": "الفجر",
+    "name_id": "Al-Fajr",
+    "ayat_count": 30,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 90,
+    "name_ar": "البلد",
+    "name_id": "Al-Balad",
+    "ayat_count": 20,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 91,
+    "name_ar": "الشمس",
+    "name_id": "Asy-Syams",
+    "ayat_count": 15,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 92,
+    "name_ar": "الليل",
+    "name_id": "Al-Lail",
+    "ayat_count": 21,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 93,
+    "name_ar": "الضحى",
+    "name_id": "Adh-Dhuha",
+    "ayat_count": 11,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 94,
+    "name_ar": "الشرح",
+    "name_id": "Asy-Syarh",
+    "ayat_count": 8,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 95,
+    "name_ar": "التين",
+    "name_id": "At-Tin",
+    "ayat_count": 8,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 96,
+    "name_ar": "العلق",
+    "name_id": "Al-'Alaq",
+    "ayat_count": 19,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 97,
+    "name_ar": "القدر",
+    "name_id": "Al-Qadr",
+    "ayat_count": 5,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 98,
+    "name_ar": "البينة",
+    "name_id": "Al-Bayyinah",
+    "ayat_count": 8,
+    "type": "Madaniyyah",
+    "juz": 30
+  },
+  {
+    "id": 99,
+    "name_ar": "الزلزلة",
+    "name_id": "Az-Zalzalah",
+    "ayat_count": 8,
+    "type": "Madaniyyah",
+    "juz": 30
+  },
+  {
+    "id": 100,
+    "name_ar": "العاديات",
+    "name_id": "Al-'Adiyat",
+    "ayat_count": 11,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 101,
+    "name_ar": "القارعة",
+    "name_id": "Al-Qari'ah",
+    "ayat_count": 11,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 102,
+    "name_ar": "التكاثر",
+    "name_id": "At-Takatsur",
+    "ayat_count": 8,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 103,
+    "name_ar": "العصر",
+    "name_id": "Al-'Ashr",
+    "ayat_count": 3,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 104,
+    "name_ar": "الهمزة",
+    "name_id": "Al-Humazah",
+    "ayat_count": 9,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 105,
+    "name_ar": "الفيل",
+    "name_id": "Al-Fil",
+    "ayat_count": 5,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 106,
+    "name_ar": "قريش",
+    "name_id": "Quraisy",
+    "ayat_count": 4,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 107,
+    "name_ar": "الماعون",
+    "name_id": "Al-Ma'un",
+    "ayat_count": 7,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 108,
+    "name_ar": "الكوثر",
+    "name_id": "Al-Kautsar",
+    "ayat_count": 3,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 109,
+    "name_ar": "الكافرون",
+    "name_id": "Al-Kafirun",
+    "ayat_count": 6,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 110,
+    "name_ar": "النصر",
+    "name_id": "An-Nashr",
+    "ayat_count": 3,
+    "type": "Madaniyyah",
+    "juz": 30
+  },
+  {
+    "id": 111,
+    "name_ar": "المسد",
+    "name_id": "Al-Masad",
+    "ayat_count": 5,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 112,
+    "name_ar": "الإخلاص",
+    "name_id": "Al-Ikhlas",
+    "ayat_count": 4,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 113,
+    "name_ar": "الفلق",
+    "name_id": "Al-Falaq",
+    "ayat_count": 5,
+    "type": "Makkiyyah",
+    "juz": 30
+  },
+  {
+    "id": 114,
+    "name_ar": "الناس",
+    "name_id": "An-Nas",
+    "ayat_count": 6,
+    "type": "Makkiyyah",
+    "juz": 30
+  }
+]
