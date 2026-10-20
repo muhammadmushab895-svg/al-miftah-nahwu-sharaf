@@ -158,7 +158,7 @@ export default function App() {
       />
 
       {/* Footer */}
-      <footer className="bg-emerald-950 text-emerald-200 border-t border-emerald-900/80 py-10">
+      <footer className="bg-emerald-950 text-emerald-200 border-t border-emerald-900/80 pt-10 pb-28 lg:pb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
             <div>
