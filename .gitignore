@@ -5,6 +5,9 @@ app/node_modules/
 # Production Build
 app/dist/
 
+# Raw external scraped data
+data/irobquran/
+
 # Vercel
 .vercel/
 
