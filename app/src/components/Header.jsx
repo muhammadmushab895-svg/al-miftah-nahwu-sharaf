@@ -10,7 +10,9 @@ import {
   HelpCircle,
   Menu,
   X,
-  Zap
+  Zap,
+  Heart,
+  MessageCircle
 } from 'lucide-react';
 
 export default function Header({ 
@@ -18,6 +20,7 @@ export default function Header({
   setActiveTab, 
   onOpenSearch, 
   onOpenBookmarks, 
+  onOpenDonasi,
   bookmarkCount = 0,
   fontSize,
   setFontSize
@@ -110,6 +113,16 @@ export default function Header({
               )}
             </button>
 
+            {/* Donasi QRIS Header Button */}
+            <button
+              onClick={onOpenDonasi}
+              className="hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-lg bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-emerald-950 font-extrabold text-xs shadow-md shadow-amber-950/20 transition active:scale-95 cursor-pointer"
+              title="Infaq & Donasi QRIS"
+            >
+              <Heart className="w-3.5 h-3.5 fill-emerald-950" />
+              <span>Donasi QRIS</span>
+            </button>
+
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -199,6 +212,29 @@ export default function Header({
                 A+
               </button>
             </div>
+          </div>
+
+          {/* Donasi & WA in Drawer */}
+          <div className="grid grid-cols-2 gap-2 pt-2 border-t border-emerald-800/60">
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                if (onOpenDonasi) onOpenDonasi();
+              }}
+              className="flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg bg-amber-400 text-emerald-950 font-bold text-xs"
+            >
+              <Heart className="w-3.5 h-3.5 fill-emerald-950" />
+              <span>Donasi QRIS</span>
+            </button>
+            <a
+              href={`https://wa.me/6285179848996?text=${encodeURIComponent("Assalamu'alaikum Admin Al-Miftah, saya ingin konsultasi terkait kaidah Nahwu dan Sharaf...")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg bg-[#25D366] text-white font-bold text-xs"
+            >
+              <MessageCircle className="w-3.5 h-3.5 fill-white" />
+              <span>Konsultasi WA</span>
+            </a>
           </div>
         </div>
       )}

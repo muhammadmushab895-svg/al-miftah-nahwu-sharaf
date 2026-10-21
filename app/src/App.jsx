@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import MobileBottomNav from './components/MobileBottomNav';
 import PwaInstallBanner from './components/PwaInstallBanner';
+import FloatingActionButtons from './components/FloatingActionButtons';
+import DonasiQrisModal from './components/DonasiQrisModal';
 import TadribatQuranView from './components/TadribatQuranView';
 import MateriView from './components/MateriView';
 import StudioIrabView from './components/StudioIrabView';
@@ -12,12 +14,14 @@ import KamusView from './components/KamusView';
 import GlobalSearchModal from './components/GlobalSearchModal';
 import BookmarksModal from './components/BookmarksModal';
 import { getBookmarks } from './utils/storage';
+import { Heart, MessageCircle } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('materi'); // Defaulting to Materi & Kaidah on the first page!
   const [fontSize, setFontSize] = useState(28);
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   const [bookmarksModalOpen, setBookmarksModalOpen] = useState(false);
+  const [donasiModalOpen, setDonasiModalOpen] = useState(false);
   const [bookmarkCount, setBookmarkCount] = useState(0);
   const [quranTargetLocation, setQuranTargetLocation] = useState(null);
 
@@ -84,6 +88,7 @@ export default function App() {
         setActiveTab={setActiveTab}
         onOpenSearch={() => setSearchModalOpen(true)}
         onOpenBookmarks={() => setBookmarksModalOpen(true)}
+        onOpenDonasi={() => setDonasiModalOpen(true)}
         bookmarkCount={bookmarkCount}
         fontSize={fontSize}
         setFontSize={setFontSize}
@@ -133,10 +138,14 @@ export default function App() {
         setActiveTab={setActiveTab}
         onOpenSearch={() => setSearchModalOpen(true)}
         onOpenBookmarks={() => setBookmarksModalOpen(true)}
+        onOpenDonasi={() => setDonasiModalOpen(true)}
         bookmarkCount={bookmarkCount}
         fontSize={fontSize}
         setFontSize={setFontSize}
       />
+
+      {/* Floating Action Buttons: Donasi QRIS & WhatsApp Konsultasi */}
+      <FloatingActionButtons onOpenDonasi={() => setDonasiModalOpen(true)} />
 
       {/* PWA Android Install Banner */}
       <PwaInstallBanner />
@@ -155,6 +164,12 @@ export default function App() {
           refreshBookmarks();
         }}
         onSelectBookmark={handleSelectBookmark}
+      />
+
+      {/* Modal Donasi QRIS */}
+      <DonasiQrisModal
+        isOpen={donasiModalOpen}
+        onClose={() => setDonasiModalOpen(false)}
       />
 
       {/* Footer */}
@@ -193,6 +208,38 @@ export default function App() {
               <span className="px-2.5 py-1 rounded-md bg-emerald-900 border border-emerald-800 text-emerald-300 font-bold">
                 63 Istilah Mu'jam
               </span>
+            </div>
+          </div>
+
+          {/* Footer Ta'awun & Konsultasi Quick Bar */}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-2xl bg-emerald-900/40 border border-emerald-800/60">
+            <div className="text-center sm:text-left">
+              <div className="text-xs font-bold text-amber-300 flex items-center justify-center sm:justify-start gap-1.5">
+                <Heart className="w-3.5 h-3.5 fill-amber-300 text-amber-300" />
+                <span>Dukungan Ta'awun Dakwah & Konsultasi Pembelajaran</span>
+              </div>
+              <p className="text-[11px] text-emerald-300/80 mt-0.5">
+                Salurkan infaq operasional atau konsultasikan kesulitan gramatika Anda langsung dengan pembina.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-2.5 shrink-0">
+              <button
+                onClick={() => setDonasiModalOpen(true)}
+                className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-emerald-950 font-extrabold text-xs shadow-md transition active:scale-95 cursor-pointer"
+              >
+                <Heart className="w-3.5 h-3.5 fill-emerald-950" />
+                <span>Infaq Donasi QRIS</span>
+              </button>
+              <a
+                href={`https://wa.me/6285179848996?text=${encodeURIComponent("Assalamu'alaikum Admin Al-Miftah, saya ingin konsultasi terkait pembelajaran Nahwu dan Sharaf...")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs shadow-md transition active:scale-95"
+              >
+                <MessageCircle className="w-3.5 h-3.5 fill-white" />
+                <span>Konsultasi WA (0851-7984-8996)</span>
+              </a>
             </div>
           </div>
 

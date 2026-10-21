@@ -11,7 +11,9 @@ import {
   Bookmark, 
   Search, 
   Download,
-  Sliders
+  Sliders,
+  Heart,
+  MessageCircle
 } from 'lucide-react';
 
 export default function MobileBottomNav({
@@ -19,6 +21,7 @@ export default function MobileBottomNav({
   setActiveTab,
   onOpenSearch,
   onOpenBookmarks,
+  onOpenDonasi,
   bookmarkCount = 0,
   fontSize,
   setFontSize
@@ -156,6 +159,40 @@ export default function MobileBottomNav({
                   </span>
                 )}
               </button>
+            </div>
+
+            {/* Donasi & Konsultasi Quick Actions */}
+            <div className="grid grid-cols-2 gap-2 mb-4">
+              <button
+                onClick={() => {
+                  setDrawerOpen(false);
+                  if (onOpenDonasi) onOpenDonasi();
+                }}
+                className="flex items-center gap-2 p-3 rounded-xl bg-gradient-to-r from-amber-500/20 to-amber-600/20 border border-amber-400/40 hover:bg-amber-500/30 text-left transition"
+              >
+                <div className="w-7 h-7 rounded-lg bg-amber-400 text-emerald-950 flex items-center justify-center shrink-0 font-bold">
+                  <Heart className="w-4 h-4 fill-emerald-950" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-amber-200">Donasi QRIS</div>
+                  <div className="text-[10px] text-amber-300/80">Infaq Aplikasi</div>
+                </div>
+              </button>
+
+              <a
+                href={`https://wa.me/6285179848996?text=${encodeURIComponent("Assalamu'alaikum Admin Al-Miftah, saya ingin konsultasi terkait kaidah Nahwu dan Sharaf...")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 p-3 rounded-xl bg-[#25D366]/20 border border-[#25D366]/40 hover:bg-[#25D366]/30 text-left transition"
+              >
+                <div className="w-7 h-7 rounded-lg bg-[#25D366] text-white flex items-center justify-center shrink-0">
+                  <MessageCircle className="w-4 h-4 fill-white" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-emerald-200">Konsultasi WA</div>
+                  <div className="text-[10px] text-emerald-300/80">0851-7984-8996</div>
+                </div>
+              </a>
             </div>
 
             {/* Font Size Adjuster for Mobile */}
