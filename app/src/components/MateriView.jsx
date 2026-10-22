@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef } from 'react';
 import { 
   BookOpen, 
   Search, 
@@ -49,6 +49,9 @@ export default function MateriView({ fontSize = 28, onJumpToQuran }) {
   const [searchMateri, setSearchMateri] = useState('');
   const [copiedId, setCopiedId] = useState(null);
   const [completedList, setCompletedList] = useState(getCompletedMateri());
+
+  // Ref to the main reading/materi content area for instant auto-scroll
+  const contentAreaRef = useRef(null);
 
   // Learning Level Filter (Roadmap): 'ALL', 'level_1', 'level_2', 'level_3', 'level_4'
   const [activeRoadmapLevel, setActiveRoadmapLevel] = useState('ALL');
@@ -213,12 +216,30 @@ export default function MateriView({ fontSize = 28, onJumpToQuran }) {
     });
   };
 
+  const scrollToContentArea = () => {
+    if (contentAreaRef.current) {
+      // Calculate top position with offset for sticky header (approx 85px)
+      const headerOffset = 85;
+      const elementPosition = contentAreaRef.current.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: Math.max(0, offsetPosition),
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const handleSelectLevel = (levelId, startBab) => {
     setActiveRoadmapLevel(levelId);
     if (startBab) {
       setSelectedBabId(startBab);
       setSelectedMateriId(null);
     }
+    // Auto-scroll directly to the material reading area without manual scroll
+    setTimeout(() => {
+      scrollToContentArea();
+    }, 60);
   };
 
   return (
@@ -292,14 +313,26 @@ export default function MateriView({ fontSize = 28, onJumpToQuran }) {
 
         {/* Filter reset button if active */}
         {activeRoadmapLevel !== 'ALL' && (
-          <div className="flex items-center justify-between pt-1 text-xs text-emerald-200">
-            <span>Menampilkan bab khusus <strong>{roadmapLevels.find(l => l.id === activeRoadmapLevel)?.title}</strong></span>
-            <button
-              onClick={() => setActiveRoadmapLevel('ALL')}
-              className="text-amber-300 underline font-semibold hover:text-amber-200"
-            >
-              Lihat Seluruh 42 Bab (Lengkap)
-            </button>
+          <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-emerald-800/60 text-xs text-emerald-200">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+              <span>Menampilkan bab khusus: <strong>{roadmapLevels.find(l => l.id === activeRoadmapLevel)?.title}</strong></span>
+            </div>
+            <div className="flex items-center gap-3">
+              <button
+                onClick={scrollToContentArea}
+                className="text-emerald-950 bg-amber-400 hover:bg-amber-300 font-extrabold px-3 py-1 rounded-xl shadow-xs flex items-center gap-1.5 transition active:scale-95 cursor-pointer"
+              >
+                <span>Ke Materi Bab Ini</span>
+                <ArrowRight className="w-3.5 h-3.5 rotate-90" />
+              </button>
+              <button
+                onClick={() => setActiveRoadmapLevel('ALL')}
+                className="text-amber-300 underline font-semibold hover:text-amber-200"
+              >
+                Lihat Seluruh 42 Bab (Lengkap)
+              </button>
+            </div>
           </div>
         )}
       </div>
@@ -349,6 +382,9 @@ export default function MateriView({ fontSize = 28, onJumpToQuran }) {
                   onClick={() => {
                     setSelectedBabId(bab.id_bab);
                     setSelectedMateriId(null);
+                    if (window.innerWidth < 1024) {
+                      setTimeout(scrollToContentArea, 60);
+                    }
                   }}
                   className={`w-full p-3.5 text-left rounded-xl transition-all duration-150 flex items-start justify-between gap-3 ${
                     isSelected
@@ -394,16 +430,23 @@ export default function MateriView({ fontSize = 28, onJumpToQuran }) {
         </div>
 
         {/* Right Content Area: Detailed Bab & Sub-Materi */}
-        <div className="lg:col-span-8 space-y-6">
+        <div ref={contentAreaRef} className="lg:col-span-8 space-y-6 scroll-mt-24">
           {selectedBab && (
             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-5">
               
               {/* Bab Header Banner */}
               <div className="space-y-3 border-b border-slate-100 pb-5">
                 <div className="flex flex-wrap items-center justify-between gap-2">
-                  <span className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-900">
-                    {selectedBab.kategori} • Level {selectedBab.level}
-                  </span>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-900">
+                      {selectedBab.kategori} • Level {selectedBab.level}
+                    </span>
+                    {activeRoadmapLevel !== 'ALL' && (
+                      <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-400 text-emerald-950 flex items-center gap-1 shadow-xs animate-in fade-in duration-200">
+                        <span>{roadmapLevels.find(l => l.id === activeRoadmapLevel)?.badge}</span>
+                      </span>
+                    )}
+                  </div>
                   <div className="flex items-center gap-1.5 text-xs text-slate-500 font-medium">
                     <Clock className="w-3.5 h-3.5 text-amber-600" />
                     <span>Estimasi: {selectedBab.estimasi_jam_belajar} jam belajar</span>
