@@ -188,7 +188,7 @@ export default function App() {
       <LicenseModal
         isOpen={licenseModalOpen}
         onClose={() => setLicenseModalOpen(false)}
-        onActivated={() => setIsPro(true)}
+        onActivated={() => setIsPro(getLicenseStatus().isPro)}
       />
 
       {/* Footer */}

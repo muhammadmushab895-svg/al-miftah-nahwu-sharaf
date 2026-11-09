@@ -118,13 +118,14 @@ export default function Header({
 
             {/* Tombol Akun PRO */}
             {isPro ? (
-              <div
-                className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-900/80 border border-amber-400/50 text-amber-300 font-extrabold text-xs shadow-xs"
-                title="Status: Akun PRO Aktif Seumur Hidup"
+              <button
+                onClick={onOpenLicense}
+                className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-900/80 hover:bg-emerald-800 border border-amber-400/50 text-amber-300 font-extrabold text-xs shadow-xs cursor-pointer transition active:scale-95"
+                title="Status: Akun PRO Aktif (Klik untuk Kelola / Panel Admin)"
               >
                 <Crown className="w-3.5 h-3.5 text-amber-400" />
                 <span>PRO Aktif</span>
-              </div>
+              </button>
             ) : (
               <button
                 onClick={onOpenLicense}
@@ -250,10 +251,16 @@ export default function Header({
               <span>Buka Seluruh 42 Bab & 30 Juz PRO (Rp 49rb)</span>
             </button>
           ) : (
-            <div className="w-full flex items-center justify-center gap-1.5 py-2 px-4 rounded-xl bg-emerald-900 border border-amber-400/50 text-amber-300 font-bold text-xs">
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                if (onOpenLicense) onOpenLicense();
+              }}
+              className="w-full flex items-center justify-center gap-1.5 py-2 px-4 rounded-xl bg-emerald-900 border border-amber-400/50 text-amber-300 font-bold text-xs cursor-pointer"
+            >
               <Crown className="w-4 h-4 text-amber-400" />
-              <span>Akun Al-Miftah PRO Aktif Seumur Hidup</span>
-            </div>
+              <span>Akun Al-Miftah PRO Aktif (Kelola / Admin)</span>
+            </button>
           )}
 
           {/* Donasi & WA in Drawer */}
