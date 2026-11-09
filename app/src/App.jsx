@@ -16,7 +16,7 @@ import BookmarksModal from './components/BookmarksModal';
 import LicenseModal from './components/LicenseModal';
 import { getBookmarks } from './utils/storage';
 import { getLicenseStatus } from './utils/license';
-import { Heart, MessageCircle } from 'lucide-react';
+import { Heart, MessageCircle, Crown } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('materi'); // Defaulting to Materi & Kaidah on the first page!
@@ -25,9 +25,15 @@ export default function App() {
   const [bookmarksModalOpen, setBookmarksModalOpen] = useState(false);
   const [donasiModalOpen, setDonasiModalOpen] = useState(false);
   const [licenseModalOpen, setLicenseModalOpen] = useState(false);
+  const [licenseModalTab, setLicenseModalTab] = useState('qris');
   const [isPro, setIsPro] = useState(() => getLicenseStatus().isPro);
   const [bookmarkCount, setBookmarkCount] = useState(0);
   const [quranTargetLocation, setQuranTargetLocation] = useState(null);
+
+  const handleOpenLicense = (tab = 'qris') => {
+    setLicenseModalTab(tab);
+    setLicenseModalOpen(true);
+  };
 
   // Jump from any view to exact Surah & Ayah in Mushaf
   const handleJumpToQuran = (surahNameOrId, ayahNumber) => {
@@ -93,7 +99,7 @@ export default function App() {
         onOpenSearch={() => setSearchModalOpen(true)}
         onOpenBookmarks={() => setBookmarksModalOpen(true)}
         onOpenDonasi={() => setDonasiModalOpen(true)}
-        onOpenLicense={() => setLicenseModalOpen(true)}
+        onOpenLicense={handleOpenLicense}
         isPro={isPro}
         bookmarkCount={bookmarkCount}
         fontSize={fontSize}
@@ -108,7 +114,7 @@ export default function App() {
             onOpenMateri={() => setActiveTab('materi')} 
             targetLocation={quranTargetLocation}
             isPro={isPro}
-            onOpenLicense={() => setLicenseModalOpen(true)}
+            onOpenLicense={() => handleOpenLicense('qris')}
           />
         )}
         {activeTab === 'materi' && (
@@ -116,7 +122,7 @@ export default function App() {
             fontSize={fontSize} 
             onJumpToQuran={handleJumpToQuran}
             isPro={isPro}
-            onOpenLicense={() => setLicenseModalOpen(true)}
+            onOpenLicense={() => handleOpenLicense('qris')}
           />
         )}
         {activeTab === 'studio' && (
@@ -149,7 +155,7 @@ export default function App() {
         onOpenSearch={() => setSearchModalOpen(true)}
         onOpenBookmarks={() => setBookmarksModalOpen(true)}
         onOpenDonasi={() => setDonasiModalOpen(true)}
-        onOpenLicense={() => setLicenseModalOpen(true)}
+        onOpenLicense={handleOpenLicense}
         isPro={isPro}
         bookmarkCount={bookmarkCount}
         fontSize={fontSize}
@@ -187,6 +193,7 @@ export default function App() {
       {/* Modal Aktivasi Lisensi Al-Miftah PRO */}
       <LicenseModal
         isOpen={licenseModalOpen}
+        initialTab={licenseModalTab}
         onClose={() => setLicenseModalOpen(false)}
         onActivated={() => setIsPro(getLicenseStatus().isPro)}
       />
@@ -243,6 +250,13 @@ export default function App() {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-2.5 shrink-0">
+              <button
+                onClick={() => handleOpenLicense('admin')}
+                className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-gradient-to-r from-indigo-700 to-indigo-900 hover:from-indigo-600 hover:to-indigo-800 text-amber-300 font-extrabold text-xs shadow-md transition active:scale-95 cursor-pointer border border-indigo-500/50"
+              >
+                <Crown className="w-3.5 h-3.5 text-amber-400" />
+                <span>👑 Buat Kode Pembeli (Admin)</span>
+              </button>
               <button
                 onClick={() => setDonasiModalOpen(true)}
                 className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-emerald-950 font-extrabold text-xs shadow-md transition active:scale-95 cursor-pointer"

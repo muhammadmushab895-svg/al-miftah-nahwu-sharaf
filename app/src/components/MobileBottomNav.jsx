@@ -168,9 +168,9 @@ export default function MobileBottomNav({
             <button
               onClick={() => {
                 setDrawerOpen(false);
-                if (onOpenLicense) onOpenLicense();
+                if (onOpenLicense) onOpenLicense('qris');
               }}
-              className="w-full flex items-center justify-between p-3 rounded-xl mb-3 transition font-extrabold text-xs bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-emerald-950 shadow-md cursor-pointer"
+              className="w-full flex items-center justify-between p-3 rounded-xl mb-2 transition font-extrabold text-xs bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-emerald-950 shadow-md cursor-pointer"
             >
               <div className="flex items-center gap-2">
                 <Crown className="w-4 h-4 fill-emerald-950" />
@@ -178,6 +178,23 @@ export default function MobileBottomNav({
               </div>
               <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-950/20 font-mono">
                 {isPro ? 'LIFETIME' : 'SEKALI BAYAR'}
+              </span>
+            </button>
+
+            {/* Buat Kode Admin (Mobile Bottom Nav Drawer) */}
+            <button
+              onClick={() => {
+                setDrawerOpen(false);
+                if (onOpenLicense) onOpenLicense('admin');
+              }}
+              className="w-full flex items-center justify-between p-3 rounded-xl mb-3 transition font-extrabold text-xs bg-gradient-to-r from-indigo-800 to-indigo-950 border border-indigo-500/50 text-amber-300 shadow-md cursor-pointer"
+            >
+              <div className="flex items-center gap-2">
+                <Crown className="w-4 h-4 text-amber-400" />
+                <span>👑 Buat Kode Pembeli (Admin)</span>
+              </div>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-indigo-950/80 font-mono text-amber-200 border border-indigo-400/30">
+                GENERATOR
               </span>
             </button>
 

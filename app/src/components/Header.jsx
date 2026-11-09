@@ -119,16 +119,16 @@ export default function Header({
             {/* Tombol Akun PRO */}
             {isPro ? (
               <button
-                onClick={onOpenLicense}
+                onClick={() => onOpenLicense && onOpenLicense('license')}
                 className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-900/80 hover:bg-emerald-800 border border-amber-400/50 text-amber-300 font-extrabold text-xs shadow-xs cursor-pointer transition active:scale-95"
-                title="Status: Akun PRO Aktif (Klik untuk Kelola / Panel Admin)"
+                title="Status: Akun PRO Aktif (Klik untuk Kelola Lisensi)"
               >
                 <Crown className="w-3.5 h-3.5 text-amber-400" />
                 <span>PRO Aktif</span>
               </button>
             ) : (
               <button
-                onClick={onOpenLicense}
+                onClick={() => onOpenLicense && onOpenLicense('qris')}
                 className="flex items-center gap-1.5 px-3 py-1.5 sm:py-2 rounded-lg bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-emerald-950 font-extrabold text-xs shadow-md shadow-amber-950/20 transition active:scale-95 cursor-pointer"
                 title="Buka seluruh 42 bab & Mushaf 30 Juz (Sekali Bayar)"
               >
@@ -136,6 +136,16 @@ export default function Header({
                 <span>Beli PRO (Rp 49rb)</span>
               </button>
             )}
+
+            {/* Tombol Buat Kode Admin (Selalu terlihat untuk Admin / Pemilik) */}
+            <button
+              onClick={() => onOpenLicense && onOpenLicense('admin')}
+              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 sm:py-2 rounded-lg bg-indigo-950/90 hover:bg-indigo-900 border border-indigo-500/50 text-amber-300 font-extrabold text-xs shadow-xs cursor-pointer transition active:scale-95"
+              title="Buka Generator Kode Lisensi untuk Siswa / Pembeli (Khusus Admin)"
+            >
+              <Crown className="w-3.5 h-3.5 text-amber-400" />
+              <span>Buat Kode (Admin)</span>
+            </button>
 
             {/* Donasi QRIS Header Button */}
             <button
@@ -243,7 +253,7 @@ export default function Header({
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
-                if (onOpenLicense) onOpenLicense();
+                if (onOpenLicense) onOpenLicense('qris');
               }}
               className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 text-emerald-950 font-extrabold text-xs shadow-md"
             >
@@ -254,14 +264,26 @@ export default function Header({
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
-                if (onOpenLicense) onOpenLicense();
+                if (onOpenLicense) onOpenLicense('license');
               }}
               className="w-full flex items-center justify-center gap-1.5 py-2 px-4 rounded-xl bg-emerald-900 border border-amber-400/50 text-amber-300 font-bold text-xs cursor-pointer"
             >
               <Crown className="w-4 h-4 text-amber-400" />
-              <span>Akun Al-Miftah PRO Aktif (Kelola / Admin)</span>
+              <span>Akun Al-Miftah PRO Aktif (Kelola Lisensi)</span>
             </button>
           )}
+
+          {/* Tombol Buat Kode Admin (Mobile) */}
+          <button
+            onClick={() => {
+              setMobileMenuOpen(false);
+              if (onOpenLicense) onOpenLicense('admin');
+            }}
+            className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-gradient-to-r from-indigo-700 to-indigo-900 border border-indigo-500/50 text-amber-300 font-extrabold text-xs shadow-md cursor-pointer"
+          >
+            <Crown className="w-4 h-4 text-amber-400" />
+            <span>👑 Buat Kode Siswa (Panel Admin)</span>
+          </button>
 
           {/* Donasi & WA in Drawer */}
           <div className="grid grid-cols-2 gap-2 pt-2 border-t border-emerald-800/60">

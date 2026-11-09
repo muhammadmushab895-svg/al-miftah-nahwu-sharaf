@@ -17,7 +17,9 @@ import {
   RotateCcw,
   SlidersHorizontal,
   Lock,
-  Globe
+  Globe,
+  Unlock,
+  AlertCircle
 } from 'lucide-react';
 import { 
   getDeviceId, 
@@ -30,8 +32,8 @@ import {
   getLicenseStatus 
 } from '../utils/license';
 
-export default function LicenseModal({ isOpen, onClose, onActivated }) {
-  const [activeTab, setActiveTab] = useState('qris'); // 'qris' | 'license' | 'admin'
+export default function LicenseModal({ isOpen, onClose, onActivated, initialTab = 'qris' }) {
+  const [activeTab, setActiveTab] = useState(initialTab); // 'qris' | 'license' | 'admin'
   const [inputKey, setInputKey] = useState('');
   const [errorMessage, setErrorMessage] = useState(null);
   const [successMessage, setSuccessMessage] = useState(null);
@@ -41,6 +43,10 @@ export default function LicenseModal({ isOpen, onClose, onActivated }) {
   // Device ID state
   const [deviceId, setDeviceId] = useState('');
   const [licenseState, setLicenseState] = useState({ isPro: false, isAdmin: false });
+
+  // Admin PIN Gate State
+  const [adminPinInput, setAdminPinInput] = useState('');
+  const [adminPinError, setAdminPinError] = useState(null);
 
   // Admin Generator States
   const [targetDeviceInput, setTargetDeviceInput] = useState('');
@@ -57,17 +63,16 @@ export default function LicenseModal({ isOpen, onClose, onActivated }) {
       setDeviceId(dev);
       const status = getLicenseStatus();
       setLicenseState(status);
-      if (status.isAdmin) {
-        // If already admin, keep existing tab or allow admin tab
-      } else {
-        // Check URL param ?admin=almiftah
-        if (typeof window !== 'undefined' && window.location.search.includes('admin=')) {
-          activateAdminDirect();
-          setLicenseState(getLicenseStatus());
-        }
+      setActiveTab(initialTab || 'qris');
+
+      // Check URL param ?admin=almiftah
+      if (typeof window !== 'undefined' && window.location.search.includes('admin=')) {
+        activateAdminDirect();
+        setLicenseState(getLicenseStatus());
+        setActiveTab('admin');
       }
     }
-  }, [isOpen]);
+  }, [isOpen, initialTab]);
 
   if (!isOpen) return null;
 
@@ -92,17 +97,38 @@ export default function LicenseModal({ isOpen, onClose, onActivated }) {
     setLogoClickCount(nextCount);
     if (nextCount >= 5) {
       setLogoClickCount(0);
-      const conf = window.confirm(
-        '👑 [MODE PEMILIK AL-MIFTAH TERDETEKSI]\n\n' +
-        'Aktifkan status SUPER ADMIN seumur hidup & buka Panel Generator Lisensi?'
-      );
-      if (conf) {
-        activateAdminDirect();
-        const updated = getLicenseStatus();
-        setLicenseState(updated);
-        setActiveTab('admin');
-        if (onActivated) onActivated();
-      }
+      activateAdminDirect();
+      const updated = getLicenseStatus();
+      setLicenseState(updated);
+      setActiveTab('admin');
+      if (onActivated) onActivated();
+    }
+  };
+
+  const handleAdminPinSubmit = (e) => {
+    e.preventDefault();
+    setAdminPinError(null);
+    const pin = adminPinInput.trim().toUpperCase();
+
+    // Accepted PINs & Master Keys
+    const validPins = [
+      '2026', 
+      'ADMIN', 
+      'ADMIN123', 
+      'MFT-VIP-USTADZ-2026', 
+      'MFT-OWNER-2026', 
+      'ALMIFTAH-ADMIN-VIP', 
+      'ADMIN-ALMIFTAH-2026'
+    ];
+
+    if (validPins.includes(pin)) {
+      activateAdminDirect();
+      const updated = getLicenseStatus();
+      setLicenseState(updated);
+      setAdminPinInput('');
+      if (onActivated) onActivated();
+    } else {
+      setAdminPinError('PIN salah. Masukkan PIN Admin resmi (Default PIN: 2026).');
     }
   };
 
@@ -184,7 +210,7 @@ export default function LicenseModal({ isOpen, onClose, onActivated }) {
               <button
                 type="button"
                 onClick={handleLogoEasterEgg}
-                title="Al-Miftah PRO (Klik 5x untuk Mode Pemilik)"
+                title="Al-Miftah PRO (Klik 5x untuk Akses Admin Instan)"
                 className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 text-emerald-950 flex items-center justify-center shadow-lg shadow-amber-900/40 transform active:scale-95 transition cursor-pointer shrink-0"
               >
                 <Crown className="w-6 h-6 fill-emerald-950" />
@@ -223,48 +249,47 @@ export default function LicenseModal({ isOpen, onClose, onActivated }) {
             </button>
           </div>
 
-          {/* Navigation Tabs */}
+          {/* Navigation Tabs - ALWAYS VISIBLE TO ALL USERS */}
           <div className="mt-4 pt-3 border-t border-emerald-800/60 flex items-center gap-2 overflow-x-auto text-xs">
             <button
               type="button"
               onClick={() => setActiveTab('qris')}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold transition shrink-0 ${
+              className={`flex items-center gap-1.5 px-3 py-2 rounded-xl font-bold transition shrink-0 cursor-pointer ${
                 activeTab === 'qris'
-                  ? 'bg-amber-400 text-emerald-950 shadow-md'
+                  ? 'bg-amber-400 text-emerald-950 shadow-md font-black'
                   : 'bg-emerald-900/60 text-emerald-200 hover:bg-emerald-900'
               }`}
             >
               <QrCode className="w-3.5 h-3.5" />
-              <span>Pembayaran & QRIS</span>
+              <span>1. Pembayaran & QRIS</span>
             </button>
 
             <button
               type="button"
               onClick={() => setActiveTab('license')}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold transition shrink-0 ${
+              className={`flex items-center gap-1.5 px-3 py-2 rounded-xl font-bold transition shrink-0 cursor-pointer ${
                 activeTab === 'license'
-                  ? 'bg-amber-400 text-emerald-950 shadow-md'
+                  ? 'bg-amber-400 text-emerald-950 shadow-md font-black'
                   : 'bg-emerald-900/60 text-emerald-200 hover:bg-emerald-900'
               }`}
             >
               <KeyRound className="w-3.5 h-3.5" />
-              <span>Masukkan Kode Lisensi</span>
+              <span>2. Masukkan Lisensi</span>
             </button>
 
-            {licenseState.isAdmin && (
-              <button
-                type="button"
-                onClick={() => setActiveTab('admin')}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-black transition shrink-0 ${
-                  activeTab === 'admin'
-                    ? 'bg-gradient-to-r from-indigo-500 to-indigo-600 text-white shadow-md'
-                    : 'bg-indigo-950/70 text-indigo-200 hover:bg-indigo-900'
-                }`}
-              >
-                <Crown className="w-3.5 h-3.5 text-amber-300" />
-                <span>Panel Admin (Generator)</span>
-              </button>
-            )}
+            {/* TAB BUAT KODE ADMIN - SELALU MUNCUL DI SINI! */}
+            <button
+              type="button"
+              onClick={() => setActiveTab('admin')}
+              className={`flex items-center gap-1.5 px-3 py-2 rounded-xl font-extrabold transition shrink-0 cursor-pointer ${
+                activeTab === 'admin'
+                  ? 'bg-gradient-to-r from-indigo-500 to-indigo-600 text-white shadow-md font-black ring-2 ring-indigo-300'
+                  : 'bg-indigo-950/80 text-amber-300 hover:bg-indigo-900 border border-indigo-700/60'
+              }`}
+            >
+              <Crown className="w-3.5 h-3.5 text-amber-300" />
+              <span>3. Buat Kode (Admin)</span>
+            </button>
           </div>
         </div>
 
@@ -362,7 +387,7 @@ export default function LicenseModal({ isOpen, onClose, onActivated }) {
                     <div>
                       <strong className="text-slate-900 block">Terima Kode & Langsung Aktif</strong>
                       <span className="text-slate-600">
-                        Admin membalas dengan kode lisensi resmi yang terkunci untuk perangkat Anda. Masukkan di tab <strong>"Masukkan Kode Lisensi"</strong>, akun Anda seketika berstatus PRO selamanya!
+                        Admin membalas dengan kode lisensi resmi yang terkunci untuk perangkat Anda. Masukkan di tab <strong>"2. Masukkan Lisensi"</strong>, akun Anda seketika berstatus PRO selamanya!
                       </span>
                     </div>
                   </div>
@@ -461,7 +486,7 @@ export default function LicenseModal({ isOpen, onClose, onActivated }) {
                 <button
                   type="button"
                   onClick={() => setActiveTab('qris')}
-                  className="px-3 py-1.5 rounded-xl bg-emerald-900 hover:bg-emerald-800 text-amber-300 font-bold shrink-0 transition"
+                  className="px-3 py-1.5 rounded-xl bg-emerald-900 hover:bg-emerald-800 text-amber-300 font-bold shrink-0 transition cursor-pointer"
                 >
                   Cara Beli →
                 </button>
@@ -474,130 +499,179 @@ export default function LicenseModal({ isOpen, onClose, onActivated }) {
           {/* ============================================================ */}
           {activeTab === 'admin' && (
             <div className="space-y-4">
-              <div className="bg-gradient-to-br from-indigo-50/90 via-slate-50 to-indigo-50 border-2 border-indigo-200 rounded-2xl p-4 sm:p-5 space-y-4">
-                <div className="flex items-center justify-between border-b border-indigo-100 pb-3">
-                  <div>
-                    <h4 className="font-extrabold text-indigo-950 text-sm flex items-center gap-1.5">
-                      <Crown className="w-4 h-4 text-indigo-600" />
-                      Panel Generator Lisensi (Khusus Admin / Pemilik)
+              
+              {/* JIKA BELUM TERVERIFIKASI SEBAGAI ADMIN -> TAMPILKAN PIN GATE */}
+              {!licenseState.isAdmin ? (
+                <div className="bg-slate-50 border-2 border-indigo-200 rounded-2xl p-6 text-center space-y-4 animate-in fade-in">
+                  <div className="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center mx-auto shadow-inner">
+                    <Lock className="w-6 h-6" />
+                  </div>
+
+                  <div className="space-y-1">
+                    <h4 className="font-extrabold text-slate-900 text-base">
+                      Akses Khusus Admin / Pemilik Al-Miftah
                     </h4>
-                    <p className="text-xs text-indigo-700/80 mt-0.5">
-                      Gunakan panel ini untuk membuat kode lisensi yang terkunci ke perangkat pembeli.
+                    <p className="text-xs text-slate-500 max-w-sm mx-auto">
+                      Masukkan PIN Admin untuk membuka generator kode lisensi pembeli:
                     </p>
                   </div>
-                  <span className="px-2 py-0.5 rounded-md bg-indigo-600 text-white font-mono font-bold text-[10px]">
-                    ADMIN
-                  </span>
+
+                  <form onSubmit={handleAdminPinSubmit} className="max-w-xs mx-auto space-y-3">
+                    <input
+                      type="password"
+                      placeholder="Masukkan PIN Admin (Sandi: 2026)"
+                      value={adminPinInput}
+                      onChange={(e) => setAdminPinInput(e.target.value)}
+                      className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-center text-sm font-bold tracking-widest text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-inner"
+                      autoFocus
+                    />
+
+                    {adminPinError && (
+                      <div className="p-2 bg-rose-50 border border-rose-200 rounded-lg text-xs text-rose-700 font-semibold">
+                        {adminPinError}
+                      </div>
+                    )}
+
+                    <button
+                      type="submit"
+                      className="w-full py-2.5 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-xs rounded-xl shadow-md transition active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
+                    >
+                      <Unlock className="w-4 h-4" />
+                      <span>Buka Panel Generator Admin</span>
+                    </button>
+                  </form>
+
+                  <div className="pt-2 text-[11px] text-slate-400">
+                    💡 <em>Petunjuk: PIN default adalah <strong>2026</strong> atau Master Key Anda.</em>
+                  </div>
                 </div>
+              ) : (
+                /* JIKA SUDAH ADMIN -> TAMPILKAN GENERATOR PENUH */
+                <div className="bg-gradient-to-br from-indigo-50/90 via-slate-50 to-indigo-50 border-2 border-indigo-200 rounded-2xl p-4 sm:p-5 space-y-4 animate-in fade-in">
+                  <div className="flex items-center justify-between border-b border-indigo-100 pb-3">
+                    <div>
+                      <h4 className="font-extrabold text-indigo-950 text-sm flex items-center gap-1.5">
+                        <Crown className="w-4 h-4 text-indigo-600" />
+                        Panel Generator Lisensi (Khusus Admin / Pemilik)
+                      </h4>
+                      <p className="text-xs text-indigo-700/80 mt-0.5">
+                        Buat kode lisensi terkunci khusus untuk perangkat pembeli (1 Device 1 Code).
+                      </p>
+                    </div>
+                    <span className="px-2 py-0.5 rounded-md bg-indigo-600 text-white font-mono font-bold text-[10px]">
+                      ADMIN AKTIF
+                    </span>
+                  </div>
 
-                {/* Input Target Device ID */}
-                <div className="space-y-1.5">
-                  <label className="block text-xs font-bold text-indigo-900">
-                    📱 Masukkan ID Perangkat Pembeli (dari WhatsApp):
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Contoh: DEV-8K2P9M atau 8K2P9M"
-                    value={targetDeviceInput}
-                    onChange={(e) => setTargetDeviceInput(e.target.value.toUpperCase())}
-                    className="w-full px-3.5 py-2.5 bg-white border border-indigo-300 rounded-xl font-mono text-sm uppercase text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  />
-                  <span className="text-[11px] text-slate-500 block">
-                    *Sistem akan mengunci lisensi hanya untuk perangkat tersebut (1 device 1 code).
-                  </span>
-                </div>
+                  {/* Input Target Device ID */}
+                  <div className="space-y-1.5">
+                    <label className="block text-xs font-bold text-indigo-900">
+                      📱 Masukkan ID Perangkat Pembeli (dari WhatsApp):
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Contoh: DEV-8K2P9M atau 8K2P9M"
+                      value={targetDeviceInput}
+                      onChange={(e) => setTargetDeviceInput(e.target.value.toUpperCase())}
+                      className="w-full px-3.5 py-2.5 bg-white border border-indigo-300 rounded-xl font-mono text-sm uppercase font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-inner"
+                    />
+                    <span className="text-[11px] text-slate-500 block">
+                      *Sistem akan mengunci lisensi hanya untuk perangkat tersebut (1 device 1 code).
+                    </span>
+                  </div>
 
-                {/* Tombol Generate */}
-                <div className="flex flex-col sm:flex-row gap-2">
-                  <button
-                    type="button"
-                    onClick={handleGenerateDeviceBound}
-                    className="flex-1 py-2.5 px-4 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-600 text-white font-bold text-xs shadow-md flex items-center justify-center gap-1.5 cursor-pointer"
-                  >
-                    <Lock className="w-3.5 h-3.5" />
-                    <span>Buat Kode Terkunci (1 Device)</span>
-                  </button>
+                  {/* Tombol Buat Kode */}
+                  <div className="flex flex-col sm:flex-row gap-2">
+                    <button
+                      type="button"
+                      onClick={handleGenerateDeviceBound}
+                      className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-700 to-indigo-800 hover:from-indigo-500 hover:to-indigo-600 text-white font-black text-xs shadow-md flex items-center justify-center gap-2 cursor-pointer transition transform active:scale-95"
+                    >
+                      <Lock className="w-4 h-4" />
+                      <span>🔒 Buat Kode Terkunci untuk Siswa</span>
+                    </button>
 
-                  <button
-                    type="button"
-                    onClick={handleGenerateUniversal}
-                    className="py-2.5 px-3 rounded-xl bg-white border border-indigo-300 text-indigo-900 hover:bg-indigo-50 font-bold text-xs flex items-center justify-center gap-1.5 cursor-pointer"
-                    title="Buat kode universal tanpa kunci perangkat"
-                  >
-                    <Globe className="w-3.5 h-3.5" />
-                    <span>Kode Universal</span>
-                  </button>
-                </div>
+                    <button
+                      type="button"
+                      onClick={handleGenerateUniversal}
+                      className="py-3 px-4 rounded-xl bg-white border border-indigo-300 text-indigo-900 hover:bg-indigo-50 font-bold text-xs flex items-center justify-center gap-1.5 cursor-pointer transition active:scale-95"
+                      title="Buat kode universal tanpa kunci perangkat"
+                    >
+                      <Globe className="w-4 h-4 text-indigo-600" />
+                      <span>Kode Bebas</span>
+                    </button>
+                  </div>
 
-                {/* Hasil Generate Key & Tombol Copy */}
-                {generatedKey && (
-                  <div className="p-4 bg-white border border-indigo-200 rounded-xl space-y-3 animate-in fade-in">
-                    <div className="text-center space-y-1">
-                      <span className="text-[10px] font-bold text-indigo-700 uppercase tracking-wider block">
-                        {generatedType === 'device' 
-                          ? `🔒 Terkunci Khusus untuk: ${targetDevFormatted}` 
-                          : '🌐 Kode Bebas (Semua Perangkat)'}
-                      </span>
-                      <div className="p-3 bg-slate-900 text-amber-300 rounded-xl font-mono font-black text-lg sm:text-xl tracking-wider select-all border border-slate-700">
-                        {generatedKey}
+                  {/* Hasil Generate Key & Tombol Copy */}
+                  {generatedKey && (
+                    <div className="p-4 bg-white border-2 border-indigo-300 rounded-2xl space-y-3 animate-in zoom-in-95 shadow-sm">
+                      <div className="text-center space-y-1">
+                        <span className="text-[11px] font-extrabold text-indigo-800 uppercase tracking-wider block">
+                          {generatedType === 'device' 
+                            ? `🔒 Terkunci Khusus untuk: ${targetDevFormatted}` 
+                            : '🌐 Kode Bebas (Semua Perangkat)'}
+                        </span>
+                        <div className="p-3 bg-slate-900 text-amber-300 rounded-xl font-mono font-black text-lg sm:text-2xl tracking-widest select-all border border-slate-700 shadow-inner">
+                          {generatedKey}
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <button
+                          type="button"
+                          onClick={() => copyToClipboard(generatedKey, 'genkey')}
+                          className="py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer"
+                        >
+                          {copiedText === 'genkey' ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
+                          <span>{copiedText === 'genkey' ? 'Kode Berhasil Disalin!' : '📋 Salin Kode Saja'}</span>
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={() => copyToClipboard(buildWhatsAppReplyTemplate(generatedKey, targetDevFormatted), 'wa_template')}
+                          className="py-2.5 px-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-black text-xs flex items-center justify-center gap-1.5 transition shadow-sm cursor-pointer"
+                        >
+                          {copiedText === 'wa_template' ? <Check className="w-4 h-4" /> : <MessageCircle className="w-4 h-4 fill-white" />}
+                          <span>{copiedText === 'wa_template' ? 'Chat WA Tersalin!' : '💬 Salin Format Chat WA Siswa'}</span>
+                        </button>
                       </div>
                     </div>
+                  )}
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      <button
-                        type="button"
-                        onClick={() => copyToClipboard(generatedKey, 'genkey')}
-                        className="py-2 px-3 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs flex items-center justify-center gap-1.5 transition"
-                      >
-                        {copiedText === 'genkey' ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                        <span>{copiedText === 'genkey' ? 'Kode Tersalin!' : 'Salin Kode Saja'}</span>
-                      </button>
-
-                      <button
-                        type="button"
-                        onClick={() => copyToClipboard(buildWhatsAppReplyTemplate(generatedKey, targetDevFormatted), 'wa_template')}
-                        className="py-2 px-3 rounded-lg bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs flex items-center justify-center gap-1.5 transition"
-                      >
-                        {copiedText === 'wa_template' ? <Check className="w-3.5 h-3.5" /> : <MessageCircle className="w-3.5 h-3.5" />}
-                        <span>{copiedText === 'wa_template' ? 'Format WA Tersalin!' : 'Salin Format Chat WA Siswa'}</span>
-                      </button>
-                    </div>
+                  {/* Reset Status Lisensi Button */}
+                  <div className="pt-3 border-t border-indigo-100 flex items-center justify-between text-xs text-slate-500">
+                    <span>Uji coba gratis (reset lisensi browser):</span>
+                    <button
+                      type="button"
+                      onClick={handleReset}
+                      className="px-2.5 py-1 text-rose-600 hover:bg-rose-50 border border-rose-200 rounded-lg font-semibold transition cursor-pointer"
+                    >
+                      Reset ke Gratis
+                    </button>
                   </div>
-                )}
-
-                {/* Reset Status Lisensi Button */}
-                <div className="pt-3 border-t border-indigo-100 flex items-center justify-between text-xs text-slate-500">
-                  <span>Reset status lisensi browser ini:</span>
-                  <button
-                    type="button"
-                    onClick={handleReset}
-                    className="px-2.5 py-1 text-rose-600 hover:bg-rose-50 border border-rose-200 rounded-lg font-semibold transition"
-                  >
-                    Reset ke Gratis
-                  </button>
                 </div>
-              </div>
+              )}
+
             </div>
           )}
 
         </div>
 
-        {/* Footer info & Admin shortcut */}
+        {/* Footer info */}
         <div className="p-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
           <div className="flex items-center gap-1">
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-700" />
             <span>Al-Miftah Official Lifetime License</span>
           </div>
 
-          {!licenseState.isAdmin && (
-            <button
-              type="button"
-              onClick={handleLogoEasterEgg}
-              className="text-slate-400 hover:text-emerald-800 text-[10px] font-medium transition cursor-pointer"
-            >
-              Mode Admin
-            </button>
-          )}
+          <button
+            type="button"
+            onClick={() => setActiveTab('admin')}
+            className="text-indigo-600 hover:text-indigo-800 font-bold text-xs transition cursor-pointer flex items-center gap-1"
+          >
+            <Crown className="w-3 h-3" />
+            <span>Panel Admin</span>
+          </button>
         </div>
 
       </div>
