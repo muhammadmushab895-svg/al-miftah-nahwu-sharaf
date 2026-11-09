@@ -23,13 +23,16 @@ import {
   Award,
   SlidersHorizontal,
   Flame,
-  ArrowRight
+  ArrowRight,
+  Lock,
+  Crown
 } from 'lucide-react';
 import babList from '../data/01_kurikulum_bab.json';
 import materiList from '../data/02_materi_kaidah.json';
 import irabList from '../data/03_contoh_dan_irab.json';
 import { isBookmarked, saveBookmark, getCompletedMateri, toggleMateriComplete } from '../utils/storage';
 import { penjelasanAwamPerBab, getPenjelasanAwam } from '../data/penjelasan_awam';
+import { isBabFree } from '../utils/license';
 
 // Visualizers
 import IsimSignsVisualizer from './visualizers/IsimSignsVisualizer';
@@ -42,7 +45,7 @@ import SyntaxColorExplorer from './visualizers/SyntaxColorExplorer';
 import AmilMaulVisualizer from './visualizers/AmilMaulVisualizer';
 import LiveQuranCrossIndexerModal from './LiveQuranCrossIndexerModal';
 
-export default function MateriView({ fontSize = 28, onJumpToQuran }) {
+export default function MateriView({ fontSize = 28, onJumpToQuran, isPro = false, onOpenLicense }) {
   // Main states
   const [selectedBabId, setSelectedBabId] = useState(babList[0]?.id_bab || 'BAB-01');
   const [selectedMateriId, setSelectedMateriId] = useState(null);
@@ -168,6 +171,13 @@ export default function MateriView({ fontSize = 28, onJumpToQuran }) {
   const selectedBab = useMemo(() => {
     return babList.find(b => b.id_bab === selectedBabId) || babList[0];
   }, [selectedBabId]);
+
+  // Check if current Bab is locked for non-PRO users
+  const isCurrentBabLocked = useMemo(() => {
+    if (isPro) return false;
+    const origIndex = babList.findIndex(b => b.id_bab === selectedBab?.id_bab);
+    return !isBabFree(origIndex);
+  }, [isPro, selectedBab]);
 
   // Materi items for this Bab
   const subMateriList = useMemo(() => {
@@ -375,6 +385,8 @@ export default function MateriView({ fontSize = 28, onJumpToQuran }) {
               const babMateri = materiList.filter(m => m.id_bab === bab.id_bab);
               const completedCount = babMateri.filter(m => completedList.includes(m.id_materi)).length;
               const isBabCompleted = babMateri.length > 0 && completedCount === babMateri.length;
+              const origIndex = babList.findIndex(b => b.id_bab === bab.id_bab);
+              const isLocked = !isPro && !isBabFree(origIndex);
 
               return (
                 <button
@@ -399,9 +411,15 @@ export default function MateriView({ fontSize = 28, onJumpToQuran }) {
                       }`}>
                         {bab.id_bab}
                       </span>
-                      <span className={`text-[11px] truncate ${isSelected ? 'text-emerald-200' : 'text-slate-500'}`}>
-                        {bab.kategori}
-                      </span>
+                      {isLocked ? (
+                        <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-400/20 text-amber-500 border border-amber-400/30 flex items-center gap-0.5">
+                          <Lock className="w-2.5 h-2.5" /> PRO
+                        </span>
+                      ) : (
+                        <span className={`text-[11px] truncate ${isSelected ? 'text-emerald-200' : 'text-slate-500'}`}>
+                          {bab.kategori}
+                        </span>
+                      )}
                     </div>
 
                     <h4 className="font-bold text-sm leading-snug line-clamp-2">
@@ -490,8 +508,8 @@ export default function MateriView({ fontSize = 28, onJumpToQuran }) {
                 </div>
               </div>
 
-              {/* Sub-Topics Selector */}
-              {subMateriList.length > 0 && (
+              {/* Sub-Topics Selector (Hidden if Bab is locked for non-PRO) */}
+              {!isCurrentBabLocked && subMateriList.length > 0 && (
                 <div className="space-y-2.5">
                   <div className="flex items-center justify-between">
                     <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider">
@@ -530,9 +548,52 @@ export default function MateriView({ fontSize = 28, onJumpToQuran }) {
           )}
 
           {/* ============================================================== */}
-          {/* 3. ACTIVE SUB-MATERI CONTENT CARD                             */}
+          {/* 3. ACTIVE SUB-MATERI CONTENT CARD / PRO PAYWALL CARD           */}
           {/* ============================================================== */}
-          {activeMateri ? (
+          {isCurrentBabLocked ? (
+            <div className="bg-gradient-to-br from-emerald-950 via-slate-900 to-emerald-900 rounded-3xl p-8 sm:p-10 text-white shadow-xl border border-amber-400/30 text-center space-y-6">
+              <div className="w-16 h-16 rounded-2xl bg-amber-400/20 border border-amber-400/40 text-amber-400 mx-auto flex items-center justify-center shadow-inner">
+                <Lock className="w-8 h-8 text-amber-300" />
+              </div>
+
+              <div className="space-y-2 max-w-lg mx-auto">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400 text-emerald-950 text-xs font-black">
+                  <Crown className="w-3.5 h-3.5 fill-current" />
+                  KONTEN KHUSUS AL-MIFTAH PRO
+                </div>
+                <h3 className="text-xl sm:text-2xl font-black text-white">
+                  Buka Akses Bab {selectedBab.urutan}: {selectedBab.judul_indo}
+                </h3>
+                <p className="text-xs sm:text-sm text-emerald-100/80 leading-relaxed">
+                  Anda sedang menikmati versi gratis (Bab 1 s.d Bab 3). Untuk mempelajari <strong className="text-amber-300">Bab 4 hingga 42</strong> secara mendalam, akses I'rab 6.236 ayat Al-Qur'an 30 Juz lengkap, dan materi tathbiq lainnya, cukup bayar <strong>sekali seumur hidup</strong>.
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+                <button
+                  onClick={onOpenLicense}
+                  className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-emerald-950 font-black text-sm shadow-xl flex items-center justify-center gap-2 transform hover:scale-[1.02] transition cursor-pointer"
+                >
+                  <Crown className="w-4 h-4 fill-current" />
+                  <span>Beli Akses PRO (Rp 49.000 Sekali Bayar)</span>
+                </button>
+
+                <button
+                  onClick={onOpenLicense}
+                  className="w-full sm:w-auto px-5 py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 text-emerald-100 text-xs font-bold border border-white/20 transition flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <span>Masukkan Serial Key</span>
+                </button>
+              </div>
+
+              <div className="pt-4 border-t border-emerald-800/60 flex flex-wrap items-center justify-center gap-6 text-[11px] text-emerald-300/80">
+                <span className="flex items-center gap-1.5">✓ Sekali Bayar Selamanya</span>
+                <span className="flex items-center gap-1.5">✓ 42 Bab Nahwu & Sharaf</span>
+                <span className="flex items-center gap-1.5">✓ Full I'rab 30 Juz Al-Qur'an</span>
+                <span className="flex items-center gap-1.5">✓ Akses Selamanya di Semua Perangkat</span>
+              </div>
+            </div>
+          ) : activeMateri ? (
             <div className="bg-white rounded-3xl border border-slate-200/90 shadow-sm overflow-hidden space-y-6">
               
               {/* Header & Mode Switcher Bar */}

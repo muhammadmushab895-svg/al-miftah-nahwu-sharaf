@@ -24,12 +24,15 @@ import {
   Compass,
   BookCheck,
   ListOrdered,
-  ChevronDown
+  ChevronDown,
+  Lock,
+  Crown
 } from 'lucide-react';
 import quranExercisesData from '../data/06_latihan_quran.json';
 import { isBookmarked, saveBookmark } from '../utils/storage';
+import { isAyahFree, isSurahFree } from '../utils/license';
 
-export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetLocation }) {
+export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetLocation, isPro = false, onOpenLicense }) {
   // Main View Navigation: 'mushaf' (114 Surah, 6.236 Ayat) vs 'latihan' (520 Soal Binyah)
   const [mainView, setMainView] = useState('mushaf');
 
@@ -447,33 +450,43 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
                       </div>
                       
                       <div className="overflow-y-auto divide-y divide-slate-100 flex-1">
-                        {filteredSurahList.map(surah => (
-                          <button
-                            key={surah.id}
-                            onClick={() => {
-                              setSelectedSurahId(surah.id);
-                              setSurahDropdownOpen(false);
-                              setSurahSearch('');
-                            }}
-                            className={`w-full flex items-center justify-between p-2.5 rounded-xl text-left transition hover:bg-emerald-50 ${
-                              selectedSurahId === surah.id ? 'bg-emerald-100/70 font-bold' : ''
-                            }`}
-                          >
-                            <div className="flex items-center gap-3">
-                              <span className="w-7 h-7 rounded-md bg-slate-100 text-slate-700 font-mono text-xs flex items-center justify-center font-bold">
-                                {surah.id}
-                              </span>
-                              <div>
-                                <span className="text-sm text-slate-900 font-semibold">{surah.name_id}</span>
-                                <span className="text-xs text-slate-400 block">{surah.type} &bull; Juz {surah.juz}</span>
+                        {filteredSurahList.map(surah => {
+                          const isSurahLocked = !isPro && !isSurahFree(surah.id);
+                          return (
+                            <button
+                              key={surah.id}
+                              onClick={() => {
+                                setSelectedSurahId(surah.id);
+                                setSurahDropdownOpen(false);
+                                setSurahSearch('');
+                              }}
+                              className={`w-full flex items-center justify-between p-2.5 rounded-xl text-left transition hover:bg-emerald-50 ${
+                                selectedSurahId === surah.id ? 'bg-emerald-100/70 font-bold' : ''
+                              }`}
+                            >
+                              <div className="flex items-center gap-3">
+                                <span className="w-7 h-7 rounded-md bg-slate-100 text-slate-700 font-mono text-xs flex items-center justify-center font-bold">
+                                  {surah.id}
+                                </span>
+                                <div>
+                                  <div className="flex items-center gap-1.5">
+                                    <span className="text-sm text-slate-900 font-semibold">{surah.name_id}</span>
+                                    {isSurahLocked && (
+                                      <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-amber-400/20 text-amber-700 border border-amber-400/30">
+                                        PRO
+                                      </span>
+                                    )}
+                                  </div>
+                                  <span className="text-xs text-slate-400 block">{surah.type} &bull; Juz {surah.juz}</span>
+                                </div>
                               </div>
-                            </div>
-                            <div className="text-right">
-                              <span className="font-arabic font-bold text-lg text-emerald-900 block">{surah.name_ar}</span>
-                              <span className="text-[10px] text-slate-400">{surah.ayat_count} Ayat</span>
-                            </div>
-                          </button>
-                        ))}
+                              <div className="text-right">
+                                <span className="font-arabic font-bold text-lg text-emerald-900 block">{surah.name_ar}</span>
+                                <span className="text-[10px] text-slate-400">{surah.ayat_count} Ayat</span>
+                              </div>
+                            </button>
+                          );
+                        })}
                       </div>
                     </div>
                   )}
@@ -577,6 +590,7 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
                 currentMushafAyahs.map((ayah) => {
                   const ayahIdStr = `${ayah.surah_id}:${ayah.ayat_id}`;
                   const isTableOpen = mushafExpandedTables[ayahIdStr];
+                  const isLocked = !isPro && !isAyahFree(ayah.surah_id, ayah.ayat_id);
 
                   return (
                     <div
@@ -593,6 +607,11 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
                           <div>
                             <h3 className="text-base font-bold text-emerald-950 flex items-center gap-2">
                               QS. {ayah.surah_name} <span className="text-xs text-emerald-700 font-semibold font-mono">[{ayah.surah_id}:{ayah.ayat_id}]</span>
+                              {isLocked && (
+                                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-700 border border-amber-400/40 flex items-center gap-1">
+                                  <Lock className="w-3 h-3 text-amber-600" /> PRO
+                                </span>
+                              )}
                             </h3>
                           </div>
                         </div>
@@ -626,6 +645,10 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
                               <button
                                 key={wordIdx}
                                 onClick={() => {
+                                  if (isLocked) {
+                                    onOpenLicense?.();
+                                    return;
+                                  }
                                   if (isInspected) {
                                     setInspectedMushafWord(null);
                                   } else {
@@ -643,7 +666,7 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
                                     : `${statusClass} border-transparent`
                                 }`}
                                 style={{ fontSize: `${fontSize}px` }}
-                                title={`Klik untuk bedah I'rab & Sharaf: ${k.kata_arab}`}
+                                title={isLocked ? "Fitur I'rab kata per kata khusus Al-Miftah PRO" : `Klik untuk bedah I'rab & Sharaf: ${k.kata_arab}`}
                               >
                                 {k.kata_arab}
                               </button>
@@ -652,171 +675,199 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
                         </div>
                       </div>
 
-                      {/* Word Inspector Card (Dual Pillars: Nahwu & Sharaf) */}
-                      {inspectedMushafWord && inspectedMushafWord.ayahIdStr === ayahIdStr && (
-                        <div className="p-5 sm:p-6 bg-gradient-to-br from-amber-50/95 via-orange-50/40 to-white border-b-2 border-amber-300 space-y-4 animate-in fade-in duration-200">
-                          <div className="flex items-center justify-between border-b border-amber-200 pb-3">
-                            <div className="flex items-center gap-3">
-                              <span className="font-quran text-3xl font-bold text-emerald-950">
-                                {inspectedMushafWord.wordData.kata_arab}
-                              </span>
-                              <span className={`px-2.5 py-1 rounded-md text-xs font-bold ${getStatusColor(inspectedMushafWord.wordData.status_hukum)}`}>
-                                Status: {inspectedMushafWord.wordData.status_hukum}
-                              </span>
-                              <span className="text-xs text-slate-400 font-mono hidden sm:inline">
-                                ID: {inspectedMushafWord.wordData.id_kata}
-                              </span>
+                      {/* Word Inspector or PRO Banner */}
+                      {isLocked ? (
+                        <div className="p-4 sm:p-5 bg-gradient-to-r from-emerald-950 via-slate-900 to-emerald-950 text-white flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-amber-400/20">
+                          <div className="flex items-center gap-3 text-left">
+                            <div className="w-9 h-9 rounded-xl bg-amber-400/20 text-amber-400 flex items-center justify-center shrink-0 border border-amber-400/30">
+                              <Lock className="w-4 h-4 text-amber-300" />
                             </div>
+                            <div>
+                              <p className="text-xs sm:text-sm font-bold text-white flex items-center gap-1.5">
+                                <span>Bedah I'rab & Morfologi QS. {ayah.surah_name} [{ayah.surah_id}:{ayah.ayat_id}]</span>
+                              </p>
+                              <p className="text-[11px] text-emerald-200/80">
+                                Versi gratis mencakup 1/2 Juz 1 & 1/2 Juz 30. Dapatkan akses seluruh 6.236 ayat 30 Juz Al-Qur'an cukup sekali bayar seumur hidup.
+                              </p>
+                            </div>
+                          </div>
+                          <button
+                            onClick={onOpenLicense}
+                            className="shrink-0 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-emerald-950 text-xs font-black flex items-center gap-1.5 shadow-md transition transform hover:scale-[1.02] cursor-pointer"
+                          >
+                            <Crown className="w-3.5 h-3.5 fill-current" />
+                            <span>Buka Akses PRO (Rp 49.000)</span>
+                          </button>
+                        </div>
+                      ) : (
+                        <>
+                          {/* Word Inspector Card (Dual Pillars: Nahwu & Sharaf) */}
+                          {inspectedMushafWord && inspectedMushafWord.ayahIdStr === ayahIdStr && (
+                            <div className="p-5 sm:p-6 bg-gradient-to-br from-amber-50/95 via-orange-50/40 to-white border-b-2 border-amber-300 space-y-4 animate-in fade-in duration-200">
+                              <div className="flex items-center justify-between border-b border-amber-200 pb-3">
+                                <div className="flex items-center gap-3">
+                                  <span className="font-quran text-3xl font-bold text-emerald-950">
+                                    {inspectedMushafWord.wordData.kata_arab}
+                                  </span>
+                                  <span className={`px-2.5 py-1 rounded-md text-xs font-bold ${getStatusColor(inspectedMushafWord.wordData.status_hukum)}`}>
+                                    Status: {inspectedMushafWord.wordData.status_hukum}
+                                  </span>
+                                  <span className="text-xs text-slate-400 font-mono hidden sm:inline">
+                                    ID: {inspectedMushafWord.wordData.id_kata}
+                                  </span>
+                                </div>
+                                <button
+                                  onClick={() => setInspectedMushafWord(null)}
+                                  className="text-xs text-amber-900 hover:text-black font-bold bg-amber-200 hover:bg-amber-300 px-3 py-1.5 rounded-lg transition"
+                                >
+                                  Tutup Bedah Kata ✕
+                                </button>
+                              </div>
+
+                              {/* Dual Pillars Grid */}
+                              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                
+                                {/* Pilar 1: Sintaksis & I'rab Nahwu */}
+                                <div className="bg-white rounded-xl p-4 border border-emerald-200 shadow-2xs space-y-3">
+                                  <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-900 uppercase tracking-wide border-b border-emerald-100 pb-2">
+                                    <BookOpen className="w-4 h-4 text-emerald-700" />
+                                    1. Analisis I'rab Nahwu (Sintaksis)
+                                  </div>
+                                  
+                                  <div>
+                                    <span className="text-[11px] text-slate-400 block">Kedudukan I'rab (موقع الإعراب):</span>
+                                    <p className="font-arabic font-bold text-base text-emerald-950 mt-0.5 leading-relaxed text-right">
+                                      {inspectedMushafWord.wordData.kedudukan_irab}
+                                    </p>
+                                    {inspectedMushafWord.wordData.kedudukan_indo && (
+                                      <p className="text-xs text-slate-600 mt-1 font-medium">
+                                        {inspectedMushafWord.wordData.kedudukan_indo}
+                                      </p>
+                                    )}
+                                  </div>
+
+                                  <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-xs">
+                                    <span className="text-slate-500">Tanda I'rab:</span>
+                                    <span className="font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                                      {inspectedMushafWord.wordData.tanda_irab}
+                                    </span>
+                                  </div>
+
+                                  {inspectedMushafWord.wordData.rincian_segmen && (
+                                    <div className="text-[11px] text-slate-600 pt-1 border-t border-slate-100">
+                                      <span className="text-slate-400 block text-[10px]">Segmen Morfo-Sintaksis:</span>
+                                      <span className="font-mono text-emerald-900 font-semibold">{inspectedMushafWord.wordData.rincian_segmen}</span>
+                                    </div>
+                                  )}
+                                </div>
+
+                                {/* Pilar 2: Morfologi & Derivasi Sharaf */}
+                                <div className="bg-white rounded-xl p-4 border border-amber-200 shadow-2xs space-y-3">
+                                  <div className="flex items-center gap-1.5 text-xs font-bold text-amber-900 uppercase tracking-wide border-b border-amber-100 pb-2">
+                                    <Sparkles className="w-4 h-4 text-amber-600" />
+                                    2. Analisis Morfologi Sharaf (Binyah)
+                                  </div>
+
+                                  <div className="grid grid-cols-2 gap-2 text-xs">
+                                    <div className="bg-amber-50/70 p-2.5 rounded-lg border border-amber-100">
+                                      <span className="text-[10px] text-slate-500 block">Jenis Kata:</span>
+                                      <span className="font-bold text-slate-800">{inspectedMushafWord.wordData.jenis_kata_sharaf}</span>
+                                    </div>
+                                    <div className="bg-amber-50/70 p-2.5 rounded-lg border border-amber-100">
+                                      <span className="text-[10px] text-slate-500 block">Timbangan Wazan:</span>
+                                      <span className="font-arabic text-lg font-bold text-amber-900">{inspectedMushafWord.wordData.wazan_sharaf || '-'}</span>
+                                    </div>
+                                  </div>
+
+                                  <div className="grid grid-cols-2 gap-2 text-xs">
+                                    <div className="bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                                      <span className="text-[10px] text-slate-500 block">Akar Kata:</span>
+                                      <span className="font-arabic font-bold text-base text-slate-900">{inspectedMushafWord.wordData.akar_kata || '-'}</span>
+                                    </div>
+                                    <div className="bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                                      <span className="text-[10px] text-slate-500 block">Jenis Bina':</span>
+                                      <span className="font-semibold text-slate-800">{inspectedMushafWord.wordData.jenis_bina || '-'}</span>
+                                    </div>
+                                  </div>
+
+                                  {inspectedMushafWord.wordData.lemma && (
+                                    <div className="text-[11px] text-slate-600 pt-1 border-t border-slate-100 flex items-center justify-between">
+                                      <span className="text-slate-400 text-[10px]">Lemma / Asal:</span>
+                                      <span className="font-arabic font-bold text-sm text-amber-900">{inspectedMushafWord.wordData.lemma}</span>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+                          )}
+
+                          {/* Table Bedah Toggle & Footer */}
+                          <div className="p-4 bg-white flex flex-wrap items-center justify-between gap-3">
+                            <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
+                              <span className="font-medium">Klik salah satu kata di atas untuk bedah instan, atau buka tabel komprehensif:</span>
+                            </div>
+
                             <button
-                              onClick={() => setInspectedMushafWord(null)}
-                              className="text-xs text-amber-900 hover:text-black font-bold bg-amber-200 hover:bg-amber-300 px-3 py-1.5 rounded-lg transition"
+                              onClick={() => toggleMushafTable(ayahIdStr)}
+                              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition shadow-xs ${
+                                isTableOpen
+                                  ? 'bg-amber-400 text-emerald-950 hover:bg-amber-300'
+                                  : 'bg-emerald-900 text-amber-300 hover:bg-emerald-800'
+                              }`}
                             >
-                              Tutup Bedah Kata ✕
+                              <SlidersHorizontal className="w-3.5 h-3.5" />
+                              <span>{isTableOpen ? 'Tutup Tabel Bedah' : `Tabel Bedah Seluruh Kata (${ayah.total_kata})`}</span>
                             </button>
                           </div>
 
-                          {/* Dual Pillars Grid */}
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            
-                            {/* Pilar 1: Sintaksis & I'rab Nahwu */}
-                            <div className="bg-white rounded-xl p-4 border border-emerald-200 shadow-2xs space-y-3">
-                              <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-900 uppercase tracking-wide border-b border-emerald-100 pb-2">
-                                <BookOpen className="w-4 h-4 text-emerald-700" />
-                                1. Analisis I'rab Nahwu (Sintaksis)
-                              </div>
-                              
-                              <div>
-                                <span className="text-[11px] text-slate-400 block">Kedudukan I'rab (موقع الإعراب):</span>
-                                <p className="font-arabic font-bold text-base text-emerald-950 mt-0.5 leading-relaxed text-right">
-                                  {inspectedMushafWord.wordData.kedudukan_irab}
-                                </p>
-                                {inspectedMushafWord.wordData.kedudukan_indo && (
-                                  <p className="text-xs text-slate-600 mt-1 font-medium">
-                                    {inspectedMushafWord.wordData.kedudukan_indo}
-                                  </p>
-                                )}
-                              </div>
-
-                              <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-xs">
-                                <span className="text-slate-500">Tanda I'rab:</span>
-                                <span className="font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-                                  {inspectedMushafWord.wordData.tanda_irab}
-                                </span>
-                              </div>
-
-                              {inspectedMushafWord.wordData.rincian_segmen && (
-                                <div className="text-[11px] text-slate-600 pt-1 border-t border-slate-100">
-                                  <span className="text-slate-400 block text-[10px]">Segmen Morfo-Sintaksis:</span>
-                                  <span className="font-mono text-emerald-900 font-semibold">{inspectedMushafWord.wordData.rincian_segmen}</span>
-                                </div>
-                              )}
+                          {/* Full Table Breakdown per Ayah */}
+                          {isTableOpen && (
+                            <div className="border-t border-slate-200 overflow-x-auto bg-slate-50/50 p-4 animate-in fade-in duration-200">
+                              <table className="w-full text-left text-xs divide-y divide-slate-200 bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+                                <thead className="bg-slate-100 text-slate-800 font-bold">
+                                  <tr>
+                                    <th className="p-3">Kata (Arab)</th>
+                                    <th className="p-3">I'rab Nahwu (Sintaksis)</th>
+                                    <th className="p-3">Status & Tanda</th>
+                                    <th className="p-3">Binyah Sharaf</th>
+                                    <th className="p-3">Wazan & Bina'</th>
+                                    <th className="p-3">Akar Kata & Segmen</th>
+                                  </tr>
+                                </thead>
+                                <tbody className="divide-y divide-slate-100">
+                                  {ayah.kata_per_kata.map((w, wIdx) => (
+                                    <tr key={wIdx} className="hover:bg-amber-50/40 transition">
+                                      <td className="p-3 font-quran text-2xl font-bold text-emerald-950 whitespace-nowrap">
+                                        {w.kata_arab}
+                                      </td>
+                                      <td className="p-3 space-y-1 min-w-[200px]">
+                                        <div className="font-arabic font-semibold text-sm text-slate-900 text-right">{w.kedudukan_irab}</div>
+                                        <div className="text-[11px] text-slate-500">{w.kedudukan_indo}</div>
+                                      </td>
+                                      <td className="p-3 whitespace-nowrap">
+                                        <span className={`inline-block px-2 py-0.5 rounded text-[11px] font-bold ${getStatusColor(w.status_hukum)}`}>
+                                          {w.status_hukum}
+                                        </span>
+                                        <div className="text-[10px] text-slate-500 mt-1">{w.tanda_irab}</div>
+                                      </td>
+                                      <td className="p-3 font-semibold text-slate-800 whitespace-nowrap">
+                                        {w.jenis_kata_sharaf}
+                                      </td>
+                                      <td className="p-3 whitespace-nowrap">
+                                        <div className="font-arabic font-bold text-base text-amber-900">{w.wazan_sharaf || '-'}</div>
+                                        <div className="text-[10px] text-slate-500">{w.jenis_bina || '-'}</div>
+                                      </td>
+                                      <td className="p-3 text-[11px] text-slate-600 max-w-xs space-y-0.5">
+                                        <span className="font-arabic font-bold text-xs text-emerald-800 block">{w.akar_kata}</span>
+                                        <span className="font-mono text-[10px] text-slate-500">{w.rincian_segmen}</span>
+                                      </td>
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </table>
                             </div>
-
-                            {/* Pilar 2: Morfologi & Derivasi Sharaf */}
-                            <div className="bg-white rounded-xl p-4 border border-amber-200 shadow-2xs space-y-3">
-                              <div className="flex items-center gap-1.5 text-xs font-bold text-amber-900 uppercase tracking-wide border-b border-amber-100 pb-2">
-                                <Sparkles className="w-4 h-4 text-amber-600" />
-                                2. Analisis Morfologi Sharaf (Binyah)
-                              </div>
-
-                              <div className="grid grid-cols-2 gap-2 text-xs">
-                                <div className="bg-amber-50/70 p-2.5 rounded-lg border border-amber-100">
-                                  <span className="text-[10px] text-slate-500 block">Jenis Kata:</span>
-                                  <span className="font-bold text-slate-800">{inspectedMushafWord.wordData.jenis_kata_sharaf}</span>
-                                </div>
-                                <div className="bg-amber-50/70 p-2.5 rounded-lg border border-amber-100">
-                                  <span className="text-[10px] text-slate-500 block">Timbangan Wazan:</span>
-                                  <span className="font-arabic text-lg font-bold text-amber-900">{inspectedMushafWord.wordData.wazan_sharaf || '-'}</span>
-                                </div>
-                              </div>
-
-                              <div className="grid grid-cols-2 gap-2 text-xs">
-                                <div className="bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                                  <span className="text-[10px] text-slate-500 block">Akar Kata:</span>
-                                  <span className="font-arabic font-bold text-base text-slate-900">{inspectedMushafWord.wordData.akar_kata || '-'}</span>
-                                </div>
-                                <div className="bg-slate-50 p-2.5 rounded-lg border border-slate-100">
-                                  <span className="text-[10px] text-slate-500 block">Jenis Bina':</span>
-                                  <span className="font-semibold text-slate-800">{inspectedMushafWord.wordData.jenis_bina || '-'}</span>
-                                </div>
-                              </div>
-
-                              {inspectedMushafWord.wordData.lemma && (
-                                <div className="text-[11px] text-slate-600 pt-1 border-t border-slate-100 flex items-center justify-between">
-                                  <span className="text-slate-400 text-[10px]">Lemma / Asal:</span>
-                                  <span className="font-arabic font-bold text-sm text-amber-900">{inspectedMushafWord.wordData.lemma}</span>
-                                </div>
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                      )}
-
-                      {/* Table Bedah Toggle & Footer */}
-                      <div className="p-4 bg-white flex flex-wrap items-center justify-between gap-3">
-                        <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
-                          <span className="font-medium">Klik salah satu kata di atas untuk bedah instan, atau buka tabel komprehensif:</span>
-                        </div>
-
-                        <button
-                          onClick={() => toggleMushafTable(ayahIdStr)}
-                          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition shadow-xs ${
-                            isTableOpen
-                              ? 'bg-amber-400 text-emerald-950 hover:bg-amber-300'
-                              : 'bg-emerald-900 text-amber-300 hover:bg-emerald-800'
-                          }`}
-                        >
-                          <SlidersHorizontal className="w-3.5 h-3.5" />
-                          <span>{isTableOpen ? 'Tutup Tabel Bedah' : `Tabel Bedah Seluruh Kata (${ayah.total_kata})`}</span>
-                        </button>
-                      </div>
-
-                      {/* Full Table Breakdown per Ayah */}
-                      {isTableOpen && (
-                        <div className="border-t border-slate-200 overflow-x-auto bg-slate-50/50 p-4 animate-in fade-in duration-200">
-                          <table className="w-full text-left text-xs divide-y divide-slate-200 bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
-                            <thead className="bg-slate-100 text-slate-800 font-bold">
-                              <tr>
-                                <th className="p-3">Kata (Arab)</th>
-                                <th className="p-3">I'rab Nahwu (Sintaksis)</th>
-                                <th className="p-3">Status & Tanda</th>
-                                <th className="p-3">Binyah Sharaf</th>
-                                <th className="p-3">Wazan & Bina'</th>
-                                <th className="p-3">Akar Kata & Segmen</th>
-                              </tr>
-                            </thead>
-                            <tbody className="divide-y divide-slate-100">
-                              {ayah.kata_per_kata.map((w, wIdx) => (
-                                <tr key={wIdx} className="hover:bg-amber-50/40 transition">
-                                  <td className="p-3 font-quran text-2xl font-bold text-emerald-950 whitespace-nowrap">
-                                    {w.kata_arab}
-                                  </td>
-                                  <td className="p-3 space-y-1 min-w-[200px]">
-                                    <div className="font-arabic font-semibold text-sm text-slate-900 text-right">{w.kedudukan_irab}</div>
-                                    <div className="text-[11px] text-slate-500">{w.kedudukan_indo}</div>
-                                  </td>
-                                  <td className="p-3 whitespace-nowrap">
-                                    <span className={`inline-block px-2 py-0.5 rounded text-[11px] font-bold ${getStatusColor(w.status_hukum)}`}>
-                                      {w.status_hukum}
-                                    </span>
-                                    <div className="text-[10px] text-slate-500 mt-1">{w.tanda_irab}</div>
-                                  </td>
-                                  <td className="p-3 font-semibold text-slate-800 whitespace-nowrap">
-                                    {w.jenis_kata_sharaf}
-                                  </td>
-                                  <td className="p-3 whitespace-nowrap">
-                                    <div className="font-arabic font-bold text-base text-amber-900">{w.wazan_sharaf || '-'}</div>
-                                    <div className="text-[10px] text-slate-500">{w.jenis_bina || '-'}</div>
-                                  </td>
-                                  <td className="p-3 text-[11px] text-slate-600 max-w-xs space-y-0.5">
-                                    <span className="font-arabic font-bold text-xs text-emerald-800 block">{w.akar_kata}</span>
-                                    <span className="font-mono text-[10px] text-slate-500">{w.rincian_segmen}</span>
-                                  </td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        </div>
+                          )}
+                        </>
                       )}
                     </div>
                   );
@@ -995,6 +1046,8 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
             {currentExercises.map((item) => {
               const bookmarked = isBookmarked(item.id_latihan, 'quran');
               const qAns = quizAnswers[item.id_latihan];
+              const [sIdStr, aIdStr] = (item.kata_per_kata?.[0]?.id_kata || '1:1:1').split(':');
+              const isExerciseLocked = !isPro && !isAyahFree(parseInt(sIdStr, 10), parseInt(aIdStr, 10));
 
               return (
                 <div
@@ -1009,6 +1062,11 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
                       </span>
                       <h3 className="text-base font-bold text-emerald-950 flex items-center gap-2">
                         QS. {item.surah} <span className="text-xs text-emerald-700 font-semibold">[{item.ayat}]</span>
+                        {isExerciseLocked && (
+                          <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-700 border border-amber-400/40 flex items-center gap-1">
+                            <Lock className="w-3 h-3 text-amber-600" /> PRO
+                          </span>
+                        )}
                       </h3>
                       <span className="text-xs text-slate-500 bg-slate-200/60 px-2 py-0.5 rounded-full">
                         Juz {item.juz}
@@ -1065,6 +1123,10 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
                           <button
                             key={wordIdx}
                             onClick={() => {
+                              if (isExerciseLocked) {
+                                onOpenLicense?.();
+                                return;
+                              }
                               if (exerciseSubMode === 'inspector') {
                                 if (isInspected) {
                                   setInspectedExerciseWord(null);
@@ -1079,7 +1141,7 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
                                 : `${statusClass} border-transparent`
                             }`}
                             style={{ fontSize: `${fontSize}px` }}
-                            title={`Klik untuk bedah: ${k.kata_arab}`}
+                            title={isExerciseLocked ? "Latihan ini khusus Al-Miftah PRO" : `Klik untuk bedah: ${k.kata_arab}`}
                           >
                             {k.kata_arab}
                           </button>
@@ -1092,194 +1154,222 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
                     </p>
                   </div>
 
-                  {/* Inspector Details in Latihan */}
-                  {exerciseSubMode === 'inspector' && (
-                    <div className="p-5 sm:p-6 space-y-4 bg-white">
-                      {inspectedExerciseWord && inspectedExerciseWord.itemId === item.id_latihan && (
-                        <div className="bg-gradient-to-br from-amber-50/90 via-orange-50/40 to-white border-2 border-amber-300 rounded-2xl p-5 space-y-4 animate-in fade-in duration-200 shadow-md">
-                          <div className="flex items-center justify-between border-b border-amber-200 pb-3">
-                            <div className="flex items-center gap-3">
-                              <span className="font-quran text-3xl font-bold text-emerald-950">
-                                {inspectedExerciseWord.wordData.kata_arab}
-                              </span>
-                              <span className={`px-2.5 py-1 rounded-md text-xs font-bold ${getStatusColor(inspectedExerciseWord.wordData.status_hukum)}`}>
-                                {inspectedExerciseWord.wordData.status_hukum}
-                              </span>
-                            </div>
-                            <button
-                              onClick={() => setInspectedExerciseWord(null)}
-                              className="text-xs text-amber-900 hover:text-black font-bold bg-amber-200 hover:bg-amber-300 px-3 py-1 rounded-lg transition"
-                            >
-                              Tutup Detail ✕
-                            </button>
-                          </div>
-
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {/* Nahwu */}
-                            <div className="bg-white rounded-xl p-4 border border-emerald-200 shadow-2xs space-y-2">
-                              <span className="text-xs font-bold text-emerald-900 uppercase">1. Sintaksis & I'rab Nahwu</span>
-                              <p className="font-arabic font-bold text-base text-emerald-950 text-right">
-                                {inspectedExerciseWord.wordData.kedudukan_irab}
-                              </p>
-                              <div className="pt-1 text-xs text-slate-600 flex justify-between">
-                                <span>Tanda I'rab:</span>
-                                <span className="font-semibold text-emerald-800">{inspectedExerciseWord.wordData.tanda_irab}</span>
-                              </div>
-                            </div>
-                            {/* Sharaf */}
-                            <div className="bg-white rounded-xl p-4 border border-amber-200 shadow-2xs space-y-2">
-                              <span className="text-xs font-bold text-amber-900 uppercase">2. Morfologi Sharaf (Binyah)</span>
-                              <div className="grid grid-cols-2 gap-2 text-xs">
-                                <div className="bg-amber-50 p-2 rounded">
-                                  <span className="text-[10px] text-slate-500 block">Wazan:</span>
-                                  <span className="font-arabic text-base font-bold text-amber-900">{inspectedExerciseWord.wordData.wazan_sharaf || '-'}</span>
-                                </div>
-                                <div className="bg-slate-50 p-2 rounded">
-                                  <span className="text-[10px] text-slate-500 block">Akar:</span>
-                                  <span className="font-arabic text-sm font-bold text-slate-800">{inspectedExerciseWord.wordData.akar_kata || '-'}</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                  {/* PRO Locked Box or Latihan Content */}
+                  {isExerciseLocked ? (
+                    <div className="p-4 sm:p-5 bg-gradient-to-r from-emerald-950 via-slate-900 to-emerald-950 text-white flex flex-col sm:flex-row items-center justify-between gap-3">
+                      <div className="flex items-center gap-3 text-left">
+                        <div className="w-9 h-9 rounded-xl bg-amber-400/20 text-amber-400 flex items-center justify-center shrink-0 border border-amber-400/30">
+                          <Lock className="w-4 h-4 text-amber-300" />
                         </div>
-                      )}
-
-                      {/* Full Tathbiqi Sentence I'rab */}
-                      <div className="bg-slate-50 rounded-xl p-4 border border-slate-200/80 text-right space-y-2">
-                        <span className="text-xs font-bold tracking-wider text-emerald-900 uppercase flex items-center gap-1.5 float-left">
-                          <BookOpen className="w-3.5 h-3.5 text-amber-600" />
-                          Tathbiq I'rab (An-Nahwu At-Tathbiqi):
-                        </span>
-                        <div className="clear-both"></div>
-                        <p className="font-arabic text-lg sm:text-xl text-slate-800 leading-relaxed font-medium">
-                          {item.rincian_irab_tathbiqi}
-                        </p>
-                      </div>
-
-                      {/* Toggle Table Button */}
-                      <div className="flex justify-end pt-1">
-                        <button
-                          onClick={() => toggleExerciseTable(item.id_latihan)}
-                          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-emerald-900 text-amber-300 hover:bg-emerald-800 transition"
-                        >
-                          <SlidersHorizontal className="w-3.5 h-3.5" />
-                          <span>{expandedExerciseTableAyah[item.id_latihan] ? 'Tutup Tabel Bedah' : `Tabel Bedah Semua Kata (${item.kata_per_kata?.length || 0})`}</span>
-                        </button>
-                      </div>
-
-                      {/* Full Table */}
-                      {expandedExerciseTableAyah[item.id_latihan] && (
-                        <div className="overflow-x-auto rounded-xl border border-slate-200 mt-2">
-                          <table className="w-full text-left text-xs divide-y divide-slate-200">
-                            <thead className="bg-slate-100 text-slate-800 font-bold">
-                              <tr>
-                                <th className="p-3">Kata (Arab)</th>
-                                <th className="p-3">I'rab Nahwu</th>
-                                <th className="p-3">Status</th>
-                                <th className="p-3">Jenis Kata</th>
-                                <th className="p-3">Wazan & Bina'</th>
-                                <th className="p-3">Akar Kata</th>
-                              </tr>
-                            </thead>
-                            <tbody className="bg-white divide-y divide-slate-100">
-                              {item.kata_per_kata.map((w, wIdx) => (
-                                <tr key={wIdx}>
-                                  <td className="p-3 font-quran text-xl font-bold text-emerald-950">{w.kata_arab}</td>
-                                  <td className="p-3 font-arabic text-sm text-right">{w.kedudukan_irab}</td>
-                                  <td className="p-3"><span className={`px-2 py-0.5 rounded text-[10px] font-bold ${getStatusColor(w.status_hukum)}`}>{w.status_hukum}</span></td>
-                                  <td className="p-3">{w.jenis_kata_sharaf}</td>
-                                  <td className="p-3 font-arabic font-bold text-amber-900">{w.wazan_sharaf}</td>
-                                  <td className="p-3 font-arabic font-bold text-emerald-800">{w.akar_kata}</td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  {/* Quiz Submode */}
-                  {exerciseSubMode === 'quiz' && item.pertanyaan_latihan && (
-                    <div className="p-5 sm:p-6 space-y-4 bg-white">
-                      <div className="flex items-start gap-3 bg-amber-50/70 p-4 rounded-xl border border-amber-200">
-                        <HelpCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                         <div>
-                          <span className="text-xs font-bold text-amber-800 uppercase tracking-wide">
-                            Tantangan Uji Analisis:
-                          </span>
-                          <p className="text-sm font-semibold text-slate-800 mt-1">
-                            {item.pertanyaan_latihan.pertanyaan}
+                          <p className="text-xs sm:text-sm font-bold text-white flex items-center gap-1.5">
+                            <span>Latihan I'rab & Sharaf QS. {item.surah} [{item.ayat}]</span>
+                          </p>
+                          <p className="text-[11px] text-emerald-200/80">
+                            Soal latihan ini khusus pengguna Al-Miftah PRO. Dapatkan akses ke 520 soal bedah & kuis tematik lengkap seumur hidup.
                           </p>
                         </div>
                       </div>
+                      <button
+                        onClick={onOpenLicense}
+                        className="shrink-0 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-emerald-950 text-xs font-black flex items-center gap-1.5 shadow-md transition transform hover:scale-[1.02] cursor-pointer"
+                      >
+                        <Crown className="w-3.5 h-3.5 fill-current" />
+                        <span>Buka Akses PRO (Rp 49.000)</span>
+                      </button>
+                    </div>
+                  ) : (
+                    <>
+                      {/* Inspector Details in Latihan */}
+                      {exerciseSubMode === 'inspector' && (
+                        <div className="p-5 sm:p-6 space-y-4 bg-white">
+                          {inspectedExerciseWord && inspectedExerciseWord.itemId === item.id_latihan && (
+                            <div className="bg-gradient-to-br from-amber-50/90 via-orange-50/40 to-white border-2 border-amber-300 rounded-2xl p-5 space-y-4 animate-in fade-in duration-200 shadow-md">
+                              <div className="flex items-center justify-between border-b border-amber-200 pb-3">
+                                <div className="flex items-center gap-3">
+                                  <span className="font-quran text-3xl font-bold text-emerald-950">
+                                    {inspectedExerciseWord.wordData.kata_arab}
+                                  </span>
+                                  <span className={`px-2.5 py-1 rounded-md text-xs font-bold ${getStatusColor(inspectedExerciseWord.wordData.status_hukum)}`}>
+                                    {inspectedExerciseWord.wordData.status_hukum}
+                                  </span>
+                                </div>
+                                <button
+                                  onClick={() => setInspectedExerciseWord(null)}
+                                  className="text-xs text-amber-900 hover:text-black font-bold bg-amber-200 hover:bg-amber-300 px-3 py-1 rounded-lg transition"
+                                >
+                                  Tutup Detail ✕
+                                </button>
+                              </div>
 
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                        {['A', 'B', 'C', 'D'].map(optKey => {
-                          const optText = item.pertanyaan_latihan[`opsi_${optKey.toLowerCase()}`];
-                          if (!optText) return null;
+                              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {/* Nahwu */}
+                                <div className="bg-white rounded-xl p-4 border border-emerald-200 shadow-2xs space-y-2">
+                                  <span className="text-xs font-bold text-emerald-900 uppercase">1. Sintaksis & I'rab Nahwu</span>
+                                  <p className="font-arabic font-bold text-base text-emerald-950 text-right">
+                                    {inspectedExerciseWord.wordData.kedudukan_irab}
+                                  </p>
+                                  <div className="pt-1 text-xs text-slate-600 flex justify-between">
+                                    <span>Tanda I'rab:</span>
+                                    <span className="font-semibold text-emerald-800">{inspectedExerciseWord.wordData.tanda_irab}</span>
+                                  </div>
+                                </div>
+                                {/* Sharaf */}
+                                <div className="bg-white rounded-xl p-4 border border-amber-200 shadow-2xs space-y-2">
+                                  <span className="text-xs font-bold text-amber-900 uppercase">2. Morfologi Sharaf (Binyah)</span>
+                                  <div className="grid grid-cols-2 gap-2 text-xs">
+                                    <div className="bg-amber-50 p-2 rounded">
+                                      <span className="text-[10px] text-slate-500 block">Wazan:</span>
+                                      <span className="font-arabic text-base font-bold text-amber-900">{inspectedExerciseWord.wordData.wazan_sharaf || '-'}</span>
+                                    </div>
+                                    <div className="bg-slate-50 p-2 rounded">
+                                      <span className="text-[10px] text-slate-500 block">Akar:</span>
+                                      <span className="font-arabic text-sm font-bold text-slate-800">{inspectedExerciseWord.wordData.akar_kata || '-'}</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          )}
 
-                          const isSelected = qAns?.selected === optKey;
-                          const isCorrectKey = item.pertanyaan_latihan.jawaban_benar.toUpperCase() === optKey;
-                          
-                          let btnStyle = "bg-slate-50 border-slate-200 hover:bg-slate-100 text-slate-700";
-                          if (qAns) {
-                            if (isCorrectKey) {
-                              btnStyle = "bg-emerald-100 border-emerald-400 text-emerald-950 font-bold ring-2 ring-emerald-400";
-                            } else if (isSelected && !qAns.isCorrect) {
-                              btnStyle = "bg-rose-100 border-rose-300 text-rose-900 font-semibold";
-                            } else {
-                              btnStyle = "bg-slate-50 border-slate-200 text-slate-400 opacity-60";
-                            }
-                          }
-
-                          return (
-                            <button
-                              key={optKey}
-                              disabled={!!qAns}
-                              onClick={() => handleSelectQuizOption(item, optKey)}
-                              className={`flex items-center gap-3 p-3 rounded-xl border text-left text-sm transition-all duration-150 ${btnStyle}`}
-                            >
-                              <span className={`w-7 h-7 rounded-lg flex items-center justify-center font-bold text-xs shrink-0 ${
-                                isSelected
-                                  ? (qAns.isCorrect ? 'bg-emerald-600 text-white' : 'bg-rose-600 text-white')
-                                  : (qAns && isCorrectKey ? 'bg-emerald-600 text-white' : 'bg-slate-200 text-slate-700')
-                              }`}>
-                                {optKey}
-                              </span>
-                              <span className="flex-1 font-medium">{optText}</span>
-                              {qAns && isCorrectKey && <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />}
-                              {qAns && isSelected && !qAns.isCorrect && <XCircle className="w-5 h-5 text-rose-600 shrink-0" />}
-                            </button>
-                          );
-                        })}
-                      </div>
-
-                      {qAns && (
-                        <div className={`p-4 rounded-xl border text-sm space-y-2 animate-in fade-in duration-200 ${
-                          qAns.isCorrect 
-                            ? 'bg-emerald-50/80 border-emerald-300 text-emerald-950' 
-                            : 'bg-rose-50/80 border-rose-200 text-slate-800'
-                        }`}>
-                          <div className="font-bold">
-                            {qAns.isCorrect ? (
-                              <span className="text-emerald-800 flex items-center gap-1.5">
-                                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                                Mumtaz! Jawaban Anda Benar (Kunci: {item.pertanyaan_latihan.jawaban_benar})
-                              </span>
-                            ) : (
-                              <span className="text-rose-800 flex items-center gap-1.5">
-                                <XCircle className="w-4 h-4 text-rose-600" />
-                                Kurang Tepat. Jawaban yang Benar: {item.pertanyaan_latihan.jawaban_benar}
-                              </span>
-                            )}
+                          {/* Full Tathbiqi Sentence I'rab */}
+                          <div className="bg-slate-50 rounded-xl p-4 border border-slate-200/80 text-right space-y-2">
+                            <span className="text-xs font-bold tracking-wider text-emerald-900 uppercase flex items-center gap-1.5 float-left">
+                              <BookOpen className="w-3.5 h-3.5 text-amber-600" />
+                              Tathbiq I'rab (An-Nahwu At-Tathbiqi):
+                            </span>
+                            <div className="clear-both"></div>
+                            <p className="font-arabic text-lg sm:text-xl text-slate-800 leading-relaxed font-medium">
+                              {item.rincian_irab_tathbiqi}
+                            </p>
                           </div>
-                          <p className="text-xs leading-relaxed text-slate-700 bg-white/70 p-3 rounded-lg border border-slate-200/60">
-                            <strong>Pembahasan Kaidah Al-Qur'an:</strong> {item.pertanyaan_latihan.pembahasan}
-                          </p>
+
+                          {/* Toggle Table Button */}
+                          <div className="flex justify-end pt-1">
+                            <button
+                              onClick={() => toggleExerciseTable(item.id_latihan)}
+                              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-emerald-900 text-amber-300 hover:bg-emerald-800 transition"
+                            >
+                              <SlidersHorizontal className="w-3.5 h-3.5" />
+                              <span>{expandedExerciseTableAyah[item.id_latihan] ? 'Tutup Tabel Bedah' : `Tabel Bedah Semua Kata (${item.kata_per_kata?.length || 0})`}</span>
+                            </button>
+                          </div>
+
+                          {/* Full Table */}
+                          {expandedExerciseTableAyah[item.id_latihan] && (
+                            <div className="overflow-x-auto rounded-xl border border-slate-200 mt-2">
+                              <table className="w-full text-left text-xs divide-y divide-slate-200">
+                                <thead className="bg-slate-100 text-slate-800 font-bold">
+                                  <tr>
+                                    <th className="p-3">Kata (Arab)</th>
+                                    <th className="p-3">I'rab Nahwu</th>
+                                    <th className="p-3">Status</th>
+                                    <th className="p-3">Jenis Kata</th>
+                                    <th className="p-3">Wazan & Bina'</th>
+                                    <th className="p-3">Akar Kata</th>
+                                  </tr>
+                                </thead>
+                                <tbody className="bg-white divide-y divide-slate-100">
+                                  {item.kata_per_kata.map((w, wIdx) => (
+                                    <tr key={wIdx}>
+                                      <td className="p-3 font-quran text-xl font-bold text-emerald-950">{w.kata_arab}</td>
+                                      <td className="p-3 font-arabic text-sm text-right">{w.kedudukan_irab}</td>
+                                      <td className="p-3"><span className={`px-2 py-0.5 rounded text-[10px] font-bold ${getStatusColor(w.status_hukum)}`}>{w.status_hukum}</span></td>
+                                      <td className="p-3">{w.jenis_kata_sharaf}</td>
+                                      <td className="p-3 font-arabic font-bold text-amber-900">{w.wazan_sharaf}</td>
+                                      <td className="p-3 font-arabic font-bold text-emerald-800">{w.akar_kata}</td>
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </table>
+                            </div>
+                          )}
                         </div>
                       )}
-                    </div>
+
+                      {/* Quiz Submode */}
+                      {exerciseSubMode === 'quiz' && item.pertanyaan_latihan && (
+                        <div className="p-5 sm:p-6 space-y-4 bg-white">
+                          <div className="flex items-start gap-3 bg-amber-50/70 p-4 rounded-xl border border-amber-200">
+                            <HelpCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                            <div>
+                              <span className="text-xs font-bold text-amber-800 uppercase tracking-wide">
+                                Tantangan Uji Analisis:
+                              </span>
+                              <p className="text-sm font-semibold text-slate-800 mt-1">
+                                {item.pertanyaan_latihan.pertanyaan}
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                            {['A', 'B', 'C', 'D'].map(optKey => {
+                              const optText = item.pertanyaan_latihan[`opsi_${optKey.toLowerCase()}`];
+                              if (!optText) return null;
+
+                              const isSelected = qAns?.selected === optKey;
+                              const isCorrectKey = item.pertanyaan_latihan.jawaban_benar.toUpperCase() === optKey;
+                              
+                              let btnStyle = "bg-slate-50 border-slate-200 hover:bg-slate-100 text-slate-700";
+                              if (qAns) {
+                                if (isCorrectKey) {
+                                  btnStyle = "bg-emerald-100 border-emerald-400 text-emerald-950 font-bold ring-2 ring-emerald-400";
+                                } else if (isSelected && !qAns.isCorrect) {
+                                  btnStyle = "bg-rose-100 border-rose-300 text-rose-900 font-semibold";
+                                } else {
+                                  btnStyle = "bg-slate-50 border-slate-200 text-slate-400 opacity-60";
+                                }
+                              }
+
+                              return (
+                                <button
+                                  key={optKey}
+                                  disabled={!!qAns}
+                                  onClick={() => handleSelectQuizOption(item, optKey)}
+                                  className={`flex items-center gap-3 p-3 rounded-xl border text-left text-sm transition-all duration-150 ${btnStyle}`}
+                                >
+                                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center font-bold text-xs shrink-0 ${
+                                    isSelected
+                                      ? (qAns.isCorrect ? 'bg-emerald-600 text-white' : 'bg-rose-600 text-white')
+                                      : (qAns && isCorrectKey ? 'bg-emerald-600 text-white' : 'bg-slate-200 text-slate-700')
+                                  }`}>
+                                    {optKey}
+                                  </span>
+                                  <span className="flex-1 font-medium">{optText}</span>
+                                  {qAns && isCorrectKey && <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />}
+                                  {qAns && isSelected && !qAns.isCorrect && <XCircle className="w-5 h-5 text-rose-600 shrink-0" />}
+                                </button>
+                              );
+                            })}
+                          </div>
+
+                          {qAns && (
+                            <div className={`p-4 rounded-xl border text-sm space-y-2 animate-in fade-in duration-200 ${
+                              qAns.isCorrect 
+                                ? 'bg-emerald-50/80 border-emerald-300 text-emerald-950' 
+                                : 'bg-rose-50/80 border-rose-200 text-slate-800'
+                            }`}>
+                              <div className="font-bold">
+                                {qAns.isCorrect ? (
+                                  <span className="text-emerald-800 flex items-center gap-1.5">
+                                    <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                                    Mumtaz! Jawaban Anda Benar (Kunci: {item.pertanyaan_latihan.jawaban_benar})
+                                  </span>
+                                ) : (
+                                  <span className="text-rose-800 flex items-center gap-1.5">
+                                    <XCircle className="w-4 h-4 text-rose-600" />
+                                    Kurang Tepat. Jawaban yang Benar: {item.pertanyaan_latihan.jawaban_benar}
+                                  </span>
+                                )}
+                              </div>
+                              <p className="text-xs leading-relaxed text-slate-700 bg-white/70 p-3 rounded-lg border border-slate-200/60">
+                                <strong>Pembahasan Kaidah Al-Qur'an:</strong> {item.pertanyaan_latihan.pembahasan}
+                              </p>
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </>
                   )}
                 </div>
               );

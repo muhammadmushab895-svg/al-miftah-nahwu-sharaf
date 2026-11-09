@@ -13,7 +13,9 @@ import KuisView from './components/KuisView';
 import KamusView from './components/KamusView';
 import GlobalSearchModal from './components/GlobalSearchModal';
 import BookmarksModal from './components/BookmarksModal';
+import LicenseModal from './components/LicenseModal';
 import { getBookmarks } from './utils/storage';
+import { getLicenseStatus } from './utils/license';
 import { Heart, MessageCircle } from 'lucide-react';
 
 export default function App() {
@@ -22,6 +24,8 @@ export default function App() {
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   const [bookmarksModalOpen, setBookmarksModalOpen] = useState(false);
   const [donasiModalOpen, setDonasiModalOpen] = useState(false);
+  const [licenseModalOpen, setLicenseModalOpen] = useState(false);
+  const [isPro, setIsPro] = useState(() => getLicenseStatus().isPro);
   const [bookmarkCount, setBookmarkCount] = useState(0);
   const [quranTargetLocation, setQuranTargetLocation] = useState(null);
 
@@ -89,6 +93,8 @@ export default function App() {
         onOpenSearch={() => setSearchModalOpen(true)}
         onOpenBookmarks={() => setBookmarksModalOpen(true)}
         onOpenDonasi={() => setDonasiModalOpen(true)}
+        onOpenLicense={() => setLicenseModalOpen(true)}
+        isPro={isPro}
         bookmarkCount={bookmarkCount}
         fontSize={fontSize}
         setFontSize={setFontSize}
@@ -101,12 +107,16 @@ export default function App() {
             fontSize={fontSize} 
             onOpenMateri={() => setActiveTab('materi')} 
             targetLocation={quranTargetLocation}
+            isPro={isPro}
+            onOpenLicense={() => setLicenseModalOpen(true)}
           />
         )}
         {activeTab === 'materi' && (
           <MateriView 
             fontSize={fontSize} 
             onJumpToQuran={handleJumpToQuran}
+            isPro={isPro}
+            onOpenLicense={() => setLicenseModalOpen(true)}
           />
         )}
         {activeTab === 'studio' && (
@@ -139,6 +149,8 @@ export default function App() {
         onOpenSearch={() => setSearchModalOpen(true)}
         onOpenBookmarks={() => setBookmarksModalOpen(true)}
         onOpenDonasi={() => setDonasiModalOpen(true)}
+        onOpenLicense={() => setLicenseModalOpen(true)}
+        isPro={isPro}
         bookmarkCount={bookmarkCount}
         fontSize={fontSize}
         setFontSize={setFontSize}
@@ -170,6 +182,13 @@ export default function App() {
       <DonasiQrisModal
         isOpen={donasiModalOpen}
         onClose={() => setDonasiModalOpen(false)}
+      />
+
+      {/* Modal Aktivasi Lisensi Al-Miftah PRO */}
+      <LicenseModal
+        isOpen={licenseModalOpen}
+        onClose={() => setLicenseModalOpen(false)}
+        onActivated={() => setIsPro(true)}
       />
 
       {/* Footer */}

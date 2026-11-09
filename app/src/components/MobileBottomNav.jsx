@@ -13,7 +13,8 @@ import {
   Download,
   Sliders,
   Heart,
-  MessageCircle
+  MessageCircle,
+  Crown
 } from 'lucide-react';
 
 export default function MobileBottomNav({
@@ -22,6 +23,8 @@ export default function MobileBottomNav({
   onOpenSearch,
   onOpenBookmarks,
   onOpenDonasi,
+  onOpenLicense,
+  isPro = false,
   bookmarkCount = 0,
   fontSize,
   setFontSize
@@ -160,6 +163,23 @@ export default function MobileBottomNav({
                 )}
               </button>
             </div>
+
+            {/* Al-Miftah PRO Banner Button */}
+            <button
+              onClick={() => {
+                setDrawerOpen(false);
+                if (onOpenLicense) onOpenLicense();
+              }}
+              className="w-full flex items-center justify-between p-3 rounded-xl mb-3 transition font-extrabold text-xs bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-emerald-950 shadow-md cursor-pointer"
+            >
+              <div className="flex items-center gap-2">
+                <Crown className="w-4 h-4 fill-emerald-950" />
+                <span>{isPro ? 'Al-Miftah PRO (Status Aktif)' : 'Beli Al-Miftah PRO (Rp 49rb)'}</span>
+              </div>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-950/20 font-mono">
+                {isPro ? 'LIFETIME' : 'SEKALI BAYAR'}
+              </span>
+            </button>
 
             {/* Donasi & Konsultasi Quick Actions */}
             <div className="grid grid-cols-2 gap-2 mb-4">
