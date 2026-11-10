@@ -108,19 +108,19 @@ export default function LicenseModal({ isOpen, onClose, onActivated, initialTab 
   const handleAdminPinSubmit = (e) => {
     e.preventDefault();
     setAdminPinError(null);
-    const pin = adminPinInput.trim().toUpperCase();
+    const rawInput = adminPinInput.trim();
+    const pinUpper = rawInput.toUpperCase();
 
-    // Accepted Secret Admin PINs & Master Keys
-    const validPins = [
-      '2026', 
+    // Accepted Secret Admin PIN: Alwafa45* & Master Keys
+    const isCustomPin = (rawInput === 'Alwafa45*' || pinUpper === 'ALWAFA45*');
+    const isMasterKey = [
       'MFT-OWNER-2026', 
       'ADMIN-ALMIFTAH-2026',
       'MFT-VIP-USTADZ-2026', 
-      'ALMIFTAH-ADMIN-VIP',
-      '9848996'
-    ];
+      'ALMIFTAH-ADMIN-VIP'
+    ].includes(pinUpper);
 
-    if (validPins.includes(pin)) {
+    if (isCustomPin || isMasterKey) {
       activateAdminDirect();
       const updated = getLicenseStatus();
       setLicenseState(updated);
