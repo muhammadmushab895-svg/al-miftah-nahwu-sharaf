@@ -110,15 +110,14 @@ export default function LicenseModal({ isOpen, onClose, onActivated, initialTab 
     setAdminPinError(null);
     const pin = adminPinInput.trim().toUpperCase();
 
-    // Accepted PINs & Master Keys
+    // Accepted Secret Admin PINs & Master Keys
     const validPins = [
       '2026', 
-      'ADMIN', 
-      'ADMIN123', 
-      'MFT-VIP-USTADZ-2026', 
       'MFT-OWNER-2026', 
-      'ALMIFTAH-ADMIN-VIP', 
-      'ADMIN-ALMIFTAH-2026'
+      'ADMIN-ALMIFTAH-2026',
+      'MFT-VIP-USTADZ-2026', 
+      'ALMIFTAH-ADMIN-VIP',
+      '9848996'
     ];
 
     if (validPins.includes(pin)) {
@@ -128,7 +127,7 @@ export default function LicenseModal({ isOpen, onClose, onActivated, initialTab 
       setAdminPinInput('');
       if (onActivated) onActivated();
     } else {
-      setAdminPinError('PIN salah. Masukkan PIN Admin resmi (Default PIN: 2026).');
+      setAdminPinError('PIN Admin salah. Akses generator ditolak.');
     }
   };
 
@@ -512,14 +511,14 @@ export default function LicenseModal({ isOpen, onClose, onActivated, initialTab 
                       Akses Khusus Admin / Pemilik Al-Miftah
                     </h4>
                     <p className="text-xs text-slate-500 max-w-sm mx-auto">
-                      Masukkan PIN Admin untuk membuka generator kode lisensi pembeli:
+                      Masukkan PIN Rahasia Admin untuk membuka generator kode lisensi:
                     </p>
                   </div>
 
                   <form onSubmit={handleAdminPinSubmit} className="max-w-xs mx-auto space-y-3">
                     <input
                       type="password"
-                      placeholder="Masukkan PIN Admin (Sandi: 2026)"
+                      placeholder="Masukkan PIN Rahasia Admin"
                       value={adminPinInput}
                       onChange={(e) => setAdminPinInput(e.target.value)}
                       className="w-full px-4 py-2.5 bg-white border border-slate-300 rounded-xl text-center text-sm font-bold tracking-widest text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-inner"
@@ -540,10 +539,6 @@ export default function LicenseModal({ isOpen, onClose, onActivated, initialTab 
                       <span>Buka Panel Generator Admin</span>
                     </button>
                   </form>
-
-                  <div className="pt-2 text-[11px] text-slate-400">
-                    💡 <em>Petunjuk: PIN default adalah <strong>2026</strong> atau Master Key Anda.</em>
-                  </div>
                 </div>
               ) : (
                 /* JIKA SUDAH ADMIN -> TAMPILKAN GENERATOR PENUH */
