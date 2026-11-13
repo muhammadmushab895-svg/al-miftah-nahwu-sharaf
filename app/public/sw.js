@@ -1,5 +1,5 @@
-const CACHE_NAME = 'almiftah-core-v1';
-const DATA_CACHE_NAME = 'almiftah-quran-data-v1';
+const CACHE_NAME = 'almiftah-core-v2';
+const DATA_CACHE_NAME = 'almiftah-quran-data-v2';
 
 const STATIC_ASSETS = [
   '/',
@@ -48,7 +48,24 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 1. Surah Quran Data & App Data JSON: Stale-While-Revalidate
+  // 1. Indeks Pencarian Al-Qur'an Global & Navigasi HTML: Network-First agar pembaruan fitur langsung aktif
+  if (request.mode === 'navigate' || url.pathname === '/' || url.pathname === '/index.html' || url.pathname.endsWith('/quran_search_index.json')) {
+    const targetCache = url.pathname.endsWith('.json') ? DATA_CACHE_NAME : CACHE_NAME;
+    event.respondWith(
+      fetch(request)
+        .then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200) {
+            const copy = networkResponse.clone();
+            caches.open(targetCache).then((cache) => cache.put(request, copy));
+          }
+          return networkResponse;
+        })
+        .catch(() => caches.match(request).then((cached) => cached || caches.match('/index.html')))
+    );
+    return;
+  }
+
+  // 2. Surah Quran Data & App Data JSON: Stale-While-Revalidate
   if (url.pathname.includes('/data/quran/') || url.pathname.endsWith('.json')) {
     event.respondWith(
       caches.open(DATA_CACHE_NAME).then((cache) => {

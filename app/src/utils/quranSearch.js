@@ -3,8 +3,32 @@
  * serta pencocokan kata kunci lintas 114 Surah / 6.236 Ayat.
  */
 
-// Rentang harakat, tanwin, tanda tajwid/waqaf, dan tatweel pada teks Uthmani
+// Rentang tanda waqaf/tajwid non-huruf & tatweel (tanpa menghapus harakat utama sebelum analisis Uthmani)
 const ARABIC_DIACRITICS_RE = /[\u0610-\u061A\u0640\u064B-\u065F\u0674\u06D6-\u06ED]/g;
+
+/**
+ * Mengonversi penanda ejaan Uthmani (small yeh ۦ di tengah kata, hamzah mengambang ـٔ,
+ * hamzah kasrah ءِ, alif maqshurah + dagger alif + ta marbuthah ىٰة, dll.) ke bentuk Imla'i standar.
+ */
+function preprocessUthmaniToImlai(text) {
+  if (!text) return '';
+  return String(text)
+    // 1. Small yeh (ۦ) di tengah kata atau setelah ى/ي berfungsi sebagai huruf ي ("إِبْرَٰهِۦم" -> "ابراهيم", "ٱلنَّبِيۦن" -> "النبيين")
+    .replace(/\u06E6(?=[\u064B-\u065F\u0653]*[\u0621-\u064A])/g, 'ي')
+    .replace(/([ىي][\u064B-\u065F\u0653]*)\u06E6/g, '$1ي')
+    // 2. Combining hamza above (ـٔ) tanpa kursi: sesuaikan kursi berdasar harakat/konteks agar cocok dengan أ/ؤ/ئ
+    .replace(/\u0640?\u0654(?=[\u064E\u0670]*\u0627|\u064E\u0670)/g, '')
+    .replace(/\u0640?\u0654(?=\u064F)/g, 'و')
+    .replace(/\u0640?\u0654(?=\u0650)/g, 'ي')
+    .replace(/([ي][\u0652\u0653\u064E\u0650]?)\u0640?\u0654/g, '$1ي')
+    .replace(/\u0640?\u0654/g, 'ا')
+    // 3. Hamzah mandiri di tengah kata berharakat kasrah ("إِسْرَٰٓءِيلَ" -> "اسراييل", "طَآئِفَة") atau sebelum و ("مُسْتَهْزِءُونَ")
+    .replace(/\u0621(?=\u0650|\u064E?\u0650|\u0653?\u0650)/g, 'ي')
+    // 4. Penulisan Uthmani khusus: ىٰ sebelum ة ("ٱلتَّوْرَىٰةَ" -> "التوراة") & وٰ sebelum ا/ة ("ٱلرِّبَوٰا" -> "الربا", "ٱلصَّلَوٰةَ" -> "الصلاة")
+    .replace(/ى[\u064B-\u065F]*\u0670(?=[\u064B-\u065F]*[ةه])/g, 'ا')
+    .replace(/و[\u064B-\u065F]*\u0670(?=[\u064B-\u065F]*[ةه])/g, 'ا')
+    .replace(/و[\u064B-\u065F]*\u0670\u0627(?![\u0621-\u064A])/g, 'ا');
+}
 
 /**
  * Menormalkan aksara Arab agar pencarian tetap cocok meski tanpa/dengan harakat,
@@ -32,14 +56,13 @@ function foldArabicLetters(text, { collapseTaMarbutah = true } = {}) {
 
 /**
  * Mengembalikan bentuk Arab Imla'i bersih (menghapus harakat dan mengonversi dagger alif \u0670).
- * Contoh: "ٱلْعَٰلَمِينَ" -> "العالمين", "ٱلصَّلَوٰةَ" -> "الصلاه".
+ * Contoh: "ٱلْعَٰلَمِينَ" -> "العالمين", "ٱلصَّلَوٰةَ" -> "الصلاه", "إِبْرَٰهِۦمَ" -> "ابراهيم".
  */
 export function normalizeArabic(text, options = {}) {
   if (!text) return '';
-  const strippedNoDagger = String(text).replace(ARABIC_DIACRITICS_RE, '');
-  // Penanganan khusus Uthmani waw + dagger alif sebelum ta marbuthah/ha (صلوة -> صلاة, زكوة -> زكاة, حيوة -> حياة)
+  const pre = preprocessUthmaniToImlai(text);
+  const strippedNoDagger = pre.replace(ARABIC_DIACRITICS_RE, '');
   const imlaiExpanded = strippedNoDagger
-    .replace(/و\u0670([ةه])/g, 'ا$1')
     // Alif maqshurah + dagger alif tetap dibaca/ditulis sebagai alif maqshurah/ya (علىٰ, موسىٰ)
     .replace(/ى\u0670/g, 'ى')
     // Dagger alif di tengah kata diganti alif agar cocok dengan ketikan Imla'i (عٰلمين -> عالمين, مٰلك -> مالك)
@@ -55,26 +78,68 @@ export function normalizeArabic(text, options = {}) {
  */
 export function normalizeArabicCompact(text, options = {}) {
   if (!text) return '';
-  const stripped = String(text)
+  const pre = preprocessUthmaniToImlai(text);
+  const stripped = pre
     .replace(ARABIC_DIACRITICS_RE, '')
     .replace(/\u0670/g, '');
   return foldArabicLetters(stripped, options);
 }
 
 /**
- * Membangun string pencarian gabungan (varian Imla'i + kata Uthmani ringkas yang berbeda)
- * sehingga ketikan "الرحمن" maupun "الرحمان", "العالمين" maupun "العلمين", "الله" tetap cocok,
- * sekaligus menjaga ukuran indeks tetap ringkas.
+ * Membangun string pencarian gabungan (varian Imla'i + varian Uthmani ringkas + variasi وۥ/لِلْـ/ياَٰ)
+ * agar pencarian tetap cocok untuk beragam cara pengetikan kata Al-Qur'an.
  */
 export function buildArabicSearchVariants(text) {
   const expanded = normalizeArabic(text);
   const compact = normalizeArabicCompact(text);
   if (!expanded) return '';
-  if (!compact || compact === expanded) return expanded;
 
-  const baseWords = new Set(expanded.split(/\s+/));
-  const extraWords = compact.split(/\s+/).filter((w) => w && !baseWords.has(w));
-  return extraWords.length > 0 ? `${expanded} ${extraWords.join(' ')}` : expanded;
+  const wordSet = new Set(expanded.split(/\s+/).filter(Boolean));
+  const extraTokens = [];
+  const addExtra = (tok) => {
+    if (tok && !wordSet.has(tok)) {
+      wordSet.add(tok);
+      extraTokens.push(tok);
+    }
+  };
+
+  if (compact && compact !== expanded) {
+    for (const w of compact.split(/\s+/)) addExtra(w);
+  }
+
+  // Varian per-kata dari teks Uthmani mentah
+  for (const rawWord of String(text || '').split(/\s+/)) {
+    if (!rawWord) continue;
+    // 1. Kata nida' bersambung Uthmani: "يَٰٓأَيُّهَا" / "يَٰمُوسَىٰ" / "يَٰبَنِىٓ" -> tambahkan versi terpisah ("يا ايها", "يا موسي", "يا بني")
+    if (/^ي[\u064E]?\u0670/.test(rawWord)) {
+      const normW = normalizeArabic(rawWord);
+      if (normW.startsWith('يا') && normW.length > 3) {
+        addExtra('يا');
+        addExtra(normW.slice(2));
+      }
+    }
+    // 2. Small waw internal ("دَاوُۥدَ" -> juga cocok dengan "داوود", "يَسْتَوُۥن" -> "يستوون")
+    if (/و[\u064B-\u065F]*\u06E5[\u064B-\u065F\u0653]*[\u0621-\u064A]/.test(rawWord)) {
+      const doubledWaw = normalizeArabic(
+        rawWord.replace(/(و[\u064B-\u065F]*)\u06E5/g, '$1و')
+      );
+      addExtra(doubledWaw);
+    }
+    // 3. Hamzah sebelum waw ("مُسْتَهْزِءُونَ" -> juga cocok "مستهزيون"/"مستهزوون")
+    if (/\u0621[\u064B-\u065F]*و/.test(rawWord)) {
+      addExtra(normalizeArabic(rawWord.replace(/\u0621(?=[\u064B-\u065F]*و)/g, 'ي')));
+      addExtra(normalizeArabic(rawWord.replace(/\u0621(?=[\u064B-\u065F]*و)/g, 'و')));
+    }
+    // 4. Prefiks "لِلْـ" yg menggugurkan alif "الـ" ("لِّلْمُتَّقِينَ" -> "المتقين", "لِلنَّاسِ" -> "الناس")
+    if (/^\u0644[\u0650\u0651]*\u0644/.test(rawWord)) {
+      const normW = normalizeArabic(rawWord);
+      if (normW.startsWith('لل') && normW.length >= 5) {
+        addExtra(`ال${normW.slice(2)}`);
+      }
+    }
+  }
+
+  return extraTokens.length > 0 ? `${expanded} ${extraTokens.join(' ')}` : expanded;
 }
 
 /**
@@ -85,14 +150,15 @@ export function hasArabicChars(text) {
 }
 
 /**
- * Menormalkan teks Latin (menghilangkan tanda baca, apostrof, spasi ganda) untuk pencarian surah/terjemahan.
+ * Menormalkan teks Latin (menghilangkan apostrof tanpa memutus kata & tanda baca menjadi spasi).
  */
 export function normalizeLatin(text) {
   return String(text || '')
     .toLowerCase()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
-    .replace(/['’`\-_.,:;!?()"]/g, ' ')
+    .replace(/['’`]/g, '')
+    .replace(/[\-_.,:;!?()"]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -332,9 +398,26 @@ function stripSurahPrefix(compactKey) {
 }
 
 /**
- * Mencocokkan potongan nama surah dengan ID Surah 1..114.
+ * Mencocokkan potongan nama surah (Latin maupun Arab) dengan ID Surah 1..114.
  */
 export function resolveSurahMatches(nameQuery, surahList = []) {
+  if (!nameQuery) return [];
+
+  if (hasArabicChars(nameQuery)) {
+    const arClean = normalizeArabic(nameQuery).replace(/^(?:سوره|سورة)\s+/, '').trim();
+    if (!arClean) return [];
+    const exactAr = [];
+    const partialAr = [];
+    for (const s of surahList) {
+      const sAr = normalizeArabic(s.name_ar);
+      const sArBare = sAr.replace(/^ال/, '');
+      const qBare = arClean.replace(/^ال/, '');
+      if (sAr === arClean || sArBare === qBare) exactAr.push(s);
+      else if (arClean.length >= 2 && (sAr.includes(arClean) || sArBare.includes(qBare))) partialAr.push(s);
+    }
+    return [...exactAr, ...partialAr];
+  }
+
   const clean = normalizeLatin(nameQuery).replace(/\s+/g, '');
   if (!clean) return [];
 
@@ -365,8 +448,8 @@ export function resolveSurahMatches(nameQuery, surahList = []) {
  * Mengurai input pencarian menjadi target lompatan langsung Surah & Ayat bila cocok.
  * Mendukung format:
  * - "2:255", "2/255", "2 255", "qs 18:10"
- * - "baqarah 255", "al-baqarah:255", "kahfi 10", "yasin 58"
- * - Nama surah saja ("al kahfi", "ar rahman") -> ayah: 1
+ * - "baqarah 255", "al-baqarah:255", "kahfi 10", "yasin 58", "البقرة 255"
+ * - Nama surah saja ("al kahfi", "ar rahman", "سورة الكهف") -> ayah: 1
  */
 export function parseSurahAyahQuery(rawQuery, surahList = []) {
   const trimmed = String(rawQuery || '').trim();
@@ -403,9 +486,9 @@ export function parseSurahAyahQuery(rawQuery, surahList = []) {
     }
   }
 
-  // 2. Pola "Nama Surah + Nomor Ayat" (mis. "baqarah 255", "ali imran:190", "kahfi 10")
-  const nameNum = trimmed.match(/^(?:qs\.?|surah|surat)?\s*([a-zA-Z\s'\-`]+?)\s*[:/\-.\s]+\s*(\d{1,3})$/i);
-  if (nameNum) {
+  // 2. Pola "Nama Surah (Latin/Arab) + Nomor Ayat" (mis. "baqarah 255", "kahfi 10", "البقرة 255")
+  const nameNum = trimmed.match(/^(?:qs\.?|surah|surat|سورة|سوره)?\s*(.+?)\s*[:/\-.\s]+\s*(\d{1,3})$/i);
+  if (nameNum && !/^\d+$/.test(nameNum[1].trim())) {
     const surahPart = nameNum[1].trim();
     const aId = parseInt(nameNum[2], 10);
     const matches = resolveSurahMatches(surahPart, surahList);
@@ -415,16 +498,49 @@ export function parseSurahAyahQuery(rawQuery, surahList = []) {
     if (results.length > 0) return results;
   }
 
-  // 3. Hanya Nama Surah (mis. "kahfi", "yasin", "al baqarah")
-  if (!hasArabicChars(trimmed) && !/^\d+$/.test(trimmed)) {
-    const strippedQuery = trimmed.replace(/^(?:qs\.?|surah|surat)\s+/i, '');
-    const matches = resolveSurahMatches(strippedQuery, surahList);
-    for (const s of matches.slice(0, 3)) {
-      pushTarget(s, 1, 'surah_only');
+  // 3. Hanya Nama Surah (Latin maupun Arab seperti "سورة الكهف")
+  if (!/^\d+$/.test(trimmed)) {
+    const strippedQuery = trimmed.replace(/^(?:qs\.?|surah|surat|سورة|سوره)\s+/i, '');
+    if (hasArabicChars(trimmed)) {
+      const explicitSurahPrefix = /^(?:سورة|سوره)\s+/.test(trimmed);
+      const matches = resolveSurahMatches(strippedQuery, surahList);
+      if (explicitSurahPrefix || matches.some((s) => normalizeArabic(s.name_ar) === normalizeArabic(strippedQuery))) {
+        for (const s of matches.slice(0, 3)) {
+          pushTarget(s, 1, 'surah_only');
+        }
+      }
+    } else {
+      const matches = resolveSurahMatches(strippedQuery, surahList);
+      for (const s of matches.slice(0, 3)) {
+        pushTarget(s, 1, 'surah_only');
+      }
     }
   }
 
   return results;
+}
+
+// Kelompok sinonim ejaan Indonesia populer <-> terjemahan Kemenag
+const INDONESIAN_TOKEN_SYNONYMS = [
+  ['salat', 'shalat', 'sholat', 'sembahyang'],
+  ['takwa', 'taqwa'],
+  ['zikir', 'dzikir'],
+  ['rezeki', 'rizki', 'rizqi', 'rejeki'],
+  ['syaitan', 'setan', 'syaithan', 'syetan'],
+  ['mukmin', 'mumin'],
+  ['nikmat', 'nimat'],
+  ['quran', 'alquran'],
+  ['surga', 'jannah', 'syurga'],
+  ['neraka', 'jahannam', 'jahanam'],
+  ['kakbah', 'kabah'],
+  ['doa', 'berdoa']
+];
+
+const SYNONYM_LOOKUP = new Map();
+for (const group of INDONESIAN_TOKEN_SYNONYMS) {
+  for (const term of group) {
+    SYNONYM_LOOKUP.set(term, group);
+  }
 }
 
 /**
@@ -453,7 +569,11 @@ export function matchQuranIndexEntry(entry, parsedQuery) {
   }
 
   const combined = `${idText} ${trText} ${surahText}`;
-  return tokensLatin.every((tok) => combined.includes(tok));
+  return tokensLatin.every((tok) => {
+    if (combined.includes(tok)) return true;
+    const syns = SYNONYM_LOOKUP.get(tok);
+    return Boolean(syns && syns.some((alt) => combined.includes(alt)));
+  });
 }
 
 /**
@@ -674,18 +794,27 @@ export function searchGlobalQuran(index, rawQuery, surahList = [], limit = 30) {
 
     let score = 1;
     if (parsed.isArabic) {
-      if (parsed.arabicPrimary && item.q.includes(parsed.arabicPrimary)) {
+      const qExpanded = parsed.arabicPrimary;
+      const qVocative = item.q.replace(/(^|\s)يا(?=[ا-ي]{2,})/g, '$1يا ');
+      if (qExpanded && (item.q.includes(qExpanded) || qVocative.includes(qExpanded))) {
         score += 12;
       } else if (parsed.arabicCompact && normalizeArabicCompact(item.t).includes(parsed.arabicCompact)) {
         score += 11;
       }
-      // Bonus lebih tinggi untuk ayat ringkas dengan kepadatan kecocokan tinggi
-      if (item.q.startsWith(parsed.arabicPrimary) || normalizeArabicCompact(item.t).startsWith(parsed.arabicCompact)) {
+      // Bonus lebih tinggi untuk ayat yang diawali frasa pencarian
+      if (
+        (qExpanded && (item.q.startsWith(qExpanded) || qVocative.startsWith(qExpanded))) ||
+        (parsed.arabicCompact && normalizeArabicCompact(item.t).startsWith(parsed.arabicCompact))
+      ) {
         score += 4;
       }
     } else {
-      if (parsed.latin && item.idNorm.includes(parsed.latin)) score += 10;
-      else if (parsed.compactLatin && item.trCompact.includes(parsed.compactLatin)) score += 8;
+      const syns = parsed.tokensLatin.length === 1 ? SYNONYM_LOOKUP.get(parsed.tokensLatin[0]) : null;
+      if (parsed.latin && (item.idNorm.includes(parsed.latin) || (syns && syns.some((alt) => item.idNorm.includes(alt))))) {
+        score += 10;
+      } else if (parsed.compactLatin && item.trCompact.includes(parsed.compactLatin)) {
+        score += 8;
+      }
       // Bonus kecocokan batas kata di terjemahan
       if (parsed.latin.length >= 3 && new RegExp(`\\b${parsed.latin.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`).test(item.idNorm)) {
         score += 4;
