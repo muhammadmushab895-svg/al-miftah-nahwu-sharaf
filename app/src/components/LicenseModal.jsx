@@ -19,8 +19,11 @@ import {
   Lock,
   Globe,
   Unlock,
-  AlertCircle
+  AlertCircle,
+  Download,
+  Building2
 } from 'lucide-react';
+import qrisImg from '../assets/qris-donasi.jpg';
 import { 
   getDeviceId, 
   activateLicense, 
@@ -77,14 +80,15 @@ export default function LicenseModal({ isOpen, onClose, onActivated, initialTab 
   if (!isOpen) return null;
 
   const waNumber = '6285179848996';
+  const nmidQris = 'ID1026605316029';
   const cleanDevId = deviceId || getDeviceId();
-  const waBuyMessage = encodeURIComponent(
+  const waConfirmMessage = encodeURIComponent(
     `Assalamu'alaikum Admin Al-Miftah,\n` +
-    `Saya ingin aktivasi Al-Miftah PRO Lifetime (Rp 49.000 Sekali Bayar).\n\n` +
+    `Saya SUDAH melakukan pembayaran Al-Miftah PRO Lifetime sebesar Rp 49.000 via QRIS (atas nama BELAJAR FIKIH BARENG).\n\n` +
     `📱 ID Perangkat Saya: ${cleanDevId}\n\n` +
-    `Mohon info rekening transfer / QRIS dan kirimkan kode lisensi resmi untuk perangkat saya. Terima kasih!`
+    `Berikut saya lampirkan bukti pembayarannya. Mohon kirimkan kode lisensi resmi untuk perangkat saya. Terima kasih!`
   );
-  const waUrl = `https://wa.me/${waNumber}?text=${waBuyMessage}`;
+  const waUrl = `https://wa.me/${waNumber}?text=${waConfirmMessage}`;
 
   const copyToClipboard = (text, label) => {
     navigator.clipboard.writeText(text);
@@ -347,22 +351,76 @@ export default function LicenseModal({ isOpen, onClose, onActivated, initialTab 
                 </div>
               </div>
 
+              {/* QRIS Direct Payment Box */}
+              <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-center space-y-3 shadow-xs">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-2">
+                  <span className="text-xs font-extrabold text-emerald-900 flex items-center gap-1.5">
+                    <QrCode className="w-4 h-4 text-emerald-700" />
+                    <span>Scan / Unduh QRIS Pembayaran Langsung</span>
+                  </span>
+                  <span className="px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px] border border-amber-300">
+                    Bayar Rp 49.000
+                  </span>
+                </div>
+
+                <div className="max-w-[230px] mx-auto bg-white p-2 rounded-2xl border border-slate-200 shadow-sm">
+                  <img 
+                    src={qrisImg} 
+                    alt="QRIS Pembayaran Al-Miftah PRO Rp 49.000" 
+                    className="w-full h-auto rounded-xl object-contain"
+                  />
+                </div>
+
+                <div className="space-y-0.5">
+                  <div className="font-extrabold text-xs text-slate-900 flex items-center justify-center gap-1.5">
+                    <Building2 className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>BELAJAR FIKIH BARENG, CILNGSI</span>
+                  </div>
+                  <div className="text-[11px] font-mono text-slate-500">
+                    NMID: <strong className="text-slate-700">{nmidQris}</strong>
+                  </div>
+                  <div className="text-[10px] text-emerald-700 font-medium">
+                    Mendukung GoPay, DANA, OVO, ShopeePay, BCA, Mandiri, BRI, BNI, BSI & QRIS GPN
+                  </div>
+                </div>
+
+                {/* Tombol Unduh QRIS & Salin NMID */}
+                <div className="grid grid-cols-2 gap-2 pt-1">
+                  <a
+                    href={qrisImg}
+                    download="qris-pembayaran-almiftah-pro.jpg"
+                    className="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs transition shadow-sm active:scale-95"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    <span>Unduh QRIS</span>
+                  </a>
+                  <button
+                    type="button"
+                    onClick={() => copyToClipboard(nmidQris, 'nmid')}
+                    className="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold text-xs transition active:scale-95 cursor-pointer"
+                  >
+                    {copiedText === 'nmid' ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5 text-slate-600" />}
+                    <span>{copiedText === 'nmid' ? 'NMID Tersalin!' : 'Salin NMID'}</span>
+                  </button>
+                </div>
+              </div>
+
               {/* 3 Langkah Cepat Membuka Akses PRO */}
               <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 space-y-3">
                 <h4 className="font-bold text-xs uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
                   <Sparkles className="w-3.5 h-3.5 text-amber-600" />
-                  3 Langkah Mudah Mendapatkan Kode Lisensi:
+                  Langkah Setelah Membayar:
                 </h4>
 
-                <div className="space-y-2.5 text-xs">
+                <div className="space-y-2 text-xs">
                   <div className="flex items-start gap-2.5 p-2.5 bg-white rounded-xl border border-slate-200/80">
                     <span className="w-6 h-6 rounded-lg bg-emerald-900 text-amber-300 font-bold flex items-center justify-center shrink-0 text-xs">
                       1
                     </span>
                     <div>
-                      <strong className="text-slate-900 block">Klik Tombol WhatsApp di Bawah</strong>
+                      <strong className="text-slate-900 block">Bayar Rp 49.000 via QRIS di Atas</strong>
                       <span className="text-slate-600">
-                        Chat WhatsApp admin secara otomatis akan memuat teks pemesanan beserta <strong className="text-emerald-900">ID Perangkat Anda ({cleanDevId})</strong>.
+                        Scan langsung atau unggah gambar QRIS yang diunduh di aplikasi E-Wallet / m-Banking Anda.
                       </span>
                     </div>
                   </div>
@@ -372,9 +430,9 @@ export default function LicenseModal({ isOpen, onClose, onActivated, initialTab 
                       2
                     </span>
                     <div>
-                      <strong className="text-slate-900 block">Transfer Rp 49.000 (QRIS / Bank)</strong>
+                      <strong className="text-slate-900 block">Sudah Bayar? Konfirmasi via WhatsApp</strong>
                       <span className="text-slate-600">
-                        Admin akan memberikan barcode QRIS / Rekening. Kirimkan bukti transfer ke WhatsApp admin.
+                        Klik tombol konfirmasi di bawah untuk mengirim bukti bayar bersama <strong className="text-emerald-900">ID Perangkat Anda ({cleanDevId})</strong>.
                       </span>
                     </div>
                   </div>
@@ -384,9 +442,9 @@ export default function LicenseModal({ isOpen, onClose, onActivated, initialTab 
                       3
                     </span>
                     <div>
-                      <strong className="text-slate-900 block">Terima Kode & Langsung Aktif</strong>
+                      <strong className="text-slate-900 block">Terima Kode & Aktifkan Lisensi</strong>
                       <span className="text-slate-600">
-                        Admin membalas dengan kode lisensi resmi yang terkunci untuk perangkat Anda. Masukkan di tab <strong>"2. Masukkan Lisensi"</strong>, akun Anda seketika berstatus PRO selamanya!
+                        Masukkan kode lisensi dari admin di tab <strong>"2. Masukkan Lisensi"</strong>, akun Anda langsung PRO selamanya!
                       </span>
                     </div>
                   </div>
@@ -399,7 +457,7 @@ export default function LicenseModal({ isOpen, onClose, onActivated, initialTab 
                   className="flex items-center justify-center gap-2 w-full py-3 px-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-black text-xs sm:text-sm rounded-xl shadow-md transition active:scale-95 cursor-pointer mt-3"
                 >
                   <MessageCircle className="w-4 h-4 fill-white" />
-                  <span>Beli via WhatsApp (0851-7984-8996)</span>
+                  <span>✅ Sudah Bayar? Konfirmasi via WA ({waNumber})</span>
                 </a>
               </div>
 
