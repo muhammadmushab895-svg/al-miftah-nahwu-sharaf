@@ -1,13 +1,42 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Search, X, BookOpen, Sparkles, Layers, BookMarked, ArrowRight } from 'lucide-react';
+import { Search, X, BookOpen, Sparkles, Layers, BookMarked, Compass, ArrowRight } from 'lucide-react';
 import babData from '../data/01_kurikulum_bab.json';
 import materiData from '../data/02_materi_kaidah.json';
 import quranData from '../data/06_latihan_quran.json';
 import irabData from '../data/03_contoh_dan_irab.json';
 import kamusData from '../data/05_kamus_istilah.json';
+import {
+  loadGlobalQuranIndex,
+  searchGlobalQuran,
+  prepareSearchQuery,
+  matchArabicText,
+  normalizeLatin
+} from '../utils/quranSearch';
 
 export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
   const [query, setQuery] = useState('');
+  const [surahList, setSurahList] = useState([]);
+  const [globalQuranIndex, setGlobalQuranIndex] = useState(null);
+
+  // Lazy load surahList & 6.236-ayah index saat modal pencarian dibuka
+  useEffect(() => {
+    if (!isOpen) return;
+    let active = true;
+    fetch('/data/quran/surah_list.json')
+      .then((r) => r.json())
+      .then((list) => {
+        if (!active) return;
+        setSurahList(list);
+        return loadGlobalQuranIndex(list);
+      })
+      .then((idx) => {
+        if (active && idx) setGlobalQuranIndex(idx);
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, [isOpen]);
 
   // Close on Escape
   useEffect(() => {
@@ -24,39 +53,53 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
   }, [isOpen, onClose]);
 
   const results = useMemo(() => {
-    const q = query.toLowerCase().trim();
-    if (!q || q.length < 2) return { quran: [], materi: [], irab: [], kamus: [] };
+    const raw = query.trim();
+    const q = raw.toLowerCase();
+    if (!raw || raw.length < 2) {
+      return { mushaf: [], quran: [], materi: [], irab: [], kamus: [] };
+    }
 
-    const quran = quranData.filter(i => 
+    const parsed = prepareSearchQuery(raw);
+    const latinQ = normalizeLatin(raw);
+
+    const globalHits = searchGlobalQuran(globalQuranIndex || [], raw, surahList, 8);
+    const mushaf = [...globalHits.directRefs, ...globalHits.matches].slice(0, 8);
+
+    const quran = quranData.filter(i =>
       i.surah.toLowerCase().includes(q) ||
-      i.teks_ayat_arab.includes(q) ||
-      i.terjemahan_indo.toLowerCase().includes(q) ||
+      (parsed.isArabic ? matchArabicText(i.teks_ayat_arab, parsed) : i.teks_ayat_arab.includes(raw)) ||
+      normalizeLatin(i.terjemahan_indo).includes(latinQ) ||
       i.kategori_binyah?.toLowerCase().includes(q)
     ).slice(0, 5);
 
     const materi = materiData.filter(m =>
       m.sub_topik_indo.toLowerCase().includes(q) ||
-      m.sub_topik_arab.includes(q) ||
+      (parsed.isArabic ? matchArabicText(m.sub_topik_arab, parsed) : m.sub_topik_arab.includes(raw)) ||
       m.penjelasan_indo.toLowerCase().includes(q)
     ).slice(0, 5);
 
     const irab = irabData.filter(i =>
-      i.kalimat_arab.includes(q) ||
+      (parsed.isArabic ? matchArabicText(i.kalimat_arab, parsed) : i.kalimat_arab.includes(raw)) ||
       i.terjemahan_indo.toLowerCase().includes(q) ||
       i.kata_kunci?.toLowerCase().includes(q)
     ).slice(0, 5);
 
     const kamus = kamusData.filter(k =>
-      k.istilah_arab.toLowerCase().includes(q) ||
+      (parsed.isArabic ? matchArabicText(k.istilah_arab, parsed) : k.istilah_arab.toLowerCase().includes(q)) ||
       k.definisi_indo.toLowerCase().includes(q)
     ).slice(0, 5);
 
-    return { quran, materi, irab, kamus };
-  }, [query]);
+    return { mushaf, quran, materi, irab, kamus };
+  }, [query, globalQuranIndex, surahList]);
 
   if (!isOpen) return null;
 
-  const totalResults = results.quran.length + results.materi.length + results.irab.length + results.kamus.length;
+  const totalResults =
+    results.mushaf.length +
+    results.quran.length +
+    results.materi.length +
+    results.irab.length +
+    results.kamus.length;
 
   return (
     <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-150">
@@ -85,7 +128,7 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
         <div className="p-4 overflow-y-auto space-y-4 divide-y divide-slate-100">
           {query.trim().length < 2 ? (
             <div className="text-center py-8 text-slate-400 text-xs sm:text-sm">
-              Ketik minimal 2 karakter untuk menelusuri 520 ayat, 149 materi, 119 syahid, dan 63 istilah.
+              Ketik minimal 2 karakter untuk menelusuri 6.236 ayat Al-Qur'an, 520 latihan, 149 materi, 119 syahid, dan 63 istilah (mis. <span className="font-mono text-slate-600">2:255</span>, <span className="font-semibold text-slate-600">baqarah 255</span>, <span className="font-arabic text-slate-600">الحمد لله</span>).
             </div>
           ) : totalResults === 0 ? (
             <div className="text-center py-8 text-slate-500 text-sm">
@@ -93,9 +136,48 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
             </div>
           ) : (
             <>
+              {/* Mushaf 6.236 Ayah Results */}
+              {results.mushaf.length > 0 && (
+                <div className="space-y-2 pt-2">
+                  <span className="text-[11px] font-bold text-emerald-900 uppercase tracking-wider flex items-center gap-1.5">
+                    <Compass className="w-3.5 h-3.5" />
+                    Mushaf Al-Qur'an 30 Juz ({results.mushaf.length})
+                  </span>
+                  <div className="space-y-1.5">
+                    {results.mushaf.map((item) => (
+                      <div
+                        key={`mushaf-${item.s}:${item.a}`}
+                        onClick={() => {
+                          onSelectResult('quran', item);
+                          onClose();
+                        }}
+                        className="p-2.5 rounded-xl hover:bg-emerald-50/80 cursor-pointer transition border border-transparent hover:border-emerald-200 flex items-center justify-between gap-3 text-xs"
+                      >
+                        <div className="min-w-0 flex-1">
+                          <div className="font-bold text-slate-800 flex items-center gap-1.5">
+                            <span>QS. {item.surahName}: {item.a}</span>
+                            {item.badge && (
+                              <span className="px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 text-[10px] font-bold">
+                                Lompat Langsung
+                              </span>
+                            )}
+                          </div>
+                          {item.id && (
+                            <div className="text-slate-500 line-clamp-1">{item.id}</div>
+                          )}
+                        </div>
+                        <span className="font-arabic text-base font-semibold text-emerald-900 shrink-0 max-w-[200px] truncate" dir="rtl">
+                          {item.t || item.surahArab}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Quran Results */}
               {results.quran.length > 0 && (
-                <div className="space-y-2 pt-2">
+                <div className="space-y-2 pt-3">
                   <span className="text-[11px] font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5">
                     <Sparkles className="w-3.5 h-3.5" />
                     Latihan Al-Qur'an ({results.quran.length})

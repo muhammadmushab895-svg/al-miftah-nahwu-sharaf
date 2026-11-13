@@ -67,7 +67,7 @@ export default function App() {
 
   const handleSelectSearchResult = (type, item) => {
     if (type === 'quran') {
-      setActiveTab('quran');
+      handleJumpToQuran(item.surah || item.s || item.surahId, item.ayat || item.a || item.ayah);
     } else if (type === 'materi') {
       setActiveTab('materi');
     } else if (type === 'studio') {

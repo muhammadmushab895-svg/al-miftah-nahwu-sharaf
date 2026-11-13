@@ -26,11 +26,20 @@ import {
   ListOrdered,
   ChevronDown,
   Lock,
-  Crown
+  Crown,
+  X
 } from 'lucide-react';
 import quranExercisesData from '../data/06_latihan_quran.json';
 import { isBookmarked, saveBookmark } from '../utils/storage';
 import { isAyahFree, isSurahFree } from '../utils/license';
+import {
+  loadGlobalQuranIndex,
+  searchGlobalQuran,
+  prepareSearchQuery,
+  matchArabicText,
+  normalizeLatin,
+  resolveSurahMatches
+} from '../utils/quranSearch';
 
 export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetLocation, isPro = false, onOpenLicense }) {
   // Main View Navigation: 'mushaf' (114 Surah, 6.236 Ayat) vs 'latihan' (520 Soal Binyah)
@@ -55,6 +64,14 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
   const [mushafAyahSearch, setMushafAyahSearch] = useState('');
   const [mushafPage, setMushafPage] = useState(1);
   const ayahsPerPage = 20;
+
+  // Global cross-30-Juz verse search & direct jump
+  const [globalVerseQuery, setGlobalVerseQuery] = useState('');
+  const [globalIndex, setGlobalIndex] = useState(null);
+  const [loadingGlobalIndex, setLoadingGlobalIndex] = useState(false);
+  const [globalIndexError, setGlobalIndexError] = useState(null);
+  const [globalPanelOpen, setGlobalPanelOpen] = useState(false);
+  const globalSearchContainerRef = useRef(null);
 
   // Active word inspected in Mushaf: { surahId, ayatId, wordIdx, wordData, verseText }
   const [inspectedMushafWord, setInspectedMushafWord] = useState(null);
@@ -87,16 +104,78 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
   // Target navigation ref
   const pendingAyahRef = useRef(null);
 
+  const ensureGlobalIndex = () => {
+    if (globalIndex || loadingGlobalIndex) return;
+    setLoadingGlobalIndex(true);
+    setGlobalIndexError(null);
+    loadGlobalQuranIndex(surahList)
+      .then((data) => {
+        setGlobalIndex(data);
+        setLoadingGlobalIndex(false);
+      })
+      .catch((err) => {
+        console.error('Gagal memuat indeks pencarian Al-Qur\'an:', err);
+        setGlobalIndexError('Indeks kata kunci Al-Qur\'an gagal dimuat. Pencarian Surah:Ayat tetap aktif.');
+        setLoadingGlobalIndex(false);
+      });
+  };
+
+  // Sinkronkan metadata surah ke globalIndex bila surahList selesai dimuat belakangan
+  useEffect(() => {
+    if (globalIndex && surahList.length > 0 && !globalIndex[0]?.surahArab) {
+      loadGlobalQuranIndex(surahList).then(setGlobalIndex).catch(() => {});
+    }
+  }, [globalIndex, surahList]);
+
+  // Tutup panel hasil global saat klik di luar
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (globalSearchContainerRef.current && !globalSearchContainerRef.current.contains(e.target)) {
+        setGlobalPanelOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleOutsideClick);
+    return () => document.removeEventListener('mousedown', handleOutsideClick);
+  }, []);
+
+  const handleJumpToVerse = (targetSurahId, targetAyahNumber) => {
+    const sId = parseInt(targetSurahId, 10) || 1;
+    const aNum = parseInt(targetAyahNumber, 10) || 1;
+    setMainView('mushaf');
+    setGlobalPanelOpen(false);
+    setSurahDropdownOpen(false);
+    setMushafAyahSearch('');
+    pendingAyahRef.current = aNum;
+
+    if (selectedSurahId === sId) {
+      const targetPage = Math.ceil(aNum / ayahsPerPage) || 1;
+      setMushafPage(targetPage);
+      setMushafExpandedTables(prev => ({
+        ...prev,
+        [`${sId}:${aNum}`]: true
+      }));
+      setTimeout(() => {
+        const el = document.getElementById(`mushaf-ayah-${aNum}`);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        pendingAyahRef.current = null;
+      }, 250);
+    } else {
+      setSelectedSurahId(sId);
+    }
+  };
+
   // Listen for targetLocation jump requests
   useEffect(() => {
     if (!targetLocation) return;
     setMainView('mushaf');
+    setMushafAyahSearch('');
 
     let targetSurahId = parseInt(targetLocation.surahNameOrId || targetLocation.surahId, 10);
     if (isNaN(targetSurahId) && surahList.length > 0) {
       const clean = (s) => (s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
       const searchTarget = clean(targetLocation.surahNameOrId || targetLocation.surah);
-      const found = surahList.find(s => clean(s.name_id) === searchTarget || clean(s.name_ar) === searchTarget);
+      const found = surahList.find(s => clean(s.name_id) === searchTarget || clean(s.name_ar) === searchTarget)
+        || resolveSurahMatches(targetLocation.surahNameOrId || targetLocation.surah || '', surahList)[0];
       if (found) targetSurahId = found.id;
       else targetSurahId = 1;
     }
@@ -216,36 +295,96 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
     setExpandedExerciseTableAyah(prev => ({ ...prev, [itemId]: !prev[itemId] }));
   };
 
-  // Filtered Surahs in dropdown
+  // Global cross-30-Juz search results (works even before globalIndex loads for Surah:Ayat & shortcuts)
+  const globalSearchResults = useMemo(() => {
+    const q = globalVerseQuery.trim();
+    if (!q) return { directRefs: [], matches: [], totalMatches: 0 };
+    return searchGlobalQuran(globalIndex || [], q, surahList, 30);
+  }, [globalIndex, globalVerseQuery, surahList]);
+
+  // Peta terjemahan Indonesia untuk surah aktif (jika globalIndex sudah dimuat)
+  const currentSurahTranslationMap = useMemo(() => {
+    const map = new Map();
+    if (!globalIndex || !selectedSurahId) return map;
+    for (const item of globalIndex) {
+      if (item.s === selectedSurahId && item.id) {
+        map.set(item.a, item);
+      }
+    }
+    return map;
+  }, [globalIndex, selectedSurahId]);
+
+  // Filtered Surahs in dropdown (supports alias seperti "kahfi", Arab tanpa harakat, nomor)
   const filteredSurahList = useMemo(() => {
-    const q = surahSearch.toLowerCase().trim();
+    const q = surahSearch.trim();
     if (!q) return surahList;
-    return surahList.filter(s => 
-      String(s.id).includes(q) ||
-      s.name_id.toLowerCase().includes(q) ||
-      s.name_ar.includes(q) ||
-      s.type.toLowerCase().includes(q) ||
-      String(s.juz).includes(q)
+    const parsed = prepareSearchQuery(q);
+    const fuzzySurahs = parsed.isArabic ? [] : resolveSurahMatches(q, surahList);
+    const fuzzyIds = new Set(fuzzySurahs.map(s => s.id));
+    const qLower = q.toLowerCase();
+
+    const matched = surahList.filter(s =>
+      fuzzyIds.has(s.id) ||
+      String(s.id).includes(qLower) ||
+      s.name_id.toLowerCase().includes(qLower) ||
+      (parsed.isArabic ? matchArabicText(s.name_ar, parsed) : s.name_ar.includes(q)) ||
+      s.type.toLowerCase().includes(qLower) ||
+      String(s.juz).includes(qLower)
     );
+
+    if (fuzzySurahs.length > 0) {
+      const orderMap = new Map(fuzzySurahs.map((s, idx) => [s.id, idx]));
+      return [...matched].sort((a, b) => (orderMap.get(a.id) ?? 999) - (orderMap.get(b.id) ?? 999) || a.id - b.id);
+    }
+    return matched;
   }, [surahList, surahSearch]);
 
-  // Filtered Ayahs in current Surah
+  // Filtered Ayahs in current Surah (mendukung Arab tanpa harakat, akar kata, & terjemahan Indo)
   const filteredMushafAyahs = useMemo(() => {
     if (!currentSurahData || !currentSurahData.ayat) return [];
-    const q = mushafAyahSearch.toLowerCase().trim();
-    if (!q) return currentSurahData.ayat;
-    return currentSurahData.ayat.filter(a => 
-      String(a.ayat_id).includes(q) ||
-      a.teks_ayat_arab.includes(q) ||
-      (a.kata_per_kata && a.kata_per_kata.some(k => 
-        k.kata_arab.includes(q) ||
-        k.kedudukan_irab?.toLowerCase().includes(q) ||
-        k.akar_kata?.includes(q) ||
-        k.jenis_kata_sharaf?.toLowerCase().includes(q) ||
-        k.wazan_sharaf?.includes(q)
-      ))
-    );
-  }, [currentSurahData, mushafAyahSearch]);
+    const raw = mushafAyahSearch.trim();
+    if (!raw) return currentSurahData.ayat;
+
+    const parsed = prepareSearchQuery(raw);
+    const isPureNumber = /^\d+$/.test(raw);
+    const exactNum = isPureNumber ? parseInt(raw, 10) : null;
+    const qLower = raw.toLowerCase();
+
+    const matches = currentSurahData.ayat.filter(a => {
+      if (isPureNumber && String(a.ayat_id).includes(raw)) return true;
+
+      if (parsed.isArabic) {
+        if (matchArabicText(a.teks_ayat_arab, parsed)) return true;
+        return Boolean(a.kata_per_kata && a.kata_per_kata.some(k =>
+          matchArabicText(k.kata_arab, parsed) ||
+          matchArabicText(k.akar_kata, parsed) ||
+          matchArabicText(k.wazan_sharaf, parsed) ||
+          matchArabicText(k.lemma, parsed) ||
+          k.kedudukan_irab?.includes(raw)
+        ));
+      }
+
+      const idxMeta = currentSurahTranslationMap.get(a.ayat_id);
+      if (idxMeta && (idxMeta.idNorm?.includes(parsed.latin) || (parsed.compactLatin.length >= 4 && idxMeta.trCompact?.includes(parsed.compactLatin)))) {
+        return true;
+      }
+
+      return Boolean(a.kata_per_kata && a.kata_per_kata.some(k =>
+        k.kedudukan_irab?.toLowerCase().includes(qLower) ||
+        k.kedudukan_indo?.toLowerCase().includes(qLower) ||
+        k.jenis_kata_sharaf?.toLowerCase().includes(qLower)
+      ));
+    });
+
+    if (exactNum !== null) {
+      return [...matches].sort((a, b) => {
+        if (a.ayat_id === exactNum && b.ayat_id !== exactNum) return -1;
+        if (b.ayat_id === exactNum && a.ayat_id !== exactNum) return 1;
+        return a.ayat_id - b.ayat_id;
+      });
+    }
+    return matches;
+  }, [currentSurahData, mushafAyahSearch, currentSurahTranslationMap]);
 
   // Paginated Mushaf Ayahs
   const totalMushafPages = Math.ceil(filteredMushafAyahs.length / ayahsPerPage) || 1;
@@ -266,18 +405,22 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
   }, []);
 
   const filteredExercises = useMemo(() => {
+    const raw = exerciseSearchQuery.trim();
+    const parsed = prepareSearchQuery(raw);
+    const q = raw.toLowerCase();
+    const latinQ = normalizeLatin(raw);
     return quranExercisesData.filter(item => {
       const matchBinyah = selectedBinyah === 'ALL' || item.kategori_binyah === selectedBinyah;
       const matchJuz = selectedJuz === 'ALL' || String(item.juz) === String(selectedJuz);
-      const q = exerciseSearchQuery.toLowerCase().trim();
-      const matchSearch = !q || (
+      const matchSearch = !raw || (
         item.surah.toLowerCase().includes(q) ||
         String(item.ayat).includes(q) ||
-        item.teks_ayat_arab.includes(q) ||
-        item.terjemahan_indo.toLowerCase().includes(q) ||
+        (parsed.isArabic
+          ? (matchArabicText(item.teks_ayat_arab, parsed) || matchArabicText(item.kata_kunci_syahid, parsed))
+          : (item.teks_ayat_arab.includes(raw) || item.kata_kunci_syahid?.includes(raw))) ||
+        normalizeLatin(item.terjemahan_indo).includes(latinQ) ||
         item.kategori_binyah?.toLowerCase().includes(q) ||
-        item.fokus_bab_nahwu?.toLowerCase().includes(q) ||
-        item.kata_kunci_syahid?.includes(q)
+        item.fokus_bab_nahwu?.toLowerCase().includes(q)
       );
       return matchBinyah && matchJuz && matchSearch;
     });
@@ -402,6 +545,256 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
           
           {/* Surah Selector & Controller Bar */}
           <div className="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-sm space-y-4">
+
+            {/* Global Cross-30-Juz Verse Search & Direct Jump */}
+            <div
+              ref={globalSearchContainerRef}
+              className="relative rounded-2xl border border-emerald-200/90 bg-gradient-to-r from-emerald-50/75 via-white to-amber-50/50 p-4 space-y-2.5"
+            >
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <label className="text-xs font-extrabold text-emerald-900 uppercase tracking-wider flex items-center gap-1.5">
+                  <Compass className="w-4 h-4 text-emerald-700" />
+                  <span>Cari & Lompat Langsung ke Ayat (Seluruh 114 Surah / 6.236 Ayat)</span>
+                </label>
+                <span className="text-[11px] font-medium text-emerald-800 bg-emerald-100/80 border border-emerald-200 px-2.5 py-0.5 rounded-full">
+                  Kata kunci Arab &bull; Arti Indonesia &bull; Surah:Ayat
+                </span>
+              </div>
+
+              <div className="relative flex items-center gap-2">
+                <div className="relative flex-1">
+                  <Search className="w-4 h-4 text-emerald-700 absolute left-3.5 top-3" />
+                  <input
+                    type="text"
+                    placeholder="Ketik kata kunci ayat (mis. الحمد لله, kursi, puasa) atau Surah:Ayat (mis. 2:255, kahfi 10)..."
+                    value={globalVerseQuery}
+                    onFocus={() => {
+                      ensureGlobalIndex();
+                      setGlobalPanelOpen(true);
+                    }}
+                    onChange={(e) => {
+                      setGlobalVerseQuery(e.target.value);
+                      ensureGlobalIndex();
+                      setGlobalPanelOpen(true);
+                    }}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') {
+                        const first = globalSearchResults.directRefs[0] || globalSearchResults.matches[0];
+                        if (first) {
+                          e.preventDefault();
+                          handleJumpToVerse(first.s, first.a);
+                        }
+                      } else if (e.key === 'Escape') {
+                        setGlobalPanelOpen(false);
+                      }
+                    }}
+                    className="w-full pl-10 pr-9 py-2.5 bg-white border border-emerald-200 rounded-xl text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 shadow-xs"
+                  />
+                  {globalVerseQuery && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setGlobalVerseQuery('');
+                        setGlobalPanelOpen(false);
+                      }}
+                      className="absolute right-2.5 top-2.5 p-1 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-full"
+                      title="Hapus pencarian"
+                    >
+                      <X className="w-3.5 h-3.5" />
+                    </button>
+                  )}
+                </div>
+
+                {(globalSearchResults.directRefs[0] || globalSearchResults.matches[0]) && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const first = globalSearchResults.directRefs[0] || globalSearchResults.matches[0];
+                      handleJumpToVerse(first.s, first.a);
+                    }}
+                    className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-emerald-900 hover:bg-emerald-800 text-amber-300 text-xs font-bold shadow-xs transition shrink-0"
+                  >
+                    <span>Lompat</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
+                )}
+              </div>
+
+              {/* Quick discovery example chips */}
+              {!globalVerseQuery.trim() && (
+                <div className="flex flex-wrap items-center gap-1.5 pt-0.5 text-[11px]">
+                  <span className="text-slate-500 font-medium mr-1">Contoh cepat:</span>
+                  {[
+                    { label: '2:255 (Ayat Kursi)', q: '2:255' },
+                    { label: 'kahfi 10', q: 'kahfi 10' },
+                    { label: 'الحمد لله', q: 'الحمد لله' },
+                    { label: 'puasa', q: 'puasa' },
+                    { label: 'ان مع العسر', q: 'ان مع العسر' },
+                    { label: 'kun fayakun', q: 'kun fayakun' }
+                  ].map((ex) => (
+                    <button
+                      key={ex.q}
+                      type="button"
+                      onClick={() => {
+                        setGlobalVerseQuery(ex.q);
+                        ensureGlobalIndex();
+                        setGlobalPanelOpen(true);
+                      }}
+                      className="px-2 py-0.5 rounded-md bg-white border border-slate-200 text-slate-600 hover:border-emerald-400 hover:text-emerald-900 transition"
+                    >
+                      {ex.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* Global Search Results Dropdown */}
+              {globalPanelOpen && globalVerseQuery.trim().length > 0 && (
+                <div className="mt-2 bg-white rounded-2xl border border-emerald-200 shadow-2xl overflow-hidden z-40">
+                  <div className="px-4 py-2 bg-slate-50 border-b border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+                    <span>
+                      Hasil pencarian lintas 6.236 ayat untuk <strong className="text-slate-800">"{globalVerseQuery.trim()}"</strong>
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => setGlobalPanelOpen(false)}
+                      className="text-slate-400 hover:text-slate-700 font-semibold"
+                    >
+                      Tutup
+                    </button>
+                  </div>
+
+                  {globalIndexError && (
+                    <div className="px-4 py-2 bg-amber-50 text-amber-800 text-xs border-b border-amber-100">
+                      {globalIndexError}
+                    </div>
+                  )}
+
+                  <div className="max-h-96 overflow-y-auto divide-y divide-slate-100">
+                    {/* Direct Surah:Ayat or Popular Shortcut Jumps */}
+                    {globalSearchResults.directRefs.map((refItem) => {
+                      const isLocked = !isPro && !isAyahFree(refItem.s, refItem.a);
+                      return (
+                        <button
+                          key={`direct-${refItem.s}:${refItem.a}`}
+                          type="button"
+                          onClick={() => handleJumpToVerse(refItem.s, refItem.a)}
+                          className="w-full text-left p-3.5 bg-amber-50/60 hover:bg-amber-50 transition flex items-start justify-between gap-3"
+                        >
+                          <div className="space-y-1 min-w-0 flex-1">
+                            <div className="flex flex-wrap items-center gap-2">
+                              <span className="px-2 py-0.5 rounded-md bg-emerald-900 text-amber-300 font-mono text-[11px] font-bold">
+                                {refItem.s}:{refItem.a}
+                              </span>
+                              <span className="font-bold text-emerald-950 text-xs sm:text-sm">
+                                {refItem.badge}
+                              </span>
+                              {refItem.juz && (
+                                <span className="text-[10px] text-slate-500">Juz {refItem.juz}</span>
+                              )}
+                              {isLocked && (
+                                <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-amber-400/20 text-amber-800 border border-amber-400/40">
+                                  PRO
+                                </span>
+                              )}
+                            </div>
+                            {refItem.t && (
+                              <p className="font-arabic text-base sm:text-lg text-emerald-950 text-right leading-relaxed" dir="rtl">
+                                {refItem.t}
+                              </p>
+                            )}
+                            {refItem.id && (
+                              <p className="text-xs text-slate-600 line-clamp-2">{refItem.id}</p>
+                            )}
+                          </div>
+                          <span className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-emerald-900 text-amber-300 text-[11px] font-bold shrink-0 self-center">
+                            <span>Buka</span>
+                            <ArrowRight className="w-3 h-3" />
+                          </span>
+                        </button>
+                      );
+                    })}
+
+                    {/* Loading indicator for keyword index */}
+                    {loadingGlobalIndex && globalSearchResults.matches.length === 0 && (
+                      <div className="p-4 flex items-center justify-center gap-2 text-xs text-emerald-800">
+                        <RefreshCw className="w-4 h-4 animate-spin" />
+                        <span>Memuat indeks kata kunci 6.236 ayat Al-Qur'an...</span>
+                      </div>
+                    )}
+
+                    {/* Keyword matches */}
+                    {globalSearchResults.matches.length > 0 && (
+                      <>
+                        <div className="px-4 py-1.5 bg-emerald-50/60 text-[11px] font-bold text-emerald-900 flex items-center justify-between">
+                          <span>Kecocokan Ayat ({globalSearchResults.totalMatches} ditemukan)</span>
+                          {globalSearchResults.totalMatches > globalSearchResults.matches.length && (
+                            <span className="font-normal text-slate-500">
+                              Menampilkan {globalSearchResults.matches.length} paling relevan
+                            </span>
+                          )}
+                        </div>
+                        {globalSearchResults.matches.map((item) => {
+                          const isLocked = !isPro && !isAyahFree(item.s, item.a);
+                          return (
+                            <button
+                              key={`${item.s}:${item.a}`}
+                              type="button"
+                              onClick={() => handleJumpToVerse(item.s, item.a)}
+                              className="w-full text-left p-3.5 hover:bg-emerald-50/60 transition flex items-start justify-between gap-3 group"
+                            >
+                              <div className="space-y-1.5 min-w-0 flex-1">
+                                <div className="flex flex-wrap items-center gap-2">
+                                  <span className="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-900 font-mono text-[11px] font-bold">
+                                    QS. {item.surahName} [{item.s}:{item.a}]
+                                  </span>
+                                  {item.surahArab && (
+                                    <span className="font-arabic text-sm font-bold text-emerald-800">{item.surahArab}</span>
+                                  )}
+                                  {item.juz && (
+                                    <span className="text-[10px] text-slate-400">Juz {item.juz}</span>
+                                  )}
+                                  {isLocked && (
+                                    <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-amber-400/20 text-amber-800 border border-amber-400/40">
+                                      PRO
+                                    </span>
+                                  )}
+                                </div>
+                                <p className="font-arabic text-base sm:text-lg text-slate-900 text-right leading-loose" dir="rtl">
+                                  {item.t}
+                                </p>
+                                {item.id && (
+                                  <p className="text-xs text-slate-600 line-clamp-2">{item.id}</p>
+                                )}
+                              </div>
+                              <span className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-100 group-hover:bg-emerald-900 group-hover:text-amber-300 text-slate-700 text-[11px] font-bold shrink-0 self-center transition">
+                                <span>Lompat</span>
+                                <ArrowRight className="w-3 h-3" />
+                              </span>
+                            </button>
+                          );
+                        })}
+                      </>
+                    )}
+
+                    {/* No results */}
+                    {!loadingGlobalIndex &&
+                      globalSearchResults.directRefs.length === 0 &&
+                      globalSearchResults.matches.length === 0 && (
+                        <div className="p-6 text-center space-y-1.5">
+                          <p className="text-xs sm:text-sm font-semibold text-slate-700">
+                            Belum ditemukan ayat untuk "{globalVerseQuery.trim()}"
+                          </p>
+                          <p className="text-[11px] text-slate-500">
+                            Coba kata kunci Arab tanpa harakat (mis. <span className="font-arabic">الحمد لله</span>), arti kata Indonesia (mis. <span className="font-semibold">sabar</span>), atau format <span className="font-mono">2:255</span> / <span className="font-semibold">baqarah 255</span>.
+                          </p>
+                        </div>
+                      )}
+                  </div>
+                </div>
+              )}
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
               
               {/* Surah Dropdown Selector */}
@@ -533,17 +926,24 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
                 </div>
 
                 {/* Filter within surah */}
-                <div className="relative w-full sm:w-72">
+                <div className="relative w-full sm:w-80">
                   <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-2.5" />
                   <input
                     type="text"
-                    placeholder="Cari kata/ayat di surah ini..."
+                    placeholder="Filter ayat, Arab, akar, atau arti di surah ini..."
                     value={mushafAyahSearch}
-                    onChange={(e) => {
-                      setMushafAyahSearch(e.target.value);
-                      setMushafPage(1);
+                    onFocus={() => {
+                      if (mushafAyahSearch && !/^\d+$/.test(mushafAyahSearch)) ensureGlobalIndex();
                     }}
-                    className="w-full pl-8 pr-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs focus:outline-none focus:ring-2 focus:ring-emerald-600"
+                    onChange={(e) => {
+                      const val = e.target.value;
+                      setMushafAyahSearch(val);
+                      setMushafPage(1);
+                      if (val && !/^\d+$/.test(val.trim())) {
+                        ensureGlobalIndex();
+                      }
+                    }}
+                    className="w-full pl-8 pr-7 py-1.5 bg-slate-50 border border-slate-200 rounded-lg text-xs focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   />
                   {mushafAyahSearch && (
                     <button
@@ -583,8 +983,26 @@ export default function TadribatQuranView({ fontSize = 28, onOpenMateri, targetL
             <div className="space-y-6">
               
               {currentMushafAyahs.length === 0 ? (
-                <div className="bg-white rounded-2xl p-10 text-center border border-slate-200 text-slate-500">
-                  Tidak ada ayat yang cocok dengan kata pencarian "{mushafAyahSearch}".
+                <div className="bg-white rounded-2xl p-10 text-center border border-slate-200 text-slate-500 space-y-3">
+                  <p>Tidak ada ayat yang cocok dengan kata pencarian "{mushafAyahSearch}" di surah ini.</p>
+                  {mushafAyahSearch.trim() && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const q = mushafAyahSearch.trim();
+                        setGlobalVerseQuery(q);
+                        setMushafAyahSearch('');
+                        ensureGlobalIndex();
+                        setGlobalPanelOpen(true);
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      }}
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-900 hover:bg-emerald-800 text-amber-300 text-xs font-bold transition shadow-xs"
+                    >
+                      <Compass className="w-4 h-4" />
+                      <span>Cari "{mushafAyahSearch.trim()}" di Seluruh 114 Surah</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </button>
+                  )}
                 </div>
               ) : (
                 currentMushafAyahs.map((ayah) => {
