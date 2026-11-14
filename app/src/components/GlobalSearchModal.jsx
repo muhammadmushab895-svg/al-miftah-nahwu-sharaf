@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Search, X, BookOpen, Sparkles, Layers, BookMarked, Compass, ArrowRight } from 'lucide-react';
+import { Search, X, BookOpen, Sparkles, Layers, BookMarked, Compass, FlaskConical } from 'lucide-react';
 import babData from '../data/01_kurikulum_bab.json';
 import materiData from '../data/02_materi_kaidah.json';
 import quranData from '../data/06_latihan_quran.json';
 import irabData from '../data/03_contoh_dan_irab.json';
 import kamusData from '../data/05_kamus_istilah.json';
+import tashrifData from '../data/tashrif_data.json';
 import {
   loadGlobalQuranIndex,
   searchGlobalQuran,
@@ -56,14 +57,28 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
     const raw = query.trim();
     const q = raw.toLowerCase();
     if (!raw || raw.length < 2) {
-      return { mushaf: [], quran: [], materi: [], irab: [], kamus: [] };
+      return { mushaf: [], quran: [], tashrif: [], materi: [], irab: [], kamus: [] };
     }
 
     const parsed = prepareSearchQuery(raw);
     const latinQ = normalizeLatin(raw);
+    const cleanArQuery = parsed.isArabic ? parsed.cleanArabic : '';
 
     const globalHits = searchGlobalQuran(globalQuranIndex || [], raw, surahList, 8);
     const mushaf = [...globalHits.directRefs, ...globalHits.matches].slice(0, 8);
+
+    const tashrif = (tashrifData.verbs || []).filter(v =>
+      v.meaning.toLowerCase().includes(q) ||
+      v.babNameId.toLowerCase().includes(q) ||
+      v.root.toLowerCase().includes(q) ||
+      v.id.toLowerCase().includes(q) ||
+      (cleanArQuery && (
+        matchArabicText(v.istilahi.madhi, parsed) ||
+        matchArabicText(v.istilahi.mudhari, parsed) ||
+        matchArabicText(v.istilahi.mashdar, parsed) ||
+        matchArabicText(v.istilahi.isimFail, parsed)
+      ))
+    ).slice(0, 5);
 
     const quran = quranData.filter(i =>
       i.surah.toLowerCase().includes(q) ||
@@ -89,7 +104,7 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
       k.definisi_indo.toLowerCase().includes(q)
     ).slice(0, 5);
 
-    return { mushaf, quran, materi, irab, kamus };
+    return { mushaf, quran, tashrif, materi, irab, kamus };
   }, [query, globalQuranIndex, surahList]);
 
   if (!isOpen) return null;
@@ -97,6 +112,7 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
   const totalResults =
     results.mushaf.length +
     results.quran.length +
+    results.tashrif.length +
     results.materi.length +
     results.irab.length +
     results.kamus.length;
@@ -198,6 +214,36 @@ export default function GlobalSearchModal({ isOpen, onClose, onSelectResult }) {
                         </div>
                         <span className="font-arabic text-sm font-semibold text-emerald-900 shrink-0">
                           {item.kata_kunci_syahid || item.surah}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Tashrif Sharaf Results */}
+              {results.tashrif.length > 0 && (
+                <div className="space-y-2 pt-3">
+                  <span className="text-[11px] font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
+                    <FlaskConical className="w-3.5 h-3.5" />
+                    Laboratorium Tashrif &amp; Sharaf ({results.tashrif.length})
+                  </span>
+                  <div className="space-y-1.5">
+                    {results.tashrif.map(item => (
+                      <div
+                        key={item.id}
+                        onClick={() => {
+                          onSelectResult('tashrif', item);
+                          onClose();
+                        }}
+                        className="p-2.5 rounded-xl hover:bg-emerald-50/80 cursor-pointer transition border border-transparent hover:border-emerald-200 flex items-center justify-between gap-3 text-xs"
+                      >
+                        <div>
+                          <div className="font-bold text-slate-800">{item.meaning} ({item.babNameId})</div>
+                          <div className="text-slate-500 line-clamp-1">{item.bina} • Akar: {item.root}</div>
+                        </div>
+                        <span className="font-arabic text-base font-semibold text-emerald-900 shrink-0" dir="rtl">
+                          {item.istilahi.madhi} — {item.istilahi.mudhari}
                         </span>
                       </div>
                     ))}

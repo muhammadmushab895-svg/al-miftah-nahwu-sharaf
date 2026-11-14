@@ -9,6 +9,7 @@ import MateriView from './components/MateriView';
 import StudioIrabView from './components/StudioIrabView';
 import AsrarIrabView from './components/AsrarIrabView';
 import IrabLabView from './components/IrabLabView';
+import TashrifLabView from './components/TashrifLabView';
 import KuisView from './components/KuisView';
 import KamusView from './components/KamusView';
 import GlobalSearchModal from './components/GlobalSearchModal';
@@ -29,6 +30,8 @@ export default function App() {
   const [isPro, setIsPro] = useState(() => getLicenseStatus().isPro);
   const [bookmarkCount, setBookmarkCount] = useState(0);
   const [quranTargetLocation, setQuranTargetLocation] = useState(null);
+  const [targetTashrifVerbId, setTargetTashrifVerbId] = useState(null);
+  const [targetIrabSyahid, setTargetIrabSyahid] = useState(null);
 
   const handleOpenLicense = (tab = 'qris') => {
     setLicenseModalTab(tab);
@@ -74,7 +77,11 @@ export default function App() {
       setActiveTab('studio');
     } else if (type === 'asrar') {
       setActiveTab('asrar');
+    } else if (type === 'tashrif') {
+      setTargetTashrifVerbId(item?.id || null);
+      setActiveTab('tashrif');
     } else if (type === 'irab') {
+      setTargetIrabSyahid(item || null);
       setActiveTab('irab');
     } else if (type === 'kamus') {
       setActiveTab('kamus');
@@ -137,8 +144,15 @@ export default function App() {
             onJumpToQuran={handleJumpToQuran}
           />
         )}
+        {activeTab === 'tashrif' && (
+          <TashrifLabView
+            fontSize={fontSize}
+            onOpenMateri={() => setActiveTab('materi')}
+            initialVerbId={targetTashrifVerbId}
+          />
+        )}
         {activeTab === 'irab' && (
-          <IrabLabView fontSize={fontSize} />
+          <IrabLabView fontSize={fontSize} targetSyahid={targetIrabSyahid} />
         )}
         {activeTab === 'kuis' && (
           <KuisView />
@@ -226,7 +240,10 @@ export default function App() {
                 149 Sub-Kaidah
               </span>
               <span className="px-2.5 py-1 rounded-md bg-emerald-900 border border-emerald-800 text-emerald-300 font-bold">
-                119 Syahid I'rab
+                315+119 Lab I&apos;rab
+              </span>
+              <span className="px-2.5 py-1 rounded-md bg-emerald-900 border border-emerald-800 text-amber-300 font-bold">
+                62 Tashrif Sharaf
               </span>
               <span className="px-2.5 py-1 rounded-md bg-emerald-900 border border-emerald-800 text-amber-300 font-bold">
                 80 Soal HOTS

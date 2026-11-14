@@ -1,5 +1,5 @@
-const CACHE_NAME = 'almiftah-core-v2';
-const DATA_CACHE_NAME = 'almiftah-quran-data-v2';
+const CACHE_NAME = 'almiftah-core-v3';
+const DATA_CACHE_NAME = 'almiftah-quran-data-v3';
 
 const STATIC_ASSETS = [
   '/',

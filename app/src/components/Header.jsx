@@ -13,7 +13,8 @@ import {
   Zap,
   Heart,
   MessageCircle,
-  Crown
+  Crown,
+  FlaskConical
 } from 'lucide-react';
 
 export default function Header({ 
@@ -32,10 +33,11 @@ export default function Header({
 
   const tabs = [
     { id: 'materi', label: 'Materi & Kaidah', shortLabel: 'Materi', icon: BookOpen, badge: '42 Bab' },
-    { id: 'quran', label: 'Tadribat & Mushaf I\'rab', shortLabel: 'Mushaf & Latihan', icon: Sparkles, badge: '6.236 Ayat (114 Surah)' },
-    { id: 'studio', label: 'Studio I\'rab Mandiri', shortLabel: 'Studio I\'rab', icon: Zap, badge: 'Sandbox Nalar' },
-    { id: 'asrar', label: 'Rahasia I\'rab & Balaghah', shortLabel: 'Tafsir I\'rab', icon: Sparkles, badge: 'Asrarul Qur\'an' },
-    { id: 'irab', label: 'Dalil Syahid', shortLabel: 'Syahid', icon: Layers, badge: '119 Dalil' },
+    { id: 'quran', label: 'Tadribat & Mushaf I\'rab', shortLabel: 'Mushaf & Latihan', icon: Sparkles, badge: '6.236 Ayat' },
+    { id: 'tashrif', label: 'Lab Sharaf (Tashrif)', shortLabel: 'Tashrif', icon: FlaskConical, badge: '62 Fi\'il' },
+    { id: 'irab', label: 'Lab I\'rab Visual', shortLabel: 'Lab I\'rab', icon: Layers, badge: '315 + 119' },
+    { id: 'studio', label: 'Studio I\'rab Mandiri', shortLabel: 'Studio I\'rab', icon: Zap, badge: 'Sandbox' },
+    { id: 'asrar', label: 'Rahasia I\'rab & Balaghah', shortLabel: 'Tafsir I\'rab', icon: Sparkles, badge: 'Asrar' },
     { id: 'kuis', label: 'Kuis HOTS', shortLabel: 'Kuis', icon: GraduationCap, badge: '80 Soal' },
     { id: 'kamus', label: 'Kamus Istilah', shortLabel: 'Kamus', icon: BookMarked, badge: '63 Mu\'jam' },
   ];

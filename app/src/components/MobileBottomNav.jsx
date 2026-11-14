@@ -14,7 +14,8 @@ import {
   Sliders,
   Heart,
   MessageCircle,
-  Crown
+  Crown,
+  FlaskConical
 } from 'lucide-react';
 
 export default function MobileBottomNav({
@@ -39,7 +40,8 @@ export default function MobileBottomNav({
   ];
 
   const secondaryTabs = [
-    { id: 'irab', label: 'Dalil Syahid', desc: '119 Dalil I\'rab Klasik', icon: Layers, badge: '119' },
+    { id: 'tashrif', label: 'Lab Sharaf (Tashrif)', desc: 'Ishtilahi & Lughawi (Mujarrad - Ruba\'i)', icon: FlaskConical, badge: '62' },
+    { id: 'irab', label: 'Lab I\'rab & Syahid', desc: '315 Model Al-Fashih + 119 Syahid Klasik', icon: Layers, badge: '315+119' },
     { id: 'kuis', label: 'Kuis HOTS', desc: '80 Soal Evaluasi Bertingkat', icon: GraduationCap, badge: '80' },
     { id: 'kamus', label: 'Kamus Mu\'jam', desc: '63 Istilah Nahwu & Sharaf', icon: BookMarked, badge: '63' },
   ];
@@ -83,7 +85,7 @@ export default function MobileBottomNav({
           <button
             onClick={() => setDrawerOpen(true)}
             className={`flex flex-col items-center justify-center py-1 transition-all active:scale-95 ${
-              ['irab', 'kuis', 'kamus'].includes(activeTab) || drawerOpen
+              ['tashrif', 'irab', 'kuis', 'kamus'].includes(activeTab) || drawerOpen
                 ? 'text-amber-400 font-bold' 
                 : 'text-emerald-300/70 hover:text-emerald-100'
             }`}
