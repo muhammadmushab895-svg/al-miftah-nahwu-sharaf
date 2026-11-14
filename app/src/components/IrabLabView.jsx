@@ -97,7 +97,6 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
 
   const [currentLevel, setCurrentLevel] = useState('all'); // 'all' | '1' | '2' | '3'
   const [currentCategory, setCurrentCategory] = useState('all');
-  const [currentUnit, setCurrentUnit] = useState('all');
   const [visualSearch, setVisualSearch] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [inspectOrChallenge, setInspectOrChallenge] = useState('inspect'); // 'inspect' | 'challenge'
@@ -159,20 +158,6 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
   const allModels = useMemo(() => modelsData?.models || [], [modelsData]);
   const categories = useMemo(() => modelsData?.categories || [], [modelsData]);
 
-  const unitList = useMemo(() => {
-    const map = new Map();
-    allModels.forEach((m) => {
-      if (!map.has(m.unitNum)) {
-        map.set(m.unitNum, {
-          unitNum: m.unitNum,
-          unitTitleAr: m.unitTitleAr,
-          unitTitleId: m.unitTitleId,
-        });
-      }
-    });
-    return [...map.values()].sort((a, b) => a.unitNum - b.unitNum);
-  }, [allModels]);
-
   const categoryCounts = useMemo(() => {
     const counts = { all: allModels.length };
     categories.forEach((cat) => {
@@ -213,11 +198,6 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
       });
     }
 
-    if (currentUnit !== 'all') {
-      const uNum = parseInt(currentUnit, 10);
-      list = list.filter((m) => m.unitNum === uNum);
-    }
-
     const qRaw = visualSearch.trim();
     if (qRaw) {
       const lowerQ = qRaw.toLowerCase();
@@ -236,14 +216,14 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
     }
 
     return list;
-  }, [allModels, currentLevel, currentCategory, currentUnit, visualSearch]);
+  }, [allModels, currentLevel, currentCategory, visualSearch]);
 
   // Reset cursor saat filter berubah
   useEffect(() => {
     setCurrentIndex(0);
     setSelectedTokenIndex(0);
     setQuizResult(null);
-  }, [currentLevel, currentCategory, currentUnit, visualSearch]);
+  }, [currentLevel, currentCategory, visualSearch]);
 
   const safeIndex = Math.min(currentIndex, Math.max(0, filteredModels.length - 1));
   const currentModel = filteredModels[safeIndex] || null;
@@ -353,7 +333,7 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6">
+    <div className="max-w-5xl mx-auto px-3 sm:px-6 py-5 sm:py-8 space-y-6 overflow-x-hidden">
       {/* Header & Top Mode Switcher */}
       <div className="bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-950 rounded-3xl p-6 sm:p-8 text-white shadow-xl border border-emerald-800/80 space-y-5">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
@@ -366,28 +346,24 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
               Laboratorium I&apos;rab Visual &amp; 119 Dalil Syahid
             </h1>
             <p className="text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
-              Eksplorasi <strong className="text-amber-300">315 Model Analisis Sintaksis Al-Fashih</strong> lintas 48 unit &amp; 3 level dengan penanda warna status I&apos;rab, pohon struktur jumlah, tabel I&apos;rab lengkap, dan kuis I&apos;rab kata-per-kata — terintegrasi bersama <strong className="text-amber-300">119 Dalil Syahid Kitab Kuning</strong>.
+              Eksplorasi <strong className="text-amber-300">315 Model Analisis Sintaksis Al-Fashih</strong> dengan penanda warna 5 status I&apos;rab, pohon struktur jumlah, tabel I&apos;rab lengkap, dan kuis kata-per-kata — bersama <strong className="text-amber-300">119 Dalil Syahid Klasik</strong>.
             </p>
           </div>
 
           {/* Stats Pills */}
           {modelsData && (
-            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-2 text-center shrink-0">
+            <div className="grid grid-cols-3 gap-2 text-center shrink-0">
               <div className="px-3.5 py-2 rounded-xl bg-emerald-950/60 border border-emerald-700/60">
                 <div className="text-lg font-extrabold text-amber-400">{modelsData.totalModels || allModels.length}</div>
-                <div className="text-[10px] text-emerald-200 font-semibold">Model I&apos;rab Visual</div>
+                <div className="text-[10px] text-emerald-200 font-semibold">Model Visual</div>
               </div>
               <div className="px-3.5 py-2 rounded-xl bg-emerald-950/60 border border-emerald-700/60">
                 <div className="text-lg font-extrabold text-amber-400">{irabData.length}</div>
-                <div className="text-[10px] text-emerald-200 font-semibold">Dalil Syahid Klasik</div>
-              </div>
-              <div className="px-3.5 py-2 rounded-xl bg-emerald-950/60 border border-emerald-700/60">
-                <div className="text-lg font-extrabold text-amber-400">48</div>
-                <div className="text-[10px] text-emerald-200 font-semibold">Unit Kurikulum</div>
+                <div className="text-[10px] text-emerald-200 font-semibold">Dalil Syahid</div>
               </div>
               <div className="px-3.5 py-2 rounded-xl bg-emerald-950/60 border border-emerald-700/60">
                 <div className="text-lg font-extrabold text-amber-400">{challengeXp} XP</div>
-                <div className="text-[10px] text-emerald-200 font-semibold">Skor Kuis Sesi</div>
+                <div className="text-[10px] text-emerald-200 font-semibold">Skor Kuis</div>
               </div>
             </div>
           )}
@@ -442,15 +418,15 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
             <>
               {/* Filter Bar Card */}
               <div className="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200 shadow-sm space-y-4">
-                {/* Row 1: Search, Unit Dropdown, Inspect/Challenge Mode Toggle */}
-                <div className="flex flex-col lg:flex-row gap-3 items-stretch lg:items-center justify-between">
-                  <div className="relative flex-1 max-w-md">
+                {/* Row 1: Search & Inspect/Challenge Mode Toggle */}
+                <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-center justify-between">
+                  <div className="relative flex-1">
                     <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
                     <input
                       type="text"
                       value={visualSearch}
                       onChange={(e) => setVisualSearch(e.target.value)}
-                      placeholder="Cari kalimat Arab (tanpa harakat) atau arti Indo..."
+                      placeholder="Cari kalimat Arab (tanpa harakat) atau topik Nahwu..."
                       className="w-full pl-10 pr-9 py-2 rounded-xl border border-slate-200 bg-slate-50 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600"
                     />
                     {visualSearch && (
@@ -463,51 +439,36 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
                     )}
                   </div>
 
-                  <div className="flex flex-col sm:flex-row gap-2.5 flex-1">
-                    <select
-                      value={currentUnit}
-                      onChange={(e) => setCurrentUnit(e.target.value)}
-                      className="flex-1 px-3 py-2 rounded-xl border border-slate-200 bg-slate-50 text-xs sm:text-sm font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-600"
+                  {/* Inspect vs Challenge Mode Toggle */}
+                  <div className="inline-flex rounded-xl bg-slate-100 p-1 border border-slate-200 shrink-0 self-start md:self-auto">
+                    <button
+                      onClick={() => {
+                        setInspectOrChallenge('inspect');
+                        setQuizResult(null);
+                      }}
+                      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
+                        inspectOrChallenge === 'inspect'
+                          ? 'bg-emerald-900 text-amber-300 shadow-xs'
+                          : 'text-slate-600 hover:text-slate-900'
+                      }`}
                     >
-                      <option value="all">Semua Unit (Unit 1 s.d. {unitList.length})</option>
-                      {unitList.map((u) => (
-                        <option key={u.unitNum} value={String(u.unitNum)}>
-                          Unit {u.unitNum}: {u.unitTitleId}
-                        </option>
-                      ))}
-                    </select>
-
-                    {/* Inspect vs Challenge Mode Toggle */}
-                    <div className="inline-flex rounded-xl bg-slate-100 p-1 border border-slate-200 shrink-0">
-                      <button
-                        onClick={() => {
-                          setInspectOrChallenge('inspect');
-                          setQuizResult(null);
-                        }}
-                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
-                          inspectOrChallenge === 'inspect'
-                            ? 'bg-emerald-900 text-amber-300 shadow-xs'
-                            : 'text-slate-600 hover:text-slate-900'
-                        }`}
-                      >
-                        <Eye className="w-3.5 h-3.5" />
-                        <span>Inspeksi Visual</span>
-                      </button>
-                      <button
-                        onClick={() => {
-                          setInspectOrChallenge('challenge');
-                          setQuizResult(null);
-                        }}
-                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
-                          inspectOrChallenge === 'challenge'
-                            ? 'bg-amber-500 text-emerald-950 shadow-xs'
-                            : 'text-slate-600 hover:text-slate-900'
-                        }`}
-                      >
-                        <Target className="w-3.5 h-3.5" />
-                        <span>Tantangan I&apos;rab</span>
-                      </button>
-                    </div>
+                      <Eye className="w-3.5 h-3.5" />
+                      <span>Inspeksi Visual</span>
+                    </button>
+                    <button
+                      onClick={() => {
+                        setInspectOrChallenge('challenge');
+                        setQuizResult(null);
+                      }}
+                      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
+                        inspectOrChallenge === 'challenge'
+                          ? 'bg-amber-500 text-emerald-950 shadow-xs'
+                          : 'text-slate-600 hover:text-slate-900'
+                      }`}
+                    >
+                      <Target className="w-3.5 h-3.5" />
+                      <span>Tantangan I&apos;rab</span>
+                    </button>
                   </div>
                 </div>
 
@@ -580,12 +541,11 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
                     onClick={() => {
                       setCurrentLevel('all');
                       setCurrentCategory('all');
-                      setCurrentUnit('all');
                       setVisualSearch('');
                     }}
                     className="px-4 py-2 rounded-xl bg-emerald-900 text-amber-300 text-xs font-bold cursor-pointer"
                   >
-                    Tampilkan Semua 315 Model
+                    Tampilkan Semua {allModels.length} Model
                   </button>
                 </div>
               ) : (
@@ -598,7 +558,7 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
                           Model {safeIndex + 1} / {filteredModels.length}
                         </span>
                         <span className="px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 font-bold">
-                          Unit {currentModel.unitNum} • {currentModel.levelNameId}
+                          {currentModel.categoryId} • {currentModel.levelNameId}
                         </span>
                         {currentModel.sourceBook && (
                           <span className="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700 font-arabic text-xs font-bold" dir="rtl">
@@ -607,7 +567,7 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
                         )}
                       </div>
                       <h2 className="text-sm sm:text-base font-extrabold text-emerald-950">
-                        {currentModel.unitTitleId}
+                        {(currentModel.unitTitleId || '').replace(/\s*\(Kurikulum Lengkap 5 Kitab\)/i, '')}
                       </h2>
                     </div>
 

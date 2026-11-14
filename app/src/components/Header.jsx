@@ -170,7 +170,7 @@ export default function Header({
         </div>
 
         {/* Desktop Navigation Tabs */}
-        <div className="hidden lg:flex items-center gap-1 border-t border-emerald-800/60 py-2 overflow-x-auto">
+        <div className="hidden lg:flex flex-wrap items-center gap-1.5 border-t border-emerald-800/60 py-2">
           {tabs.map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
@@ -178,7 +178,7 @@ export default function Header({
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 whitespace-nowrap ${
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs xl:text-sm font-semibold transition-all duration-200 whitespace-nowrap cursor-pointer ${
                   isActive
                     ? 'bg-amber-400 text-emerald-950 shadow-md shadow-amber-900/20 font-bold scale-[1.02]'
                     : 'text-emerald-100/90 hover:bg-emerald-800/80 hover:text-white'

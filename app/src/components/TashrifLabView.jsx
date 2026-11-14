@@ -24,7 +24,7 @@ const SHIGHAH_DEFS = [
   { key: 'mudhari', titleAr: 'الفِعْلُ المُضَارِعُ', titleId: "Fi'il Mudhari' (Kini/Nanti)", role: 'Kata kerja sedang/akan' },
   { key: 'mashdar', titleAr: 'المَصْدَرُ', titleId: 'Mashdar Ghairu Mimi', role: 'Kata benda abstrak (Gerund)' },
   { key: 'mashdarMimi', titleAr: 'المَصْدَرُ المِيمِيُّ', titleId: 'Mashdar Mimi', role: 'Mashdar berawalan huruf Mim' },
-  { key: 'isimFail', titleAr: 'اِسْمُ الفَاعِلِ', titleId: "Isim Fa'il (Subjek/Pelaku)", role: 'Yang mengerjakan perbuatan' },
+  { key: 'isimFail', titleAr: 'اِسْمُ الفَاعِلِ', titleId: "Isim Fa'il (Pelaku)", role: 'Yang mengerjakan perbuatan' },
   { key: 'isimMaful', titleAr: 'اِسْمُ المَفْعُولِ', titleId: "Isim Maf'ul (Objek)", role: 'Yang dikenai perbuatan' },
   { key: 'amr', titleAr: 'فِعْلُ الأَمْرِ', titleId: "Fi'il Amr (Perintah)", role: 'Kata kerja perintah aktif' },
   { key: 'nahy', titleAr: 'فِعْلُ النَّهْيِ', titleId: "Fi'il Nahy (Larangan)", role: 'Kata kerja larangan (Jangan!)' },
@@ -36,20 +36,20 @@ const SHIGHAH_DEFS = [
 const LUGHAWI_GROUPS = [
   {
     key: 'ghaib',
-    title: '١. الغَائِبُ وَالغَائِبَةُ (Kata Ganti Ketiga — Dia / Mereka)',
-    accent: 'border-amber-200 bg-amber-50/40',
+    title: '١. الغَائِبُ وَالغَائِبَةُ (Orang Ketiga — Dia & Mereka)',
+    headerBg: 'bg-amber-50 border-amber-200 text-amber-950',
     indices: [0, 1, 2, 3, 4, 5],
   },
   {
     key: 'mukhatab',
-    title: '٢. المُخَاطَبُ وَالمُخَاطَبَةُ (Kata Ganti Kedua — Kamu / Kalian)',
-    accent: 'border-emerald-200 bg-emerald-50/40',
+    title: '٢. المُخَاطَبُ وَالمُخَاطَبَةُ (Orang Kedua — Kamu & Kalian)',
+    headerBg: 'bg-emerald-50 border-emerald-200 text-emerald-950',
     indices: [6, 7, 8, 9, 10, 11],
   },
   {
     key: 'mutakallim',
-    title: '٣. المُتَكَلِّمُ (Kata Ganti Pertama — Saya / Kami)',
-    accent: 'border-sky-200 bg-sky-50/40',
+    title: '٣. المُتَكَلِّمُ (Orang Pertama — Saya & Kami)',
+    headerBg: 'bg-sky-50 border-sky-200 text-sky-950',
     indices: [12, 13],
   },
 ];
@@ -98,13 +98,13 @@ function getZiyadahAnalysis(verb) {
     if (verb.wazan.startsWith('تَفَعْلَلَ')) {
       return {
         tag: "Ruba'i Mazid +1 Huruf",
-        extra: 'Huruf تَ (Ta\' Muthawwa\'ah) di awal kata',
+        extra: "Huruf تَ (Ta' Muthawwa'ah) di awal kata",
         meaningImpact: 'Mengubah makna transitif menjadi akibat/refleksif (berbuat dengan sendirinya).'
       };
     }
     return {
       tag: "Ruba'i Mazid +2 Huruf",
-      extra: 'Hamzah washal (اِـ) di awal + Tadh\'if/penggandaan Lam ke-2 (ـلَّ)',
+      extra: "Hamzah washal (اِـ) di awal + Tadh'if/penggandaan Lam ke-2 (ـلَّ)",
       meaningImpact: 'Memberikan makna intensitas (mubalaghah) suatu keadaan yang dalam.'
     };
   }
@@ -118,20 +118,20 @@ function getZiyadahAnalysis(verb) {
   if (verb.babId !== 'mazid') {
     return {
       tag: 'Tsulatsi Mujarrad (Murni 3 Huruf)',
-      extra: 'Tidak ada huruf tambahan — 100% tersusun dari Fa\', \'Ain, dan Lam fi\'il',
+      extra: "Tidak ada huruf tambahan — 100% tersusun dari Fa', 'Ain, dan Lam fi'il",
       meaningImpact: verb.faedah
     };
   }
   const w = verb.wazan || '';
-  if (w.startsWith('أَفْعَلَ')) return { tag: 'Mazid +1 Huruf (Bab Af\'ala)', extra: 'Hamzah Qatha\' (أَـ) di awal', meaningImpact: 'Umumnya untuk Ta\'diyah (menjadikan kata kerja butuh objek).' };
-  if (w.startsWith('فَعَّلَ')) return { tag: 'Mazid +1 Huruf (Bab Fa\'\'ala)', extra: 'Tasydid / Penggandaan \'Ain Fi\'il', meaningImpact: 'Ta\'diyah, Taktsir (sering/banyak), atau menisbahkan perbuatan.' };
-  if (w.startsWith('فَاعَلَ')) return { tag: 'Mazid +1 Huruf (Bab Fa\'ala)', extra: 'Alif setelah Fa\' Fi\'il', meaningImpact: 'Musyarakah (perbuatan timbal balik antar dua pihak).' };
-  if (w.startsWith('تَفَعَّلَ')) return { tag: 'Mazid +2 Huruf (Bab Tafa\'\'ala)', extra: 'Ta\' (تَـ) di awal + Tasydid \'Ain Fi\'il', meaningImpact: 'Takalluf (bersungguh-sungguh mengupayakan) atau Muthawwa\'ah.' };
-  if (w.startsWith('تَفَاعَلَ')) return { tag: 'Mazid +2 Huruf (Bab Tafa\'ala)', extra: 'Ta\' (تَـ) di awal + Alif setelah Fa\' Fi\'il', meaningImpact: 'Musyarakah sejajar (saling) atau pura-pura.' };
-  if (w.startsWith('اِفْتَعَلَ')) return { tag: 'Mazid +2 Huruf (Bab Ifta\'ala)', extra: 'Hamzah washal (اِـ) + Ta\' (ـتَـ) setelah Fa\' Fi\'il', meaningImpact: 'Ittikhadz / kesungguhan menyimak atau berkumpul.' };
-  if (w.startsWith('اِنْفَعَلَ')) return { tag: 'Mazid +2 Huruf (Bab Infa\'ala)', extra: 'Hamzah washal (اِـ) + Nun (نْ) di awal', meaningImpact: 'Muthawwa\'ah / menjadi terpengaruh secara pasif (pecah/terbelah).' };
-  if (w.startsWith('اِفْعَلَّ')) return { tag: 'Mazid +2 Huruf (Bab If\'alla)', extra: 'Hamzah washal (اِـ) + Penggandaan Lam Fi\'il', meaningImpact: 'Khusus warna kuat atau sifat fisik yang melekat (Lazim).' };
-  return { tag: 'Mazid +3 Huruf (Bab Istaf\'ala)', extra: 'Hamzah washal + Sin + Ta\' (اِسْتَـ) di awal', meaningImpact: 'Thalab (memohon/meminta) atau menganggap sifat.' };
+  if (w.startsWith('أَفْعَلَ')) return { tag: "Mazid +1 Huruf (Bab Af'ala)", extra: "Hamzah Qatha' (أَـ) di awal", meaningImpact: "Umumnya untuk Ta'diyah (menjadikan kata kerja butuh objek)." };
+  if (w.startsWith('فَعَّلَ')) return { tag: "Mazid +1 Huruf (Bab Fa''ala)", extra: "Tasydid / Penggandaan 'Ain Fi'il", meaningImpact: "Ta'diyah, Taktsir (sering/banyak), atau menisbahkan perbuatan." };
+  if (w.startsWith('فَاعَلَ')) return { tag: "Mazid +1 Huruf (Bab Fa'ala)", extra: "Alif setelah Fa' Fi'il", meaningImpact: 'Musyarakah (perbuatan timbal balik antar dua pihak).' };
+  if (w.startsWith('تَفَعَّلَ')) return { tag: "Mazid +2 Huruf (Bab Tafa''ala)", extra: "Ta' (تَـ) di awal + Tasydid 'Ain Fi'il", meaningImpact: "Takalluf (bersungguh-sungguh mengupayakan) atau Muthawwa'ah." };
+  if (w.startsWith('تَفَاعَلَ')) return { tag: "Mazid +2 Huruf (Bab Tafa'ala)", extra: "Ta' (تَـ) di awal + Alif setelah Fa' Fi'il", meaningImpact: 'Musyarakah sejajar (saling) atau pura-pura.' };
+  if (w.startsWith('اِفْتَعَلَ')) return { tag: "Mazid +2 Huruf (Bab Ifta'ala)", extra: "Hamzah washal (اِـ) + Ta' (ـتَـ) setelah Fa' Fi'il", meaningImpact: 'Ittikhadz / kesungguhan menyimak atau berkumpul.' };
+  if (w.startsWith('اِنْفَعَلَ')) return { tag: "Mazid +2 Huruf (Bab Infa'ala)", extra: 'Hamzah washal (اِـ) + Nun (نْ) di awal', meaningImpact: "Muthawwa'ah / menjadi terpengaruh secara pasif (pecah/terbelah)." };
+  if (w.startsWith('اِفْعَلَّ')) return { tag: "Mazid +2 Huruf (Bab If'alla)", extra: "Hamzah washal (اِـ) + Penggandaan Lam Fi'il", meaningImpact: 'Khusus warna kuat atau sifat fisik yang melekat (Lazim).' };
+  return { tag: "Mazid +3 Huruf (Bab Istaf'ala)", extra: "Hamzah washal + Sin + Ta' (اِسْتَـ) di awal", meaningImpact: 'Thalab (memohon/meminta) atau menganggap sifat.' };
 }
 
 export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVerbId }) {
@@ -149,7 +149,6 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
   const [selectedOption, setSelectedOption] = useState(null);
   const [quizAnswered, setQuizAnswered] = useState(false);
 
-  // Stop speech cleanly on unmount
   useEffect(() => {
     return () => stopArabicSpeech();
   }, []);
@@ -259,71 +258,68 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6">
+    <div className="max-w-5xl mx-auto px-3 sm:px-6 py-5 sm:py-8 space-y-6 overflow-x-hidden">
       {/* Hero Banner */}
-      <div className="bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-900 rounded-3xl p-6 sm:p-8 text-white shadow-xl border border-emerald-800/80 relative overflow-hidden">
-        <div className="absolute -right-10 -top-10 w-44 h-44 bg-amber-400/10 rounded-full blur-2xl pointer-events-none" />
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative">
-          <div className="space-y-2.5 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs font-bold">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span className="font-arabic text-sm" dir="rtl">مُخْتَبَرُ الصَّرْفِ وَالتَّصْرِيفِ</span>
-              <span>• Model Interaktif Al-Fashih</span>
-            </div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
-              Laboratorium Tashrif Ishtilahi &amp; Lughawi
-            </h1>
-            <p className="text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
-              Simulasi konjugasi kata kerja Arab terlengkap dari <strong className="text-amber-300">Tsulatsi Mujarrad (Bab 1–6)</strong>,{' '}
-              <strong className="text-amber-300">Tsulatsi Mazid</strong>, hingga <strong className="text-amber-300">Ruba&apos;i Mujarrad &amp; Mazid</strong>. Dilengkapi 11 shighah Ishtilahi, 14 dhamir Lughawi, Mizan Sharfi, pelafalan audio, serta kuis sharaf.
-            </p>
+      <div className="bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-900 rounded-3xl p-5 sm:p-7 text-white shadow-xl border border-emerald-800/80 space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs font-bold w-fit">
+            <Sparkles className="w-3.5 h-3.5" />
+            <span className="font-arabic text-sm" dir="rtl">مُخْتَبَرُ الصَّرْفِ وَالتَّصْرِيفِ</span>
           </div>
+          {onOpenMateri && (
+            <button
+              onClick={onOpenMateri}
+              className="inline-flex items-center justify-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-emerald-950 text-xs font-extrabold shadow transition cursor-pointer w-fit"
+            >
+              <BookOpen className="w-3.5 h-3.5" />
+              <span>Baca Teori Bab 2–14 Sharaf</span>
+            </button>
+          )}
+        </div>
 
-          <div className="flex flex-col sm:flex-row lg:flex-col items-stretch sm:items-center lg:items-end gap-3 shrink-0">
-            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-2 text-center">
-              <div className="px-3.5 py-2 rounded-xl bg-emerald-950/60 border border-emerald-700/60">
-                <div className="text-lg font-extrabold text-amber-400">{tashrifData.verbs.length}</div>
-                <div className="text-[10px] text-emerald-200 font-semibold">Kata Kerja</div>
-              </div>
-              <div className="px-3.5 py-2 rounded-xl bg-emerald-950/60 border border-emerald-700/60">
-                <div className="text-lg font-extrabold text-amber-400">11</div>
-                <div className="text-[10px] text-emerald-200 font-semibold">Shighah Ishtilahi</div>
-              </div>
-              <div className="px-3.5 py-2 rounded-xl bg-emerald-950/60 border border-emerald-700/60">
-                <div className="text-lg font-extrabold text-amber-400">14</div>
-                <div className="text-[10px] text-emerald-200 font-semibold">Dhamir Lughawi</div>
-              </div>
-              <div className="px-3.5 py-2 rounded-xl bg-emerald-950/60 border border-emerald-700/60">
-                <div className="text-lg font-extrabold text-amber-400">{quizzes.length}</div>
-                <div className="text-[10px] text-emerald-200 font-semibold">Soal Kuis</div>
-              </div>
-            </div>
-            {onOpenMateri && (
-              <button
-                onClick={onOpenMateri}
-                className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-emerald-950 text-xs font-extrabold shadow transition cursor-pointer"
-              >
-                <BookOpen className="w-3.5 h-3.5" />
-                <span>Baca Teori Bab 2–14 Sharaf</span>
-              </button>
-            )}
+        <div className="space-y-1.5">
+          <h1 className="text-xl sm:text-3xl font-extrabold tracking-tight text-white">
+            Laboratorium Tashrif Ishtilahi &amp; Lughawi
+          </h1>
+          <p className="text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
+            Simulasi konjugasi kata kerja Arab lengkap dari <strong className="text-amber-300">Tsulatsi Mujarrad (Bab 1–6)</strong>,{' '}
+            <strong className="text-amber-300">Tsulatsi Mazid</strong>, hingga <strong className="text-amber-300">Ruba&apos;i Mujarrad &amp; Mazid</strong> dengan 11 shighah Ishtilahi &amp; 14 dhamir Lughawi dalam tampilan vertikal yang rapi.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center">
+          <div className="px-3 py-2 rounded-xl bg-emerald-950/60 border border-emerald-700/60">
+            <div className="text-base sm:text-lg font-extrabold text-amber-400">{tashrifData.verbs.length}</div>
+            <div className="text-[10px] text-emerald-200 font-semibold">Kata Kerja</div>
+          </div>
+          <div className="px-3 py-2 rounded-xl bg-emerald-950/60 border border-emerald-700/60">
+            <div className="text-base sm:text-lg font-extrabold text-amber-400">11</div>
+            <div className="text-[10px] text-emerald-200 font-semibold">Shighah Ishtilahi</div>
+          </div>
+          <div className="px-3 py-2 rounded-xl bg-emerald-950/60 border border-emerald-700/60">
+            <div className="text-base sm:text-lg font-extrabold text-amber-400">14</div>
+            <div className="text-[10px] text-emerald-200 font-semibold">Dhamir Lughawi</div>
+          </div>
+          <div className="px-3 py-2 rounded-xl bg-emerald-950/60 border border-emerald-700/60">
+            <div className="text-base sm:text-lg font-extrabold text-amber-400">{quizzes.length}</div>
+            <div className="text-[10px] text-emerald-200 font-semibold">Soal Kuis</div>
           </div>
         </div>
       </div>
 
-      {/* Controls: Filter Wazan & Search */}
+      {/* Controls Card: Vertical Clean Flow */}
       <div className="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200 shadow-sm space-y-4">
-        <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-center justify-between">
-          {/* Dropdown + Quick Title */}
-          <div className="flex items-center gap-2.5 flex-1">
-            <label htmlFor="tashrif-bab-select" className="text-xs font-bold text-slate-600 shrink-0">
-              Pilih Wazan:
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {/* Wazan Dropdown */}
+          <div className="space-y-1">
+            <label htmlFor="tashrif-bab-select" className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+              1. Filter Bab / Wazan
             </label>
             <select
               id="tashrif-bab-select"
               value={activeBab}
               onChange={(e) => setActiveBab(e.target.value)}
-              className="flex-1 max-w-md px-3 py-2 rounded-xl border border-slate-200 bg-slate-50 text-xs sm:text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-600"
+              className="w-full px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50 text-xs sm:text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-600"
             >
               {tashrifData.wazanCategories.map((c) => (
                 <option key={c.id} value={c.id}>
@@ -334,28 +330,34 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
           </div>
 
           {/* Search Input */}
-          <div className="relative flex-1 max-w-md">
-            <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Cari akar kata Arab (tanpa harakat) atau arti Indo..."
-              className="w-full pl-10 pr-9 py-2 rounded-xl border border-slate-200 bg-slate-50 text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-600"
-            />
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery('')}
-                className="p-1 text-slate-400 hover:text-slate-600 absolute right-2.5 top-1/2 -translate-y-1/2"
-                aria-label="Hapus pencarian"
-              >
-                <X className="w-3.5 h-3.5" />
-              </button>
-            )}
+          <div className="space-y-1">
+            <label htmlFor="tashrif-search-input" className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+              2. Cari Kata Kerja (Arab Tanpa Harakat / Arti)
+            </label>
+            <div className="relative">
+              <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+              <input
+                id="tashrif-search-input"
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Mis. نصر, زلزل, دحرج, mengampuni..."
+                className="w-full pl-10 pr-9 py-2.5 rounded-xl border border-slate-200 bg-slate-50 text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-600"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="p-1 text-slate-400 hover:text-slate-600 absolute right-2.5 top-1/2 -translate-y-1/2"
+                  aria-label="Hapus pencarian"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+            </div>
           </div>
         </div>
 
-        {/* Category Filter Chips */}
+        {/* Filter Chips: clean wrapping */}
         <div className="flex flex-wrap gap-1.5">
           {tashrifData.wazanCategories.map((cat) => {
             const isActive = activeBab === cat.id;
@@ -364,11 +366,11 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
               <button
                 key={cat.id}
                 onClick={() => setActiveBab(cat.id)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1.5 cursor-pointer border ${
+                className={`px-2.5 py-1.5 rounded-xl text-[11px] sm:text-xs font-bold transition flex items-center gap-1.5 cursor-pointer border ${
                   isActive
-                    ? 'bg-emerald-900 text-amber-300 border-emerald-900 shadow-sm'
+                    ? 'bg-emerald-900 text-amber-300 border-emerald-900 shadow-xs'
                     : isRubai
-                    ? 'bg-amber-50/70 text-amber-900 border-amber-200 hover:bg-amber-100'
+                    ? 'bg-amber-50 text-amber-900 border-amber-200 hover:bg-amber-100'
                     : 'bg-slate-50 text-slate-600 border-slate-200 hover:bg-emerald-50 hover:text-emerald-900'
                 }`}
               >
@@ -381,17 +383,17 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
           })}
         </div>
 
-        {/* Verb Selector Pills */}
-        <div className="pt-2 border-t border-slate-100">
-          <div className="flex items-center justify-between mb-2">
+        {/* Verb Selector Dropdown + Compact Grid (max 4 cols desktop, 2 cols mobile) */}
+        <div className="pt-3 border-t border-slate-100 space-y-2.5">
+          <div className="flex items-center justify-between gap-2">
             <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
-              Pilih Sampel Kata Kerja ({filteredVerbs.length} ditemukan)
+              Pilih Sampel Fi&apos;il ({filteredVerbs.length} tersedia)
             </span>
           </div>
 
           {filteredVerbs.length === 0 ? (
             <div className="text-center py-6 bg-slate-50 rounded-xl border border-dashed border-slate-200 space-y-2">
-              <p className="text-sm font-semibold text-slate-600">Tidak ada kata kerja yang cocok dengan pencarian &ldquo;{searchQuery}&rdquo;.</p>
+              <p className="text-sm font-semibold text-slate-600">Tidak ada kata kerja yang cocok dengan &ldquo;{searchQuery}&rdquo;.</p>
               <button
                 onClick={() => {
                   setActiveBab('all');
@@ -403,16 +405,16 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 max-h-56 overflow-y-auto pr-1">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 max-h-60 overflow-y-auto pr-1">
               {filteredVerbs.map((v) => {
                 const isSelected = activeVerb?.id === v.id;
                 return (
                   <button
                     key={v.id}
                     onClick={() => setSelectedVerbId(v.id)}
-                    className={`p-2.5 rounded-xl border text-left transition cursor-pointer flex flex-col justify-between gap-1 ${
+                    className={`p-2.5 rounded-xl border text-left transition cursor-pointer flex flex-col justify-between gap-1 min-w-0 ${
                       isSelected
-                        ? 'bg-emerald-900 text-white border-emerald-900 shadow-md ring-2 ring-amber-400/70'
+                        ? 'bg-emerald-900 text-white border-emerald-900 shadow-sm ring-2 ring-amber-400/70'
                         : 'bg-slate-50/80 hover:bg-emerald-50 border-slate-200 text-slate-800'
                     }`}
                   >
@@ -424,14 +426,14 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
                         {v.istilahi.madhi}
                       </span>
                       <span
-                        className={`text-[9px] font-mono px-1.5 py-0.5 rounded font-bold ${
+                        className={`text-[9px] font-mono px-1.5 py-0.5 rounded font-bold shrink-0 ${
                           isSelected ? 'bg-emerald-800 text-amber-200' : 'bg-white text-slate-500 border border-slate-200'
                         }`}
                       >
                         {v.root}
                       </span>
                     </div>
-                    <div className={`text-[11px] font-semibold line-clamp-1 ${isSelected ? 'text-emerald-100' : 'text-slate-600'}`}>
+                    <div className={`text-[11px] font-semibold truncate w-full ${isSelected ? 'text-emerald-100' : 'text-slate-600'}`}>
                       {v.meaning}
                     </div>
                     <div className={`text-[9px] font-bold ${isSelected ? 'text-amber-300/90' : 'text-emerald-700'}`}>
@@ -445,112 +447,108 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
         </div>
       </div>
 
-      {/* Active Verb Showcase Hero */}
+      {/* Active Verb Showcase Card (Vertical & Centered Layout) */}
       {activeVerb && (
         <div className="bg-white rounded-3xl p-5 sm:p-7 border border-emerald-200/80 shadow-md space-y-5">
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-5">
-            <div className="space-y-3">
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-900 font-arabic text-sm font-bold" dir="rtl">
-                  {activeVerb.babNameAr}
-                </span>
-                <span className="px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold">
-                  {activeVerb.babNameId}
-                </span>
-                <span className="px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold">
-                  {activeVerb.bina}
-                </span>
-                <span className="px-2.5 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-bold">
-                  Akar: {activeVerb.root} ({rootParts.length} Huruf)
-                </span>
-              </div>
-
-              <div className="flex flex-wrap items-center gap-4">
-                <div
-                  className="font-arabic font-extrabold text-emerald-950 tracking-wide"
-                  style={{ fontSize: `${Math.min(44, fontSize + 10)}px`, lineHeight: 1.5 }}
-                  dir="rtl"
-                >
-                  {activeVerb.istilahi.madhi} <span className="text-amber-500">—</span> {activeVerb.istilahi.mudhari}
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <button
-                    onClick={() => handlePlayAudio(`${activeVerb.istilahi.madhi}، ${activeVerb.istilahi.mudhari}`, 'hero')}
-                    className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition cursor-pointer ${
-                      speakingText === 'hero'
-                        ? 'bg-amber-400 text-emerald-950 animate-pulse shadow'
-                        : 'bg-emerald-900 text-amber-300 hover:bg-emerald-800'
-                    }`}
-                  >
-                    <Volume2 className="w-4 h-4" />
-                    <span>{speakingText === 'hero' ? 'Melafalkan...' : 'Dengarkan'}</span>
-                  </button>
-                  <button
-                    onClick={() => handleCopy(`${activeVerb.istilahi.madhi} - ${activeVerb.istilahi.mudhari}`, 'hero-copy')}
-                    className="inline-flex items-center gap-1 px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition cursor-pointer"
-                    title="Salin Madhi & Mudhari"
-                  >
-                    {copiedId === 'hero-copy' ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                    <span>{copiedId === 'hero-copy' ? 'Tersalin' : 'Salin'}</span>
-                  </button>
-                </div>
-              </div>
-
-              <div className="space-y-1">
-                <div className="text-base sm:text-lg font-extrabold text-slate-800">
-                  Arti: <span className="text-emerald-800">{activeVerb.meaning}</span>
-                </div>
-                <div className="text-xs sm:text-sm text-slate-600">
-                  <span className="font-bold text-slate-700">Wazan Baku:</span>{' '}
-                  <span className="font-arabic text-base font-bold text-emerald-900" dir="rtl">{activeVerb.wazan}</span>
-                  {' '}• {activeVerb.faedah}
-                </div>
-              </div>
-            </div>
-
-            {/* Syahid Qurani Box */}
-            {activeVerb.syahid && (
-              <div className="lg:max-w-md w-full bg-gradient-to-br from-amber-50/90 to-emerald-50/60 border border-amber-200/80 rounded-2xl p-4 space-y-2">
-                <div className="flex items-center justify-between gap-2">
-                  <span className="text-[11px] font-extrabold uppercase tracking-wider text-amber-800 flex items-center gap-1">
-                    <BookOpen className="w-3.5 h-3.5" />
-                    Syahid / Contoh Kalimat
-                  </span>
-                  <div className="flex items-center gap-1.5">
-                    <button
-                      onClick={() => handlePlayAudio(activeVerb.syahid.textAr, 'syahid')}
-                      className={`p-1.5 rounded-lg transition cursor-pointer ${
-                        speakingText === 'syahid' ? 'bg-amber-400 text-emerald-950' : 'bg-white text-emerald-800 hover:bg-emerald-100 border border-amber-200'
-                      }`}
-                      title="Dengarkan Syahid"
-                    >
-                      <Volume2 className="w-3.5 h-3.5" />
-                    </button>
-                    <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-white text-emerald-900 border border-amber-200">
-                      {activeVerb.syahid.source}
-                    </span>
-                  </div>
-                </div>
-                <p
-                  className="font-arabic text-emerald-950 font-bold leading-loose text-right"
-                  style={{ fontSize: `${Math.max(20, fontSize - 4)}px` }}
-                  dir="rtl"
-                >
-                  {activeVerb.syahid.textAr}
-                </p>
-                <p className="text-xs text-slate-700 italic">&ldquo;{activeVerb.syahid.translation}&rdquo;</p>
-              </div>
-            )}
+          {/* Badges */}
+          <div className="flex flex-wrap items-center gap-1.5">
+            <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-900 font-arabic text-sm font-bold" dir="rtl">
+              {activeVerb.babNameAr}
+            </span>
+            <span className="px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold">
+              {activeVerb.babNameId}
+            </span>
+            <span className="px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold">
+              {activeVerb.bina}
+            </span>
+            <span className="px-2.5 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-bold">
+              Akar: {activeVerb.root} ({rootParts.length} Huruf)
+            </span>
           </div>
 
+          {/* Big Word Showcase + Actions */}
+          <div className="p-5 rounded-2xl bg-gradient-to-br from-emerald-50/70 to-[#FAF8F5] border border-emerald-200/70 text-center space-y-3">
+            <div
+              className="font-arabic font-extrabold text-emerald-950 break-words leading-relaxed"
+              style={{ fontSize: `${Math.min(40, fontSize + 8)}px` }}
+              dir="rtl"
+            >
+              {activeVerb.istilahi.madhi} <span className="text-amber-500">—</span> {activeVerb.istilahi.mudhari}
+            </div>
+
+            <div className="text-base sm:text-lg font-extrabold text-emerald-900">
+              {activeVerb.meaning}
+            </div>
+
+            <div className="text-xs sm:text-sm text-slate-600">
+              Wazan: <span className="font-arabic text-base font-bold text-emerald-900" dir="rtl">{activeVerb.wazan}</span>
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+              <button
+                onClick={() => handlePlayAudio(`${activeVerb.istilahi.madhi}، ${activeVerb.istilahi.mudhari}`, 'hero')}
+                className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold transition cursor-pointer ${
+                  speakingText === 'hero'
+                    ? 'bg-amber-400 text-emerald-950 animate-pulse shadow'
+                    : 'bg-emerald-900 text-amber-300 hover:bg-emerald-800'
+                }`}
+              >
+                <Volume2 className="w-4 h-4" />
+                <span>{speakingText === 'hero' ? 'Melafalkan...' : 'Dengarkan Pelafalan'}</span>
+              </button>
+              <button
+                onClick={() => handleCopy(`${activeVerb.istilahi.madhi} - ${activeVerb.istilahi.mudhari}`, 'hero-copy')}
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 text-xs font-bold transition cursor-pointer"
+              >
+                {copiedId === 'hero-copy' ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
+                <span>{copiedId === 'hero-copy' ? 'Tersalin' : 'Salin'}</span>
+              </button>
+            </div>
+
+            <p className="text-xs text-slate-600 max-w-2xl mx-auto pt-1">{activeVerb.faedah}</p>
+          </div>
+
+          {/* Syahid Qurani Box */}
+          {activeVerb.syahid && (
+            <div className="bg-amber-50/70 border border-amber-200/80 rounded-2xl p-4 space-y-2">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <span className="text-[11px] font-extrabold uppercase tracking-wider text-amber-800 flex items-center gap-1">
+                  <BookOpen className="w-3.5 h-3.5" />
+                  Syahid / Contoh Kalimat
+                </span>
+                <div className="flex items-center gap-1.5">
+                  <button
+                    onClick={() => handlePlayAudio(activeVerb.syahid.textAr, 'syahid')}
+                    className={`p-1.5 rounded-lg transition cursor-pointer ${
+                      speakingText === 'syahid' ? 'bg-amber-400 text-emerald-950' : 'bg-white text-emerald-800 hover:bg-emerald-100 border border-amber-200'
+                    }`}
+                    title="Dengarkan Syahid"
+                  >
+                    <Volume2 className="w-3.5 h-3.5" />
+                  </button>
+                  <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-white text-emerald-900 border border-amber-200">
+                    {activeVerb.syahid.source}
+                  </span>
+                </div>
+              </div>
+              <p
+                className="font-arabic text-emerald-950 font-bold leading-loose text-right"
+                style={{ fontSize: `${Math.max(20, fontSize - 3)}px` }}
+                dir="rtl"
+              >
+                {activeVerb.syahid.textAr}
+              </p>
+              <p className="text-xs text-slate-700 italic">&ldquo;{activeVerb.syahid.translation}&rdquo;</p>
+            </div>
+          )}
+
           {/* Sub-Navigation Tabs inside Tashrif Lab */}
-          <div className="flex flex-wrap gap-2 pt-3 border-t border-slate-100">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-slate-100">
             {[
-              { id: 'istilahi', label: 'Tashrif Ishtilahi (11 Shighah)', icon: Layers },
-              { id: 'lughawi', label: 'Tashrif Lughawi (14 Dhamir)', icon: Users },
-              { id: 'mizan', label: 'Mizan Sharaf & Bedah Huruf', icon: Scale },
-              { id: 'quiz', label: `Tantangan Kuis Sharaf (${quizzes.length})`, icon: GraduationCap },
+              { id: 'istilahi', label: 'Tashrif Ishtilahi', sub: '11 Shighah', icon: Layers },
+              { id: 'lughawi', label: 'Tashrif Lughawi', sub: '14 Dhamir', icon: Users },
+              { id: 'mizan', label: 'Mizan Sharaf', sub: 'Bedah Huruf', icon: Scale },
+              { id: 'quiz', label: 'Kuis Sharaf', sub: `${quizzes.length} Soal`, icon: GraduationCap },
             ].map((tab) => {
               const Icon = tab.icon;
               const isAct = subTab === tab.id;
@@ -558,14 +556,17 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
                 <button
                   key={tab.id}
                   onClick={() => setSubTab(tab.id)}
-                  className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition cursor-pointer border ${
+                  className={`flex items-center justify-center sm:justify-start gap-2 px-3 py-2.5 rounded-xl text-left transition cursor-pointer border ${
                     isAct
                       ? 'bg-emerald-900 text-amber-300 border-emerald-900 shadow-sm'
-                      : 'bg-slate-50 text-slate-600 border-slate-200 hover:bg-emerald-50 hover:text-emerald-900'
+                      : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-emerald-50 hover:text-emerald-900'
                   }`}
                 >
-                  <Icon className="w-4 h-4" />
-                  <span>{tab.label}</span>
+                  <Icon className="w-4 h-4 shrink-0" />
+                  <div className="min-w-0">
+                    <div className="text-xs font-extrabold truncate">{tab.label}</div>
+                    <div className={`text-[10px] ${isAct ? 'text-emerald-200' : 'text-slate-500'}`}>{tab.sub}</div>
+                  </div>
                 </button>
               );
             })}
@@ -573,77 +574,88 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
         </div>
       )}
 
-      {/* TAB 1: TASHRIF ISHTILAHI (11 SHIGHAH) */}
+      {/* TAB 1: TASHRIF ISHTILAHI (11 SHIGHAH — VERTICAL STACKED ROWS) */}
       {activeVerb && subTab === 'istilahi' && (
         <div className="space-y-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3.5">
-            {SHIGHAH_DEFS.map((shighah, idx) => {
-              const value = activeVerb.istilahi[shighah.key];
-              const isNone = !value || value.startsWith('-');
-              const cardKey = `ist-${activeVerb.id}-${shighah.key}`;
-              return (
-                <div
-                  key={shighah.key}
-                  className={`rounded-2xl p-4 border transition flex flex-col justify-between gap-3 ${
-                    isNone
-                      ? 'bg-slate-50 border-slate-200 text-slate-400'
-                      : 'bg-white border-slate-200 hover:border-emerald-300 hover:shadow-md'
-                  }`}
-                >
-                  <div className="flex items-start justify-between gap-2">
-                    <div>
-                      <div className="text-[10px] font-bold text-amber-700 uppercase tracking-wider">
-                        Shighah {idx + 1}
-                      </div>
-                      <div className="font-arabic text-base font-extrabold text-emerald-900" dir="rtl">
-                        {shighah.titleAr}
-                      </div>
-                      <div className="text-xs font-bold text-slate-700">{shighah.titleId}</div>
-                    </div>
-                    {!isNone && (
-                      <div className="flex items-center gap-1">
-                        <button
-                          onClick={() => handlePlayAudio(value, cardKey)}
-                          className={`p-1.5 rounded-lg transition cursor-pointer ${
-                            speakingText === cardKey ? 'bg-amber-400 text-emerald-950' : 'bg-emerald-50 text-emerald-800 hover:bg-emerald-100'
-                          }`}
-                          title="Dengarkan"
-                        >
-                          <Volume2 className="w-3.5 h-3.5" />
-                        </button>
-                        <button
-                          onClick={() => handleCopy(value, cardKey)}
-                          className="p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-600 transition cursor-pointer"
-                          title="Salin"
-                        >
-                          {copiedId === cardKey ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                        </button>
-                      </div>
-                    )}
-                  </div>
+          <div className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+            <div className="px-5 py-3.5 bg-emerald-950 text-amber-300 flex items-center justify-between gap-2">
+              <span className="text-xs sm:text-sm font-extrabold">
+                Daftar 11 Shighah Tashrif Ishtilahi ({activeVerb.istilahi.madhi})
+              </span>
+              <span className="font-arabic text-sm" dir="rtl">التَّصْرِيفُ الاصْطِلَاحِيُّ</span>
+            </div>
 
+            <div className="divide-y divide-slate-100">
+              {SHIGHAH_DEFS.map((shighah, idx) => {
+                const value = activeVerb.istilahi[shighah.key];
+                const isNone = !value || value.startsWith('-');
+                const cardKey = `ist-${activeVerb.id}-${shighah.key}`;
+                return (
                   <div
-                    className={`font-arabic font-extrabold text-center py-2 px-3 rounded-xl ${
-                      isNone ? 'bg-slate-100 text-slate-400 text-sm font-sans' : 'bg-emerald-50/60 text-emerald-950'
+                    key={shighah.key}
+                    className={`px-4 sm:px-6 py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition ${
+                      isNone ? 'bg-slate-50/70 opacity-75' : 'hover:bg-emerald-50/40'
                     }`}
-                    style={!isNone ? { fontSize: `${Math.min(34, fontSize + 2)}px`, lineHeight: 1.6 } : undefined}
-                    dir={!isNone ? 'rtl' : 'ltr'}
                   >
-                    {value}
-                  </div>
+                    {/* Label & Role */}
+                    <div className="flex items-start gap-3 min-w-0">
+                      <span className="w-6 h-6 rounded-lg bg-emerald-100 text-emerald-900 font-mono text-xs font-extrabold flex items-center justify-center shrink-0 mt-0.5">
+                        {idx + 1}
+                      </span>
+                      <div className="min-w-0">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="text-xs sm:text-sm font-extrabold text-slate-900">{shighah.titleId}</span>
+                          <span className="font-arabic text-sm sm:text-base font-bold text-emerald-800" dir="rtl">
+                            ({shighah.titleAr})
+                          </span>
+                        </div>
+                        <p className="text-[11px] text-slate-500">{shighah.role}</p>
+                      </div>
+                    </div>
 
-                  <div className="text-[11px] text-slate-500 flex items-center justify-between border-t border-slate-100 pt-2">
-                    <span>{shighah.role}</span>
+                    {/* Arabic Form + Controls */}
+                    <div className="flex items-center justify-between sm:justify-end gap-3 pl-9 sm:pl-0 shrink-0">
+                      <span
+                        className={`font-arabic font-extrabold text-right ${
+                          isNone ? 'text-slate-400 text-xs font-sans' : 'text-emerald-950'
+                        }`}
+                        style={!isNone ? { fontSize: `${Math.min(32, fontSize + 2)}px`, lineHeight: 1.5 } : undefined}
+                        dir={!isNone ? 'rtl' : 'ltr'}
+                      >
+                        {value}
+                      </span>
+
+                      {!isNone && (
+                        <div className="flex items-center gap-1">
+                          <button
+                            onClick={() => handlePlayAudio(value, cardKey)}
+                            className={`p-2 rounded-lg transition cursor-pointer ${
+                              speakingText === cardKey ? 'bg-amber-400 text-emerald-950' : 'bg-emerald-50 text-emerald-800 hover:bg-emerald-100'
+                            }`}
+                            title="Dengarkan"
+                          >
+                            <Volume2 className="w-4 h-4" />
+                          </button>
+                          <button
+                            onClick={() => handleCopy(value, cardKey)}
+                            className="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-600 transition cursor-pointer"
+                            title="Salin"
+                          >
+                            {copiedId === cardKey ? <Check className="w-4 h-4 text-emerald-600" /> : <Copy className="w-4 h-4" />}
+                          </button>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
 
           {nadhzamRule && (
             <div className="bg-emerald-950 text-emerald-100 rounded-2xl p-5 border border-emerald-800 space-y-2">
               <div className="text-xs font-bold text-amber-400 flex items-center gap-2">
-                <Info className="w-4 h-4" />
+                <Info className="w-4 h-4 shrink-0" />
                 <span>{nadhzamRule.title}</span>
               </div>
               <p className="font-arabic text-base sm:text-lg text-white leading-loose" dir="rtl">
@@ -655,10 +667,10 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
         </div>
       )}
 
-      {/* TAB 2: TASHRIF LUGHAWI (14 DHAMIR) */}
+      {/* TAB 2: TASHRIF LUGHAWI (14 DHAMIR — VERTICAL STACKED KITAB ROWS) */}
       {activeVerb && subTab === 'lughawi' && (
         <div className="space-y-4">
-          <div className="bg-white rounded-2xl p-4 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="bg-white rounded-2xl p-4 border border-slate-200 space-y-3">
             <div className="flex flex-wrap gap-2">
               {[
                 { id: 'madhi', ar: 'الفِعْلُ المَاضِي', idLabel: "Fi'il Madhi (14 Dhamir)" },
@@ -681,20 +693,23 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
             </div>
 
             {lughawiTense === 'amr' && (
-              <div className="text-xs font-semibold text-amber-800 bg-amber-50 border border-amber-200 px-3 py-1.5 rounded-xl flex items-center gap-1.5">
+              <div className="text-xs font-semibold text-amber-800 bg-amber-50 border border-amber-200 px-3 py-2 rounded-xl flex items-center gap-2">
                 <Info className="w-4 h-4 shrink-0" />
-                <span>Fi&apos;il Amr hanya berlaku untuk 6 dhamir Mukhatab (Orang Kedua).</span>
+                <span>Fi&apos;il Amr hanya tersedia untuk 6 dhamir Mukhatab (Orang Kedua: Kamu &amp; Kalian).</span>
               </div>
             )}
           </div>
 
-          <div className="space-y-5">
+          <div className="space-y-4">
             {LUGHAWI_GROUPS.map((grp) => (
-              <div key={grp.key} className={`rounded-2xl p-4 sm:p-5 border ${grp.accent} space-y-3`}>
-                <h3 className="text-xs sm:text-sm font-extrabold text-emerald-950 font-arabic" dir="rtl">
-                  {grp.title}
-                </h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
+              <div key={grp.key} className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
+                <div className={`px-4 sm:px-5 py-3 border-b ${grp.headerBg}`}>
+                  <h3 className="text-xs sm:text-sm font-extrabold font-arabic text-right sm:text-left" dir="rtl">
+                    {grp.title}
+                  </h3>
+                </div>
+
+                <div className="divide-y divide-slate-100">
                   {grp.indices.map((dIdx) => {
                     const dhamir = tashrifData.dhamirList[dIdx];
                     const word = activeVerb.lughawi[lughawiTense]?.[dIdx] || '-';
@@ -703,46 +718,47 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
                     return (
                       <div
                         key={dhamir.id}
-                        className={`rounded-xl p-3 border transition flex flex-col justify-between gap-2 ${
-                          isEmpty
-                            ? 'bg-white/50 border-slate-200/70 opacity-50'
-                            : 'bg-white border-slate-200 hover:border-emerald-400 shadow-xs'
+                        className={`px-4 sm:px-5 py-3 flex items-center justify-between gap-3 transition ${
+                          isEmpty ? 'bg-slate-50/70 opacity-50' : 'hover:bg-emerald-50/40'
                         }`}
                       >
-                        <div className="flex items-center justify-between gap-1">
-                          <span className="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-900 font-arabic font-extrabold text-sm" dir="rtl">
+                        <div className="flex items-center gap-3 min-w-0">
+                          <span className="text-[11px] font-mono font-bold text-slate-400 w-5 shrink-0">
+                            {dIdx + 1}.
+                          </span>
+                          <span className="px-2.5 py-0.5 rounded-lg bg-emerald-100 text-emerald-900 font-arabic font-extrabold text-base shrink-0" dir="rtl">
                             {dhamir.ar}
                           </span>
-                          <span className="text-[10px] font-bold text-slate-400">#{dIdx + 1}</span>
+                          <span className="text-xs font-semibold text-slate-600 truncate">
+                            {dhamir.trans}
+                          </span>
                         </div>
 
-                        <div
-                          className={`font-arabic font-extrabold text-center py-1 ${isEmpty ? 'text-slate-400' : 'text-emerald-950'}`}
-                          style={!isEmpty ? { fontSize: `${Math.min(30, fontSize)}px`, lineHeight: 1.5 } : undefined}
-                          dir="rtl"
-                        >
-                          {word}
-                        </div>
-
-                        <div className="flex items-center justify-between gap-1 pt-1.5 border-t border-slate-100">
-                          <span className="text-[10px] font-semibold text-slate-600 line-clamp-1">{dhamir.trans}</span>
+                        <div className="flex items-center gap-2.5 shrink-0">
+                          <span
+                            className={`font-arabic font-extrabold ${isEmpty ? 'text-slate-400' : 'text-emerald-950'}`}
+                            style={!isEmpty ? { fontSize: `${Math.min(30, fontSize)}px`, lineHeight: 1.4 } : undefined}
+                            dir="rtl"
+                          >
+                            {word}
+                          </span>
                           {!isEmpty && (
-                            <div className="flex items-center gap-0.5 shrink-0">
+                            <div className="flex items-center gap-1">
                               <button
                                 onClick={() => handlePlayAudio(word, dKey)}
-                                className={`p-1 rounded transition cursor-pointer ${
-                                  speakingText === dKey ? 'bg-amber-400 text-emerald-950' : 'text-emerald-700 hover:bg-emerald-50'
+                                className={`p-1.5 rounded-lg transition cursor-pointer ${
+                                  speakingText === dKey ? 'bg-amber-400 text-emerald-950' : 'bg-emerald-50 text-emerald-700 hover:bg-emerald-100'
                                 }`}
                                 title="Dengarkan"
                               >
-                                <Volume2 className="w-3 h-3" />
+                                <Volume2 className="w-3.5 h-3.5" />
                               </button>
                               <button
                                 onClick={() => handleCopy(word, dKey)}
-                                className="p-1 rounded text-slate-500 hover:bg-slate-100 transition cursor-pointer"
+                                className="p-1.5 rounded-lg bg-slate-100 text-slate-500 hover:bg-slate-200 transition cursor-pointer"
                                 title="Salin"
                               >
-                                {copiedId === dKey ? <Check className="w-3 h-3 text-emerald-600" /> : <Copy className="w-3 h-3" />}
+                                {copiedId === dKey ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
                               </button>
                             </div>
                           )}
@@ -765,36 +781,40 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
               Timbangan Morfologi Arab (المِيزَانُ الصَّرْفِيُّ)
             </span>
             <h2 className="text-lg sm:text-xl font-extrabold text-emerald-950">
-              Bedah Huruf Asli ({rootParts.length === 4 ? "ف - ع - ل١ - ل٢ / Ruba'i" : "ف - ع - ل / Tsulatsi"}) &amp; Ziyadah
+              Bedah Huruf Asli ({rootParts.length === 4 ? "ف - ع - ل١ - ل٢ / Ruba'i" : 'ف - ع - ل / Tsulatsi'}) &amp; Ziyadah
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto">
               Setiap huruf asal ditimbang dengan pola <strong>ف — ع — ل</strong> (untuk akar 3 huruf) atau <strong>ف — ع — ل ١ — ل ٢</strong> (untuk akar 4 huruf Ruba&apos;i).
             </p>
           </div>
 
-          {/* Root Letter Mapping Boxes */}
-          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4" dir="rtl">
+          <div
+            className={`grid gap-3 max-w-3xl mx-auto ${
+              rootParts.length === 4 ? 'grid-cols-2 sm:grid-cols-4' : 'grid-cols-3'
+            }`}
+            dir="rtl"
+          >
             {rootParts.map((letter, idx) => {
               const scales3 = [
-                { scale: 'فَاءُ الكَلِمَةِ', label: "Fa' Fi'il (Huruf Asli 1)" },
-                { scale: 'عَيْنُ الكَلِمَةِ', label: "'Ain Fi'il (Huruf Asli 2)" },
-                { scale: 'لَامُ الكَلِمَةِ', label: "Lam Fi'il (Huruf Asli 3)" },
+                { scale: 'فَاءُ الكَلِمَةِ', label: "Fa' Fi'il (Ke-1)" },
+                { scale: 'عَيْنُ الكَلِمَةِ', label: "'Ain Fi'il (Ke-2)" },
+                { scale: 'لَامُ الكَلِمَةِ', label: "Lam Fi'il (Ke-3)" },
               ];
               const scales4 = [
-                { scale: 'فَاءُ الكَلِمَةِ', label: "Fa' Fi'il (Huruf Asli 1)" },
-                { scale: 'عَيْنُ الكَلِمَةِ', label: "'Ain Fi'il (Huruf Asli 2)" },
-                { scale: 'اللَّامُ الأُولَى', label: 'Lam Ula (Huruf Asli 3)' },
-                { scale: 'اللَّامُ الثَّانِيَةُ', label: 'Lam Tsaniyah (Huruf Asli 4)' },
+                { scale: 'فَاءُ الكَلِمَةِ', label: "Fa' Fi'il (Ke-1)" },
+                { scale: 'عَيْنُ الكَلِمَةِ', label: "'Ain Fi'il (Ke-2)" },
+                { scale: 'اللَّامُ الأُولَى', label: 'Lam Ula (Ke-3)' },
+                { scale: 'اللَّامُ الثَّانِيَةُ', label: 'Lam Tsaniyah (Ke-4)' },
               ];
               const meta = (rootParts.length === 4 ? scales4 : scales3)[idx] || { scale: 'حَرْفٌ أَصْلِيٌّ', label: 'Huruf Asli' };
               return (
                 <div
                   key={`${activeVerb.id}-root-${idx}`}
-                  className="min-w-[130px] sm:min-w-[155px] p-4 rounded-2xl bg-gradient-to-b from-emerald-50 to-white border-2 border-emerald-200 text-center space-y-1.5 shadow-xs"
+                  className="p-3.5 sm:p-4 rounded-2xl bg-gradient-to-b from-emerald-50 to-white border-2 border-emerald-200 text-center space-y-1.5 shadow-xs"
                 >
                   <div className="text-[11px] font-bold text-amber-800">{meta.label}</div>
-                  <div className="font-arabic text-4xl sm:text-5xl font-extrabold text-emerald-950">{letter}</div>
-                  <div className="font-arabic text-sm font-bold text-emerald-700 bg-emerald-100/80 py-1 px-2.5 rounded-full">
+                  <div className="font-arabic text-3xl sm:text-5xl font-extrabold text-emerald-950">{letter}</div>
+                  <div className="font-arabic text-xs sm:text-sm font-bold text-emerald-700 bg-emerald-100/80 py-1 px-2 rounded-full">
                     {meta.scale}
                   </div>
                 </div>
@@ -802,8 +822,7 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
             })}
           </div>
 
-          {/* Diagnostic Matrix */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="space-y-3">
             <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
               <div className="text-xs font-extrabold uppercase tracking-wider text-emerald-800">
                 1. Klasifikasi Wazan &amp; Tambahan (Ziyadah)
@@ -827,7 +846,7 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
                 <span className="font-arabic text-base font-bold text-emerald-900" dir="rtl">{activeVerb.wazan}</span>
               </div>
               <div className="text-xs text-slate-700">
-                <strong>Contoh Turunan Kunci:</strong> Madhi (<span className="font-arabic font-bold text-sm">{activeVerb.istilahi.madhi}</span>) → Mashdar (<span className="font-arabic font-bold text-sm">{activeVerb.istilahi.mashdar}</span>) → Isim Fa&apos;il (<span className="font-arabic font-bold text-sm">{activeVerb.istilahi.isimFail}</span>)
+                <strong>Turunan Kunci:</strong> Madhi (<span className="font-arabic font-bold text-sm">{activeVerb.istilahi.madhi}</span>) → Mashdar (<span className="font-arabic font-bold text-sm">{activeVerb.istilahi.mashdar}</span>) → Isim Fa&apos;il (<span className="font-arabic font-bold text-sm">{activeVerb.istilahi.isimFail}</span>)
               </div>
             </div>
           </div>
@@ -859,7 +878,6 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
             </div>
           ) : (
             <div className="space-y-5">
-              {/* Top Progress */}
               <div className="flex items-center justify-between text-xs font-bold text-slate-600 border-b border-slate-100 pb-3">
                 <span>Soal {quizIndex + 1} dari {quizzes.length}</span>
                 <span className="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-900">
@@ -867,7 +885,6 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
                 </span>
               </div>
 
-              {/* Target Word Card */}
               <div className="p-5 rounded-2xl bg-gradient-to-br from-emerald-50 to-amber-50/40 border border-emerald-200 text-center space-y-2">
                 <div className="flex items-center justify-center gap-3">
                   <span
@@ -891,7 +908,6 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
                 <p className="text-sm font-bold text-slate-800">{currentQuiz.questionId}</p>
               </div>
 
-              {/* Options */}
               <div className="grid grid-cols-1 gap-2.5">
                 {currentQuiz.options.map((opt, idx) => {
                   const isCorrect = idx === currentQuiz.correctIndex;
@@ -923,7 +939,6 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
                 })}
               </div>
 
-              {/* Explanation & Next Button */}
               {quizAnswered && (
                 <div className="p-4 rounded-2xl bg-amber-50 border border-amber-200 space-y-3">
                   <div className="text-xs font-extrabold uppercase tracking-wider text-amber-900">

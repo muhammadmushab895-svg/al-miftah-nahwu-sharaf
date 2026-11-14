@@ -35,13 +35,13 @@ export default function MobileBottomNav({
   const mainTabs = [
     { id: 'materi', label: 'Materi', icon: BookOpen },
     { id: 'quran', label: 'Mushaf', icon: Sparkles },
+    { id: 'tashrif', label: 'Lab Sharaf', icon: FlaskConical },
+    { id: 'irab', label: "Lab I'rab", icon: Layers },
     { id: 'studio', label: 'Studio', icon: Zap },
-    { id: 'asrar', label: 'Asrar', icon: Sparkles },
   ];
 
   const secondaryTabs = [
-    { id: 'tashrif', label: 'Lab Sharaf (Tashrif)', desc: 'Ishtilahi & Lughawi (Mujarrad - Ruba\'i)', icon: FlaskConical, badge: '62' },
-    { id: 'irab', label: 'Lab I\'rab & Syahid', desc: '315 Model Al-Fashih + 119 Syahid Klasik', icon: Layers, badge: '315+119' },
+    { id: 'asrar', label: 'Asrarul Qur\'an', desc: 'Rahasia I\'rab & Balaghah Ayat', icon: Sparkles, badge: 'Tafsir' },
     { id: 'kuis', label: 'Kuis HOTS', desc: '80 Soal Evaluasi Bertingkat', icon: GraduationCap, badge: '80' },
     { id: 'kamus', label: 'Kamus Mu\'jam', desc: '63 Istilah Nahwu & Sharaf', icon: BookMarked, badge: '63' },
   ];
@@ -58,7 +58,7 @@ export default function MobileBottomNav({
         className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-[#064E3B]/95 backdrop-blur-md border-t border-emerald-800/80 shadow-2xl transition-all"
         style={{ paddingBottom: 'max(env(safe-area-inset-bottom), 6px)' }}
       >
-        <div className="grid grid-cols-5 items-center h-15 px-1">
+        <div className="grid grid-cols-6 items-center h-15 px-1">
           {mainTabs.map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
@@ -71,12 +71,12 @@ export default function MobileBottomNav({
                 }`}
               >
                 <div className="relative">
-                  <Icon className={`w-5 h-5 transition-transform ${isActive ? 'scale-110 drop-shadow-[0_0_8px_rgba(245,158,11,0.5)]' : ''}`} />
+                  <Icon className={`w-4.5 h-4.5 transition-transform ${isActive ? 'scale-110 drop-shadow-[0_0_8px_rgba(245,158,11,0.5)]' : ''}`} />
                   {isActive && (
                     <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-amber-400"></span>
                   )}
                 </div>
-                <span className="text-[10px] tracking-tight mt-1">{tab.label}</span>
+                <span className="text-[9px] sm:text-[10px] tracking-tight mt-1 whitespace-nowrap">{tab.label}</span>
               </button>
             );
           })}
@@ -85,18 +85,18 @@ export default function MobileBottomNav({
           <button
             onClick={() => setDrawerOpen(true)}
             className={`flex flex-col items-center justify-center py-1 transition-all active:scale-95 ${
-              ['tashrif', 'irab', 'kuis', 'kamus'].includes(activeTab) || drawerOpen
+              ['asrar', 'kuis', 'kamus'].includes(activeTab) || drawerOpen
                 ? 'text-amber-400 font-bold' 
                 : 'text-emerald-300/70 hover:text-emerald-100'
             }`}
           >
             <div className="relative">
-              <Menu className="w-5 h-5" />
-              {['irab', 'kuis', 'kamus'].includes(activeTab) && (
+              <Menu className="w-4.5 h-4.5" />
+              {['asrar', 'kuis', 'kamus'].includes(activeTab) && (
                 <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-amber-400"></span>
               )}
             </div>
-            <span className="text-[10px] tracking-tight mt-1">Lainnya</span>
+            <span className="text-[9px] sm:text-[10px] tracking-tight mt-1">Lainnya</span>
           </button>
         </div>
       </nav>
