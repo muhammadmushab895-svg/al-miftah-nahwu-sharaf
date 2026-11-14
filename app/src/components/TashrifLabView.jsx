@@ -13,11 +13,15 @@ import {
   RotateCcw,
   ChevronRight,
   Info,
-  X
+  X,
+  Lock,
+  Crown
 } from 'lucide-react';
 import tashrifData from '../data/tashrif_data.json';
 import { normalizeArabic } from '../utils/quranSearch';
 import { speakArabic, stopArabicSpeech } from '../utils/arabicAudio';
+import { isTashrifVerbFree, isTashrifQuizFree } from '../utils/license';
+import ProPaywallCard from './ProPaywallCard';
 
 const SHIGHAH_DEFS = [
   { key: 'madhi', titleAr: 'الفِعْلُ المَاضِي', titleId: "Fi'il Madhi (Lampau)", role: 'Kata kerja lampau dasar' },
@@ -134,7 +138,13 @@ function getZiyadahAnalysis(verb) {
   return { tag: "Mazid +3 Huruf (Bab Istaf'ala)", extra: "Hamzah washal + Sin + Ta' (اِسْتَـ) di awal", meaningImpact: 'Thalab (memohon/meminta) atau menganggap sifat.' };
 }
 
-export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVerbId }) {
+export default function TashrifLabView({
+  fontSize = 26,
+  onOpenMateri,
+  initialVerbId,
+  isPro = false,
+  onOpenLicense,
+}) {
   const [activeBab, setActiveBab] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedVerbId, setSelectedVerbId] = useState(initialVerbId || tashrifData.verbs[0]?.id || 'nasara');
@@ -240,6 +250,8 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
   const quizzes = tashrifData.quizzes || [];
   const currentQuiz = quizzes[quizIndex];
   const isQuizFinished = quizIndex >= quizzes.length;
+  const isActiveVerbLocked = activeVerb ? (!isPro && !isTashrifVerbFree(activeVerb.id)) : false;
+  const isCurrentQuizLocked = !isPro && !isTashrifQuizFree(quizIndex);
 
   const handleAnswerQuiz = (optIdx) => {
     if (quizAnswered || !currentQuiz) return;
@@ -305,6 +317,24 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
             <div className="text-[10px] text-emerald-200 font-semibold">Soal Kuis</div>
           </div>
         </div>
+
+        {!isPro && (
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 px-4 py-2.5 rounded-2xl bg-amber-400/15 border border-amber-400/35 text-xs">
+            <div className="flex items-center gap-2 text-amber-200">
+              <Lock className="w-4 h-4 text-amber-400 shrink-0" />
+              <span>
+                <strong>Mode Gratis:</strong> 9 sampel fi&apos;il perwakilan &amp; 3 soal kuis terbuka gratis. Aktifkan <strong className="text-amber-300">Al-Miftah PRO</strong> untuk membuka full 62 fi&apos;il &amp; 20 soal!
+              </span>
+            </div>
+            <button
+              onClick={() => onOpenLicense?.('qris')}
+              className="inline-flex items-center justify-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-emerald-950 font-black text-xs shrink-0 cursor-pointer transition"
+            >
+              <Crown className="w-3.5 h-3.5 fill-current" />
+              <span>Buka Full PRO</span>
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Controls Card: Vertical Clean Flow */}
@@ -408,6 +438,7 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 max-h-60 overflow-y-auto pr-1">
               {filteredVerbs.map((v) => {
                 const isSelected = activeVerb?.id === v.id;
+                const isVerbLocked = !isPro && !isTashrifVerbFree(v.id);
                 return (
                   <button
                     key={v.id}
@@ -415,6 +446,8 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
                     className={`p-2.5 rounded-xl border text-left transition cursor-pointer flex flex-col justify-between gap-1 min-w-0 ${
                       isSelected
                         ? 'bg-emerald-900 text-white border-emerald-900 shadow-sm ring-2 ring-amber-400/70'
+                        : isVerbLocked
+                        ? 'bg-slate-50/60 hover:bg-amber-50/40 border-slate-200 text-slate-700'
                         : 'bg-slate-50/80 hover:bg-emerald-50 border-slate-200 text-slate-800'
                     }`}
                   >
@@ -425,19 +458,33 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
                       >
                         {v.istilahi.madhi}
                       </span>
-                      <span
-                        className={`text-[9px] font-mono px-1.5 py-0.5 rounded font-bold shrink-0 ${
-                          isSelected ? 'bg-emerald-800 text-amber-200' : 'bg-white text-slate-500 border border-slate-200'
-                        }`}
-                      >
-                        {v.root}
-                      </span>
+                      <div className="flex items-center gap-1 shrink-0">
+                        {isVerbLocked && (
+                          <span className="inline-flex items-center gap-0.5 text-[9px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-900 border border-amber-300 font-extrabold">
+                            <Lock className="w-2.5 h-2.5" /> PRO
+                          </span>
+                        )}
+                        <span
+                          className={`text-[9px] font-mono px-1.5 py-0.5 rounded font-bold ${
+                            isSelected ? 'bg-emerald-800 text-amber-200' : 'bg-white text-slate-500 border border-slate-200'
+                          }`}
+                        >
+                          {v.root}
+                        </span>
+                      </div>
                     </div>
                     <div className={`text-[11px] font-semibold truncate w-full ${isSelected ? 'text-emerald-100' : 'text-slate-600'}`}>
                       {v.meaning}
                     </div>
-                    <div className={`text-[9px] font-bold ${isSelected ? 'text-amber-300/90' : 'text-emerald-700'}`}>
-                      {getBabShortLabel(v.babId)}
+                    <div className="flex items-center justify-between gap-1 w-full">
+                      <span className={`text-[9px] font-bold ${isSelected ? 'text-amber-300/90' : 'text-emerald-700'}`}>
+                        {getBabShortLabel(v.babId)}
+                      </span>
+                      {!isPro && !isVerbLocked && (
+                        <span className={`text-[9px] font-extrabold ${isSelected ? 'text-emerald-200' : 'text-emerald-600'}`}>
+                          GRATIS
+                        </span>
+                      )}
                     </div>
                   </button>
                 );
@@ -484,32 +531,36 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
               Wazan: <span className="font-arabic text-base font-bold text-emerald-900" dir="rtl">{activeVerb.wazan}</span>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
-              <button
-                onClick={() => handlePlayAudio(`${activeVerb.istilahi.madhi}، ${activeVerb.istilahi.mudhari}`, 'hero')}
-                className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold transition cursor-pointer ${
-                  speakingText === 'hero'
-                    ? 'bg-amber-400 text-emerald-950 animate-pulse shadow'
-                    : 'bg-emerald-900 text-amber-300 hover:bg-emerald-800'
-                }`}
-              >
-                <Volume2 className="w-4 h-4" />
-                <span>{speakingText === 'hero' ? 'Melafalkan...' : 'Dengarkan Pelafalan'}</span>
-              </button>
-              <button
-                onClick={() => handleCopy(`${activeVerb.istilahi.madhi} - ${activeVerb.istilahi.mudhari}`, 'hero-copy')}
-                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 text-xs font-bold transition cursor-pointer"
-              >
-                {copiedId === 'hero-copy' ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                <span>{copiedId === 'hero-copy' ? 'Tersalin' : 'Salin'}</span>
-              </button>
-            </div>
+            {!isActiveVerbLocked && (
+              <>
+                <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+                  <button
+                    onClick={() => handlePlayAudio(`${activeVerb.istilahi.madhi}، ${activeVerb.istilahi.mudhari}`, 'hero')}
+                    className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold transition cursor-pointer ${
+                      speakingText === 'hero'
+                        ? 'bg-amber-400 text-emerald-950 animate-pulse shadow'
+                        : 'bg-emerald-900 text-amber-300 hover:bg-emerald-800'
+                    }`}
+                  >
+                    <Volume2 className="w-4 h-4" />
+                    <span>{speakingText === 'hero' ? 'Melafalkan...' : 'Dengarkan Pelafalan'}</span>
+                  </button>
+                  <button
+                    onClick={() => handleCopy(`${activeVerb.istilahi.madhi} - ${activeVerb.istilahi.mudhari}`, 'hero-copy')}
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 text-xs font-bold transition cursor-pointer"
+                  >
+                    {copiedId === 'hero-copy' ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
+                    <span>{copiedId === 'hero-copy' ? 'Tersalin' : 'Salin'}</span>
+                  </button>
+                </div>
 
-            <p className="text-xs text-slate-600 max-w-2xl mx-auto pt-1">{activeVerb.faedah}</p>
+                <p className="text-xs text-slate-600 max-w-2xl mx-auto pt-1">{activeVerb.faedah}</p>
+              </>
+            )}
           </div>
 
-          {/* Syahid Qurani Box */}
-          {activeVerb.syahid && (
+          {/* Syahid Qurani Box (Hanya tampil jika terbuka / PRO) */}
+          {!isActiveVerbLocked && activeVerb.syahid && (
             <div className="bg-amber-50/70 border border-amber-200/80 rounded-2xl p-4 space-y-2">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <span className="text-[11px] font-extrabold uppercase tracking-wider text-amber-800 flex items-center gap-1">
@@ -574,8 +625,17 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
         </div>
       )}
 
+      {/* LOCKED VERB PAYWALL GUARD */}
+      {activeVerb && isActiveVerbLocked && subTab !== 'quiz' && (
+        <ProPaywallCard
+          title={`Buka Tashrif Penuh «${activeVerb.istilahi.madhi}» (${activeVerb.meaning})`}
+          description={`Anda sedang menikmati mode gratis (9 fi'il sampel perwakilan). Berlangganan Al-Miftah PRO cukup sekali bayar seumur hidup untuk membuka 62 kata kerja lengkap dari Tsulatsi Mujarrad, Mu'tal, Mazid, hingga Ruba'i Mujarrad & Mazid beserta audio dan Syahid Al-Qur'an.`}
+          onOpenLicense={onOpenLicense}
+        />
+      )}
+
       {/* TAB 1: TASHRIF ISHTILAHI (11 SHIGHAH — VERTICAL STACKED ROWS) */}
-      {activeVerb && subTab === 'istilahi' && (
+      {activeVerb && !isActiveVerbLocked && subTab === 'istilahi' && (
         <div className="space-y-4">
           <div className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
             <div className="px-5 py-3.5 bg-emerald-950 text-amber-300 flex items-center justify-between gap-2">
@@ -668,7 +728,7 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
       )}
 
       {/* TAB 2: TASHRIF LUGHAWI (14 DHAMIR — VERTICAL STACKED KITAB ROWS) */}
-      {activeVerb && subTab === 'lughawi' && (
+      {activeVerb && !isActiveVerbLocked && subTab === 'lughawi' && (
         <div className="space-y-4">
           <div className="bg-white rounded-2xl p-4 border border-slate-200 space-y-3">
             <div className="flex flex-wrap gap-2">
@@ -774,7 +834,7 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
       )}
 
       {/* TAB 3: MIZAN SHARAF */}
-      {activeVerb && subTab === 'mizan' && (
+      {activeVerb && !isActiveVerbLocked && subTab === 'mizan' && (
         <div className="bg-white rounded-3xl p-5 sm:p-7 border border-slate-200 shadow-sm space-y-6">
           <div className="text-center space-y-1.5">
             <span className="text-xs font-extrabold uppercase tracking-wider text-amber-700">
@@ -855,6 +915,13 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
 
       {/* TAB 4: TANTANGAN KUIS SHARAF */}
       {subTab === 'quiz' && (
+        isCurrentQuizLocked && !isQuizFinished ? (
+          <ProPaywallCard
+            title={`Kuis Sharaf Soal #${quizIndex + 1} s.d. #${quizzes.length} Khusus PRO`}
+            description="Versi gratis mengizinkan latihan soal 1 s.d. 3. Aktifkan Al-Miftah PRO untuk membuka seluruh 20 tantangan kuis Tsulatsi Mazid, Mu'tal, hingga Ruba'i berserta pembahasannya!"
+            onOpenLicense={onOpenLicense}
+          />
+        ) : (
         <div className="bg-white rounded-3xl p-5 sm:p-7 border border-slate-200 shadow-sm max-w-3xl mx-auto">
           {isQuizFinished ? (
             <div className="text-center py-6 space-y-4">
@@ -965,6 +1032,7 @@ export default function TashrifLabView({ fontSize = 26, onOpenMateri, initialVer
             </div>
           )}
         </div>
+        )
       )}
     </div>
   );

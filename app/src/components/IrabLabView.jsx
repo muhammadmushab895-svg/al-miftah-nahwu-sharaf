@@ -17,12 +17,16 @@ import {
   X,
   Award,
   Loader2,
-  AlertCircle
+  AlertCircle,
+  Lock,
+  Crown
 } from 'lucide-react';
 import irabData from '../data/03_contoh_dan_irab.json';
 import { saveBookmark, isBookmarked } from '../utils/storage';
 import { normalizeArabic } from '../utils/quranSearch';
 import { speakArabic, stopArabicSpeech } from '../utils/arabicAudio';
+import { isIrabModelFree, isIrabSyahidFree } from '../utils/license';
+import ProPaywallCard from './ProPaywallCard';
 
 // Cache module-level agar pergantian tab tidak memicu unduhan ulang 1.17 MB
 let cachedIrabModelsData = null;
@@ -87,7 +91,13 @@ function getModelBadgeColor(status) {
   return STATUS_META[status] || STATUS_META.mabni;
 }
 
-export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', targetSyahid }) {
+export default function IrabLabView({
+  fontSize = 26,
+  initialLabMode = 'visual',
+  targetSyahid,
+  isPro = false,
+  onOpenLicense,
+}) {
   const [labMode, setLabMode] = useState(initialLabMode); // 'visual' | 'syahid'
 
   // ====== STATE MODE 1: VISUAL I'RAB TAGGER (315 MODEL AL-FASHIH) ======
@@ -227,6 +237,7 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
 
   const safeIndex = Math.min(currentIndex, Math.max(0, filteredModels.length - 1));
   const currentModel = filteredModels[safeIndex] || null;
+  const isCurrentModelLocked = currentModel ? !isPro && !isIrabModelFree(currentModel) : false;
   const activeTokens = useMemo(() => currentModel?.tokens || [], [currentModel]);
   const safeTokenIdx = Math.min(selectedTokenIndex, Math.max(0, activeTokens.length - 1));
   const selectedToken = activeTokens[safeTokenIdx] || null;
@@ -306,8 +317,10 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
     const raw = syahidSearch.trim();
     const q = raw.toLowerCase();
     const normQ = normalizeArabic(raw);
-    return irabData.filter((item) => {
-      const matchDalil = selectedDalil === 'Semua' || item.jenis_dalil === selectedDalil;
+    return irabData
+      .map((item, idx) => ({ ...item, origIndex: idx }))
+      .filter((item) => {
+        const matchDalil = selectedDalil === 'Semua' || item.jenis_dalil === selectedDalil;
       if (!matchDalil) return false;
       if (!raw) return true;
       return (
@@ -368,6 +381,28 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
             </div>
           )}
         </div>
+
+        {!isPro && (
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl bg-amber-500/15 border border-amber-300/35 px-4 py-3 text-xs">
+            <div className="flex items-center gap-2.5 text-amber-100">
+              <Lock className="w-4 h-4 text-amber-300 shrink-0" />
+              <span>
+                <strong className="text-white">Mode Gratis Lab I&apos;rab:</strong> Tersedia{' '}
+                <strong className="text-amber-200">17 dari 315 Model Visual</strong> (12 Pemula + 5
+                Pilar Kategori) &amp; <strong className="text-amber-200">10 dari 119 Dalil Syahid</strong>.
+                Upgrade PRO untuk membuka seluruh 315 model &amp; 119 syahid.
+              </span>
+            </div>
+            <button
+              type="button"
+              onClick={() => onOpenLicense?.('qris')}
+              className="inline-flex items-center gap-1.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-emerald-950 font-extrabold px-3.5 py-2 transition cursor-pointer shrink-0 shadow-sm"
+            >
+              <Crown className="w-3.5 h-3.5" />
+              Buka Full PRO
+            </button>
+          </div>
+        )}
 
         {/* Switcher: Laboratorium Visual Al-Fashih vs 119 Dalil Syahid */}
         <div className="flex flex-wrap gap-2 pt-2 border-t border-emerald-800/70">
@@ -557,6 +592,17 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
                         <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-900 font-extrabold">
                           Model {safeIndex + 1} / {filteredModels.length}
                         </span>
+                        {!isPro && (
+                          isCurrentModelLocked ? (
+                            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300 font-extrabold">
+                              <Lock className="w-3 h-3" /> PRO
+                            </span>
+                          ) : (
+                            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 font-extrabold">
+                              GRATIS
+                            </span>
+                          )
+                        )}
                         <span className="px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 font-bold">
                           {currentModel.categoryId} • {currentModel.levelNameId}
                         </span>
@@ -603,77 +649,106 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
                   <div className="bg-white rounded-3xl p-5 sm:p-7 border border-emerald-200/80 shadow-md space-y-5">
                     <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
                       <div className="text-xs font-bold text-slate-500">
-                        Klik salah satu gelembung kata di bawah untuk membedah kedudukan I&apos;rabnya:
+                        {isCurrentModelLocked
+                          ? 'Pratinjau kalimat PRO — upgrade ke Al-Miftah PRO untuk membedah kedudukan I\'rab setiap kata:'
+                          : 'Klik salah satu gelembung kata di bawah untuk membedah kedudukan I\'rabnya:'}
                       </div>
-                      <div className="flex items-center gap-2">
-                        <button
-                          onClick={() => handleSpeak(currentModel.sentenceAr, `sent-${currentModel.id}`)}
-                          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition cursor-pointer ${
-                            speakingTag === `sent-${currentModel.id}`
-                              ? 'bg-amber-400 text-emerald-950 animate-pulse'
-                              : 'bg-emerald-900 text-amber-300 hover:bg-emerald-800'
-                          }`}
-                        >
-                          <Volume2 className="w-3.5 h-3.5" />
-                          <span>Dengarkan Kalimat</span>
-                        </button>
-                        <button
-                          onClick={() => handleCopyText(currentModel.sentenceAr, `sent-copy-${currentModel.id}`)}
-                          className="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 transition cursor-pointer"
-                          title="Salin Kalimat Arab"
-                        >
-                          {copiedId === `sent-copy-${currentModel.id}` ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* Interactive RTL Token Bubbles */}
-                    <div className="flex flex-wrap items-center justify-center gap-3 py-4 px-2 bg-[#FAF8F5] rounded-2xl border border-amber-200/70" dir="rtl">
-                      {activeTokens.map((tok, idx) => {
-                        const meta = getModelBadgeColor(tok.status);
-                        const isSelected = safeTokenIdx === idx;
-                        const hiddenInChallenge = inspectOrChallenge === 'challenge' && isSelected && !quizResult;
-                        return (
+                      {!isCurrentModelLocked && (
+                        <div className="flex items-center gap-2">
                           <button
-                            key={`${currentModel.id}-tok-${idx}`}
-                            onClick={() => {
-                              setSelectedTokenIndex(idx);
-                              setQuizResult(null);
-                            }}
-                            className={`px-4 py-3 rounded-2xl border-2 transition cursor-pointer flex flex-col items-center gap-1 min-w-[90px] ${
-                              isSelected ? meta.activeRing : meta.pillBg
+                            onClick={() => handleSpeak(currentModel.sentenceAr, `sent-${currentModel.id}`)}
+                            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition cursor-pointer ${
+                              speakingTag === `sent-${currentModel.id}`
+                                ? 'bg-amber-400 text-emerald-950 animate-pulse'
+                                : 'bg-emerald-900 text-amber-300 hover:bg-emerald-800'
                             }`}
                           >
-                            <span
-                              className="font-arabic font-extrabold text-emerald-950 leading-snug"
-                              style={{ fontSize: `${Math.min(36, fontSize + 4)}px` }}
-                            >
-                              {tok.word}
-                            </span>
-                            <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${hiddenInChallenge ? 'bg-slate-200 text-slate-600 border-slate-300' : meta.badge}`}>
-                              {hiddenInChallenge ? '❓ Tebak Status' : `${meta.dot} ${meta.id}`}
-                            </span>
+                            <Volume2 className="w-3.5 h-3.5" />
+                            <span>Dengarkan Kalimat</span>
                           </button>
-                        );
-                      })}
+                          <button
+                            onClick={() => handleCopyText(currentModel.sentenceAr, `sent-copy-${currentModel.id}`)}
+                            className="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 transition cursor-pointer"
+                            title="Salin Kalimat Arab"
+                          >
+                            {copiedId === `sent-copy-${currentModel.id}` ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
+                          </button>
+                        </div>
+                      )}
                     </div>
 
-                    <div className="text-center text-xs sm:text-sm text-slate-600 italic">
-                      &ldquo;{currentModel.translationId}&rdquo;
-                    </div>
+                    {isCurrentModelLocked ? (
+                      <div className="py-6 px-4 bg-[#FAF8F5] rounded-2xl border border-amber-200/70 text-center space-y-3" dir="rtl">
+                        <p
+                          className="font-arabic font-extrabold text-emerald-950 leading-relaxed"
+                          style={{ fontSize: `${Math.min(36, fontSize + 4)}px` }}
+                        >
+                          {currentModel.sentenceAr}
+                        </p>
+                        <div dir="ltr" className="inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-800 bg-amber-100/80 border border-amber-200 px-3 py-1 rounded-full">
+                          <Lock className="w-3.5 h-3.5" />
+                          Gelembung status I&apos;rab &amp; terjemah lengkap terbuka di versi PRO
+                        </div>
+                      </div>
+                    ) : (
+                      <>
+                        {/* Interactive RTL Token Bubbles */}
+                        <div className="flex flex-wrap items-center justify-center gap-3 py-4 px-2 bg-[#FAF8F5] rounded-2xl border border-amber-200/70" dir="rtl">
+                          {activeTokens.map((tok, idx) => {
+                            const meta = getModelBadgeColor(tok.status);
+                            const isSelected = safeTokenIdx === idx;
+                            const hiddenInChallenge = inspectOrChallenge === 'challenge' && isSelected && !quizResult;
+                            return (
+                              <button
+                                key={`${currentModel.id}-tok-${idx}`}
+                                onClick={() => {
+                                  setSelectedTokenIndex(idx);
+                                  setQuizResult(null);
+                                }}
+                                className={`px-4 py-3 rounded-2xl border-2 transition cursor-pointer flex flex-col items-center gap-1 min-w-[90px] ${
+                                  isSelected ? meta.activeRing : meta.pillBg
+                                }`}
+                              >
+                                <span
+                                  className="font-arabic font-extrabold text-emerald-950 leading-snug"
+                                  style={{ fontSize: `${Math.min(36, fontSize + 4)}px` }}
+                                >
+                                  {tok.word}
+                                </span>
+                                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${hiddenInChallenge ? 'bg-slate-200 text-slate-600 border-slate-300' : meta.badge}`}>
+                                  {hiddenInChallenge ? '❓ Tebak Status' : `${meta.dot} ${meta.id}`}
+                                </span>
+                              </button>
+                            );
+                          })}
+                        </div>
 
-                    {/* 5-Status Color Legend */}
-                    <div className="flex flex-wrap items-center justify-center gap-2 pt-2 border-t border-slate-100 text-[11px]">
-                      {Object.entries(STATUS_META).map(([key, meta]) => (
-                        <span key={key} className={`px-2.5 py-1 rounded-full border font-bold ${meta.badge}`}>
-                          {meta.dot} {meta.ar} ({meta.id})
-                        </span>
-                      ))}
-                    </div>
+                        <div className="text-center text-xs sm:text-sm text-slate-600 italic">
+                          &ldquo;{currentModel.translationId}&rdquo;
+                        </div>
+
+                        {/* 5-Status Color Legend */}
+                        <div className="flex flex-wrap items-center justify-center gap-2 pt-2 border-t border-slate-100 text-[11px]">
+                          {Object.entries(STATUS_META).map(([key, meta]) => (
+                            <span key={key} className={`px-2.5 py-1 rounded-full border font-bold ${meta.badge}`}>
+                              {meta.dot} {meta.ar} ({meta.id})
+                            </span>
+                          ))}
+                        </div>
+                      </>
+                    )}
                   </div>
 
+                  {isCurrentModelLocked && (
+                    <ProPaywallCard
+                      title={`Model I'rab #${safeIndex + 1} Terkunci (Khusus Member PRO)`}
+                      description={`Akses gratis Laboratorium Visual menyediakan 17 model contoh (12 level Pemula + 5 pilar tiap kategori). Upgrade ke Al-Miftah PRO untuk membuka seluruh 315 model kalimat beserta gelembung status multi-warna, pohon sintaksis I'rab, jadwal kata lengkap, audio pelafalan, dan kuis tantangan cepat.`}
+                      onOpenLicense={onOpenLicense}
+                    />
+                  )}
+
                   {/* INSPECT MODE PANELS */}
-                  {inspectOrChallenge === 'inspect' && selectedToken && (
+                  {!isCurrentModelLocked && inspectOrChallenge === 'inspect' && selectedToken && (
                     <div className="space-y-5">
                       {/* Deep Inspection Card for Selected Token */}
                       <div className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-4">
@@ -842,7 +917,7 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
                   )}
 
                   {/* CHALLENGE MODE PANEL */}
-                  {inspectOrChallenge === 'challenge' && selectedToken && (
+                  {!isCurrentModelLocked && inspectOrChallenge === 'challenge' && selectedToken && (
                     <div className="bg-white rounded-3xl p-6 sm:p-8 border-2 border-amber-300 shadow-md text-center space-y-5">
                       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-extrabold">
                         <Award className="w-4 h-4" />
@@ -959,6 +1034,7 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
           <div className="space-y-4">
             {filteredSyahid.map((item) => {
               const bookmarked = isBookmarked(item.id_contoh, 'irab');
+              const isSyahidLocked = !isPro && !isIrabSyahidFree(item.origIndex);
               return (
                 <div
                   key={item.id_contoh}
@@ -972,6 +1048,17 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
                       <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900">
                         {item.jenis_dalil}
                       </span>
+                      {!isPro && (
+                        isSyahidLocked ? (
+                          <span className="inline-flex items-center gap-1 text-[11px] font-extrabold px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300">
+                            <Lock className="w-3 h-3" /> PRO
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center text-[11px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">
+                            GRATIS
+                          </span>
+                        )
+                      )}
                       <span className="text-xs font-medium text-slate-500">
                         Kata Kunci:{' '}
                         <strong className="text-emerald-800 font-arabic text-base mx-1">
@@ -980,72 +1067,85 @@ export default function IrabLabView({ fontSize = 26, initialLabMode = 'visual', 
                       </span>
                     </div>
 
-                    <div className="flex items-center gap-1.5">
-                      <button
-                        onClick={() => handleSpeak(item.kalimat_arab, `syahid-${item.id_contoh}`)}
-                        className="p-1.5 rounded-lg text-emerald-700 hover:bg-emerald-50 transition cursor-pointer"
-                        title="Dengarkan Syahid"
-                      >
-                        <Volume2 className="w-4 h-4" />
-                      </button>
-                      <button
-                        onClick={() => handleCopyText(`${item.kalimat_arab}\n\nArtinya: ${item.terjemahan_indo}\n\nI'rab:\n${item.irab_arab}`, item.id_contoh)}
-                        className="p-1.5 rounded-lg text-slate-400 hover:text-emerald-700 hover:bg-emerald-50 transition cursor-pointer"
-                        title="Salin Dalil & I'rab"
-                      >
-                        {copiedId === item.id_contoh ? (
-                          <Check className="w-4 h-4 text-emerald-600" />
-                        ) : (
-                          <Copy className="w-4 h-4" />
-                        )}
-                      </button>
-                      <button
-                        onClick={() => handleBookmarkSyahid(item)}
-                        className={`p-1.5 rounded-lg transition cursor-pointer ${
-                          bookmarked
-                            ? 'text-amber-500 bg-amber-50 hover:bg-amber-100'
-                            : 'text-slate-400 hover:text-amber-600 hover:bg-slate-100'
-                        }`}
-                        title="Tandai Favorit"
-                      >
-                        <Bookmark className={`w-4 h-4 ${bookmarked ? 'fill-amber-500' : ''}`} />
-                      </button>
-                    </div>
+                    {!isSyahidLocked && (
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          onClick={() => handleSpeak(item.kalimat_arab, `syahid-${item.id_contoh}`)}
+                          className="p-1.5 rounded-lg text-emerald-700 hover:bg-emerald-50 transition cursor-pointer"
+                          title="Dengarkan Syahid"
+                        >
+                          <Volume2 className="w-4 h-4" />
+                        </button>
+                        <button
+                          onClick={() => handleCopyText(`${item.kalimat_arab}\n\nArtinya: ${item.terjemahan_indo}\n\nI'rab:\n${item.irab_arab}`, item.id_contoh)}
+                          className="p-1.5 rounded-lg text-slate-400 hover:text-emerald-700 hover:bg-emerald-50 transition cursor-pointer"
+                          title="Salin Dalil & I'rab"
+                        >
+                          {copiedId === item.id_contoh ? (
+                            <Check className="w-4 h-4 text-emerald-600" />
+                          ) : (
+                            <Copy className="w-4 h-4" />
+                          )}
+                        </button>
+                        <button
+                          onClick={() => handleBookmarkSyahid(item)}
+                          className={`p-1.5 rounded-lg transition cursor-pointer ${
+                            bookmarked
+                              ? 'text-amber-500 bg-amber-50 hover:bg-amber-100'
+                              : 'text-slate-400 hover:text-amber-600 hover:bg-slate-100'
+                          }`}
+                          title="Tandai Favorit"
+                        >
+                          <Bookmark className={`w-4 h-4 ${bookmarked ? 'fill-amber-500' : ''}`} />
+                        </button>
+                      </div>
+                    )}
                   </div>
 
-                  <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-amber-200/60 text-right">
-                    <p
-                      className="font-arabic font-bold text-slate-900 leading-relaxed"
-                      style={{ fontSize: `${fontSize}px` }}
-                    >
-                      {item.kalimat_arab}
-                    </p>
-                    <p className="text-xs text-slate-600 italic text-left mt-2">
-                      &ldquo;{item.terjemahan_indo}&rdquo;
-                    </p>
-                  </div>
+                  {isSyahidLocked ? (
+                    <ProPaywallCard
+                      compact
+                      title={`Dalil Syahid #${item.origIndex + 1} (${item.id_contoh}) Terkunci`}
+                      description="Akses gratis hanya memuat 10 dalil syahid pertama. Upgrade ke Al-Miftah PRO untuk membuka seluruh 119 Dalil Syahid Al-Qur'an, Hadits, & Syi'ir beserta tathbiq I'rab dan penjelasan ilmiahnya."
+                      onOpenLicense={onOpenLicense}
+                    />
+                  ) : (
+                    <>
+                      <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-amber-200/60 text-right">
+                        <p
+                          className="font-arabic font-bold text-slate-900 leading-relaxed"
+                          style={{ fontSize: `${fontSize}px` }}
+                        >
+                          {item.kalimat_arab}
+                        </p>
+                        <p className="text-xs text-slate-600 italic text-left mt-2">
+                          &ldquo;{item.terjemahan_indo}&rdquo;
+                        </p>
+                      </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                    <div className="bg-emerald-50/50 p-4 rounded-xl border border-emerald-200/70 space-y-2">
-                      <h4 className="text-xs font-bold text-emerald-900 uppercase tracking-wide flex items-center gap-1.5">
-                        <BookOpen className="w-3.5 h-3.5 text-emerald-700" />
-                        Tathbiq I&apos;rab (Bahasa Arab):
-                      </h4>
-                      <p className="font-arabic text-base sm:text-lg text-emerald-950 text-right leading-loose font-medium">
-                        {item.irab_arab}
-                      </p>
-                    </div>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                        <div className="bg-emerald-50/50 p-4 rounded-xl border border-emerald-200/70 space-y-2">
+                          <h4 className="text-xs font-bold text-emerald-900 uppercase tracking-wide flex items-center gap-1.5">
+                            <BookOpen className="w-3.5 h-3.5 text-emerald-700" />
+                            Tathbiq I&apos;rab (Bahasa Arab):
+                          </h4>
+                          <p className="font-arabic text-base sm:text-lg text-emerald-950 text-right leading-loose font-medium">
+                            {item.irab_arab}
+                          </p>
+                        </div>
 
-                    <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
-                      <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wide flex items-center gap-1.5">
-                        <Sparkles className="w-3.5 h-3.5 text-amber-600" />
-                        Penjelasan Ilmiah Gramatika:
-                      </h4>
-                      <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                        {item.penjelasan_irab_indo}
-                      </p>
-                    </div>
-                  </div>
+                        <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+                          <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wide flex items-center gap-1.5">
+                            <Sparkles className="w-3.5 h-3.5 text-amber-600" />
+                            Penjelasan Ilmiah Gramatika:
+                          </h4>
+                          <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                            {item.penjelasan_irab_indo}
+                          </p>
+                        </div>
+                      </div>
+                    </>
+                  )}
                 </div>
               );
             })}

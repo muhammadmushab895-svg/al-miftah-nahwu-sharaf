@@ -353,3 +353,55 @@ export function isSurahFree(surahId) {
   if (sId >= 94 && sId <= 114) return true;
   return false;
 }
+
+/**
+ * Aturan Akses Gratis Laboratorium Sharaf (Tashrif Ishtilahi & Lughawi):
+ * - 9 kata kerja perwakilan (Bab 1: 2 contoh, Bab 2-6 masing-masing 1 contoh, Mazid 1 contoh, Ruba'i Mujarrad 1 contoh): GRATIS
+ * - Sisa 53 kata kerja (termasuk variasi Mu'tal, Mudha'af, Mazid lanjutan, Ruba'i Qur'ani & Ruba'i Mazid): KHUSUS PRO
+ * - Kuis Sharaf: Soal 1-3 GRATIS, Soal 4-20 KHUSUS PRO
+ */
+const FREE_TASHRIF_IDS = new Set([
+  'nasara',
+  'kataba',
+  'dharaba',
+  'fataha',
+  'alima',
+  'hasuna',
+  'hasiba',
+  'akrama',
+  'dahraja',
+]);
+
+export function isTashrifVerbFree(verbId) {
+  return FREE_TASHRIF_IDS.has(verbId);
+}
+
+export function isTashrifQuizFree(quizIndex) {
+  return Number(quizIndex) < 3;
+}
+
+/**
+ * Aturan Akses Gratis Laboratorium I'rab Visual & Dalil Syahid:
+ * - I'rab Visual: 12 model Pemula awal (globalNum 1-12) + 1 sampel pilar tiap kategori kaidah (total 17 model): GRATIS
+ * - Sisa 298 model I'rab Visual & Level Menengah/Mahir: KHUSUS PRO
+ * - Dalil Syahid Klasik: 10 Dalil pertama (index 0-9) GRATIS; Dalil #11-119 KHUSUS PRO
+ */
+const FREE_IRAB_PILLAR_IDS = new Set([
+  'pillar-manshub-1',
+  'pillar-majrur-1',
+  'pillar-majzum-1',
+  'pillar-nawasikh-1',
+  'pillar-tawabi-1',
+]);
+
+export function isIrabModelFree(model) {
+  if (!model) return false;
+  if (typeof model.globalNum === 'number' && model.globalNum >= 1 && model.globalNum <= 12) {
+    return true;
+  }
+  return FREE_IRAB_PILLAR_IDS.has(model.id);
+}
+
+export function isIrabSyahidFree(syahidIndex) {
+  return Number(syahidIndex) < 10;
+}

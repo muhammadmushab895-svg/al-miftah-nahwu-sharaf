@@ -34,7 +34,7 @@ export default function App() {
   const [targetIrabSyahid, setTargetIrabSyahid] = useState(null);
 
   const handleOpenLicense = (tab = 'qris') => {
-    setLicenseModalTab(tab);
+    setLicenseModalTab(typeof tab === 'string' ? tab : 'qris');
     setLicenseModalOpen(true);
   };
 
@@ -149,10 +149,17 @@ export default function App() {
             fontSize={fontSize}
             onOpenMateri={() => setActiveTab('materi')}
             initialVerbId={targetTashrifVerbId}
+            isPro={isPro}
+            onOpenLicense={handleOpenLicense}
           />
         )}
         {activeTab === 'irab' && (
-          <IrabLabView fontSize={fontSize} targetSyahid={targetIrabSyahid} />
+          <IrabLabView
+            fontSize={fontSize}
+            targetSyahid={targetIrabSyahid}
+            isPro={isPro}
+            onOpenLicense={handleOpenLicense}
+          />
         )}
         {activeTab === 'kuis' && (
           <KuisView />
